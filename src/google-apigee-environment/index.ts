@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_environment
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_environment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,7 +11,7 @@ export interface GoogleApigeeEnvironmentConfig extends cdktf.TerraformMetaArgume
   * Optional. API Proxy type supported by the environment. The type can be set when creating
   * the Environment and cannot be changed. Possible values: ["API_PROXY_TYPE_UNSPECIFIED", "PROGRAMMABLE", "CONFIGURABLE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_environment#api_proxy_type GoogleApigeeEnvironment#api_proxy_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_environment#api_proxy_type GoogleApigeeEnvironment#api_proxy_type}
   */
   readonly apiProxyType?: string;
   /**
@@ -28,29 +23,29 @@ export interface GoogleApigeeEnvironmentConfig extends cdktf.TerraformMetaArgume
   * Creating, updating, or deleting resource files;
   * Creating, updating, or deleting target servers. Possible values: ["DEPLOYMENT_TYPE_UNSPECIFIED", "PROXY", "ARCHIVE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_environment#deployment_type GoogleApigeeEnvironment#deployment_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_environment#deployment_type GoogleApigeeEnvironment#deployment_type}
   */
   readonly deploymentType?: string;
   /**
   * Description of the environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_environment#description GoogleApigeeEnvironment#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_environment#description GoogleApigeeEnvironment#description}
   */
   readonly description?: string;
   /**
   * Display name of the environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_environment#display_name GoogleApigeeEnvironment#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_environment#display_name GoogleApigeeEnvironment#display_name}
   */
   readonly displayName?: string;
   /**
   * Optional. URI of the forward proxy to be applied to the runtime instances in this environment. Must be in the format of {scheme}://{hostname}:{port}. Note that the scheme must be one of "http" or "https", and the port must be supplied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_environment#forward_proxy_uri GoogleApigeeEnvironment#forward_proxy_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_environment#forward_proxy_uri GoogleApigeeEnvironment#forward_proxy_uri}
   */
   readonly forwardProxyUri?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_environment#id GoogleApigeeEnvironment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_environment#id GoogleApigeeEnvironment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -59,14 +54,14 @@ export interface GoogleApigeeEnvironmentConfig extends cdktf.TerraformMetaArgume
   /**
   * The resource ID of the environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_environment#name GoogleApigeeEnvironment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_environment#name GoogleApigeeEnvironment#name}
   */
   readonly name: string;
   /**
   * The Apigee Organization associated with the Apigee environment,
   * in the format 'organizations/{{org_name}}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_environment#org_id GoogleApigeeEnvironment#org_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_environment#org_id GoogleApigeeEnvironment#org_id}
   */
   readonly orgId: string;
   /**
@@ -75,19 +70,25 @@ export interface GoogleApigeeEnvironmentConfig extends cdktf.TerraformMetaArgume
   * to understand about each of these types in details.
   * An Apigee org can support heterogeneous Environments. Possible values: ["ENVIRONMENT_TYPE_UNSPECIFIED", "BASE", "INTERMEDIATE", "COMPREHENSIVE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_environment#type GoogleApigeeEnvironment#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_environment#type GoogleApigeeEnvironment#type}
   */
   readonly type?: string;
   /**
   * node_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_environment#node_config GoogleApigeeEnvironment#node_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_environment#node_config GoogleApigeeEnvironment#node_config}
   */
   readonly nodeConfig?: GoogleApigeeEnvironmentNodeConfig;
   /**
+  * properties block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_environment#properties GoogleApigeeEnvironment#properties}
+  */
+  readonly properties?: GoogleApigeeEnvironmentProperties;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_environment#timeouts GoogleApigeeEnvironment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_environment#timeouts GoogleApigeeEnvironment#timeouts}
   */
   readonly timeouts?: GoogleApigeeEnvironmentTimeouts;
 }
@@ -97,7 +98,7 @@ export interface GoogleApigeeEnvironmentNodeConfig {
   * has the specified environment. If not specified, the default is determined by the
   * recommended maximum number of nodes for that gateway.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_environment#max_node_count GoogleApigeeEnvironment#max_node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_environment#max_node_count GoogleApigeeEnvironment#max_node_count}
   */
   readonly maxNodeCount?: string;
   /**
@@ -105,7 +106,7 @@ export interface GoogleApigeeEnvironmentNodeConfig {
   * has the specified environment. If not specified, the default is determined by the
   * recommended minimum number of nodes for that gateway.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_environment#min_node_count GoogleApigeeEnvironment#min_node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_environment#min_node_count GoogleApigeeEnvironment#min_node_count}
   */
   readonly minNodeCount?: string;
 }
@@ -221,17 +222,256 @@ export class GoogleApigeeEnvironmentNodeConfigOutputReference extends cdktf.Comp
     return this._minNodeCount;
   }
 }
+export interface GoogleApigeeEnvironmentPropertiesProperty {
+  /**
+  * The property key.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_environment#name GoogleApigeeEnvironment#name}
+  */
+  readonly name?: string;
+  /**
+  * The property value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_environment#value GoogleApigeeEnvironment#value}
+  */
+  readonly value?: string;
+}
+
+export function googleApigeeEnvironmentPropertiesPropertyToTerraform(struct?: GoogleApigeeEnvironmentPropertiesProperty | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+
+export function googleApigeeEnvironmentPropertiesPropertyToHclTerraform(struct?: GoogleApigeeEnvironmentPropertiesProperty | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleApigeeEnvironmentPropertiesPropertyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleApigeeEnvironmentPropertiesProperty | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleApigeeEnvironmentPropertiesProperty | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._value = value.value;
+    }
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class GoogleApigeeEnvironmentPropertiesPropertyList extends cdktf.ComplexList {
+  public internalValue? : GoogleApigeeEnvironmentPropertiesProperty[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleApigeeEnvironmentPropertiesPropertyOutputReference {
+    return new GoogleApigeeEnvironmentPropertiesPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleApigeeEnvironmentProperties {
+  /**
+  * property block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_environment#property GoogleApigeeEnvironment#property}
+  */
+  readonly property?: GoogleApigeeEnvironmentPropertiesProperty[] | cdktf.IResolvable;
+}
+
+export function googleApigeeEnvironmentPropertiesToTerraform(struct?: GoogleApigeeEnvironmentPropertiesOutputReference | GoogleApigeeEnvironmentProperties): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    property: cdktf.listMapper(googleApigeeEnvironmentPropertiesPropertyToTerraform, true)(struct!.property),
+  }
+}
+
+
+export function googleApigeeEnvironmentPropertiesToHclTerraform(struct?: GoogleApigeeEnvironmentPropertiesOutputReference | GoogleApigeeEnvironmentProperties): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    property: {
+      value: cdktf.listMapperHcl(googleApigeeEnvironmentPropertiesPropertyToHclTerraform, true)(struct!.property),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleApigeeEnvironmentPropertiesPropertyList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleApigeeEnvironmentPropertiesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleApigeeEnvironmentProperties | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._property?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.property = this._property?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleApigeeEnvironmentProperties | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._property.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._property.internalValue = value.property;
+    }
+  }
+
+  // property - computed: false, optional: true, required: false
+  private _property = new GoogleApigeeEnvironmentPropertiesPropertyList(this, "property", false);
+  public get property() {
+    return this._property;
+  }
+  public putProperty(value: GoogleApigeeEnvironmentPropertiesProperty[] | cdktf.IResolvable) {
+    this._property.internalValue = value;
+  }
+  public resetProperty() {
+    this._property.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get propertyInput() {
+    return this._property.internalValue;
+  }
+}
 export interface GoogleApigeeEnvironmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_environment#create GoogleApigeeEnvironment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_environment#create GoogleApigeeEnvironment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_environment#delete GoogleApigeeEnvironment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_environment#delete GoogleApigeeEnvironment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_environment#update GoogleApigeeEnvironment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_environment#update GoogleApigeeEnvironment#update}
   */
   readonly update?: string;
 }
@@ -383,7 +623,7 @@ export class GoogleApigeeEnvironmentTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_environment google_apigee_environment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_environment google_apigee_environment}
 */
 export class GoogleApigeeEnvironment extends cdktf.TerraformResource {
 
@@ -399,7 +639,7 @@ export class GoogleApigeeEnvironment extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleApigeeEnvironment resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleApigeeEnvironment to import
-  * @param importFromId The id of the existing GoogleApigeeEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_environment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleApigeeEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_environment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleApigeeEnvironment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -411,7 +651,7 @@ export class GoogleApigeeEnvironment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_environment google_apigee_environment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_environment google_apigee_environment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -422,7 +662,7 @@ export class GoogleApigeeEnvironment extends cdktf.TerraformResource {
       terraformResourceType: 'google_apigee_environment',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.17.0',
+        providerVersion: '6.18.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -443,6 +683,7 @@ export class GoogleApigeeEnvironment extends cdktf.TerraformResource {
     this._orgId = config.orgId;
     this._type = config.type;
     this._nodeConfig.internalValue = config.nodeConfig;
+    this._properties.internalValue = config.properties;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -604,6 +845,22 @@ export class GoogleApigeeEnvironment extends cdktf.TerraformResource {
     return this._nodeConfig.internalValue;
   }
 
+  // properties - computed: false, optional: true, required: false
+  private _properties = new GoogleApigeeEnvironmentPropertiesOutputReference(this, "properties");
+  public get properties() {
+    return this._properties;
+  }
+  public putProperties(value: GoogleApigeeEnvironmentProperties) {
+    this._properties.internalValue = value;
+  }
+  public resetProperties() {
+    this._properties.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get propertiesInput() {
+    return this._properties.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new GoogleApigeeEnvironmentTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -636,6 +893,7 @@ export class GoogleApigeeEnvironment extends cdktf.TerraformResource {
       org_id: cdktf.stringToTerraform(this._orgId),
       type: cdktf.stringToTerraform(this._type),
       node_config: googleApigeeEnvironmentNodeConfigToTerraform(this._nodeConfig.internalValue),
+      properties: googleApigeeEnvironmentPropertiesToTerraform(this._properties.internalValue),
       timeouts: googleApigeeEnvironmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -701,6 +959,12 @@ export class GoogleApigeeEnvironment extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "GoogleApigeeEnvironmentNodeConfigList",
+      },
+      properties: {
+        value: googleApigeeEnvironmentPropertiesToHclTerraform(this._properties.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleApigeeEnvironmentPropertiesList",
       },
       timeouts: {
         value: googleApigeeEnvironmentTimeoutsToHclTerraform(this._timeouts.internalValue),

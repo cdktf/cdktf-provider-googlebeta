@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_firebase_android_app
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_firebase_android_app
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -17,7 +12,7 @@ export interface GoogleFirebaseAndroidAppConfig extends cdktf.TerraformMetaArgum
   * If apiKeyId is not set during creation, then Firebase automatically associates an apiKeyId with the AndroidApp.
   * This auto-associated key may be an existing valid key or, if no valid key exists, a new one will be provisioned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_firebase_android_app#api_key_id GoogleFirebaseAndroidApp#api_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_firebase_android_app#api_key_id GoogleFirebaseAndroidApp#api_key_id}
   */
   readonly apiKeyId?: string;
   /**
@@ -25,17 +20,17 @@ export interface GoogleFirebaseAndroidAppConfig extends cdktf.TerraformMetaArgum
   * rather than deleted upon 'terraform destroy'. This is useful because the AndroidApp may be
   * serving traffic. Set to 'DELETE' to delete the AndroidApp. Defaults to 'DELETE'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_firebase_android_app#deletion_policy GoogleFirebaseAndroidApp#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_firebase_android_app#deletion_policy GoogleFirebaseAndroidApp#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The user-assigned display name of the AndroidApp.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_firebase_android_app#display_name GoogleFirebaseAndroidApp#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_firebase_android_app#display_name GoogleFirebaseAndroidApp#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_firebase_android_app#id GoogleFirebaseAndroidApp#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_firebase_android_app#id GoogleFirebaseAndroidApp#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -45,43 +40,43 @@ export interface GoogleFirebaseAndroidAppConfig extends cdktf.TerraformMetaArgum
   * The canonical package name of the Android app as would appear in the Google Play
   * Developer Console.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_firebase_android_app#package_name GoogleFirebaseAndroidApp#package_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_firebase_android_app#package_name GoogleFirebaseAndroidApp#package_name}
   */
   readonly packageName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_firebase_android_app#project GoogleFirebaseAndroidApp#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_firebase_android_app#project GoogleFirebaseAndroidApp#project}
   */
   readonly project?: string;
   /**
   * The SHA1 certificate hashes for the AndroidApp.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_firebase_android_app#sha1_hashes GoogleFirebaseAndroidApp#sha1_hashes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_firebase_android_app#sha1_hashes GoogleFirebaseAndroidApp#sha1_hashes}
   */
   readonly sha1Hashes?: string[];
   /**
   * The SHA256 certificate hashes for the AndroidApp.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_firebase_android_app#sha256_hashes GoogleFirebaseAndroidApp#sha256_hashes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_firebase_android_app#sha256_hashes GoogleFirebaseAndroidApp#sha256_hashes}
   */
   readonly sha256Hashes?: string[];
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_firebase_android_app#timeouts GoogleFirebaseAndroidApp#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_firebase_android_app#timeouts GoogleFirebaseAndroidApp#timeouts}
   */
   readonly timeouts?: GoogleFirebaseAndroidAppTimeouts;
 }
 export interface GoogleFirebaseAndroidAppTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_firebase_android_app#create GoogleFirebaseAndroidApp#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_firebase_android_app#create GoogleFirebaseAndroidApp#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_firebase_android_app#delete GoogleFirebaseAndroidApp#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_firebase_android_app#delete GoogleFirebaseAndroidApp#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_firebase_android_app#update GoogleFirebaseAndroidApp#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_firebase_android_app#update GoogleFirebaseAndroidApp#update}
   */
   readonly update?: string;
 }
@@ -233,7 +228,7 @@ export class GoogleFirebaseAndroidAppTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_firebase_android_app google_firebase_android_app}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_firebase_android_app google_firebase_android_app}
 */
 export class GoogleFirebaseAndroidApp extends cdktf.TerraformResource {
 
@@ -249,7 +244,7 @@ export class GoogleFirebaseAndroidApp extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleFirebaseAndroidApp resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleFirebaseAndroidApp to import
-  * @param importFromId The id of the existing GoogleFirebaseAndroidApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_firebase_android_app#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleFirebaseAndroidApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_firebase_android_app#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleFirebaseAndroidApp to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -261,7 +256,7 @@ export class GoogleFirebaseAndroidApp extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_firebase_android_app google_firebase_android_app} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_firebase_android_app google_firebase_android_app} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -272,7 +267,7 @@ export class GoogleFirebaseAndroidApp extends cdktf.TerraformResource {
       terraformResourceType: 'google_firebase_android_app',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.17.0',
+        providerVersion: '6.18.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

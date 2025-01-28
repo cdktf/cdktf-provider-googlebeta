@@ -4,12 +4,12 @@
 
 ### GoogleDataplexLakeIamPolicy <a name="GoogleDataplexLakeIamPolicy" id="@cdktf/provider-google-beta.googleDataplexLakeIamPolicy.GoogleDataplexLakeIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dataplex_lake_iam_policy google_dataplex_lake_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_dataplex_lake_iam_policy google_dataplex_lake_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexLakeIamPolicy.GoogleDataplexLakeIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledataplexlakeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexlakeiampolicy"
 
 googledataplexlakeiampolicy.NewGoogleDataplexLakeIamPolicy(scope Construct, id *string, config GoogleDataplexLakeIamPolicyConfig) GoogleDataplexLakeIamPolicy
 ```
@@ -399,7 +399,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDataplexLakeIamPolicy.GoogleDataplexLakeIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledataplexlakeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexlakeiampolicy"
 
 googledataplexlakeiampolicy.GoogleDataplexLakeIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDataplexLakeIamPolicy.GoogleDataplexLakeIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledataplexlakeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexlakeiampolicy"
 
 googledataplexlakeiampolicy.GoogleDataplexLakeIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ googledataplexlakeiampolicy.GoogleDataplexLakeIamPolicy_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDataplexLakeIamPolicy.GoogleDataplexLakeIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledataplexlakeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexlakeiampolicy"
 
 googledataplexlakeiampolicy.GoogleDataplexLakeIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ googledataplexlakeiampolicy.GoogleDataplexLakeIamPolicy_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleDataplexLakeIamPolicy.GoogleDataplexLakeIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledataplexlakeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexlakeiampolicy"
 
 googledataplexlakeiampolicy.GoogleDataplexLakeIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +488,7 @@ The construct id used in the generated config for the GoogleDataplexLakeIamPolic
 
 The id of the existing GoogleDataplexLakeIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dataplex_lake_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_dataplex_lake_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -809,7 +809,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexLakeIamPolicy.GoogleDataplexLakeIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledataplexlakeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexlakeiampolicy"
 
 &googledataplexlakeiampolicy.GoogleDataplexLakeIamPolicyConfig {
 	Connection: interface{},
@@ -838,11 +838,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledatap
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexLakeIamPolicy.GoogleDataplexLakeIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexLakeIamPolicy.GoogleDataplexLakeIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexLakeIamPolicy.GoogleDataplexLakeIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexLakeIamPolicy.GoogleDataplexLakeIamPolicyConfig.property.lake">Lake</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dataplex_lake_iam_policy#lake GoogleDataplexLakeIamPolicy#lake}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexLakeIamPolicy.GoogleDataplexLakeIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dataplex_lake_iam_policy#policy_data GoogleDataplexLakeIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexLakeIamPolicy.GoogleDataplexLakeIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dataplex_lake_iam_policy#id GoogleDataplexLakeIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexLakeIamPolicy.GoogleDataplexLakeIamPolicyConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dataplex_lake_iam_policy#location GoogleDataplexLakeIamPolicy#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexLakeIamPolicy.GoogleDataplexLakeIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dataplex_lake_iam_policy#project GoogleDataplexLakeIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexLakeIamPolicy.GoogleDataplexLakeIamPolicyConfig.property.lake">Lake</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_dataplex_lake_iam_policy#lake GoogleDataplexLakeIamPolicy#lake}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexLakeIamPolicy.GoogleDataplexLakeIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_dataplex_lake_iam_policy#policy_data GoogleDataplexLakeIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexLakeIamPolicy.GoogleDataplexLakeIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_dataplex_lake_iam_policy#id GoogleDataplexLakeIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexLakeIamPolicy.GoogleDataplexLakeIamPolicyConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_dataplex_lake_iam_policy#location GoogleDataplexLakeIamPolicy#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexLakeIamPolicy.GoogleDataplexLakeIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_dataplex_lake_iam_policy#project GoogleDataplexLakeIamPolicy#project}. |
 
 ---
 
@@ -924,7 +924,7 @@ Lake *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dataplex_lake_iam_policy#lake GoogleDataplexLakeIamPolicy#lake}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_dataplex_lake_iam_policy#lake GoogleDataplexLakeIamPolicy#lake}.
 
 ---
 
@@ -936,7 +936,7 @@ PolicyData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dataplex_lake_iam_policy#policy_data GoogleDataplexLakeIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_dataplex_lake_iam_policy#policy_data GoogleDataplexLakeIamPolicy#policy_data}.
 
 ---
 
@@ -948,7 +948,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dataplex_lake_iam_policy#id GoogleDataplexLakeIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_dataplex_lake_iam_policy#id GoogleDataplexLakeIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -963,7 +963,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dataplex_lake_iam_policy#location GoogleDataplexLakeIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_dataplex_lake_iam_policy#location GoogleDataplexLakeIamPolicy#location}.
 
 ---
 
@@ -975,7 +975,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dataplex_lake_iam_policy#project GoogleDataplexLakeIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_dataplex_lake_iam_policy#project GoogleDataplexLakeIamPolicy#project}.
 
 ---
 

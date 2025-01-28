@@ -4,7 +4,7 @@
 
 ### GoogleClouddeployDeliveryPipelineIamBinding <a name="GoogleClouddeployDeliveryPipelineIamBinding" id="@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamBinding.GoogleClouddeployDeliveryPipelineIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding google_clouddeploy_delivery_pipeline_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding google_clouddeploy_delivery_pipeline_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamBinding.GoogleClouddeployDeliveryPipelineIamBinding.Initializer"></a>
 
@@ -508,7 +508,7 @@ The construct id used in the generated config for the GoogleClouddeployDeliveryP
 
 The id of the existing GoogleClouddeployDeliveryPipelineIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -882,9 +882,9 @@ const googleClouddeployDeliveryPipelineIamBindingCondition: googleClouddeployDel
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamBinding.GoogleClouddeployDeliveryPipelineIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#expression GoogleClouddeployDeliveryPipelineIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamBinding.GoogleClouddeployDeliveryPipelineIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#title GoogleClouddeployDeliveryPipelineIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamBinding.GoogleClouddeployDeliveryPipelineIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#description GoogleClouddeployDeliveryPipelineIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamBinding.GoogleClouddeployDeliveryPipelineIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#expression GoogleClouddeployDeliveryPipelineIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamBinding.GoogleClouddeployDeliveryPipelineIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#title GoogleClouddeployDeliveryPipelineIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamBinding.GoogleClouddeployDeliveryPipelineIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#description GoogleClouddeployDeliveryPipelineIamBinding#description}. |
 
 ---
 
@@ -896,7 +896,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#expression GoogleClouddeployDeliveryPipelineIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#expression GoogleClouddeployDeliveryPipelineIamBinding#expression}.
 
 ---
 
@@ -908,7 +908,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#title GoogleClouddeployDeliveryPipelineIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#title GoogleClouddeployDeliveryPipelineIamBinding#title}.
 
 ---
 
@@ -920,7 +920,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#description GoogleClouddeployDeliveryPipelineIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#description GoogleClouddeployDeliveryPipelineIamBinding#description}.
 
 ---
 
@@ -945,13 +945,13 @@ const googleClouddeployDeliveryPipelineIamBindingConfig: googleClouddeployDelive
 | <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamBinding.GoogleClouddeployDeliveryPipelineIamBindingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamBinding.GoogleClouddeployDeliveryPipelineIamBindingConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamBinding.GoogleClouddeployDeliveryPipelineIamBindingConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamBinding.GoogleClouddeployDeliveryPipelineIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#members GoogleClouddeployDeliveryPipelineIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamBinding.GoogleClouddeployDeliveryPipelineIamBindingConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#name GoogleClouddeployDeliveryPipelineIamBinding#name}. |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamBinding.GoogleClouddeployDeliveryPipelineIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#role GoogleClouddeployDeliveryPipelineIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamBinding.GoogleClouddeployDeliveryPipelineIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#members GoogleClouddeployDeliveryPipelineIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamBinding.GoogleClouddeployDeliveryPipelineIamBindingConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#name GoogleClouddeployDeliveryPipelineIamBinding#name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamBinding.GoogleClouddeployDeliveryPipelineIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#role GoogleClouddeployDeliveryPipelineIamBinding#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamBinding.GoogleClouddeployDeliveryPipelineIamBindingConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamBinding.GoogleClouddeployDeliveryPipelineIamBindingCondition">GoogleClouddeployDeliveryPipelineIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamBinding.GoogleClouddeployDeliveryPipelineIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#id GoogleClouddeployDeliveryPipelineIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamBinding.GoogleClouddeployDeliveryPipelineIamBindingConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#location GoogleClouddeployDeliveryPipelineIamBinding#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamBinding.GoogleClouddeployDeliveryPipelineIamBindingConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#project GoogleClouddeployDeliveryPipelineIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamBinding.GoogleClouddeployDeliveryPipelineIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#id GoogleClouddeployDeliveryPipelineIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamBinding.GoogleClouddeployDeliveryPipelineIamBindingConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#location GoogleClouddeployDeliveryPipelineIamBinding#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamBinding.GoogleClouddeployDeliveryPipelineIamBindingConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#project GoogleClouddeployDeliveryPipelineIamBinding#project}. |
 
 ---
 
@@ -1033,7 +1033,7 @@ public readonly members: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#members GoogleClouddeployDeliveryPipelineIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#members GoogleClouddeployDeliveryPipelineIamBinding#members}.
 
 ---
 
@@ -1045,7 +1045,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#name GoogleClouddeployDeliveryPipelineIamBinding#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#name GoogleClouddeployDeliveryPipelineIamBinding#name}.
 
 ---
 
@@ -1057,7 +1057,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#role GoogleClouddeployDeliveryPipelineIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#role GoogleClouddeployDeliveryPipelineIamBinding#role}.
 
 ---
 
@@ -1071,7 +1071,7 @@ public readonly condition: GoogleClouddeployDeliveryPipelineIamBindingCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#condition GoogleClouddeployDeliveryPipelineIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#condition GoogleClouddeployDeliveryPipelineIamBinding#condition}
 
 ---
 
@@ -1083,7 +1083,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#id GoogleClouddeployDeliveryPipelineIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#id GoogleClouddeployDeliveryPipelineIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1098,7 +1098,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#location GoogleClouddeployDeliveryPipelineIamBinding#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#location GoogleClouddeployDeliveryPipelineIamBinding#location}.
 
 ---
 
@@ -1110,7 +1110,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#project GoogleClouddeployDeliveryPipelineIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_binding#project GoogleClouddeployDeliveryPipelineIamBinding#project}.
 
 ---
 

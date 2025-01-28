@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_target_server
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_target_server
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,24 +10,24 @@ export interface GoogleApigeeTargetServerConfig extends cdktf.TerraformMetaArgum
   /**
   * A human-readable description of this TargetServer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_target_server#description GoogleApigeeTargetServer#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_target_server#description GoogleApigeeTargetServer#description}
   */
   readonly description?: string;
   /**
   * The Apigee environment group associated with the Apigee environment,
   * in the format 'organizations/{{org_name}}/environments/{{env_name}}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_target_server#env_id GoogleApigeeTargetServer#env_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_target_server#env_id GoogleApigeeTargetServer#env_id}
   */
   readonly envId: string;
   /**
   * The host name this target connects to. Value must be a valid hostname as described by RFC-1123.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_target_server#host GoogleApigeeTargetServer#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_target_server#host GoogleApigeeTargetServer#host}
   */
   readonly host: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_target_server#id GoogleApigeeTargetServer#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_target_server#id GoogleApigeeTargetServer#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -41,37 +36,37 @@ export interface GoogleApigeeTargetServerConfig extends cdktf.TerraformMetaArgum
   /**
   * Enabling/disabling a TargetServer is useful when TargetServers are used in load balancing configurations, and one or more TargetServers need to taken out of rotation periodically. Defaults to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_target_server#is_enabled GoogleApigeeTargetServer#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_target_server#is_enabled GoogleApigeeTargetServer#is_enabled}
   */
   readonly isEnabled?: boolean | cdktf.IResolvable;
   /**
   * The resource id of this reference. Values must match the regular expression [\w\s-.]+.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_target_server#name GoogleApigeeTargetServer#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_target_server#name GoogleApigeeTargetServer#name}
   */
   readonly name: string;
   /**
   * The port number this target connects to on the given host. Value must be between 1 and 65535, inclusive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_target_server#port GoogleApigeeTargetServer#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_target_server#port GoogleApigeeTargetServer#port}
   */
   readonly port: number;
   /**
   * Immutable. The protocol used by this TargetServer. Possible values: ["HTTP", "HTTP2", "GRPC_TARGET", "GRPC", "EXTERNAL_CALLOUT"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_target_server#protocol GoogleApigeeTargetServer#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_target_server#protocol GoogleApigeeTargetServer#protocol}
   */
   readonly protocol?: string;
   /**
   * s_sl_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_target_server#s_sl_info GoogleApigeeTargetServer#s_sl_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_target_server#s_sl_info GoogleApigeeTargetServer#s_sl_info}
   */
   readonly sSlInfo?: GoogleApigeeTargetServerSSlInfo;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_target_server#timeouts GoogleApigeeTargetServer#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_target_server#timeouts GoogleApigeeTargetServer#timeouts}
   */
   readonly timeouts?: GoogleApigeeTargetServerTimeouts;
 }
@@ -79,13 +74,13 @@ export interface GoogleApigeeTargetServerSSlInfoCommonName {
   /**
   * The TLS Common Name string of the certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_target_server#value GoogleApigeeTargetServer#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_target_server#value GoogleApigeeTargetServer#value}
   */
   readonly value?: string;
   /**
   * Indicates whether the cert should be matched against as a wildcard cert.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_target_server#wildcard_match GoogleApigeeTargetServer#wildcard_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_target_server#wildcard_match GoogleApigeeTargetServer#wildcard_match}
   */
   readonly wildcardMatch?: boolean | cdktf.IResolvable;
 }
@@ -200,55 +195,55 @@ export interface GoogleApigeeTargetServerSSlInfo {
   /**
   * The SSL/TLS cipher suites to be used. For programmable proxies, it must be one of the cipher suite names listed in: http://docs.oracle.com/javase/8/docs/technotes/guides/security/StandardNames.html#ciphersuites. For configurable proxies, it must follow the configuration specified in: https://commondatastorage.googleapis.com/chromium-boringssl-docs/ssl.h.html#Cipher-suite-configuration. This setting has no effect for configurable proxies when negotiating TLS 1.3.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_target_server#ciphers GoogleApigeeTargetServer#ciphers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_target_server#ciphers GoogleApigeeTargetServer#ciphers}
   */
   readonly ciphers?: string[];
   /**
   * Enables two-way TLS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_target_server#client_auth_enabled GoogleApigeeTargetServer#client_auth_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_target_server#client_auth_enabled GoogleApigeeTargetServer#client_auth_enabled}
   */
   readonly clientAuthEnabled?: boolean | cdktf.IResolvable;
   /**
   * Enables TLS. If false, neither one-way nor two-way TLS will be enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_target_server#enabled GoogleApigeeTargetServer#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_target_server#enabled GoogleApigeeTargetServer#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
   * If true, Edge ignores TLS certificate errors. Valid when configuring TLS for target servers and target endpoints, and when configuring virtual hosts that use 2-way TLS. When used with a target endpoint/target server, if the backend system uses SNI and returns a cert with a subject Distinguished Name (DN) that does not match the hostname, there is no way to ignore the error and the connection fails.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_target_server#ignore_validation_errors GoogleApigeeTargetServer#ignore_validation_errors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_target_server#ignore_validation_errors GoogleApigeeTargetServer#ignore_validation_errors}
   */
   readonly ignoreValidationErrors?: boolean | cdktf.IResolvable;
   /**
   * Required if clientAuthEnabled is true. The resource ID for the alias containing the private key and cert.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_target_server#key_alias GoogleApigeeTargetServer#key_alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_target_server#key_alias GoogleApigeeTargetServer#key_alias}
   */
   readonly keyAlias?: string;
   /**
   * Required if clientAuthEnabled is true. The resource ID of the keystore.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_target_server#key_store GoogleApigeeTargetServer#key_store}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_target_server#key_store GoogleApigeeTargetServer#key_store}
   */
   readonly keyStore?: string;
   /**
   * The TLS versioins to be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_target_server#protocols GoogleApigeeTargetServer#protocols}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_target_server#protocols GoogleApigeeTargetServer#protocols}
   */
   readonly protocols?: string[];
   /**
   * The resource ID of the truststore.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_target_server#trust_store GoogleApigeeTargetServer#trust_store}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_target_server#trust_store GoogleApigeeTargetServer#trust_store}
   */
   readonly trustStore?: string;
   /**
   * common_name block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_target_server#common_name GoogleApigeeTargetServer#common_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_target_server#common_name GoogleApigeeTargetServer#common_name}
   */
   readonly commonName?: GoogleApigeeTargetServerSSlInfoCommonName;
 }
@@ -561,15 +556,15 @@ export class GoogleApigeeTargetServerSSlInfoOutputReference extends cdktf.Comple
 }
 export interface GoogleApigeeTargetServerTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_target_server#create GoogleApigeeTargetServer#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_target_server#create GoogleApigeeTargetServer#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_target_server#delete GoogleApigeeTargetServer#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_target_server#delete GoogleApigeeTargetServer#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_target_server#update GoogleApigeeTargetServer#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_target_server#update GoogleApigeeTargetServer#update}
   */
   readonly update?: string;
 }
@@ -721,7 +716,7 @@ export class GoogleApigeeTargetServerTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_target_server google_apigee_target_server}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_target_server google_apigee_target_server}
 */
 export class GoogleApigeeTargetServer extends cdktf.TerraformResource {
 
@@ -737,7 +732,7 @@ export class GoogleApigeeTargetServer extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleApigeeTargetServer resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleApigeeTargetServer to import
-  * @param importFromId The id of the existing GoogleApigeeTargetServer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_target_server#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleApigeeTargetServer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_target_server#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleApigeeTargetServer to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -749,7 +744,7 @@ export class GoogleApigeeTargetServer extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_target_server google_apigee_target_server} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_apigee_target_server google_apigee_target_server} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -760,7 +755,7 @@ export class GoogleApigeeTargetServer extends cdktf.TerraformResource {
       terraformResourceType: 'google_apigee_target_server',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.17.0',
+        providerVersion: '6.18.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

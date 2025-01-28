@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_reference_list
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_reference_list
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface GoogleChronicleReferenceListConfig extends cdktf.TerraformMetaA
   /**
   * Required. A user-provided description of the reference list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_reference_list#description GoogleChronicleReferenceList#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_reference_list#description GoogleChronicleReferenceList#description}
   */
   readonly description: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_reference_list#id GoogleChronicleReferenceList#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_reference_list#id GoogleChronicleReferenceList#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,17 +23,17 @@ export interface GoogleChronicleReferenceListConfig extends cdktf.TerraformMetaA
   /**
   * The unique identifier for the Chronicle instance, which is the same as the customer ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_reference_list#instance GoogleChronicleReferenceList#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_reference_list#instance GoogleChronicleReferenceList#instance}
   */
   readonly instance: string;
   /**
   * The location of the resource. This is the geographical region where the Chronicle instance resides, such as "us" or "europe-west2".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_reference_list#location GoogleChronicleReferenceList#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_reference_list#location GoogleChronicleReferenceList#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_reference_list#project GoogleChronicleReferenceList#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_reference_list#project GoogleChronicleReferenceList#project}
   */
   readonly project?: string;
   /**
@@ -49,7 +44,7 @@ export interface GoogleChronicleReferenceListConfig extends cdktf.TerraformMetaA
   * - Has length < 256.
   * - Must be unique.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_reference_list#reference_list_id GoogleChronicleReferenceList#reference_list_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_reference_list#reference_list_id GoogleChronicleReferenceList#reference_list_id}
   */
   readonly referenceListId: string;
   /**
@@ -58,19 +53,19 @@ export interface GoogleChronicleReferenceListConfig extends cdktf.TerraformMetaA
   * REFERENCE_LIST_SYNTAX_TYPE_REGEX
   * REFERENCE_LIST_SYNTAX_TYPE_CIDR
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_reference_list#syntax_type GoogleChronicleReferenceList#syntax_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_reference_list#syntax_type GoogleChronicleReferenceList#syntax_type}
   */
   readonly syntaxType: string;
   /**
   * entries block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_reference_list#entries GoogleChronicleReferenceList#entries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_reference_list#entries GoogleChronicleReferenceList#entries}
   */
   readonly entries: GoogleChronicleReferenceListEntries[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_reference_list#timeouts GoogleChronicleReferenceList#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_reference_list#timeouts GoogleChronicleReferenceList#timeouts}
   */
   readonly timeouts?: GoogleChronicleReferenceListTimeouts;
 }
@@ -229,7 +224,7 @@ export interface GoogleChronicleReferenceListEntries {
   /**
   * Required. The value of the entry. Maximum length is 512 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_reference_list#value GoogleChronicleReferenceList#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_reference_list#value GoogleChronicleReferenceList#value}
   */
   readonly value: string;
 }
@@ -342,15 +337,15 @@ export class GoogleChronicleReferenceListEntriesList extends cdktf.ComplexList {
 }
 export interface GoogleChronicleReferenceListTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_reference_list#create GoogleChronicleReferenceList#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_reference_list#create GoogleChronicleReferenceList#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_reference_list#delete GoogleChronicleReferenceList#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_reference_list#delete GoogleChronicleReferenceList#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_reference_list#update GoogleChronicleReferenceList#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_reference_list#update GoogleChronicleReferenceList#update}
   */
   readonly update?: string;
 }
@@ -502,7 +497,7 @@ export class GoogleChronicleReferenceListTimeoutsOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_reference_list google_chronicle_reference_list}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_reference_list google_chronicle_reference_list}
 */
 export class GoogleChronicleReferenceList extends cdktf.TerraformResource {
 
@@ -518,7 +513,7 @@ export class GoogleChronicleReferenceList extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleChronicleReferenceList resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleChronicleReferenceList to import
-  * @param importFromId The id of the existing GoogleChronicleReferenceList that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_reference_list#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleChronicleReferenceList that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_reference_list#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleChronicleReferenceList to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -530,7 +525,7 @@ export class GoogleChronicleReferenceList extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_reference_list google_chronicle_reference_list} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_reference_list google_chronicle_reference_list} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -541,7 +536,7 @@ export class GoogleChronicleReferenceList extends cdktf.TerraformResource {
       terraformResourceType: 'google_chronicle_reference_list',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.17.0',
+        providerVersion: '6.18.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_data_catalog_taxonomy
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_data_catalog_taxonomy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,7 +11,7 @@ export interface GoogleDataCatalogTaxonomyConfig extends cdktf.TerraformMetaArgu
   * A list of policy types that are activated for this taxonomy. If not set,
   * defaults to an empty list. Possible values: ["POLICY_TYPE_UNSPECIFIED", "FINE_GRAINED_ACCESS_CONTROL"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_data_catalog_taxonomy#activated_policy_types GoogleDataCatalogTaxonomy#activated_policy_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_data_catalog_taxonomy#activated_policy_types GoogleDataCatalogTaxonomy#activated_policy_types}
   */
   readonly activatedPolicyTypes?: string[];
   /**
@@ -24,7 +19,7 @@ export interface GoogleDataCatalogTaxonomyConfig extends cdktf.TerraformMetaArgu
   * tabs, newlines, carriage returns and page breaks; and be at most 2000 bytes
   * long when encoded in UTF-8. If not set, defaults to an empty description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_data_catalog_taxonomy#description GoogleDataCatalogTaxonomy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_data_catalog_taxonomy#description GoogleDataCatalogTaxonomy#description}
   */
   readonly description?: string;
   /**
@@ -34,44 +29,44 @@ export interface GoogleDataCatalogTaxonomyConfig extends cdktf.TerraformMetaArgu
   * and spaces; not start or end with spaces; and be at most 200 bytes
   * long when encoded in UTF-8.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_data_catalog_taxonomy#display_name GoogleDataCatalogTaxonomy#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_data_catalog_taxonomy#display_name GoogleDataCatalogTaxonomy#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_data_catalog_taxonomy#id GoogleDataCatalogTaxonomy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_data_catalog_taxonomy#id GoogleDataCatalogTaxonomy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_data_catalog_taxonomy#project GoogleDataCatalogTaxonomy#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_data_catalog_taxonomy#project GoogleDataCatalogTaxonomy#project}
   */
   readonly project?: string;
   /**
   * Taxonomy location region.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_data_catalog_taxonomy#region GoogleDataCatalogTaxonomy#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_data_catalog_taxonomy#region GoogleDataCatalogTaxonomy#region}
   */
   readonly region?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_data_catalog_taxonomy#timeouts GoogleDataCatalogTaxonomy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_data_catalog_taxonomy#timeouts GoogleDataCatalogTaxonomy#timeouts}
   */
   readonly timeouts?: GoogleDataCatalogTaxonomyTimeouts;
 }
 export interface GoogleDataCatalogTaxonomyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_data_catalog_taxonomy#create GoogleDataCatalogTaxonomy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_data_catalog_taxonomy#create GoogleDataCatalogTaxonomy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_data_catalog_taxonomy#delete GoogleDataCatalogTaxonomy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_data_catalog_taxonomy#delete GoogleDataCatalogTaxonomy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_data_catalog_taxonomy#update GoogleDataCatalogTaxonomy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_data_catalog_taxonomy#update GoogleDataCatalogTaxonomy#update}
   */
   readonly update?: string;
 }
@@ -223,7 +218,7 @@ export class GoogleDataCatalogTaxonomyTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_data_catalog_taxonomy google_data_catalog_taxonomy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_data_catalog_taxonomy google_data_catalog_taxonomy}
 */
 export class GoogleDataCatalogTaxonomy extends cdktf.TerraformResource {
 
@@ -239,7 +234,7 @@ export class GoogleDataCatalogTaxonomy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleDataCatalogTaxonomy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleDataCatalogTaxonomy to import
-  * @param importFromId The id of the existing GoogleDataCatalogTaxonomy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_data_catalog_taxonomy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleDataCatalogTaxonomy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_data_catalog_taxonomy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleDataCatalogTaxonomy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -251,7 +246,7 @@ export class GoogleDataCatalogTaxonomy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_data_catalog_taxonomy google_data_catalog_taxonomy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_data_catalog_taxonomy google_data_catalog_taxonomy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -262,7 +257,7 @@ export class GoogleDataCatalogTaxonomy extends cdktf.TerraformResource {
       terraformResourceType: 'google_data_catalog_taxonomy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.17.0',
+        providerVersion: '6.18.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -4,12 +4,12 @@
 
 ### DataGoogleVertexAiEndpointIamPolicy <a name="DataGoogleVertexAiEndpointIamPolicy" id="@cdktf/provider-google-beta.dataGoogleVertexAiEndpointIamPolicy.DataGoogleVertexAiEndpointIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/data-sources/google_vertex_ai_endpoint_iam_policy google_vertex_ai_endpoint_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/data-sources/google_vertex_ai_endpoint_iam_policy google_vertex_ai_endpoint_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVertexAiEndpointIamPolicy.DataGoogleVertexAiEndpointIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglevertexaiendpointiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiendpointiampolicy"
 
 datagooglevertexaiendpointiampolicy.NewDataGoogleVertexAiEndpointIamPolicy(scope Construct, id *string, config DataGoogleVertexAiEndpointIamPolicyConfig) DataGoogleVertexAiEndpointIamPolicy
 ```
@@ -297,7 +297,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleVertexAiEndpointIamPolicy.DataGoogleVertexAiEndpointIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglevertexaiendpointiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiendpointiampolicy"
 
 datagooglevertexaiendpointiampolicy.DataGoogleVertexAiEndpointIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleVertexAiEndpointIamPolicy.DataGoogleVertexAiEndpointIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglevertexaiendpointiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiendpointiampolicy"
 
 datagooglevertexaiendpointiampolicy.DataGoogleVertexAiEndpointIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagooglevertexaiendpointiampolicy.DataGoogleVertexAiEndpointIamPolicy_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleVertexAiEndpointIamPolicy.DataGoogleVertexAiEndpointIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglevertexaiendpointiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiendpointiampolicy"
 
 datagooglevertexaiendpointiampolicy.DataGoogleVertexAiEndpointIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datagooglevertexaiendpointiampolicy.DataGoogleVertexAiEndpointIamPolicy_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleVertexAiEndpointIamPolicy.DataGoogleVertexAiEndpointIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglevertexaiendpointiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiendpointiampolicy"
 
 datagooglevertexaiendpointiampolicy.DataGoogleVertexAiEndpointIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataGoogleVertexAiEndpoint
 
 The id of the existing DataGoogleVertexAiEndpointIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/data-sources/google_vertex_ai_endpoint_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/data-sources/google_vertex_ai_endpoint_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -674,7 +674,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleVertexAiEndpointIamPolicy.DataGoogleVertexAiEndpointIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglevertexaiendpointiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiendpointiampolicy"
 
 &datagooglevertexaiendpointiampolicy.DataGoogleVertexAiEndpointIamPolicyConfig {
 	Connection: interface{},
@@ -702,10 +702,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglev
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiEndpointIamPolicy.DataGoogleVertexAiEndpointIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiEndpointIamPolicy.DataGoogleVertexAiEndpointIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiEndpointIamPolicy.DataGoogleVertexAiEndpointIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiEndpointIamPolicy.DataGoogleVertexAiEndpointIamPolicyConfig.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/data-sources/google_vertex_ai_endpoint_iam_policy#endpoint DataGoogleVertexAiEndpointIamPolicy#endpoint}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiEndpointIamPolicy.DataGoogleVertexAiEndpointIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/data-sources/google_vertex_ai_endpoint_iam_policy#id DataGoogleVertexAiEndpointIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiEndpointIamPolicy.DataGoogleVertexAiEndpointIamPolicyConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/data-sources/google_vertex_ai_endpoint_iam_policy#location DataGoogleVertexAiEndpointIamPolicy#location}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiEndpointIamPolicy.DataGoogleVertexAiEndpointIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/data-sources/google_vertex_ai_endpoint_iam_policy#project DataGoogleVertexAiEndpointIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiEndpointIamPolicy.DataGoogleVertexAiEndpointIamPolicyConfig.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/data-sources/google_vertex_ai_endpoint_iam_policy#endpoint DataGoogleVertexAiEndpointIamPolicy#endpoint}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiEndpointIamPolicy.DataGoogleVertexAiEndpointIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/data-sources/google_vertex_ai_endpoint_iam_policy#id DataGoogleVertexAiEndpointIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiEndpointIamPolicy.DataGoogleVertexAiEndpointIamPolicyConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/data-sources/google_vertex_ai_endpoint_iam_policy#location DataGoogleVertexAiEndpointIamPolicy#location}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiEndpointIamPolicy.DataGoogleVertexAiEndpointIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/data-sources/google_vertex_ai_endpoint_iam_policy#project DataGoogleVertexAiEndpointIamPolicy#project}. |
 
 ---
 
@@ -787,7 +787,7 @@ Endpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/data-sources/google_vertex_ai_endpoint_iam_policy#endpoint DataGoogleVertexAiEndpointIamPolicy#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/data-sources/google_vertex_ai_endpoint_iam_policy#endpoint DataGoogleVertexAiEndpointIamPolicy#endpoint}.
 
 ---
 
@@ -799,7 +799,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/data-sources/google_vertex_ai_endpoint_iam_policy#id DataGoogleVertexAiEndpointIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/data-sources/google_vertex_ai_endpoint_iam_policy#id DataGoogleVertexAiEndpointIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -814,7 +814,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/data-sources/google_vertex_ai_endpoint_iam_policy#location DataGoogleVertexAiEndpointIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/data-sources/google_vertex_ai_endpoint_iam_policy#location DataGoogleVertexAiEndpointIamPolicy#location}.
 
 ---
 
@@ -826,7 +826,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/data-sources/google_vertex_ai_endpoint_iam_policy#project DataGoogleVertexAiEndpointIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/data-sources/google_vertex_ai_endpoint_iam_policy#project DataGoogleVertexAiEndpointIamPolicy#project}.
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### DataGoogleClientOpenidUserinfo <a name="DataGoogleClientOpenidUserinfo" id="@cdktf/provider-google-beta.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfo"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/data-sources/google_client_openid_userinfo google_client_openid_userinfo}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/data-sources/google_client_openid_userinfo google_client_openid_userinfo}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleclientopeniduserinfo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleclientopeniduserinfo"
 
 datagoogleclientopeniduserinfo.NewDataGoogleClientOpenidUserinfo(scope Construct, id *string, config DataGoogleClientOpenidUserinfoConfig) DataGoogleClientOpenidUserinfo
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfo.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleclientopeniduserinfo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleclientopeniduserinfo"
 
 datagoogleclientopeniduserinfo.DataGoogleClientOpenidUserinfo_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfo.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleclientopeniduserinfo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleclientopeniduserinfo"
 
 datagoogleclientopeniduserinfo.DataGoogleClientOpenidUserinfo_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datagoogleclientopeniduserinfo.DataGoogleClientOpenidUserinfo_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfo.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleclientopeniduserinfo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleclientopeniduserinfo"
 
 datagoogleclientopeniduserinfo.DataGoogleClientOpenidUserinfo_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datagoogleclientopeniduserinfo.DataGoogleClientOpenidUserinfo_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfo.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleclientopeniduserinfo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleclientopeniduserinfo"
 
 datagoogleclientopeniduserinfo.DataGoogleClientOpenidUserinfo_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataGoogleClientOpenidUser
 
 The id of the existing DataGoogleClientOpenidUserinfo that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/data-sources/google_client_openid_userinfo#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/data-sources/google_client_openid_userinfo#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -565,7 +565,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfoConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleclientopeniduserinfo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleclientopeniduserinfo"
 
 &datagoogleclientopeniduserinfo.DataGoogleClientOpenidUserinfoConfig {
 	Connection: interface{},

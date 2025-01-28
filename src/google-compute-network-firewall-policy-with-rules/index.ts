@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface GoogleComputeNetworkFirewallPolicyWithRulesConfig extends cdktf
   /**
   * An optional description of this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#description GoogleComputeNetworkFirewallPolicyWithRules#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#description GoogleComputeNetworkFirewallPolicyWithRules#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#id GoogleComputeNetworkFirewallPolicyWithRules#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#id GoogleComputeNetworkFirewallPolicyWithRules#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -33,23 +28,23 @@ export interface GoogleComputeNetworkFirewallPolicyWithRulesConfig extends cdktf
   * which means the first character must be a lowercase letter, and all following characters must be a dash,
   * lowercase letter, or digit, except the last character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#name GoogleComputeNetworkFirewallPolicyWithRules#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#name GoogleComputeNetworkFirewallPolicyWithRules#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#project GoogleComputeNetworkFirewallPolicyWithRules#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#project GoogleComputeNetworkFirewallPolicyWithRules#project}
   */
   readonly project?: string;
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#rule GoogleComputeNetworkFirewallPolicyWithRules#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#rule GoogleComputeNetworkFirewallPolicyWithRules#rule}
   */
   readonly rule: GoogleComputeNetworkFirewallPolicyWithRulesRule[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#timeouts GoogleComputeNetworkFirewallPolicyWithRules#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#timeouts GoogleComputeNetworkFirewallPolicyWithRules#timeouts}
   */
   readonly timeouts?: GoogleComputeNetworkFirewallPolicyWithRulesTimeouts;
 }
@@ -565,7 +560,7 @@ export interface GoogleComputeNetworkFirewallPolicyWithRulesRuleMatchLayer4Confi
   * known protocol strings (tcp, udp, icmp, esp, ah, ipip, sctp),
   * or the IP protocol number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#ip_protocol GoogleComputeNetworkFirewallPolicyWithRules#ip_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#ip_protocol GoogleComputeNetworkFirewallPolicyWithRules#ip_protocol}
   */
   readonly ipProtocol: string;
   /**
@@ -576,7 +571,7 @@ export interface GoogleComputeNetworkFirewallPolicyWithRulesRuleMatchLayer4Confi
   * Example inputs include: ["22"], ["80","443"], and
   * ["12345-12349"].
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#ports GoogleComputeNetworkFirewallPolicyWithRules#ports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#ports GoogleComputeNetworkFirewallPolicyWithRules#ports}
   */
   readonly ports?: string[];
 }
@@ -721,7 +716,7 @@ export interface GoogleComputeNetworkFirewallPolicyWithRulesRuleMatchSrcSecureTa
   * Name of the secure tag, created with TagManager's TagValue API.
   * @pattern tagValues/[0-9]+
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#name GoogleComputeNetworkFirewallPolicyWithRules#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#name GoogleComputeNetworkFirewallPolicyWithRules#name}
   */
   readonly name?: string;
 }
@@ -845,86 +840,104 @@ export interface GoogleComputeNetworkFirewallPolicyWithRulesRuleMatch {
   * Address groups which should be matched against the traffic destination.
   * Maximum number of destination address groups is 10.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#dest_address_groups GoogleComputeNetworkFirewallPolicyWithRules#dest_address_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#dest_address_groups GoogleComputeNetworkFirewallPolicyWithRules#dest_address_groups}
   */
   readonly destAddressGroups?: string[];
   /**
   * Fully Qualified Domain Name (FQDN) which should be matched against
   * traffic destination. Maximum number of destination fqdn allowed is 100.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#dest_fqdns GoogleComputeNetworkFirewallPolicyWithRules#dest_fqdns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#dest_fqdns GoogleComputeNetworkFirewallPolicyWithRules#dest_fqdns}
   */
   readonly destFqdns?: string[];
   /**
   * Destination IP address range in CIDR format. Required for
   * EGRESS rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#dest_ip_ranges GoogleComputeNetworkFirewallPolicyWithRules#dest_ip_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#dest_ip_ranges GoogleComputeNetworkFirewallPolicyWithRules#dest_ip_ranges}
   */
   readonly destIpRanges?: string[];
+  /**
+  * Network scope of the traffic destination. Possible values: ["INTERNET", "INTRA_VPC", "NON_INTERNET", "VPC_NETWORKS"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#dest_network_scope GoogleComputeNetworkFirewallPolicyWithRules#dest_network_scope}
+  */
+  readonly destNetworkScope?: string;
   /**
   * Region codes whose IP addresses will be used to match for destination
   * of traffic. Should be specified as 2 letter country code defined as per
   * ISO 3166 alpha-2 country codes. ex."US"
   * Maximum number of destination region codes allowed is 5000.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#dest_region_codes GoogleComputeNetworkFirewallPolicyWithRules#dest_region_codes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#dest_region_codes GoogleComputeNetworkFirewallPolicyWithRules#dest_region_codes}
   */
   readonly destRegionCodes?: string[];
   /**
   * Names of Network Threat Intelligence lists.
   * The IPs in these lists will be matched against traffic destination.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#dest_threat_intelligences GoogleComputeNetworkFirewallPolicyWithRules#dest_threat_intelligences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#dest_threat_intelligences GoogleComputeNetworkFirewallPolicyWithRules#dest_threat_intelligences}
   */
   readonly destThreatIntelligences?: string[];
   /**
   * Address groups which should be matched against the traffic source.
   * Maximum number of source address groups is 10.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#src_address_groups GoogleComputeNetworkFirewallPolicyWithRules#src_address_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#src_address_groups GoogleComputeNetworkFirewallPolicyWithRules#src_address_groups}
   */
   readonly srcAddressGroups?: string[];
   /**
   * Fully Qualified Domain Name (FQDN) which should be matched against
   * traffic source. Maximum number of source fqdn allowed is 100.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#src_fqdns GoogleComputeNetworkFirewallPolicyWithRules#src_fqdns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#src_fqdns GoogleComputeNetworkFirewallPolicyWithRules#src_fqdns}
   */
   readonly srcFqdns?: string[];
   /**
   * Source IP address range in CIDR format. Required for
   * INGRESS rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#src_ip_ranges GoogleComputeNetworkFirewallPolicyWithRules#src_ip_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#src_ip_ranges GoogleComputeNetworkFirewallPolicyWithRules#src_ip_ranges}
   */
   readonly srcIpRanges?: string[];
+  /**
+  * Network scope of the traffic source. Possible values: ["INTERNET", "INTRA_VPC", "NON_INTERNET", "VPC_NETWORKS"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#src_network_scope GoogleComputeNetworkFirewallPolicyWithRules#src_network_scope}
+  */
+  readonly srcNetworkScope?: string;
+  /**
+  * Networks of the traffic source. It can be either a full or partial url.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#src_networks GoogleComputeNetworkFirewallPolicyWithRules#src_networks}
+  */
+  readonly srcNetworks?: string[];
   /**
   * Region codes whose IP addresses will be used to match for source
   * of traffic. Should be specified as 2 letter country code defined as per
   * ISO 3166 alpha-2 country codes. ex."US"
   * Maximum number of source region codes allowed is 5000.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#src_region_codes GoogleComputeNetworkFirewallPolicyWithRules#src_region_codes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#src_region_codes GoogleComputeNetworkFirewallPolicyWithRules#src_region_codes}
   */
   readonly srcRegionCodes?: string[];
   /**
   * Names of Network Threat Intelligence lists.
   * The IPs in these lists will be matched against traffic source.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#src_threat_intelligences GoogleComputeNetworkFirewallPolicyWithRules#src_threat_intelligences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#src_threat_intelligences GoogleComputeNetworkFirewallPolicyWithRules#src_threat_intelligences}
   */
   readonly srcThreatIntelligences?: string[];
   /**
   * layer4_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#layer4_config GoogleComputeNetworkFirewallPolicyWithRules#layer4_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#layer4_config GoogleComputeNetworkFirewallPolicyWithRules#layer4_config}
   */
   readonly layer4Config: GoogleComputeNetworkFirewallPolicyWithRulesRuleMatchLayer4Config[] | cdktf.IResolvable;
   /**
   * src_secure_tag block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#src_secure_tag GoogleComputeNetworkFirewallPolicyWithRules#src_secure_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#src_secure_tag GoogleComputeNetworkFirewallPolicyWithRules#src_secure_tag}
   */
   readonly srcSecureTag?: GoogleComputeNetworkFirewallPolicyWithRulesRuleMatchSrcSecureTag[] | cdktf.IResolvable;
 }
@@ -938,11 +951,14 @@ export function googleComputeNetworkFirewallPolicyWithRulesRuleMatchToTerraform(
     dest_address_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.destAddressGroups),
     dest_fqdns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.destFqdns),
     dest_ip_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.destIpRanges),
+    dest_network_scope: cdktf.stringToTerraform(struct!.destNetworkScope),
     dest_region_codes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.destRegionCodes),
     dest_threat_intelligences: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.destThreatIntelligences),
     src_address_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.srcAddressGroups),
     src_fqdns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.srcFqdns),
     src_ip_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.srcIpRanges),
+    src_network_scope: cdktf.stringToTerraform(struct!.srcNetworkScope),
+    src_networks: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.srcNetworks),
     src_region_codes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.srcRegionCodes),
     src_threat_intelligences: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.srcThreatIntelligences),
     layer4_config: cdktf.listMapper(googleComputeNetworkFirewallPolicyWithRulesRuleMatchLayer4ConfigToTerraform, true)(struct!.layer4Config),
@@ -975,6 +991,12 @@ export function googleComputeNetworkFirewallPolicyWithRulesRuleMatchToHclTerrafo
       type: "list",
       storageClassType: "stringList",
     },
+    dest_network_scope: {
+      value: cdktf.stringToHclTerraform(struct!.destNetworkScope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     dest_region_codes: {
       value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.destRegionCodes),
       isBlock: false,
@@ -1001,6 +1023,18 @@ export function googleComputeNetworkFirewallPolicyWithRulesRuleMatchToHclTerrafo
     },
     src_ip_ranges: {
       value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.srcIpRanges),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    src_network_scope: {
+      value: cdktf.stringToHclTerraform(struct!.srcNetworkScope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    src_networks: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.srcNetworks),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1061,6 +1095,10 @@ export class GoogleComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference
       hasAnyValues = true;
       internalValueResult.destIpRanges = this._destIpRanges;
     }
+    if (this._destNetworkScope !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.destNetworkScope = this._destNetworkScope;
+    }
     if (this._destRegionCodes !== undefined) {
       hasAnyValues = true;
       internalValueResult.destRegionCodes = this._destRegionCodes;
@@ -1080,6 +1118,14 @@ export class GoogleComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference
     if (this._srcIpRanges !== undefined) {
       hasAnyValues = true;
       internalValueResult.srcIpRanges = this._srcIpRanges;
+    }
+    if (this._srcNetworkScope !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.srcNetworkScope = this._srcNetworkScope;
+    }
+    if (this._srcNetworks !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.srcNetworks = this._srcNetworks;
     }
     if (this._srcRegionCodes !== undefined) {
       hasAnyValues = true;
@@ -1106,11 +1152,14 @@ export class GoogleComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference
       this._destAddressGroups = undefined;
       this._destFqdns = undefined;
       this._destIpRanges = undefined;
+      this._destNetworkScope = undefined;
       this._destRegionCodes = undefined;
       this._destThreatIntelligences = undefined;
       this._srcAddressGroups = undefined;
       this._srcFqdns = undefined;
       this._srcIpRanges = undefined;
+      this._srcNetworkScope = undefined;
+      this._srcNetworks = undefined;
       this._srcRegionCodes = undefined;
       this._srcThreatIntelligences = undefined;
       this._layer4Config.internalValue = undefined;
@@ -1121,11 +1170,14 @@ export class GoogleComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference
       this._destAddressGroups = value.destAddressGroups;
       this._destFqdns = value.destFqdns;
       this._destIpRanges = value.destIpRanges;
+      this._destNetworkScope = value.destNetworkScope;
       this._destRegionCodes = value.destRegionCodes;
       this._destThreatIntelligences = value.destThreatIntelligences;
       this._srcAddressGroups = value.srcAddressGroups;
       this._srcFqdns = value.srcFqdns;
       this._srcIpRanges = value.srcIpRanges;
+      this._srcNetworkScope = value.srcNetworkScope;
+      this._srcNetworks = value.srcNetworks;
       this._srcRegionCodes = value.srcRegionCodes;
       this._srcThreatIntelligences = value.srcThreatIntelligences;
       this._layer4Config.internalValue = value.layer4Config;
@@ -1179,6 +1231,22 @@ export class GoogleComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference
   // Temporarily expose input value. Use with caution.
   public get destIpRangesInput() {
     return this._destIpRanges;
+  }
+
+  // dest_network_scope - computed: false, optional: true, required: false
+  private _destNetworkScope?: string; 
+  public get destNetworkScope() {
+    return this.getStringAttribute('dest_network_scope');
+  }
+  public set destNetworkScope(value: string) {
+    this._destNetworkScope = value;
+  }
+  public resetDestNetworkScope() {
+    this._destNetworkScope = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destNetworkScopeInput() {
+    return this._destNetworkScope;
   }
 
   // dest_region_codes - computed: false, optional: true, required: false
@@ -1261,6 +1329,38 @@ export class GoogleComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference
     return this._srcIpRanges;
   }
 
+  // src_network_scope - computed: false, optional: true, required: false
+  private _srcNetworkScope?: string; 
+  public get srcNetworkScope() {
+    return this.getStringAttribute('src_network_scope');
+  }
+  public set srcNetworkScope(value: string) {
+    this._srcNetworkScope = value;
+  }
+  public resetSrcNetworkScope() {
+    this._srcNetworkScope = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get srcNetworkScopeInput() {
+    return this._srcNetworkScope;
+  }
+
+  // src_networks - computed: false, optional: true, required: false
+  private _srcNetworks?: string[]; 
+  public get srcNetworks() {
+    return this.getListAttribute('src_networks');
+  }
+  public set srcNetworks(value: string[]) {
+    this._srcNetworks = value;
+  }
+  public resetSrcNetworks() {
+    this._srcNetworks = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get srcNetworksInput() {
+    return this._srcNetworks;
+  }
+
   // src_region_codes - computed: false, optional: true, required: false
   private _srcRegionCodes?: string[]; 
   public get srcRegionCodes() {
@@ -1327,7 +1427,7 @@ export interface GoogleComputeNetworkFirewallPolicyWithRulesRuleTargetSecureTag 
   * Name of the secure tag, created with TagManager's TagValue API.
   * @pattern tagValues/[0-9]+
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#name GoogleComputeNetworkFirewallPolicyWithRules#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#name GoogleComputeNetworkFirewallPolicyWithRules#name}
   */
   readonly name?: string;
 }
@@ -1451,19 +1551,19 @@ export interface GoogleComputeNetworkFirewallPolicyWithRulesRule {
   * The Action to perform when the client connection triggers the rule. Can currently be either
   * "allow", "deny", "apply_security_profile_group" or "goto_next".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#action GoogleComputeNetworkFirewallPolicyWithRules#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#action GoogleComputeNetworkFirewallPolicyWithRules#action}
   */
   readonly action: string;
   /**
   * A description of the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#description GoogleComputeNetworkFirewallPolicyWithRules#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#description GoogleComputeNetworkFirewallPolicyWithRules#description}
   */
   readonly description?: string;
   /**
   * The direction in which this rule applies. If unspecified an INGRESS rule is created. Possible values: ["INGRESS", "EGRESS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#direction GoogleComputeNetworkFirewallPolicyWithRules#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#direction GoogleComputeNetworkFirewallPolicyWithRules#direction}
   */
   readonly direction?: string;
   /**
@@ -1472,7 +1572,7 @@ export interface GoogleComputeNetworkFirewallPolicyWithRulesRule {
   * not exist. If this is unspecified, the firewall policy rule will be
   * enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#disabled GoogleComputeNetworkFirewallPolicyWithRules#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#disabled GoogleComputeNetworkFirewallPolicyWithRules#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
@@ -1480,7 +1580,7 @@ export interface GoogleComputeNetworkFirewallPolicyWithRulesRule {
   * If logging is enabled, logs will be exported to the
   * configured export destination in Stackdriver.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#enable_logging GoogleComputeNetworkFirewallPolicyWithRules#enable_logging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#enable_logging GoogleComputeNetworkFirewallPolicyWithRules#enable_logging}
   */
   readonly enableLogging?: boolean | cdktf.IResolvable;
   /**
@@ -1488,14 +1588,14 @@ export interface GoogleComputeNetworkFirewallPolicyWithRulesRule {
   * between 0 and 2147483647. Rules are evaluated from highest to lowest priority where 0 is the
   * highest priority and 2147483647 is the lowest priority.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#priority GoogleComputeNetworkFirewallPolicyWithRules#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#priority GoogleComputeNetworkFirewallPolicyWithRules#priority}
   */
   readonly priority: number;
   /**
   * An optional name for the rule. This field is not a unique identifier
   * and can be updated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#rule_name GoogleComputeNetworkFirewallPolicyWithRules#rule_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#rule_name GoogleComputeNetworkFirewallPolicyWithRules#rule_name}
   */
   readonly ruleName?: string;
   /**
@@ -1504,33 +1604,33 @@ export interface GoogleComputeNetworkFirewallPolicyWithRulesRule {
   * https://networksecurity.googleapis.com/v1/projects/{project}/locations/{location}/securityProfileGroups/my-security-profile-group
   * Must be specified if action is 'apply_security_profile_group'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#security_profile_group GoogleComputeNetworkFirewallPolicyWithRules#security_profile_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#security_profile_group GoogleComputeNetworkFirewallPolicyWithRules#security_profile_group}
   */
   readonly securityProfileGroup?: string;
   /**
   * A list of service accounts indicating the sets of
   * instances that are applied with this rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#target_service_accounts GoogleComputeNetworkFirewallPolicyWithRules#target_service_accounts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#target_service_accounts GoogleComputeNetworkFirewallPolicyWithRules#target_service_accounts}
   */
   readonly targetServiceAccounts?: string[];
   /**
   * Boolean flag indicating if the traffic should be TLS decrypted.
   * It can be set only if action = 'apply_security_profile_group' and cannot be set for other actions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#tls_inspect GoogleComputeNetworkFirewallPolicyWithRules#tls_inspect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#tls_inspect GoogleComputeNetworkFirewallPolicyWithRules#tls_inspect}
   */
   readonly tlsInspect?: boolean | cdktf.IResolvable;
   /**
   * match block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#match GoogleComputeNetworkFirewallPolicyWithRules#match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#match GoogleComputeNetworkFirewallPolicyWithRules#match}
   */
   readonly match: GoogleComputeNetworkFirewallPolicyWithRulesRuleMatch;
   /**
   * target_secure_tag block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#target_secure_tag GoogleComputeNetworkFirewallPolicyWithRules#target_secure_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#target_secure_tag GoogleComputeNetworkFirewallPolicyWithRules#target_secure_tag}
   */
   readonly targetSecureTag?: GoogleComputeNetworkFirewallPolicyWithRulesRuleTargetSecureTag[] | cdktf.IResolvable;
 }
@@ -1956,15 +2056,15 @@ export class GoogleComputeNetworkFirewallPolicyWithRulesRuleList extends cdktf.C
 }
 export interface GoogleComputeNetworkFirewallPolicyWithRulesTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#create GoogleComputeNetworkFirewallPolicyWithRules#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#create GoogleComputeNetworkFirewallPolicyWithRules#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#delete GoogleComputeNetworkFirewallPolicyWithRules#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#delete GoogleComputeNetworkFirewallPolicyWithRules#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#update GoogleComputeNetworkFirewallPolicyWithRules#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#update GoogleComputeNetworkFirewallPolicyWithRules#update}
   */
   readonly update?: string;
 }
@@ -2116,7 +2216,7 @@ export class GoogleComputeNetworkFirewallPolicyWithRulesTimeoutsOutputReference 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules google_compute_network_firewall_policy_with_rules}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules google_compute_network_firewall_policy_with_rules}
 */
 export class GoogleComputeNetworkFirewallPolicyWithRules extends cdktf.TerraformResource {
 
@@ -2132,7 +2232,7 @@ export class GoogleComputeNetworkFirewallPolicyWithRules extends cdktf.Terraform
   * Generates CDKTF code for importing a GoogleComputeNetworkFirewallPolicyWithRules resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleComputeNetworkFirewallPolicyWithRules to import
-  * @param importFromId The id of the existing GoogleComputeNetworkFirewallPolicyWithRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleComputeNetworkFirewallPolicyWithRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleComputeNetworkFirewallPolicyWithRules to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -2144,7 +2244,7 @@ export class GoogleComputeNetworkFirewallPolicyWithRules extends cdktf.Terraform
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_network_firewall_policy_with_rules google_compute_network_firewall_policy_with_rules} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_network_firewall_policy_with_rules google_compute_network_firewall_policy_with_rules} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2155,7 +2255,7 @@ export class GoogleComputeNetworkFirewallPolicyWithRules extends cdktf.Terraform
       terraformResourceType: 'google_compute_network_firewall_policy_with_rules',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.17.0',
+        providerVersion: '6.18.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
