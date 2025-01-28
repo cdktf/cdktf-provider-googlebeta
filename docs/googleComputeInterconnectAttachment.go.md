@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinterconnectattachment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinterconnectattachment"
 
 googlecomputeinterconnectattachment.NewGoogleComputeInterconnectAttachment(scope Construct, id *string, config GoogleComputeInterconnectAttachmentConfig) GoogleComputeInterconnectAttachment
 ```
@@ -517,7 +517,7 @@ func ResetVlanTag8021Q()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinterconnectattachment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinterconnectattachment"
 
 googlecomputeinterconnectattachment.GoogleComputeInterconnectAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinterconnectattachment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinterconnectattachment"
 
 googlecomputeinterconnectattachment.GoogleComputeInterconnectAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -563,7 +563,7 @@ googlecomputeinterconnectattachment.GoogleComputeInterconnectAttachment_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinterconnectattachment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinterconnectattachment"
 
 googlecomputeinterconnectattachment.GoogleComputeInterconnectAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -577,7 +577,7 @@ googlecomputeinterconnectattachment.GoogleComputeInterconnectAttachment_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinterconnectattachment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinterconnectattachment"
 
 googlecomputeinterconnectattachment.GoogleComputeInterconnectAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1400,7 +1400,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinterconnectattachment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinterconnectattachment"
 
 &googlecomputeinterconnectattachment.GoogleComputeInterconnectAttachmentConfig {
 	Connection: interface{},
@@ -1427,7 +1427,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputein
 	Region: *string,
 	StackType: *string,
 	SubnetLength: *f64,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachmentTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachmentTimeouts,
 	Type: *string,
 	VlanTag8021Q: *f64,
 }
@@ -1898,7 +1898,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachmentPrivateInterconnectInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinterconnectattachment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinterconnectattachment"
 
 &googlecomputeinterconnectattachment.GoogleComputeInterconnectAttachmentPrivateInterconnectInfo {
 
@@ -1911,7 +1911,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputein
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinterconnectattachment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinterconnectattachment"
 
 &googlecomputeinterconnectattachment.GoogleComputeInterconnectAttachmentTimeouts {
 	Create: *string,
@@ -1973,7 +1973,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachmentPrivateInterconnectInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinterconnectattachment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinterconnectattachment"
 
 googlecomputeinterconnectattachment.NewGoogleComputeInterconnectAttachmentPrivateInterconnectInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeInterconnectAttachmentPrivateInterconnectInfoList
 ```
@@ -2122,7 +2122,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachmentPrivateInterconnectInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinterconnectattachment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinterconnectattachment"
 
 googlecomputeinterconnectattachment.NewGoogleComputeInterconnectAttachmentPrivateInterconnectInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeInterconnectAttachmentPrivateInterconnectInfoOutputReference
 ```
@@ -2400,7 +2400,7 @@ func InternalValue() GoogleComputeInterconnectAttachmentPrivateInterconnectInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinterconnectattachment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinterconnectattachment"
 
 googlecomputeinterconnectattachment.NewGoogleComputeInterconnectAttachmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeInterconnectAttachmentTimeoutsOutputReference
 ```
