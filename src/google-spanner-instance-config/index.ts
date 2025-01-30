@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_spanner_instance_config
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -17,17 +17,17 @@ export interface GoogleSpannerInstanceConfigAConfig extends cdktf.TerraformMetaA
   * Only set for user managed configurations.
   * baseConfig must refer to a configuration of type GOOGLE_MANAGED in the same project as this configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_spanner_instance_config#base_config GoogleSpannerInstanceConfigA#base_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_config#base_config GoogleSpannerInstanceConfigA#base_config}
   */
   readonly baseConfig?: string;
   /**
   * The name of this instance configuration as it appears in UIs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_spanner_instance_config#display_name GoogleSpannerInstanceConfigA#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_config#display_name GoogleSpannerInstanceConfigA#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_spanner_instance_config#id GoogleSpannerInstanceConfigA#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_config#id GoogleSpannerInstanceConfigA#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -41,30 +41,30 @@ export interface GoogleSpannerInstanceConfigAConfig extends cdktf.TerraformMetaA
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_spanner_instance_config#labels GoogleSpannerInstanceConfigA#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_config#labels GoogleSpannerInstanceConfigA#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * A unique identifier for the instance configuration. Values are of the
   * form projects/<project>/instanceConfigs/[a-z][-a-z0-9]*
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_spanner_instance_config#name GoogleSpannerInstanceConfigA#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_config#name GoogleSpannerInstanceConfigA#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_spanner_instance_config#project GoogleSpannerInstanceConfigA#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_config#project GoogleSpannerInstanceConfigA#project}
   */
   readonly project?: string;
   /**
   * replicas block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_spanner_instance_config#replicas GoogleSpannerInstanceConfigA#replicas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_config#replicas GoogleSpannerInstanceConfigA#replicas}
   */
   readonly replicas: GoogleSpannerInstanceConfigReplicas[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_spanner_instance_config#timeouts GoogleSpannerInstanceConfigA#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_config#timeouts GoogleSpannerInstanceConfigA#timeouts}
   */
   readonly timeouts?: GoogleSpannerInstanceConfigTimeouts;
 }
@@ -73,13 +73,13 @@ export interface GoogleSpannerInstanceConfigReplicas {
   * If true, this location is designated as the default leader location where
   * leader replicas are placed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_spanner_instance_config#default_leader_location GoogleSpannerInstanceConfigA#default_leader_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_config#default_leader_location GoogleSpannerInstanceConfigA#default_leader_location}
   */
   readonly defaultLeaderLocation?: boolean | cdktf.IResolvable;
   /**
   * The location of the serving resources, e.g. "us-central1".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_spanner_instance_config#location GoogleSpannerInstanceConfigA#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_config#location GoogleSpannerInstanceConfigA#location}
   */
   readonly location?: string;
   /**
@@ -87,7 +87,7 @@ export interface GoogleSpannerInstanceConfigReplicas {
   * documentation](https://cloud.google.com/spanner/docs/replication#replica_types)
   * for more details. Possible values: ["READ_WRITE", "READ_ONLY", "WITNESS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_spanner_instance_config#type GoogleSpannerInstanceConfigA#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_config#type GoogleSpannerInstanceConfigA#type}
   */
   readonly type?: string;
 }
@@ -261,15 +261,15 @@ export class GoogleSpannerInstanceConfigReplicasList extends cdktf.ComplexList {
 }
 export interface GoogleSpannerInstanceConfigTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_spanner_instance_config#create GoogleSpannerInstanceConfigA#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_config#create GoogleSpannerInstanceConfigA#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_spanner_instance_config#delete GoogleSpannerInstanceConfigA#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_config#delete GoogleSpannerInstanceConfigA#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_spanner_instance_config#update GoogleSpannerInstanceConfigA#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_config#update GoogleSpannerInstanceConfigA#update}
   */
   readonly update?: string;
 }
@@ -421,7 +421,7 @@ export class GoogleSpannerInstanceConfigTimeoutsOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_spanner_instance_config google_spanner_instance_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_config google_spanner_instance_config}
 */
 export class GoogleSpannerInstanceConfigA extends cdktf.TerraformResource {
 
@@ -437,7 +437,7 @@ export class GoogleSpannerInstanceConfigA extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleSpannerInstanceConfigA resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleSpannerInstanceConfigA to import
-  * @param importFromId The id of the existing GoogleSpannerInstanceConfigA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_spanner_instance_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleSpannerInstanceConfigA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleSpannerInstanceConfigA to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -449,7 +449,7 @@ export class GoogleSpannerInstanceConfigA extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_spanner_instance_config google_spanner_instance_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_config google_spanner_instance_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -460,7 +460,7 @@ export class GoogleSpannerInstanceConfigA extends cdktf.TerraformResource {
       terraformResourceType: 'google_spanner_instance_config',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.18.0',
+        providerVersion: '6.18.1',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
