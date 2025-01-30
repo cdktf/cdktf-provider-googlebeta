@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/data-sources/google_dataproc_autoscaling_policy_iam_policy
 // generated from terraform resource schema
 

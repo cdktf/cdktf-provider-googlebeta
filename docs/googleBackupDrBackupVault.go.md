@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBackupDrBackupVault.GoogleBackupDrBackupVault.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebackupdrbackupvault"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebackupdrbackupvault"
 
 googlebackupdrbackupvault.NewGoogleBackupDrBackupVault(scope Construct, id *string, config GoogleBackupDrBackupVaultConfig) GoogleBackupDrBackupVault
 ```
@@ -482,7 +482,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleBackupDrBackupVault.GoogleBackupDrBackupVault.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebackupdrbackupvault"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebackupdrbackupvault"
 
 googlebackupdrbackupvault.GoogleBackupDrBackupVault_IsConstruct(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleBackupDrBackupVault.GoogleBackupDrBackupVault.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebackupdrbackupvault"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebackupdrbackupvault"
 
 googlebackupdrbackupvault.GoogleBackupDrBackupVault_IsTerraformElement(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ googlebackupdrbackupvault.GoogleBackupDrBackupVault_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleBackupDrBackupVault.GoogleBackupDrBackupVault.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebackupdrbackupvault"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebackupdrbackupvault"
 
 googlebackupdrbackupvault.GoogleBackupDrBackupVault_IsTerraformResource(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ googlebackupdrbackupvault.GoogleBackupDrBackupVault_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleBackupDrBackupVault.GoogleBackupDrBackupVault.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebackupdrbackupvault"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebackupdrbackupvault"
 
 googlebackupdrbackupvault.GoogleBackupDrBackupVault_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1266,7 +1266,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBackupDrBackupVault.GoogleBackupDrBackupVaultConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebackupdrbackupvault"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebackupdrbackupvault"
 
 &googlebackupdrbackupvault.GoogleBackupDrBackupVaultConfig {
 	Connection: interface{},
@@ -1291,7 +1291,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebacku
 	IgnoreInactiveDatasources: interface{},
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleBackupDrBackupVault.GoogleBackupDrBackupVaultTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBackupDrBackupVault.GoogleBackupDrBackupVaultTimeouts,
 }
 ```
 
@@ -1640,7 +1640,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBackupDrBackupVault.GoogleBackupDrBackupVaultTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebackupdrbackupvault"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebackupdrbackupvault"
 
 &googlebackupdrbackupvault.GoogleBackupDrBackupVaultTimeouts {
 	Create: *string,
@@ -1702,7 +1702,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBackupDrBackupVault.GoogleBackupDrBackupVaultTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebackupdrbackupvault"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebackupdrbackupvault"
 
 googlebackupdrbackupvault.NewGoogleBackupDrBackupVaultTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBackupDrBackupVaultTimeoutsOutputReference
 ```
