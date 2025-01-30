@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_vpc_access_connector
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_vpc_access_connector
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleVpcAccessConnectorConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_vpc_access_connector#id GoogleVpcAccessConnector#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_vpc_access_connector#id GoogleVpcAccessConnector#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,20 +17,20 @@ export interface GoogleVpcAccessConnectorConfig extends cdktf.TerraformMetaArgum
   /**
   * The range of internal addresses that follows RFC 4632 notation. Example: '10.132.0.0/28'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_vpc_access_connector#ip_cidr_range GoogleVpcAccessConnector#ip_cidr_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_vpc_access_connector#ip_cidr_range GoogleVpcAccessConnector#ip_cidr_range}
   */
   readonly ipCidrRange?: string;
   /**
   * Machine type of VM Instance underlying connector. Default is e2-micro
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_vpc_access_connector#machine_type GoogleVpcAccessConnector#machine_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_vpc_access_connector#machine_type GoogleVpcAccessConnector#machine_type}
   */
   readonly machineType?: string;
   /**
   * Maximum value of instances in autoscaling group underlying the connector. Value must be between 3 and 10, inclusive. Must be
   * higher than the value specified by min_instances.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_vpc_access_connector#max_instances GoogleVpcAccessConnector#max_instances}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_vpc_access_connector#max_instances GoogleVpcAccessConnector#max_instances}
   */
   readonly maxInstances?: number;
   /**
@@ -43,14 +38,14 @@ export interface GoogleVpcAccessConnectorConfig extends cdktf.TerraformMetaArgum
   * when using an e2-micro machine type. Value must be a multiple of 100 from 300 through 1000. Must be higher than the value specified by
   * min_throughput. Only one of 'max_throughput' and 'max_instances' can be specified. The use of max_throughput is discouraged in favor of max_instances.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_vpc_access_connector#max_throughput GoogleVpcAccessConnector#max_throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_vpc_access_connector#max_throughput GoogleVpcAccessConnector#max_throughput}
   */
   readonly maxThroughput?: number;
   /**
   * Minimum value of instances in autoscaling group underlying the connector. Value must be between 2 and 9, inclusive. Must be
   * lower than the value specified by max_instances.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_vpc_access_connector#min_instances GoogleVpcAccessConnector#min_instances}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_vpc_access_connector#min_instances GoogleVpcAccessConnector#min_instances}
   */
   readonly minInstances?: number;
   /**
@@ -58,41 +53,41 @@ export interface GoogleVpcAccessConnectorConfig extends cdktf.TerraformMetaArgum
   * Value must be a multiple of 100 from 200 through 900. Must be lower than the value specified by max_throughput.
   * Only one of 'min_throughput' and 'min_instances' can be specified. The use of min_throughput is discouraged in favor of min_instances.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_vpc_access_connector#min_throughput GoogleVpcAccessConnector#min_throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_vpc_access_connector#min_throughput GoogleVpcAccessConnector#min_throughput}
   */
   readonly minThroughput?: number;
   /**
   * The name of the resource (Max 25 characters).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_vpc_access_connector#name GoogleVpcAccessConnector#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_vpc_access_connector#name GoogleVpcAccessConnector#name}
   */
   readonly name: string;
   /**
   * Name or self_link of the VPC network. Required if 'ip_cidr_range' is set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_vpc_access_connector#network GoogleVpcAccessConnector#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_vpc_access_connector#network GoogleVpcAccessConnector#network}
   */
   readonly network?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_vpc_access_connector#project GoogleVpcAccessConnector#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_vpc_access_connector#project GoogleVpcAccessConnector#project}
   */
   readonly project?: string;
   /**
   * Region where the VPC Access connector resides. If it is not provided, the provider region is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_vpc_access_connector#region GoogleVpcAccessConnector#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_vpc_access_connector#region GoogleVpcAccessConnector#region}
   */
   readonly region?: string;
   /**
   * subnet block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_vpc_access_connector#subnet GoogleVpcAccessConnector#subnet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_vpc_access_connector#subnet GoogleVpcAccessConnector#subnet}
   */
   readonly subnet?: GoogleVpcAccessConnectorSubnet;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_vpc_access_connector#timeouts GoogleVpcAccessConnector#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_vpc_access_connector#timeouts GoogleVpcAccessConnector#timeouts}
   */
   readonly timeouts?: GoogleVpcAccessConnectorTimeouts;
 }
@@ -101,13 +96,13 @@ export interface GoogleVpcAccessConnectorSubnet {
   * Subnet name (relative, not fully qualified). E.g. if the full subnet selfLink is
   * https://compute.googleapis.com/compute/v1/projects/{project}/regions/{region}/subnetworks/{subnetName} the correct input for this field would be {subnetName}"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_vpc_access_connector#name GoogleVpcAccessConnector#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_vpc_access_connector#name GoogleVpcAccessConnector#name}
   */
   readonly name?: string;
   /**
   * Project in which the subnet exists. If not set, this project is assumed to be the project for which the connector create request was issued.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_vpc_access_connector#project_id GoogleVpcAccessConnector#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_vpc_access_connector#project_id GoogleVpcAccessConnector#project_id}
   */
   readonly projectId?: string;
 }
@@ -220,11 +215,11 @@ export class GoogleVpcAccessConnectorSubnetOutputReference extends cdktf.Complex
 }
 export interface GoogleVpcAccessConnectorTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_vpc_access_connector#create GoogleVpcAccessConnector#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_vpc_access_connector#create GoogleVpcAccessConnector#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_vpc_access_connector#delete GoogleVpcAccessConnector#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_vpc_access_connector#delete GoogleVpcAccessConnector#delete}
   */
   readonly delete?: string;
 }
@@ -347,7 +342,7 @@ export class GoogleVpcAccessConnectorTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_vpc_access_connector google_vpc_access_connector}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_vpc_access_connector google_vpc_access_connector}
 */
 export class GoogleVpcAccessConnector extends cdktf.TerraformResource {
 
@@ -363,7 +358,7 @@ export class GoogleVpcAccessConnector extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleVpcAccessConnector resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleVpcAccessConnector to import
-  * @param importFromId The id of the existing GoogleVpcAccessConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_vpc_access_connector#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleVpcAccessConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_vpc_access_connector#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleVpcAccessConnector to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -375,7 +370,7 @@ export class GoogleVpcAccessConnector extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_vpc_access_connector google_vpc_access_connector} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_vpc_access_connector google_vpc_access_connector} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -386,7 +381,7 @@ export class GoogleVpcAccessConnector extends cdktf.TerraformResource {
       terraformResourceType: 'google_vpc_access_connector',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.18.0',
+        providerVersion: '6.18.1',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

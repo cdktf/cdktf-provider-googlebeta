@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_service_account_key
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_service_account_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleServiceAccountKeyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_service_account_key#id GoogleServiceAccountKey#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_service_account_key#id GoogleServiceAccountKey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,39 +17,39 @@ export interface GoogleServiceAccountKeyConfig extends cdktf.TerraformMetaArgume
   /**
   * Arbitrary map of values that, when changed, will trigger recreation of resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_service_account_key#keepers GoogleServiceAccountKey#keepers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_service_account_key#keepers GoogleServiceAccountKey#keepers}
   */
   readonly keepers?: { [key: string]: string };
   /**
   * The algorithm used to generate the key, used only on create. KEY_ALG_RSA_2048 is the default algorithm. Valid values are: "KEY_ALG_RSA_1024", "KEY_ALG_RSA_2048".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_service_account_key#key_algorithm GoogleServiceAccountKey#key_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_service_account_key#key_algorithm GoogleServiceAccountKey#key_algorithm}
   */
   readonly keyAlgorithm?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_service_account_key#private_key_type GoogleServiceAccountKey#private_key_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_service_account_key#private_key_type GoogleServiceAccountKey#private_key_type}
   */
   readonly privateKeyType?: string;
   /**
   * A field that allows clients to upload their own public key. If set, use this public key data to create a service account key for given service account. Please note, the expected format for this field is a base64 encoded X509_PEM.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_service_account_key#public_key_data GoogleServiceAccountKey#public_key_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_service_account_key#public_key_data GoogleServiceAccountKey#public_key_data}
   */
   readonly publicKeyData?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_service_account_key#public_key_type GoogleServiceAccountKey#public_key_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_service_account_key#public_key_type GoogleServiceAccountKey#public_key_type}
   */
   readonly publicKeyType?: string;
   /**
   * The ID of the parent service account of the key. This can be a string in the format {ACCOUNT} or projects/{PROJECT_ID}/serviceAccounts/{ACCOUNT}, where {ACCOUNT} is the email address or unique id of the service account. If the {ACCOUNT} syntax is used, the project will be inferred from the provider's configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_service_account_key#service_account_id GoogleServiceAccountKey#service_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_service_account_key#service_account_id GoogleServiceAccountKey#service_account_id}
   */
   readonly serviceAccountId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_service_account_key google_service_account_key}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_service_account_key google_service_account_key}
 */
 export class GoogleServiceAccountKey extends cdktf.TerraformResource {
 
@@ -70,7 +65,7 @@ export class GoogleServiceAccountKey extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleServiceAccountKey resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleServiceAccountKey to import
-  * @param importFromId The id of the existing GoogleServiceAccountKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_service_account_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleServiceAccountKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_service_account_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleServiceAccountKey to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -82,7 +77,7 @@ export class GoogleServiceAccountKey extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_service_account_key google_service_account_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_service_account_key google_service_account_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -93,7 +88,7 @@ export class GoogleServiceAccountKey extends cdktf.TerraformResource {
       terraformResourceType: 'google_service_account_key',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.18.0',
+        providerVersion: '6.18.1',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

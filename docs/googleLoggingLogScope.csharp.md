@@ -4,7 +4,7 @@
 
 ### GoogleLoggingLogScope <a name="GoogleLoggingLogScope" id="@cdktf/provider-google-beta.googleLoggingLogScope.GoogleLoggingLogScope"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_logging_log_scope google_logging_log_scope}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_logging_log_scope google_logging_log_scope}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLoggingLogScope.GoogleLoggingLogScope.Initializer"></a>
 
@@ -515,7 +515,7 @@ The construct id used in the generated config for the GoogleLoggingLogScope to i
 
 The id of the existing GoogleLoggingLogScope that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_logging_log_scope#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_logging_log_scope#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -925,7 +925,7 @@ new GoogleLoggingLogScopeConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingLogScope.GoogleLoggingLogScopeConfig.property.name">Name</a></code> | <code>string</code> | The resource name of the log scope. For example: \'projects/my-project/locations/global/logScopes/my-log-scope\'. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingLogScope.GoogleLoggingLogScopeConfig.property.resourceNames">ResourceNames</a></code> | <code>string[]</code> | Names of one or more parent resources : *  \'projects/[PROJECT_ID]\' May alternatively be one or more views : * \'projects/[PROJECT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]/views/[VIEW_ID]\' A log scope can include a maximum of 50 projects and a maximum of 100 resources in total. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingLogScope.GoogleLoggingLogScopeConfig.property.description">Description</a></code> | <code>string</code> | Describes this log scopes. |
-| <code><a href="#@cdktf/provider-google-beta.googleLoggingLogScope.GoogleLoggingLogScopeConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_logging_log_scope#id GoogleLoggingLogScope#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleLoggingLogScope.GoogleLoggingLogScopeConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_logging_log_scope#id GoogleLoggingLogScope#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingLogScope.GoogleLoggingLogScopeConfig.property.location">Location</a></code> | <code>string</code> | The location of the resource. The only supported location is global so far. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingLogScope.GoogleLoggingLogScopeConfig.property.parent">Parent</a></code> | <code>string</code> | The parent of the resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingLogScope.GoogleLoggingLogScopeConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleLoggingLogScope.GoogleLoggingLogScopeTimeouts">GoogleLoggingLogScopeTimeouts</a></code> | timeouts block. |
@@ -1012,7 +1012,7 @@ public string Name { get; set; }
 
 The resource name of the log scope. For example: \'projects/my-project/locations/global/logScopes/my-log-scope\'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_logging_log_scope#name GoogleLoggingLogScope#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_logging_log_scope#name GoogleLoggingLogScope#name}
 
 ---
 
@@ -1026,7 +1026,7 @@ public string[] ResourceNames { get; set; }
 
 Names of one or more parent resources : *  \'projects/[PROJECT_ID]\' May alternatively be one or more views : * \'projects/[PROJECT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]/views/[VIEW_ID]\' A log scope can include a maximum of 50 projects and a maximum of 100 resources in total.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_logging_log_scope#resource_names GoogleLoggingLogScope#resource_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_logging_log_scope#resource_names GoogleLoggingLogScope#resource_names}
 
 ---
 
@@ -1040,7 +1040,7 @@ public string Description { get; set; }
 
 Describes this log scopes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_logging_log_scope#description GoogleLoggingLogScope#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_logging_log_scope#description GoogleLoggingLogScope#description}
 
 ---
 
@@ -1052,7 +1052,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_logging_log_scope#id GoogleLoggingLogScope#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_logging_log_scope#id GoogleLoggingLogScope#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1069,7 +1069,7 @@ public string Location { get; set; }
 
 The location of the resource. The only supported location is global so far.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_logging_log_scope#location GoogleLoggingLogScope#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_logging_log_scope#location GoogleLoggingLogScope#location}
 
 ---
 
@@ -1083,7 +1083,7 @@ public string Parent { get; set; }
 
 The parent of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_logging_log_scope#parent GoogleLoggingLogScope#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_logging_log_scope#parent GoogleLoggingLogScope#parent}
 
 ---
 
@@ -1097,7 +1097,7 @@ public GoogleLoggingLogScopeTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_logging_log_scope#timeouts GoogleLoggingLogScope#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_logging_log_scope#timeouts GoogleLoggingLogScope#timeouts}
 
 ---
 
@@ -1119,9 +1119,9 @@ new GoogleLoggingLogScopeTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleLoggingLogScope.GoogleLoggingLogScopeTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_logging_log_scope#create GoogleLoggingLogScope#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleLoggingLogScope.GoogleLoggingLogScopeTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_logging_log_scope#delete GoogleLoggingLogScope#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleLoggingLogScope.GoogleLoggingLogScopeTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_logging_log_scope#update GoogleLoggingLogScope#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleLoggingLogScope.GoogleLoggingLogScopeTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_logging_log_scope#create GoogleLoggingLogScope#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleLoggingLogScope.GoogleLoggingLogScopeTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_logging_log_scope#delete GoogleLoggingLogScope#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleLoggingLogScope.GoogleLoggingLogScopeTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_logging_log_scope#update GoogleLoggingLogScope#update}. |
 
 ---
 
@@ -1133,7 +1133,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_logging_log_scope#create GoogleLoggingLogScope#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_logging_log_scope#create GoogleLoggingLogScope#create}.
 
 ---
 
@@ -1145,7 +1145,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_logging_log_scope#delete GoogleLoggingLogScope#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_logging_log_scope#delete GoogleLoggingLogScope#delete}.
 
 ---
 
@@ -1157,7 +1157,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_logging_log_scope#update GoogleLoggingLogScope#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_logging_log_scope#update GoogleLoggingLogScope#update}.
 
 ---
 

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_biglake_catalog
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_biglake_catalog
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleBiglakeCatalogConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_biglake_catalog#id GoogleBiglakeCatalog#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_biglake_catalog#id GoogleBiglakeCatalog#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,34 +17,34 @@ export interface GoogleBiglakeCatalogConfig extends cdktf.TerraformMetaArguments
   /**
   * The geographic location where the Catalog should reside.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_biglake_catalog#location GoogleBiglakeCatalog#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_biglake_catalog#location GoogleBiglakeCatalog#location}
   */
   readonly location: string;
   /**
   * The name of the Catalog. Format:
   * projects/{project_id_or_number}/locations/{locationId}/catalogs/{catalogId}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_biglake_catalog#name GoogleBiglakeCatalog#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_biglake_catalog#name GoogleBiglakeCatalog#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_biglake_catalog#project GoogleBiglakeCatalog#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_biglake_catalog#project GoogleBiglakeCatalog#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_biglake_catalog#timeouts GoogleBiglakeCatalog#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_biglake_catalog#timeouts GoogleBiglakeCatalog#timeouts}
   */
   readonly timeouts?: GoogleBiglakeCatalogTimeouts;
 }
 export interface GoogleBiglakeCatalogTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_biglake_catalog#create GoogleBiglakeCatalog#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_biglake_catalog#create GoogleBiglakeCatalog#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_biglake_catalog#delete GoogleBiglakeCatalog#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_biglake_catalog#delete GoogleBiglakeCatalog#delete}
   */
   readonly delete?: string;
 }
@@ -172,7 +167,7 @@ export class GoogleBiglakeCatalogTimeoutsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_biglake_catalog google_biglake_catalog}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_biglake_catalog google_biglake_catalog}
 */
 export class GoogleBiglakeCatalog extends cdktf.TerraformResource {
 
@@ -188,7 +183,7 @@ export class GoogleBiglakeCatalog extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleBiglakeCatalog resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleBiglakeCatalog to import
-  * @param importFromId The id of the existing GoogleBiglakeCatalog that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_biglake_catalog#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleBiglakeCatalog that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_biglake_catalog#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleBiglakeCatalog to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -200,7 +195,7 @@ export class GoogleBiglakeCatalog extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_biglake_catalog google_biglake_catalog} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_biglake_catalog google_biglake_catalog} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -211,7 +206,7 @@ export class GoogleBiglakeCatalog extends cdktf.TerraformResource {
       terraformResourceType: 'google_biglake_catalog',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.18.0',
+        providerVersion: '6.18.1',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
