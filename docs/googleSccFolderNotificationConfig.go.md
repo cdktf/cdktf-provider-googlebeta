@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSccFolderNotificationConfig.GoogleSccFolderNotificationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesccfoldernotificationconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesccfoldernotificationconfig"
 
 googlesccfoldernotificationconfig.NewGoogleSccFolderNotificationConfig(scope Construct, id *string, config GoogleSccFolderNotificationConfigConfig) GoogleSccFolderNotificationConfig
 ```
@@ -425,7 +425,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleSccFolderNotificationConfig.GoogleSccFolderNotificationConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesccfoldernotificationconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesccfoldernotificationconfig"
 
 googlesccfoldernotificationconfig.GoogleSccFolderNotificationConfig_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleSccFolderNotificationConfig.GoogleSccFolderNotificationConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesccfoldernotificationconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesccfoldernotificationconfig"
 
 googlesccfoldernotificationconfig.GoogleSccFolderNotificationConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ googlesccfoldernotificationconfig.GoogleSccFolderNotificationConfig_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleSccFolderNotificationConfig.GoogleSccFolderNotificationConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesccfoldernotificationconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesccfoldernotificationconfig"
 
 googlesccfoldernotificationconfig.GoogleSccFolderNotificationConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ googlesccfoldernotificationconfig.GoogleSccFolderNotificationConfig_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleSccFolderNotificationConfig.GoogleSccFolderNotificationConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesccfoldernotificationconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesccfoldernotificationconfig"
 
 googlesccfoldernotificationconfig.GoogleSccFolderNotificationConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -890,7 +890,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSccFolderNotificationConfig.GoogleSccFolderNotificationConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesccfoldernotificationconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesccfoldernotificationconfig"
 
 &googlesccfoldernotificationconfig.GoogleSccFolderNotificationConfigConfig {
 	Connection: interface{},
@@ -903,10 +903,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesccfolder
 	ConfigId: *string,
 	Folder: *string,
 	PubsubTopic: *string,
-	StreamingConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSccFolderNotificationConfig.GoogleSccFolderNotificationConfigStreamingConfig,
+	StreamingConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSccFolderNotificationConfig.GoogleSccFolderNotificationConfigStreamingConfig,
 	Description: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSccFolderNotificationConfig.GoogleSccFolderNotificationConfigTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSccFolderNotificationConfig.GoogleSccFolderNotificationConfigTimeouts,
 }
 ```
 
@@ -1105,7 +1105,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSccFolderNotificationConfig.GoogleSccFolderNotificationConfigStreamingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesccfoldernotificationconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesccfoldernotificationconfig"
 
 &googlesccfoldernotificationconfig.GoogleSccFolderNotificationConfigStreamingConfig {
 	Filter: *string,
@@ -1164,7 +1164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSccFolderNotificationConfig.GoogleSccFolderNotificationConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesccfoldernotificationconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesccfoldernotificationconfig"
 
 &googlesccfoldernotificationconfig.GoogleSccFolderNotificationConfigTimeouts {
 	Create: *string,
@@ -1226,7 +1226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSccFolderNotificationConfig.GoogleSccFolderNotificationConfigStreamingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesccfoldernotificationconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesccfoldernotificationconfig"
 
 googlesccfoldernotificationconfig.NewGoogleSccFolderNotificationConfigStreamingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSccFolderNotificationConfigStreamingConfigOutputReference
 ```
@@ -1497,7 +1497,7 @@ func InternalValue() GoogleSccFolderNotificationConfigStreamingConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSccFolderNotificationConfig.GoogleSccFolderNotificationConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesccfoldernotificationconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesccfoldernotificationconfig"
 
 googlesccfoldernotificationconfig.NewGoogleSccFolderNotificationConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSccFolderNotificationConfigTimeoutsOutputReference
 ```
