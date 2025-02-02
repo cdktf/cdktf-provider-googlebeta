@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFolderIamMember.GoogleFolderIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolderiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderiammember"
 
 googlefolderiammember.NewGoogleFolderIamMember(scope Construct, id *string, config GoogleFolderIamMemberConfig) GoogleFolderIamMember
 ```
@@ -405,7 +405,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleFolderIamMember.GoogleFolderIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolderiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderiammember"
 
 googlefolderiammember.GoogleFolderIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleFolderIamMember.GoogleFolderIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolderiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderiammember"
 
 googlefolderiammember.GoogleFolderIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ googlefolderiammember.GoogleFolderIamMember_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleFolderIamMember.GoogleFolderIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolderiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderiammember"
 
 googlefolderiammember.GoogleFolderIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ googlefolderiammember.GoogleFolderIamMember_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleFolderIamMember.GoogleFolderIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolderiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderiammember"
 
 googlefolderiammember.GoogleFolderIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -815,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFolderIamMember.GoogleFolderIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolderiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderiammember"
 
 &googlefolderiammember.GoogleFolderIamMemberCondition {
 	Expression: *string,
@@ -875,7 +875,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFolderIamMember.GoogleFolderIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolderiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderiammember"
 
 &googlefolderiammember.GoogleFolderIamMemberConfig {
 	Connection: interface{},
@@ -888,7 +888,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolde
 	Folder: *string,
 	Member: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleFolderIamMember.GoogleFolderIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleFolderIamMember.GoogleFolderIamMemberCondition,
 	Id: *string,
 }
 ```
@@ -1054,7 +1054,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFolderIamMember.GoogleFolderIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolderiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderiammember"
 
 googlefolderiammember.NewGoogleFolderIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleFolderIamMemberConditionOutputReference
 ```
