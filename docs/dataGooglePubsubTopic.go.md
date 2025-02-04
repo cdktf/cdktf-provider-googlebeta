@@ -4,12 +4,12 @@
 
 ### DataGooglePubsubTopic <a name="DataGooglePubsubTopic" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopic"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/data-sources/google_pubsub_topic google_pubsub_topic}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/data-sources/google_pubsub_topic google_pubsub_topic}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopic.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglepubsubtopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
 
 datagooglepubsubtopic.NewDataGooglePubsubTopic(scope Construct, id *string, config DataGooglePubsubTopicConfig) DataGooglePubsubTopic
 ```
@@ -290,7 +290,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopic.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglepubsubtopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
 
 datagooglepubsubtopic.DataGooglePubsubTopic_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopic.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglepubsubtopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
 
 datagooglepubsubtopic.DataGooglePubsubTopic_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datagooglepubsubtopic.DataGooglePubsubTopic_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopic.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglepubsubtopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
 
 datagooglepubsubtopic.DataGooglePubsubTopic_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datagooglepubsubtopic.DataGooglePubsubTopic_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopic.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglepubsubtopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
 
 datagooglepubsubtopic.DataGooglePubsubTopic_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataGooglePubsubTopic to i
 
 The id of the existing DataGooglePubsubTopic that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/data-sources/google_pubsub_topic#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/data-sources/google_pubsub_topic#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -711,7 +711,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglepubsubtopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
 
 &datagooglepubsubtopic.DataGooglePubsubTopicConfig {
 	Connection: interface{},
@@ -739,8 +739,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglep
 | <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicConfig.property.name">Name</a></code> | <code>*string</code> | Name of the topic. |
-| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/data-sources/google_pubsub_topic#id DataGooglePubsubTopic#id}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/data-sources/google_pubsub_topic#project DataGooglePubsubTopic#project}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/data-sources/google_pubsub_topic#id DataGooglePubsubTopic#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/data-sources/google_pubsub_topic#project DataGooglePubsubTopic#project}. |
 
 ---
 
@@ -824,7 +824,7 @@ Name *string
 
 Name of the topic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/data-sources/google_pubsub_topic#name DataGooglePubsubTopic#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/data-sources/google_pubsub_topic#name DataGooglePubsubTopic#name}
 
 ---
 
@@ -836,7 +836,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/data-sources/google_pubsub_topic#id DataGooglePubsubTopic#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/data-sources/google_pubsub_topic#id DataGooglePubsubTopic#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -851,7 +851,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/data-sources/google_pubsub_topic#project DataGooglePubsubTopic#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/data-sources/google_pubsub_topic#project DataGooglePubsubTopic#project}.
 
 ---
 
@@ -860,7 +860,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglepubsubtopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
 
 &datagooglepubsubtopic.DataGooglePubsubTopicIngestionDataSourceSettings {
 
@@ -873,9 +873,22 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglep
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsKinesis.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglepubsubtopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
 
 &datagooglepubsubtopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsKinesis {
+
+}
+```
+
+
+### DataGooglePubsubTopicIngestionDataSourceSettingsAwsMsk <a name="DataGooglePubsubTopicIngestionDataSourceSettingsAwsMsk" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMsk"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMsk.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
+
+&datagooglepubsubtopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMsk {
 
 }
 ```
@@ -886,7 +899,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglep
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAzureEventHubs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglepubsubtopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
 
 &datagooglepubsubtopic.DataGooglePubsubTopicIngestionDataSourceSettingsAzureEventHubs {
 
@@ -899,7 +912,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglep
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglepubsubtopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
 
 &datagooglepubsubtopic.DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorage {
 
@@ -912,7 +925,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglep
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageAvroFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglepubsubtopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
 
 &datagooglepubsubtopic.DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageAvroFormat {
 
@@ -925,7 +938,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglep
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsCloudStoragePubsubAvroFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglepubsubtopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
 
 &datagooglepubsubtopic.DataGooglePubsubTopicIngestionDataSourceSettingsCloudStoragePubsubAvroFormat {
 
@@ -938,9 +951,22 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglep
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageTextFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglepubsubtopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
 
 &datagooglepubsubtopic.DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageTextFormat {
+
+}
+```
+
+
+### DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloud <a name="DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloud" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloud"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloud.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
+
+&datagooglepubsubtopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloud {
 
 }
 ```
@@ -951,7 +977,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglep
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglepubsubtopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
 
 &datagooglepubsubtopic.DataGooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettings {
 
@@ -964,7 +990,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglep
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicMessageStoragePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglepubsubtopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
 
 &datagooglepubsubtopic.DataGooglePubsubTopicMessageStoragePolicy {
 
@@ -977,7 +1003,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglep
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglepubsubtopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
 
 &datagooglepubsubtopic.DataGooglePubsubTopicSchemaSettings {
 
@@ -992,7 +1018,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglep
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsKinesisList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglepubsubtopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
 
 datagooglepubsubtopic.NewDataGooglePubsubTopicIngestionDataSourceSettingsAwsKinesisList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGooglePubsubTopicIngestionDataSourceSettingsAwsKinesisList
 ```
@@ -1141,7 +1167,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsKinesisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglepubsubtopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
 
 datagooglepubsubtopic.NewDataGooglePubsubTopicIngestionDataSourceSettingsAwsKinesisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGooglePubsubTopicIngestionDataSourceSettingsAwsKinesisOutputReference
 ```
@@ -1447,12 +1473,472 @@ func InternalValue() DataGooglePubsubTopicIngestionDataSourceSettingsAwsKinesis
 ---
 
 
+### DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList <a name="DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
+
+datagooglepubsubtopic.NewDataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList.get"></a>
+
+```go
+func Get(index *f64) DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference <a name="DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
+
+datagooglepubsubtopic.NewDataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.property.awsRoleArn">AwsRoleArn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.property.clusterArn">ClusterArn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.property.gcpServiceAccount">GcpServiceAccount</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.property.topic">Topic</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMsk">DataGooglePubsubTopicIngestionDataSourceSettingsAwsMsk</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AwsRoleArn`<sup>Required</sup> <a name="AwsRoleArn" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.property.awsRoleArn"></a>
+
+```go
+func AwsRoleArn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ClusterArn`<sup>Required</sup> <a name="ClusterArn" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.property.clusterArn"></a>
+
+```go
+func ClusterArn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `GcpServiceAccount`<sup>Required</sup> <a name="GcpServiceAccount" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.property.gcpServiceAccount"></a>
+
+```go
+func GcpServiceAccount() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Topic`<sup>Required</sup> <a name="Topic" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.property.topic"></a>
+
+```go
+func Topic() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataGooglePubsubTopicIngestionDataSourceSettingsAwsMsk
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMsk">DataGooglePubsubTopicIngestionDataSourceSettingsAwsMsk</a>
+
+---
+
+
 ### DataGooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsList <a name="DataGooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsList" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglepubsubtopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
 
 datagooglepubsubtopic.NewDataGooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsList
 ```
@@ -1601,7 +2087,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglepubsubtopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
 
 datagooglepubsubtopic.NewDataGooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference
 ```
@@ -1945,7 +2431,7 @@ func InternalValue() DataGooglePubsubTopicIngestionDataSourceSettingsAzureEventH
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageAvroFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglepubsubtopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
 
 datagooglepubsubtopic.NewDataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageAvroFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageAvroFormatList
 ```
@@ -2094,7 +2580,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageAvroFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglepubsubtopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
 
 datagooglepubsubtopic.NewDataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageAvroFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageAvroFormatOutputReference
 ```
@@ -2361,7 +2847,7 @@ func InternalValue() DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorag
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglepubsubtopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
 
 datagooglepubsubtopic.NewDataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageList
 ```
@@ -2510,7 +2996,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglepubsubtopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
 
 datagooglepubsubtopic.NewDataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageOutputReference
 ```
@@ -2843,7 +3329,7 @@ func InternalValue() DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorag
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsCloudStoragePubsubAvroFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglepubsubtopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
 
 datagooglepubsubtopic.NewDataGooglePubsubTopicIngestionDataSourceSettingsCloudStoragePubsubAvroFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGooglePubsubTopicIngestionDataSourceSettingsCloudStoragePubsubAvroFormatList
 ```
@@ -2992,7 +3478,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsCloudStoragePubsubAvroFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglepubsubtopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
 
 datagooglepubsubtopic.NewDataGooglePubsubTopicIngestionDataSourceSettingsCloudStoragePubsubAvroFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGooglePubsubTopicIngestionDataSourceSettingsCloudStoragePubsubAvroFormatOutputReference
 ```
@@ -3259,7 +3745,7 @@ func InternalValue() DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorag
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageTextFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglepubsubtopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
 
 datagooglepubsubtopic.NewDataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageTextFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageTextFormatList
 ```
@@ -3408,7 +3894,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageTextFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglepubsubtopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
 
 datagooglepubsubtopic.NewDataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageTextFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageTextFormatOutputReference
 ```
@@ -3681,12 +4167,483 @@ func InternalValue() DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorag
 ---
 
 
+### DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList <a name="DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
+
+datagooglepubsubtopic.NewDataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList.get"></a>
+
+```go
+func Get(index *f64) DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference <a name="DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
+
+datagooglepubsubtopic.NewDataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.property.bootstrapServer">BootstrapServer</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.property.clusterId">ClusterId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.property.gcpServiceAccount">GcpServiceAccount</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.property.identityPoolId">IdentityPoolId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.property.topic">Topic</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloud">DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloud</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `BootstrapServer`<sup>Required</sup> <a name="BootstrapServer" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.property.bootstrapServer"></a>
+
+```go
+func BootstrapServer() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ClusterId`<sup>Required</sup> <a name="ClusterId" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.property.clusterId"></a>
+
+```go
+func ClusterId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `GcpServiceAccount`<sup>Required</sup> <a name="GcpServiceAccount" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.property.gcpServiceAccount"></a>
+
+```go
+func GcpServiceAccount() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `IdentityPoolId`<sup>Required</sup> <a name="IdentityPoolId" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.property.identityPoolId"></a>
+
+```go
+func IdentityPoolId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Topic`<sup>Required</sup> <a name="Topic" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.property.topic"></a>
+
+```go
+func Topic() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloud
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloud">DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloud</a>
+
+---
+
+
 ### DataGooglePubsubTopicIngestionDataSourceSettingsList <a name="DataGooglePubsubTopicIngestionDataSourceSettingsList" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglepubsubtopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
 
 datagooglepubsubtopic.NewDataGooglePubsubTopicIngestionDataSourceSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGooglePubsubTopicIngestionDataSourceSettingsList
 ```
@@ -3835,7 +4792,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglepubsubtopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
 
 datagooglepubsubtopic.NewDataGooglePubsubTopicIngestionDataSourceSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGooglePubsubTopicIngestionDataSourceSettingsOutputReference
 ```
@@ -4059,8 +5016,10 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsOutputReference.property.awsKinesis">AwsKinesis</a></code> | <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsKinesisList">DataGooglePubsubTopicIngestionDataSourceSettingsAwsKinesisList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsOutputReference.property.awsMsk">AwsMsk</a></code> | <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList">DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsOutputReference.property.azureEventHubs">AzureEventHubs</a></code> | <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsList">DataGooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsOutputReference.property.cloudStorage">CloudStorage</a></code> | <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageList">DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsOutputReference.property.confluentCloud">ConfluentCloud</a></code> | <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList">DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsOutputReference.property.platformLogsSettings">PlatformLogsSettings</a></code> | <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsList">DataGooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettings">DataGooglePubsubTopicIngestionDataSourceSettings</a></code> | *No description.* |
 
@@ -4100,6 +5059,16 @@ func AwsKinesis() DataGooglePubsubTopicIngestionDataSourceSettingsAwsKinesisList
 
 ---
 
+##### `AwsMsk`<sup>Required</sup> <a name="AwsMsk" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsOutputReference.property.awsMsk"></a>
+
+```go
+func AwsMsk() DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList">DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList</a>
+
+---
+
 ##### `AzureEventHubs`<sup>Required</sup> <a name="AzureEventHubs" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsOutputReference.property.azureEventHubs"></a>
 
 ```go
@@ -4117,6 +5086,16 @@ func CloudStorage() DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorage
 ```
 
 - *Type:* <a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageList">DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageList</a>
+
+---
+
+##### `ConfluentCloud`<sup>Required</sup> <a name="ConfluentCloud" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsOutputReference.property.confluentCloud"></a>
+
+```go
+func ConfluentCloud() DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList">DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudList</a>
 
 ---
 
@@ -4146,7 +5125,7 @@ func InternalValue() DataGooglePubsubTopicIngestionDataSourceSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglepubsubtopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
 
 datagooglepubsubtopic.NewDataGooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsList
 ```
@@ -4295,7 +5274,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglepubsubtopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
 
 datagooglepubsubtopic.NewDataGooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsOutputReference
 ```
@@ -4573,7 +5552,7 @@ func InternalValue() DataGooglePubsubTopicIngestionDataSourceSettingsPlatformLog
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicMessageStoragePolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglepubsubtopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
 
 datagooglepubsubtopic.NewDataGooglePubsubTopicMessageStoragePolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGooglePubsubTopicMessageStoragePolicyList
 ```
@@ -4722,7 +5701,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicMessageStoragePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglepubsubtopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
 
 datagooglepubsubtopic.NewDataGooglePubsubTopicMessageStoragePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGooglePubsubTopicMessageStoragePolicyOutputReference
 ```
@@ -5011,7 +5990,7 @@ func InternalValue() DataGooglePubsubTopicMessageStoragePolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglepubsubtopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
 
 datagooglepubsubtopic.NewDataGooglePubsubTopicSchemaSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGooglePubsubTopicSchemaSettingsList
 ```
@@ -5160,7 +6139,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglepubsubtopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubtopic"
 
 datagooglepubsubtopic.NewDataGooglePubsubTopicSchemaSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGooglePubsubTopicSchemaSettingsOutputReference
 ```

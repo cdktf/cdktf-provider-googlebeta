@@ -4,7 +4,7 @@
 
 ### GoogleColabRuntimeTemplateIamBinding <a name="GoogleColabRuntimeTemplateIamBinding" id="@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding google_colab_runtime_template_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding google_colab_runtime_template_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBinding.Initializer"></a>
 
@@ -42,13 +42,13 @@ googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBinding(
 | <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBinding.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBinding.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBinding.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBinding.Initializer.parameter.members">members</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding#members GoogleColabRuntimeTemplateIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBinding.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding#role GoogleColabRuntimeTemplateIamBinding#role}. |
-| <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBinding.Initializer.parameter.runtimeTemplate">runtime_template</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding#runtime_template GoogleColabRuntimeTemplateIamBinding#runtime_template}. |
+| <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBinding.Initializer.parameter.members">members</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding#members GoogleColabRuntimeTemplateIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBinding.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding#role GoogleColabRuntimeTemplateIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBinding.Initializer.parameter.runtimeTemplate">runtime_template</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding#runtime_template GoogleColabRuntimeTemplateIamBinding#runtime_template}. |
 | <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBinding.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBindingCondition">GoogleColabRuntimeTemplateIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBinding.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding#id GoogleColabRuntimeTemplateIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBinding.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding#location GoogleColabRuntimeTemplateIamBinding#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBinding.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding#project GoogleColabRuntimeTemplateIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBinding.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding#id GoogleColabRuntimeTemplateIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBinding.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding#location GoogleColabRuntimeTemplateIamBinding#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBinding.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding#project GoogleColabRuntimeTemplateIamBinding#project}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding#members GoogleColabRuntimeTemplateIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding#members GoogleColabRuntimeTemplateIamBinding#members}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding#role GoogleColabRuntimeTemplateIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding#role GoogleColabRuntimeTemplateIamBinding#role}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding#runtime_template GoogleColabRuntimeTemplateIamBinding#runtime_template}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding#runtime_template GoogleColabRuntimeTemplateIamBinding#runtime_template}.
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding#condition GoogleColabRuntimeTemplateIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding#condition GoogleColabRuntimeTemplateIamBinding#condition}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding#id GoogleColabRuntimeTemplateIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding#id GoogleColabRuntimeTemplateIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -161,7 +161,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding#location GoogleColabRuntimeTemplateIamBinding#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding#location GoogleColabRuntimeTemplateIamBinding#location}.
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding#project GoogleColabRuntimeTemplateIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding#project GoogleColabRuntimeTemplateIamBinding#project}.
 
 ---
 
@@ -547,7 +547,7 @@ def put_condition(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding#expression GoogleColabRuntimeTemplateIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding#expression GoogleColabRuntimeTemplateIamBinding#expression}.
 
 ---
 
@@ -555,7 +555,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding#title GoogleColabRuntimeTemplateIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding#title GoogleColabRuntimeTemplateIamBinding#title}.
 
 ---
 
@@ -563,7 +563,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding#description GoogleColabRuntimeTemplateIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding#description GoogleColabRuntimeTemplateIamBinding#description}.
 
 ---
 
@@ -705,7 +705,7 @@ The construct id used in the generated config for the GoogleColabRuntimeTemplate
 
 The id of the existing GoogleColabRuntimeTemplateIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1083,9 +1083,9 @@ googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBindingConditi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBindingCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding#expression GoogleColabRuntimeTemplateIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBindingCondition.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding#title GoogleColabRuntimeTemplateIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBindingCondition.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding#description GoogleColabRuntimeTemplateIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBindingCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding#expression GoogleColabRuntimeTemplateIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBindingCondition.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding#title GoogleColabRuntimeTemplateIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBindingCondition.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding#description GoogleColabRuntimeTemplateIamBinding#description}. |
 
 ---
 
@@ -1097,7 +1097,7 @@ expression: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding#expression GoogleColabRuntimeTemplateIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding#expression GoogleColabRuntimeTemplateIamBinding#expression}.
 
 ---
 
@@ -1109,7 +1109,7 @@ title: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding#title GoogleColabRuntimeTemplateIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding#title GoogleColabRuntimeTemplateIamBinding#title}.
 
 ---
 
@@ -1121,7 +1121,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding#description GoogleColabRuntimeTemplateIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding#description GoogleColabRuntimeTemplateIamBinding#description}.
 
 ---
 
@@ -1161,13 +1161,13 @@ googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBindingConfig(
 | <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBindingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBindingConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBindingConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBindingConfig.property.members">members</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding#members GoogleColabRuntimeTemplateIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBindingConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding#role GoogleColabRuntimeTemplateIamBinding#role}. |
-| <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBindingConfig.property.runtimeTemplate">runtime_template</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding#runtime_template GoogleColabRuntimeTemplateIamBinding#runtime_template}. |
+| <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBindingConfig.property.members">members</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding#members GoogleColabRuntimeTemplateIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBindingConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding#role GoogleColabRuntimeTemplateIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBindingConfig.property.runtimeTemplate">runtime_template</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding#runtime_template GoogleColabRuntimeTemplateIamBinding#runtime_template}. |
 | <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBindingConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBindingCondition">GoogleColabRuntimeTemplateIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBindingConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding#id GoogleColabRuntimeTemplateIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBindingConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding#location GoogleColabRuntimeTemplateIamBinding#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBindingConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding#project GoogleColabRuntimeTemplateIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBindingConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding#id GoogleColabRuntimeTemplateIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBindingConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding#location GoogleColabRuntimeTemplateIamBinding#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleColabRuntimeTemplateIamBinding.GoogleColabRuntimeTemplateIamBindingConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding#project GoogleColabRuntimeTemplateIamBinding#project}. |
 
 ---
 
@@ -1249,7 +1249,7 @@ members: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding#members GoogleColabRuntimeTemplateIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding#members GoogleColabRuntimeTemplateIamBinding#members}.
 
 ---
 
@@ -1261,7 +1261,7 @@ role: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding#role GoogleColabRuntimeTemplateIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding#role GoogleColabRuntimeTemplateIamBinding#role}.
 
 ---
 
@@ -1273,7 +1273,7 @@ runtime_template: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding#runtime_template GoogleColabRuntimeTemplateIamBinding#runtime_template}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding#runtime_template GoogleColabRuntimeTemplateIamBinding#runtime_template}.
 
 ---
 
@@ -1287,7 +1287,7 @@ condition: GoogleColabRuntimeTemplateIamBindingCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding#condition GoogleColabRuntimeTemplateIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding#condition GoogleColabRuntimeTemplateIamBinding#condition}
 
 ---
 
@@ -1299,7 +1299,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding#id GoogleColabRuntimeTemplateIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding#id GoogleColabRuntimeTemplateIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1314,7 +1314,7 @@ location: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding#location GoogleColabRuntimeTemplateIamBinding#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding#location GoogleColabRuntimeTemplateIamBinding#location}.
 
 ---
 
@@ -1326,7 +1326,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_colab_runtime_template_iam_binding#project GoogleColabRuntimeTemplateIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template_iam_binding#project GoogleColabRuntimeTemplateIamBinding#project}.
 
 ---
 

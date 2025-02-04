@@ -4,7 +4,7 @@
 
 ### GoogleDataplexZone <a name="GoogleDataplexZone" id="@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZone"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_zone google_dataplex_zone}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_zone google_dataplex_zone}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZone.Initializer"></a>
 
@@ -548,7 +548,7 @@ The construct id used in the generated config for the GoogleDataplexZone to impo
 
 The id of the existing GoogleDataplexZone that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_zone#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_zone#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1124,7 +1124,7 @@ const googleDataplexZoneConfig: googleDataplexZone.GoogleDataplexZoneConfig = { 
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneConfig.property.type">type</a></code> | <code>string</code> | Required. Immutable. The type of the zone. Possible values: TYPE_UNSPECIFIED, RAW, CURATED. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneConfig.property.description">description</a></code> | <code>string</code> | Optional. Description of the zone. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneConfig.property.displayName">displayName</a></code> | <code>string</code> | Optional. User friendly display name. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_zone#id GoogleDataplexZone#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_zone#id GoogleDataplexZone#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Optional. User defined labels for the zone. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneConfig.property.project">project</a></code> | <code>string</code> | The project for the resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneTimeouts">GoogleDataplexZoneTimeouts</a></code> | timeouts block. |
@@ -1211,7 +1211,7 @@ public readonly discoverySpec: GoogleDataplexZoneDiscoverySpec;
 
 discovery_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_zone#discovery_spec GoogleDataplexZone#discovery_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_zone#discovery_spec GoogleDataplexZone#discovery_spec}
 
 ---
 
@@ -1225,7 +1225,7 @@ public readonly lake: string;
 
 The lake for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_zone#lake GoogleDataplexZone#lake}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_zone#lake GoogleDataplexZone#lake}
 
 ---
 
@@ -1239,7 +1239,7 @@ public readonly location: string;
 
 The location for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_zone#location GoogleDataplexZone#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_zone#location GoogleDataplexZone#location}
 
 ---
 
@@ -1253,7 +1253,7 @@ public readonly name: string;
 
 The name of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_zone#name GoogleDataplexZone#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_zone#name GoogleDataplexZone#name}
 
 ---
 
@@ -1267,7 +1267,7 @@ public readonly resourceSpec: GoogleDataplexZoneResourceSpec;
 
 resource_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_zone#resource_spec GoogleDataplexZone#resource_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_zone#resource_spec GoogleDataplexZone#resource_spec}
 
 ---
 
@@ -1281,7 +1281,7 @@ public readonly type: string;
 
 Required. Immutable. The type of the zone. Possible values: TYPE_UNSPECIFIED, RAW, CURATED.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_zone#type GoogleDataplexZone#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_zone#type GoogleDataplexZone#type}
 
 ---
 
@@ -1295,7 +1295,7 @@ public readonly description: string;
 
 Optional. Description of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_zone#description GoogleDataplexZone#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_zone#description GoogleDataplexZone#description}
 
 ---
 
@@ -1309,7 +1309,7 @@ public readonly displayName: string;
 
 Optional. User friendly display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_zone#display_name GoogleDataplexZone#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_zone#display_name GoogleDataplexZone#display_name}
 
 ---
 
@@ -1321,7 +1321,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_zone#id GoogleDataplexZone#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_zone#id GoogleDataplexZone#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1341,7 +1341,7 @@ Optional. User defined labels for the zone.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field `effective_labels` for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_zone#labels GoogleDataplexZone#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_zone#labels GoogleDataplexZone#labels}
 
 ---
 
@@ -1355,7 +1355,7 @@ public readonly project: string;
 
 The project for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_zone#project GoogleDataplexZone#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_zone#project GoogleDataplexZone#project}
 
 ---
 
@@ -1369,7 +1369,7 @@ public readonly timeouts: GoogleDataplexZoneTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_zone#timeouts GoogleDataplexZone#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_zone#timeouts GoogleDataplexZone#timeouts}
 
 ---
 
@@ -1406,7 +1406,7 @@ public readonly enabled: boolean | IResolvable;
 
 Required. Whether discovery is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_zone#enabled GoogleDataplexZone#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_zone#enabled GoogleDataplexZone#enabled}
 
 ---
 
@@ -1420,7 +1420,7 @@ public readonly csvOptions: GoogleDataplexZoneDiscoverySpecCsvOptions;
 
 csv_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_zone#csv_options GoogleDataplexZone#csv_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_zone#csv_options GoogleDataplexZone#csv_options}
 
 ---
 
@@ -1436,7 +1436,7 @@ Optional.
 
 The list of patterns to apply for selecting data to exclude during discovery. For Cloud Storage bucket assets, these are interpreted as glob patterns used to match object names. For BigQuery dataset assets, these are interpreted as patterns to match table names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_zone#exclude_patterns GoogleDataplexZone#exclude_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_zone#exclude_patterns GoogleDataplexZone#exclude_patterns}
 
 ---
 
@@ -1452,7 +1452,7 @@ Optional.
 
 The list of patterns to apply for selecting data to include during discovery if only a subset of the data should considered. For Cloud Storage bucket assets, these are interpreted as glob patterns used to match object names. For BigQuery dataset assets, these are interpreted as patterns to match table names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_zone#include_patterns GoogleDataplexZone#include_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_zone#include_patterns GoogleDataplexZone#include_patterns}
 
 ---
 
@@ -1466,7 +1466,7 @@ public readonly jsonOptions: GoogleDataplexZoneDiscoverySpecJsonOptions;
 
 json_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_zone#json_options GoogleDataplexZone#json_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_zone#json_options GoogleDataplexZone#json_options}
 
 ---
 
@@ -1482,7 +1482,7 @@ Optional.
 
 Cron schedule (https://en.wikipedia.org/wiki/Cron) for running discovery periodically. Successive discovery runs must be scheduled at least 60 minutes apart. The default value is to run discovery every 60 minutes. To explicitly set a timezone to the cron tab, apply a prefix in the cron tab: "CRON_TZ=${IANA_TIME_ZONE}" or TZ=${IANA_TIME_ZONE}". The ${IANA_TIME_ZONE} may only be a valid string from IANA time zone database. For example, "CRON_TZ=America/New_York 1 * * * *", or "TZ=America/New_York 1 * * * *".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_zone#schedule GoogleDataplexZone#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_zone#schedule GoogleDataplexZone#schedule}
 
 ---
 
@@ -1517,7 +1517,7 @@ public readonly delimiter: string;
 
 Optional. The delimiter being used to separate values. This defaults to ','.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_zone#delimiter GoogleDataplexZone#delimiter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_zone#delimiter GoogleDataplexZone#delimiter}
 
 ---
 
@@ -1533,7 +1533,7 @@ Optional.
 
 Whether to disable the inference of data type for CSV data. If true, all columns will be registered as strings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_zone#disable_type_inference GoogleDataplexZone#disable_type_inference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_zone#disable_type_inference GoogleDataplexZone#disable_type_inference}
 
 ---
 
@@ -1547,7 +1547,7 @@ public readonly encoding: string;
 
 Optional. The character encoding of the data. The default is UTF-8.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_zone#encoding GoogleDataplexZone#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_zone#encoding GoogleDataplexZone#encoding}
 
 ---
 
@@ -1561,7 +1561,7 @@ public readonly headerRows: number;
 
 Optional. The number of rows to interpret as header rows that should be skipped when reading data rows.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_zone#header_rows GoogleDataplexZone#header_rows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_zone#header_rows GoogleDataplexZone#header_rows}
 
 ---
 
@@ -1596,7 +1596,7 @@ Optional.
 
 Whether to disable the inference of data type for Json data. If true, all columns will be registered as their primitive types (strings, number or boolean).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_zone#disable_type_inference GoogleDataplexZone#disable_type_inference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_zone#disable_type_inference GoogleDataplexZone#disable_type_inference}
 
 ---
 
@@ -1610,7 +1610,7 @@ public readonly encoding: string;
 
 Optional. The character encoding of the data. The default is UTF-8.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_zone#encoding GoogleDataplexZone#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_zone#encoding GoogleDataplexZone#encoding}
 
 ---
 
@@ -1644,7 +1644,7 @@ Required.
 
 Immutable. The location type of the resources that are allowed to be attached to the assets within this zone. Possible values: LOCATION_TYPE_UNSPECIFIED, SINGLE_REGION, MULTI_REGION
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_zone#location_type GoogleDataplexZone#location_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_zone#location_type GoogleDataplexZone#location_type}
 
 ---
 
@@ -1662,9 +1662,9 @@ const googleDataplexZoneTimeouts: googleDataplexZone.GoogleDataplexZoneTimeouts 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_zone#create GoogleDataplexZone#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_zone#delete GoogleDataplexZone#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_zone#update GoogleDataplexZone#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_zone#create GoogleDataplexZone#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_zone#delete GoogleDataplexZone#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_zone#update GoogleDataplexZone#update}. |
 
 ---
 
@@ -1676,7 +1676,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_zone#create GoogleDataplexZone#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_zone#create GoogleDataplexZone#create}.
 
 ---
 
@@ -1688,7 +1688,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_zone#delete GoogleDataplexZone#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_zone#delete GoogleDataplexZone#delete}.
 
 ---
 
@@ -1700,7 +1700,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_zone#update GoogleDataplexZone#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_zone#update GoogleDataplexZone#update}.
 
 ---
 

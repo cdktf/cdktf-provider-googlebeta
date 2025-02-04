@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture_deployment
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture_deployment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface GoogleSecurityposturePostureDeploymentConfig extends cdktf.Terr
   /**
   * Description of the posture deployment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture_deployment#description GoogleSecurityposturePostureDeployment#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture_deployment#description GoogleSecurityposturePostureDeployment#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture_deployment#id GoogleSecurityposturePostureDeployment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture_deployment#id GoogleSecurityposturePostureDeployment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,32 +23,32 @@ export interface GoogleSecurityposturePostureDeploymentConfig extends cdktf.Terr
   /**
   * The location of the resource, eg. global'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture_deployment#location GoogleSecurityposturePostureDeployment#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture_deployment#location GoogleSecurityposturePostureDeployment#location}
   */
   readonly location: string;
   /**
   * The parent of the resource, an organization. Format should be 'organizations/{organization_id}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture_deployment#parent GoogleSecurityposturePostureDeployment#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture_deployment#parent GoogleSecurityposturePostureDeployment#parent}
   */
   readonly parent: string;
   /**
   * ID of the posture deployment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture_deployment#posture_deployment_id GoogleSecurityposturePostureDeployment#posture_deployment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture_deployment#posture_deployment_id GoogleSecurityposturePostureDeployment#posture_deployment_id}
   */
   readonly postureDeploymentId: string;
   /**
   * Relative name of the posture which needs to be deployed. It should be in the format:
   *   organizations/{organization_id}/locations/{location}/postures/{posture_id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture_deployment#posture_id GoogleSecurityposturePostureDeployment#posture_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture_deployment#posture_id GoogleSecurityposturePostureDeployment#posture_id}
   */
   readonly postureId: string;
   /**
   * Revision_id the posture which needs to be deployed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture_deployment#posture_revision_id GoogleSecurityposturePostureDeployment#posture_revision_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture_deployment#posture_revision_id GoogleSecurityposturePostureDeployment#posture_revision_id}
   */
   readonly postureRevisionId: string;
   /**
@@ -62,27 +57,27 @@ export interface GoogleSecurityposturePostureDeploymentConfig extends cdktf.Terr
   * folders/{folder_number},
   * organizations/{organization_id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture_deployment#target_resource GoogleSecurityposturePostureDeployment#target_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture_deployment#target_resource GoogleSecurityposturePostureDeployment#target_resource}
   */
   readonly targetResource: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture_deployment#timeouts GoogleSecurityposturePostureDeployment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture_deployment#timeouts GoogleSecurityposturePostureDeployment#timeouts}
   */
   readonly timeouts?: GoogleSecurityposturePostureDeploymentTimeouts;
 }
 export interface GoogleSecurityposturePostureDeploymentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture_deployment#create GoogleSecurityposturePostureDeployment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture_deployment#create GoogleSecurityposturePostureDeployment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture_deployment#delete GoogleSecurityposturePostureDeployment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture_deployment#delete GoogleSecurityposturePostureDeployment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture_deployment#update GoogleSecurityposturePostureDeployment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture_deployment#update GoogleSecurityposturePostureDeployment#update}
   */
   readonly update?: string;
 }
@@ -234,7 +229,7 @@ export class GoogleSecurityposturePostureDeploymentTimeoutsOutputReference exten
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture_deployment google_securityposture_posture_deployment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture_deployment google_securityposture_posture_deployment}
 */
 export class GoogleSecurityposturePostureDeployment extends cdktf.TerraformResource {
 
@@ -250,7 +245,7 @@ export class GoogleSecurityposturePostureDeployment extends cdktf.TerraformResou
   * Generates CDKTF code for importing a GoogleSecurityposturePostureDeployment resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleSecurityposturePostureDeployment to import
-  * @param importFromId The id of the existing GoogleSecurityposturePostureDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture_deployment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleSecurityposturePostureDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture_deployment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleSecurityposturePostureDeployment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -262,7 +257,7 @@ export class GoogleSecurityposturePostureDeployment extends cdktf.TerraformResou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture_deployment google_securityposture_posture_deployment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture_deployment google_securityposture_posture_deployment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -273,7 +268,7 @@ export class GoogleSecurityposturePostureDeployment extends cdktf.TerraformResou
       terraformResourceType: 'google_securityposture_posture_deployment',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.18.1',
+        providerVersion: '6.19.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

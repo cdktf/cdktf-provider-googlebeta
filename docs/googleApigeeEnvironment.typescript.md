@@ -4,7 +4,7 @@
 
 ### GoogleApigeeEnvironment <a name="GoogleApigeeEnvironment" id="@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apigee_environment google_apigee_environment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apigee_environment google_apigee_environment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironment.Initializer"></a>
 
@@ -576,7 +576,7 @@ The construct id used in the generated config for the GoogleApigeeEnvironment to
 
 The id of the existing GoogleApigeeEnvironment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apigee_environment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apigee_environment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1063,7 +1063,7 @@ const googleApigeeEnvironmentConfig: googleApigeeEnvironment.GoogleApigeeEnviron
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironmentConfig.property.description">description</a></code> | <code>string</code> | Description of the environment. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironmentConfig.property.displayName">displayName</a></code> | <code>string</code> | Display name of the environment. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironmentConfig.property.forwardProxyUri">forwardProxyUri</a></code> | <code>string</code> | Optional. |
-| <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironmentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apigee_environment#id GoogleApigeeEnvironment#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironmentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apigee_environment#id GoogleApigeeEnvironment#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironmentConfig.property.nodeConfig">nodeConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironmentNodeConfig">GoogleApigeeEnvironmentNodeConfig</a></code> | node_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironmentConfig.property.properties">properties</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironmentProperties">GoogleApigeeEnvironmentProperties</a></code> | properties block. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironmentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironmentTimeouts">GoogleApigeeEnvironmentTimeouts</a></code> | timeouts block. |
@@ -1151,7 +1151,7 @@ public readonly name: string;
 
 The resource ID of the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apigee_environment#name GoogleApigeeEnvironment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apigee_environment#name GoogleApigeeEnvironment#name}
 
 ---
 
@@ -1165,7 +1165,7 @@ public readonly orgId: string;
 
 The Apigee Organization associated with the Apigee environment, in the format 'organizations/{{org_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apigee_environment#org_id GoogleApigeeEnvironment#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apigee_environment#org_id GoogleApigeeEnvironment#org_id}
 
 ---
 
@@ -1182,7 +1182,7 @@ Optional.
 API Proxy type supported by the environment. The type can be set when creating
 the Environment and cannot be changed. Possible values: ["API_PROXY_TYPE_UNSPECIFIED", "PROGRAMMABLE", "CONFIGURABLE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apigee_environment#api_proxy_type GoogleApigeeEnvironment#api_proxy_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apigee_environment#api_proxy_type GoogleApigeeEnvironment#api_proxy_type}
 
 ---
 
@@ -1204,7 +1204,7 @@ Managing the deployment of API proxy or shared flow revisions;
 Creating, updating, or deleting resource files;
 Creating, updating, or deleting target servers. Possible values: ["DEPLOYMENT_TYPE_UNSPECIFIED", "PROXY", "ARCHIVE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apigee_environment#deployment_type GoogleApigeeEnvironment#deployment_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apigee_environment#deployment_type GoogleApigeeEnvironment#deployment_type}
 
 ---
 
@@ -1218,7 +1218,7 @@ public readonly description: string;
 
 Description of the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apigee_environment#description GoogleApigeeEnvironment#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apigee_environment#description GoogleApigeeEnvironment#description}
 
 ---
 
@@ -1232,7 +1232,7 @@ public readonly displayName: string;
 
 Display name of the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apigee_environment#display_name GoogleApigeeEnvironment#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apigee_environment#display_name GoogleApigeeEnvironment#display_name}
 
 ---
 
@@ -1248,7 +1248,7 @@ Optional.
 
 URI of the forward proxy to be applied to the runtime instances in this environment. Must be in the format of {scheme}://{hostname}:{port}. Note that the scheme must be one of "http" or "https", and the port must be supplied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apigee_environment#forward_proxy_uri GoogleApigeeEnvironment#forward_proxy_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apigee_environment#forward_proxy_uri GoogleApigeeEnvironment#forward_proxy_uri}
 
 ---
 
@@ -1260,7 +1260,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apigee_environment#id GoogleApigeeEnvironment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apigee_environment#id GoogleApigeeEnvironment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1277,7 +1277,7 @@ public readonly nodeConfig: GoogleApigeeEnvironmentNodeConfig;
 
 node_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apigee_environment#node_config GoogleApigeeEnvironment#node_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apigee_environment#node_config GoogleApigeeEnvironment#node_config}
 
 ---
 
@@ -1291,7 +1291,7 @@ public readonly properties: GoogleApigeeEnvironmentProperties;
 
 properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apigee_environment#properties GoogleApigeeEnvironment#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apigee_environment#properties GoogleApigeeEnvironment#properties}
 
 ---
 
@@ -1305,7 +1305,7 @@ public readonly timeouts: GoogleApigeeEnvironmentTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apigee_environment#timeouts GoogleApigeeEnvironment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apigee_environment#timeouts GoogleApigeeEnvironment#timeouts}
 
 ---
 
@@ -1324,7 +1324,7 @@ limited by capability and capacity. Refer to Apigee's public documentation
 to understand about each of these types in details.
 An Apigee org can support heterogeneous Environments. Possible values: ["ENVIRONMENT_TYPE_UNSPECIFIED", "BASE", "INTERMEDIATE", "COMPREHENSIVE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apigee_environment#type GoogleApigeeEnvironment#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apigee_environment#type GoogleApigeeEnvironment#type}
 
 ---
 
@@ -1360,7 +1360,7 @@ The maximum total number of gateway nodes that the is reserved for all instances
 If not specified, the default is determined by the
 recommended maximum number of nodes for that gateway.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apigee_environment#max_node_count GoogleApigeeEnvironment#max_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apigee_environment#max_node_count GoogleApigeeEnvironment#max_node_count}
 
 ---
 
@@ -1377,7 +1377,7 @@ The minimum total number of gateway nodes that the is reserved for all instances
 If not specified, the default is determined by the
 recommended minimum number of nodes for that gateway.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apigee_environment#min_node_count GoogleApigeeEnvironment#min_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apigee_environment#min_node_count GoogleApigeeEnvironment#min_node_count}
 
 ---
 
@@ -1409,7 +1409,7 @@ public readonly property: IResolvable | GoogleApigeeEnvironmentPropertiesPropert
 
 property block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apigee_environment#property GoogleApigeeEnvironment#property}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apigee_environment#property GoogleApigeeEnvironment#property}
 
 ---
 
@@ -1442,7 +1442,7 @@ public readonly name: string;
 
 The property key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apigee_environment#name GoogleApigeeEnvironment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apigee_environment#name GoogleApigeeEnvironment#name}
 
 ---
 
@@ -1456,7 +1456,7 @@ public readonly value: string;
 
 The property value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apigee_environment#value GoogleApigeeEnvironment#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apigee_environment#value GoogleApigeeEnvironment#value}
 
 ---
 
@@ -1474,9 +1474,9 @@ const googleApigeeEnvironmentTimeouts: googleApigeeEnvironment.GoogleApigeeEnvir
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironmentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apigee_environment#create GoogleApigeeEnvironment#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironmentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apigee_environment#delete GoogleApigeeEnvironment#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironmentTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apigee_environment#update GoogleApigeeEnvironment#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironmentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apigee_environment#create GoogleApigeeEnvironment#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironmentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apigee_environment#delete GoogleApigeeEnvironment#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironmentTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apigee_environment#update GoogleApigeeEnvironment#update}. |
 
 ---
 
@@ -1488,7 +1488,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apigee_environment#create GoogleApigeeEnvironment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apigee_environment#create GoogleApigeeEnvironment#create}.
 
 ---
 
@@ -1500,7 +1500,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apigee_environment#delete GoogleApigeeEnvironment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apigee_environment#delete GoogleApigeeEnvironment#delete}.
 
 ---
 
@@ -1512,7 +1512,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apigee_environment#update GoogleApigeeEnvironment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apigee_environment#update GoogleApigeeEnvironment#update}.
 
 ---
 

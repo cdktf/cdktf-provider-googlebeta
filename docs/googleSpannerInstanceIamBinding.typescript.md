@@ -4,7 +4,7 @@
 
 ### GoogleSpannerInstanceIamBinding <a name="GoogleSpannerInstanceIamBinding" id="@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_iam_binding google_spanner_instance_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_spanner_instance_iam_binding google_spanner_instance_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBinding.Initializer"></a>
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the GoogleSpannerInstanceIamBi
 
 The id of the existing GoogleSpannerInstanceIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_spanner_instance_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -853,9 +853,9 @@ const googleSpannerInstanceIamBindingCondition: googleSpannerInstanceIamBinding.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_iam_binding#expression GoogleSpannerInstanceIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_iam_binding#title GoogleSpannerInstanceIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_iam_binding#description GoogleSpannerInstanceIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_spanner_instance_iam_binding#expression GoogleSpannerInstanceIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_spanner_instance_iam_binding#title GoogleSpannerInstanceIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_spanner_instance_iam_binding#description GoogleSpannerInstanceIamBinding#description}. |
 
 ---
 
@@ -867,7 +867,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_iam_binding#expression GoogleSpannerInstanceIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_spanner_instance_iam_binding#expression GoogleSpannerInstanceIamBinding#expression}.
 
 ---
 
@@ -879,7 +879,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_iam_binding#title GoogleSpannerInstanceIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_spanner_instance_iam_binding#title GoogleSpannerInstanceIamBinding#title}.
 
 ---
 
@@ -891,7 +891,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_iam_binding#description GoogleSpannerInstanceIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_spanner_instance_iam_binding#description GoogleSpannerInstanceIamBinding#description}.
 
 ---
 
@@ -916,12 +916,12 @@ const googleSpannerInstanceIamBindingConfig: googleSpannerInstanceIamBinding.Goo
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBindingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBindingConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBindingConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBindingConfig.property.instance">instance</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_iam_binding#instance GoogleSpannerInstanceIamBinding#instance}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_iam_binding#members GoogleSpannerInstanceIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_iam_binding#role GoogleSpannerInstanceIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBindingConfig.property.instance">instance</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_spanner_instance_iam_binding#instance GoogleSpannerInstanceIamBinding#instance}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_spanner_instance_iam_binding#members GoogleSpannerInstanceIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_spanner_instance_iam_binding#role GoogleSpannerInstanceIamBinding#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBindingConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBindingCondition">GoogleSpannerInstanceIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_iam_binding#id GoogleSpannerInstanceIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBindingConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_iam_binding#project GoogleSpannerInstanceIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_spanner_instance_iam_binding#id GoogleSpannerInstanceIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBindingConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_spanner_instance_iam_binding#project GoogleSpannerInstanceIamBinding#project}. |
 
 ---
 
@@ -1003,7 +1003,7 @@ public readonly instance: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_iam_binding#instance GoogleSpannerInstanceIamBinding#instance}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_spanner_instance_iam_binding#instance GoogleSpannerInstanceIamBinding#instance}.
 
 ---
 
@@ -1015,7 +1015,7 @@ public readonly members: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_iam_binding#members GoogleSpannerInstanceIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_spanner_instance_iam_binding#members GoogleSpannerInstanceIamBinding#members}.
 
 ---
 
@@ -1027,7 +1027,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_iam_binding#role GoogleSpannerInstanceIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_spanner_instance_iam_binding#role GoogleSpannerInstanceIamBinding#role}.
 
 ---
 
@@ -1041,7 +1041,7 @@ public readonly condition: GoogleSpannerInstanceIamBindingCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_iam_binding#condition GoogleSpannerInstanceIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_spanner_instance_iam_binding#condition GoogleSpannerInstanceIamBinding#condition}
 
 ---
 
@@ -1053,7 +1053,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_iam_binding#id GoogleSpannerInstanceIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_spanner_instance_iam_binding#id GoogleSpannerInstanceIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1068,7 +1068,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_spanner_instance_iam_binding#project GoogleSpannerInstanceIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_spanner_instance_iam_binding#project GoogleSpannerInstanceIamBinding#project}.
 
 ---
 

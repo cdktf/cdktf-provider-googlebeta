@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apihub_api_hub_instance
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apihub_api_hub_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -20,17 +15,17 @@ export interface GoogleApihubApiHubInstanceConfig extends cdktf.TerraformMetaArg
   * This value should be 4-40 characters, and valid characters
   * are '/a-z[0-9]-_/'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apihub_api_hub_instance#api_hub_instance_id GoogleApihubApiHubInstance#api_hub_instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apihub_api_hub_instance#api_hub_instance_id GoogleApihubApiHubInstance#api_hub_instance_id}
   */
   readonly apiHubInstanceId?: string;
   /**
   * Optional. Description of the ApiHub instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apihub_api_hub_instance#description GoogleApihubApiHubInstance#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apihub_api_hub_instance#description GoogleApihubApiHubInstance#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apihub_api_hub_instance#id GoogleApihubApiHubInstance#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apihub_api_hub_instance#id GoogleApihubApiHubInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,29 +39,29 @@ export interface GoogleApihubApiHubInstanceConfig extends cdktf.TerraformMetaArg
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apihub_api_hub_instance#labels GoogleApihubApiHubInstance#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apihub_api_hub_instance#labels GoogleApihubApiHubInstance#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apihub_api_hub_instance#location GoogleApihubApiHubInstance#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apihub_api_hub_instance#location GoogleApihubApiHubInstance#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apihub_api_hub_instance#project GoogleApihubApiHubInstance#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apihub_api_hub_instance#project GoogleApihubApiHubInstance#project}
   */
   readonly project?: string;
   /**
   * config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apihub_api_hub_instance#config GoogleApihubApiHubInstance#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apihub_api_hub_instance#config GoogleApihubApiHubInstance#config}
   */
   readonly config: GoogleApihubApiHubInstanceConfigA;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apihub_api_hub_instance#timeouts GoogleApihubApiHubInstance#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apihub_api_hub_instance#timeouts GoogleApihubApiHubInstance#timeouts}
   */
   readonly timeouts?: GoogleApihubApiHubInstanceTimeouts;
 }
@@ -78,14 +73,14 @@ export interface GoogleApihubApiHubInstanceConfigA {
   * where the location must match the instance location.
   * If the CMEK is not provided, a GMEK will be created for the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apihub_api_hub_instance#cmek_key_name GoogleApihubApiHubInstance#cmek_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apihub_api_hub_instance#cmek_key_name GoogleApihubApiHubInstance#cmek_key_name}
   */
   readonly cmekKeyName?: string;
   /**
   * Optional. If true, the search will be disabled for the instance. The default value
   * is false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apihub_api_hub_instance#disable_search GoogleApihubApiHubInstance#disable_search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apihub_api_hub_instance#disable_search GoogleApihubApiHubInstance#disable_search}
   */
   readonly disableSearch?: boolean | cdktf.IResolvable;
   /**
@@ -97,13 +92,13 @@ export interface GoogleApihubApiHubInstanceConfigA {
   * GMEK
   * CMEK
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apihub_api_hub_instance#encryption_type GoogleApihubApiHubInstance#encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apihub_api_hub_instance#encryption_type GoogleApihubApiHubInstance#encryption_type}
   */
   readonly encryptionType?: string;
   /**
   * Optional. The name of the Vertex AI location where the data store is stored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apihub_api_hub_instance#vertex_location GoogleApihubApiHubInstance#vertex_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apihub_api_hub_instance#vertex_location GoogleApihubApiHubInstance#vertex_location}
   */
   readonly vertexLocation?: string;
 }
@@ -274,15 +269,15 @@ export class GoogleApihubApiHubInstanceConfigAOutputReference extends cdktf.Comp
 }
 export interface GoogleApihubApiHubInstanceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apihub_api_hub_instance#create GoogleApihubApiHubInstance#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apihub_api_hub_instance#create GoogleApihubApiHubInstance#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apihub_api_hub_instance#delete GoogleApihubApiHubInstance#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apihub_api_hub_instance#delete GoogleApihubApiHubInstance#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apihub_api_hub_instance#update GoogleApihubApiHubInstance#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apihub_api_hub_instance#update GoogleApihubApiHubInstance#update}
   */
   readonly update?: string;
 }
@@ -434,7 +429,7 @@ export class GoogleApihubApiHubInstanceTimeoutsOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apihub_api_hub_instance google_apihub_api_hub_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apihub_api_hub_instance google_apihub_api_hub_instance}
 */
 export class GoogleApihubApiHubInstance extends cdktf.TerraformResource {
 
@@ -450,7 +445,7 @@ export class GoogleApihubApiHubInstance extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleApihubApiHubInstance resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleApihubApiHubInstance to import
-  * @param importFromId The id of the existing GoogleApihubApiHubInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apihub_api_hub_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleApihubApiHubInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apihub_api_hub_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleApihubApiHubInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -462,7 +457,7 @@ export class GoogleApihubApiHubInstance extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_apihub_api_hub_instance google_apihub_api_hub_instance} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apihub_api_hub_instance google_apihub_api_hub_instance} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -473,7 +468,7 @@ export class GoogleApihubApiHubInstance extends cdktf.TerraformResource {
       terraformResourceType: 'google_apihub_api_hub_instance',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.18.1',
+        providerVersion: '6.19.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

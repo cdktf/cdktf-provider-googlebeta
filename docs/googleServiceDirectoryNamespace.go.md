@@ -4,12 +4,12 @@
 
 ### GoogleServiceDirectoryNamespace <a name="GoogleServiceDirectoryNamespace" id="@cdktf/provider-google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespace"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_service_directory_namespace google_service_directory_namespace}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_service_directory_namespace google_service_directory_namespace}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespace.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleservicedirectorynamespace"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleservicedirectorynamespace"
 
 googleservicedirectorynamespace.NewGoogleServiceDirectoryNamespace(scope Construct, id *string, config GoogleServiceDirectoryNamespaceConfig) GoogleServiceDirectoryNamespace
 ```
@@ -419,7 +419,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespace.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleservicedirectorynamespace"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleservicedirectorynamespace"
 
 googleservicedirectorynamespace.GoogleServiceDirectoryNamespace_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleservicedirectorynamespace"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleservicedirectorynamespace"
 
 googleservicedirectorynamespace.GoogleServiceDirectoryNamespace_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ googleservicedirectorynamespace.GoogleServiceDirectoryNamespace_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespace.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleservicedirectorynamespace"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleservicedirectorynamespace"
 
 googleservicedirectorynamespace.GoogleServiceDirectoryNamespace_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ googleservicedirectorynamespace.GoogleServiceDirectoryNamespace_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleservicedirectorynamespace"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleservicedirectorynamespace"
 
 googleservicedirectorynamespace.GoogleServiceDirectoryNamespace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -508,7 +508,7 @@ The construct id used in the generated config for the GoogleServiceDirectoryName
 
 The id of the existing GoogleServiceDirectoryNamespace that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_service_directory_namespace#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_service_directory_namespace#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -873,7 +873,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleservicedirectorynamespace"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleservicedirectorynamespace"
 
 &googleservicedirectorynamespace.GoogleServiceDirectoryNamespaceConfig {
 	Connection: interface{},
@@ -888,7 +888,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleservi
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespaceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespaceTimeouts,
 }
 ```
 
@@ -905,9 +905,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleservi
 | <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespaceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespaceConfig.property.location">Location</a></code> | <code>*string</code> | The location for the Namespace. A full list of valid locations can be found by running 'gcloud beta service-directory locations list'. |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespaceConfig.property.namespaceId">NamespaceId</a></code> | <code>*string</code> | The Resource ID must be 1-63 characters long, including digits, lowercase letters or the hyphen character. |
-| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespaceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_service_directory_namespace#id GoogleServiceDirectoryNamespace#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespaceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_service_directory_namespace#id GoogleServiceDirectoryNamespace#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespaceConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Resource labels associated with this Namespace. |
-| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespaceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_service_directory_namespace#project GoogleServiceDirectoryNamespace#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespaceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_service_directory_namespace#project GoogleServiceDirectoryNamespace#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespaceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespaceTimeouts">GoogleServiceDirectoryNamespaceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -992,7 +992,7 @@ Location *string
 
 The location for the Namespace. A full list of valid locations can be found by running 'gcloud beta service-directory locations list'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_service_directory_namespace#location GoogleServiceDirectoryNamespace#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_service_directory_namespace#location GoogleServiceDirectoryNamespace#location}
 
 ---
 
@@ -1006,7 +1006,7 @@ NamespaceId *string
 
 The Resource ID must be 1-63 characters long, including digits, lowercase letters or the hyphen character.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_service_directory_namespace#namespace_id GoogleServiceDirectoryNamespace#namespace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_service_directory_namespace#namespace_id GoogleServiceDirectoryNamespace#namespace_id}
 
 ---
 
@@ -1018,7 +1018,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_service_directory_namespace#id GoogleServiceDirectoryNamespace#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_service_directory_namespace#id GoogleServiceDirectoryNamespace#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1042,7 +1042,7 @@ be no longer than 63 characters.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_service_directory_namespace#labels GoogleServiceDirectoryNamespace#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_service_directory_namespace#labels GoogleServiceDirectoryNamespace#labels}
 
 ---
 
@@ -1054,7 +1054,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_service_directory_namespace#project GoogleServiceDirectoryNamespace#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_service_directory_namespace#project GoogleServiceDirectoryNamespace#project}.
 
 ---
 
@@ -1068,7 +1068,7 @@ Timeouts GoogleServiceDirectoryNamespaceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_service_directory_namespace#timeouts GoogleServiceDirectoryNamespace#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_service_directory_namespace#timeouts GoogleServiceDirectoryNamespace#timeouts}
 
 ---
 
@@ -1077,7 +1077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespaceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleservicedirectorynamespace"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleservicedirectorynamespace"
 
 &googleservicedirectorynamespace.GoogleServiceDirectoryNamespaceTimeouts {
 	Create: *string,
@@ -1090,9 +1090,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleservi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespaceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_service_directory_namespace#create GoogleServiceDirectoryNamespace#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespaceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_service_directory_namespace#delete GoogleServiceDirectoryNamespace#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespaceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_service_directory_namespace#update GoogleServiceDirectoryNamespace#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespaceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_service_directory_namespace#create GoogleServiceDirectoryNamespace#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespaceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_service_directory_namespace#delete GoogleServiceDirectoryNamespace#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespaceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_service_directory_namespace#update GoogleServiceDirectoryNamespace#update}. |
 
 ---
 
@@ -1104,7 +1104,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_service_directory_namespace#create GoogleServiceDirectoryNamespace#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_service_directory_namespace#create GoogleServiceDirectoryNamespace#create}.
 
 ---
 
@@ -1116,7 +1116,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_service_directory_namespace#delete GoogleServiceDirectoryNamespace#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_service_directory_namespace#delete GoogleServiceDirectoryNamespace#delete}.
 
 ---
 
@@ -1128,7 +1128,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_service_directory_namespace#update GoogleServiceDirectoryNamespace#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_service_directory_namespace#update GoogleServiceDirectoryNamespace#update}.
 
 ---
 
@@ -1139,7 +1139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespaceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleservicedirectorynamespace"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleservicedirectorynamespace"
 
 googleservicedirectorynamespace.NewGoogleServiceDirectoryNamespaceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleServiceDirectoryNamespaceTimeoutsOutputReference
 ```

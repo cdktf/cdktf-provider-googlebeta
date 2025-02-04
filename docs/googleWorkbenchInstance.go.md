@@ -4,12 +4,12 @@
 
 ### GoogleWorkbenchInstance <a name="GoogleWorkbenchInstance" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance google_workbench_instance}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance google_workbench_instance}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 googleworkbenchinstance.NewGoogleWorkbenchInstance(scope Construct, id *string, config GoogleWorkbenchInstanceConfig) GoogleWorkbenchInstance
 ```
@@ -467,7 +467,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 googleworkbenchinstance.GoogleWorkbenchInstance_IsConstruct(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 googleworkbenchinstance.GoogleWorkbenchInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ googleworkbenchinstance.GoogleWorkbenchInstance_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 googleworkbenchinstance.GoogleWorkbenchInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ googleworkbenchinstance.GoogleWorkbenchInstance_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 googleworkbenchinstance.GoogleWorkbenchInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -556,7 +556,7 @@ The construct id used in the generated config for the GoogleWorkbenchInstance to
 
 The id of the existing GoogleWorkbenchInstance that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1108,7 +1108,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 &googleworkbenchinstance.GoogleWorkbenchInstanceConfig {
 	Connection: interface{},
@@ -1122,13 +1122,13 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkb
 	Name: *string,
 	DesiredState: *string,
 	DisableProxyAccess: interface{},
-	GceSetup: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetup,
+	GceSetup: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetup,
 	Id: *string,
 	InstanceId: *string,
 	InstanceOwners: *[]*string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleWorkbenchInstance.GoogleWorkbenchInstanceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleWorkbenchInstance.GoogleWorkbenchInstanceTimeouts,
 }
 ```
 
@@ -1148,11 +1148,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkb
 | <code><a href="#@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceConfig.property.desiredState">DesiredState</a></code> | <code>*string</code> | Desired state of the Workbench Instance. |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceConfig.property.disableProxyAccess">DisableProxyAccess</a></code> | <code>interface{}</code> | Optional. If true, the workbench instance will not register with the proxy. |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceConfig.property.gceSetup">GceSetup</a></code> | <code><a href="#@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetup">GoogleWorkbenchInstanceGceSetup</a></code> | gce_setup block. |
-| <code><a href="#@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#id GoogleWorkbenchInstance#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#id GoogleWorkbenchInstance#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceConfig.property.instanceId">InstanceId</a></code> | <code>*string</code> | Required. User-defined unique ID of this instance. |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceConfig.property.instanceOwners">InstanceOwners</a></code> | <code>*[]*string</code> | 'Optional. |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Optional. Labels to apply to this instance. These can be later modified by the UpdateInstance method. |
-| <code><a href="#@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#project GoogleWorkbenchInstance#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#project GoogleWorkbenchInstance#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceTimeouts">GoogleWorkbenchInstanceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1237,7 +1237,7 @@ Location *string
 
 Part of 'parent'. See documentation of 'projectsId'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#location GoogleWorkbenchInstance#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#location GoogleWorkbenchInstance#location}
 
 ---
 
@@ -1251,7 +1251,7 @@ Name *string
 
 The name of this workbench instance. Format: 'projects/{project_id}/locations/{location}/instances/{instance_id}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#name GoogleWorkbenchInstance#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#name GoogleWorkbenchInstance#name}
 
 ---
 
@@ -1267,7 +1267,7 @@ Desired state of the Workbench Instance.
 
 Set this field to 'ACTIVE' to start the Instance, and 'STOPPED' to stop the Instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#desired_state GoogleWorkbenchInstance#desired_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#desired_state GoogleWorkbenchInstance#desired_state}
 
 ---
 
@@ -1281,7 +1281,7 @@ DisableProxyAccess interface{}
 
 Optional. If true, the workbench instance will not register with the proxy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#disable_proxy_access GoogleWorkbenchInstance#disable_proxy_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#disable_proxy_access GoogleWorkbenchInstance#disable_proxy_access}
 
 ---
 
@@ -1295,7 +1295,7 @@ GceSetup GoogleWorkbenchInstanceGceSetup
 
 gce_setup block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#gce_setup GoogleWorkbenchInstance#gce_setup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#gce_setup GoogleWorkbenchInstance#gce_setup}
 
 ---
 
@@ -1307,7 +1307,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#id GoogleWorkbenchInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#id GoogleWorkbenchInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1324,7 +1324,7 @@ InstanceId *string
 
 Required. User-defined unique ID of this instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#instance_id GoogleWorkbenchInstance#instance_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#instance_id GoogleWorkbenchInstance#instance_id}
 
 ---
 
@@ -1344,7 +1344,7 @@ the service account users of your VM instance''s service account can use the ins
 If specified, sets the access mode to 'Single user'. For more details, see
 https://cloud.google.com/vertex-ai/docs/workbench/instances/manage-access-jupyterlab'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#instance_owners GoogleWorkbenchInstance#instance_owners}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#instance_owners GoogleWorkbenchInstance#instance_owners}
 
 ---
 
@@ -1361,7 +1361,7 @@ Optional. Labels to apply to this instance. These can be later modified by the U
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#labels GoogleWorkbenchInstance#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#labels GoogleWorkbenchInstance#labels}
 
 ---
 
@@ -1373,7 +1373,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#project GoogleWorkbenchInstance#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#project GoogleWorkbenchInstance#project}.
 
 ---
 
@@ -1387,7 +1387,7 @@ Timeouts GoogleWorkbenchInstanceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#timeouts GoogleWorkbenchInstance#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#timeouts GoogleWorkbenchInstance#timeouts}
 
 ---
 
@@ -1396,22 +1396,22 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 &googleworkbenchinstance.GoogleWorkbenchInstanceGceSetup {
 	AcceleratorConfigs: interface{},
-	BootDisk: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupBootDisk,
-	ContainerImage: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupContainerImage,
-	DataDisks: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupDataDisks,
+	BootDisk: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupBootDisk,
+	ContainerImage: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupContainerImage,
+	DataDisks: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupDataDisks,
 	DisablePublicIp: interface{},
 	EnableIpForwarding: interface{},
 	MachineType: *string,
 	Metadata: *map[string]*string,
 	NetworkInterfaces: interface{},
 	ServiceAccounts: interface{},
-	ShieldedInstanceConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupShieldedInstanceConfig,
+	ShieldedInstanceConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupShieldedInstanceConfig,
 	Tags: *[]*string,
-	VmImage: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupVmImage,
+	VmImage: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupVmImage,
 }
 ```
 
@@ -1445,7 +1445,7 @@ AcceleratorConfigs interface{}
 
 accelerator_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#accelerator_configs GoogleWorkbenchInstance#accelerator_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#accelerator_configs GoogleWorkbenchInstance#accelerator_configs}
 
 ---
 
@@ -1459,7 +1459,7 @@ BootDisk GoogleWorkbenchInstanceGceSetupBootDisk
 
 boot_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#boot_disk GoogleWorkbenchInstance#boot_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#boot_disk GoogleWorkbenchInstance#boot_disk}
 
 ---
 
@@ -1473,7 +1473,7 @@ ContainerImage GoogleWorkbenchInstanceGceSetupContainerImage
 
 container_image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#container_image GoogleWorkbenchInstance#container_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#container_image GoogleWorkbenchInstance#container_image}
 
 ---
 
@@ -1487,7 +1487,7 @@ DataDisks GoogleWorkbenchInstanceGceSetupDataDisks
 
 data_disks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#data_disks GoogleWorkbenchInstance#data_disks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#data_disks GoogleWorkbenchInstance#data_disks}
 
 ---
 
@@ -1501,7 +1501,7 @@ DisablePublicIp interface{}
 
 Optional. If true, no external IP will be assigned to this VM instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#disable_public_ip GoogleWorkbenchInstance#disable_public_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#disable_public_ip GoogleWorkbenchInstance#disable_public_ip}
 
 ---
 
@@ -1515,7 +1515,7 @@ EnableIpForwarding interface{}
 
 Optional. Flag to enable ip forwarding or not, default false/off. https://cloud.google.com/vpc/docs/using-routes#canipforward.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#enable_ip_forwarding GoogleWorkbenchInstance#enable_ip_forwarding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#enable_ip_forwarding GoogleWorkbenchInstance#enable_ip_forwarding}
 
 ---
 
@@ -1529,7 +1529,7 @@ MachineType *string
 
 Optional. The machine type of the VM instance. https://cloud.google.com/compute/docs/machine-resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#machine_type GoogleWorkbenchInstance#machine_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#machine_type GoogleWorkbenchInstance#machine_type}
 
 ---
 
@@ -1543,7 +1543,7 @@ Metadata *map[string]*string
 
 Optional. Custom metadata to apply to this instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#metadata GoogleWorkbenchInstance#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#metadata GoogleWorkbenchInstance#metadata}
 
 ---
 
@@ -1557,7 +1557,7 @@ NetworkInterfaces interface{}
 
 network_interfaces block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#network_interfaces GoogleWorkbenchInstance#network_interfaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#network_interfaces GoogleWorkbenchInstance#network_interfaces}
 
 ---
 
@@ -1571,7 +1571,7 @@ ServiceAccounts interface{}
 
 service_accounts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#service_accounts GoogleWorkbenchInstance#service_accounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#service_accounts GoogleWorkbenchInstance#service_accounts}
 
 ---
 
@@ -1585,7 +1585,7 @@ ShieldedInstanceConfig GoogleWorkbenchInstanceGceSetupShieldedInstanceConfig
 
 shielded_instance_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#shielded_instance_config GoogleWorkbenchInstance#shielded_instance_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#shielded_instance_config GoogleWorkbenchInstance#shielded_instance_config}
 
 ---
 
@@ -1599,7 +1599,7 @@ Tags *[]*string
 
 Optional. The Compute Engine tags to add to instance (see [Tagging instances](https://cloud.google.com/compute/docs/label-or-tag-resources#tags)).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#tags GoogleWorkbenchInstance#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#tags GoogleWorkbenchInstance#tags}
 
 ---
 
@@ -1613,7 +1613,7 @@ VmImage GoogleWorkbenchInstanceGceSetupVmImage
 
 vm_image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#vm_image GoogleWorkbenchInstance#vm_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#vm_image GoogleWorkbenchInstance#vm_image}
 
 ---
 
@@ -1622,7 +1622,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupAcceleratorConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 &googleworkbenchinstance.GoogleWorkbenchInstanceGceSetupAcceleratorConfigs {
 	CoreCount: *string,
@@ -1649,7 +1649,7 @@ CoreCount *string
 
 Optional. Count of cores of this accelerator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#core_count GoogleWorkbenchInstance#core_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#core_count GoogleWorkbenchInstance#core_count}
 
 ---
 
@@ -1663,7 +1663,7 @@ Type *string
 
 Optional. Type of this accelerator. Possible values: ["NVIDIA_TESLA_P100", "NVIDIA_TESLA_V100", "NVIDIA_TESLA_P4", "NVIDIA_TESLA_T4", "NVIDIA_TESLA_A100", "NVIDIA_A100_80GB", "NVIDIA_L4", "NVIDIA_TESLA_T4_VWS", "NVIDIA_TESLA_P100_VWS", "NVIDIA_TESLA_P4_VWS"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#type GoogleWorkbenchInstance#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#type GoogleWorkbenchInstance#type}
 
 ---
 
@@ -1672,7 +1672,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupBootDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 &googleworkbenchinstance.GoogleWorkbenchInstanceGceSetupBootDisk {
 	DiskEncryption: *string,
@@ -1703,7 +1703,7 @@ DiskEncryption *string
 
 Optional. Input only. Disk encryption method used on the boot and data disks, defaults to GMEK. Possible values: ["GMEK", "CMEK"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#disk_encryption GoogleWorkbenchInstance#disk_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#disk_encryption GoogleWorkbenchInstance#disk_encryption}
 
 ---
 
@@ -1721,7 +1721,7 @@ The size of the boot disk in GB attached to this instance,
 up to a maximum of 64000 GB (64 TB). If not specified, this defaults to the
 recommended value of 150GB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#disk_size_gb GoogleWorkbenchInstance#disk_size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#disk_size_gb GoogleWorkbenchInstance#disk_size_gb}
 
 ---
 
@@ -1735,7 +1735,7 @@ DiskType *string
 
 Optional. Indicates the type of the disk. Possible values: ["PD_STANDARD", "PD_SSD", "PD_BALANCED", "PD_EXTREME"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#disk_type GoogleWorkbenchInstance#disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#disk_type GoogleWorkbenchInstance#disk_type}
 
 ---
 
@@ -1753,7 +1753,7 @@ The KMS key used to encrypt the disks, only
 applicable if disk_encryption is CMEK. Format: 'projects/{project_id}/locations/{location}/keyRings/{key_ring_id}/cryptoKeys/{key_id}'
 Learn more about using your own encryption keys.'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#kms_key GoogleWorkbenchInstance#kms_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#kms_key GoogleWorkbenchInstance#kms_key}
 
 ---
 
@@ -1762,7 +1762,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupContainerImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 &googleworkbenchinstance.GoogleWorkbenchInstanceGceSetupContainerImage {
 	Repository: *string,
@@ -1789,7 +1789,7 @@ Repository *string
 
 The path to the container image repository. For example: gcr.io/{project_id}/{imageName}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#repository GoogleWorkbenchInstance#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#repository GoogleWorkbenchInstance#repository}
 
 ---
 
@@ -1803,7 +1803,7 @@ Tag *string
 
 The tag of the container image. If not specified, this defaults to the latest tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#tag GoogleWorkbenchInstance#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#tag GoogleWorkbenchInstance#tag}
 
 ---
 
@@ -1812,7 +1812,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupDataDisks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 &googleworkbenchinstance.GoogleWorkbenchInstanceGceSetupDataDisks {
 	DiskEncryption: *string,
@@ -1843,7 +1843,7 @@ DiskEncryption *string
 
 Optional. Input only. Disk encryption method used on the boot and data disks, defaults to GMEK. Possible values: ["GMEK", "CMEK"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#disk_encryption GoogleWorkbenchInstance#disk_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#disk_encryption GoogleWorkbenchInstance#disk_encryption}
 
 ---
 
@@ -1861,7 +1861,7 @@ The size of the disk in GB attached to this VM instance,
 up to a maximum of 64000 GB (64 TB). If not specified, this defaults to
 100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#disk_size_gb GoogleWorkbenchInstance#disk_size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#disk_size_gb GoogleWorkbenchInstance#disk_size_gb}
 
 ---
 
@@ -1875,7 +1875,7 @@ DiskType *string
 
 Optional. Input only. Indicates the type of the disk. Possible values: ["PD_STANDARD", "PD_SSD", "PD_BALANCED", "PD_EXTREME"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#disk_type GoogleWorkbenchInstance#disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#disk_type GoogleWorkbenchInstance#disk_type}
 
 ---
 
@@ -1893,7 +1893,7 @@ The KMS key used to encrypt the disks,
 only applicable if disk_encryption is CMEK. Format: 'projects/{project_id}/locations/{location}/keyRings/{key_ring_id}/cryptoKeys/{key_id}'
 Learn more about using your own encryption keys.'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#kms_key GoogleWorkbenchInstance#kms_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#kms_key GoogleWorkbenchInstance#kms_key}
 
 ---
 
@@ -1902,7 +1902,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupNetworkInterfaces.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 &googleworkbenchinstance.GoogleWorkbenchInstanceGceSetupNetworkInterfaces {
 	AccessConfigs: interface{},
@@ -1933,7 +1933,7 @@ AccessConfigs interface{}
 
 access_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#access_configs GoogleWorkbenchInstance#access_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#access_configs GoogleWorkbenchInstance#access_configs}
 
 ---
 
@@ -1947,7 +1947,7 @@ Network *string
 
 Optional. The name of the VPC that this VM instance is in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#network GoogleWorkbenchInstance#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#network GoogleWorkbenchInstance#network}
 
 ---
 
@@ -1964,7 +1964,7 @@ Optional.
 The type of vNIC to be used on this interface. This
 may be gVNIC or VirtioNet. Possible values: ["VIRTIO_NET", "GVNIC"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#nic_type GoogleWorkbenchInstance#nic_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#nic_type GoogleWorkbenchInstance#nic_type}
 
 ---
 
@@ -1978,7 +1978,7 @@ Subnet *string
 
 Optional. The name of the subnet that this VM instance is in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#subnet GoogleWorkbenchInstance#subnet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#subnet GoogleWorkbenchInstance#subnet}
 
 ---
 
@@ -1987,7 +1987,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupNetworkInterfacesAccessConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 &googleworkbenchinstance.GoogleWorkbenchInstanceGceSetupNetworkInterfacesAccessConfigs {
 	ExternalIp: *string,
@@ -2018,7 +2018,7 @@ undefined to use an IP from a shared ephemeral IP address pool. If you
 specify a static external IP address, it must live in the same region as
 the zone of the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#external_ip GoogleWorkbenchInstance#external_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#external_ip GoogleWorkbenchInstance#external_ip}
 
 ---
 
@@ -2027,7 +2027,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupServiceAccounts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 &googleworkbenchinstance.GoogleWorkbenchInstanceGceSetupServiceAccounts {
 	Email: *string,
@@ -2052,7 +2052,7 @@ Email *string
 
 Optional. Email address of the service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#email GoogleWorkbenchInstance#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#email GoogleWorkbenchInstance#email}
 
 ---
 
@@ -2061,7 +2061,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupShieldedInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 &googleworkbenchinstance.GoogleWorkbenchInstanceGceSetupShieldedInstanceConfig {
 	EnableIntegrityMonitoring: interface{},
@@ -2096,7 +2096,7 @@ instance. The attestation is performed against the integrity policy baseline.
 This baseline is initially derived from the implicitly trusted boot image
 when the VM instance is created. Enabled by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#enable_integrity_monitoring GoogleWorkbenchInstance#enable_integrity_monitoring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#enable_integrity_monitoring GoogleWorkbenchInstance#enable_integrity_monitoring}
 
 ---
 
@@ -2115,7 +2115,7 @@ Secure Boot helps ensure that the system only runs authentic software by verifyi
 the digital signature of all boot components, and halting the boot process
 if signature verification fails. Disabled by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#enable_secure_boot GoogleWorkbenchInstance#enable_secure_boot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#enable_secure_boot GoogleWorkbenchInstance#enable_secure_boot}
 
 ---
 
@@ -2129,7 +2129,7 @@ EnableVtpm interface{}
 
 Optional. Defines whether the VM instance has the vTPM enabled. Enabled by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#enable_vtpm GoogleWorkbenchInstance#enable_vtpm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#enable_vtpm GoogleWorkbenchInstance#enable_vtpm}
 
 ---
 
@@ -2138,7 +2138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupVmImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 &googleworkbenchinstance.GoogleWorkbenchInstanceGceSetupVmImage {
 	Family: *string,
@@ -2167,7 +2167,7 @@ Family *string
 
 Optional. Use this VM image family to find the image; the newest image in this family will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#family GoogleWorkbenchInstance#family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#family GoogleWorkbenchInstance#family}
 
 ---
 
@@ -2181,7 +2181,7 @@ Name *string
 
 Optional. Use VM image name to find the image.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#name GoogleWorkbenchInstance#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#name GoogleWorkbenchInstance#name}
 
 ---
 
@@ -2195,7 +2195,7 @@ Project *string
 
 The name of the Google Cloud project that this VM image belongs to. Format: {project_id}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#project GoogleWorkbenchInstance#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#project GoogleWorkbenchInstance#project}
 
 ---
 
@@ -2204,7 +2204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceHealthInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 &googleworkbenchinstance.GoogleWorkbenchInstanceHealthInfo {
 
@@ -2217,7 +2217,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkb
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 &googleworkbenchinstance.GoogleWorkbenchInstanceTimeouts {
 	Create: *string,
@@ -2230,9 +2230,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#create GoogleWorkbenchInstance#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#delete GoogleWorkbenchInstance#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#update GoogleWorkbenchInstance#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#create GoogleWorkbenchInstance#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#delete GoogleWorkbenchInstance#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#update GoogleWorkbenchInstance#update}. |
 
 ---
 
@@ -2244,7 +2244,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#create GoogleWorkbenchInstance#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#create GoogleWorkbenchInstance#create}.
 
 ---
 
@@ -2256,7 +2256,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#delete GoogleWorkbenchInstance#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#delete GoogleWorkbenchInstance#delete}.
 
 ---
 
@@ -2268,7 +2268,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_workbench_instance#update GoogleWorkbenchInstance#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workbench_instance#update GoogleWorkbenchInstance#update}.
 
 ---
 
@@ -2277,7 +2277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceUpgradeHistory.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 &googleworkbenchinstance.GoogleWorkbenchInstanceUpgradeHistory {
 
@@ -2292,7 +2292,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkb
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupAcceleratorConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 googleworkbenchinstance.NewGoogleWorkbenchInstanceGceSetupAcceleratorConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleWorkbenchInstanceGceSetupAcceleratorConfigsList
 ```
@@ -2452,7 +2452,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupAcceleratorConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 googleworkbenchinstance.NewGoogleWorkbenchInstanceGceSetupAcceleratorConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleWorkbenchInstanceGceSetupAcceleratorConfigsOutputReference
 ```
@@ -2777,7 +2777,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupBootDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 googleworkbenchinstance.NewGoogleWorkbenchInstanceGceSetupBootDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleWorkbenchInstanceGceSetupBootDiskOutputReference
 ```
@@ -3142,7 +3142,7 @@ func InternalValue() GoogleWorkbenchInstanceGceSetupBootDisk
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupContainerImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 googleworkbenchinstance.NewGoogleWorkbenchInstanceGceSetupContainerImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleWorkbenchInstanceGceSetupContainerImageOutputReference
 ```
@@ -3442,7 +3442,7 @@ func InternalValue() GoogleWorkbenchInstanceGceSetupContainerImage
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupDataDisksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 googleworkbenchinstance.NewGoogleWorkbenchInstanceGceSetupDataDisksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleWorkbenchInstanceGceSetupDataDisksOutputReference
 ```
@@ -3807,7 +3807,7 @@ func InternalValue() GoogleWorkbenchInstanceGceSetupDataDisks
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 googleworkbenchinstance.NewGoogleWorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleWorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsList
 ```
@@ -3967,7 +3967,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 googleworkbenchinstance.NewGoogleWorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleWorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsOutputReference
 ```
@@ -4256,7 +4256,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupNetworkInterfacesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 googleworkbenchinstance.NewGoogleWorkbenchInstanceGceSetupNetworkInterfacesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleWorkbenchInstanceGceSetupNetworkInterfacesList
 ```
@@ -4416,7 +4416,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupNetworkInterfacesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 googleworkbenchinstance.NewGoogleWorkbenchInstanceGceSetupNetworkInterfacesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleWorkbenchInstanceGceSetupNetworkInterfacesOutputReference
 ```
@@ -4812,7 +4812,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 googleworkbenchinstance.NewGoogleWorkbenchInstanceGceSetupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleWorkbenchInstanceGceSetupOutputReference
 ```
@@ -5542,7 +5542,7 @@ func InternalValue() GoogleWorkbenchInstanceGceSetup
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupServiceAccountsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 googleworkbenchinstance.NewGoogleWorkbenchInstanceGceSetupServiceAccountsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleWorkbenchInstanceGceSetupServiceAccountsList
 ```
@@ -5702,7 +5702,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupServiceAccountsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 googleworkbenchinstance.NewGoogleWorkbenchInstanceGceSetupServiceAccountsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleWorkbenchInstanceGceSetupServiceAccountsOutputReference
 ```
@@ -6009,7 +6009,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 googleworkbenchinstance.NewGoogleWorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleWorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference
 ```
@@ -6345,7 +6345,7 @@ func InternalValue() GoogleWorkbenchInstanceGceSetupShieldedInstanceConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupVmImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 googleworkbenchinstance.NewGoogleWorkbenchInstanceGceSetupVmImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleWorkbenchInstanceGceSetupVmImageOutputReference
 ```
@@ -6681,7 +6681,7 @@ func InternalValue() GoogleWorkbenchInstanceGceSetupVmImage
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceHealthInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 googleworkbenchinstance.NewGoogleWorkbenchInstanceHealthInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleWorkbenchInstanceHealthInfoList
 ```
@@ -6830,7 +6830,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceHealthInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 googleworkbenchinstance.NewGoogleWorkbenchInstanceHealthInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleWorkbenchInstanceHealthInfoOutputReference
 ```
@@ -7097,7 +7097,7 @@ func InternalValue() GoogleWorkbenchInstanceHealthInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 googleworkbenchinstance.NewGoogleWorkbenchInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleWorkbenchInstanceTimeoutsOutputReference
 ```
@@ -7433,7 +7433,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceUpgradeHistoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 googleworkbenchinstance.NewGoogleWorkbenchInstanceUpgradeHistoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleWorkbenchInstanceUpgradeHistoryList
 ```
@@ -7582,7 +7582,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleWorkbenchInstance.GoogleWorkbenchInstanceUpgradeHistoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkbenchinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkbenchinstance"
 
 googleworkbenchinstance.NewGoogleWorkbenchInstanceUpgradeHistoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleWorkbenchInstanceUpgradeHistoryOutputReference
 ```

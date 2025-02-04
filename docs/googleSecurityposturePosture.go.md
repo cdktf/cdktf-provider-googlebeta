@@ -4,12 +4,12 @@
 
 ### GoogleSecurityposturePosture <a name="GoogleSecurityposturePosture" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosture"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture google_securityposture_posture}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture google_securityposture_posture}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosture.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 googlesecuritypostureposture.NewGoogleSecurityposturePosture(scope Construct, id *string, config GoogleSecurityposturePostureConfig) GoogleSecurityposturePosture
 ```
@@ -425,7 +425,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosture.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 googlesecuritypostureposture.GoogleSecurityposturePosture_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosture.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 googlesecuritypostureposture.GoogleSecurityposturePosture_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ googlesecuritypostureposture.GoogleSecurityposturePosture_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosture.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 googlesecuritypostureposture.GoogleSecurityposturePosture_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ googlesecuritypostureposture.GoogleSecurityposturePosture_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosture.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 googlesecuritypostureposture.GoogleSecurityposturePosture_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -514,7 +514,7 @@ The construct id used in the generated config for the GoogleSecurityposturePostu
 
 The id of the existing GoogleSecurityposturePosture that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -956,7 +956,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePostureConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 &googlesecuritypostureposture.GoogleSecurityposturePostureConfig {
 	Connection: interface{},
@@ -973,7 +973,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecur
 	State: *string,
 	Description: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSecurityposturePosture.GoogleSecurityposturePostureTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSecurityposturePosture.GoogleSecurityposturePostureTimeouts,
 }
 ```
 
@@ -994,7 +994,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecur
 | <code><a href="#@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePostureConfig.property.postureId">PostureId</a></code> | <code>*string</code> | Id of the posture. It is an immutable field. |
 | <code><a href="#@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePostureConfig.property.state">State</a></code> | <code>*string</code> | State of the posture. |
 | <code><a href="#@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePostureConfig.property.description">Description</a></code> | <code>*string</code> | Description of the posture. |
-| <code><a href="#@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePostureConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#id GoogleSecurityposturePosture#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePostureConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#id GoogleSecurityposturePosture#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePostureConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePostureTimeouts">GoogleSecurityposturePostureTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1079,7 +1079,7 @@ Location *string
 
 Location of the resource, eg: global.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#location GoogleSecurityposturePosture#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#location GoogleSecurityposturePosture#location}
 
 ---
 
@@ -1093,7 +1093,7 @@ Parent *string
 
 The parent of the resource, an organization. Format should be 'organizations/{organization_id}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#parent GoogleSecurityposturePosture#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#parent GoogleSecurityposturePosture#parent}
 
 ---
 
@@ -1107,7 +1107,7 @@ PolicySets interface{}
 
 policy_sets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#policy_sets GoogleSecurityposturePosture#policy_sets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#policy_sets GoogleSecurityposturePosture#policy_sets}
 
 ---
 
@@ -1121,7 +1121,7 @@ PostureId *string
 
 Id of the posture. It is an immutable field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#posture_id GoogleSecurityposturePosture#posture_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#posture_id GoogleSecurityposturePosture#posture_id}
 
 ---
 
@@ -1138,7 +1138,7 @@ State of the posture.
 Update to state field should not be triggered along with
 with other field updates. Possible values: ["DEPRECATED", "DRAFT", "ACTIVE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#state GoogleSecurityposturePosture#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#state GoogleSecurityposturePosture#state}
 
 ---
 
@@ -1152,7 +1152,7 @@ Description *string
 
 Description of the posture.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#description GoogleSecurityposturePosture#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#description GoogleSecurityposturePosture#description}
 
 ---
 
@@ -1164,7 +1164,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#id GoogleSecurityposturePosture#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#id GoogleSecurityposturePosture#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1181,7 +1181,7 @@ Timeouts GoogleSecurityposturePostureTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#timeouts GoogleSecurityposturePosture#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#timeouts GoogleSecurityposturePosture#timeouts}
 
 ---
 
@@ -1190,7 +1190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 &googlesecuritypostureposture.GoogleSecurityposturePosturePolicySets {
 	Policies: interface{},
@@ -1219,7 +1219,7 @@ Policies interface{}
 
 policies block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#policies GoogleSecurityposturePosture#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#policies GoogleSecurityposturePosture#policies}
 
 ---
 
@@ -1233,7 +1233,7 @@ PolicySetId *string
 
 ID of the policy set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#policy_set_id GoogleSecurityposturePosture#policy_set_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#policy_set_id GoogleSecurityposturePosture#policy_set_id}
 
 ---
 
@@ -1247,7 +1247,7 @@ Description *string
 
 Description of the policy set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#description GoogleSecurityposturePosture#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#description GoogleSecurityposturePosture#description}
 
 ---
 
@@ -1256,10 +1256,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 &googlesecuritypostureposture.GoogleSecurityposturePosturePolicySetsPolicies {
-	Constraint: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraint,
+	Constraint: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraint,
 	PolicyId: *string,
 	ComplianceStandards: interface{},
 	Description: *string,
@@ -1287,7 +1287,7 @@ Constraint GoogleSecurityposturePosturePolicySetsPoliciesConstraint
 
 constraint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#constraint GoogleSecurityposturePosture#constraint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#constraint GoogleSecurityposturePosture#constraint}
 
 ---
 
@@ -1301,7 +1301,7 @@ PolicyId *string
 
 ID of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#policy_id GoogleSecurityposturePosture#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#policy_id GoogleSecurityposturePosture#policy_id}
 
 ---
 
@@ -1315,7 +1315,7 @@ ComplianceStandards interface{}
 
 compliance_standards block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#compliance_standards GoogleSecurityposturePosture#compliance_standards}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#compliance_standards GoogleSecurityposturePosture#compliance_standards}
 
 ---
 
@@ -1329,7 +1329,7 @@ Description *string
 
 Description of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#description GoogleSecurityposturePosture#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#description GoogleSecurityposturePosture#description}
 
 ---
 
@@ -1338,7 +1338,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesComplianceStandards.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 &googlesecuritypostureposture.GoogleSecurityposturePosturePolicySetsPoliciesComplianceStandards {
 	Control: *string,
@@ -1365,7 +1365,7 @@ Control *string
 
 Mapping of security controls for the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#control GoogleSecurityposturePosture#control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#control GoogleSecurityposturePosture#control}
 
 ---
 
@@ -1379,7 +1379,7 @@ Standard *string
 
 Mapping of compliance standards for the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#standard GoogleSecurityposturePosture#standard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#standard GoogleSecurityposturePosture#standard}
 
 ---
 
@@ -1388,13 +1388,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 &googlesecuritypostureposture.GoogleSecurityposturePosturePolicySetsPoliciesConstraint {
-	OrgPolicyConstraint: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraint,
-	OrgPolicyConstraintCustom: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustom,
-	SecurityHealthAnalyticsCustomModule: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModule,
-	SecurityHealthAnalyticsModule: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsModule,
+	OrgPolicyConstraint: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraint,
+	OrgPolicyConstraintCustom: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustom,
+	SecurityHealthAnalyticsCustomModule: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModule,
+	SecurityHealthAnalyticsModule: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsModule,
 }
 ```
 
@@ -1419,7 +1419,7 @@ OrgPolicyConstraint GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgP
 
 org_policy_constraint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#org_policy_constraint GoogleSecurityposturePosture#org_policy_constraint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#org_policy_constraint GoogleSecurityposturePosture#org_policy_constraint}
 
 ---
 
@@ -1433,7 +1433,7 @@ OrgPolicyConstraintCustom GoogleSecurityposturePosturePolicySetsPoliciesConstrai
 
 org_policy_constraint_custom block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#org_policy_constraint_custom GoogleSecurityposturePosture#org_policy_constraint_custom}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#org_policy_constraint_custom GoogleSecurityposturePosture#org_policy_constraint_custom}
 
 ---
 
@@ -1447,7 +1447,7 @@ SecurityHealthAnalyticsCustomModule GoogleSecurityposturePosturePolicySetsPolici
 
 security_health_analytics_custom_module block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#security_health_analytics_custom_module GoogleSecurityposturePosture#security_health_analytics_custom_module}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#security_health_analytics_custom_module GoogleSecurityposturePosture#security_health_analytics_custom_module}
 
 ---
 
@@ -1461,7 +1461,7 @@ SecurityHealthAnalyticsModule GoogleSecurityposturePosturePolicySetsPoliciesCons
 
 security_health_analytics_module block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#security_health_analytics_module GoogleSecurityposturePosture#security_health_analytics_module}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#security_health_analytics_module GoogleSecurityposturePosture#security_health_analytics_module}
 
 ---
 
@@ -1470,7 +1470,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 &googlesecuritypostureposture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraint {
 	CannedConstraintId: *string,
@@ -1497,7 +1497,7 @@ CannedConstraintId *string
 
 Organization policy canned constraint Id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#canned_constraint_id GoogleSecurityposturePosture#canned_constraint_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#canned_constraint_id GoogleSecurityposturePosture#canned_constraint_id}
 
 ---
 
@@ -1511,7 +1511,7 @@ PolicyRules interface{}
 
 policy_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#policy_rules GoogleSecurityposturePosture#policy_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#policy_rules GoogleSecurityposturePosture#policy_rules}
 
 ---
 
@@ -1520,11 +1520,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustom.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 &googlesecuritypostureposture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustom {
 	PolicyRules: interface{},
-	CustomConstraint: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomCustomConstraint,
+	CustomConstraint: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomCustomConstraint,
 }
 ```
 
@@ -1547,7 +1547,7 @@ PolicyRules interface{}
 
 policy_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#policy_rules GoogleSecurityposturePosture#policy_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#policy_rules GoogleSecurityposturePosture#policy_rules}
 
 ---
 
@@ -1561,7 +1561,7 @@ CustomConstraint GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPoli
 
 custom_constraint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#custom_constraint GoogleSecurityposturePosture#custom_constraint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#custom_constraint GoogleSecurityposturePosture#custom_constraint}
 
 ---
 
@@ -1570,7 +1570,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomCustomConstraint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 &googlesecuritypostureposture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomCustomConstraint {
 	ActionType: *string,
@@ -1607,7 +1607,7 @@ ActionType *string
 
 The action to take if the condition is met. Possible values: ["ALLOW", "DENY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#action_type GoogleSecurityposturePosture#action_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#action_type GoogleSecurityposturePosture#action_type}
 
 ---
 
@@ -1621,7 +1621,7 @@ Condition *string
 
 A CEL condition that refers to a supported service resource, for example 'resource.management.autoUpgrade == false'. For details about CEL usage, see [Common Expression Language](https://cloud.google.com/resource-manager/docs/organization-policy/creating-managing-custom-constraints#common_expression_language).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#condition GoogleSecurityposturePosture#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#condition GoogleSecurityposturePosture#condition}
 
 ---
 
@@ -1637,7 +1637,7 @@ A list of RESTful methods for which to enforce the constraint.
 
 Can be 'CREATE', 'UPDATE', or both. Not all Google Cloud services support both methods. To see supported methods for each service, find the service in [Supported services](https://cloud.google.com/resource-manager/docs/organization-policy/custom-constraint-supported-services).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#method_types GoogleSecurityposturePosture#method_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#method_types GoogleSecurityposturePosture#method_types}
 
 ---
 
@@ -1651,7 +1651,7 @@ Name *string
 
 Immutable. The name of the custom constraint. This is unique within the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#name GoogleSecurityposturePosture#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#name GoogleSecurityposturePosture#name}
 
 ---
 
@@ -1667,7 +1667,7 @@ Immutable.
 
 The fully qualified name of the Google Cloud REST resource containing the object and field you want to restrict. For example, 'container.googleapis.com/NodePool'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#resource_types GoogleSecurityposturePosture#resource_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#resource_types GoogleSecurityposturePosture#resource_types}
 
 ---
 
@@ -1681,7 +1681,7 @@ Description *string
 
 A human-friendly description of the constraint to display as an error message when the policy is violated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#description GoogleSecurityposturePosture#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#description GoogleSecurityposturePosture#description}
 
 ---
 
@@ -1695,7 +1695,7 @@ DisplayName *string
 
 A human-friendly name for the constraint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#display_name GoogleSecurityposturePosture#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#display_name GoogleSecurityposturePosture#display_name}
 
 ---
 
@@ -1704,14 +1704,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 &googlesecuritypostureposture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRules {
 	AllowAll: interface{},
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesCondition,
 	DenyAll: interface{},
 	Enforce: interface{},
-	Values: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesValues,
+	Values: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesValues,
 }
 ```
 
@@ -1739,7 +1739,7 @@ Setting this to true means that all values are allowed.
 
 This field can be set only in policies for list constraints.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#allow_all GoogleSecurityposturePosture#allow_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#allow_all GoogleSecurityposturePosture#allow_all}
 
 ---
 
@@ -1753,7 +1753,7 @@ Condition GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConst
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#condition GoogleSecurityposturePosture#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#condition GoogleSecurityposturePosture#condition}
 
 ---
 
@@ -1769,7 +1769,7 @@ Setting this to true means that all values are denied.
 
 This field can be set only in policies for list constraints.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#deny_all GoogleSecurityposturePosture#deny_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#deny_all GoogleSecurityposturePosture#deny_all}
 
 ---
 
@@ -1786,7 +1786,7 @@ If 'true', then the policy is enforced.
 If 'false', then any configuration is acceptable.
 This field can be set only in policies for boolean constraints.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#enforce GoogleSecurityposturePosture#enforce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#enforce GoogleSecurityposturePosture#enforce}
 
 ---
 
@@ -1800,7 +1800,7 @@ Values GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstrai
 
 values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#values GoogleSecurityposturePosture#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#values GoogleSecurityposturePosture#values}
 
 ---
 
@@ -1809,7 +1809,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 &googlesecuritypostureposture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesCondition {
 	Expression: *string,
@@ -1840,7 +1840,7 @@ Expression *string
 
 Textual representation of an expression in Common Expression Language syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#expression GoogleSecurityposturePosture#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#expression GoogleSecurityposturePosture#expression}
 
 ---
 
@@ -1854,7 +1854,7 @@ Description *string
 
 Description of the expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#description GoogleSecurityposturePosture#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#description GoogleSecurityposturePosture#description}
 
 ---
 
@@ -1868,7 +1868,7 @@ Location *string
 
 String indicating the location of the expression for error reporting, e.g. a file name and a position in the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#location GoogleSecurityposturePosture#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#location GoogleSecurityposturePosture#location}
 
 ---
 
@@ -1882,7 +1882,7 @@ Title *string
 
 Title for the expression, i.e. a short string describing its purpose.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#title GoogleSecurityposturePosture#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#title GoogleSecurityposturePosture#title}
 
 ---
 
@@ -1891,7 +1891,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesValues.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 &googlesecuritypostureposture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesValues {
 	AllowedValues: *[]*string,
@@ -1918,7 +1918,7 @@ AllowedValues *[]*string
 
 List of values allowed at this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#allowed_values GoogleSecurityposturePosture#allowed_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#allowed_values GoogleSecurityposturePosture#allowed_values}
 
 ---
 
@@ -1932,7 +1932,7 @@ DeniedValues *[]*string
 
 List of values denied at this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#denied_values GoogleSecurityposturePosture#denied_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#denied_values GoogleSecurityposturePosture#denied_values}
 
 ---
 
@@ -1941,14 +1941,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 &googlesecuritypostureposture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRules {
 	AllowAll: interface{},
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesCondition,
 	DenyAll: interface{},
 	Enforce: interface{},
-	Values: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesValues,
+	Values: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesValues,
 }
 ```
 
@@ -1976,7 +1976,7 @@ Setting this to true means that all values are allowed.
 
 This field can be set only in policies for list constraints.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#allow_all GoogleSecurityposturePosture#allow_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#allow_all GoogleSecurityposturePosture#allow_all}
 
 ---
 
@@ -1990,7 +1990,7 @@ Condition GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConst
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#condition GoogleSecurityposturePosture#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#condition GoogleSecurityposturePosture#condition}
 
 ---
 
@@ -2006,7 +2006,7 @@ Setting this to true means that all values are denied.
 
 This field can be set only in policies for list constraints.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#deny_all GoogleSecurityposturePosture#deny_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#deny_all GoogleSecurityposturePosture#deny_all}
 
 ---
 
@@ -2023,7 +2023,7 @@ If 'true', then the policy is enforced.
 If 'false', then any configuration is acceptable.
 This field can be set only in policies for boolean constraints.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#enforce GoogleSecurityposturePosture#enforce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#enforce GoogleSecurityposturePosture#enforce}
 
 ---
 
@@ -2037,7 +2037,7 @@ Values GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstrai
 
 values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#values GoogleSecurityposturePosture#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#values GoogleSecurityposturePosture#values}
 
 ---
 
@@ -2046,7 +2046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 &googlesecuritypostureposture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesCondition {
 	Expression: *string,
@@ -2077,7 +2077,7 @@ Expression *string
 
 Textual representation of an expression in Common Expression Language syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#expression GoogleSecurityposturePosture#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#expression GoogleSecurityposturePosture#expression}
 
 ---
 
@@ -2091,7 +2091,7 @@ Description *string
 
 Description of the expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#description GoogleSecurityposturePosture#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#description GoogleSecurityposturePosture#description}
 
 ---
 
@@ -2105,7 +2105,7 @@ Location *string
 
 String indicating the location of the expression for error reporting, e.g. a file name and a position in the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#location GoogleSecurityposturePosture#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#location GoogleSecurityposturePosture#location}
 
 ---
 
@@ -2119,7 +2119,7 @@ Title *string
 
 Title for the expression, i.e. a short string describing its purpose.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#title GoogleSecurityposturePosture#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#title GoogleSecurityposturePosture#title}
 
 ---
 
@@ -2128,7 +2128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesValues.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 &googlesecuritypostureposture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesValues {
 	AllowedValues: *[]*string,
@@ -2155,7 +2155,7 @@ AllowedValues *[]*string
 
 List of values allowed at this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#allowed_values GoogleSecurityposturePosture#allowed_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#allowed_values GoogleSecurityposturePosture#allowed_values}
 
 ---
 
@@ -2169,7 +2169,7 @@ DeniedValues *[]*string
 
 List of values denied at this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#denied_values GoogleSecurityposturePosture#denied_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#denied_values GoogleSecurityposturePosture#denied_values}
 
 ---
 
@@ -2178,10 +2178,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 &googlesecuritypostureposture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModule {
-	Config: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfig,
+	Config: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfig,
 	DisplayName: *string,
 	ModuleEnablementState: *string,
 }
@@ -2207,7 +2207,7 @@ Config GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAna
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#config GoogleSecurityposturePosture#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#config GoogleSecurityposturePosture#config}
 
 ---
 
@@ -2225,7 +2225,7 @@ This
 display name becomes the finding category for all findings that are
 returned by this custom module.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#display_name GoogleSecurityposturePosture#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#display_name GoogleSecurityposturePosture#display_name}
 
 ---
 
@@ -2239,7 +2239,7 @@ ModuleEnablementState *string
 
 The state of enablement for the module at its level of the resource hierarchy. Possible values: ["ENABLEMENT_STATE_UNSPECIFIED", "ENABLED", "DISABLED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#module_enablement_state GoogleSecurityposturePosture#module_enablement_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#module_enablement_state GoogleSecurityposturePosture#module_enablement_state}
 
 ---
 
@@ -2248,13 +2248,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 &googlesecuritypostureposture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfig {
-	Predicate: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigPredicate,
-	ResourceSelector: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigResourceSelector,
+	Predicate: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigPredicate,
+	ResourceSelector: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigResourceSelector,
 	Severity: *string,
-	CustomOutput: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutput,
+	CustomOutput: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutput,
 	Description: *string,
 	Recommendation: *string,
 }
@@ -2283,7 +2283,7 @@ Predicate GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealth
 
 predicate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#predicate GoogleSecurityposturePosture#predicate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#predicate GoogleSecurityposturePosture#predicate}
 
 ---
 
@@ -2297,7 +2297,7 @@ ResourceSelector GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurit
 
 resource_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#resource_selector GoogleSecurityposturePosture#resource_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#resource_selector GoogleSecurityposturePosture#resource_selector}
 
 ---
 
@@ -2311,7 +2311,7 @@ Severity *string
 
 The severity to assign to findings generated by the module. Possible values: ["SEVERITY_UNSPECIFIED", "CRITICAL", "HIGH", "MEDIUM", "LOW"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#severity GoogleSecurityposturePosture#severity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#severity GoogleSecurityposturePosture#severity}
 
 ---
 
@@ -2325,7 +2325,7 @@ CustomOutput GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHea
 
 custom_output block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#custom_output GoogleSecurityposturePosture#custom_output}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#custom_output GoogleSecurityposturePosture#custom_output}
 
 ---
 
@@ -2339,7 +2339,7 @@ Description *string
 
 Text that describes the vulnerability or misconfiguration that the custom module detects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#description GoogleSecurityposturePosture#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#description GoogleSecurityposturePosture#description}
 
 ---
 
@@ -2353,7 +2353,7 @@ Recommendation *string
 
 An explanation of the recommended steps that security teams can take to resolve the detected issue.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#recommendation GoogleSecurityposturePosture#recommendation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#recommendation GoogleSecurityposturePosture#recommendation}
 
 ---
 
@@ -2362,7 +2362,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 &googlesecuritypostureposture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutput {
 	Properties: interface{},
@@ -2387,7 +2387,7 @@ Properties interface{}
 
 properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#properties GoogleSecurityposturePosture#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#properties GoogleSecurityposturePosture#properties}
 
 ---
 
@@ -2396,11 +2396,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 &googlesecuritypostureposture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputProperties {
 	Name: *string,
-	ValueExpression: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertiesValueExpression,
+	ValueExpression: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertiesValueExpression,
 }
 ```
 
@@ -2423,7 +2423,7 @@ Name *string
 
 Name of the property for the custom output.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#name GoogleSecurityposturePosture#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#name GoogleSecurityposturePosture#name}
 
 ---
 
@@ -2437,7 +2437,7 @@ ValueExpression GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurity
 
 value_expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#value_expression GoogleSecurityposturePosture#value_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#value_expression GoogleSecurityposturePosture#value_expression}
 
 ---
 
@@ -2446,7 +2446,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertiesValueExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 &googlesecuritypostureposture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertiesValueExpression {
 	Expression: *string,
@@ -2477,7 +2477,7 @@ Expression *string
 
 Textual representation of an expression in Common Expression Language syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#expression GoogleSecurityposturePosture#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#expression GoogleSecurityposturePosture#expression}
 
 ---
 
@@ -2491,7 +2491,7 @@ Description *string
 
 Description of the expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#description GoogleSecurityposturePosture#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#description GoogleSecurityposturePosture#description}
 
 ---
 
@@ -2505,7 +2505,7 @@ Location *string
 
 String indicating the location of the expression for error reporting, e.g. a file name and a position in the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#location GoogleSecurityposturePosture#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#location GoogleSecurityposturePosture#location}
 
 ---
 
@@ -2519,7 +2519,7 @@ Title *string
 
 Title for the expression, i.e. a short string describing its purpose.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#title GoogleSecurityposturePosture#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#title GoogleSecurityposturePosture#title}
 
 ---
 
@@ -2528,7 +2528,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigPredicate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 &googlesecuritypostureposture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigPredicate {
 	Expression: *string,
@@ -2559,7 +2559,7 @@ Expression *string
 
 Textual representation of an expression in Common Expression Language syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#expression GoogleSecurityposturePosture#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#expression GoogleSecurityposturePosture#expression}
 
 ---
 
@@ -2573,7 +2573,7 @@ Description *string
 
 Description of the expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#description GoogleSecurityposturePosture#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#description GoogleSecurityposturePosture#description}
 
 ---
 
@@ -2587,7 +2587,7 @@ Location *string
 
 String indicating the location of the expression for error reporting, e.g. a file name and a position in the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#location GoogleSecurityposturePosture#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#location GoogleSecurityposturePosture#location}
 
 ---
 
@@ -2601,7 +2601,7 @@ Title *string
 
 Title for the expression, i.e. a short string describing its purpose.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#title GoogleSecurityposturePosture#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#title GoogleSecurityposturePosture#title}
 
 ---
 
@@ -2610,7 +2610,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigResourceSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 &googlesecuritypostureposture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigResourceSelector {
 	ResourceTypes: *[]*string,
@@ -2635,7 +2635,7 @@ ResourceTypes *[]*string
 
 The resource types to run the detector on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#resource_types GoogleSecurityposturePosture#resource_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#resource_types GoogleSecurityposturePosture#resource_types}
 
 ---
 
@@ -2644,7 +2644,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsModule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 &googlesecuritypostureposture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsModule {
 	ModuleName: *string,
@@ -2671,7 +2671,7 @@ ModuleName *string
 
 The name of the module eg: BIGQUERY_TABLE_CMEK_DISABLED.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#module_name GoogleSecurityposturePosture#module_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#module_name GoogleSecurityposturePosture#module_name}
 
 ---
 
@@ -2685,7 +2685,7 @@ ModuleEnablementState *string
 
 The state of enablement for the module at its level of the resource hierarchy. Possible values: ["ENABLEMENT_STATE_UNSPECIFIED", "ENABLED", "DISABLED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#module_enablement_state GoogleSecurityposturePosture#module_enablement_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#module_enablement_state GoogleSecurityposturePosture#module_enablement_state}
 
 ---
 
@@ -2694,7 +2694,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePostureTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 &googlesecuritypostureposture.GoogleSecurityposturePostureTimeouts {
 	Create: *string,
@@ -2707,9 +2707,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecur
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePostureTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#create GoogleSecurityposturePosture#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePostureTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#delete GoogleSecurityposturePosture#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePostureTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#update GoogleSecurityposturePosture#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePostureTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#create GoogleSecurityposturePosture#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePostureTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#delete GoogleSecurityposturePosture#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePostureTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#update GoogleSecurityposturePosture#update}. |
 
 ---
 
@@ -2721,7 +2721,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#create GoogleSecurityposturePosture#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#create GoogleSecurityposturePosture#create}.
 
 ---
 
@@ -2733,7 +2733,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#delete GoogleSecurityposturePosture#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#delete GoogleSecurityposturePosture#delete}.
 
 ---
 
@@ -2745,7 +2745,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_securityposture_posture#update GoogleSecurityposturePosture#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_securityposture_posture#update GoogleSecurityposturePosture#update}.
 
 ---
 
@@ -2756,7 +2756,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 googlesecuritypostureposture.NewGoogleSecurityposturePosturePolicySetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleSecurityposturePosturePolicySetsList
 ```
@@ -2916,7 +2916,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 googlesecuritypostureposture.NewGoogleSecurityposturePosturePolicySetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleSecurityposturePosturePolicySetsOutputReference
 ```
@@ -3269,7 +3269,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesComplianceStandardsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 googlesecuritypostureposture.NewGoogleSecurityposturePosturePolicySetsPoliciesComplianceStandardsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleSecurityposturePosturePolicySetsPoliciesComplianceStandardsList
 ```
@@ -3429,7 +3429,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesComplianceStandardsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 googlesecuritypostureposture.NewGoogleSecurityposturePosturePolicySetsPoliciesComplianceStandardsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleSecurityposturePosturePolicySetsPoliciesComplianceStandardsOutputReference
 ```
@@ -3754,7 +3754,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomCustomConstraintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 googlesecuritypostureposture.NewGoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomCustomConstraintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomCustomConstraintOutputReference
 ```
@@ -4171,7 +4171,7 @@ func InternalValue() GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrg
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 googlesecuritypostureposture.NewGoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomOutputReference
 ```
@@ -4497,7 +4497,7 @@ func InternalValue() GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrg
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 googlesecuritypostureposture.NewGoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesConditionOutputReference
 ```
@@ -4855,7 +4855,7 @@ func InternalValue() GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrg
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 googlesecuritypostureposture.NewGoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesList
 ```
@@ -5015,7 +5015,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 googlesecuritypostureposture.NewGoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesOutputReference
 ```
@@ -5453,7 +5453,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 googlesecuritypostureposture.NewGoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesValuesOutputReference
 ```
@@ -5760,7 +5760,7 @@ func InternalValue() GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrg
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 googlesecuritypostureposture.NewGoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintOutputReference
 ```
@@ -6066,7 +6066,7 @@ func InternalValue() GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrg
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 googlesecuritypostureposture.NewGoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesConditionOutputReference
 ```
@@ -6424,7 +6424,7 @@ func InternalValue() GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrg
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 googlesecuritypostureposture.NewGoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesList
 ```
@@ -6584,7 +6584,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 googlesecuritypostureposture.NewGoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesOutputReference
 ```
@@ -7022,7 +7022,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 googlesecuritypostureposture.NewGoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesValuesOutputReference
 ```
@@ -7329,7 +7329,7 @@ func InternalValue() GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrg
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 googlesecuritypostureposture.NewGoogleSecurityposturePosturePolicySetsPoliciesConstraintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSecurityposturePosturePolicySetsPoliciesConstraintOutputReference
 ```
@@ -7746,7 +7746,7 @@ func InternalValue() GoogleSecurityposturePosturePolicySetsPoliciesConstraint
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 googlesecuritypostureposture.NewGoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputOutputReference
 ```
@@ -8037,7 +8037,7 @@ func InternalValue() GoogleSecurityposturePosturePolicySetsPoliciesConstraintSec
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 googlesecuritypostureposture.NewGoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertiesList
 ```
@@ -8197,7 +8197,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 googlesecuritypostureposture.NewGoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertiesOutputReference
 ```
@@ -8528,7 +8528,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertiesValueExpressionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 googlesecuritypostureposture.NewGoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertiesValueExpressionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertiesValueExpressionOutputReference
 ```
@@ -8886,7 +8886,7 @@ func InternalValue() GoogleSecurityposturePosturePolicySetsPoliciesConstraintSec
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 googlesecuritypostureposture.NewGoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigOutputReference
 ```
@@ -9327,7 +9327,7 @@ func InternalValue() GoogleSecurityposturePosturePolicySetsPoliciesConstraintSec
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigPredicateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 googlesecuritypostureposture.NewGoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigPredicateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigPredicateOutputReference
 ```
@@ -9685,7 +9685,7 @@ func InternalValue() GoogleSecurityposturePosturePolicySetsPoliciesConstraintSec
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigResourceSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 googlesecuritypostureposture.NewGoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigResourceSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigResourceSelectorOutputReference
 ```
@@ -9956,7 +9956,7 @@ func InternalValue() GoogleSecurityposturePosturePolicySetsPoliciesConstraintSec
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 googlesecuritypostureposture.NewGoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleOutputReference
 ```
@@ -10309,7 +10309,7 @@ func InternalValue() GoogleSecurityposturePosturePolicySetsPoliciesConstraintSec
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsModuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 googlesecuritypostureposture.NewGoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsModuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsModuleOutputReference
 ```
@@ -10609,7 +10609,7 @@ func InternalValue() GoogleSecurityposturePosturePolicySetsPoliciesConstraintSec
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 googlesecuritypostureposture.NewGoogleSecurityposturePosturePolicySetsPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleSecurityposturePosturePolicySetsPoliciesList
 ```
@@ -10769,7 +10769,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 googlesecuritypostureposture.NewGoogleSecurityposturePosturePolicySetsPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleSecurityposturePosturePolicySetsPoliciesOutputReference
 ```
@@ -11164,7 +11164,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePostureTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuritypostureposture"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuritypostureposture"
 
 googlesecuritypostureposture.NewGoogleSecurityposturePostureTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSecurityposturePostureTimeoutsOutputReference
 ```

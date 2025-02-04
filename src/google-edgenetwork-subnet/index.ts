@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_edgenetwork_subnet
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_edgenetwork_subnet
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface GoogleEdgenetworkSubnetConfig extends cdktf.TerraformMetaArgume
   /**
   * A free-text description of the resource. Max length 1024 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_edgenetwork_subnet#description GoogleEdgenetworkSubnet#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_edgenetwork_subnet#description GoogleEdgenetworkSubnet#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_edgenetwork_subnet#id GoogleEdgenetworkSubnet#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_edgenetwork_subnet#id GoogleEdgenetworkSubnet#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +23,13 @@ export interface GoogleEdgenetworkSubnetConfig extends cdktf.TerraformMetaArgume
   /**
   * The ranges of ipv4 addresses that are owned by this subnetwork, in CIDR format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_edgenetwork_subnet#ipv4_cidr GoogleEdgenetworkSubnet#ipv4_cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_edgenetwork_subnet#ipv4_cidr GoogleEdgenetworkSubnet#ipv4_cidr}
   */
   readonly ipv4Cidr?: string[];
   /**
   * The ranges of ipv6 addresses that are owned by this subnetwork, in CIDR format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_edgenetwork_subnet#ipv6_cidr GoogleEdgenetworkSubnet#ipv6_cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_edgenetwork_subnet#ipv6_cidr GoogleEdgenetworkSubnet#ipv6_cidr}
   */
   readonly ipv6Cidr?: string[];
   /**
@@ -44,62 +39,62 @@ export interface GoogleEdgenetworkSubnetConfig extends cdktf.TerraformMetaArgume
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_edgenetwork_subnet#labels GoogleEdgenetworkSubnet#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_edgenetwork_subnet#labels GoogleEdgenetworkSubnet#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The Google Cloud region to which the target Distributed Cloud Edge zone belongs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_edgenetwork_subnet#location GoogleEdgenetworkSubnet#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_edgenetwork_subnet#location GoogleEdgenetworkSubnet#location}
   */
   readonly location: string;
   /**
   * The ID of the network to which this router belongs.
   * Must be of the form: 'projects/{{project}}/locations/{{location}}/zones/{{zone}}/networks/{{network_id}}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_edgenetwork_subnet#network GoogleEdgenetworkSubnet#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_edgenetwork_subnet#network GoogleEdgenetworkSubnet#network}
   */
   readonly network: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_edgenetwork_subnet#project GoogleEdgenetworkSubnet#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_edgenetwork_subnet#project GoogleEdgenetworkSubnet#project}
   */
   readonly project?: string;
   /**
   * A unique ID that identifies this subnet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_edgenetwork_subnet#subnet_id GoogleEdgenetworkSubnet#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_edgenetwork_subnet#subnet_id GoogleEdgenetworkSubnet#subnet_id}
   */
   readonly subnetId: string;
   /**
   * VLAN ID for this subnetwork. If not specified, one is assigned automatically.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_edgenetwork_subnet#vlan_id GoogleEdgenetworkSubnet#vlan_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_edgenetwork_subnet#vlan_id GoogleEdgenetworkSubnet#vlan_id}
   */
   readonly vlanId?: number;
   /**
   * The name of the target Distributed Cloud Edge zone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_edgenetwork_subnet#zone GoogleEdgenetworkSubnet#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_edgenetwork_subnet#zone GoogleEdgenetworkSubnet#zone}
   */
   readonly zone: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_edgenetwork_subnet#timeouts GoogleEdgenetworkSubnet#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_edgenetwork_subnet#timeouts GoogleEdgenetworkSubnet#timeouts}
   */
   readonly timeouts?: GoogleEdgenetworkSubnetTimeouts;
 }
 export interface GoogleEdgenetworkSubnetTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_edgenetwork_subnet#create GoogleEdgenetworkSubnet#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_edgenetwork_subnet#create GoogleEdgenetworkSubnet#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_edgenetwork_subnet#delete GoogleEdgenetworkSubnet#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_edgenetwork_subnet#delete GoogleEdgenetworkSubnet#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_edgenetwork_subnet#update GoogleEdgenetworkSubnet#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_edgenetwork_subnet#update GoogleEdgenetworkSubnet#update}
   */
   readonly update?: string;
 }
@@ -251,7 +246,7 @@ export class GoogleEdgenetworkSubnetTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_edgenetwork_subnet google_edgenetwork_subnet}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_edgenetwork_subnet google_edgenetwork_subnet}
 */
 export class GoogleEdgenetworkSubnet extends cdktf.TerraformResource {
 
@@ -267,7 +262,7 @@ export class GoogleEdgenetworkSubnet extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleEdgenetworkSubnet resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleEdgenetworkSubnet to import
-  * @param importFromId The id of the existing GoogleEdgenetworkSubnet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_edgenetwork_subnet#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleEdgenetworkSubnet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_edgenetwork_subnet#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleEdgenetworkSubnet to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -279,7 +274,7 @@ export class GoogleEdgenetworkSubnet extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_edgenetwork_subnet google_edgenetwork_subnet} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_edgenetwork_subnet google_edgenetwork_subnet} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -290,7 +285,7 @@ export class GoogleEdgenetworkSubnet extends cdktf.TerraformResource {
       terraformResourceType: 'google_edgenetwork_subnet',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.18.1',
+        providerVersion: '6.19.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

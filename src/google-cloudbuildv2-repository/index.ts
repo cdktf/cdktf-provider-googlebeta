@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_cloudbuildv2_repository
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_cloudbuildv2_repository
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -18,11 +13,11 @@ export interface GoogleCloudbuildv2RepositoryConfig extends cdktf.TerraformMetaA
   * **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
   * Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_cloudbuildv2_repository#annotations GoogleCloudbuildv2Repository#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_cloudbuildv2_repository#annotations GoogleCloudbuildv2Repository#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_cloudbuildv2_repository#id GoogleCloudbuildv2Repository#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_cloudbuildv2_repository#id GoogleCloudbuildv2Repository#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -31,45 +26,45 @@ export interface GoogleCloudbuildv2RepositoryConfig extends cdktf.TerraformMetaA
   /**
   * The location for the resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_cloudbuildv2_repository#location GoogleCloudbuildv2Repository#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_cloudbuildv2_repository#location GoogleCloudbuildv2Repository#location}
   */
   readonly location?: string;
   /**
   * Name of the repository.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_cloudbuildv2_repository#name GoogleCloudbuildv2Repository#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_cloudbuildv2_repository#name GoogleCloudbuildv2Repository#name}
   */
   readonly name: string;
   /**
   * The connection for the resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_cloudbuildv2_repository#parent_connection GoogleCloudbuildv2Repository#parent_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_cloudbuildv2_repository#parent_connection GoogleCloudbuildv2Repository#parent_connection}
   */
   readonly parentConnection: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_cloudbuildv2_repository#project GoogleCloudbuildv2Repository#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_cloudbuildv2_repository#project GoogleCloudbuildv2Repository#project}
   */
   readonly project?: string;
   /**
   * Required. Git Clone HTTPS URI.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_cloudbuildv2_repository#remote_uri GoogleCloudbuildv2Repository#remote_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_cloudbuildv2_repository#remote_uri GoogleCloudbuildv2Repository#remote_uri}
   */
   readonly remoteUri: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_cloudbuildv2_repository#timeouts GoogleCloudbuildv2Repository#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_cloudbuildv2_repository#timeouts GoogleCloudbuildv2Repository#timeouts}
   */
   readonly timeouts?: GoogleCloudbuildv2RepositoryTimeouts;
 }
 export interface GoogleCloudbuildv2RepositoryTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_cloudbuildv2_repository#create GoogleCloudbuildv2Repository#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_cloudbuildv2_repository#create GoogleCloudbuildv2Repository#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_cloudbuildv2_repository#delete GoogleCloudbuildv2Repository#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_cloudbuildv2_repository#delete GoogleCloudbuildv2Repository#delete}
   */
   readonly delete?: string;
 }
@@ -192,7 +187,7 @@ export class GoogleCloudbuildv2RepositoryTimeoutsOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_cloudbuildv2_repository google_cloudbuildv2_repository}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_cloudbuildv2_repository google_cloudbuildv2_repository}
 */
 export class GoogleCloudbuildv2Repository extends cdktf.TerraformResource {
 
@@ -208,7 +203,7 @@ export class GoogleCloudbuildv2Repository extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleCloudbuildv2Repository resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleCloudbuildv2Repository to import
-  * @param importFromId The id of the existing GoogleCloudbuildv2Repository that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_cloudbuildv2_repository#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleCloudbuildv2Repository that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_cloudbuildv2_repository#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleCloudbuildv2Repository to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -220,7 +215,7 @@ export class GoogleCloudbuildv2Repository extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_cloudbuildv2_repository google_cloudbuildv2_repository} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_cloudbuildv2_repository google_cloudbuildv2_repository} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -231,7 +226,7 @@ export class GoogleCloudbuildv2Repository extends cdktf.TerraformResource {
       terraformResourceType: 'google_cloudbuildv2_repository',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.18.1',
+        providerVersion: '6.19.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
