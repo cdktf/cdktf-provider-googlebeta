@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_healthcare_fhir_store
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_healthcare_fhir_store
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,14 +15,14 @@ export interface GoogleHealthcareFhirStoreConfig extends cdktf.TerraformMetaArgu
   /**
   * Enable parsing of references within complex FHIR data types such as Extensions. If this value is set to ENABLED, then features like referential integrity and Bundle reference rewriting apply to all references. If this flag has not been specified the behavior of the FHIR store will not change, references in complex data types will not be parsed. New stores will have this value set to ENABLED by default after a notification period. Warning: turning on this flag causes processing existing resources to fail if they contain references to non-existent resources. Possible values: ["COMPLEX_DATA_TYPE_REFERENCE_PARSING_UNSPECIFIED", "DISABLED", "ENABLED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_healthcare_fhir_store#complex_data_type_reference_parsing GoogleHealthcareFhirStore#complex_data_type_reference_parsing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_healthcare_fhir_store#complex_data_type_reference_parsing GoogleHealthcareFhirStore#complex_data_type_reference_parsing}
   */
   readonly complexDataTypeReferenceParsing?: string;
   /**
   * Identifies the dataset addressed by this request. Must be in the format
   * 'projects/{project}/locations/{location}/datasets/{dataset}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_healthcare_fhir_store#dataset GoogleHealthcareFhirStore#dataset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_healthcare_fhir_store#dataset GoogleHealthcareFhirStore#dataset}
   */
   readonly dataset: string;
   /**
@@ -30,7 +30,7 @@ export interface GoogleHealthcareFhirStoreConfig extends cdktf.TerraformMetaArgu
   * If false, uses the FHIR specification default handling=lenient which ignores unrecognized search parameters.
   * The handling can always be changed from the default on an individual API call by setting the HTTP header Prefer: handling=strict or Prefer: handling=lenient.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_healthcare_fhir_store#default_search_handling_strict GoogleHealthcareFhirStore#default_search_handling_strict}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_healthcare_fhir_store#default_search_handling_strict GoogleHealthcareFhirStore#default_search_handling_strict}
   */
   readonly defaultSearchHandlingStrict?: boolean | cdktf.IResolvable;
   /**
@@ -42,7 +42,7 @@ export interface GoogleHealthcareFhirStoreConfig extends cdktf.TerraformMetaArgu
   * 
   * ** Changing this property may recreate the FHIR store (removing all data) **
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_healthcare_fhir_store#disable_referential_integrity GoogleHealthcareFhirStore#disable_referential_integrity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_healthcare_fhir_store#disable_referential_integrity GoogleHealthcareFhirStore#disable_referential_integrity}
   */
   readonly disableReferentialIntegrity?: boolean | cdktf.IResolvable;
   /**
@@ -54,7 +54,7 @@ export interface GoogleHealthcareFhirStoreConfig extends cdktf.TerraformMetaArgu
   * 
   * ** Changing this property may recreate the FHIR store (removing all data) **
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_healthcare_fhir_store#disable_resource_versioning GoogleHealthcareFhirStore#disable_resource_versioning}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_healthcare_fhir_store#disable_resource_versioning GoogleHealthcareFhirStore#disable_resource_versioning}
   */
   readonly disableResourceVersioning?: boolean | cdktf.IResolvable;
   /**
@@ -67,14 +67,14 @@ export interface GoogleHealthcareFhirStoreConfig extends cdktf.TerraformMetaArgu
   * 
   * ** This property can be changed manually in the Google Cloud Healthcare admin console without recreating the FHIR store **
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_healthcare_fhir_store#enable_history_import GoogleHealthcareFhirStore#enable_history_import}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_healthcare_fhir_store#enable_history_import GoogleHealthcareFhirStore#enable_history_import}
   */
   readonly enableHistoryImport?: boolean | cdktf.IResolvable;
   /**
   * Whether to allow the ExecuteBundle API to accept history bundles, and directly insert and overwrite historical
   * resource versions into the FHIR store. If set to false, using history bundles fails with an error.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_healthcare_fhir_store#enable_history_modifications GoogleHealthcareFhirStore#enable_history_modifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_healthcare_fhir_store#enable_history_modifications GoogleHealthcareFhirStore#enable_history_modifications}
   */
   readonly enableHistoryModifications?: boolean | cdktf.IResolvable;
   /**
@@ -85,11 +85,11 @@ export interface GoogleHealthcareFhirStoreConfig extends cdktf.TerraformMetaArgu
   * identifiers, those IDs will be part of the FHIR resource path recorded in Cloud audit logs and Cloud Pub/Sub
   * notifications.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_healthcare_fhir_store#enable_update_create GoogleHealthcareFhirStore#enable_update_create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_healthcare_fhir_store#enable_update_create GoogleHealthcareFhirStore#enable_update_create}
   */
   readonly enableUpdateCreate?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_healthcare_fhir_store#id GoogleHealthcareFhirStore#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_healthcare_fhir_store#id GoogleHealthcareFhirStore#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -113,7 +113,7 @@ export interface GoogleHealthcareFhirStoreConfig extends cdktf.TerraformMetaArgu
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_healthcare_fhir_store#labels GoogleHealthcareFhirStore#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_healthcare_fhir_store#labels GoogleHealthcareFhirStore#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
@@ -121,37 +121,37 @@ export interface GoogleHealthcareFhirStoreConfig extends cdktf.TerraformMetaArgu
   * 
   * ** Changing this property may recreate the FHIR store (removing all data) **
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_healthcare_fhir_store#name GoogleHealthcareFhirStore#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_healthcare_fhir_store#name GoogleHealthcareFhirStore#name}
   */
   readonly name: string;
   /**
   * The FHIR specification version. Default value: "STU3" Possible values: ["DSTU2", "STU3", "R4"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_healthcare_fhir_store#version GoogleHealthcareFhirStore#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_healthcare_fhir_store#version GoogleHealthcareFhirStore#version}
   */
   readonly version?: string;
   /**
   * notification_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_healthcare_fhir_store#notification_config GoogleHealthcareFhirStore#notification_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_healthcare_fhir_store#notification_config GoogleHealthcareFhirStore#notification_config}
   */
   readonly notificationConfig?: GoogleHealthcareFhirStoreNotificationConfig;
   /**
   * notification_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_healthcare_fhir_store#notification_configs GoogleHealthcareFhirStore#notification_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_healthcare_fhir_store#notification_configs GoogleHealthcareFhirStore#notification_configs}
   */
   readonly notificationConfigs?: GoogleHealthcareFhirStoreNotificationConfigs[] | cdktf.IResolvable;
   /**
   * stream_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_healthcare_fhir_store#stream_configs GoogleHealthcareFhirStore#stream_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_healthcare_fhir_store#stream_configs GoogleHealthcareFhirStore#stream_configs}
   */
   readonly streamConfigs?: GoogleHealthcareFhirStoreStreamConfigs[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_healthcare_fhir_store#timeouts GoogleHealthcareFhirStore#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_healthcare_fhir_store#timeouts GoogleHealthcareFhirStore#timeouts}
   */
   readonly timeouts?: GoogleHealthcareFhirStoreTimeouts;
 }
@@ -164,7 +164,7 @@ export interface GoogleHealthcareFhirStoreNotificationConfig {
   * project. service-PROJECT_NUMBER@gcp-sa-healthcare.iam.gserviceaccount.com must have publisher permissions on the given
   * Cloud Pub/Sub topic. Not having adequate permissions will cause the calls that send notifications to fail.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_healthcare_fhir_store#pubsub_topic GoogleHealthcareFhirStore#pubsub_topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_healthcare_fhir_store#pubsub_topic GoogleHealthcareFhirStore#pubsub_topic}
   */
   readonly pubsubTopic: string;
 }
@@ -252,7 +252,7 @@ export interface GoogleHealthcareFhirStoreNotificationConfigs {
   * project. service-PROJECT_NUMBER@gcp-sa-healthcare.iam.gserviceaccount.com must have publisher permissions on the given
   * Cloud Pub/Sub topic. Not having adequate permissions will cause the calls that send notifications to fail.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_healthcare_fhir_store#pubsub_topic GoogleHealthcareFhirStore#pubsub_topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_healthcare_fhir_store#pubsub_topic GoogleHealthcareFhirStore#pubsub_topic}
   */
   readonly pubsubTopic: string;
   /**
@@ -262,7 +262,7 @@ export interface GoogleHealthcareFhirStoreNotificationConfigs {
   * sent. Clients should always check the "payloadType" label from a Pub/Sub message to determine whether
   * it needs to fetch the full resource as a separate operation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_healthcare_fhir_store#send_full_resource GoogleHealthcareFhirStore#send_full_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_healthcare_fhir_store#send_full_resource GoogleHealthcareFhirStore#send_full_resource}
   */
   readonly sendFullResource?: boolean | cdktf.IResolvable;
   /**
@@ -272,7 +272,7 @@ export interface GoogleHealthcareFhirStoreNotificationConfigs {
   * check the "payloadType" label from a Pub/Sub message to determine whether it needs to fetch the full previous
   * resource as a separate operation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_healthcare_fhir_store#send_previous_resource_on_delete GoogleHealthcareFhirStore#send_previous_resource_on_delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_healthcare_fhir_store#send_previous_resource_on_delete GoogleHealthcareFhirStore#send_previous_resource_on_delete}
   */
   readonly sendPreviousResourceOnDelete?: boolean | cdktf.IResolvable;
 }
@@ -445,13 +445,13 @@ export interface GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchema
   /**
   * Number of milliseconds for which to keep the storage for a partition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_healthcare_fhir_store#expiration_ms GoogleHealthcareFhirStore#expiration_ms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_healthcare_fhir_store#expiration_ms GoogleHealthcareFhirStore#expiration_ms}
   */
   readonly expirationMs?: string;
   /**
   * Type of partitioning. Possible values: ["PARTITION_TYPE_UNSPECIFIED", "HOUR", "DAY", "MONTH", "YEAR"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_healthcare_fhir_store#type GoogleHealthcareFhirStore#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_healthcare_fhir_store#type GoogleHealthcareFhirStore#type}
   */
   readonly type: string;
 }
@@ -566,7 +566,7 @@ export interface GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchema
   * concept.concept but not concept.concept.concept. If not specified or set to 0, the server will use the default
   * value 2. The maximum depth allowed is 5.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_healthcare_fhir_store#recursive_structure_depth GoogleHealthcareFhirStore#recursive_structure_depth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_healthcare_fhir_store#recursive_structure_depth GoogleHealthcareFhirStore#recursive_structure_depth}
   */
   readonly recursiveStructureDepth: number;
   /**
@@ -576,13 +576,13 @@ export interface GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchema
   *  * ANALYTICS_V2: Analytics V2, similar to schema defined by the FHIR community, with added support for extensions with one or more occurrences and contained resources in stringified JSON.
   *  * LOSSLESS: A data-driven schema generated from the fields present in the FHIR data being exported, with no additional simplification. Default value: "ANALYTICS" Possible values: ["ANALYTICS", "ANALYTICS_V2", "LOSSLESS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_healthcare_fhir_store#schema_type GoogleHealthcareFhirStore#schema_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_healthcare_fhir_store#schema_type GoogleHealthcareFhirStore#schema_type}
   */
   readonly schemaType?: string;
   /**
   * last_updated_partition_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_healthcare_fhir_store#last_updated_partition_config GoogleHealthcareFhirStore#last_updated_partition_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_healthcare_fhir_store#last_updated_partition_config GoogleHealthcareFhirStore#last_updated_partition_config}
   */
   readonly lastUpdatedPartitionConfig?: GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigLastUpdatedPartitionConfig;
 }
@@ -723,13 +723,13 @@ export interface GoogleHealthcareFhirStoreStreamConfigsBigqueryDestination {
   /**
   * BigQuery URI to a dataset, up to 2000 characters long, in the format bq://projectId.bqDatasetId
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_healthcare_fhir_store#dataset_uri GoogleHealthcareFhirStore#dataset_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_healthcare_fhir_store#dataset_uri GoogleHealthcareFhirStore#dataset_uri}
   */
   readonly datasetUri: string;
   /**
   * schema_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_healthcare_fhir_store#schema_config GoogleHealthcareFhirStore#schema_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_healthcare_fhir_store#schema_config GoogleHealthcareFhirStore#schema_config}
   */
   readonly schemaConfig: GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfig;
 }
@@ -840,13 +840,13 @@ export interface GoogleHealthcareFhirStoreStreamConfigs {
   * https://www.hl7.org/fhir/valueset-resource-types.html for a list of all FHIR resource types. The server treats
   * an empty list as an intent to stream all the supported resource types in this FHIR store.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_healthcare_fhir_store#resource_types GoogleHealthcareFhirStore#resource_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_healthcare_fhir_store#resource_types GoogleHealthcareFhirStore#resource_types}
   */
   readonly resourceTypes?: string[];
   /**
   * bigquery_destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_healthcare_fhir_store#bigquery_destination GoogleHealthcareFhirStore#bigquery_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_healthcare_fhir_store#bigquery_destination GoogleHealthcareFhirStore#bigquery_destination}
   */
   readonly bigqueryDestination: GoogleHealthcareFhirStoreStreamConfigsBigqueryDestination;
 }
@@ -988,15 +988,15 @@ export class GoogleHealthcareFhirStoreStreamConfigsList extends cdktf.ComplexLis
 }
 export interface GoogleHealthcareFhirStoreTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_healthcare_fhir_store#create GoogleHealthcareFhirStore#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_healthcare_fhir_store#create GoogleHealthcareFhirStore#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_healthcare_fhir_store#delete GoogleHealthcareFhirStore#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_healthcare_fhir_store#delete GoogleHealthcareFhirStore#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_healthcare_fhir_store#update GoogleHealthcareFhirStore#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_healthcare_fhir_store#update GoogleHealthcareFhirStore#update}
   */
   readonly update?: string;
 }
@@ -1148,7 +1148,7 @@ export class GoogleHealthcareFhirStoreTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_healthcare_fhir_store google_healthcare_fhir_store}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_healthcare_fhir_store google_healthcare_fhir_store}
 */
 export class GoogleHealthcareFhirStore extends cdktf.TerraformResource {
 
@@ -1164,7 +1164,7 @@ export class GoogleHealthcareFhirStore extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleHealthcareFhirStore resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleHealthcareFhirStore to import
-  * @param importFromId The id of the existing GoogleHealthcareFhirStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_healthcare_fhir_store#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleHealthcareFhirStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_healthcare_fhir_store#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleHealthcareFhirStore to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1176,7 +1176,7 @@ export class GoogleHealthcareFhirStore extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_healthcare_fhir_store google_healthcare_fhir_store} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_healthcare_fhir_store google_healthcare_fhir_store} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1187,7 +1187,7 @@ export class GoogleHealthcareFhirStore extends cdktf.TerraformResource {
       terraformResourceType: 'google_healthcare_fhir_store',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.18.1',
+        providerVersion: '6.19.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

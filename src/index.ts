@@ -98,6 +98,9 @@ export * as googleBeyondcorpAppConnection from './google-beyondcorp-app-connecti
 export * as googleBeyondcorpAppConnector from './google-beyondcorp-app-connector';
 export * as googleBeyondcorpAppGateway from './google-beyondcorp-app-gateway';
 export * as googleBeyondcorpSecurityGateway from './google-beyondcorp-security-gateway';
+export * as googleBeyondcorpSecurityGatewayIamBinding from './google-beyondcorp-security-gateway-iam-binding';
+export * as googleBeyondcorpSecurityGatewayIamMember from './google-beyondcorp-security-gateway-iam-member';
+export * as googleBeyondcorpSecurityGatewayIamPolicy from './google-beyondcorp-security-gateway-iam-policy';
 export * as googleBiglakeCatalog from './google-biglake-catalog';
 export * as googleBiglakeDatabase from './google-biglake-database';
 export * as googleBiglakeTable from './google-biglake-table';
@@ -1099,6 +1102,7 @@ export * as dataGoogleBackupDrManagementServer from './data-google-backup-dr-man
 export * as dataGoogleBeyondcorpAppConnection from './data-google-beyondcorp-app-connection';
 export * as dataGoogleBeyondcorpAppConnector from './data-google-beyondcorp-app-connector';
 export * as dataGoogleBeyondcorpAppGateway from './data-google-beyondcorp-app-gateway';
+export * as dataGoogleBeyondcorpSecurityGatewayIamPolicy from './data-google-beyondcorp-security-gateway-iam-policy';
 export * as dataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy from './data-google-bigquery-analytics-hub-data-exchange-iam-policy';
 export * as dataGoogleBigqueryAnalyticsHubListingIamPolicy from './data-google-bigquery-analytics-hub-listing-iam-policy';
 export * as dataGoogleBigqueryConnectionIamPolicy from './data-google-bigquery-connection-iam-policy';
@@ -1326,7 +1330,10 @@ export * as dataGoogleOrganization from './data-google-organization';
 export * as dataGoogleOrganizationIamPolicy from './data-google-organization-iam-policy';
 export * as dataGoogleOrganizations from './data-google-organizations';
 export * as dataGoogleParameterManagerParameter from './data-google-parameter-manager-parameter';
+export * as dataGoogleParameterManagerParameterVersion from './data-google-parameter-manager-parameter-version';
+export * as dataGoogleParameterManagerParameters from './data-google-parameter-manager-parameters';
 export * as dataGoogleParameterManagerRegionalParameter from './data-google-parameter-manager-regional-parameter';
+export * as dataGoogleParameterManagerRegionalParameterVersion from './data-google-parameter-manager-regional-parameter-version';
 export * as dataGoogleParameterManagerRegionalParameters from './data-google-parameter-manager-regional-parameters';
 export * as dataGooglePrivatecaCaPoolIamPolicy from './data-google-privateca-ca-pool-iam-policy';
 export * as dataGooglePrivatecaCertificateAuthority from './data-google-privateca-certificate-authority';

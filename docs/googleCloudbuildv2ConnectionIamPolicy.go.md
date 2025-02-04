@@ -4,7 +4,7 @@
 
 ### GoogleCloudbuildv2ConnectionIamPolicy <a name="GoogleCloudbuildv2ConnectionIamPolicy" id="@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamPolicy.GoogleCloudbuildv2ConnectionIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_cloudbuildv2_connection_iam_policy google_cloudbuildv2_connection_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_cloudbuildv2_connection_iam_policy google_cloudbuildv2_connection_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamPolicy.GoogleCloudbuildv2ConnectionIamPolicy.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the GoogleCloudbuildv2Connecti
 
 The id of the existing GoogleCloudbuildv2ConnectionIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_cloudbuildv2_connection_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_cloudbuildv2_connection_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -838,11 +838,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloud
 | <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamPolicy.GoogleCloudbuildv2ConnectionIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamPolicy.GoogleCloudbuildv2ConnectionIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamPolicy.GoogleCloudbuildv2ConnectionIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamPolicy.GoogleCloudbuildv2ConnectionIamPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_cloudbuildv2_connection_iam_policy#name GoogleCloudbuildv2ConnectionIamPolicy#name}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamPolicy.GoogleCloudbuildv2ConnectionIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_cloudbuildv2_connection_iam_policy#policy_data GoogleCloudbuildv2ConnectionIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamPolicy.GoogleCloudbuildv2ConnectionIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_cloudbuildv2_connection_iam_policy#id GoogleCloudbuildv2ConnectionIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamPolicy.GoogleCloudbuildv2ConnectionIamPolicyConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_cloudbuildv2_connection_iam_policy#location GoogleCloudbuildv2ConnectionIamPolicy#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamPolicy.GoogleCloudbuildv2ConnectionIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_cloudbuildv2_connection_iam_policy#project GoogleCloudbuildv2ConnectionIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamPolicy.GoogleCloudbuildv2ConnectionIamPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_cloudbuildv2_connection_iam_policy#name GoogleCloudbuildv2ConnectionIamPolicy#name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamPolicy.GoogleCloudbuildv2ConnectionIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_cloudbuildv2_connection_iam_policy#policy_data GoogleCloudbuildv2ConnectionIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamPolicy.GoogleCloudbuildv2ConnectionIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_cloudbuildv2_connection_iam_policy#id GoogleCloudbuildv2ConnectionIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamPolicy.GoogleCloudbuildv2ConnectionIamPolicyConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_cloudbuildv2_connection_iam_policy#location GoogleCloudbuildv2ConnectionIamPolicy#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamPolicy.GoogleCloudbuildv2ConnectionIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_cloudbuildv2_connection_iam_policy#project GoogleCloudbuildv2ConnectionIamPolicy#project}. |
 
 ---
 
@@ -924,7 +924,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_cloudbuildv2_connection_iam_policy#name GoogleCloudbuildv2ConnectionIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_cloudbuildv2_connection_iam_policy#name GoogleCloudbuildv2ConnectionIamPolicy#name}.
 
 ---
 
@@ -936,7 +936,7 @@ PolicyData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_cloudbuildv2_connection_iam_policy#policy_data GoogleCloudbuildv2ConnectionIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_cloudbuildv2_connection_iam_policy#policy_data GoogleCloudbuildv2ConnectionIamPolicy#policy_data}.
 
 ---
 
@@ -948,7 +948,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_cloudbuildv2_connection_iam_policy#id GoogleCloudbuildv2ConnectionIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_cloudbuildv2_connection_iam_policy#id GoogleCloudbuildv2ConnectionIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -963,7 +963,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_cloudbuildv2_connection_iam_policy#location GoogleCloudbuildv2ConnectionIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_cloudbuildv2_connection_iam_policy#location GoogleCloudbuildv2ConnectionIamPolicy#location}.
 
 ---
 
@@ -975,7 +975,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_cloudbuildv2_connection_iam_policy#project GoogleCloudbuildv2ConnectionIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_cloudbuildv2_connection_iam_policy#project GoogleCloudbuildv2ConnectionIamPolicy#project}.
 
 ---
 

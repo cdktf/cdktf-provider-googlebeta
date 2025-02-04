@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_storage_bucket_access_control
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_storage_bucket_access_control
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface GoogleStorageBucketAccessControlConfig extends cdktf.TerraformM
   /**
   * The name of the bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_storage_bucket_access_control#bucket GoogleStorageBucketAccessControl#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_storage_bucket_access_control#bucket GoogleStorageBucketAccessControl#bucket}
   */
   readonly bucket: string;
   /**
@@ -35,11 +35,11 @@ export interface GoogleStorageBucketAccessControlConfig extends cdktf.TerraformM
   *   To refer to all members of the Google Apps for Business domain
   *   example.com, the entity would be domain-example.com.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_storage_bucket_access_control#entity GoogleStorageBucketAccessControl#entity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_storage_bucket_access_control#entity GoogleStorageBucketAccessControl#entity}
   */
   readonly entity: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_storage_bucket_access_control#id GoogleStorageBucketAccessControl#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_storage_bucket_access_control#id GoogleStorageBucketAccessControl#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -48,27 +48,27 @@ export interface GoogleStorageBucketAccessControlConfig extends cdktf.TerraformM
   /**
   * The access permission for the entity. Possible values: ["OWNER", "READER", "WRITER"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_storage_bucket_access_control#role GoogleStorageBucketAccessControl#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_storage_bucket_access_control#role GoogleStorageBucketAccessControl#role}
   */
   readonly role?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_storage_bucket_access_control#timeouts GoogleStorageBucketAccessControl#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_storage_bucket_access_control#timeouts GoogleStorageBucketAccessControl#timeouts}
   */
   readonly timeouts?: GoogleStorageBucketAccessControlTimeouts;
 }
 export interface GoogleStorageBucketAccessControlTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_storage_bucket_access_control#create GoogleStorageBucketAccessControl#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_storage_bucket_access_control#create GoogleStorageBucketAccessControl#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_storage_bucket_access_control#delete GoogleStorageBucketAccessControl#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_storage_bucket_access_control#delete GoogleStorageBucketAccessControl#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_storage_bucket_access_control#update GoogleStorageBucketAccessControl#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_storage_bucket_access_control#update GoogleStorageBucketAccessControl#update}
   */
   readonly update?: string;
 }
@@ -220,7 +220,7 @@ export class GoogleStorageBucketAccessControlTimeoutsOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_storage_bucket_access_control google_storage_bucket_access_control}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_storage_bucket_access_control google_storage_bucket_access_control}
 */
 export class GoogleStorageBucketAccessControl extends cdktf.TerraformResource {
 
@@ -236,7 +236,7 @@ export class GoogleStorageBucketAccessControl extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleStorageBucketAccessControl resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleStorageBucketAccessControl to import
-  * @param importFromId The id of the existing GoogleStorageBucketAccessControl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_storage_bucket_access_control#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleStorageBucketAccessControl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_storage_bucket_access_control#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleStorageBucketAccessControl to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -248,7 +248,7 @@ export class GoogleStorageBucketAccessControl extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_storage_bucket_access_control google_storage_bucket_access_control} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_storage_bucket_access_control google_storage_bucket_access_control} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -259,7 +259,7 @@ export class GoogleStorageBucketAccessControl extends cdktf.TerraformResource {
       terraformResourceType: 'google_storage_bucket_access_control',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.18.1',
+        providerVersion: '6.19.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
