@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrundomainmapping"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloudrundomainmapping"
 
 googlecloudrundomainmapping.NewGoogleCloudRunDomainMapping(scope Construct, id *string, config GoogleCloudRunDomainMappingConfig) GoogleCloudRunDomainMapping
 ```
@@ -445,7 +445,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMapping.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrundomainmapping"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloudrundomainmapping"
 
 googlecloudrundomainmapping.GoogleCloudRunDomainMapping_IsConstruct(x interface{}) *bool
 ```
@@ -477,7 +477,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMapping.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrundomainmapping"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloudrundomainmapping"
 
 googlecloudrundomainmapping.GoogleCloudRunDomainMapping_IsTerraformElement(x interface{}) *bool
 ```
@@ -491,7 +491,7 @@ googlecloudrundomainmapping.GoogleCloudRunDomainMapping_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMapping.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrundomainmapping"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloudrundomainmapping"
 
 googlecloudrundomainmapping.GoogleCloudRunDomainMapping_IsTerraformResource(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ googlecloudrundomainmapping.GoogleCloudRunDomainMapping_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMapping.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrundomainmapping"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloudrundomainmapping"
 
 googlecloudrundomainmapping.GoogleCloudRunDomainMapping_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -899,7 +899,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrundomainmapping"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloudrundomainmapping"
 
 &googlecloudrundomainmapping.GoogleCloudRunDomainMappingConfig {
 	Connection: interface{},
@@ -911,11 +911,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrund
 	Provisioners: *[]interface{},
 	Location: *string,
 	Name: *string,
-	Spec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingSpec,
+	Spec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingSpec,
 	Id: *string,
-	Metadata: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingMetadata,
+	Metadata: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingMetadata,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingTimeouts,
 }
 ```
 
@@ -1112,7 +1112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrundomainmapping"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloudrundomainmapping"
 
 &googlecloudrundomainmapping.GoogleCloudRunDomainMappingMetadata {
 	Namespace: *string,
@@ -1194,7 +1194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrundomainmapping"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloudrundomainmapping"
 
 &googlecloudrundomainmapping.GoogleCloudRunDomainMappingSpec {
 	RouteName: *string,
@@ -1264,7 +1264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrundomainmapping"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloudrundomainmapping"
 
 &googlecloudrundomainmapping.GoogleCloudRunDomainMappingStatus {
 
@@ -1277,7 +1277,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrund
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingStatusConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrundomainmapping"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloudrundomainmapping"
 
 &googlecloudrundomainmapping.GoogleCloudRunDomainMappingStatusConditions {
 
@@ -1290,7 +1290,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrund
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingStatusResourceRecords.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrundomainmapping"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloudrundomainmapping"
 
 &googlecloudrundomainmapping.GoogleCloudRunDomainMappingStatusResourceRecords {
 
@@ -1303,7 +1303,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrund
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrundomainmapping"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloudrundomainmapping"
 
 &googlecloudrundomainmapping.GoogleCloudRunDomainMappingTimeouts {
 	Create: *string,
@@ -1351,7 +1351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrundomainmapping"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloudrundomainmapping"
 
 googlecloudrundomainmapping.NewGoogleCloudRunDomainMappingMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudRunDomainMappingMetadataOutputReference
 ```
@@ -1757,7 +1757,7 @@ func InternalValue() GoogleCloudRunDomainMappingMetadata
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrundomainmapping"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloudrundomainmapping"
 
 googlecloudrundomainmapping.NewGoogleCloudRunDomainMappingSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudRunDomainMappingSpecOutputReference
 ```
@@ -2086,7 +2086,7 @@ func InternalValue() GoogleCloudRunDomainMappingSpec
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingStatusConditionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrundomainmapping"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloudrundomainmapping"
 
 googlecloudrundomainmapping.NewGoogleCloudRunDomainMappingStatusConditionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudRunDomainMappingStatusConditionsList
 ```
@@ -2235,7 +2235,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingStatusConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrundomainmapping"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloudrundomainmapping"
 
 googlecloudrundomainmapping.NewGoogleCloudRunDomainMappingStatusConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudRunDomainMappingStatusConditionsOutputReference
 ```
@@ -2546,7 +2546,7 @@ func InternalValue() GoogleCloudRunDomainMappingStatusConditions
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrundomainmapping"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloudrundomainmapping"
 
 googlecloudrundomainmapping.NewGoogleCloudRunDomainMappingStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudRunDomainMappingStatusList
 ```
@@ -2695,7 +2695,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrundomainmapping"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloudrundomainmapping"
 
 googlecloudrundomainmapping.NewGoogleCloudRunDomainMappingStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudRunDomainMappingStatusOutputReference
 ```
@@ -3006,7 +3006,7 @@ func InternalValue() GoogleCloudRunDomainMappingStatus
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingStatusResourceRecordsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrundomainmapping"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloudrundomainmapping"
 
 googlecloudrundomainmapping.NewGoogleCloudRunDomainMappingStatusResourceRecordsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudRunDomainMappingStatusResourceRecordsList
 ```
@@ -3155,7 +3155,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingStatusResourceRecordsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrundomainmapping"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloudrundomainmapping"
 
 googlecloudrundomainmapping.NewGoogleCloudRunDomainMappingStatusResourceRecordsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudRunDomainMappingStatusResourceRecordsOutputReference
 ```
@@ -3455,7 +3455,7 @@ func InternalValue() GoogleCloudRunDomainMappingStatusResourceRecords
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrundomainmapping"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloudrundomainmapping"
 
 googlecloudrundomainmapping.NewGoogleCloudRunDomainMappingTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudRunDomainMappingTimeoutsOutputReference
 ```
