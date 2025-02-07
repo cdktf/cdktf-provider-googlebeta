@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSiteVerificationOwner.GoogleSiteVerificationOwner.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesiteverificationowner"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesiteverificationowner"
 
 googlesiteverificationowner.NewGoogleSiteVerificationOwner(scope Construct, id *string, config GoogleSiteVerificationOwnerConfig) GoogleSiteVerificationOwner
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleSiteVerificationOwner.GoogleSiteVerificationOwner.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesiteverificationowner"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesiteverificationowner"
 
 googlesiteverificationowner.GoogleSiteVerificationOwner_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleSiteVerificationOwner.GoogleSiteVerificationOwner.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesiteverificationowner"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesiteverificationowner"
 
 googlesiteverificationowner.GoogleSiteVerificationOwner_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ googlesiteverificationowner.GoogleSiteVerificationOwner_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleSiteVerificationOwner.GoogleSiteVerificationOwner.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesiteverificationowner"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesiteverificationowner"
 
 googlesiteverificationowner.GoogleSiteVerificationOwner_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ googlesiteverificationowner.GoogleSiteVerificationOwner_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleSiteVerificationOwner.GoogleSiteVerificationOwner.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesiteverificationowner"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesiteverificationowner"
 
 googlesiteverificationowner.GoogleSiteVerificationOwner_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -782,7 +782,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSiteVerificationOwner.GoogleSiteVerificationOwnerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesiteverificationowner"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesiteverificationowner"
 
 &googlesiteverificationowner.GoogleSiteVerificationOwnerConfig {
 	Connection: interface{},
@@ -795,7 +795,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesitev
 	Email: *string,
 	WebResourceId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSiteVerificationOwner.GoogleSiteVerificationOwnerTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSiteVerificationOwner.GoogleSiteVerificationOwnerTimeouts,
 }
 ```
 
@@ -949,7 +949,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSiteVerificationOwner.GoogleSiteVerificationOwnerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesiteverificationowner"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesiteverificationowner"
 
 &googlesiteverificationowner.GoogleSiteVerificationOwnerTimeouts {
 	Create: *string,
@@ -997,7 +997,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSiteVerificationOwner.GoogleSiteVerificationOwnerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesiteverificationowner"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesiteverificationowner"
 
 googlesiteverificationowner.NewGoogleSiteVerificationOwnerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSiteVerificationOwnerTimeoutsOutputReference
 ```
