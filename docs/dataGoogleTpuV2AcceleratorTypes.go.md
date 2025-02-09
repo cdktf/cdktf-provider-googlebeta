@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleTpuV2AcceleratorTypes.DataGoogleTpuV2AcceleratorTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogletpuv2acceleratortypes"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogletpuv2acceleratortypes"
 
 datagoogletpuv2acceleratortypes.NewDataGoogleTpuV2AcceleratorTypes(scope Construct, id *string, config DataGoogleTpuV2AcceleratorTypesConfig) DataGoogleTpuV2AcceleratorTypes
 ```
@@ -297,7 +297,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleTpuV2AcceleratorTypes.DataGoogleTpuV2AcceleratorTypes.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogletpuv2acceleratortypes"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogletpuv2acceleratortypes"
 
 datagoogletpuv2acceleratortypes.DataGoogleTpuV2AcceleratorTypes_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleTpuV2AcceleratorTypes.DataGoogleTpuV2AcceleratorTypes.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogletpuv2acceleratortypes"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogletpuv2acceleratortypes"
 
 datagoogletpuv2acceleratortypes.DataGoogleTpuV2AcceleratorTypes_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagoogletpuv2acceleratortypes.DataGoogleTpuV2AcceleratorTypes_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleTpuV2AcceleratorTypes.DataGoogleTpuV2AcceleratorTypes.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogletpuv2acceleratortypes"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogletpuv2acceleratortypes"
 
 datagoogletpuv2acceleratortypes.DataGoogleTpuV2AcceleratorTypes_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datagoogletpuv2acceleratortypes.DataGoogleTpuV2AcceleratorTypes_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleTpuV2AcceleratorTypes.DataGoogleTpuV2AcceleratorTypes.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogletpuv2acceleratortypes"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogletpuv2acceleratortypes"
 
 datagoogletpuv2acceleratortypes.DataGoogleTpuV2AcceleratorTypes_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -641,7 +641,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleTpuV2AcceleratorTypes.DataGoogleTpuV2AcceleratorTypesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogletpuv2acceleratortypes"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogletpuv2acceleratortypes"
 
 &datagoogletpuv2acceleratortypes.DataGoogleTpuV2AcceleratorTypesConfig {
 	Connection: interface{},
