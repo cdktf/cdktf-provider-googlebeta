@@ -4,7 +4,7 @@
 
 ### GoogleStorageDefaultObjectAcl <a name="GoogleStorageDefaultObjectAcl" id="@cdktf/provider-google-beta.googleStorageDefaultObjectAcl.GoogleStorageDefaultObjectAcl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_storage_default_object_acl google_storage_default_object_acl}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_storage_default_object_acl google_storage_default_object_acl}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleStorageDefaultObjectAcl.GoogleStorageDefaultObjectAcl.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the GoogleStorageDefaultObject
 
 The id of the existing GoogleStorageDefaultObjectAcl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_storage_default_object_acl#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_storage_default_object_acl#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -774,9 +774,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlestora
 | <code><a href="#@cdktf/provider-google-beta.googleStorageDefaultObjectAcl.GoogleStorageDefaultObjectAclConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageDefaultObjectAcl.GoogleStorageDefaultObjectAclConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageDefaultObjectAcl.GoogleStorageDefaultObjectAclConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleStorageDefaultObjectAcl.GoogleStorageDefaultObjectAclConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_storage_default_object_acl#bucket GoogleStorageDefaultObjectAcl#bucket}. |
-| <code><a href="#@cdktf/provider-google-beta.googleStorageDefaultObjectAcl.GoogleStorageDefaultObjectAclConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_storage_default_object_acl#id GoogleStorageDefaultObjectAcl#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleStorageDefaultObjectAcl.GoogleStorageDefaultObjectAclConfig.property.roleEntity">RoleEntity</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_storage_default_object_acl#role_entity GoogleStorageDefaultObjectAcl#role_entity}. |
+| <code><a href="#@cdktf/provider-google-beta.googleStorageDefaultObjectAcl.GoogleStorageDefaultObjectAclConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_storage_default_object_acl#bucket GoogleStorageDefaultObjectAcl#bucket}. |
+| <code><a href="#@cdktf/provider-google-beta.googleStorageDefaultObjectAcl.GoogleStorageDefaultObjectAclConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_storage_default_object_acl#id GoogleStorageDefaultObjectAcl#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleStorageDefaultObjectAcl.GoogleStorageDefaultObjectAclConfig.property.roleEntity">RoleEntity</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_storage_default_object_acl#role_entity GoogleStorageDefaultObjectAcl#role_entity}. |
 
 ---
 
@@ -858,7 +858,7 @@ Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_storage_default_object_acl#bucket GoogleStorageDefaultObjectAcl#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_storage_default_object_acl#bucket GoogleStorageDefaultObjectAcl#bucket}.
 
 ---
 
@@ -870,7 +870,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_storage_default_object_acl#id GoogleStorageDefaultObjectAcl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_storage_default_object_acl#id GoogleStorageDefaultObjectAcl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -885,7 +885,7 @@ RoleEntity *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_storage_default_object_acl#role_entity GoogleStorageDefaultObjectAcl#role_entity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_storage_default_object_acl#role_entity GoogleStorageDefaultObjectAcl#role_entity}.
 
 ---
 

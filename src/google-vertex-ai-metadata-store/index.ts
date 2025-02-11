@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_vertex_ai_metadata_store
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_vertex_ai_metadata_store
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface GoogleVertexAiMetadataStoreConfig extends cdktf.TerraformMetaAr
   /**
   * Description of the MetadataStore.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_vertex_ai_metadata_store#description GoogleVertexAiMetadataStore#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_vertex_ai_metadata_store#description GoogleVertexAiMetadataStore#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_vertex_ai_metadata_store#id GoogleVertexAiMetadataStore#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_vertex_ai_metadata_store#id GoogleVertexAiMetadataStore#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,29 +28,29 @@ export interface GoogleVertexAiMetadataStoreConfig extends cdktf.TerraformMetaAr
   /**
   * The name of the MetadataStore. This value may be up to 60 characters, and valid characters are [a-z0-9_]. The first character cannot be a number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_vertex_ai_metadata_store#name GoogleVertexAiMetadataStore#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_vertex_ai_metadata_store#name GoogleVertexAiMetadataStore#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_vertex_ai_metadata_store#project GoogleVertexAiMetadataStore#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_vertex_ai_metadata_store#project GoogleVertexAiMetadataStore#project}
   */
   readonly project?: string;
   /**
   * The region of the Metadata Store. eg us-central1
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_vertex_ai_metadata_store#region GoogleVertexAiMetadataStore#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_vertex_ai_metadata_store#region GoogleVertexAiMetadataStore#region}
   */
   readonly region?: string;
   /**
   * encryption_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_vertex_ai_metadata_store#encryption_spec GoogleVertexAiMetadataStore#encryption_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_vertex_ai_metadata_store#encryption_spec GoogleVertexAiMetadataStore#encryption_spec}
   */
   readonly encryptionSpec?: GoogleVertexAiMetadataStoreEncryptionSpec;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_vertex_ai_metadata_store#timeouts GoogleVertexAiMetadataStore#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_vertex_ai_metadata_store#timeouts GoogleVertexAiMetadataStore#timeouts}
   */
   readonly timeouts?: GoogleVertexAiMetadataStoreTimeouts;
 }
@@ -134,7 +134,7 @@ export interface GoogleVertexAiMetadataStoreEncryptionSpec {
   * Required. The Cloud KMS resource identifier of the customer managed encryption key used to protect a resource.
   * Has the form: projects/my-project/locations/my-region/keyRings/my-kr/cryptoKeys/my-key. The key needs to be in the same region as where the resource is created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_vertex_ai_metadata_store#kms_key_name GoogleVertexAiMetadataStore#kms_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_vertex_ai_metadata_store#kms_key_name GoogleVertexAiMetadataStore#kms_key_name}
   */
   readonly kmsKeyName?: string;
 }
@@ -218,11 +218,11 @@ export class GoogleVertexAiMetadataStoreEncryptionSpecOutputReference extends cd
 }
 export interface GoogleVertexAiMetadataStoreTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_vertex_ai_metadata_store#create GoogleVertexAiMetadataStore#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_vertex_ai_metadata_store#create GoogleVertexAiMetadataStore#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_vertex_ai_metadata_store#delete GoogleVertexAiMetadataStore#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_vertex_ai_metadata_store#delete GoogleVertexAiMetadataStore#delete}
   */
   readonly delete?: string;
 }
@@ -345,7 +345,7 @@ export class GoogleVertexAiMetadataStoreTimeoutsOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_vertex_ai_metadata_store google_vertex_ai_metadata_store}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_vertex_ai_metadata_store google_vertex_ai_metadata_store}
 */
 export class GoogleVertexAiMetadataStore extends cdktf.TerraformResource {
 
@@ -361,7 +361,7 @@ export class GoogleVertexAiMetadataStore extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleVertexAiMetadataStore resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleVertexAiMetadataStore to import
-  * @param importFromId The id of the existing GoogleVertexAiMetadataStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_vertex_ai_metadata_store#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleVertexAiMetadataStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_vertex_ai_metadata_store#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleVertexAiMetadataStore to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -373,7 +373,7 @@ export class GoogleVertexAiMetadataStore extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_vertex_ai_metadata_store google_vertex_ai_metadata_store} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_vertex_ai_metadata_store google_vertex_ai_metadata_store} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -384,7 +384,7 @@ export class GoogleVertexAiMetadataStore extends cdktf.TerraformResource {
       terraformResourceType: 'google_vertex_ai_metadata_store',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.19.0',
+        providerVersion: '6.20.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

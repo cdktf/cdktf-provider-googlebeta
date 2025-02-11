@@ -4,7 +4,7 @@
 
 ### GoogleIapTunnelIamBinding <a name="GoogleIapTunnelIamBinding" id="@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_iap_tunnel_iam_binding google_iap_tunnel_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_iap_tunnel_iam_binding google_iap_tunnel_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBinding.Initializer"></a>
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the GoogleIapTunnelIamBinding 
 
 The id of the existing GoogleIapTunnelIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_iap_tunnel_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_iap_tunnel_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -835,9 +835,9 @@ new GoogleIapTunnelIamBindingCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_iap_tunnel_iam_binding#expression GoogleIapTunnelIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_iap_tunnel_iam_binding#title GoogleIapTunnelIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_iap_tunnel_iam_binding#description GoogleIapTunnelIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_iap_tunnel_iam_binding#expression GoogleIapTunnelIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_iap_tunnel_iam_binding#title GoogleIapTunnelIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_iap_tunnel_iam_binding#description GoogleIapTunnelIamBinding#description}. |
 
 ---
 
@@ -849,7 +849,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_iap_tunnel_iam_binding#expression GoogleIapTunnelIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_iap_tunnel_iam_binding#expression GoogleIapTunnelIamBinding#expression}.
 
 ---
 
@@ -861,7 +861,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_iap_tunnel_iam_binding#title GoogleIapTunnelIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_iap_tunnel_iam_binding#title GoogleIapTunnelIamBinding#title}.
 
 ---
 
@@ -873,7 +873,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_iap_tunnel_iam_binding#description GoogleIapTunnelIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_iap_tunnel_iam_binding#description GoogleIapTunnelIamBinding#description}.
 
 ---
 
@@ -911,11 +911,11 @@ new GoogleIapTunnelIamBindingConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBindingConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_iap_tunnel_iam_binding#members GoogleIapTunnelIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_iap_tunnel_iam_binding#role GoogleIapTunnelIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_iap_tunnel_iam_binding#members GoogleIapTunnelIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_iap_tunnel_iam_binding#role GoogleIapTunnelIamBinding#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBindingCondition">GoogleIapTunnelIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_iap_tunnel_iam_binding#id GoogleIapTunnelIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBindingConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_iap_tunnel_iam_binding#project GoogleIapTunnelIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_iap_tunnel_iam_binding#id GoogleIapTunnelIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBindingConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_iap_tunnel_iam_binding#project GoogleIapTunnelIamBinding#project}. |
 
 ---
 
@@ -997,7 +997,7 @@ public string[] Members { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_iap_tunnel_iam_binding#members GoogleIapTunnelIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_iap_tunnel_iam_binding#members GoogleIapTunnelIamBinding#members}.
 
 ---
 
@@ -1009,7 +1009,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_iap_tunnel_iam_binding#role GoogleIapTunnelIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_iap_tunnel_iam_binding#role GoogleIapTunnelIamBinding#role}.
 
 ---
 
@@ -1023,7 +1023,7 @@ public GoogleIapTunnelIamBindingCondition Condition { get; set; }
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_iap_tunnel_iam_binding#condition GoogleIapTunnelIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_iap_tunnel_iam_binding#condition GoogleIapTunnelIamBinding#condition}
 
 ---
 
@@ -1035,7 +1035,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_iap_tunnel_iam_binding#id GoogleIapTunnelIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_iap_tunnel_iam_binding#id GoogleIapTunnelIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1050,7 +1050,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_iap_tunnel_iam_binding#project GoogleIapTunnelIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_iap_tunnel_iam_binding#project GoogleIapTunnelIamBinding#project}.
 
 ---
 

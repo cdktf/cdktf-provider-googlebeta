@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workstations_workstation
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_workstations_workstation
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -18,23 +18,23 @@ export interface GoogleWorkstationsWorkstationConfig extends cdktf.TerraformMeta
   * **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
   * Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workstations_workstation#annotations GoogleWorkstationsWorkstation#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_workstations_workstation#annotations GoogleWorkstationsWorkstation#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
   * Human-readable name for this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workstations_workstation#display_name GoogleWorkstationsWorkstation#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_workstations_workstation#display_name GoogleWorkstationsWorkstation#display_name}
   */
   readonly displayName?: string;
   /**
   * 'Client-specified environment variables passed to the workstation container's entrypoint.'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workstations_workstation#env GoogleWorkstationsWorkstation#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_workstations_workstation#env GoogleWorkstationsWorkstation#env}
   */
   readonly env?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workstations_workstation#id GoogleWorkstationsWorkstation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_workstations_workstation#id GoogleWorkstationsWorkstation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,62 +46,62 @@ export interface GoogleWorkstationsWorkstationConfig extends cdktf.TerraformMeta
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workstations_workstation#labels GoogleWorkstationsWorkstation#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_workstations_workstation#labels GoogleWorkstationsWorkstation#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location where the workstation parent resources reside.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workstations_workstation#location GoogleWorkstationsWorkstation#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_workstations_workstation#location GoogleWorkstationsWorkstation#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workstations_workstation#project GoogleWorkstationsWorkstation#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_workstations_workstation#project GoogleWorkstationsWorkstation#project}
   */
   readonly project?: string;
   /**
   * Full resource name of the source workstation from which the workstation's persistent
   * directories will be cloned from during creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workstations_workstation#source_workstation GoogleWorkstationsWorkstation#source_workstation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_workstations_workstation#source_workstation GoogleWorkstationsWorkstation#source_workstation}
   */
   readonly sourceWorkstation?: string;
   /**
   * The ID of the parent workstation cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workstations_workstation#workstation_cluster_id GoogleWorkstationsWorkstation#workstation_cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_workstations_workstation#workstation_cluster_id GoogleWorkstationsWorkstation#workstation_cluster_id}
   */
   readonly workstationClusterId: string;
   /**
   * The ID of the parent workstation cluster config.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workstations_workstation#workstation_config_id GoogleWorkstationsWorkstation#workstation_config_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_workstations_workstation#workstation_config_id GoogleWorkstationsWorkstation#workstation_config_id}
   */
   readonly workstationConfigId: string;
   /**
   * ID to use for the workstation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workstations_workstation#workstation_id GoogleWorkstationsWorkstation#workstation_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_workstations_workstation#workstation_id GoogleWorkstationsWorkstation#workstation_id}
   */
   readonly workstationId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workstations_workstation#timeouts GoogleWorkstationsWorkstation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_workstations_workstation#timeouts GoogleWorkstationsWorkstation#timeouts}
   */
   readonly timeouts?: GoogleWorkstationsWorkstationTimeouts;
 }
 export interface GoogleWorkstationsWorkstationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workstations_workstation#create GoogleWorkstationsWorkstation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_workstations_workstation#create GoogleWorkstationsWorkstation#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workstations_workstation#delete GoogleWorkstationsWorkstation#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_workstations_workstation#delete GoogleWorkstationsWorkstation#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workstations_workstation#update GoogleWorkstationsWorkstation#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_workstations_workstation#update GoogleWorkstationsWorkstation#update}
   */
   readonly update?: string;
 }
@@ -253,7 +253,7 @@ export class GoogleWorkstationsWorkstationTimeoutsOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workstations_workstation google_workstations_workstation}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_workstations_workstation google_workstations_workstation}
 */
 export class GoogleWorkstationsWorkstation extends cdktf.TerraformResource {
 
@@ -269,7 +269,7 @@ export class GoogleWorkstationsWorkstation extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleWorkstationsWorkstation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleWorkstationsWorkstation to import
-  * @param importFromId The id of the existing GoogleWorkstationsWorkstation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workstations_workstation#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleWorkstationsWorkstation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_workstations_workstation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleWorkstationsWorkstation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -281,7 +281,7 @@ export class GoogleWorkstationsWorkstation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_workstations_workstation google_workstations_workstation} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_workstations_workstation google_workstations_workstation} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -292,7 +292,7 @@ export class GoogleWorkstationsWorkstation extends cdktf.TerraformResource {
       terraformResourceType: 'google_workstations_workstation',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.19.0',
+        providerVersion: '6.20.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

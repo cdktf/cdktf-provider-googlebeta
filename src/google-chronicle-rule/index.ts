@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_chronicle_rule
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,7 +21,7 @@ export interface GoogleChronicleRuleConfig extends cdktf.TerraformMetaArguments 
   * deployment associated with this rule will also be deleted.
   * Possible values: DEFAULT, FORCE
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_chronicle_rule#deletion_policy GoogleChronicleRule#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_rule#deletion_policy GoogleChronicleRule#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
@@ -31,11 +31,11 @@ export interface GoogleChronicleRuleConfig extends cdktf.TerraformMetaArguments 
   * otherwise.
   * Populated in BASIC view and FULL view.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_chronicle_rule#etag GoogleChronicleRule#etag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_rule#etag GoogleChronicleRule#etag}
   */
   readonly etag?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_chronicle_rule#id GoogleChronicleRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_rule#id GoogleChronicleRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,23 +44,23 @@ export interface GoogleChronicleRuleConfig extends cdktf.TerraformMetaArguments 
   /**
   * The unique identifier for the Chronicle instance, which is the same as the customer ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_chronicle_rule#instance GoogleChronicleRule#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_rule#instance GoogleChronicleRule#instance}
   */
   readonly instance: string;
   /**
   * The location of the resource. This is the geographical region where the Chronicle instance resides, such as "us" or "europe-west2".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_chronicle_rule#location GoogleChronicleRule#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_rule#location GoogleChronicleRule#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_chronicle_rule#project GoogleChronicleRule#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_rule#project GoogleChronicleRule#project}
   */
   readonly project?: string;
   /**
   * Rule Id is the ID of the Rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_chronicle_rule#rule_id GoogleChronicleRule#rule_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_rule#rule_id GoogleChronicleRule#rule_id}
   */
   readonly ruleId?: string;
   /**
@@ -72,20 +72,20 @@ export interface GoogleChronicleRuleConfig extends cdktf.TerraformMetaArguments 
   * The scope should be in the format:
   * "projects/{project}/locations/{location}/instances/{instance}/dataAccessScopes/{scope}".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_chronicle_rule#scope GoogleChronicleRule#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_rule#scope GoogleChronicleRule#scope}
   */
   readonly scope?: string;
   /**
   * The YARA-L content of the rule.
   * Populated in FULL view.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_chronicle_rule#text GoogleChronicleRule#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_rule#text GoogleChronicleRule#text}
   */
   readonly text?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_chronicle_rule#timeouts GoogleChronicleRule#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_rule#timeouts GoogleChronicleRule#timeouts}
   */
   readonly timeouts?: GoogleChronicleRuleTimeouts;
 }
@@ -347,15 +347,15 @@ export class GoogleChronicleRuleSeverityList extends cdktf.ComplexList {
 }
 export interface GoogleChronicleRuleTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_chronicle_rule#create GoogleChronicleRule#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_rule#create GoogleChronicleRule#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_chronicle_rule#delete GoogleChronicleRule#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_rule#delete GoogleChronicleRule#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_chronicle_rule#update GoogleChronicleRule#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_rule#update GoogleChronicleRule#update}
   */
   readonly update?: string;
 }
@@ -507,7 +507,7 @@ export class GoogleChronicleRuleTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_chronicle_rule google_chronicle_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_rule google_chronicle_rule}
 */
 export class GoogleChronicleRule extends cdktf.TerraformResource {
 
@@ -523,7 +523,7 @@ export class GoogleChronicleRule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleChronicleRule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleChronicleRule to import
-  * @param importFromId The id of the existing GoogleChronicleRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_chronicle_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleChronicleRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleChronicleRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -535,7 +535,7 @@ export class GoogleChronicleRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_chronicle_rule google_chronicle_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_rule google_chronicle_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -546,7 +546,7 @@ export class GoogleChronicleRule extends cdktf.TerraformResource {
       terraformResourceType: 'google_chronicle_rule',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.19.0',
+        providerVersion: '6.20.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

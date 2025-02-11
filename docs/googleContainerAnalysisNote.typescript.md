@@ -4,7 +4,7 @@
 
 ### GoogleContainerAnalysisNote <a name="GoogleContainerAnalysisNote" id="@cdktf/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNote"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_container_analysis_note google_container_analysis_note}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_container_analysis_note google_container_analysis_note}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNote.Initializer"></a>
 
@@ -562,7 +562,7 @@ The construct id used in the generated config for the GoogleContainerAnalysisNot
 
 The id of the existing GoogleContainerAnalysisNote that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_container_analysis_note#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_container_analysis_note#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1038,7 +1038,7 @@ public readonly hint: GoogleContainerAnalysisNoteAttestationAuthorityHint;
 
 hint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_container_analysis_note#hint GoogleContainerAnalysisNote#hint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_container_analysis_note#hint GoogleContainerAnalysisNote#hint}
 
 ---
 
@@ -1070,7 +1070,7 @@ public readonly humanReadableName: string;
 
 The human readable name of this Attestation Authority, for example "qa".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_container_analysis_note#human_readable_name GoogleContainerAnalysisNote#human_readable_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_container_analysis_note#human_readable_name GoogleContainerAnalysisNote#human_readable_name}
 
 ---
 
@@ -1098,9 +1098,9 @@ const googleContainerAnalysisNoteConfig: googleContainerAnalysisNote.GoogleConta
 | <code><a href="#@cdktf/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteConfig.property.attestationAuthority">attestationAuthority</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteAttestationAuthority">GoogleContainerAnalysisNoteAttestationAuthority</a></code> | attestation_authority block. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteConfig.property.name">name</a></code> | <code>string</code> | The name of the note. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteConfig.property.expirationTime">expirationTime</a></code> | <code>string</code> | Time of expiration for this note. Leave empty if note does not expire. |
-| <code><a href="#@cdktf/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_container_analysis_note#id GoogleContainerAnalysisNote#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_container_analysis_note#id GoogleContainerAnalysisNote#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteConfig.property.longDescription">longDescription</a></code> | <code>string</code> | A detailed description of the note. |
-| <code><a href="#@cdktf/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_container_analysis_note#project GoogleContainerAnalysisNote#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_container_analysis_note#project GoogleContainerAnalysisNote#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteConfig.property.relatedNoteNames">relatedNoteNames</a></code> | <code>string[]</code> | Names of other notes related to this note. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteConfig.property.relatedUrl">relatedUrl</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteRelatedUrl">GoogleContainerAnalysisNoteRelatedUrl</a>[]</code> | related_url block. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteConfig.property.shortDescription">shortDescription</a></code> | <code>string</code> | A one sentence description of the note. |
@@ -1188,7 +1188,7 @@ public readonly attestationAuthority: GoogleContainerAnalysisNoteAttestationAuth
 
 attestation_authority block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_container_analysis_note#attestation_authority GoogleContainerAnalysisNote#attestation_authority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_container_analysis_note#attestation_authority GoogleContainerAnalysisNote#attestation_authority}
 
 ---
 
@@ -1202,7 +1202,7 @@ public readonly name: string;
 
 The name of the note.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_container_analysis_note#name GoogleContainerAnalysisNote#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_container_analysis_note#name GoogleContainerAnalysisNote#name}
 
 ---
 
@@ -1216,7 +1216,7 @@ public readonly expirationTime: string;
 
 Time of expiration for this note. Leave empty if note does not expire.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_container_analysis_note#expiration_time GoogleContainerAnalysisNote#expiration_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_container_analysis_note#expiration_time GoogleContainerAnalysisNote#expiration_time}
 
 ---
 
@@ -1228,7 +1228,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_container_analysis_note#id GoogleContainerAnalysisNote#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_container_analysis_note#id GoogleContainerAnalysisNote#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1245,7 +1245,7 @@ public readonly longDescription: string;
 
 A detailed description of the note.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_container_analysis_note#long_description GoogleContainerAnalysisNote#long_description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_container_analysis_note#long_description GoogleContainerAnalysisNote#long_description}
 
 ---
 
@@ -1257,7 +1257,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_container_analysis_note#project GoogleContainerAnalysisNote#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_container_analysis_note#project GoogleContainerAnalysisNote#project}.
 
 ---
 
@@ -1271,7 +1271,7 @@ public readonly relatedNoteNames: string[];
 
 Names of other notes related to this note.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_container_analysis_note#related_note_names GoogleContainerAnalysisNote#related_note_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_container_analysis_note#related_note_names GoogleContainerAnalysisNote#related_note_names}
 
 ---
 
@@ -1285,7 +1285,7 @@ public readonly relatedUrl: IResolvable | GoogleContainerAnalysisNoteRelatedUrl[
 
 related_url block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_container_analysis_note#related_url GoogleContainerAnalysisNote#related_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_container_analysis_note#related_url GoogleContainerAnalysisNote#related_url}
 
 ---
 
@@ -1299,7 +1299,7 @@ public readonly shortDescription: string;
 
 A one sentence description of the note.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_container_analysis_note#short_description GoogleContainerAnalysisNote#short_description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_container_analysis_note#short_description GoogleContainerAnalysisNote#short_description}
 
 ---
 
@@ -1313,7 +1313,7 @@ public readonly timeouts: GoogleContainerAnalysisNoteTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_container_analysis_note#timeouts GoogleContainerAnalysisNote#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_container_analysis_note#timeouts GoogleContainerAnalysisNote#timeouts}
 
 ---
 
@@ -1346,7 +1346,7 @@ public readonly url: string;
 
 Specific URL associated with the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_container_analysis_note#url GoogleContainerAnalysisNote#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_container_analysis_note#url GoogleContainerAnalysisNote#url}
 
 ---
 
@@ -1360,7 +1360,7 @@ public readonly label: string;
 
 Label to describe usage of the URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_container_analysis_note#label GoogleContainerAnalysisNote#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_container_analysis_note#label GoogleContainerAnalysisNote#label}
 
 ---
 
@@ -1378,9 +1378,9 @@ const googleContainerAnalysisNoteTimeouts: googleContainerAnalysisNote.GoogleCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_container_analysis_note#create GoogleContainerAnalysisNote#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_container_analysis_note#delete GoogleContainerAnalysisNote#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_container_analysis_note#update GoogleContainerAnalysisNote#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_container_analysis_note#create GoogleContainerAnalysisNote#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_container_analysis_note#delete GoogleContainerAnalysisNote#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_container_analysis_note#update GoogleContainerAnalysisNote#update}. |
 
 ---
 
@@ -1392,7 +1392,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_container_analysis_note#create GoogleContainerAnalysisNote#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_container_analysis_note#create GoogleContainerAnalysisNote#create}.
 
 ---
 
@@ -1404,7 +1404,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_container_analysis_note#delete GoogleContainerAnalysisNote#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_container_analysis_note#delete GoogleContainerAnalysisNote#delete}.
 
 ---
 
@@ -1416,7 +1416,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_container_analysis_note#update GoogleContainerAnalysisNote#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_container_analysis_note#update GoogleContainerAnalysisNote#update}.
 
 ---
 

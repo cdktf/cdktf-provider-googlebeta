@@ -4,7 +4,7 @@
 
 ### GoogleComputeProjectDefaultNetworkTier <a name="GoogleComputeProjectDefaultNetworkTier" id="@cdktf/provider-google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTier"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_compute_project_default_network_tier google_compute_project_default_network_tier}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_project_default_network_tier google_compute_project_default_network_tier}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTier.Initializer"></a>
 
@@ -40,7 +40,7 @@ googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTier(
 | <code><a href="#@cdktf/provider-google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTier.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTier.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTier.Initializer.parameter.networkTier">network_tier</a></code> | <code>str</code> | The default network tier to be configured for the project. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTier.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_compute_project_default_network_tier#id GoogleComputeProjectDefaultNetworkTier#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTier.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_project_default_network_tier#id GoogleComputeProjectDefaultNetworkTier#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTier.Initializer.parameter.project">project</a></code> | <code>str</code> | The ID of the project in which the resource belongs. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTier.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTierTimeouts">GoogleComputeProjectDefaultNetworkTierTimeouts</a></code> | timeouts block. |
 
@@ -114,7 +114,7 @@ The default network tier to be configured for the project.
 
 This field can take the following values: PREMIUM or STANDARD.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_compute_project_default_network_tier#network_tier GoogleComputeProjectDefaultNetworkTier#network_tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_project_default_network_tier#network_tier GoogleComputeProjectDefaultNetworkTier#network_tier}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_compute_project_default_network_tier#id GoogleComputeProjectDefaultNetworkTier#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_project_default_network_tier#id GoogleComputeProjectDefaultNetworkTier#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -137,7 +137,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_compute_project_default_network_tier#project GoogleComputeProjectDefaultNetworkTier#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_project_default_network_tier#project GoogleComputeProjectDefaultNetworkTier#project}
 
 ---
 
@@ -147,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_compute_project_default_network_tier#timeouts GoogleComputeProjectDefaultNetworkTier#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_project_default_network_tier#timeouts GoogleComputeProjectDefaultNetworkTier#timeouts}
 
 ---
 
@@ -522,7 +522,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_compute_project_default_network_tier#create GoogleComputeProjectDefaultNetworkTier#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_project_default_network_tier#create GoogleComputeProjectDefaultNetworkTier#create}.
 
 ---
 
@@ -658,7 +658,7 @@ The construct id used in the generated config for the GoogleComputeProjectDefaul
 
 The id of the existing GoogleComputeProjectDefaultNetworkTier that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_compute_project_default_network_tier#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_project_default_network_tier#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -975,7 +975,7 @@ googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTierCon
 | <code><a href="#@cdktf/provider-google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTierConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTierConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTierConfig.property.networkTier">network_tier</a></code> | <code>str</code> | The default network tier to be configured for the project. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTierConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_compute_project_default_network_tier#id GoogleComputeProjectDefaultNetworkTier#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTierConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_project_default_network_tier#id GoogleComputeProjectDefaultNetworkTier#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTierConfig.property.project">project</a></code> | <code>str</code> | The ID of the project in which the resource belongs. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTierConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTierTimeouts">GoogleComputeProjectDefaultNetworkTierTimeouts</a></code> | timeouts block. |
 
@@ -1063,7 +1063,7 @@ The default network tier to be configured for the project.
 
 This field can take the following values: PREMIUM or STANDARD.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_compute_project_default_network_tier#network_tier GoogleComputeProjectDefaultNetworkTier#network_tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_project_default_network_tier#network_tier GoogleComputeProjectDefaultNetworkTier#network_tier}
 
 ---
 
@@ -1075,7 +1075,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_compute_project_default_network_tier#id GoogleComputeProjectDefaultNetworkTier#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_project_default_network_tier#id GoogleComputeProjectDefaultNetworkTier#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1094,7 +1094,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_compute_project_default_network_tier#project GoogleComputeProjectDefaultNetworkTier#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_project_default_network_tier#project GoogleComputeProjectDefaultNetworkTier#project}
 
 ---
 
@@ -1108,7 +1108,7 @@ timeouts: GoogleComputeProjectDefaultNetworkTierTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_compute_project_default_network_tier#timeouts GoogleComputeProjectDefaultNetworkTier#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_project_default_network_tier#timeouts GoogleComputeProjectDefaultNetworkTier#timeouts}
 
 ---
 
@@ -1128,7 +1128,7 @@ googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTierTim
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTierTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_compute_project_default_network_tier#create GoogleComputeProjectDefaultNetworkTier#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTierTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_project_default_network_tier#create GoogleComputeProjectDefaultNetworkTier#create}. |
 
 ---
 
@@ -1140,7 +1140,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_compute_project_default_network_tier#create GoogleComputeProjectDefaultNetworkTier#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_project_default_network_tier#create GoogleComputeProjectDefaultNetworkTier#create}.
 
 ---
 

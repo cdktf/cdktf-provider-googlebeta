@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apphub_service
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_apphub_service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +15,29 @@ export interface GoogleApphubServiceConfig extends cdktf.TerraformMetaArguments 
   /**
   * Part of 'parent'.  Full resource name of a parent Application. Example: projects/{HOST_PROJECT_ID}/locations/{LOCATION}/applications/{APPLICATION_ID}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apphub_service#application_id GoogleApphubService#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_apphub_service#application_id GoogleApphubService#application_id}
   */
   readonly applicationId: string;
   /**
   * User-defined description of a Service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apphub_service#description GoogleApphubService#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_apphub_service#description GoogleApphubService#description}
   */
   readonly description?: string;
   /**
   * Immutable. The resource name of the original discovered service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apphub_service#discovered_service GoogleApphubService#discovered_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_apphub_service#discovered_service GoogleApphubService#discovered_service}
   */
   readonly discoveredService: string;
   /**
   * User-defined name for the Service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apphub_service#display_name GoogleApphubService#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_apphub_service#display_name GoogleApphubService#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apphub_service#id GoogleApphubService#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_apphub_service#id GoogleApphubService#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,29 +46,29 @@ export interface GoogleApphubServiceConfig extends cdktf.TerraformMetaArguments 
   /**
   * Part of 'parent'.  Full resource name of a parent Application. Example: projects/{HOST_PROJECT_ID}/locations/{LOCATION}/applications/{APPLICATION_ID}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apphub_service#location GoogleApphubService#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_apphub_service#location GoogleApphubService#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apphub_service#project GoogleApphubService#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_apphub_service#project GoogleApphubService#project}
   */
   readonly project?: string;
   /**
   * The Service identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apphub_service#service_id GoogleApphubService#service_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_apphub_service#service_id GoogleApphubService#service_id}
   */
   readonly serviceId: string;
   /**
   * attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apphub_service#attributes GoogleApphubService#attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_apphub_service#attributes GoogleApphubService#attributes}
   */
   readonly attributes?: GoogleApphubServiceAttributes;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apphub_service#timeouts GoogleApphubService#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_apphub_service#timeouts GoogleApphubService#timeouts}
   */
   readonly timeouts?: GoogleApphubServiceTimeouts;
 }
@@ -236,13 +236,13 @@ export interface GoogleApphubServiceAttributesBusinessOwners {
   /**
   * Contact's name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apphub_service#display_name GoogleApphubService#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_apphub_service#display_name GoogleApphubService#display_name}
   */
   readonly displayName?: string;
   /**
   * Required. Email address of the contacts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apphub_service#email GoogleApphubService#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_apphub_service#email GoogleApphubService#email}
   */
   readonly email: string;
 }
@@ -386,7 +386,7 @@ export interface GoogleApphubServiceAttributesCriticality {
   /**
   * Criticality type. Possible values: ["MISSION_CRITICAL", "HIGH", "MEDIUM", "LOW"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apphub_service#type GoogleApphubService#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_apphub_service#type GoogleApphubService#type}
   */
   readonly type: string;
 }
@@ -469,13 +469,13 @@ export interface GoogleApphubServiceAttributesDeveloperOwners {
   /**
   * Contact's name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apphub_service#display_name GoogleApphubService#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_apphub_service#display_name GoogleApphubService#display_name}
   */
   readonly displayName?: string;
   /**
   * Required. Email address of the contacts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apphub_service#email GoogleApphubService#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_apphub_service#email GoogleApphubService#email}
   */
   readonly email: string;
 }
@@ -619,7 +619,7 @@ export interface GoogleApphubServiceAttributesEnvironment {
   /**
   * Environment type. Possible values: ["PRODUCTION", "STAGING", "TEST", "DEVELOPMENT"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apphub_service#type GoogleApphubService#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_apphub_service#type GoogleApphubService#type}
   */
   readonly type: string;
 }
@@ -702,13 +702,13 @@ export interface GoogleApphubServiceAttributesOperatorOwners {
   /**
   * Contact's name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apphub_service#display_name GoogleApphubService#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_apphub_service#display_name GoogleApphubService#display_name}
   */
   readonly displayName?: string;
   /**
   * Required. Email address of the contacts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apphub_service#email GoogleApphubService#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_apphub_service#email GoogleApphubService#email}
   */
   readonly email: string;
 }
@@ -852,31 +852,31 @@ export interface GoogleApphubServiceAttributes {
   /**
   * business_owners block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apphub_service#business_owners GoogleApphubService#business_owners}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_apphub_service#business_owners GoogleApphubService#business_owners}
   */
   readonly businessOwners?: GoogleApphubServiceAttributesBusinessOwners[] | cdktf.IResolvable;
   /**
   * criticality block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apphub_service#criticality GoogleApphubService#criticality}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_apphub_service#criticality GoogleApphubService#criticality}
   */
   readonly criticality?: GoogleApphubServiceAttributesCriticality;
   /**
   * developer_owners block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apphub_service#developer_owners GoogleApphubService#developer_owners}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_apphub_service#developer_owners GoogleApphubService#developer_owners}
   */
   readonly developerOwners?: GoogleApphubServiceAttributesDeveloperOwners[] | cdktf.IResolvable;
   /**
   * environment block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apphub_service#environment GoogleApphubService#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_apphub_service#environment GoogleApphubService#environment}
   */
   readonly environment?: GoogleApphubServiceAttributesEnvironment;
   /**
   * operator_owners block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apphub_service#operator_owners GoogleApphubService#operator_owners}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_apphub_service#operator_owners GoogleApphubService#operator_owners}
   */
   readonly operatorOwners?: GoogleApphubServiceAttributesOperatorOwners[] | cdktf.IResolvable;
 }
@@ -1076,15 +1076,15 @@ export class GoogleApphubServiceAttributesOutputReference extends cdktf.ComplexO
 }
 export interface GoogleApphubServiceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apphub_service#create GoogleApphubService#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_apphub_service#create GoogleApphubService#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apphub_service#delete GoogleApphubService#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_apphub_service#delete GoogleApphubService#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apphub_service#update GoogleApphubService#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_apphub_service#update GoogleApphubService#update}
   */
   readonly update?: string;
 }
@@ -1236,7 +1236,7 @@ export class GoogleApphubServiceTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apphub_service google_apphub_service}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_apphub_service google_apphub_service}
 */
 export class GoogleApphubService extends cdktf.TerraformResource {
 
@@ -1252,7 +1252,7 @@ export class GoogleApphubService extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleApphubService resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleApphubService to import
-  * @param importFromId The id of the existing GoogleApphubService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apphub_service#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleApphubService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_apphub_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleApphubService to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1264,7 +1264,7 @@ export class GoogleApphubService extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_apphub_service google_apphub_service} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_apphub_service google_apphub_service} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1275,7 +1275,7 @@ export class GoogleApphubService extends cdktf.TerraformResource {
       terraformResourceType: 'google_apphub_service',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.19.0',
+        providerVersion: '6.20.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
