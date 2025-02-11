@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_access_context_manager_ingress_policy
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_access_context_manager_ingress_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleAccessContextManagerIngressPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_access_context_manager_ingress_policy#id GoogleAccessContextManagerIngressPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_access_context_manager_ingress_policy#id GoogleAccessContextManagerIngressPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,29 +17,29 @@ export interface GoogleAccessContextManagerIngressPolicyConfig extends cdktf.Ter
   /**
   * The name of the Service Perimeter to add this resource to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_access_context_manager_ingress_policy#ingress_policy_name GoogleAccessContextManagerIngressPolicy#ingress_policy_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_access_context_manager_ingress_policy#ingress_policy_name GoogleAccessContextManagerIngressPolicy#ingress_policy_name}
   */
   readonly ingressPolicyName: string;
   /**
   * A GCP resource that is inside of the service perimeter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_access_context_manager_ingress_policy#resource GoogleAccessContextManagerIngressPolicy#resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_access_context_manager_ingress_policy#resource GoogleAccessContextManagerIngressPolicy#resource}
   */
   readonly resource: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_access_context_manager_ingress_policy#timeouts GoogleAccessContextManagerIngressPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_access_context_manager_ingress_policy#timeouts GoogleAccessContextManagerIngressPolicy#timeouts}
   */
   readonly timeouts?: GoogleAccessContextManagerIngressPolicyTimeouts;
 }
 export interface GoogleAccessContextManagerIngressPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_access_context_manager_ingress_policy#create GoogleAccessContextManagerIngressPolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_access_context_manager_ingress_policy#create GoogleAccessContextManagerIngressPolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_access_context_manager_ingress_policy#delete GoogleAccessContextManagerIngressPolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_access_context_manager_ingress_policy#delete GoogleAccessContextManagerIngressPolicy#delete}
   */
   readonly delete?: string;
 }
@@ -167,7 +162,7 @@ export class GoogleAccessContextManagerIngressPolicyTimeoutsOutputReference exte
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_access_context_manager_ingress_policy google_access_context_manager_ingress_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_access_context_manager_ingress_policy google_access_context_manager_ingress_policy}
 */
 export class GoogleAccessContextManagerIngressPolicy extends cdktf.TerraformResource {
 
@@ -183,7 +178,7 @@ export class GoogleAccessContextManagerIngressPolicy extends cdktf.TerraformReso
   * Generates CDKTF code for importing a GoogleAccessContextManagerIngressPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleAccessContextManagerIngressPolicy to import
-  * @param importFromId The id of the existing GoogleAccessContextManagerIngressPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_access_context_manager_ingress_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleAccessContextManagerIngressPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_access_context_manager_ingress_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleAccessContextManagerIngressPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -195,7 +190,7 @@ export class GoogleAccessContextManagerIngressPolicy extends cdktf.TerraformReso
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_access_context_manager_ingress_policy google_access_context_manager_ingress_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_access_context_manager_ingress_policy google_access_context_manager_ingress_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -206,7 +201,7 @@ export class GoogleAccessContextManagerIngressPolicy extends cdktf.TerraformReso
       terraformResourceType: 'google_access_context_manager_ingress_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.19.0',
+        providerVersion: '6.20.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

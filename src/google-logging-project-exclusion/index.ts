@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_logging_project_exclusion
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_logging_project_exclusion
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +10,23 @@ export interface GoogleLoggingProjectExclusionConfig extends cdktf.TerraformMeta
   /**
   * A human-readable description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_logging_project_exclusion#description GoogleLoggingProjectExclusion#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_logging_project_exclusion#description GoogleLoggingProjectExclusion#description}
   */
   readonly description?: string;
   /**
   * Whether this exclusion rule should be disabled or not. This defaults to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_logging_project_exclusion#disabled GoogleLoggingProjectExclusion#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_logging_project_exclusion#disabled GoogleLoggingProjectExclusion#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * The filter to apply when excluding logs. Only log entries that match the filter are excluded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_logging_project_exclusion#filter GoogleLoggingProjectExclusion#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_logging_project_exclusion#filter GoogleLoggingProjectExclusion#filter}
   */
   readonly filter: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_logging_project_exclusion#id GoogleLoggingProjectExclusion#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_logging_project_exclusion#id GoogleLoggingProjectExclusion#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,17 +35,17 @@ export interface GoogleLoggingProjectExclusionConfig extends cdktf.TerraformMeta
   /**
   * The name of the logging exclusion.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_logging_project_exclusion#name GoogleLoggingProjectExclusion#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_logging_project_exclusion#name GoogleLoggingProjectExclusion#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_logging_project_exclusion#project GoogleLoggingProjectExclusion#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_logging_project_exclusion#project GoogleLoggingProjectExclusion#project}
   */
   readonly project?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_logging_project_exclusion google_logging_project_exclusion}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_logging_project_exclusion google_logging_project_exclusion}
 */
 export class GoogleLoggingProjectExclusion extends cdktf.TerraformResource {
 
@@ -66,7 +61,7 @@ export class GoogleLoggingProjectExclusion extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleLoggingProjectExclusion resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleLoggingProjectExclusion to import
-  * @param importFromId The id of the existing GoogleLoggingProjectExclusion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_logging_project_exclusion#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleLoggingProjectExclusion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_logging_project_exclusion#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleLoggingProjectExclusion to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -78,7 +73,7 @@ export class GoogleLoggingProjectExclusion extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_logging_project_exclusion google_logging_project_exclusion} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_logging_project_exclusion google_logging_project_exclusion} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -89,7 +84,7 @@ export class GoogleLoggingProjectExclusion extends cdktf.TerraformResource {
       terraformResourceType: 'google_logging_project_exclusion',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.19.0',
+        providerVersion: '6.20.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
