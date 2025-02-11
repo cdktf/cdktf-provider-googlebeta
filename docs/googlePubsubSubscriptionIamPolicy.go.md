@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePubsubSubscriptionIamPolicy.GooglePubsubSubscriptionIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubsubscriptioniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlepubsubsubscriptioniampolicy"
 
 googlepubsubsubscriptioniampolicy.NewGooglePubsubSubscriptionIamPolicy(scope Construct, id *string, config GooglePubsubSubscriptionIamPolicyConfig) GooglePubsubSubscriptionIamPolicy
 ```
@@ -392,7 +392,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googlePubsubSubscriptionIamPolicy.GooglePubsubSubscriptionIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubsubscriptioniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlepubsubsubscriptioniampolicy"
 
 googlepubsubsubscriptioniampolicy.GooglePubsubSubscriptionIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googlePubsubSubscriptionIamPolicy.GooglePubsubSubscriptionIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubsubscriptioniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlepubsubsubscriptioniampolicy"
 
 googlepubsubsubscriptioniampolicy.GooglePubsubSubscriptionIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ googlepubsubsubscriptioniampolicy.GooglePubsubSubscriptionIamPolicy_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googlePubsubSubscriptionIamPolicy.GooglePubsubSubscriptionIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubsubscriptioniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlepubsubsubscriptioniampolicy"
 
 googlepubsubsubscriptioniampolicy.GooglePubsubSubscriptionIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ googlepubsubsubscriptioniampolicy.GooglePubsubSubscriptionIamPolicy_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googlePubsubSubscriptionIamPolicy.GooglePubsubSubscriptionIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubsubscriptioniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlepubsubsubscriptioniampolicy"
 
 googlepubsubsubscriptioniampolicy.GooglePubsubSubscriptionIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -780,7 +780,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePubsubSubscriptionIamPolicy.GooglePubsubSubscriptionIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubsubscriptioniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlepubsubsubscriptioniampolicy"
 
 &googlepubsubsubscriptioniampolicy.GooglePubsubSubscriptionIamPolicyConfig {
 	Connection: interface{},
