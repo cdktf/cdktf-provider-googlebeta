@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleParameterManagerParameterVersion.DataGoogleParameterManagerParameterVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleparametermanagerparameterversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleparametermanagerparameterversion"
 
 datagoogleparametermanagerparameterversion.NewDataGoogleParameterManagerParameterVersion(scope Construct, id *string, config DataGoogleParameterManagerParameterVersionConfig) DataGoogleParameterManagerParameterVersion
 ```
@@ -290,7 +290,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleParameterManagerParameterVersion.DataGoogleParameterManagerParameterVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleparametermanagerparameterversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleparametermanagerparameterversion"
 
 datagoogleparametermanagerparameterversion.DataGoogleParameterManagerParameterVersion_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleParameterManagerParameterVersion.DataGoogleParameterManagerParameterVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleparametermanagerparameterversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleparametermanagerparameterversion"
 
 datagoogleparametermanagerparameterversion.DataGoogleParameterManagerParameterVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datagoogleparametermanagerparameterversion.DataGoogleParameterManagerParameterVe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleParameterManagerParameterVersion.DataGoogleParameterManagerParameterVersion.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleparametermanagerparameterversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleparametermanagerparameterversion"
 
 datagoogleparametermanagerparameterversion.DataGoogleParameterManagerParameterVersion_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datagoogleparametermanagerparameterversion.DataGoogleParameterManagerParameterVe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleParameterManagerParameterVersion.DataGoogleParameterManagerParameterVersion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleparametermanagerparameterversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleparametermanagerparameterversion"
 
 datagoogleparametermanagerparameterversion.DataGoogleParameterManagerParameterVersion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -700,7 +700,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleParameterManagerParameterVersion.DataGoogleParameterManagerParameterVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleparametermanagerparameterversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleparametermanagerparameterversion"
 
 &datagoogleparametermanagerparameterversion.DataGoogleParameterManagerParameterVersionConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComposerUserWorkloadsConfigMap.GoogleComposerUserWorkloadsConfigMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomposeruserworkloadsconfigmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomposeruserworkloadsconfigmap"
 
 googlecomposeruserworkloadsconfigmap.NewGoogleComposerUserWorkloadsConfigMap(scope Construct, id *string, config GoogleComposerUserWorkloadsConfigMapConfig) GoogleComposerUserWorkloadsConfigMap
 ```
@@ -426,7 +426,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComposerUserWorkloadsConfigMap.GoogleComposerUserWorkloadsConfigMap.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomposeruserworkloadsconfigmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomposeruserworkloadsconfigmap"
 
 googlecomposeruserworkloadsconfigmap.GoogleComposerUserWorkloadsConfigMap_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComposerUserWorkloadsConfigMap.GoogleComposerUserWorkloadsConfigMap.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomposeruserworkloadsconfigmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomposeruserworkloadsconfigmap"
 
 googlecomposeruserworkloadsconfigmap.GoogleComposerUserWorkloadsConfigMap_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ googlecomposeruserworkloadsconfigmap.GoogleComposerUserWorkloadsConfigMap_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComposerUserWorkloadsConfigMap.GoogleComposerUserWorkloadsConfigMap.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomposeruserworkloadsconfigmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomposeruserworkloadsconfigmap"
 
 googlecomposeruserworkloadsconfigmap.GoogleComposerUserWorkloadsConfigMap_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ googlecomposeruserworkloadsconfigmap.GoogleComposerUserWorkloadsConfigMap_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleComposerUserWorkloadsConfigMap.GoogleComposerUserWorkloadsConfigMap.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomposeruserworkloadsconfigmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomposeruserworkloadsconfigmap"
 
 googlecomposeruserworkloadsconfigmap.GoogleComposerUserWorkloadsConfigMap_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -869,7 +869,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComposerUserWorkloadsConfigMap.GoogleComposerUserWorkloadsConfigMapConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomposeruserworkloadsconfigmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomposeruserworkloadsconfigmap"
 
 &googlecomposeruserworkloadsconfigmap.GoogleComposerUserWorkloadsConfigMapConfig {
 	Connection: interface{},
@@ -885,7 +885,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecompo
 	Id: *string,
 	Project: *string,
 	Region: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComposerUserWorkloadsConfigMap.GoogleComposerUserWorkloadsConfigMapTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComposerUserWorkloadsConfigMap.GoogleComposerUserWorkloadsConfigMapTimeouts,
 }
 ```
 
@@ -1082,7 +1082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComposerUserWorkloadsConfigMap.GoogleComposerUserWorkloadsConfigMapTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomposeruserworkloadsconfigmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomposeruserworkloadsconfigmap"
 
 &googlecomposeruserworkloadsconfigmap.GoogleComposerUserWorkloadsConfigMapTimeouts {
 	Create: *string,
@@ -1144,7 +1144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComposerUserWorkloadsConfigMap.GoogleComposerUserWorkloadsConfigMapTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomposeruserworkloadsconfigmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomposeruserworkloadsconfigmap"
 
 googlecomposeruserworkloadsconfigmap.NewGoogleComposerUserWorkloadsConfigMapTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComposerUserWorkloadsConfigMapTimeoutsOutputReference
 ```
