@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseAppCheckDebugToken.GoogleFirebaseAppCheckDebugToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirebaseappcheckdebugtoken"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseappcheckdebugtoken"
 
 googlefirebaseappcheckdebugtoken.NewGoogleFirebaseAppCheckDebugToken(scope Construct, id *string, config GoogleFirebaseAppCheckDebugTokenConfig) GoogleFirebaseAppCheckDebugToken
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleFirebaseAppCheckDebugToken.GoogleFirebaseAppCheckDebugToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirebaseappcheckdebugtoken"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseappcheckdebugtoken"
 
 googlefirebaseappcheckdebugtoken.GoogleFirebaseAppCheckDebugToken_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleFirebaseAppCheckDebugToken.GoogleFirebaseAppCheckDebugToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirebaseappcheckdebugtoken"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseappcheckdebugtoken"
 
 googlefirebaseappcheckdebugtoken.GoogleFirebaseAppCheckDebugToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ googlefirebaseappcheckdebugtoken.GoogleFirebaseAppCheckDebugToken_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleFirebaseAppCheckDebugToken.GoogleFirebaseAppCheckDebugToken.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirebaseappcheckdebugtoken"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseappcheckdebugtoken"
 
 googlefirebaseappcheckdebugtoken.GoogleFirebaseAppCheckDebugToken_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ googlefirebaseappcheckdebugtoken.GoogleFirebaseAppCheckDebugToken_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleFirebaseAppCheckDebugToken.GoogleFirebaseAppCheckDebugToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirebaseappcheckdebugtoken"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseappcheckdebugtoken"
 
 googlefirebaseappcheckdebugtoken.GoogleFirebaseAppCheckDebugToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -844,7 +844,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseAppCheckDebugToken.GoogleFirebaseAppCheckDebugTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirebaseappcheckdebugtoken"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseappcheckdebugtoken"
 
 &googlefirebaseappcheckdebugtoken.GoogleFirebaseAppCheckDebugTokenConfig {
 	Connection: interface{},
@@ -859,7 +859,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefireb
 	Token: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleFirebaseAppCheckDebugToken.GoogleFirebaseAppCheckDebugTokenTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleFirebaseAppCheckDebugToken.GoogleFirebaseAppCheckDebugTokenTimeouts,
 }
 ```
 
@@ -1050,7 +1050,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseAppCheckDebugToken.GoogleFirebaseAppCheckDebugTokenTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirebaseappcheckdebugtoken"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseappcheckdebugtoken"
 
 &googlefirebaseappcheckdebugtoken.GoogleFirebaseAppCheckDebugTokenTimeouts {
 	Create: *string,
@@ -1112,7 +1112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseAppCheckDebugToken.GoogleFirebaseAppCheckDebugTokenTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirebaseappcheckdebugtoken"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseappcheckdebugtoken"
 
 googlefirebaseappcheckdebugtoken.NewGoogleFirebaseAppCheckDebugTokenTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleFirebaseAppCheckDebugTokenTimeoutsOutputReference
 ```

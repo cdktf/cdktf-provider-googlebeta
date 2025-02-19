@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_service_directory_namespace_iam_policy
 // generated from terraform resource schema
 
