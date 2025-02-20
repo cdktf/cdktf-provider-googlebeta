@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAppEngineFirewallRule.GoogleAppEngineFirewallRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginefirewallrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleappenginefirewallrule"
 
 googleappenginefirewallrule.NewGoogleAppEngineFirewallRule(scope Construct, id *string, config GoogleAppEngineFirewallRuleConfig) GoogleAppEngineFirewallRule
 ```
@@ -426,7 +426,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleAppEngineFirewallRule.GoogleAppEngineFirewallRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginefirewallrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleappenginefirewallrule"
 
 googleappenginefirewallrule.GoogleAppEngineFirewallRule_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleAppEngineFirewallRule.GoogleAppEngineFirewallRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginefirewallrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleappenginefirewallrule"
 
 googleappenginefirewallrule.GoogleAppEngineFirewallRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ googleappenginefirewallrule.GoogleAppEngineFirewallRule_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleAppEngineFirewallRule.GoogleAppEngineFirewallRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginefirewallrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleappenginefirewallrule"
 
 googleappenginefirewallrule.GoogleAppEngineFirewallRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ googleappenginefirewallrule.GoogleAppEngineFirewallRule_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleAppEngineFirewallRule.GoogleAppEngineFirewallRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginefirewallrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleappenginefirewallrule"
 
 googleappenginefirewallrule.GoogleAppEngineFirewallRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -869,7 +869,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAppEngineFirewallRule.GoogleAppEngineFirewallRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginefirewallrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleappenginefirewallrule"
 
 &googleappenginefirewallrule.GoogleAppEngineFirewallRuleConfig {
 	Connection: interface{},
@@ -885,7 +885,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappengine
 	Id: *string,
 	Priority: *f64,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleAppEngineFirewallRule.GoogleAppEngineFirewallRuleTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleAppEngineFirewallRule.GoogleAppEngineFirewallRuleTimeouts,
 }
 ```
 
@@ -1086,7 +1086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAppEngineFirewallRule.GoogleAppEngineFirewallRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginefirewallrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleappenginefirewallrule"
 
 &googleappenginefirewallrule.GoogleAppEngineFirewallRuleTimeouts {
 	Create: *string,
@@ -1148,7 +1148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAppEngineFirewallRule.GoogleAppEngineFirewallRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginefirewallrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleappenginefirewallrule"
 
 googleappenginefirewallrule.NewGoogleAppEngineFirewallRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleAppEngineFirewallRuleTimeoutsOutputReference
 ```
