@@ -570,6 +570,7 @@ Object.defineProperty(exports, 'googleFirebaseAppCheckRecaptchaEnterpriseConfig'
 Object.defineProperty(exports, 'googleFirebaseAppCheckRecaptchaV3Config', { get: function () { return require('./google-firebase-app-check-recaptcha-v3-config'); } });
 Object.defineProperty(exports, 'googleFirebaseAppCheckServiceConfig', { get: function () { return require('./google-firebase-app-check-service-config'); } });
 Object.defineProperty(exports, 'googleFirebaseAppleApp', { get: function () { return require('./google-firebase-apple-app'); } });
+Object.defineProperty(exports, 'googleFirebaseDataConnectService', { get: function () { return require('./google-firebase-data-connect-service'); } });
 Object.defineProperty(exports, 'googleFirebaseDatabaseInstance', { get: function () { return require('./google-firebase-database-instance'); } });
 Object.defineProperty(exports, 'googleFirebaseExtensionsInstance', { get: function () { return require('./google-firebase-extensions-instance'); } });
 Object.defineProperty(exports, 'googleFirebaseHostingChannel', { get: function () { return require('./google-firebase-hosting-channel'); } });
@@ -595,8 +596,12 @@ Object.defineProperty(exports, 'googleFolderIamMember', { get: function () { ret
 Object.defineProperty(exports, 'googleFolderIamPolicy', { get: function () { return require('./google-folder-iam-policy'); } });
 Object.defineProperty(exports, 'googleFolderOrganizationPolicy', { get: function () { return require('./google-folder-organization-policy'); } });
 Object.defineProperty(exports, 'googleGeminiCodeRepositoryIndex', { get: function () { return require('./google-gemini-code-repository-index'); } });
+Object.defineProperty(exports, 'googleGeminiDataSharingWithGoogleSetting', { get: function () { return require('./google-gemini-data-sharing-with-google-setting'); } });
+Object.defineProperty(exports, 'googleGeminiGeminiGcpEnablementSetting', { get: function () { return require('./google-gemini-gemini-gcp-enablement-setting'); } });
 Object.defineProperty(exports, 'googleGeminiLoggingSetting', { get: function () { return require('./google-gemini-logging-setting'); } });
+Object.defineProperty(exports, 'googleGeminiLoggingSettingBinding', { get: function () { return require('./google-gemini-logging-setting-binding'); } });
 Object.defineProperty(exports, 'googleGeminiReleaseChannelSetting', { get: function () { return require('./google-gemini-release-channel-setting'); } });
+Object.defineProperty(exports, 'googleGeminiReleaseChannelSettingBinding', { get: function () { return require('./google-gemini-release-channel-setting-binding'); } });
 Object.defineProperty(exports, 'googleGeminiRepositoryGroup', { get: function () { return require('./google-gemini-repository-group'); } });
 Object.defineProperty(exports, 'googleGeminiRepositoryGroupIamBinding', { get: function () { return require('./google-gemini-repository-group-iam-binding'); } });
 Object.defineProperty(exports, 'googleGeminiRepositoryGroupIamMember', { get: function () { return require('./google-gemini-repository-group-iam-member'); } });
@@ -775,6 +780,7 @@ Object.defineProperty(exports, 'googleNetappBackupVault', { get: function () { r
 Object.defineProperty(exports, 'googleNetappKmsconfig', { get: function () { return require('./google-netapp-kmsconfig'); } });
 Object.defineProperty(exports, 'googleNetappStoragePool', { get: function () { return require('./google-netapp-storage-pool'); } });
 Object.defineProperty(exports, 'googleNetappVolume', { get: function () { return require('./google-netapp-volume'); } });
+Object.defineProperty(exports, 'googleNetappVolumeQuotaRule', { get: function () { return require('./google-netapp-volume-quota-rule'); } });
 Object.defineProperty(exports, 'googleNetappVolumeReplication', { get: function () { return require('./google-netapp-volume-replication'); } });
 Object.defineProperty(exports, 'googleNetappVolumeSnapshot', { get: function () { return require('./google-netapp-volume-snapshot'); } });
 Object.defineProperty(exports, 'googleNetworkConnectivityGroup', { get: function () { return require('./google-network-connectivity-group'); } });
@@ -1089,6 +1095,7 @@ Object.defineProperty(exports, 'dataGoogleAccessApprovalProjectServiceAccount', 
 Object.defineProperty(exports, 'dataGoogleAccessContextManagerAccessPolicy', { get: function () { return require('./data-google-access-context-manager-access-policy'); } });
 Object.defineProperty(exports, 'dataGoogleAccessContextManagerAccessPolicyIamPolicy', { get: function () { return require('./data-google-access-context-manager-access-policy-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleActiveFolder', { get: function () { return require('./data-google-active-folder'); } });
+Object.defineProperty(exports, 'dataGoogleAlloydbInstance', { get: function () { return require('./data-google-alloydb-instance'); } });
 Object.defineProperty(exports, 'dataGoogleAlloydbLocations', { get: function () { return require('./data-google-alloydb-locations'); } });
 Object.defineProperty(exports, 'dataGoogleAlloydbSupportedDatabaseFlags', { get: function () { return require('./data-google-alloydb-supported-database-flags'); } });
 Object.defineProperty(exports, 'dataGoogleApiGatewayApiConfigIamPolicy', { get: function () { return require('./data-google-api-gateway-api-config-iam-policy'); } });

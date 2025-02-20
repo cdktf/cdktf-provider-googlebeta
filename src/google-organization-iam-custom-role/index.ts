@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_organization_iam_custom_role
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_organization_iam_custom_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface GoogleOrganizationIamCustomRoleConfig extends cdktf.TerraformMe
   /**
   * A human-readable description for the role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_organization_iam_custom_role#description GoogleOrganizationIamCustomRole#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_organization_iam_custom_role#description GoogleOrganizationIamCustomRole#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_organization_iam_custom_role#id GoogleOrganizationIamCustomRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_organization_iam_custom_role#id GoogleOrganizationIamCustomRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,37 +28,37 @@ export interface GoogleOrganizationIamCustomRoleConfig extends cdktf.TerraformMe
   /**
   * The numeric ID of the organization in which you want to create a custom role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_organization_iam_custom_role#org_id GoogleOrganizationIamCustomRole#org_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_organization_iam_custom_role#org_id GoogleOrganizationIamCustomRole#org_id}
   */
   readonly orgId: string;
   /**
   * The names of the permissions this role grants when bound in an IAM policy. At least one permission must be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_organization_iam_custom_role#permissions GoogleOrganizationIamCustomRole#permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_organization_iam_custom_role#permissions GoogleOrganizationIamCustomRole#permissions}
   */
   readonly permissions: string[];
   /**
   * The role id to use for this role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_organization_iam_custom_role#role_id GoogleOrganizationIamCustomRole#role_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_organization_iam_custom_role#role_id GoogleOrganizationIamCustomRole#role_id}
   */
   readonly roleId: string;
   /**
   * The current launch stage of the role. Defaults to GA.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_organization_iam_custom_role#stage GoogleOrganizationIamCustomRole#stage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_organization_iam_custom_role#stage GoogleOrganizationIamCustomRole#stage}
   */
   readonly stage?: string;
   /**
   * A human-readable title for the role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_organization_iam_custom_role#title GoogleOrganizationIamCustomRole#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_organization_iam_custom_role#title GoogleOrganizationIamCustomRole#title}
   */
   readonly title: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_organization_iam_custom_role google_organization_iam_custom_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_organization_iam_custom_role google_organization_iam_custom_role}
 */
 export class GoogleOrganizationIamCustomRole extends cdktf.TerraformResource {
 
@@ -74,7 +74,7 @@ export class GoogleOrganizationIamCustomRole extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleOrganizationIamCustomRole resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleOrganizationIamCustomRole to import
-  * @param importFromId The id of the existing GoogleOrganizationIamCustomRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_organization_iam_custom_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleOrganizationIamCustomRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_organization_iam_custom_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleOrganizationIamCustomRole to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -86,7 +86,7 @@ export class GoogleOrganizationIamCustomRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_organization_iam_custom_role google_organization_iam_custom_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_organization_iam_custom_role google_organization_iam_custom_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,7 +97,7 @@ export class GoogleOrganizationIamCustomRole extends cdktf.TerraformResource {
       terraformResourceType: 'google_organization_iam_custom_role',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.20.0',
+        providerVersion: '6.21.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

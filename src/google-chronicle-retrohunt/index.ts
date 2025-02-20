@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_retrohunt
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_retrohunt
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleChronicleRetrohuntConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_retrohunt#id GoogleChronicleRetrohunt#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_retrohunt#id GoogleChronicleRetrohunt#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,41 +22,41 @@ export interface GoogleChronicleRetrohuntConfig extends cdktf.TerraformMetaArgum
   /**
   * The unique identifier for the Chronicle instance, which is the same as the customer ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_retrohunt#instance GoogleChronicleRetrohunt#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_retrohunt#instance GoogleChronicleRetrohunt#instance}
   */
   readonly instance: string;
   /**
   * The location of the resource. This is the geographical region where the Chronicle instance resides, such as "us" or "europe-west2".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_retrohunt#location GoogleChronicleRetrohunt#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_retrohunt#location GoogleChronicleRetrohunt#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_retrohunt#project GoogleChronicleRetrohunt#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_retrohunt#project GoogleChronicleRetrohunt#project}
   */
   readonly project?: string;
   /**
   * The retrohunt ID of the Retrohunt. A retrohunt is an execution of a Rule over a time range in the past.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_retrohunt#retrohunt GoogleChronicleRetrohunt#retrohunt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_retrohunt#retrohunt GoogleChronicleRetrohunt#retrohunt}
   */
   readonly retrohunt?: string;
   /**
   * The Rule ID of the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_retrohunt#rule GoogleChronicleRetrohunt#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_retrohunt#rule GoogleChronicleRetrohunt#rule}
   */
   readonly rule: string;
   /**
   * process_interval block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_retrohunt#process_interval GoogleChronicleRetrohunt#process_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_retrohunt#process_interval GoogleChronicleRetrohunt#process_interval}
   */
   readonly processInterval: GoogleChronicleRetrohuntProcessInterval;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_retrohunt#timeouts GoogleChronicleRetrohunt#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_retrohunt#timeouts GoogleChronicleRetrohunt#timeouts}
   */
   readonly timeouts?: GoogleChronicleRetrohuntTimeouts;
 }
@@ -144,13 +144,13 @@ export interface GoogleChronicleRetrohuntProcessInterval {
   /**
   * Exclusive end of the interval.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_retrohunt#end_time GoogleChronicleRetrohunt#end_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_retrohunt#end_time GoogleChronicleRetrohunt#end_time}
   */
   readonly endTime: string;
   /**
   * Inclusive start of the interval.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_retrohunt#start_time GoogleChronicleRetrohunt#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_retrohunt#start_time GoogleChronicleRetrohunt#start_time}
   */
   readonly startTime: string;
 }
@@ -257,11 +257,11 @@ export class GoogleChronicleRetrohuntProcessIntervalOutputReference extends cdkt
 }
 export interface GoogleChronicleRetrohuntTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_retrohunt#create GoogleChronicleRetrohunt#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_retrohunt#create GoogleChronicleRetrohunt#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_retrohunt#delete GoogleChronicleRetrohunt#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_retrohunt#delete GoogleChronicleRetrohunt#delete}
   */
   readonly delete?: string;
 }
@@ -384,7 +384,7 @@ export class GoogleChronicleRetrohuntTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_retrohunt google_chronicle_retrohunt}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_retrohunt google_chronicle_retrohunt}
 */
 export class GoogleChronicleRetrohunt extends cdktf.TerraformResource {
 
@@ -400,7 +400,7 @@ export class GoogleChronicleRetrohunt extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleChronicleRetrohunt resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleChronicleRetrohunt to import
-  * @param importFromId The id of the existing GoogleChronicleRetrohunt that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_retrohunt#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleChronicleRetrohunt that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_retrohunt#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleChronicleRetrohunt to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -412,7 +412,7 @@ export class GoogleChronicleRetrohunt extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_retrohunt google_chronicle_retrohunt} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_retrohunt google_chronicle_retrohunt} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -423,7 +423,7 @@ export class GoogleChronicleRetrohunt extends cdktf.TerraformResource {
       terraformResourceType: 'google_chronicle_retrohunt',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.20.0',
+        providerVersion: '6.21.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

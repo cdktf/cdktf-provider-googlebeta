@@ -4,7 +4,7 @@
 
 ### GoogleClouddeployTargetIamPolicy <a name="GoogleClouddeployTargetIamPolicy" id="@cdktf/provider-google-beta.googleClouddeployTargetIamPolicy.GoogleClouddeployTargetIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_clouddeploy_target_iam_policy google_clouddeploy_target_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_clouddeploy_target_iam_policy google_clouddeploy_target_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddeployTargetIamPolicy.GoogleClouddeployTargetIamPolicy.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the GoogleClouddeployTargetIam
 
 The id of the existing GoogleClouddeployTargetIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_clouddeploy_target_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_clouddeploy_target_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -825,11 +825,11 @@ const googleClouddeployTargetIamPolicyConfig: googleClouddeployTargetIamPolicy.G
 | <code><a href="#@cdktf/provider-google-beta.googleClouddeployTargetIamPolicy.GoogleClouddeployTargetIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleClouddeployTargetIamPolicy.GoogleClouddeployTargetIamPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleClouddeployTargetIamPolicy.GoogleClouddeployTargetIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployTargetIamPolicy.GoogleClouddeployTargetIamPolicyConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_clouddeploy_target_iam_policy#name GoogleClouddeployTargetIamPolicy#name}. |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployTargetIamPolicy.GoogleClouddeployTargetIamPolicyConfig.property.policyData">policyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_clouddeploy_target_iam_policy#policy_data GoogleClouddeployTargetIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployTargetIamPolicy.GoogleClouddeployTargetIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_clouddeploy_target_iam_policy#id GoogleClouddeployTargetIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployTargetIamPolicy.GoogleClouddeployTargetIamPolicyConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_clouddeploy_target_iam_policy#location GoogleClouddeployTargetIamPolicy#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployTargetIamPolicy.GoogleClouddeployTargetIamPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_clouddeploy_target_iam_policy#project GoogleClouddeployTargetIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployTargetIamPolicy.GoogleClouddeployTargetIamPolicyConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_clouddeploy_target_iam_policy#name GoogleClouddeployTargetIamPolicy#name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployTargetIamPolicy.GoogleClouddeployTargetIamPolicyConfig.property.policyData">policyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_clouddeploy_target_iam_policy#policy_data GoogleClouddeployTargetIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployTargetIamPolicy.GoogleClouddeployTargetIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_clouddeploy_target_iam_policy#id GoogleClouddeployTargetIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployTargetIamPolicy.GoogleClouddeployTargetIamPolicyConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_clouddeploy_target_iam_policy#location GoogleClouddeployTargetIamPolicy#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployTargetIamPolicy.GoogleClouddeployTargetIamPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_clouddeploy_target_iam_policy#project GoogleClouddeployTargetIamPolicy#project}. |
 
 ---
 
@@ -911,7 +911,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_clouddeploy_target_iam_policy#name GoogleClouddeployTargetIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_clouddeploy_target_iam_policy#name GoogleClouddeployTargetIamPolicy#name}.
 
 ---
 
@@ -923,7 +923,7 @@ public readonly policyData: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_clouddeploy_target_iam_policy#policy_data GoogleClouddeployTargetIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_clouddeploy_target_iam_policy#policy_data GoogleClouddeployTargetIamPolicy#policy_data}.
 
 ---
 
@@ -935,7 +935,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_clouddeploy_target_iam_policy#id GoogleClouddeployTargetIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_clouddeploy_target_iam_policy#id GoogleClouddeployTargetIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -950,7 +950,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_clouddeploy_target_iam_policy#location GoogleClouddeployTargetIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_clouddeploy_target_iam_policy#location GoogleClouddeployTargetIamPolicy#location}.
 
 ---
 
@@ -962,7 +962,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_clouddeploy_target_iam_policy#project GoogleClouddeployTargetIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_clouddeploy_target_iam_policy#project GoogleClouddeployTargetIamPolicy#project}.
 
 ---
 
