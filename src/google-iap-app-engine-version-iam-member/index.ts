@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_iap_app_engine_version_iam_member
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_iap_app_engine_version_iam_member
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,54 +8,54 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleIapAppEngineVersionIamMemberConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_iap_app_engine_version_iam_member#app_id GoogleIapAppEngineVersionIamMember#app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_iap_app_engine_version_iam_member#app_id GoogleIapAppEngineVersionIamMember#app_id}
   */
   readonly appId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_iap_app_engine_version_iam_member#id GoogleIapAppEngineVersionIamMember#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_iap_app_engine_version_iam_member#id GoogleIapAppEngineVersionIamMember#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_iap_app_engine_version_iam_member#member GoogleIapAppEngineVersionIamMember#member}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_iap_app_engine_version_iam_member#member GoogleIapAppEngineVersionIamMember#member}
   */
   readonly member: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_iap_app_engine_version_iam_member#project GoogleIapAppEngineVersionIamMember#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_iap_app_engine_version_iam_member#project GoogleIapAppEngineVersionIamMember#project}
   */
   readonly project?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_iap_app_engine_version_iam_member#role GoogleIapAppEngineVersionIamMember#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_iap_app_engine_version_iam_member#role GoogleIapAppEngineVersionIamMember#role}
   */
   readonly role: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_iap_app_engine_version_iam_member#service GoogleIapAppEngineVersionIamMember#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_iap_app_engine_version_iam_member#service GoogleIapAppEngineVersionIamMember#service}
   */
   readonly service: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_iap_app_engine_version_iam_member#version_id GoogleIapAppEngineVersionIamMember#version_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_iap_app_engine_version_iam_member#version_id GoogleIapAppEngineVersionIamMember#version_id}
   */
   readonly versionId: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_iap_app_engine_version_iam_member#condition GoogleIapAppEngineVersionIamMember#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_iap_app_engine_version_iam_member#condition GoogleIapAppEngineVersionIamMember#condition}
   */
   readonly condition?: GoogleIapAppEngineVersionIamMemberCondition;
 }
 export interface GoogleIapAppEngineVersionIamMemberCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_iap_app_engine_version_iam_member#description GoogleIapAppEngineVersionIamMember#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_iap_app_engine_version_iam_member#description GoogleIapAppEngineVersionIamMember#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_iap_app_engine_version_iam_member#expression GoogleIapAppEngineVersionIamMember#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_iap_app_engine_version_iam_member#expression GoogleIapAppEngineVersionIamMember#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_iap_app_engine_version_iam_member#title GoogleIapAppEngineVersionIamMember#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_iap_app_engine_version_iam_member#title GoogleIapAppEngineVersionIamMember#title}
   */
   readonly title: string;
 }
@@ -196,7 +191,7 @@ export class GoogleIapAppEngineVersionIamMemberConditionOutputReference extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_iap_app_engine_version_iam_member google_iap_app_engine_version_iam_member}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_iap_app_engine_version_iam_member google_iap_app_engine_version_iam_member}
 */
 export class GoogleIapAppEngineVersionIamMember extends cdktf.TerraformResource {
 
@@ -212,7 +207,7 @@ export class GoogleIapAppEngineVersionIamMember extends cdktf.TerraformResource 
   * Generates CDKTF code for importing a GoogleIapAppEngineVersionIamMember resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleIapAppEngineVersionIamMember to import
-  * @param importFromId The id of the existing GoogleIapAppEngineVersionIamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_iap_app_engine_version_iam_member#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleIapAppEngineVersionIamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_iap_app_engine_version_iam_member#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleIapAppEngineVersionIamMember to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -224,7 +219,7 @@ export class GoogleIapAppEngineVersionIamMember extends cdktf.TerraformResource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_iap_app_engine_version_iam_member google_iap_app_engine_version_iam_member} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_iap_app_engine_version_iam_member google_iap_app_engine_version_iam_member} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -235,7 +230,7 @@ export class GoogleIapAppEngineVersionIamMember extends cdktf.TerraformResource 
       terraformResourceType: 'google_iap_app_engine_version_iam_member',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.20.0',
+        providerVersion: '6.21.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

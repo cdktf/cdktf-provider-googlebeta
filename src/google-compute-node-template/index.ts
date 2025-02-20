@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_node_template
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_node_template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface GoogleComputeNodeTemplateConfig extends cdktf.TerraformMetaArgu
   /**
   * CPU overcommit. Default value: "NONE" Possible values: ["ENABLED", "NONE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_node_template#cpu_overcommit_type GoogleComputeNodeTemplate#cpu_overcommit_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_node_template#cpu_overcommit_type GoogleComputeNodeTemplate#cpu_overcommit_type}
   */
   readonly cpuOvercommitType?: string;
   /**
   * An optional textual description of the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_node_template#description GoogleComputeNodeTemplate#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_node_template#description GoogleComputeNodeTemplate#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_node_template#id GoogleComputeNodeTemplate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_node_template#id GoogleComputeNodeTemplate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,62 +29,62 @@ export interface GoogleComputeNodeTemplateConfig extends cdktf.TerraformMetaArgu
   /**
   * Name of the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_node_template#name GoogleComputeNodeTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_node_template#name GoogleComputeNodeTemplate#name}
   */
   readonly name?: string;
   /**
   * Labels to use for node affinity, which will be used in
   * instance scheduling.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_node_template#node_affinity_labels GoogleComputeNodeTemplate#node_affinity_labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_node_template#node_affinity_labels GoogleComputeNodeTemplate#node_affinity_labels}
   */
   readonly nodeAffinityLabels?: { [key: string]: string };
   /**
   * Node type to use for nodes group that are created from this template.
   * Only one of nodeTypeFlexibility and nodeType can be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_node_template#node_type GoogleComputeNodeTemplate#node_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_node_template#node_type GoogleComputeNodeTemplate#node_type}
   */
   readonly nodeType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_node_template#project GoogleComputeNodeTemplate#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_node_template#project GoogleComputeNodeTemplate#project}
   */
   readonly project?: string;
   /**
   * Region where nodes using the node template will be created.
   * If it is not provided, the provider region is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_node_template#region GoogleComputeNodeTemplate#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_node_template#region GoogleComputeNodeTemplate#region}
   */
   readonly region?: string;
   /**
   * accelerators block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_node_template#accelerators GoogleComputeNodeTemplate#accelerators}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_node_template#accelerators GoogleComputeNodeTemplate#accelerators}
   */
   readonly accelerators?: GoogleComputeNodeTemplateAccelerators[] | cdktf.IResolvable;
   /**
   * disks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_node_template#disks GoogleComputeNodeTemplate#disks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_node_template#disks GoogleComputeNodeTemplate#disks}
   */
   readonly disks?: GoogleComputeNodeTemplateDisks[] | cdktf.IResolvable;
   /**
   * node_type_flexibility block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_node_template#node_type_flexibility GoogleComputeNodeTemplate#node_type_flexibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_node_template#node_type_flexibility GoogleComputeNodeTemplate#node_type_flexibility}
   */
   readonly nodeTypeFlexibility?: GoogleComputeNodeTemplateNodeTypeFlexibility;
   /**
   * server_binding block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_node_template#server_binding GoogleComputeNodeTemplate#server_binding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_node_template#server_binding GoogleComputeNodeTemplate#server_binding}
   */
   readonly serverBinding?: GoogleComputeNodeTemplateServerBinding;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_node_template#timeouts GoogleComputeNodeTemplate#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_node_template#timeouts GoogleComputeNodeTemplate#timeouts}
   */
   readonly timeouts?: GoogleComputeNodeTemplateTimeouts;
 }
@@ -98,14 +93,14 @@ export interface GoogleComputeNodeTemplateAccelerators {
   * The number of the guest accelerator cards exposed to this
   * node template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_node_template#accelerator_count GoogleComputeNodeTemplate#accelerator_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_node_template#accelerator_count GoogleComputeNodeTemplate#accelerator_count}
   */
   readonly acceleratorCount?: number;
   /**
   * Full or partial URL of the accelerator type resource to expose
   * to this node template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_node_template#accelerator_type GoogleComputeNodeTemplate#accelerator_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_node_template#accelerator_type GoogleComputeNodeTemplate#accelerator_type}
   */
   readonly acceleratorType?: string;
 }
@@ -252,19 +247,19 @@ export interface GoogleComputeNodeTemplateDisks {
   /**
   * Specifies the number of such disks.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_node_template#disk_count GoogleComputeNodeTemplate#disk_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_node_template#disk_count GoogleComputeNodeTemplate#disk_count}
   */
   readonly diskCount?: number;
   /**
   * Specifies the size of the disk in base-2 GB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_node_template#disk_size_gb GoogleComputeNodeTemplate#disk_size_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_node_template#disk_size_gb GoogleComputeNodeTemplate#disk_size_gb}
   */
   readonly diskSizeGb?: number;
   /**
   * Specifies the desired disk type on the node. This disk type must be a local storage type (e.g.: local-ssd). Note that for nodeTemplates, this should be the name of the disk type and not its URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_node_template#disk_type GoogleComputeNodeTemplate#disk_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_node_template#disk_type GoogleComputeNodeTemplate#disk_type}
   */
   readonly diskType?: string;
 }
@@ -440,13 +435,13 @@ export interface GoogleComputeNodeTemplateNodeTypeFlexibility {
   /**
   * Number of virtual CPUs to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_node_template#cpus GoogleComputeNodeTemplate#cpus}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_node_template#cpus GoogleComputeNodeTemplate#cpus}
   */
   readonly cpus?: string;
   /**
   * Physical memory available to the node, defined in MB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_node_template#memory GoogleComputeNodeTemplate#memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_node_template#memory GoogleComputeNodeTemplate#memory}
   */
   readonly memory?: string;
 }
@@ -577,7 +572,7 @@ export interface GoogleComputeNodeTemplateServerBinding {
   * additional licenses when maintenance occurs. However, VMs on such
   * nodes will experience outages while maintenance is applied. Possible values: ["RESTART_NODE_ON_ANY_SERVER", "RESTART_NODE_ON_MINIMAL_SERVERS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_node_template#type GoogleComputeNodeTemplate#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_node_template#type GoogleComputeNodeTemplate#type}
   */
   readonly type: string;
 }
@@ -658,11 +653,11 @@ export class GoogleComputeNodeTemplateServerBindingOutputReference extends cdktf
 }
 export interface GoogleComputeNodeTemplateTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_node_template#create GoogleComputeNodeTemplate#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_node_template#create GoogleComputeNodeTemplate#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_node_template#delete GoogleComputeNodeTemplate#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_node_template#delete GoogleComputeNodeTemplate#delete}
   */
   readonly delete?: string;
 }
@@ -785,7 +780,7 @@ export class GoogleComputeNodeTemplateTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_node_template google_compute_node_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_node_template google_compute_node_template}
 */
 export class GoogleComputeNodeTemplate extends cdktf.TerraformResource {
 
@@ -801,7 +796,7 @@ export class GoogleComputeNodeTemplate extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleComputeNodeTemplate resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleComputeNodeTemplate to import
-  * @param importFromId The id of the existing GoogleComputeNodeTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_node_template#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleComputeNodeTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_node_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleComputeNodeTemplate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -813,7 +808,7 @@ export class GoogleComputeNodeTemplate extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_node_template google_compute_node_template} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_node_template google_compute_node_template} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -824,7 +819,7 @@ export class GoogleComputeNodeTemplate extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_node_template',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.20.0',
+        providerVersion: '6.21.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -4,12 +4,12 @@
 
 ### GoogleMlEngineModel <a name="GoogleMlEngineModel" id="@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_ml_engine_model google_ml_engine_model}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_ml_engine_model google_ml_engine_model}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemlenginemodel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemlenginemodel"
 
 googlemlenginemodel.NewGoogleMlEngineModel(scope Construct, id *string, config GoogleMlEngineModelConfig) GoogleMlEngineModel
 ```
@@ -467,7 +467,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemlenginemodel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemlenginemodel"
 
 googlemlenginemodel.GoogleMlEngineModel_IsConstruct(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemlenginemodel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemlenginemodel"
 
 googlemlenginemodel.GoogleMlEngineModel_IsTerraformElement(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ googlemlenginemodel.GoogleMlEngineModel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemlenginemodel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemlenginemodel"
 
 googlemlenginemodel.GoogleMlEngineModel_IsTerraformResource(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ googlemlenginemodel.GoogleMlEngineModel_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemlenginemodel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemlenginemodel"
 
 googlemlenginemodel.GoogleMlEngineModel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -556,7 +556,7 @@ The construct id used in the generated config for the GoogleMlEngineModel to imp
 
 The id of the existing GoogleMlEngineModel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_ml_engine_model#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_ml_engine_model#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -998,7 +998,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemlenginemodel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemlenginemodel"
 
 &googlemlenginemodel.GoogleMlEngineModelConfig {
 	Connection: interface{},
@@ -1009,7 +1009,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemleng
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	DefaultVersion: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleMlEngineModel.GoogleMlEngineModelDefaultVersion,
+	DefaultVersion: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMlEngineModel.GoogleMlEngineModelDefaultVersion,
 	Description: *string,
 	Id: *string,
 	Labels: *map[string]*string,
@@ -1017,7 +1017,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemleng
 	OnlinePredictionLogging: interface{},
 	Project: *string,
 	Regions: *[]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleMlEngineModel.GoogleMlEngineModelTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMlEngineModel.GoogleMlEngineModelTimeouts,
 }
 ```
 
@@ -1035,11 +1035,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemleng
 | <code><a href="#@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModelConfig.property.name">Name</a></code> | <code>*string</code> | The name specified for the model. |
 | <code><a href="#@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModelConfig.property.defaultVersion">DefaultVersion</a></code> | <code><a href="#@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModelDefaultVersion">GoogleMlEngineModelDefaultVersion</a></code> | default_version block. |
 | <code><a href="#@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModelConfig.property.description">Description</a></code> | <code>*string</code> | The description specified for the model when it was created. |
-| <code><a href="#@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_ml_engine_model#id GoogleMlEngineModel#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_ml_engine_model#id GoogleMlEngineModel#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModelConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | One or more labels that you can add, to organize your models. |
 | <code><a href="#@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModelConfig.property.onlinePredictionConsoleLogging">OnlinePredictionConsoleLogging</a></code> | <code>interface{}</code> | If true, online prediction nodes send stderr and stdout streams to Stackdriver Logging. |
 | <code><a href="#@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModelConfig.property.onlinePredictionLogging">OnlinePredictionLogging</a></code> | <code>interface{}</code> | If true, online prediction access logs are sent to StackDriver Logging. |
-| <code><a href="#@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModelConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_ml_engine_model#project GoogleMlEngineModel#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModelConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_ml_engine_model#project GoogleMlEngineModel#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModelConfig.property.regions">Regions</a></code> | <code>*[]*string</code> | The list of regions where the model is going to be deployed. Currently only one region per model is supported. |
 | <code><a href="#@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModelConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModelTimeouts">GoogleMlEngineModelTimeouts</a></code> | timeouts block. |
 
@@ -1125,7 +1125,7 @@ Name *string
 
 The name specified for the model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_ml_engine_model#name GoogleMlEngineModel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_ml_engine_model#name GoogleMlEngineModel#name}
 
 ---
 
@@ -1139,7 +1139,7 @@ DefaultVersion GoogleMlEngineModelDefaultVersion
 
 default_version block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_ml_engine_model#default_version GoogleMlEngineModel#default_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_ml_engine_model#default_version GoogleMlEngineModel#default_version}
 
 ---
 
@@ -1153,7 +1153,7 @@ Description *string
 
 The description specified for the model when it was created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_ml_engine_model#description GoogleMlEngineModel#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_ml_engine_model#description GoogleMlEngineModel#description}
 
 ---
 
@@ -1165,7 +1165,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_ml_engine_model#id GoogleMlEngineModel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_ml_engine_model#id GoogleMlEngineModel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1185,7 +1185,7 @@ One or more labels that you can add, to organize your models.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_ml_engine_model#labels GoogleMlEngineModel#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_ml_engine_model#labels GoogleMlEngineModel#labels}
 
 ---
 
@@ -1199,7 +1199,7 @@ OnlinePredictionConsoleLogging interface{}
 
 If true, online prediction nodes send stderr and stdout streams to Stackdriver Logging.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_ml_engine_model#online_prediction_console_logging GoogleMlEngineModel#online_prediction_console_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_ml_engine_model#online_prediction_console_logging GoogleMlEngineModel#online_prediction_console_logging}
 
 ---
 
@@ -1213,7 +1213,7 @@ OnlinePredictionLogging interface{}
 
 If true, online prediction access logs are sent to StackDriver Logging.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_ml_engine_model#online_prediction_logging GoogleMlEngineModel#online_prediction_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_ml_engine_model#online_prediction_logging GoogleMlEngineModel#online_prediction_logging}
 
 ---
 
@@ -1225,7 +1225,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_ml_engine_model#project GoogleMlEngineModel#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_ml_engine_model#project GoogleMlEngineModel#project}.
 
 ---
 
@@ -1239,7 +1239,7 @@ Regions *[]*string
 
 The list of regions where the model is going to be deployed. Currently only one region per model is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_ml_engine_model#regions GoogleMlEngineModel#regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_ml_engine_model#regions GoogleMlEngineModel#regions}
 
 ---
 
@@ -1253,7 +1253,7 @@ Timeouts GoogleMlEngineModelTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_ml_engine_model#timeouts GoogleMlEngineModel#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_ml_engine_model#timeouts GoogleMlEngineModel#timeouts}
 
 ---
 
@@ -1262,7 +1262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModelDefaultVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemlenginemodel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemlenginemodel"
 
 &googlemlenginemodel.GoogleMlEngineModelDefaultVersion {
 	Name: *string,
@@ -1287,7 +1287,7 @@ Name *string
 
 The name specified for the version when it was created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_ml_engine_model#name GoogleMlEngineModel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_ml_engine_model#name GoogleMlEngineModel#name}
 
 ---
 
@@ -1296,7 +1296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModelTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemlenginemodel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemlenginemodel"
 
 &googlemlenginemodel.GoogleMlEngineModelTimeouts {
 	Create: *string,
@@ -1309,9 +1309,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemleng
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModelTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_ml_engine_model#create GoogleMlEngineModel#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModelTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_ml_engine_model#delete GoogleMlEngineModel#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModelTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_ml_engine_model#update GoogleMlEngineModel#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModelTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_ml_engine_model#create GoogleMlEngineModel#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModelTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_ml_engine_model#delete GoogleMlEngineModel#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModelTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_ml_engine_model#update GoogleMlEngineModel#update}. |
 
 ---
 
@@ -1323,7 +1323,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_ml_engine_model#create GoogleMlEngineModel#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_ml_engine_model#create GoogleMlEngineModel#create}.
 
 ---
 
@@ -1335,7 +1335,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_ml_engine_model#delete GoogleMlEngineModel#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_ml_engine_model#delete GoogleMlEngineModel#delete}.
 
 ---
 
@@ -1347,7 +1347,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_ml_engine_model#update GoogleMlEngineModel#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_ml_engine_model#update GoogleMlEngineModel#update}.
 
 ---
 
@@ -1358,7 +1358,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModelDefaultVersionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemlenginemodel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemlenginemodel"
 
 googlemlenginemodel.NewGoogleMlEngineModelDefaultVersionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMlEngineModelDefaultVersionOutputReference
 ```
@@ -1629,7 +1629,7 @@ func InternalValue() GoogleMlEngineModelDefaultVersion
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModelTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemlenginemodel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemlenginemodel"
 
 googlemlenginemodel.NewGoogleMlEngineModelTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMlEngineModelTimeoutsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### GoogleChronicleRetrohunt <a name="GoogleChronicleRetrohunt" id="@cdktf/provider-google-beta.googleChronicleRetrohunt.GoogleChronicleRetrohunt"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_retrohunt google_chronicle_retrohunt}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_retrohunt google_chronicle_retrohunt}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleChronicleRetrohunt.GoogleChronicleRetrohunt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechronicleretrohunt"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechronicleretrohunt"
 
 googlechronicleretrohunt.NewGoogleChronicleRetrohunt(scope Construct, id *string, config GoogleChronicleRetrohuntConfig) GoogleChronicleRetrohunt
 ```
@@ -432,7 +432,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleChronicleRetrohunt.GoogleChronicleRetrohunt.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechronicleretrohunt"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechronicleretrohunt"
 
 googlechronicleretrohunt.GoogleChronicleRetrohunt_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleChronicleRetrohunt.GoogleChronicleRetrohunt.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechronicleretrohunt"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechronicleretrohunt"
 
 googlechronicleretrohunt.GoogleChronicleRetrohunt_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ googlechronicleretrohunt.GoogleChronicleRetrohunt_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleChronicleRetrohunt.GoogleChronicleRetrohunt.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechronicleretrohunt"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechronicleretrohunt"
 
 googlechronicleretrohunt.GoogleChronicleRetrohunt_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ googlechronicleretrohunt.GoogleChronicleRetrohunt_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleChronicleRetrohunt.GoogleChronicleRetrohunt.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechronicleretrohunt"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechronicleretrohunt"
 
 googlechronicleretrohunt.GoogleChronicleRetrohunt_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -521,7 +521,7 @@ The construct id used in the generated config for the GoogleChronicleRetrohunt t
 
 The id of the existing GoogleChronicleRetrohunt that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_retrohunt#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_retrohunt#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -941,7 +941,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleChronicleRetrohunt.GoogleChronicleRetrohuntConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechronicleretrohunt"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechronicleretrohunt"
 
 &googlechronicleretrohunt.GoogleChronicleRetrohuntConfig {
 	Connection: interface{},
@@ -953,12 +953,12 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechron
 	Provisioners: *[]interface{},
 	Instance: *string,
 	Location: *string,
-	ProcessInterval: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleChronicleRetrohunt.GoogleChronicleRetrohuntProcessInterval,
+	ProcessInterval: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleChronicleRetrohunt.GoogleChronicleRetrohuntProcessInterval,
 	Rule: *string,
 	Id: *string,
 	Project: *string,
 	Retrohunt: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleChronicleRetrohunt.GoogleChronicleRetrohuntTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleChronicleRetrohunt.GoogleChronicleRetrohuntTimeouts,
 }
 ```
 
@@ -977,8 +977,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechron
 | <code><a href="#@cdktf/provider-google-beta.googleChronicleRetrohunt.GoogleChronicleRetrohuntConfig.property.location">Location</a></code> | <code>*string</code> | The location of the resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleChronicleRetrohunt.GoogleChronicleRetrohuntConfig.property.processInterval">ProcessInterval</a></code> | <code><a href="#@cdktf/provider-google-beta.googleChronicleRetrohunt.GoogleChronicleRetrohuntProcessInterval">GoogleChronicleRetrohuntProcessInterval</a></code> | process_interval block. |
 | <code><a href="#@cdktf/provider-google-beta.googleChronicleRetrohunt.GoogleChronicleRetrohuntConfig.property.rule">Rule</a></code> | <code>*string</code> | The Rule ID of the rule. |
-| <code><a href="#@cdktf/provider-google-beta.googleChronicleRetrohunt.GoogleChronicleRetrohuntConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_retrohunt#id GoogleChronicleRetrohunt#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleChronicleRetrohunt.GoogleChronicleRetrohuntConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_retrohunt#project GoogleChronicleRetrohunt#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleChronicleRetrohunt.GoogleChronicleRetrohuntConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_retrohunt#id GoogleChronicleRetrohunt#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleChronicleRetrohunt.GoogleChronicleRetrohuntConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_retrohunt#project GoogleChronicleRetrohunt#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleChronicleRetrohunt.GoogleChronicleRetrohuntConfig.property.retrohunt">Retrohunt</a></code> | <code>*string</code> | The retrohunt ID of the Retrohunt. |
 | <code><a href="#@cdktf/provider-google-beta.googleChronicleRetrohunt.GoogleChronicleRetrohuntConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleChronicleRetrohunt.GoogleChronicleRetrohuntTimeouts">GoogleChronicleRetrohuntTimeouts</a></code> | timeouts block. |
 
@@ -1064,7 +1064,7 @@ Instance *string
 
 The unique identifier for the Chronicle instance, which is the same as the customer ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_retrohunt#instance GoogleChronicleRetrohunt#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_retrohunt#instance GoogleChronicleRetrohunt#instance}
 
 ---
 
@@ -1080,7 +1080,7 @@ The location of the resource.
 
 This is the geographical region where the Chronicle instance resides, such as "us" or "europe-west2".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_retrohunt#location GoogleChronicleRetrohunt#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_retrohunt#location GoogleChronicleRetrohunt#location}
 
 ---
 
@@ -1094,7 +1094,7 @@ ProcessInterval GoogleChronicleRetrohuntProcessInterval
 
 process_interval block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_retrohunt#process_interval GoogleChronicleRetrohunt#process_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_retrohunt#process_interval GoogleChronicleRetrohunt#process_interval}
 
 ---
 
@@ -1108,7 +1108,7 @@ Rule *string
 
 The Rule ID of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_retrohunt#rule GoogleChronicleRetrohunt#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_retrohunt#rule GoogleChronicleRetrohunt#rule}
 
 ---
 
@@ -1120,7 +1120,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_retrohunt#id GoogleChronicleRetrohunt#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_retrohunt#id GoogleChronicleRetrohunt#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1135,7 +1135,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_retrohunt#project GoogleChronicleRetrohunt#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_retrohunt#project GoogleChronicleRetrohunt#project}.
 
 ---
 
@@ -1151,7 +1151,7 @@ The retrohunt ID of the Retrohunt.
 
 A retrohunt is an execution of a Rule over a time range in the past.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_retrohunt#retrohunt GoogleChronicleRetrohunt#retrohunt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_retrohunt#retrohunt GoogleChronicleRetrohunt#retrohunt}
 
 ---
 
@@ -1165,7 +1165,7 @@ Timeouts GoogleChronicleRetrohuntTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_retrohunt#timeouts GoogleChronicleRetrohunt#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_retrohunt#timeouts GoogleChronicleRetrohunt#timeouts}
 
 ---
 
@@ -1174,7 +1174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleChronicleRetrohunt.GoogleChronicleRetrohuntExecutionInterval.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechronicleretrohunt"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechronicleretrohunt"
 
 &googlechronicleretrohunt.GoogleChronicleRetrohuntExecutionInterval {
 
@@ -1187,7 +1187,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechron
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleChronicleRetrohunt.GoogleChronicleRetrohuntProcessInterval.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechronicleretrohunt"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechronicleretrohunt"
 
 &googlechronicleretrohunt.GoogleChronicleRetrohuntProcessInterval {
 	EndTime: *string,
@@ -1214,7 +1214,7 @@ EndTime *string
 
 Exclusive end of the interval.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_retrohunt#end_time GoogleChronicleRetrohunt#end_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_retrohunt#end_time GoogleChronicleRetrohunt#end_time}
 
 ---
 
@@ -1228,7 +1228,7 @@ StartTime *string
 
 Inclusive start of the interval.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_retrohunt#start_time GoogleChronicleRetrohunt#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_retrohunt#start_time GoogleChronicleRetrohunt#start_time}
 
 ---
 
@@ -1237,7 +1237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleChronicleRetrohunt.GoogleChronicleRetrohuntTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechronicleretrohunt"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechronicleretrohunt"
 
 &googlechronicleretrohunt.GoogleChronicleRetrohuntTimeouts {
 	Create: *string,
@@ -1249,8 +1249,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechron
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleChronicleRetrohunt.GoogleChronicleRetrohuntTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_retrohunt#create GoogleChronicleRetrohunt#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleChronicleRetrohunt.GoogleChronicleRetrohuntTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_retrohunt#delete GoogleChronicleRetrohunt#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleChronicleRetrohunt.GoogleChronicleRetrohuntTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_retrohunt#create GoogleChronicleRetrohunt#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleChronicleRetrohunt.GoogleChronicleRetrohuntTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_retrohunt#delete GoogleChronicleRetrohunt#delete}. |
 
 ---
 
@@ -1262,7 +1262,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_retrohunt#create GoogleChronicleRetrohunt#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_retrohunt#create GoogleChronicleRetrohunt#create}.
 
 ---
 
@@ -1274,7 +1274,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_chronicle_retrohunt#delete GoogleChronicleRetrohunt#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_retrohunt#delete GoogleChronicleRetrohunt#delete}.
 
 ---
 
@@ -1285,7 +1285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleChronicleRetrohunt.GoogleChronicleRetrohuntExecutionIntervalList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechronicleretrohunt"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechronicleretrohunt"
 
 googlechronicleretrohunt.NewGoogleChronicleRetrohuntExecutionIntervalList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleChronicleRetrohuntExecutionIntervalList
 ```
@@ -1434,7 +1434,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleChronicleRetrohunt.GoogleChronicleRetrohuntExecutionIntervalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechronicleretrohunt"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechronicleretrohunt"
 
 googlechronicleretrohunt.NewGoogleChronicleRetrohuntExecutionIntervalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleChronicleRetrohuntExecutionIntervalOutputReference
 ```
@@ -1723,7 +1723,7 @@ func InternalValue() GoogleChronicleRetrohuntExecutionInterval
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleChronicleRetrohunt.GoogleChronicleRetrohuntProcessIntervalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechronicleretrohunt"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechronicleretrohunt"
 
 googlechronicleretrohunt.NewGoogleChronicleRetrohuntProcessIntervalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleChronicleRetrohuntProcessIntervalOutputReference
 ```
@@ -2016,7 +2016,7 @@ func InternalValue() GoogleChronicleRetrohuntProcessInterval
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleChronicleRetrohunt.GoogleChronicleRetrohuntTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechronicleretrohunt"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechronicleretrohunt"
 
 googlechronicleretrohunt.NewGoogleChronicleRetrohuntTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleChronicleRetrohuntTimeoutsOutputReference
 ```

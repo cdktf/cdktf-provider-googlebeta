@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_firebase_hosting_release
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_firebase_hosting_release
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,11 +11,11 @@ export interface GoogleFirebaseHostingReleaseConfig extends cdktf.TerraformMetaA
   * The ID of the channel to which the release belongs. If not provided, the release will
   * belong to the default "live" channel
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_firebase_hosting_release#channel_id GoogleFirebaseHostingRelease#channel_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_firebase_hosting_release#channel_id GoogleFirebaseHostingRelease#channel_id}
   */
   readonly channelId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_firebase_hosting_release#id GoogleFirebaseHostingRelease#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_firebase_hosting_release#id GoogleFirebaseHostingRelease#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,13 +24,13 @@ export interface GoogleFirebaseHostingReleaseConfig extends cdktf.TerraformMetaA
   /**
   * The deploy description when the release was created. The value can be up to 512 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_firebase_hosting_release#message GoogleFirebaseHostingRelease#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_firebase_hosting_release#message GoogleFirebaseHostingRelease#message}
   */
   readonly message?: string;
   /**
   * Required. The ID of the site to which the release belongs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_firebase_hosting_release#site_id GoogleFirebaseHostingRelease#site_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_firebase_hosting_release#site_id GoogleFirebaseHostingRelease#site_id}
   */
   readonly siteId: string;
   /**
@@ -45,7 +40,7 @@ export interface GoogleFirebaseHostingReleaseConfig extends cdktf.TerraformMetaA
   * ROLLBACK: The release points back to a previously deployed version. Output only.
   * SITE_DISABLE: The release prevents the site from serving content. Firebase Hosting acts as if the site never existed Possible values: ["DEPLOY", "ROLLBACK", "SITE_DISABLE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_firebase_hosting_release#type GoogleFirebaseHostingRelease#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_firebase_hosting_release#type GoogleFirebaseHostingRelease#type}
   */
   readonly type?: string;
   /**
@@ -54,23 +49,23 @@ export interface GoogleFirebaseHostingReleaseConfig extends cdktf.TerraformMetaA
   * The Version must belong to the same site as in the 'site_id'.
   * This parameter must be empty if the 'type' of the release is 'SITE_DISABLE'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_firebase_hosting_release#version_name GoogleFirebaseHostingRelease#version_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_firebase_hosting_release#version_name GoogleFirebaseHostingRelease#version_name}
   */
   readonly versionName?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_firebase_hosting_release#timeouts GoogleFirebaseHostingRelease#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_firebase_hosting_release#timeouts GoogleFirebaseHostingRelease#timeouts}
   */
   readonly timeouts?: GoogleFirebaseHostingReleaseTimeouts;
 }
 export interface GoogleFirebaseHostingReleaseTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_firebase_hosting_release#create GoogleFirebaseHostingRelease#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_firebase_hosting_release#create GoogleFirebaseHostingRelease#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_firebase_hosting_release#delete GoogleFirebaseHostingRelease#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_firebase_hosting_release#delete GoogleFirebaseHostingRelease#delete}
   */
   readonly delete?: string;
 }
@@ -193,7 +188,7 @@ export class GoogleFirebaseHostingReleaseTimeoutsOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_firebase_hosting_release google_firebase_hosting_release}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_firebase_hosting_release google_firebase_hosting_release}
 */
 export class GoogleFirebaseHostingRelease extends cdktf.TerraformResource {
 
@@ -209,7 +204,7 @@ export class GoogleFirebaseHostingRelease extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleFirebaseHostingRelease resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleFirebaseHostingRelease to import
-  * @param importFromId The id of the existing GoogleFirebaseHostingRelease that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_firebase_hosting_release#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleFirebaseHostingRelease that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_firebase_hosting_release#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleFirebaseHostingRelease to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -221,7 +216,7 @@ export class GoogleFirebaseHostingRelease extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_firebase_hosting_release google_firebase_hosting_release} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_firebase_hosting_release google_firebase_hosting_release} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -232,7 +227,7 @@ export class GoogleFirebaseHostingRelease extends cdktf.TerraformResource {
       terraformResourceType: 'google_firebase_hosting_release',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.20.0',
+        providerVersion: '6.21.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
