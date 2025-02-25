@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_route
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_route
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,18 +16,18 @@ export interface GoogleComputeRouteConfig extends cdktf.TerraformMetaArguments {
   * An optional description of this resource. Provide this property
   * when you create the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_route#description GoogleComputeRoute#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_route#description GoogleComputeRoute#description}
   */
   readonly description?: string;
   /**
   * The destination range of outgoing packets that this route applies to.
   * Only IPv4 is supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_route#dest_range GoogleComputeRoute#dest_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_route#dest_range GoogleComputeRoute#dest_range}
   */
   readonly destRange: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_route#id GoogleComputeRoute#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_route#id GoogleComputeRoute#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -42,13 +42,13 @@ export interface GoogleComputeRouteConfig extends cdktf.TerraformMetaArguments {
   * characters must be a dash, lowercase letter, or digit, except the
   * last character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_route#name GoogleComputeRoute#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_route#name GoogleComputeRoute#name}
   */
   readonly name: string;
   /**
   * The network that this route applies to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_route#network GoogleComputeRoute#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_route#network GoogleComputeRoute#network}
   */
   readonly network: string;
   /**
@@ -60,7 +60,7 @@ export interface GoogleComputeRouteConfig extends cdktf.TerraformMetaArguments {
   * * 'global/gateways/default-internet-gateway'
   * * The string 'default-internet-gateway'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_route#next_hop_gateway GoogleComputeRoute#next_hop_gateway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_route#next_hop_gateway GoogleComputeRoute#next_hop_gateway}
   */
   readonly nextHopGateway?: string;
   /**
@@ -81,7 +81,7 @@ export interface GoogleComputeRouteConfig extends cdktf.TerraformMetaArguments {
   * Note that this can only be used when the destinationRange is
   * a public (non-RFC 1918) IP CIDR range.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_route#next_hop_ilb GoogleComputeRoute#next_hop_ilb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_route#next_hop_ilb GoogleComputeRoute#next_hop_ilb}
   */
   readonly nextHopIlb?: string;
   /**
@@ -92,25 +92,25 @@ export interface GoogleComputeRouteConfig extends cdktf.TerraformMetaArguments {
   * * 'zones/zone/instances/instance'
   * * Just the instance name, with the zone in 'next_hop_instance_zone'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_route#next_hop_instance GoogleComputeRoute#next_hop_instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_route#next_hop_instance GoogleComputeRoute#next_hop_instance}
   */
   readonly nextHopInstance?: string;
   /**
   * The zone of the instance specified in next_hop_instance. Omit if next_hop_instance is specified as a URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_route#next_hop_instance_zone GoogleComputeRoute#next_hop_instance_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_route#next_hop_instance_zone GoogleComputeRoute#next_hop_instance_zone}
   */
   readonly nextHopInstanceZone?: string;
   /**
   * Network IP address of an instance that should handle matching packets.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_route#next_hop_ip GoogleComputeRoute#next_hop_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_route#next_hop_ip GoogleComputeRoute#next_hop_ip}
   */
   readonly nextHopIp?: string;
   /**
   * URL to a VpnTunnel that should handle matching packets.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_route#next_hop_vpn_tunnel GoogleComputeRoute#next_hop_vpn_tunnel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_route#next_hop_vpn_tunnel GoogleComputeRoute#next_hop_vpn_tunnel}
   */
   readonly nextHopVpnTunnel?: string;
   /**
@@ -122,33 +122,33 @@ export interface GoogleComputeRouteConfig extends cdktf.TerraformMetaArguments {
   * 
   * Default value is 1000. Valid range is 0 through 65535.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_route#priority GoogleComputeRoute#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_route#priority GoogleComputeRoute#priority}
   */
   readonly priority?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_route#project GoogleComputeRoute#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_route#project GoogleComputeRoute#project}
   */
   readonly project?: string;
   /**
   * A list of instance tags to which this route applies.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_route#tags GoogleComputeRoute#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_route#tags GoogleComputeRoute#tags}
   */
   readonly tags?: string[];
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_route#timeouts GoogleComputeRoute#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_route#timeouts GoogleComputeRoute#timeouts}
   */
   readonly timeouts?: GoogleComputeRouteTimeouts;
 }
 export interface GoogleComputeRouteTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_route#create GoogleComputeRoute#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_route#create GoogleComputeRoute#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_route#delete GoogleComputeRoute#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_route#delete GoogleComputeRoute#delete}
   */
   readonly delete?: string;
 }
@@ -271,7 +271,7 @@ export class GoogleComputeRouteTimeoutsOutputReference extends cdktf.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_route google_compute_route}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_route google_compute_route}
 */
 export class GoogleComputeRoute extends cdktf.TerraformResource {
 
@@ -287,7 +287,7 @@ export class GoogleComputeRoute extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleComputeRoute resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleComputeRoute to import
-  * @param importFromId The id of the existing GoogleComputeRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_route#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleComputeRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_route#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleComputeRoute to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -299,7 +299,7 @@ export class GoogleComputeRoute extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_route google_compute_route} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_route google_compute_route} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -310,7 +310,7 @@ export class GoogleComputeRoute extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_route',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.21.0',
+        providerVersion: '6.22.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

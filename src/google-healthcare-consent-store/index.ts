@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_healthcare_consent_store
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_healthcare_consent_store
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,7 +16,7 @@ export interface GoogleHealthcareConsentStoreConfig extends cdktf.TerraformMetaA
   * Identifies the dataset addressed by this request. Must be in the format
   * 'projects/{project}/locations/{location}/datasets/{dataset}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_healthcare_consent_store#dataset GoogleHealthcareConsentStore#dataset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_healthcare_consent_store#dataset GoogleHealthcareConsentStore#dataset}
   */
   readonly dataset: string;
   /**
@@ -24,17 +24,17 @@ export interface GoogleHealthcareConsentStoreConfig extends cdktf.TerraformMetaA
   * 
   * A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_healthcare_consent_store#default_consent_ttl GoogleHealthcareConsentStore#default_consent_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_healthcare_consent_store#default_consent_ttl GoogleHealthcareConsentStore#default_consent_ttl}
   */
   readonly defaultConsentTtl?: string;
   /**
   * If true, [consents.patch] [google.cloud.healthcare.v1.consent.UpdateConsent] creates the consent if it does not already exist.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_healthcare_consent_store#enable_consent_create_on_update GoogleHealthcareConsentStore#enable_consent_create_on_update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_healthcare_consent_store#enable_consent_create_on_update GoogleHealthcareConsentStore#enable_consent_create_on_update}
   */
   readonly enableConsentCreateOnUpdate?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_healthcare_consent_store#id GoogleHealthcareConsentStore#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_healthcare_consent_store#id GoogleHealthcareConsentStore#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,34 +58,34 @@ export interface GoogleHealthcareConsentStoreConfig extends cdktf.TerraformMetaA
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_healthcare_consent_store#labels GoogleHealthcareConsentStore#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_healthcare_consent_store#labels GoogleHealthcareConsentStore#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The name of this ConsentStore, for example:
   * "consent1"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_healthcare_consent_store#name GoogleHealthcareConsentStore#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_healthcare_consent_store#name GoogleHealthcareConsentStore#name}
   */
   readonly name: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_healthcare_consent_store#timeouts GoogleHealthcareConsentStore#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_healthcare_consent_store#timeouts GoogleHealthcareConsentStore#timeouts}
   */
   readonly timeouts?: GoogleHealthcareConsentStoreTimeouts;
 }
 export interface GoogleHealthcareConsentStoreTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_healthcare_consent_store#create GoogleHealthcareConsentStore#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_healthcare_consent_store#create GoogleHealthcareConsentStore#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_healthcare_consent_store#delete GoogleHealthcareConsentStore#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_healthcare_consent_store#delete GoogleHealthcareConsentStore#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_healthcare_consent_store#update GoogleHealthcareConsentStore#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_healthcare_consent_store#update GoogleHealthcareConsentStore#update}
   */
   readonly update?: string;
 }
@@ -237,7 +237,7 @@ export class GoogleHealthcareConsentStoreTimeoutsOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_healthcare_consent_store google_healthcare_consent_store}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_healthcare_consent_store google_healthcare_consent_store}
 */
 export class GoogleHealthcareConsentStore extends cdktf.TerraformResource {
 
@@ -253,7 +253,7 @@ export class GoogleHealthcareConsentStore extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleHealthcareConsentStore resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleHealthcareConsentStore to import
-  * @param importFromId The id of the existing GoogleHealthcareConsentStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_healthcare_consent_store#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleHealthcareConsentStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_healthcare_consent_store#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleHealthcareConsentStore to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -265,7 +265,7 @@ export class GoogleHealthcareConsentStore extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_healthcare_consent_store google_healthcare_consent_store} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_healthcare_consent_store google_healthcare_consent_store} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -276,7 +276,7 @@ export class GoogleHealthcareConsentStore extends cdktf.TerraformResource {
       terraformResourceType: 'google_healthcare_consent_store',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.21.0',
+        providerVersion: '6.22.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### GoogleDataplexEntryTypeIamMember <a name="GoogleDataplexEntryTypeIamMember" id="@cdktf/provider-google-beta.googleDataplexEntryTypeIamMember.GoogleDataplexEntryTypeIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dataplex_entry_type_iam_member google_dataplex_entry_type_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_type_iam_member google_dataplex_entry_type_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexEntryTypeIamMember.GoogleDataplexEntryTypeIamMember.Initializer"></a>
 
@@ -508,7 +508,7 @@ The construct id used in the generated config for the GoogleDataplexEntryTypeIam
 
 The id of the existing GoogleDataplexEntryTypeIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dataplex_entry_type_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_type_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -886,9 +886,9 @@ new GoogleDataplexEntryTypeIamMemberCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryTypeIamMember.GoogleDataplexEntryTypeIamMemberCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dataplex_entry_type_iam_member#expression GoogleDataplexEntryTypeIamMember#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryTypeIamMember.GoogleDataplexEntryTypeIamMemberCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dataplex_entry_type_iam_member#title GoogleDataplexEntryTypeIamMember#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryTypeIamMember.GoogleDataplexEntryTypeIamMemberCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dataplex_entry_type_iam_member#description GoogleDataplexEntryTypeIamMember#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryTypeIamMember.GoogleDataplexEntryTypeIamMemberCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_type_iam_member#expression GoogleDataplexEntryTypeIamMember#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryTypeIamMember.GoogleDataplexEntryTypeIamMemberCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_type_iam_member#title GoogleDataplexEntryTypeIamMember#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryTypeIamMember.GoogleDataplexEntryTypeIamMemberCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_type_iam_member#description GoogleDataplexEntryTypeIamMember#description}. |
 
 ---
 
@@ -900,7 +900,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dataplex_entry_type_iam_member#expression GoogleDataplexEntryTypeIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_type_iam_member#expression GoogleDataplexEntryTypeIamMember#expression}.
 
 ---
 
@@ -912,7 +912,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dataplex_entry_type_iam_member#title GoogleDataplexEntryTypeIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_type_iam_member#title GoogleDataplexEntryTypeIamMember#title}.
 
 ---
 
@@ -924,7 +924,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dataplex_entry_type_iam_member#description GoogleDataplexEntryTypeIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_type_iam_member#description GoogleDataplexEntryTypeIamMember#description}.
 
 ---
 
@@ -964,13 +964,13 @@ new GoogleDataplexEntryTypeIamMemberConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryTypeIamMember.GoogleDataplexEntryTypeIamMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryTypeIamMember.GoogleDataplexEntryTypeIamMemberConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryTypeIamMember.GoogleDataplexEntryTypeIamMemberConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryTypeIamMember.GoogleDataplexEntryTypeIamMemberConfig.property.entryTypeId">EntryTypeId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dataplex_entry_type_iam_member#entry_type_id GoogleDataplexEntryTypeIamMember#entry_type_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryTypeIamMember.GoogleDataplexEntryTypeIamMemberConfig.property.member">Member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dataplex_entry_type_iam_member#member GoogleDataplexEntryTypeIamMember#member}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryTypeIamMember.GoogleDataplexEntryTypeIamMemberConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dataplex_entry_type_iam_member#role GoogleDataplexEntryTypeIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryTypeIamMember.GoogleDataplexEntryTypeIamMemberConfig.property.entryTypeId">EntryTypeId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_type_iam_member#entry_type_id GoogleDataplexEntryTypeIamMember#entry_type_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryTypeIamMember.GoogleDataplexEntryTypeIamMemberConfig.property.member">Member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_type_iam_member#member GoogleDataplexEntryTypeIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryTypeIamMember.GoogleDataplexEntryTypeIamMemberConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_type_iam_member#role GoogleDataplexEntryTypeIamMember#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryTypeIamMember.GoogleDataplexEntryTypeIamMemberConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryTypeIamMember.GoogleDataplexEntryTypeIamMemberCondition">GoogleDataplexEntryTypeIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryTypeIamMember.GoogleDataplexEntryTypeIamMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dataplex_entry_type_iam_member#id GoogleDataplexEntryTypeIamMember#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryTypeIamMember.GoogleDataplexEntryTypeIamMemberConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dataplex_entry_type_iam_member#location GoogleDataplexEntryTypeIamMember#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryTypeIamMember.GoogleDataplexEntryTypeIamMemberConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dataplex_entry_type_iam_member#project GoogleDataplexEntryTypeIamMember#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryTypeIamMember.GoogleDataplexEntryTypeIamMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_type_iam_member#id GoogleDataplexEntryTypeIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryTypeIamMember.GoogleDataplexEntryTypeIamMemberConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_type_iam_member#location GoogleDataplexEntryTypeIamMember#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryTypeIamMember.GoogleDataplexEntryTypeIamMemberConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_type_iam_member#project GoogleDataplexEntryTypeIamMember#project}. |
 
 ---
 
@@ -1052,7 +1052,7 @@ public string EntryTypeId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dataplex_entry_type_iam_member#entry_type_id GoogleDataplexEntryTypeIamMember#entry_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_type_iam_member#entry_type_id GoogleDataplexEntryTypeIamMember#entry_type_id}.
 
 ---
 
@@ -1064,7 +1064,7 @@ public string Member { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dataplex_entry_type_iam_member#member GoogleDataplexEntryTypeIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_type_iam_member#member GoogleDataplexEntryTypeIamMember#member}.
 
 ---
 
@@ -1076,7 +1076,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dataplex_entry_type_iam_member#role GoogleDataplexEntryTypeIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_type_iam_member#role GoogleDataplexEntryTypeIamMember#role}.
 
 ---
 
@@ -1090,7 +1090,7 @@ public GoogleDataplexEntryTypeIamMemberCondition Condition { get; set; }
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dataplex_entry_type_iam_member#condition GoogleDataplexEntryTypeIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_type_iam_member#condition GoogleDataplexEntryTypeIamMember#condition}
 
 ---
 
@@ -1102,7 +1102,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dataplex_entry_type_iam_member#id GoogleDataplexEntryTypeIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_type_iam_member#id GoogleDataplexEntryTypeIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1117,7 +1117,7 @@ public string Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dataplex_entry_type_iam_member#location GoogleDataplexEntryTypeIamMember#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_type_iam_member#location GoogleDataplexEntryTypeIamMember#location}.
 
 ---
 
@@ -1129,7 +1129,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dataplex_entry_type_iam_member#project GoogleDataplexEntryTypeIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_type_iam_member#project GoogleDataplexEntryTypeIamMember#project}.
 
 ---
 

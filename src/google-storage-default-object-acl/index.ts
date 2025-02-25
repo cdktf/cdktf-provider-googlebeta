@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_storage_default_object_acl
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_storage_default_object_acl
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleStorageDefaultObjectAclConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_storage_default_object_acl#bucket GoogleStorageDefaultObjectAcl#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_storage_default_object_acl#bucket GoogleStorageDefaultObjectAcl#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_storage_default_object_acl#id GoogleStorageDefaultObjectAcl#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_storage_default_object_acl#id GoogleStorageDefaultObjectAcl#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_storage_default_object_acl#role_entity GoogleStorageDefaultObjectAcl#role_entity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_storage_default_object_acl#role_entity GoogleStorageDefaultObjectAcl#role_entity}
   */
   readonly roleEntity?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_storage_default_object_acl google_storage_default_object_acl}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_storage_default_object_acl google_storage_default_object_acl}
 */
 export class GoogleStorageDefaultObjectAcl extends cdktf.TerraformResource {
 
@@ -46,7 +46,7 @@ export class GoogleStorageDefaultObjectAcl extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleStorageDefaultObjectAcl resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleStorageDefaultObjectAcl to import
-  * @param importFromId The id of the existing GoogleStorageDefaultObjectAcl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_storage_default_object_acl#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleStorageDefaultObjectAcl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_storage_default_object_acl#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleStorageDefaultObjectAcl to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -58,7 +58,7 @@ export class GoogleStorageDefaultObjectAcl extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_storage_default_object_acl google_storage_default_object_acl} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_storage_default_object_acl google_storage_default_object_acl} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -69,7 +69,7 @@ export class GoogleStorageDefaultObjectAcl extends cdktf.TerraformResource {
       terraformResourceType: 'google_storage_default_object_acl',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.21.0',
+        providerVersion: '6.22.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

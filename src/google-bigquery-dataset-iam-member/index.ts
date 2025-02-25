@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_bigquery_dataset_iam_member
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_bigquery_dataset_iam_member
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +13,46 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleBigqueryDatasetIamMemberConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_bigquery_dataset_iam_member#dataset_id GoogleBigqueryDatasetIamMember#dataset_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_bigquery_dataset_iam_member#dataset_id GoogleBigqueryDatasetIamMember#dataset_id}
   */
   readonly datasetId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_bigquery_dataset_iam_member#id GoogleBigqueryDatasetIamMember#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_bigquery_dataset_iam_member#id GoogleBigqueryDatasetIamMember#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_bigquery_dataset_iam_member#member GoogleBigqueryDatasetIamMember#member}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_bigquery_dataset_iam_member#member GoogleBigqueryDatasetIamMember#member}
   */
   readonly member: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_bigquery_dataset_iam_member#project GoogleBigqueryDatasetIamMember#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_bigquery_dataset_iam_member#project GoogleBigqueryDatasetIamMember#project}
   */
   readonly project?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_bigquery_dataset_iam_member#role GoogleBigqueryDatasetIamMember#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_bigquery_dataset_iam_member#role GoogleBigqueryDatasetIamMember#role}
   */
   readonly role: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_bigquery_dataset_iam_member#condition GoogleBigqueryDatasetIamMember#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_bigquery_dataset_iam_member#condition GoogleBigqueryDatasetIamMember#condition}
   */
   readonly condition?: GoogleBigqueryDatasetIamMemberCondition;
 }
 export interface GoogleBigqueryDatasetIamMemberCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_bigquery_dataset_iam_member#description GoogleBigqueryDatasetIamMember#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_bigquery_dataset_iam_member#description GoogleBigqueryDatasetIamMember#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_bigquery_dataset_iam_member#expression GoogleBigqueryDatasetIamMember#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_bigquery_dataset_iam_member#expression GoogleBigqueryDatasetIamMember#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_bigquery_dataset_iam_member#title GoogleBigqueryDatasetIamMember#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_bigquery_dataset_iam_member#title GoogleBigqueryDatasetIamMember#title}
   */
   readonly title: string;
 }
@@ -188,7 +188,7 @@ export class GoogleBigqueryDatasetIamMemberConditionOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_bigquery_dataset_iam_member google_bigquery_dataset_iam_member}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_bigquery_dataset_iam_member google_bigquery_dataset_iam_member}
 */
 export class GoogleBigqueryDatasetIamMember extends cdktf.TerraformResource {
 
@@ -204,7 +204,7 @@ export class GoogleBigqueryDatasetIamMember extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleBigqueryDatasetIamMember resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleBigqueryDatasetIamMember to import
-  * @param importFromId The id of the existing GoogleBigqueryDatasetIamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_bigquery_dataset_iam_member#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleBigqueryDatasetIamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_bigquery_dataset_iam_member#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleBigqueryDatasetIamMember to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -216,7 +216,7 @@ export class GoogleBigqueryDatasetIamMember extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_bigquery_dataset_iam_member google_bigquery_dataset_iam_member} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_bigquery_dataset_iam_member google_bigquery_dataset_iam_member} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -227,7 +227,7 @@ export class GoogleBigqueryDatasetIamMember extends cdktf.TerraformResource {
       terraformResourceType: 'google_bigquery_dataset_iam_member',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.21.0',
+        providerVersion: '6.22.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

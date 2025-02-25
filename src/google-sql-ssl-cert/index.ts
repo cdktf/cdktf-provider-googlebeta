@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_sql_ssl_cert
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_sql_ssl_cert
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface GoogleSqlSslCertConfig extends cdktf.TerraformMetaArguments {
   /**
   * The common name to be used in the certificate to identify the client. Constrained to [a-zA-Z.-_ ]+. Changing this forces a new resource to be created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_sql_ssl_cert#common_name GoogleSqlSslCert#common_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_sql_ssl_cert#common_name GoogleSqlSslCert#common_name}
   */
   readonly commonName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_sql_ssl_cert#id GoogleSqlSslCert#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_sql_ssl_cert#id GoogleSqlSslCert#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,29 +28,29 @@ export interface GoogleSqlSslCertConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the Cloud SQL instance. Changing this forces a new resource to be created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_sql_ssl_cert#instance GoogleSqlSslCert#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_sql_ssl_cert#instance GoogleSqlSslCert#instance}
   */
   readonly instance: string;
   /**
   * The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_sql_ssl_cert#project GoogleSqlSslCert#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_sql_ssl_cert#project GoogleSqlSslCert#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_sql_ssl_cert#timeouts GoogleSqlSslCert#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_sql_ssl_cert#timeouts GoogleSqlSslCert#timeouts}
   */
   readonly timeouts?: GoogleSqlSslCertTimeouts;
 }
 export interface GoogleSqlSslCertTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_sql_ssl_cert#create GoogleSqlSslCert#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_sql_ssl_cert#create GoogleSqlSslCert#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_sql_ssl_cert#delete GoogleSqlSslCert#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_sql_ssl_cert#delete GoogleSqlSslCert#delete}
   */
   readonly delete?: string;
 }
@@ -173,7 +173,7 @@ export class GoogleSqlSslCertTimeoutsOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_sql_ssl_cert google_sql_ssl_cert}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_sql_ssl_cert google_sql_ssl_cert}
 */
 export class GoogleSqlSslCert extends cdktf.TerraformResource {
 
@@ -189,7 +189,7 @@ export class GoogleSqlSslCert extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleSqlSslCert resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleSqlSslCert to import
-  * @param importFromId The id of the existing GoogleSqlSslCert that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_sql_ssl_cert#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleSqlSslCert that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_sql_ssl_cert#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleSqlSslCert to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -201,7 +201,7 @@ export class GoogleSqlSslCert extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_sql_ssl_cert google_sql_ssl_cert} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_sql_ssl_cert google_sql_ssl_cert} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -212,7 +212,7 @@ export class GoogleSqlSslCert extends cdktf.TerraformResource {
       terraformResourceType: 'google_sql_ssl_cert',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.21.0',
+        providerVersion: '6.22.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

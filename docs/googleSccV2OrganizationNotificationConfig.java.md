@@ -4,7 +4,7 @@
 
 ### GoogleSccV2OrganizationNotificationConfig <a name="GoogleSccV2OrganizationNotificationConfig" id="@cdktf/provider-google-beta.googleSccV2OrganizationNotificationConfig.GoogleSccV2OrganizationNotificationConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_scc_v2_organization_notification_config google_scc_v2_organization_notification_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_v2_organization_notification_config google_scc_v2_organization_notification_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSccV2OrganizationNotificationConfig.GoogleSccV2OrganizationNotificationConfig.Initializer"></a>
 
@@ -50,7 +50,7 @@ GoogleSccV2OrganizationNotificationConfig.Builder.create(Construct scope, java.l
 | <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationNotificationConfig.GoogleSccV2OrganizationNotificationConfig.Initializer.parameter.pubsubTopic">pubsubTopic</a></code> | <code>java.lang.String</code> | The Pub/Sub topic to send notifications to. Its format is "projects/[project_id]/topics/[topic]". |
 | <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationNotificationConfig.GoogleSccV2OrganizationNotificationConfig.Initializer.parameter.streamingConfig">streamingConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationNotificationConfig.GoogleSccV2OrganizationNotificationConfigStreamingConfig">GoogleSccV2OrganizationNotificationConfigStreamingConfig</a></code> | streaming_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationNotificationConfig.GoogleSccV2OrganizationNotificationConfig.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | The description of the notification config (max of 1024 characters). |
-| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationNotificationConfig.GoogleSccV2OrganizationNotificationConfig.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_scc_v2_organization_notification_config#id GoogleSccV2OrganizationNotificationConfig#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationNotificationConfig.GoogleSccV2OrganizationNotificationConfig.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_v2_organization_notification_config#id GoogleSccV2OrganizationNotificationConfig#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationNotificationConfig.GoogleSccV2OrganizationNotificationConfig.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | location Id is provided by organization. If not provided, Use global as default. |
 | <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationNotificationConfig.GoogleSccV2OrganizationNotificationConfig.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationNotificationConfig.GoogleSccV2OrganizationNotificationConfigTimeouts">GoogleSccV2OrganizationNotificationConfigTimeouts</a></code> | timeouts block. |
 
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 This must be unique within the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_scc_v2_organization_notification_config#config_id GoogleSccV2OrganizationNotificationConfig#config_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_v2_organization_notification_config#config_id GoogleSccV2OrganizationNotificationConfig#config_id}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The organization whose Cloud Security Command Center the Notification Config lives in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_scc_v2_organization_notification_config#organization GoogleSccV2OrganizationNotificationConfig#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_v2_organization_notification_config#organization GoogleSccV2OrganizationNotificationConfig#organization}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Pub/Sub topic to send notifications to. Its format is "projects/[project_id]/topics/[topic]".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_scc_v2_organization_notification_config#pubsub_topic GoogleSccV2OrganizationNotificationConfig#pubsub_topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_v2_organization_notification_config#pubsub_topic GoogleSccV2OrganizationNotificationConfig#pubsub_topic}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 streaming_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_scc_v2_organization_notification_config#streaming_config GoogleSccV2OrganizationNotificationConfig#streaming_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_v2_organization_notification_config#streaming_config GoogleSccV2OrganizationNotificationConfig#streaming_config}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The description of the notification config (max of 1024 characters).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_scc_v2_organization_notification_config#description GoogleSccV2OrganizationNotificationConfig#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_v2_organization_notification_config#description GoogleSccV2OrganizationNotificationConfig#description}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_scc_v2_organization_notification_config#id GoogleSccV2OrganizationNotificationConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_v2_organization_notification_config#id GoogleSccV2OrganizationNotificationConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -183,7 +183,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 location Id is provided by organization. If not provided, Use global as default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_scc_v2_organization_notification_config#location GoogleSccV2OrganizationNotificationConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_v2_organization_notification_config#location GoogleSccV2OrganizationNotificationConfig#location}
 
 ---
 
@@ -193,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_scc_v2_organization_notification_config#timeouts GoogleSccV2OrganizationNotificationConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_v2_organization_notification_config#timeouts GoogleSccV2OrganizationNotificationConfig#timeouts}
 
 ---
 
@@ -674,7 +674,7 @@ The construct id used in the generated config for the GoogleSccV2OrganizationNot
 
 The id of the existing GoogleSccV2OrganizationNotificationConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_scc_v2_organization_notification_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_v2_organization_notification_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1113,7 +1113,7 @@ GoogleSccV2OrganizationNotificationConfigConfig.builder()
 | <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationNotificationConfig.GoogleSccV2OrganizationNotificationConfigConfig.property.pubsubTopic">pubsubTopic</a></code> | <code>java.lang.String</code> | The Pub/Sub topic to send notifications to. Its format is "projects/[project_id]/topics/[topic]". |
 | <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationNotificationConfig.GoogleSccV2OrganizationNotificationConfigConfig.property.streamingConfig">streamingConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationNotificationConfig.GoogleSccV2OrganizationNotificationConfigStreamingConfig">GoogleSccV2OrganizationNotificationConfigStreamingConfig</a></code> | streaming_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationNotificationConfig.GoogleSccV2OrganizationNotificationConfigConfig.property.description">description</a></code> | <code>java.lang.String</code> | The description of the notification config (max of 1024 characters). |
-| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationNotificationConfig.GoogleSccV2OrganizationNotificationConfigConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_scc_v2_organization_notification_config#id GoogleSccV2OrganizationNotificationConfig#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationNotificationConfig.GoogleSccV2OrganizationNotificationConfigConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_v2_organization_notification_config#id GoogleSccV2OrganizationNotificationConfig#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationNotificationConfig.GoogleSccV2OrganizationNotificationConfigConfig.property.location">location</a></code> | <code>java.lang.String</code> | location Id is provided by organization. If not provided, Use global as default. |
 | <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationNotificationConfig.GoogleSccV2OrganizationNotificationConfigConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationNotificationConfig.GoogleSccV2OrganizationNotificationConfigTimeouts">GoogleSccV2OrganizationNotificationConfigTimeouts</a></code> | timeouts block. |
 
@@ -1199,7 +1199,7 @@ public java.lang.String getConfigId();
 
 This must be unique within the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_scc_v2_organization_notification_config#config_id GoogleSccV2OrganizationNotificationConfig#config_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_v2_organization_notification_config#config_id GoogleSccV2OrganizationNotificationConfig#config_id}
 
 ---
 
@@ -1213,7 +1213,7 @@ public java.lang.String getOrganization();
 
 The organization whose Cloud Security Command Center the Notification Config lives in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_scc_v2_organization_notification_config#organization GoogleSccV2OrganizationNotificationConfig#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_v2_organization_notification_config#organization GoogleSccV2OrganizationNotificationConfig#organization}
 
 ---
 
@@ -1227,7 +1227,7 @@ public java.lang.String getPubsubTopic();
 
 The Pub/Sub topic to send notifications to. Its format is "projects/[project_id]/topics/[topic]".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_scc_v2_organization_notification_config#pubsub_topic GoogleSccV2OrganizationNotificationConfig#pubsub_topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_v2_organization_notification_config#pubsub_topic GoogleSccV2OrganizationNotificationConfig#pubsub_topic}
 
 ---
 
@@ -1241,7 +1241,7 @@ public GoogleSccV2OrganizationNotificationConfigStreamingConfig getStreamingConf
 
 streaming_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_scc_v2_organization_notification_config#streaming_config GoogleSccV2OrganizationNotificationConfig#streaming_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_v2_organization_notification_config#streaming_config GoogleSccV2OrganizationNotificationConfig#streaming_config}
 
 ---
 
@@ -1255,7 +1255,7 @@ public java.lang.String getDescription();
 
 The description of the notification config (max of 1024 characters).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_scc_v2_organization_notification_config#description GoogleSccV2OrganizationNotificationConfig#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_v2_organization_notification_config#description GoogleSccV2OrganizationNotificationConfig#description}
 
 ---
 
@@ -1267,7 +1267,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_scc_v2_organization_notification_config#id GoogleSccV2OrganizationNotificationConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_v2_organization_notification_config#id GoogleSccV2OrganizationNotificationConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1284,7 +1284,7 @@ public java.lang.String getLocation();
 
 location Id is provided by organization. If not provided, Use global as default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_scc_v2_organization_notification_config#location GoogleSccV2OrganizationNotificationConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_v2_organization_notification_config#location GoogleSccV2OrganizationNotificationConfig#location}
 
 ---
 
@@ -1298,7 +1298,7 @@ public GoogleSccV2OrganizationNotificationConfigTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_scc_v2_organization_notification_config#timeouts GoogleSccV2OrganizationNotificationConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_v2_organization_notification_config#timeouts GoogleSccV2OrganizationNotificationConfig#timeouts}
 
 ---
 
@@ -1357,7 +1357,7 @@ See
 [Filtering notifications](https://cloud.google.com/security-command-center/docs/how-to-api-filter-notifications)
 for information on how to write a filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_scc_v2_organization_notification_config#filter GoogleSccV2OrganizationNotificationConfig#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_v2_organization_notification_config#filter GoogleSccV2OrganizationNotificationConfig#filter}
 
 ---
 
@@ -1379,9 +1379,9 @@ GoogleSccV2OrganizationNotificationConfigTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationNotificationConfig.GoogleSccV2OrganizationNotificationConfigTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_scc_v2_organization_notification_config#create GoogleSccV2OrganizationNotificationConfig#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationNotificationConfig.GoogleSccV2OrganizationNotificationConfigTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_scc_v2_organization_notification_config#delete GoogleSccV2OrganizationNotificationConfig#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationNotificationConfig.GoogleSccV2OrganizationNotificationConfigTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_scc_v2_organization_notification_config#update GoogleSccV2OrganizationNotificationConfig#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationNotificationConfig.GoogleSccV2OrganizationNotificationConfigTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_v2_organization_notification_config#create GoogleSccV2OrganizationNotificationConfig#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationNotificationConfig.GoogleSccV2OrganizationNotificationConfigTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_v2_organization_notification_config#delete GoogleSccV2OrganizationNotificationConfig#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationNotificationConfig.GoogleSccV2OrganizationNotificationConfigTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_v2_organization_notification_config#update GoogleSccV2OrganizationNotificationConfig#update}. |
 
 ---
 
@@ -1393,7 +1393,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_scc_v2_organization_notification_config#create GoogleSccV2OrganizationNotificationConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_v2_organization_notification_config#create GoogleSccV2OrganizationNotificationConfig#create}.
 
 ---
 
@@ -1405,7 +1405,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_scc_v2_organization_notification_config#delete GoogleSccV2OrganizationNotificationConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_v2_organization_notification_config#delete GoogleSccV2OrganizationNotificationConfig#delete}.
 
 ---
 
@@ -1417,7 +1417,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_scc_v2_organization_notification_config#update GoogleSccV2OrganizationNotificationConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_v2_organization_notification_config#update GoogleSccV2OrganizationNotificationConfig#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### GoogleLoggingOrganizationSettings <a name="GoogleLoggingOrganizationSettings" id="@cdktf/provider-google-beta.googleLoggingOrganizationSettings.GoogleLoggingOrganizationSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_logging_organization_settings google_logging_organization_settings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_logging_organization_settings google_logging_organization_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLoggingOrganizationSettings.GoogleLoggingOrganizationSettings.Initializer"></a>
 
@@ -515,7 +515,7 @@ The construct id used in the generated config for the GoogleLoggingOrganizationS
 
 The id of the existing GoogleLoggingOrganizationSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_logging_organization_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_logging_organization_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -898,7 +898,7 @@ const googleLoggingOrganizationSettingsConfig: googleLoggingOrganizationSettings
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingOrganizationSettings.GoogleLoggingOrganizationSettingsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingOrganizationSettings.GoogleLoggingOrganizationSettingsConfig.property.organization">organization</a></code> | <code>string</code> | The organization for which to retrieve or configure settings. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingOrganizationSettings.GoogleLoggingOrganizationSettingsConfig.property.disableDefaultSink">disableDefaultSink</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to true, the _Default sink in newly created projects and folders will created in a disabled state. |
-| <code><a href="#@cdktf/provider-google-beta.googleLoggingOrganizationSettings.GoogleLoggingOrganizationSettingsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_logging_organization_settings#id GoogleLoggingOrganizationSettings#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleLoggingOrganizationSettings.GoogleLoggingOrganizationSettingsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_logging_organization_settings#id GoogleLoggingOrganizationSettings#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingOrganizationSettings.GoogleLoggingOrganizationSettingsConfig.property.kmsKeyName">kmsKeyName</a></code> | <code>string</code> | The resource name for the configured Cloud KMS key. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingOrganizationSettings.GoogleLoggingOrganizationSettingsConfig.property.storageLocation">storageLocation</a></code> | <code>string</code> | The storage location that Cloud Logging will use to create new resources when a location is needed but not explicitly provided. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingOrganizationSettings.GoogleLoggingOrganizationSettingsConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleLoggingOrganizationSettings.GoogleLoggingOrganizationSettingsTimeouts">GoogleLoggingOrganizationSettingsTimeouts</a></code> | timeouts block. |
@@ -985,7 +985,7 @@ public readonly organization: string;
 
 The organization for which to retrieve or configure settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_logging_organization_settings#organization GoogleLoggingOrganizationSettings#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_logging_organization_settings#organization GoogleLoggingOrganizationSettings#organization}
 
 ---
 
@@ -1001,7 +1001,7 @@ If set to true, the _Default sink in newly created projects and folders will cre
 
 This can be used to automatically disable log storage if there is already an aggregated sink configured in the hierarchy. The _Default sink can be re-enabled manually if needed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_logging_organization_settings#disable_default_sink GoogleLoggingOrganizationSettings#disable_default_sink}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_logging_organization_settings#disable_default_sink GoogleLoggingOrganizationSettings#disable_default_sink}
 
 ---
 
@@ -1013,7 +1013,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_logging_organization_settings#id GoogleLoggingOrganizationSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_logging_organization_settings#id GoogleLoggingOrganizationSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1030,7 +1030,7 @@ public readonly kmsKeyName: string;
 
 The resource name for the configured Cloud KMS key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_logging_organization_settings#kms_key_name GoogleLoggingOrganizationSettings#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_logging_organization_settings#kms_key_name GoogleLoggingOrganizationSettings#kms_key_name}
 
 ---
 
@@ -1044,7 +1044,7 @@ public readonly storageLocation: string;
 
 The storage location that Cloud Logging will use to create new resources when a location is needed but not explicitly provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_logging_organization_settings#storage_location GoogleLoggingOrganizationSettings#storage_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_logging_organization_settings#storage_location GoogleLoggingOrganizationSettings#storage_location}
 
 ---
 
@@ -1058,7 +1058,7 @@ public readonly timeouts: GoogleLoggingOrganizationSettingsTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_logging_organization_settings#timeouts GoogleLoggingOrganizationSettings#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_logging_organization_settings#timeouts GoogleLoggingOrganizationSettings#timeouts}
 
 ---
 
@@ -1076,9 +1076,9 @@ const googleLoggingOrganizationSettingsTimeouts: googleLoggingOrganizationSettin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleLoggingOrganizationSettings.GoogleLoggingOrganizationSettingsTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_logging_organization_settings#create GoogleLoggingOrganizationSettings#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleLoggingOrganizationSettings.GoogleLoggingOrganizationSettingsTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_logging_organization_settings#delete GoogleLoggingOrganizationSettings#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleLoggingOrganizationSettings.GoogleLoggingOrganizationSettingsTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_logging_organization_settings#update GoogleLoggingOrganizationSettings#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleLoggingOrganizationSettings.GoogleLoggingOrganizationSettingsTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_logging_organization_settings#create GoogleLoggingOrganizationSettings#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleLoggingOrganizationSettings.GoogleLoggingOrganizationSettingsTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_logging_organization_settings#delete GoogleLoggingOrganizationSettings#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleLoggingOrganizationSettings.GoogleLoggingOrganizationSettingsTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_logging_organization_settings#update GoogleLoggingOrganizationSettings#update}. |
 
 ---
 
@@ -1090,7 +1090,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_logging_organization_settings#create GoogleLoggingOrganizationSettings#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_logging_organization_settings#create GoogleLoggingOrganizationSettings#create}.
 
 ---
 
@@ -1102,7 +1102,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_logging_organization_settings#delete GoogleLoggingOrganizationSettings#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_logging_organization_settings#delete GoogleLoggingOrganizationSettings#delete}.
 
 ---
 
@@ -1114,7 +1114,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_logging_organization_settings#update GoogleLoggingOrganizationSettings#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_logging_organization_settings#update GoogleLoggingOrganizationSettings#update}.
 
 ---
 
