@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_region_target_http_proxy
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_region_target_http_proxy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +10,7 @@ export interface GoogleComputeRegionTargetHttpProxyConfig extends cdktf.Terrafor
   /**
   * An optional description of this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_region_target_http_proxy#description GoogleComputeRegionTargetHttpProxy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_region_target_http_proxy#description GoogleComputeRegionTargetHttpProxy#description}
   */
   readonly description?: string;
   /**
@@ -25,11 +20,11 @@ export interface GoogleComputeRegionTargetHttpProxyConfig extends cdktf.Terrafor
   * HTTP(S) load balancer, the minimum allowed value is 5 seconds and the
   * maximum allowed value is 600 seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_region_target_http_proxy#http_keep_alive_timeout_sec GoogleComputeRegionTargetHttpProxy#http_keep_alive_timeout_sec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_region_target_http_proxy#http_keep_alive_timeout_sec GoogleComputeRegionTargetHttpProxy#http_keep_alive_timeout_sec}
   */
   readonly httpKeepAliveTimeoutSec?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_region_target_http_proxy#id GoogleComputeRegionTargetHttpProxy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_region_target_http_proxy#id GoogleComputeRegionTargetHttpProxy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,45 +39,45 @@ export interface GoogleComputeRegionTargetHttpProxyConfig extends cdktf.Terrafor
   * characters must be a dash, lowercase letter, or digit, except the last
   * character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_region_target_http_proxy#name GoogleComputeRegionTargetHttpProxy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_region_target_http_proxy#name GoogleComputeRegionTargetHttpProxy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_region_target_http_proxy#project GoogleComputeRegionTargetHttpProxy#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_region_target_http_proxy#project GoogleComputeRegionTargetHttpProxy#project}
   */
   readonly project?: string;
   /**
   * The Region in which the created target https proxy should reside.
   * If it is not provided, the provider region is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_region_target_http_proxy#region GoogleComputeRegionTargetHttpProxy#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_region_target_http_proxy#region GoogleComputeRegionTargetHttpProxy#region}
   */
   readonly region?: string;
   /**
   * A reference to the RegionUrlMap resource that defines the mapping from URL
   * to the BackendService.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_region_target_http_proxy#url_map GoogleComputeRegionTargetHttpProxy#url_map}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_region_target_http_proxy#url_map GoogleComputeRegionTargetHttpProxy#url_map}
   */
   readonly urlMap: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_region_target_http_proxy#timeouts GoogleComputeRegionTargetHttpProxy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_region_target_http_proxy#timeouts GoogleComputeRegionTargetHttpProxy#timeouts}
   */
   readonly timeouts?: GoogleComputeRegionTargetHttpProxyTimeouts;
 }
 export interface GoogleComputeRegionTargetHttpProxyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_region_target_http_proxy#create GoogleComputeRegionTargetHttpProxy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_region_target_http_proxy#create GoogleComputeRegionTargetHttpProxy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_region_target_http_proxy#delete GoogleComputeRegionTargetHttpProxy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_region_target_http_proxy#delete GoogleComputeRegionTargetHttpProxy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_region_target_http_proxy#update GoogleComputeRegionTargetHttpProxy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_region_target_http_proxy#update GoogleComputeRegionTargetHttpProxy#update}
   */
   readonly update?: string;
 }
@@ -234,7 +229,7 @@ export class GoogleComputeRegionTargetHttpProxyTimeoutsOutputReference extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_region_target_http_proxy google_compute_region_target_http_proxy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_region_target_http_proxy google_compute_region_target_http_proxy}
 */
 export class GoogleComputeRegionTargetHttpProxy extends cdktf.TerraformResource {
 
@@ -250,7 +245,7 @@ export class GoogleComputeRegionTargetHttpProxy extends cdktf.TerraformResource 
   * Generates CDKTF code for importing a GoogleComputeRegionTargetHttpProxy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleComputeRegionTargetHttpProxy to import
-  * @param importFromId The id of the existing GoogleComputeRegionTargetHttpProxy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_region_target_http_proxy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleComputeRegionTargetHttpProxy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_region_target_http_proxy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleComputeRegionTargetHttpProxy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -262,7 +257,7 @@ export class GoogleComputeRegionTargetHttpProxy extends cdktf.TerraformResource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_region_target_http_proxy google_compute_region_target_http_proxy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_region_target_http_proxy google_compute_region_target_http_proxy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -273,7 +268,7 @@ export class GoogleComputeRegionTargetHttpProxy extends cdktf.TerraformResource 
       terraformResourceType: 'google_compute_region_target_http_proxy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.21.0',
+        providerVersion: '6.22.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### GoogleEdgecontainerCluster <a name="GoogleEdgecontainerCluster" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster google_edgecontainer_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster google_edgecontainer_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerCluster.Initializer"></a>
 
@@ -655,7 +655,7 @@ The construct id used in the generated config for the GoogleEdgecontainerCluster
 
 The id of the existing GoogleEdgecontainerCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1373,7 +1373,7 @@ public readonly adminUsers: GoogleEdgecontainerClusterAuthorizationAdminUsers;
 
 admin_users block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#admin_users GoogleEdgecontainerCluster#admin_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#admin_users GoogleEdgecontainerCluster#admin_users}
 
 ---
 
@@ -1405,7 +1405,7 @@ public readonly username: string;
 
 An active Google username.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#username GoogleEdgecontainerCluster#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#username GoogleEdgecontainerCluster#username}
 
 ---
 
@@ -1439,10 +1439,10 @@ const googleEdgecontainerClusterConfig: googleEdgecontainerCluster.GoogleEdgecon
 | <code><a href="#@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterConfig.property.controlPlaneEncryption">controlPlaneEncryption</a></code> | <code><a href="#@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterControlPlaneEncryption">GoogleEdgecontainerClusterControlPlaneEncryption</a></code> | control_plane_encryption block. |
 | <code><a href="#@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterConfig.property.defaultMaxPodsPerNode">defaultMaxPodsPerNode</a></code> | <code>number</code> | The default maximum number of pods per node used if a maximum value is not specified explicitly for a node pool in this cluster. |
 | <code><a href="#@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterConfig.property.externalLoadBalancerIpv4AddressPools">externalLoadBalancerIpv4AddressPools</a></code> | <code>string[]</code> | Address pools for cluster data plane external load balancing. |
-| <code><a href="#@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#id GoogleEdgecontainerCluster#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#id GoogleEdgecontainerCluster#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | User-defined labels for the edgecloud cluster. |
 | <code><a href="#@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterConfig.property.maintenancePolicy">maintenancePolicy</a></code> | <code><a href="#@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterMaintenancePolicy">GoogleEdgecontainerClusterMaintenancePolicy</a></code> | maintenance_policy block. |
-| <code><a href="#@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#project GoogleEdgecontainerCluster#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#project GoogleEdgecontainerCluster#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterConfig.property.releaseChannel">releaseChannel</a></code> | <code>string</code> | The release channel a cluster is subscribed to. Possible values: ["RELEASE_CHANNEL_UNSPECIFIED", "NONE", "REGULAR"]. |
 | <code><a href="#@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterConfig.property.systemAddonsConfig">systemAddonsConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterSystemAddonsConfig">GoogleEdgecontainerClusterSystemAddonsConfig</a></code> | system_addons_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterConfig.property.targetVersion">targetVersion</a></code> | <code>string</code> | The target cluster version. For example: "1.5.0". |
@@ -1530,7 +1530,7 @@ public readonly authorization: GoogleEdgecontainerClusterAuthorization;
 
 authorization block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#authorization GoogleEdgecontainerCluster#authorization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#authorization GoogleEdgecontainerCluster#authorization}
 
 ---
 
@@ -1544,7 +1544,7 @@ public readonly fleet: GoogleEdgecontainerClusterFleet;
 
 fleet block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#fleet GoogleEdgecontainerCluster#fleet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#fleet GoogleEdgecontainerCluster#fleet}
 
 ---
 
@@ -1558,7 +1558,7 @@ public readonly location: string;
 
 The location of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#location GoogleEdgecontainerCluster#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#location GoogleEdgecontainerCluster#location}
 
 ---
 
@@ -1572,7 +1572,7 @@ public readonly name: string;
 
 The GDCE cluster name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#name GoogleEdgecontainerCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#name GoogleEdgecontainerCluster#name}
 
 ---
 
@@ -1586,7 +1586,7 @@ public readonly networking: GoogleEdgecontainerClusterNetworking;
 
 networking block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#networking GoogleEdgecontainerCluster#networking}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#networking GoogleEdgecontainerCluster#networking}
 
 ---
 
@@ -1600,7 +1600,7 @@ public readonly controlPlane: GoogleEdgecontainerClusterControlPlane;
 
 control_plane block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#control_plane GoogleEdgecontainerCluster#control_plane}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#control_plane GoogleEdgecontainerCluster#control_plane}
 
 ---
 
@@ -1614,7 +1614,7 @@ public readonly controlPlaneEncryption: GoogleEdgecontainerClusterControlPlaneEn
 
 control_plane_encryption block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#control_plane_encryption GoogleEdgecontainerCluster#control_plane_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#control_plane_encryption GoogleEdgecontainerCluster#control_plane_encryption}
 
 ---
 
@@ -1631,7 +1631,7 @@ The default maximum number of pods per node used if a maximum value is not speci
 If unspecified, the
 Kubernetes default value will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#default_max_pods_per_node GoogleEdgecontainerCluster#default_max_pods_per_node}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#default_max_pods_per_node GoogleEdgecontainerCluster#default_max_pods_per_node}
 
 ---
 
@@ -1645,7 +1645,7 @@ public readonly externalLoadBalancerIpv4AddressPools: string[];
 
 Address pools for cluster data plane external load balancing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#external_load_balancer_ipv4_address_pools GoogleEdgecontainerCluster#external_load_balancer_ipv4_address_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#external_load_balancer_ipv4_address_pools GoogleEdgecontainerCluster#external_load_balancer_ipv4_address_pools}
 
 ---
 
@@ -1657,7 +1657,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#id GoogleEdgecontainerCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#id GoogleEdgecontainerCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1677,7 +1677,7 @@ User-defined labels for the edgecloud cluster.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#labels GoogleEdgecontainerCluster#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#labels GoogleEdgecontainerCluster#labels}
 
 ---
 
@@ -1691,7 +1691,7 @@ public readonly maintenancePolicy: GoogleEdgecontainerClusterMaintenancePolicy;
 
 maintenance_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#maintenance_policy GoogleEdgecontainerCluster#maintenance_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#maintenance_policy GoogleEdgecontainerCluster#maintenance_policy}
 
 ---
 
@@ -1703,7 +1703,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#project GoogleEdgecontainerCluster#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#project GoogleEdgecontainerCluster#project}.
 
 ---
 
@@ -1717,7 +1717,7 @@ public readonly releaseChannel: string;
 
 The release channel a cluster is subscribed to. Possible values: ["RELEASE_CHANNEL_UNSPECIFIED", "NONE", "REGULAR"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#release_channel GoogleEdgecontainerCluster#release_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#release_channel GoogleEdgecontainerCluster#release_channel}
 
 ---
 
@@ -1731,7 +1731,7 @@ public readonly systemAddonsConfig: GoogleEdgecontainerClusterSystemAddonsConfig
 
 system_addons_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#system_addons_config GoogleEdgecontainerCluster#system_addons_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#system_addons_config GoogleEdgecontainerCluster#system_addons_config}
 
 ---
 
@@ -1745,7 +1745,7 @@ public readonly targetVersion: string;
 
 The target cluster version. For example: "1.5.0".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#target_version GoogleEdgecontainerCluster#target_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#target_version GoogleEdgecontainerCluster#target_version}
 
 ---
 
@@ -1759,7 +1759,7 @@ public readonly timeouts: GoogleEdgecontainerClusterTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#timeouts GoogleEdgecontainerCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#timeouts GoogleEdgecontainerCluster#timeouts}
 
 ---
 
@@ -1792,7 +1792,7 @@ public readonly local: GoogleEdgecontainerClusterControlPlaneLocal;
 
 local block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#local GoogleEdgecontainerCluster#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#local GoogleEdgecontainerCluster#local}
 
 ---
 
@@ -1806,7 +1806,7 @@ public readonly remote: GoogleEdgecontainerClusterControlPlaneRemote;
 
 remote block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#remote GoogleEdgecontainerCluster#remote}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#remote GoogleEdgecontainerCluster#remote}
 
 ---
 
@@ -1838,7 +1838,7 @@ public readonly kmsKey: string;
 
 The Cloud KMS CryptoKey e.g. projects/{project}/locations/{location}/keyRings/{keyRing}/cryptoKeys/{cryptoKey} to use for protecting control plane disks. If not specified, a Google-managed key will be used instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#kms_key GoogleEdgecontainerCluster#kms_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#kms_key GoogleEdgecontainerCluster#kms_key}
 
 ---
 
@@ -1887,7 +1887,7 @@ Only machines matching this filter will be allowed to host control plane nodes.
 The filtering language accepts strings like "name=<name>",
 and is documented here: [AIP-160](https://google.aip.dev/160).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#machine_filter GoogleEdgecontainerCluster#machine_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#machine_filter GoogleEdgecontainerCluster#machine_filter}
 
 ---
 
@@ -1901,7 +1901,7 @@ public readonly nodeCount: number;
 
 The number of nodes to serve as replicas of the Control Plane. Only 1 and 3 are supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#node_count GoogleEdgecontainerCluster#node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#node_count GoogleEdgecontainerCluster#node_count}
 
 ---
 
@@ -1915,7 +1915,7 @@ public readonly nodeLocation: string;
 
 Name of the Google Distributed Cloud Edge zones where this node pool will be created. For example: 'us-central1-edge-customer-a'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#node_location GoogleEdgecontainerCluster#node_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#node_location GoogleEdgecontainerCluster#node_location}
 
 ---
 
@@ -1929,7 +1929,7 @@ public readonly sharedDeploymentPolicy: string;
 
 Policy configuration about how user applications are deployed. Possible values: ["SHARED_DEPLOYMENT_POLICY_UNSPECIFIED", "ALLOWED", "DISALLOWED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#shared_deployment_policy GoogleEdgecontainerCluster#shared_deployment_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#shared_deployment_policy GoogleEdgecontainerCluster#shared_deployment_policy}
 
 ---
 
@@ -1961,7 +1961,7 @@ public readonly nodeLocation: string;
 
 Name of the Google Distributed Cloud Edge zones where this node pool will be created. For example: 'us-central1-edge-customer-a'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#node_location GoogleEdgecontainerCluster#node_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#node_location GoogleEdgecontainerCluster#node_location}
 
 ---
 
@@ -1993,7 +1993,7 @@ public readonly project: string;
 
 The name of the Fleet host project where this cluster will be registered. Project names are formatted as 'projects/<project-number>'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#project GoogleEdgecontainerCluster#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#project GoogleEdgecontainerCluster#project}
 
 ---
 
@@ -2037,7 +2037,7 @@ public readonly window: GoogleEdgecontainerClusterMaintenancePolicyWindow;
 
 window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#window GoogleEdgecontainerCluster#window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#window GoogleEdgecontainerCluster#window}
 
 ---
 
@@ -2051,7 +2051,7 @@ public readonly maintenanceExclusions: IResolvable | GoogleEdgecontainerClusterM
 
 maintenance_exclusions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#maintenance_exclusions GoogleEdgecontainerCluster#maintenance_exclusions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#maintenance_exclusions GoogleEdgecontainerCluster#maintenance_exclusions}
 
 ---
 
@@ -2084,7 +2084,7 @@ public readonly id: string;
 
 A unique (per cluster) id for the window.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#id GoogleEdgecontainerCluster#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#id GoogleEdgecontainerCluster#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2101,7 +2101,7 @@ public readonly window: GoogleEdgecontainerClusterMaintenancePolicyMaintenanceEx
 
 window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#window GoogleEdgecontainerCluster#window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#window GoogleEdgecontainerCluster#window}
 
 ---
 
@@ -2134,7 +2134,7 @@ public readonly endTime: string;
 
 The time that the window ends. The end time must take place after the start time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#end_time GoogleEdgecontainerCluster#end_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#end_time GoogleEdgecontainerCluster#end_time}
 
 ---
 
@@ -2148,7 +2148,7 @@ public readonly startTime: string;
 
 The time that the window first starts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#start_time GoogleEdgecontainerCluster#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#start_time GoogleEdgecontainerCluster#start_time}
 
 ---
 
@@ -2180,7 +2180,7 @@ public readonly recurringWindow: GoogleEdgecontainerClusterMaintenancePolicyWind
 
 recurring_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#recurring_window GoogleEdgecontainerCluster#recurring_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#recurring_window GoogleEdgecontainerCluster#recurring_window}
 
 ---
 
@@ -2213,7 +2213,7 @@ public readonly recurrence: string;
 
 An RRULE (https://tools.ietf.org/html/rfc5545#section-3.8.5.3) for how this window recurs. They go on for the span of time between the start and end time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#recurrence GoogleEdgecontainerCluster#recurrence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#recurrence GoogleEdgecontainerCluster#recurrence}
 
 ---
 
@@ -2227,7 +2227,7 @@ public readonly window: GoogleEdgecontainerClusterMaintenancePolicyWindowRecurri
 
 window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#window GoogleEdgecontainerCluster#window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#window GoogleEdgecontainerCluster#window}
 
 ---
 
@@ -2260,7 +2260,7 @@ public readonly endTime: string;
 
 The time that the window ends. The end time must take place after the start time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#end_time GoogleEdgecontainerCluster#end_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#end_time GoogleEdgecontainerCluster#end_time}
 
 ---
 
@@ -2274,7 +2274,7 @@ public readonly startTime: string;
 
 The time that the window first starts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#start_time GoogleEdgecontainerCluster#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#start_time GoogleEdgecontainerCluster#start_time}
 
 ---
 
@@ -2312,7 +2312,7 @@ All pods in the cluster are assigned an RFC1918 IPv4 address from these blocks.
 Only a single block is supported. This field cannot be changed
 after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#cluster_ipv4_cidr_blocks GoogleEdgecontainerCluster#cluster_ipv4_cidr_blocks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#cluster_ipv4_cidr_blocks GoogleEdgecontainerCluster#cluster_ipv4_cidr_blocks}
 
 ---
 
@@ -2329,7 +2329,7 @@ All services in the cluster are assigned an RFC1918 IPv4 address from these bloc
 Only a single block is supported. This field cannot be changed
 after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#services_ipv4_cidr_blocks GoogleEdgecontainerCluster#services_ipv4_cidr_blocks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#services_ipv4_cidr_blocks GoogleEdgecontainerCluster#services_ipv4_cidr_blocks}
 
 ---
 
@@ -2346,7 +2346,7 @@ If specified, dual stack mode is enabled and all pods in the cluster are assigne
 Only a single block is supported. This field cannot be changed
 after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#cluster_ipv6_cidr_blocks GoogleEdgecontainerCluster#cluster_ipv6_cidr_blocks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#cluster_ipv6_cidr_blocks GoogleEdgecontainerCluster#cluster_ipv6_cidr_blocks}
 
 ---
 
@@ -2363,7 +2363,7 @@ If specified, dual stack mode is enabled and all services in the cluster are ass
 Only a single block is supported. This field cannot be changed
 after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#services_ipv6_cidr_blocks GoogleEdgecontainerCluster#services_ipv6_cidr_blocks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#services_ipv6_cidr_blocks GoogleEdgecontainerCluster#services_ipv6_cidr_blocks}
 
 ---
 
@@ -2395,7 +2395,7 @@ public readonly ingress: GoogleEdgecontainerClusterSystemAddonsConfigIngress;
 
 ingress block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#ingress GoogleEdgecontainerCluster#ingress}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#ingress GoogleEdgecontainerCluster#ingress}
 
 ---
 
@@ -2428,7 +2428,7 @@ public readonly disabled: boolean | IResolvable;
 
 Whether Ingress is disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#disabled GoogleEdgecontainerCluster#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#disabled GoogleEdgecontainerCluster#disabled}
 
 ---
 
@@ -2442,7 +2442,7 @@ public readonly ipv4Vip: string;
 
 Ingress VIP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#ipv4_vip GoogleEdgecontainerCluster#ipv4_vip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#ipv4_vip GoogleEdgecontainerCluster#ipv4_vip}
 
 ---
 
@@ -2460,9 +2460,9 @@ const googleEdgecontainerClusterTimeouts: googleEdgecontainerCluster.GoogleEdgec
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#create GoogleEdgecontainerCluster#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#delete GoogleEdgecontainerCluster#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#update GoogleEdgecontainerCluster#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#create GoogleEdgecontainerCluster#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#delete GoogleEdgecontainerCluster#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#update GoogleEdgecontainerCluster#update}. |
 
 ---
 
@@ -2474,7 +2474,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#create GoogleEdgecontainerCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#create GoogleEdgecontainerCluster#create}.
 
 ---
 
@@ -2486,7 +2486,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#delete GoogleEdgecontainerCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#delete GoogleEdgecontainerCluster#delete}.
 
 ---
 
@@ -2498,7 +2498,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgecontainer_cluster#update GoogleEdgecontainerCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgecontainer_cluster#update GoogleEdgecontainerCluster#update}.
 
 ---
 

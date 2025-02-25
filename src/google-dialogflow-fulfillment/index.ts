@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dialogflow_fulfillment
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dialogflow_fulfillment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,42 +10,42 @@ export interface GoogleDialogflowFulfillmentConfig extends cdktf.TerraformMetaAr
   /**
   * The human-readable name of the fulfillment, unique within the agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dialogflow_fulfillment#display_name GoogleDialogflowFulfillment#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dialogflow_fulfillment#display_name GoogleDialogflowFulfillment#display_name}
   */
   readonly displayName: string;
   /**
   * Whether fulfillment is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dialogflow_fulfillment#enabled GoogleDialogflowFulfillment#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dialogflow_fulfillment#enabled GoogleDialogflowFulfillment#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dialogflow_fulfillment#id GoogleDialogflowFulfillment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dialogflow_fulfillment#id GoogleDialogflowFulfillment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dialogflow_fulfillment#project GoogleDialogflowFulfillment#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dialogflow_fulfillment#project GoogleDialogflowFulfillment#project}
   */
   readonly project?: string;
   /**
   * features block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dialogflow_fulfillment#features GoogleDialogflowFulfillment#features}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dialogflow_fulfillment#features GoogleDialogflowFulfillment#features}
   */
   readonly features?: GoogleDialogflowFulfillmentFeatures[] | cdktf.IResolvable;
   /**
   * generic_web_service block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dialogflow_fulfillment#generic_web_service GoogleDialogflowFulfillment#generic_web_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dialogflow_fulfillment#generic_web_service GoogleDialogflowFulfillment#generic_web_service}
   */
   readonly genericWebService?: GoogleDialogflowFulfillmentGenericWebService;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dialogflow_fulfillment#timeouts GoogleDialogflowFulfillment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dialogflow_fulfillment#timeouts GoogleDialogflowFulfillment#timeouts}
   */
   readonly timeouts?: GoogleDialogflowFulfillmentTimeouts;
 }
@@ -59,7 +54,7 @@ export interface GoogleDialogflowFulfillmentFeatures {
   * The type of the feature that enabled for fulfillment.
   * * SMALLTALK: Fulfillment is enabled for SmallTalk. Possible values: ["SMALLTALK"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dialogflow_fulfillment#type GoogleDialogflowFulfillment#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dialogflow_fulfillment#type GoogleDialogflowFulfillment#type}
   */
   readonly type: string;
 }
@@ -174,25 +169,25 @@ export interface GoogleDialogflowFulfillmentGenericWebService {
   /**
   * The password for HTTP Basic authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dialogflow_fulfillment#password GoogleDialogflowFulfillment#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dialogflow_fulfillment#password GoogleDialogflowFulfillment#password}
   */
   readonly password?: string;
   /**
   * The HTTP request headers to send together with fulfillment requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dialogflow_fulfillment#request_headers GoogleDialogflowFulfillment#request_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dialogflow_fulfillment#request_headers GoogleDialogflowFulfillment#request_headers}
   */
   readonly requestHeaders?: { [key: string]: string };
   /**
   * The fulfillment URI for receiving POST requests. It must use https protocol.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dialogflow_fulfillment#uri GoogleDialogflowFulfillment#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dialogflow_fulfillment#uri GoogleDialogflowFulfillment#uri}
   */
   readonly uri: string;
   /**
   * The user name for HTTP Basic authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dialogflow_fulfillment#username GoogleDialogflowFulfillment#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dialogflow_fulfillment#username GoogleDialogflowFulfillment#username}
   */
   readonly username?: string;
 }
@@ -360,15 +355,15 @@ export class GoogleDialogflowFulfillmentGenericWebServiceOutputReference extends
 }
 export interface GoogleDialogflowFulfillmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dialogflow_fulfillment#create GoogleDialogflowFulfillment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dialogflow_fulfillment#create GoogleDialogflowFulfillment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dialogflow_fulfillment#delete GoogleDialogflowFulfillment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dialogflow_fulfillment#delete GoogleDialogflowFulfillment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dialogflow_fulfillment#update GoogleDialogflowFulfillment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dialogflow_fulfillment#update GoogleDialogflowFulfillment#update}
   */
   readonly update?: string;
 }
@@ -520,7 +515,7 @@ export class GoogleDialogflowFulfillmentTimeoutsOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dialogflow_fulfillment google_dialogflow_fulfillment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dialogflow_fulfillment google_dialogflow_fulfillment}
 */
 export class GoogleDialogflowFulfillment extends cdktf.TerraformResource {
 
@@ -536,7 +531,7 @@ export class GoogleDialogflowFulfillment extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleDialogflowFulfillment resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleDialogflowFulfillment to import
-  * @param importFromId The id of the existing GoogleDialogflowFulfillment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dialogflow_fulfillment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleDialogflowFulfillment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dialogflow_fulfillment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleDialogflowFulfillment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -548,7 +543,7 @@ export class GoogleDialogflowFulfillment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dialogflow_fulfillment google_dialogflow_fulfillment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dialogflow_fulfillment google_dialogflow_fulfillment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -559,7 +554,7 @@ export class GoogleDialogflowFulfillment extends cdktf.TerraformResource {
       terraformResourceType: 'google_dialogflow_fulfillment',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.21.0',
+        providerVersion: '6.22.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

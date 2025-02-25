@@ -4,12 +4,12 @@
 
 ### DataGoogleFirebaseWebAppConfigA <a name="DataGoogleFirebaseWebAppConfigA" id="@cdktf/provider-google-beta.dataGoogleFirebaseWebAppConfig.DataGoogleFirebaseWebAppConfigA"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/data-sources/google_firebase_web_app_config google_firebase_web_app_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/data-sources/google_firebase_web_app_config google_firebase_web_app_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleFirebaseWebAppConfig.DataGoogleFirebaseWebAppConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglefirebasewebappconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebasewebappconfig"
 
 datagooglefirebasewebappconfig.NewDataGoogleFirebaseWebAppConfigA(scope Construct, id *string, config DataGoogleFirebaseWebAppConfigAConfig) DataGoogleFirebaseWebAppConfigA
 ```
@@ -283,7 +283,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleFirebaseWebAppConfig.DataGoogleFirebaseWebAppConfigA.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglefirebasewebappconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebasewebappconfig"
 
 datagooglefirebasewebappconfig.DataGoogleFirebaseWebAppConfigA_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleFirebaseWebAppConfig.DataGoogleFirebaseWebAppConfigA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglefirebasewebappconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebasewebappconfig"
 
 datagooglefirebasewebappconfig.DataGoogleFirebaseWebAppConfigA_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datagooglefirebasewebappconfig.DataGoogleFirebaseWebAppConfigA_IsTerraformElemen
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleFirebaseWebAppConfig.DataGoogleFirebaseWebAppConfigA.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglefirebasewebappconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebasewebappconfig"
 
 datagooglefirebasewebappconfig.DataGoogleFirebaseWebAppConfigA_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagooglefirebasewebappconfig.DataGoogleFirebaseWebAppConfigA_IsTerraformDataSo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleFirebaseWebAppConfig.DataGoogleFirebaseWebAppConfigA.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglefirebasewebappconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebasewebappconfig"
 
 datagooglefirebasewebappconfig.DataGoogleFirebaseWebAppConfigA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataGoogleFirebaseWebAppCo
 
 The id of the existing DataGoogleFirebaseWebAppConfigA that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/data-sources/google_firebase_web_app_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/data-sources/google_firebase_web_app_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -682,7 +682,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleFirebaseWebAppConfig.DataGoogleFirebaseWebAppConfigAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglefirebasewebappconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebasewebappconfig"
 
 &datagooglefirebasewebappconfig.DataGoogleFirebaseWebAppConfigAConfig {
 	Connection: interface{},
@@ -793,7 +793,7 @@ WebAppId *string
 
 The id of the Firebase web App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/data-sources/google_firebase_web_app_config#web_app_id DataGoogleFirebaseWebAppConfigA#web_app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/data-sources/google_firebase_web_app_config#web_app_id DataGoogleFirebaseWebAppConfigA#web_app_id}
 
 ---
 
@@ -807,7 +807,7 @@ Project *string
 
 The project id of the Firebase web App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/data-sources/google_firebase_web_app_config#project DataGoogleFirebaseWebAppConfigA#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/data-sources/google_firebase_web_app_config#project DataGoogleFirebaseWebAppConfigA#project}
 
 ---
 

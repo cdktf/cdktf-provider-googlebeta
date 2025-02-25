@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_cloudbuildv2_connection_iam_member
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_cloudbuildv2_connection_iam_member
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +8,50 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleCloudbuildv2ConnectionIamMemberConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_cloudbuildv2_connection_iam_member#id GoogleCloudbuildv2ConnectionIamMember#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_cloudbuildv2_connection_iam_member#id GoogleCloudbuildv2ConnectionIamMember#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_cloudbuildv2_connection_iam_member#location GoogleCloudbuildv2ConnectionIamMember#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_cloudbuildv2_connection_iam_member#location GoogleCloudbuildv2ConnectionIamMember#location}
   */
   readonly location?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_cloudbuildv2_connection_iam_member#member GoogleCloudbuildv2ConnectionIamMember#member}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_cloudbuildv2_connection_iam_member#member GoogleCloudbuildv2ConnectionIamMember#member}
   */
   readonly member: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_cloudbuildv2_connection_iam_member#name GoogleCloudbuildv2ConnectionIamMember#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_cloudbuildv2_connection_iam_member#name GoogleCloudbuildv2ConnectionIamMember#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_cloudbuildv2_connection_iam_member#project GoogleCloudbuildv2ConnectionIamMember#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_cloudbuildv2_connection_iam_member#project GoogleCloudbuildv2ConnectionIamMember#project}
   */
   readonly project?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_cloudbuildv2_connection_iam_member#role GoogleCloudbuildv2ConnectionIamMember#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_cloudbuildv2_connection_iam_member#role GoogleCloudbuildv2ConnectionIamMember#role}
   */
   readonly role: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_cloudbuildv2_connection_iam_member#condition GoogleCloudbuildv2ConnectionIamMember#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_cloudbuildv2_connection_iam_member#condition GoogleCloudbuildv2ConnectionIamMember#condition}
   */
   readonly condition?: GoogleCloudbuildv2ConnectionIamMemberCondition;
 }
 export interface GoogleCloudbuildv2ConnectionIamMemberCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_cloudbuildv2_connection_iam_member#description GoogleCloudbuildv2ConnectionIamMember#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_cloudbuildv2_connection_iam_member#description GoogleCloudbuildv2ConnectionIamMember#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_cloudbuildv2_connection_iam_member#expression GoogleCloudbuildv2ConnectionIamMember#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_cloudbuildv2_connection_iam_member#expression GoogleCloudbuildv2ConnectionIamMember#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_cloudbuildv2_connection_iam_member#title GoogleCloudbuildv2ConnectionIamMember#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_cloudbuildv2_connection_iam_member#title GoogleCloudbuildv2ConnectionIamMember#title}
   */
   readonly title: string;
 }
@@ -192,7 +187,7 @@ export class GoogleCloudbuildv2ConnectionIamMemberConditionOutputReference exten
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_cloudbuildv2_connection_iam_member google_cloudbuildv2_connection_iam_member}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_cloudbuildv2_connection_iam_member google_cloudbuildv2_connection_iam_member}
 */
 export class GoogleCloudbuildv2ConnectionIamMember extends cdktf.TerraformResource {
 
@@ -208,7 +203,7 @@ export class GoogleCloudbuildv2ConnectionIamMember extends cdktf.TerraformResour
   * Generates CDKTF code for importing a GoogleCloudbuildv2ConnectionIamMember resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleCloudbuildv2ConnectionIamMember to import
-  * @param importFromId The id of the existing GoogleCloudbuildv2ConnectionIamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_cloudbuildv2_connection_iam_member#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleCloudbuildv2ConnectionIamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_cloudbuildv2_connection_iam_member#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleCloudbuildv2ConnectionIamMember to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -220,7 +215,7 @@ export class GoogleCloudbuildv2ConnectionIamMember extends cdktf.TerraformResour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_cloudbuildv2_connection_iam_member google_cloudbuildv2_connection_iam_member} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_cloudbuildv2_connection_iam_member google_cloudbuildv2_connection_iam_member} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -231,7 +226,7 @@ export class GoogleCloudbuildv2ConnectionIamMember extends cdktf.TerraformResour
       terraformResourceType: 'google_cloudbuildv2_connection_iam_member',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.21.0',
+        providerVersion: '6.22.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

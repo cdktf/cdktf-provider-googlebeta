@@ -4,7 +4,7 @@
 
 ### GoogleDataplexEntryGroupIamPolicy <a name="GoogleDataplexEntryGroupIamPolicy" id="@cdktf/provider-google-beta.googleDataplexEntryGroupIamPolicy.GoogleDataplexEntryGroupIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dataplex_entry_group_iam_policy google_dataplex_entry_group_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group_iam_policy google_dataplex_entry_group_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexEntryGroupIamPolicy.GoogleDataplexEntryGroupIamPolicy.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the GoogleDataplexEntryGroupIa
 
 The id of the existing GoogleDataplexEntryGroupIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dataplex_entry_group_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -825,11 +825,11 @@ const googleDataplexEntryGroupIamPolicyConfig: googleDataplexEntryGroupIamPolicy
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroupIamPolicy.GoogleDataplexEntryGroupIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroupIamPolicy.GoogleDataplexEntryGroupIamPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroupIamPolicy.GoogleDataplexEntryGroupIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroupIamPolicy.GoogleDataplexEntryGroupIamPolicyConfig.property.entryGroupId">entryGroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dataplex_entry_group_iam_policy#entry_group_id GoogleDataplexEntryGroupIamPolicy#entry_group_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroupIamPolicy.GoogleDataplexEntryGroupIamPolicyConfig.property.policyData">policyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dataplex_entry_group_iam_policy#policy_data GoogleDataplexEntryGroupIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroupIamPolicy.GoogleDataplexEntryGroupIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dataplex_entry_group_iam_policy#id GoogleDataplexEntryGroupIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroupIamPolicy.GoogleDataplexEntryGroupIamPolicyConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dataplex_entry_group_iam_policy#location GoogleDataplexEntryGroupIamPolicy#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroupIamPolicy.GoogleDataplexEntryGroupIamPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dataplex_entry_group_iam_policy#project GoogleDataplexEntryGroupIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroupIamPolicy.GoogleDataplexEntryGroupIamPolicyConfig.property.entryGroupId">entryGroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group_iam_policy#entry_group_id GoogleDataplexEntryGroupIamPolicy#entry_group_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroupIamPolicy.GoogleDataplexEntryGroupIamPolicyConfig.property.policyData">policyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group_iam_policy#policy_data GoogleDataplexEntryGroupIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroupIamPolicy.GoogleDataplexEntryGroupIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group_iam_policy#id GoogleDataplexEntryGroupIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroupIamPolicy.GoogleDataplexEntryGroupIamPolicyConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group_iam_policy#location GoogleDataplexEntryGroupIamPolicy#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroupIamPolicy.GoogleDataplexEntryGroupIamPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group_iam_policy#project GoogleDataplexEntryGroupIamPolicy#project}. |
 
 ---
 
@@ -911,7 +911,7 @@ public readonly entryGroupId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dataplex_entry_group_iam_policy#entry_group_id GoogleDataplexEntryGroupIamPolicy#entry_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group_iam_policy#entry_group_id GoogleDataplexEntryGroupIamPolicy#entry_group_id}.
 
 ---
 
@@ -923,7 +923,7 @@ public readonly policyData: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dataplex_entry_group_iam_policy#policy_data GoogleDataplexEntryGroupIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group_iam_policy#policy_data GoogleDataplexEntryGroupIamPolicy#policy_data}.
 
 ---
 
@@ -935,7 +935,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dataplex_entry_group_iam_policy#id GoogleDataplexEntryGroupIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group_iam_policy#id GoogleDataplexEntryGroupIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -950,7 +950,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dataplex_entry_group_iam_policy#location GoogleDataplexEntryGroupIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group_iam_policy#location GoogleDataplexEntryGroupIamPolicy#location}.
 
 ---
 
@@ -962,7 +962,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dataplex_entry_group_iam_policy#project GoogleDataplexEntryGroupIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group_iam_policy#project GoogleDataplexEntryGroupIamPolicy#project}.
 
 ---
 

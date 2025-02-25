@@ -4,12 +4,12 @@
 
 ### GoogleVmwareengineNetworkPolicy <a name="GoogleVmwareengineNetworkPolicy" id="@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_vmwareengine_network_policy google_vmwareengine_network_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_vmwareengine_network_policy google_vmwareengine_network_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwareenginenetworkpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginenetworkpolicy"
 
 googlevmwareenginenetworkpolicy.NewGoogleVmwareengineNetworkPolicy(scope Construct, id *string, config GoogleVmwareengineNetworkPolicyConfig) GoogleVmwareengineNetworkPolicy
 ```
@@ -459,7 +459,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwareenginenetworkpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginenetworkpolicy"
 
 googlevmwareenginenetworkpolicy.GoogleVmwareengineNetworkPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -491,7 +491,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwareenginenetworkpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginenetworkpolicy"
 
 googlevmwareenginenetworkpolicy.GoogleVmwareengineNetworkPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ googlevmwareenginenetworkpolicy.GoogleVmwareengineNetworkPolicy_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwareenginenetworkpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginenetworkpolicy"
 
 googlevmwareenginenetworkpolicy.GoogleVmwareengineNetworkPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -519,7 +519,7 @@ googlevmwareenginenetworkpolicy.GoogleVmwareengineNetworkPolicy_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwareenginenetworkpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginenetworkpolicy"
 
 googlevmwareenginenetworkpolicy.GoogleVmwareengineNetworkPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -548,7 +548,7 @@ The construct id used in the generated config for the GoogleVmwareengineNetworkP
 
 The id of the existing GoogleVmwareengineNetworkPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_vmwareengine_network_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_vmwareengine_network_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1012,7 +1012,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwareenginenetworkpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginenetworkpolicy"
 
 &googlevmwareenginenetworkpolicy.GoogleVmwareengineNetworkPolicyConfig {
 	Connection: interface{},
@@ -1027,11 +1027,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwar
 	Name: *string,
 	VmwareEngineNetwork: *string,
 	Description: *string,
-	ExternalIp: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyExternalIp,
+	ExternalIp: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyExternalIp,
 	Id: *string,
-	InternetAccess: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyInternetAccess,
+	InternetAccess: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyInternetAccess,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyTimeouts,
 }
 ```
 
@@ -1052,9 +1052,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwar
 | <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyConfig.property.vmwareEngineNetwork">VmwareEngineNetwork</a></code> | <code>*string</code> | The relative resource name of the VMware Engine network. |
 | <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyConfig.property.description">Description</a></code> | <code>*string</code> | User-provided description for this network policy. |
 | <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyConfig.property.externalIp">ExternalIp</a></code> | <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyExternalIp">GoogleVmwareengineNetworkPolicyExternalIp</a></code> | external_ip block. |
-| <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_vmwareengine_network_policy#id GoogleVmwareengineNetworkPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_vmwareengine_network_policy#id GoogleVmwareengineNetworkPolicy#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyConfig.property.internetAccess">InternetAccess</a></code> | <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyInternetAccess">GoogleVmwareengineNetworkPolicyInternetAccess</a></code> | internet_access block. |
-| <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_vmwareengine_network_policy#project GoogleVmwareengineNetworkPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_vmwareengine_network_policy#project GoogleVmwareengineNetworkPolicy#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyTimeouts">GoogleVmwareengineNetworkPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1142,7 +1142,7 @@ IP address range in CIDR notation used to create internet access and external IP
 An RFC 1918 CIDR block, with a "/26" prefix, is required. The range cannot overlap with any
 prefixes either in the consumer VPC network or in use by the private clouds attached to that VPC network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_vmwareengine_network_policy#edge_services_cidr GoogleVmwareengineNetworkPolicy#edge_services_cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_vmwareengine_network_policy#edge_services_cidr GoogleVmwareengineNetworkPolicy#edge_services_cidr}
 
 ---
 
@@ -1159,7 +1159,7 @@ The resource name of the location (region) to create the new network policy in.
 Resource names are schemeless URIs that follow the conventions in https://cloud.google.com/apis/design/resource_names.
 For example: projects/my-project/locations/us-central1
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_vmwareengine_network_policy#location GoogleVmwareengineNetworkPolicy#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_vmwareengine_network_policy#location GoogleVmwareengineNetworkPolicy#location}
 
 ---
 
@@ -1173,7 +1173,7 @@ Name *string
 
 The ID of the Network Policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_vmwareengine_network_policy#name GoogleVmwareengineNetworkPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_vmwareengine_network_policy#name GoogleVmwareengineNetworkPolicy#name}
 
 ---
 
@@ -1191,7 +1191,7 @@ Specify the name in the following form:
 projects/{project}/locations/{location}/vmwareEngineNetworks/{vmwareEngineNetworkId} where {project}
 can either be a project number or a project ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_vmwareengine_network_policy#vmware_engine_network GoogleVmwareengineNetworkPolicy#vmware_engine_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_vmwareengine_network_policy#vmware_engine_network GoogleVmwareengineNetworkPolicy#vmware_engine_network}
 
 ---
 
@@ -1205,7 +1205,7 @@ Description *string
 
 User-provided description for this network policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_vmwareengine_network_policy#description GoogleVmwareengineNetworkPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_vmwareengine_network_policy#description GoogleVmwareengineNetworkPolicy#description}
 
 ---
 
@@ -1219,7 +1219,7 @@ ExternalIp GoogleVmwareengineNetworkPolicyExternalIp
 
 external_ip block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_vmwareengine_network_policy#external_ip GoogleVmwareengineNetworkPolicy#external_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_vmwareengine_network_policy#external_ip GoogleVmwareengineNetworkPolicy#external_ip}
 
 ---
 
@@ -1231,7 +1231,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_vmwareengine_network_policy#id GoogleVmwareengineNetworkPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_vmwareengine_network_policy#id GoogleVmwareengineNetworkPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1248,7 +1248,7 @@ InternetAccess GoogleVmwareengineNetworkPolicyInternetAccess
 
 internet_access block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_vmwareengine_network_policy#internet_access GoogleVmwareengineNetworkPolicy#internet_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_vmwareengine_network_policy#internet_access GoogleVmwareengineNetworkPolicy#internet_access}
 
 ---
 
@@ -1260,7 +1260,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_vmwareengine_network_policy#project GoogleVmwareengineNetworkPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_vmwareengine_network_policy#project GoogleVmwareengineNetworkPolicy#project}.
 
 ---
 
@@ -1274,7 +1274,7 @@ Timeouts GoogleVmwareengineNetworkPolicyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_vmwareengine_network_policy#timeouts GoogleVmwareengineNetworkPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_vmwareengine_network_policy#timeouts GoogleVmwareengineNetworkPolicy#timeouts}
 
 ---
 
@@ -1283,7 +1283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyExternalIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwareenginenetworkpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginenetworkpolicy"
 
 &googlevmwareenginenetworkpolicy.GoogleVmwareengineNetworkPolicyExternalIp {
 	Enabled: interface{},
@@ -1308,7 +1308,7 @@ Enabled interface{}
 
 True if the service is enabled; false otherwise.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_vmwareengine_network_policy#enabled GoogleVmwareengineNetworkPolicy#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_vmwareengine_network_policy#enabled GoogleVmwareengineNetworkPolicy#enabled}
 
 ---
 
@@ -1317,7 +1317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyInternetAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwareenginenetworkpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginenetworkpolicy"
 
 &googlevmwareenginenetworkpolicy.GoogleVmwareengineNetworkPolicyInternetAccess {
 	Enabled: interface{},
@@ -1342,7 +1342,7 @@ Enabled interface{}
 
 True if the service is enabled; false otherwise.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_vmwareengine_network_policy#enabled GoogleVmwareengineNetworkPolicy#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_vmwareengine_network_policy#enabled GoogleVmwareengineNetworkPolicy#enabled}
 
 ---
 
@@ -1351,7 +1351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwareenginenetworkpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginenetworkpolicy"
 
 &googlevmwareenginenetworkpolicy.GoogleVmwareengineNetworkPolicyTimeouts {
 	Create: *string,
@@ -1364,9 +1364,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwar
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_vmwareengine_network_policy#create GoogleVmwareengineNetworkPolicy#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_vmwareengine_network_policy#delete GoogleVmwareengineNetworkPolicy#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_vmwareengine_network_policy#update GoogleVmwareengineNetworkPolicy#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_vmwareengine_network_policy#create GoogleVmwareengineNetworkPolicy#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_vmwareengine_network_policy#delete GoogleVmwareengineNetworkPolicy#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_vmwareengine_network_policy#update GoogleVmwareengineNetworkPolicy#update}. |
 
 ---
 
@@ -1378,7 +1378,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_vmwareengine_network_policy#create GoogleVmwareengineNetworkPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_vmwareengine_network_policy#create GoogleVmwareengineNetworkPolicy#create}.
 
 ---
 
@@ -1390,7 +1390,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_vmwareengine_network_policy#delete GoogleVmwareengineNetworkPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_vmwareengine_network_policy#delete GoogleVmwareengineNetworkPolicy#delete}.
 
 ---
 
@@ -1402,7 +1402,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_vmwareengine_network_policy#update GoogleVmwareengineNetworkPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_vmwareengine_network_policy#update GoogleVmwareengineNetworkPolicy#update}.
 
 ---
 
@@ -1413,7 +1413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyExternalIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwareenginenetworkpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginenetworkpolicy"
 
 googlevmwareenginenetworkpolicy.NewGoogleVmwareengineNetworkPolicyExternalIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVmwareengineNetworkPolicyExternalIpOutputReference
 ```
@@ -1702,7 +1702,7 @@ func InternalValue() GoogleVmwareengineNetworkPolicyExternalIp
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyInternetAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwareenginenetworkpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginenetworkpolicy"
 
 googlevmwareenginenetworkpolicy.NewGoogleVmwareengineNetworkPolicyInternetAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVmwareengineNetworkPolicyInternetAccessOutputReference
 ```
@@ -1991,7 +1991,7 @@ func InternalValue() GoogleVmwareengineNetworkPolicyInternetAccess
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwareenginenetworkpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginenetworkpolicy"
 
 googlevmwareenginenetworkpolicy.NewGoogleVmwareengineNetworkPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVmwareengineNetworkPolicyTimeoutsOutputReference
 ```

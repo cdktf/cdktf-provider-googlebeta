@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_network_peering_routes_config
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_network_peering_routes_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,19 @@ export interface GoogleComputeNetworkPeeringRoutesConfigConfig extends cdktf.Ter
   /**
   * Whether to export the custom routes to the peer network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_network_peering_routes_config#export_custom_routes GoogleComputeNetworkPeeringRoutesConfig#export_custom_routes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_network_peering_routes_config#export_custom_routes GoogleComputeNetworkPeeringRoutesConfig#export_custom_routes}
   */
   readonly exportCustomRoutes: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_network_peering_routes_config#id GoogleComputeNetworkPeeringRoutesConfig#id}
+  * Whether subnet routes with public IP range are exported.
+  * IPv4 special-use ranges are always exported to peers and
+  * are not controlled by this field.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_network_peering_routes_config#export_subnet_routes_with_public_ip GoogleComputeNetworkPeeringRoutesConfig#export_subnet_routes_with_public_ip}
+  */
+  readonly exportSubnetRoutesWithPublicIp?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_network_peering_routes_config#id GoogleComputeNetworkPeeringRoutesConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,43 +31,51 @@ export interface GoogleComputeNetworkPeeringRoutesConfigConfig extends cdktf.Ter
   /**
   * Whether to import the custom routes to the peer network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_network_peering_routes_config#import_custom_routes GoogleComputeNetworkPeeringRoutesConfig#import_custom_routes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_network_peering_routes_config#import_custom_routes GoogleComputeNetworkPeeringRoutesConfig#import_custom_routes}
   */
   readonly importCustomRoutes: boolean | cdktf.IResolvable;
   /**
+  * Whether subnet routes with public IP range are imported.
+  * IPv4 special-use ranges are always imported from peers and
+  * are not controlled by this field.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_network_peering_routes_config#import_subnet_routes_with_public_ip GoogleComputeNetworkPeeringRoutesConfig#import_subnet_routes_with_public_ip}
+  */
+  readonly importSubnetRoutesWithPublicIp?: boolean | cdktf.IResolvable;
+  /**
   * The name of the primary network for the peering.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_network_peering_routes_config#network GoogleComputeNetworkPeeringRoutesConfig#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_network_peering_routes_config#network GoogleComputeNetworkPeeringRoutesConfig#network}
   */
   readonly network: string;
   /**
   * Name of the peering.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_network_peering_routes_config#peering GoogleComputeNetworkPeeringRoutesConfig#peering}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_network_peering_routes_config#peering GoogleComputeNetworkPeeringRoutesConfig#peering}
   */
   readonly peering: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_network_peering_routes_config#project GoogleComputeNetworkPeeringRoutesConfig#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_network_peering_routes_config#project GoogleComputeNetworkPeeringRoutesConfig#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_network_peering_routes_config#timeouts GoogleComputeNetworkPeeringRoutesConfig#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_network_peering_routes_config#timeouts GoogleComputeNetworkPeeringRoutesConfig#timeouts}
   */
   readonly timeouts?: GoogleComputeNetworkPeeringRoutesConfigTimeouts;
 }
 export interface GoogleComputeNetworkPeeringRoutesConfigTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_network_peering_routes_config#create GoogleComputeNetworkPeeringRoutesConfig#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_network_peering_routes_config#create GoogleComputeNetworkPeeringRoutesConfig#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_network_peering_routes_config#delete GoogleComputeNetworkPeeringRoutesConfig#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_network_peering_routes_config#delete GoogleComputeNetworkPeeringRoutesConfig#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_network_peering_routes_config#update GoogleComputeNetworkPeeringRoutesConfig#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_network_peering_routes_config#update GoogleComputeNetworkPeeringRoutesConfig#update}
   */
   readonly update?: string;
 }
@@ -216,7 +227,7 @@ export class GoogleComputeNetworkPeeringRoutesConfigTimeoutsOutputReference exte
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_network_peering_routes_config google_compute_network_peering_routes_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_network_peering_routes_config google_compute_network_peering_routes_config}
 */
 export class GoogleComputeNetworkPeeringRoutesConfig extends cdktf.TerraformResource {
 
@@ -232,7 +243,7 @@ export class GoogleComputeNetworkPeeringRoutesConfig extends cdktf.TerraformReso
   * Generates CDKTF code for importing a GoogleComputeNetworkPeeringRoutesConfig resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleComputeNetworkPeeringRoutesConfig to import
-  * @param importFromId The id of the existing GoogleComputeNetworkPeeringRoutesConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_network_peering_routes_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleComputeNetworkPeeringRoutesConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_network_peering_routes_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleComputeNetworkPeeringRoutesConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -244,7 +255,7 @@ export class GoogleComputeNetworkPeeringRoutesConfig extends cdktf.TerraformReso
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_network_peering_routes_config google_compute_network_peering_routes_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_network_peering_routes_config google_compute_network_peering_routes_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -255,7 +266,7 @@ export class GoogleComputeNetworkPeeringRoutesConfig extends cdktf.TerraformReso
       terraformResourceType: 'google_compute_network_peering_routes_config',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.21.0',
+        providerVersion: '6.22.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -267,8 +278,10 @@ export class GoogleComputeNetworkPeeringRoutesConfig extends cdktf.TerraformReso
       forEach: config.forEach
     });
     this._exportCustomRoutes = config.exportCustomRoutes;
+    this._exportSubnetRoutesWithPublicIp = config.exportSubnetRoutesWithPublicIp;
     this._id = config.id;
     this._importCustomRoutes = config.importCustomRoutes;
+    this._importSubnetRoutesWithPublicIp = config.importSubnetRoutesWithPublicIp;
     this._network = config.network;
     this._peering = config.peering;
     this._project = config.project;
@@ -290,6 +303,22 @@ export class GoogleComputeNetworkPeeringRoutesConfig extends cdktf.TerraformReso
   // Temporarily expose input value. Use with caution.
   public get exportCustomRoutesInput() {
     return this._exportCustomRoutes;
+  }
+
+  // export_subnet_routes_with_public_ip - computed: true, optional: true, required: false
+  private _exportSubnetRoutesWithPublicIp?: boolean | cdktf.IResolvable; 
+  public get exportSubnetRoutesWithPublicIp() {
+    return this.getBooleanAttribute('export_subnet_routes_with_public_ip');
+  }
+  public set exportSubnetRoutesWithPublicIp(value: boolean | cdktf.IResolvable) {
+    this._exportSubnetRoutesWithPublicIp = value;
+  }
+  public resetExportSubnetRoutesWithPublicIp() {
+    this._exportSubnetRoutesWithPublicIp = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exportSubnetRoutesWithPublicIpInput() {
+    return this._exportSubnetRoutesWithPublicIp;
   }
 
   // id - computed: true, optional: true, required: false
@@ -319,6 +348,22 @@ export class GoogleComputeNetworkPeeringRoutesConfig extends cdktf.TerraformReso
   // Temporarily expose input value. Use with caution.
   public get importCustomRoutesInput() {
     return this._importCustomRoutes;
+  }
+
+  // import_subnet_routes_with_public_ip - computed: true, optional: true, required: false
+  private _importSubnetRoutesWithPublicIp?: boolean | cdktf.IResolvable; 
+  public get importSubnetRoutesWithPublicIp() {
+    return this.getBooleanAttribute('import_subnet_routes_with_public_ip');
+  }
+  public set importSubnetRoutesWithPublicIp(value: boolean | cdktf.IResolvable) {
+    this._importSubnetRoutesWithPublicIp = value;
+  }
+  public resetImportSubnetRoutesWithPublicIp() {
+    this._importSubnetRoutesWithPublicIp = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get importSubnetRoutesWithPublicIpInput() {
+    return this._importSubnetRoutesWithPublicIp;
   }
 
   // network - computed: false, optional: false, required: true
@@ -386,8 +431,10 @@ export class GoogleComputeNetworkPeeringRoutesConfig extends cdktf.TerraformReso
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       export_custom_routes: cdktf.booleanToTerraform(this._exportCustomRoutes),
+      export_subnet_routes_with_public_ip: cdktf.booleanToTerraform(this._exportSubnetRoutesWithPublicIp),
       id: cdktf.stringToTerraform(this._id),
       import_custom_routes: cdktf.booleanToTerraform(this._importCustomRoutes),
+      import_subnet_routes_with_public_ip: cdktf.booleanToTerraform(this._importSubnetRoutesWithPublicIp),
       network: cdktf.stringToTerraform(this._network),
       peering: cdktf.stringToTerraform(this._peering),
       project: cdktf.stringToTerraform(this._project),
@@ -403,6 +450,12 @@ export class GoogleComputeNetworkPeeringRoutesConfig extends cdktf.TerraformReso
         type: "simple",
         storageClassType: "boolean",
       },
+      export_subnet_routes_with_public_ip: {
+        value: cdktf.booleanToHclTerraform(this._exportSubnetRoutesWithPublicIp),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,
@@ -411,6 +464,12 @@ export class GoogleComputeNetworkPeeringRoutesConfig extends cdktf.TerraformReso
       },
       import_custom_routes: {
         value: cdktf.booleanToHclTerraform(this._importCustomRoutes),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      import_subnet_routes_with_public_ip: {
+        value: cdktf.booleanToHclTerraform(this._importSubnetRoutesWithPublicIp),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

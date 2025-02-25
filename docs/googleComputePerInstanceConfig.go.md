@@ -4,12 +4,12 @@
 
 ### GoogleComputePerInstanceConfig <a name="GoogleComputePerInstanceConfig" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config google_compute_per_instance_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config google_compute_per_instance_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 googlecomputeperinstanceconfig.NewGoogleComputePerInstanceConfig(scope Construct, id *string, config GoogleComputePerInstanceConfigConfig) GoogleComputePerInstanceConfig
 ```
@@ -467,7 +467,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 googlecomputeperinstanceconfig.GoogleComputePerInstanceConfig_IsConstruct(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 googlecomputeperinstanceconfig.GoogleComputePerInstanceConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ googlecomputeperinstanceconfig.GoogleComputePerInstanceConfig_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 googlecomputeperinstanceconfig.GoogleComputePerInstanceConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ googlecomputeperinstanceconfig.GoogleComputePerInstanceConfig_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 googlecomputeperinstanceconfig.GoogleComputePerInstanceConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -556,7 +556,7 @@ The construct id used in the generated config for the GoogleComputePerInstanceCo
 
 The id of the existing GoogleComputePerInstanceConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -998,7 +998,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 &googlecomputeperinstanceconfig.GoogleComputePerInstanceConfigConfig {
 	Connection: interface{},
@@ -1013,11 +1013,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecompu
 	Id: *string,
 	MinimalAction: *string,
 	MostDisruptiveAllowedAction: *string,
-	PreservedState: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedState,
+	PreservedState: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedState,
 	Project: *string,
 	RemoveInstanceOnDestroy: interface{},
 	RemoveInstanceStateOnDestroy: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigTimeouts,
 	Zone: *string,
 }
 ```
@@ -1035,11 +1035,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecompu
 | <code><a href="#@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigConfig.property.instanceGroupManager">InstanceGroupManager</a></code> | <code>*string</code> | The instance group manager this instance config is part of. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigConfig.property.name">Name</a></code> | <code>*string</code> | The name for this per-instance config and its corresponding instance. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#id GoogleComputePerInstanceConfig#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#id GoogleComputePerInstanceConfig#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigConfig.property.minimalAction">MinimalAction</a></code> | <code>*string</code> | The minimal action to perform on the instance during an update. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigConfig.property.mostDisruptiveAllowedAction">MostDisruptiveAllowedAction</a></code> | <code>*string</code> | The most disruptive action to perform on the instance during an update. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigConfig.property.preservedState">PreservedState</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedState">GoogleComputePerInstanceConfigPreservedState</a></code> | preserved_state block. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#project GoogleComputePerInstanceConfig#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#project GoogleComputePerInstanceConfig#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigConfig.property.removeInstanceOnDestroy">RemoveInstanceOnDestroy</a></code> | <code>interface{}</code> | When true, deleting this config will immediately remove the underlying instance. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigConfig.property.removeInstanceStateOnDestroy">RemoveInstanceStateOnDestroy</a></code> | <code>interface{}</code> | When true, deleting this config will immediately remove any specified state from the underlying instance. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigTimeouts">GoogleComputePerInstanceConfigTimeouts</a></code> | timeouts block. |
@@ -1127,7 +1127,7 @@ InstanceGroupManager *string
 
 The instance group manager this instance config is part of.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#instance_group_manager GoogleComputePerInstanceConfig#instance_group_manager}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#instance_group_manager GoogleComputePerInstanceConfig#instance_group_manager}
 
 ---
 
@@ -1141,7 +1141,7 @@ Name *string
 
 The name for this per-instance config and its corresponding instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#name GoogleComputePerInstanceConfig#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#name GoogleComputePerInstanceConfig#name}
 
 ---
 
@@ -1153,7 +1153,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#id GoogleComputePerInstanceConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#id GoogleComputePerInstanceConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1177,7 +1177,7 @@ Default is 'NONE'. Possible values are:
 * REFRESH
 * NONE
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#minimal_action GoogleComputePerInstanceConfig#minimal_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#minimal_action GoogleComputePerInstanceConfig#minimal_action}
 
 ---
 
@@ -1198,7 +1198,7 @@ Default is 'REPLACE'. Possible values are:
 * REFRESH
 * NONE
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#most_disruptive_allowed_action GoogleComputePerInstanceConfig#most_disruptive_allowed_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#most_disruptive_allowed_action GoogleComputePerInstanceConfig#most_disruptive_allowed_action}
 
 ---
 
@@ -1212,7 +1212,7 @@ PreservedState GoogleComputePerInstanceConfigPreservedState
 
 preserved_state block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#preserved_state GoogleComputePerInstanceConfig#preserved_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#preserved_state GoogleComputePerInstanceConfig#preserved_state}
 
 ---
 
@@ -1224,7 +1224,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#project GoogleComputePerInstanceConfig#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#project GoogleComputePerInstanceConfig#project}.
 
 ---
 
@@ -1240,7 +1240,7 @@ When true, deleting this config will immediately remove the underlying instance.
 
 When false, deleting this config will use the behavior as determined by remove_instance_on_destroy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#remove_instance_on_destroy GoogleComputePerInstanceConfig#remove_instance_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#remove_instance_on_destroy GoogleComputePerInstanceConfig#remove_instance_on_destroy}
 
 ---
 
@@ -1257,7 +1257,7 @@ When true, deleting this config will immediately remove any specified state from
 When false, deleting this config will *not* immediately remove any state from the underlying instance.
 State will be removed on the next instance recreation or update.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#remove_instance_state_on_destroy GoogleComputePerInstanceConfig#remove_instance_state_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#remove_instance_state_on_destroy GoogleComputePerInstanceConfig#remove_instance_state_on_destroy}
 
 ---
 
@@ -1271,7 +1271,7 @@ Timeouts GoogleComputePerInstanceConfigTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#timeouts GoogleComputePerInstanceConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#timeouts GoogleComputePerInstanceConfig#timeouts}
 
 ---
 
@@ -1285,7 +1285,7 @@ Zone *string
 
 Zone where the containing instance group manager is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#zone GoogleComputePerInstanceConfig#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#zone GoogleComputePerInstanceConfig#zone}
 
 ---
 
@@ -1294,7 +1294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedState.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 &googlecomputeperinstanceconfig.GoogleComputePerInstanceConfigPreservedState {
 	Disk: interface{},
@@ -1325,7 +1325,7 @@ Disk interface{}
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#disk GoogleComputePerInstanceConfig#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#disk GoogleComputePerInstanceConfig#disk}
 
 ---
 
@@ -1339,7 +1339,7 @@ ExternalIp interface{}
 
 external_ip block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#external_ip GoogleComputePerInstanceConfig#external_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#external_ip GoogleComputePerInstanceConfig#external_ip}
 
 ---
 
@@ -1353,7 +1353,7 @@ InternalIp interface{}
 
 internal_ip block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#internal_ip GoogleComputePerInstanceConfig#internal_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#internal_ip GoogleComputePerInstanceConfig#internal_ip}
 
 ---
 
@@ -1367,7 +1367,7 @@ Metadata *map[string]*string
 
 Preserved metadata defined for this instance. This is a list of key->value pairs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#metadata GoogleComputePerInstanceConfig#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#metadata GoogleComputePerInstanceConfig#metadata}
 
 ---
 
@@ -1376,7 +1376,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 &googlecomputeperinstanceconfig.GoogleComputePerInstanceConfigPreservedStateDisk {
 	DeviceName: *string,
@@ -1407,7 +1407,7 @@ DeviceName *string
 
 A unique device name that is reflected into the /dev/ tree of a Linux operating system running within the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#device_name GoogleComputePerInstanceConfig#device_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#device_name GoogleComputePerInstanceConfig#device_name}
 
 ---
 
@@ -1421,7 +1421,7 @@ Source *string
 
 The URI of an existing persistent disk to attach under the specified device-name in the format 'projects/project-id/zones/zone/disks/disk-name'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#source GoogleComputePerInstanceConfig#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#source GoogleComputePerInstanceConfig#source}
 
 ---
 
@@ -1440,7 +1440,7 @@ The available options are 'NEVER' and 'ON_PERMANENT_INSTANCE_DELETION'.
 'ON_PERMANENT_INSTANCE_DELETION' will delete the stateful disk when the VM is permanently
 deleted from the instance group. Default value: "NEVER" Possible values: ["NEVER", "ON_PERMANENT_INSTANCE_DELETION"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#delete_rule GoogleComputePerInstanceConfig#delete_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#delete_rule GoogleComputePerInstanceConfig#delete_rule}
 
 ---
 
@@ -1454,7 +1454,7 @@ Mode *string
 
 The mode of the disk. Default value: "READ_WRITE" Possible values: ["READ_ONLY", "READ_WRITE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#mode GoogleComputePerInstanceConfig#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#mode GoogleComputePerInstanceConfig#mode}
 
 ---
 
@@ -1463,12 +1463,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateExternalIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 &googlecomputeperinstanceconfig.GoogleComputePerInstanceConfigPreservedStateExternalIp {
 	InterfaceName: *string,
 	AutoDelete: *string,
-	IpAddress: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateExternalIpIpAddress,
+	IpAddress: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateExternalIpIpAddress,
 }
 ```
 
@@ -1476,7 +1476,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecompu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateExternalIp.property.interfaceName">InterfaceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#interface_name GoogleComputePerInstanceConfig#interface_name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateExternalIp.property.interfaceName">InterfaceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#interface_name GoogleComputePerInstanceConfig#interface_name}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateExternalIp.property.autoDelete">AutoDelete</a></code> | <code>*string</code> | These stateful IPs will never be released during autohealing, update or VM instance recreate operations. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateExternalIp.property.ipAddress">IpAddress</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateExternalIpIpAddress">GoogleComputePerInstanceConfigPreservedStateExternalIpIpAddress</a></code> | ip_address block. |
 
@@ -1490,7 +1490,7 @@ InterfaceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#interface_name GoogleComputePerInstanceConfig#interface_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#interface_name GoogleComputePerInstanceConfig#interface_name}.
 
 ---
 
@@ -1506,7 +1506,7 @@ These stateful IPs will never be released during autohealing, update or VM insta
 
 This flag is used to configure if the IP reservation should be deleted after it is no longer used by the group, e.g. when the given instance or the whole group is deleted. Default value: "NEVER" Possible values: ["NEVER", "ON_PERMANENT_INSTANCE_DELETION"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#auto_delete GoogleComputePerInstanceConfig#auto_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#auto_delete GoogleComputePerInstanceConfig#auto_delete}
 
 ---
 
@@ -1520,7 +1520,7 @@ IpAddress GoogleComputePerInstanceConfigPreservedStateExternalIpIpAddress
 
 ip_address block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#ip_address GoogleComputePerInstanceConfig#ip_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#ip_address GoogleComputePerInstanceConfig#ip_address}
 
 ---
 
@@ -1529,7 +1529,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateExternalIpIpAddress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 &googlecomputeperinstanceconfig.GoogleComputePerInstanceConfigPreservedStateExternalIpIpAddress {
 	Address: *string,
@@ -1554,7 +1554,7 @@ Address *string
 
 The URL of the reservation for this IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#address GoogleComputePerInstanceConfig#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#address GoogleComputePerInstanceConfig#address}
 
 ---
 
@@ -1563,12 +1563,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateInternalIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 &googlecomputeperinstanceconfig.GoogleComputePerInstanceConfigPreservedStateInternalIp {
 	InterfaceName: *string,
 	AutoDelete: *string,
-	IpAddress: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateInternalIpIpAddress,
+	IpAddress: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateInternalIpIpAddress,
 }
 ```
 
@@ -1576,7 +1576,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecompu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateInternalIp.property.interfaceName">InterfaceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#interface_name GoogleComputePerInstanceConfig#interface_name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateInternalIp.property.interfaceName">InterfaceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#interface_name GoogleComputePerInstanceConfig#interface_name}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateInternalIp.property.autoDelete">AutoDelete</a></code> | <code>*string</code> | These stateful IPs will never be released during autohealing, update or VM instance recreate operations. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateInternalIp.property.ipAddress">IpAddress</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateInternalIpIpAddress">GoogleComputePerInstanceConfigPreservedStateInternalIpIpAddress</a></code> | ip_address block. |
 
@@ -1590,7 +1590,7 @@ InterfaceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#interface_name GoogleComputePerInstanceConfig#interface_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#interface_name GoogleComputePerInstanceConfig#interface_name}.
 
 ---
 
@@ -1606,7 +1606,7 @@ These stateful IPs will never be released during autohealing, update or VM insta
 
 This flag is used to configure if the IP reservation should be deleted after it is no longer used by the group, e.g. when the given instance or the whole group is deleted. Default value: "NEVER" Possible values: ["NEVER", "ON_PERMANENT_INSTANCE_DELETION"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#auto_delete GoogleComputePerInstanceConfig#auto_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#auto_delete GoogleComputePerInstanceConfig#auto_delete}
 
 ---
 
@@ -1620,7 +1620,7 @@ IpAddress GoogleComputePerInstanceConfigPreservedStateInternalIpIpAddress
 
 ip_address block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#ip_address GoogleComputePerInstanceConfig#ip_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#ip_address GoogleComputePerInstanceConfig#ip_address}
 
 ---
 
@@ -1629,7 +1629,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateInternalIpIpAddress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 &googlecomputeperinstanceconfig.GoogleComputePerInstanceConfigPreservedStateInternalIpIpAddress {
 	Address: *string,
@@ -1654,7 +1654,7 @@ Address *string
 
 The URL of the reservation for this IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#address GoogleComputePerInstanceConfig#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#address GoogleComputePerInstanceConfig#address}
 
 ---
 
@@ -1663,7 +1663,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 &googlecomputeperinstanceconfig.GoogleComputePerInstanceConfigTimeouts {
 	Create: *string,
@@ -1676,9 +1676,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecompu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#create GoogleComputePerInstanceConfig#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#delete GoogleComputePerInstanceConfig#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#update GoogleComputePerInstanceConfig#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#create GoogleComputePerInstanceConfig#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#delete GoogleComputePerInstanceConfig#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#update GoogleComputePerInstanceConfig#update}. |
 
 ---
 
@@ -1690,7 +1690,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#create GoogleComputePerInstanceConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#create GoogleComputePerInstanceConfig#create}.
 
 ---
 
@@ -1702,7 +1702,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#delete GoogleComputePerInstanceConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#delete GoogleComputePerInstanceConfig#delete}.
 
 ---
 
@@ -1714,7 +1714,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_per_instance_config#update GoogleComputePerInstanceConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_per_instance_config#update GoogleComputePerInstanceConfig#update}.
 
 ---
 
@@ -1725,7 +1725,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 googlecomputeperinstanceconfig.NewGoogleComputePerInstanceConfigPreservedStateDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputePerInstanceConfigPreservedStateDiskList
 ```
@@ -1885,7 +1885,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 googlecomputeperinstanceconfig.NewGoogleComputePerInstanceConfigPreservedStateDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputePerInstanceConfigPreservedStateDiskOutputReference
 ```
@@ -2254,7 +2254,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 googlecomputeperinstanceconfig.NewGoogleComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference
 ```
@@ -2532,7 +2532,7 @@ func InternalValue() GoogleComputePerInstanceConfigPreservedStateExternalIpIpAdd
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateExternalIpList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 googlecomputeperinstanceconfig.NewGoogleComputePerInstanceConfigPreservedStateExternalIpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputePerInstanceConfigPreservedStateExternalIpList
 ```
@@ -2692,7 +2692,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateExternalIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 googlecomputeperinstanceconfig.NewGoogleComputePerInstanceConfigPreservedStateExternalIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputePerInstanceConfigPreservedStateExternalIpOutputReference
 ```
@@ -3052,7 +3052,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateInternalIpIpAddressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 googlecomputeperinstanceconfig.NewGoogleComputePerInstanceConfigPreservedStateInternalIpIpAddressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputePerInstanceConfigPreservedStateInternalIpIpAddressOutputReference
 ```
@@ -3330,7 +3330,7 @@ func InternalValue() GoogleComputePerInstanceConfigPreservedStateInternalIpIpAdd
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateInternalIpList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 googlecomputeperinstanceconfig.NewGoogleComputePerInstanceConfigPreservedStateInternalIpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputePerInstanceConfigPreservedStateInternalIpList
 ```
@@ -3490,7 +3490,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateInternalIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 googlecomputeperinstanceconfig.NewGoogleComputePerInstanceConfigPreservedStateInternalIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputePerInstanceConfigPreservedStateInternalIpOutputReference
 ```
@@ -3850,7 +3850,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 googlecomputeperinstanceconfig.NewGoogleComputePerInstanceConfigPreservedStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputePerInstanceConfigPreservedStateOutputReference
 ```
@@ -4254,7 +4254,7 @@ func InternalValue() GoogleComputePerInstanceConfigPreservedState
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 googlecomputeperinstanceconfig.NewGoogleComputePerInstanceConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputePerInstanceConfigTimeoutsOutputReference
 ```

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_app_engine_service_network_settings
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_app_engine_service_network_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +8,32 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleAppEngineServiceNetworkSettingsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_app_engine_service_network_settings#id GoogleAppEngineServiceNetworkSettings#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_app_engine_service_network_settings#id GoogleAppEngineServiceNetworkSettings#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_app_engine_service_network_settings#project GoogleAppEngineServiceNetworkSettings#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_app_engine_service_network_settings#project GoogleAppEngineServiceNetworkSettings#project}
   */
   readonly project?: string;
   /**
   * The name of the service these settings apply to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_app_engine_service_network_settings#service GoogleAppEngineServiceNetworkSettings#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_app_engine_service_network_settings#service GoogleAppEngineServiceNetworkSettings#service}
   */
   readonly service: string;
   /**
   * network_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_app_engine_service_network_settings#network_settings GoogleAppEngineServiceNetworkSettings#network_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_app_engine_service_network_settings#network_settings GoogleAppEngineServiceNetworkSettings#network_settings}
   */
   readonly networkSettings: GoogleAppEngineServiceNetworkSettingsNetworkSettings;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_app_engine_service_network_settings#timeouts GoogleAppEngineServiceNetworkSettings#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_app_engine_service_network_settings#timeouts GoogleAppEngineServiceNetworkSettings#timeouts}
   */
   readonly timeouts?: GoogleAppEngineServiceNetworkSettingsTimeouts;
 }
@@ -46,7 +41,7 @@ export interface GoogleAppEngineServiceNetworkSettingsNetworkSettings {
   /**
   * The ingress settings for version or service. Default value: "INGRESS_TRAFFIC_ALLOWED_UNSPECIFIED" Possible values: ["INGRESS_TRAFFIC_ALLOWED_UNSPECIFIED", "INGRESS_TRAFFIC_ALLOWED_ALL", "INGRESS_TRAFFIC_ALLOWED_INTERNAL_ONLY", "INGRESS_TRAFFIC_ALLOWED_INTERNAL_AND_LB"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_app_engine_service_network_settings#ingress_traffic_allowed GoogleAppEngineServiceNetworkSettings#ingress_traffic_allowed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_app_engine_service_network_settings#ingress_traffic_allowed GoogleAppEngineServiceNetworkSettings#ingress_traffic_allowed}
   */
   readonly ingressTrafficAllowed?: string;
 }
@@ -130,15 +125,15 @@ export class GoogleAppEngineServiceNetworkSettingsNetworkSettingsOutputReference
 }
 export interface GoogleAppEngineServiceNetworkSettingsTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_app_engine_service_network_settings#create GoogleAppEngineServiceNetworkSettings#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_app_engine_service_network_settings#create GoogleAppEngineServiceNetworkSettings#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_app_engine_service_network_settings#delete GoogleAppEngineServiceNetworkSettings#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_app_engine_service_network_settings#delete GoogleAppEngineServiceNetworkSettings#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_app_engine_service_network_settings#update GoogleAppEngineServiceNetworkSettings#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_app_engine_service_network_settings#update GoogleAppEngineServiceNetworkSettings#update}
   */
   readonly update?: string;
 }
@@ -290,7 +285,7 @@ export class GoogleAppEngineServiceNetworkSettingsTimeoutsOutputReference extend
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_app_engine_service_network_settings google_app_engine_service_network_settings}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_app_engine_service_network_settings google_app_engine_service_network_settings}
 */
 export class GoogleAppEngineServiceNetworkSettings extends cdktf.TerraformResource {
 
@@ -306,7 +301,7 @@ export class GoogleAppEngineServiceNetworkSettings extends cdktf.TerraformResour
   * Generates CDKTF code for importing a GoogleAppEngineServiceNetworkSettings resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleAppEngineServiceNetworkSettings to import
-  * @param importFromId The id of the existing GoogleAppEngineServiceNetworkSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_app_engine_service_network_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleAppEngineServiceNetworkSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_app_engine_service_network_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleAppEngineServiceNetworkSettings to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -318,7 +313,7 @@ export class GoogleAppEngineServiceNetworkSettings extends cdktf.TerraformResour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_app_engine_service_network_settings google_app_engine_service_network_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_app_engine_service_network_settings google_app_engine_service_network_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -329,7 +324,7 @@ export class GoogleAppEngineServiceNetworkSettings extends cdktf.TerraformResour
       terraformResourceType: 'google_app_engine_service_network_settings',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.21.0',
+        providerVersion: '6.22.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

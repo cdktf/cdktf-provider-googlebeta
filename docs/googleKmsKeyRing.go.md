@@ -4,12 +4,12 @@
 
 ### GoogleKmsKeyRing <a name="GoogleKmsKeyRing" id="@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRing"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_kms_key_ring google_kms_key_ring}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_kms_key_ring google_kms_key_ring}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRing.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlekmskeyring"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyring"
 
 googlekmskeyring.NewGoogleKmsKeyRing(scope Construct, id *string, config GoogleKmsKeyRingConfig) GoogleKmsKeyRing
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRing.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlekmskeyring"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyring"
 
 googlekmskeyring.GoogleKmsKeyRing_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRing.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlekmskeyring"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyring"
 
 googlekmskeyring.GoogleKmsKeyRing_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ googlekmskeyring.GoogleKmsKeyRing_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRing.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlekmskeyring"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyring"
 
 googlekmskeyring.GoogleKmsKeyRing_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ googlekmskeyring.GoogleKmsKeyRing_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRing.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlekmskeyring"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyring"
 
 googlekmskeyring.GoogleKmsKeyRing_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the GoogleKmsKeyRing to import
 
 The id of the existing GoogleKmsKeyRing that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_kms_key_ring#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_kms_key_ring#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -811,7 +811,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlekmskeyring"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyring"
 
 &googlekmskeyring.GoogleKmsKeyRingConfig {
 	Connection: interface{},
@@ -825,7 +825,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlekmske
 	Name: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleKmsKeyRing.GoogleKmsKeyRingTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleKmsKeyRing.GoogleKmsKeyRingTimeouts,
 }
 ```
 
@@ -842,8 +842,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlekmske
 | <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRingConfig.property.location">Location</a></code> | <code>*string</code> | The location for the KeyRing. A full list of valid locations can be found by running 'gcloud kms locations list'. |
 | <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRingConfig.property.name">Name</a></code> | <code>*string</code> | The resource name for the KeyRing. |
-| <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_kms_key_ring#id GoogleKmsKeyRing#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_kms_key_ring#project GoogleKmsKeyRing#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_kms_key_ring#id GoogleKmsKeyRing#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_kms_key_ring#project GoogleKmsKeyRing#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRingConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRingTimeouts">GoogleKmsKeyRingTimeouts</a></code> | timeouts block. |
 
 ---
@@ -928,7 +928,7 @@ Location *string
 
 The location for the KeyRing. A full list of valid locations can be found by running 'gcloud kms locations list'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_kms_key_ring#location GoogleKmsKeyRing#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_kms_key_ring#location GoogleKmsKeyRing#location}
 
 ---
 
@@ -942,7 +942,7 @@ Name *string
 
 The resource name for the KeyRing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_kms_key_ring#name GoogleKmsKeyRing#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_kms_key_ring#name GoogleKmsKeyRing#name}
 
 ---
 
@@ -954,7 +954,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_kms_key_ring#id GoogleKmsKeyRing#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_kms_key_ring#id GoogleKmsKeyRing#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -969,7 +969,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_kms_key_ring#project GoogleKmsKeyRing#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_kms_key_ring#project GoogleKmsKeyRing#project}.
 
 ---
 
@@ -983,7 +983,7 @@ Timeouts GoogleKmsKeyRingTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_kms_key_ring#timeouts GoogleKmsKeyRing#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_kms_key_ring#timeouts GoogleKmsKeyRing#timeouts}
 
 ---
 
@@ -992,7 +992,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRingTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlekmskeyring"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyring"
 
 &googlekmskeyring.GoogleKmsKeyRingTimeouts {
 	Create: *string,
@@ -1004,8 +1004,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlekmske
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRingTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_kms_key_ring#create GoogleKmsKeyRing#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRingTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_kms_key_ring#delete GoogleKmsKeyRing#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRingTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_kms_key_ring#create GoogleKmsKeyRing#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRingTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_kms_key_ring#delete GoogleKmsKeyRing#delete}. |
 
 ---
 
@@ -1017,7 +1017,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_kms_key_ring#create GoogleKmsKeyRing#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_kms_key_ring#create GoogleKmsKeyRing#create}.
 
 ---
 
@@ -1029,7 +1029,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_kms_key_ring#delete GoogleKmsKeyRing#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_kms_key_ring#delete GoogleKmsKeyRing#delete}.
 
 ---
 
@@ -1040,7 +1040,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRingTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlekmskeyring"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyring"
 
 googlekmskeyring.NewGoogleKmsKeyRingTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleKmsKeyRingTimeoutsOutputReference
 ```

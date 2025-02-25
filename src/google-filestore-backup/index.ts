@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_filestore_backup
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_filestore_backup
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface GoogleFilestoreBackupConfig extends cdktf.TerraformMetaArgument
   /**
   * A description of the backup with 2048 characters or less. Requests with longer descriptions will be rejected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_filestore_backup#description GoogleFilestoreBackup#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_filestore_backup#description GoogleFilestoreBackup#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_filestore_backup#id GoogleFilestoreBackup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_filestore_backup#id GoogleFilestoreBackup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -32,13 +27,13 @@ export interface GoogleFilestoreBackupConfig extends cdktf.TerraformMetaArgument
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_filestore_backup#labels GoogleFilestoreBackup#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_filestore_backup#labels GoogleFilestoreBackup#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The name of the location of the instance. This can be a region for ENTERPRISE tier instances.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_filestore_backup#location GoogleFilestoreBackup#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_filestore_backup#location GoogleFilestoreBackup#location}
   */
   readonly location: string;
   /**
@@ -51,23 +46,23 @@ export interface GoogleFilestoreBackupConfig extends cdktf.TerraformMetaArgument
   * characters must be a dash, lowercase letter, or digit, except the last
   * character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_filestore_backup#name GoogleFilestoreBackup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_filestore_backup#name GoogleFilestoreBackup#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_filestore_backup#project GoogleFilestoreBackup#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_filestore_backup#project GoogleFilestoreBackup#project}
   */
   readonly project?: string;
   /**
   * Name of the file share in the source Cloud Filestore instance that the backup is created from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_filestore_backup#source_file_share GoogleFilestoreBackup#source_file_share}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_filestore_backup#source_file_share GoogleFilestoreBackup#source_file_share}
   */
   readonly sourceFileShare: string;
   /**
   * The resource name of the source Cloud Filestore instance, in the format projects/{projectId}/locations/{locationId}/instances/{instanceId}, used to create this backup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_filestore_backup#source_instance GoogleFilestoreBackup#source_instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_filestore_backup#source_instance GoogleFilestoreBackup#source_instance}
   */
   readonly sourceInstance: string;
   /**
@@ -76,27 +71,27 @@ export interface GoogleFilestoreBackupConfig extends cdktf.TerraformMetaArgument
   * Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/{tag_value_id}.
   * The field is ignored (both PUT & PATCH) when empty.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_filestore_backup#tags GoogleFilestoreBackup#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_filestore_backup#tags GoogleFilestoreBackup#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_filestore_backup#timeouts GoogleFilestoreBackup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_filestore_backup#timeouts GoogleFilestoreBackup#timeouts}
   */
   readonly timeouts?: GoogleFilestoreBackupTimeouts;
 }
 export interface GoogleFilestoreBackupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_filestore_backup#create GoogleFilestoreBackup#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_filestore_backup#create GoogleFilestoreBackup#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_filestore_backup#delete GoogleFilestoreBackup#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_filestore_backup#delete GoogleFilestoreBackup#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_filestore_backup#update GoogleFilestoreBackup#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_filestore_backup#update GoogleFilestoreBackup#update}
   */
   readonly update?: string;
 }
@@ -248,7 +243,7 @@ export class GoogleFilestoreBackupTimeoutsOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_filestore_backup google_filestore_backup}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_filestore_backup google_filestore_backup}
 */
 export class GoogleFilestoreBackup extends cdktf.TerraformResource {
 
@@ -264,7 +259,7 @@ export class GoogleFilestoreBackup extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleFilestoreBackup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleFilestoreBackup to import
-  * @param importFromId The id of the existing GoogleFilestoreBackup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_filestore_backup#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleFilestoreBackup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_filestore_backup#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleFilestoreBackup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -276,7 +271,7 @@ export class GoogleFilestoreBackup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_filestore_backup google_filestore_backup} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_filestore_backup google_filestore_backup} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -287,7 +282,7 @@ export class GoogleFilestoreBackup extends cdktf.TerraformResource {
       terraformResourceType: 'google_filestore_backup',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.21.0',
+        providerVersion: '6.22.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
