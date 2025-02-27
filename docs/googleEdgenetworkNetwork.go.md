@@ -4,7 +4,7 @@
 
 ### GoogleEdgenetworkNetwork <a name="GoogleEdgenetworkNetwork" id="@cdktf/provider-google-beta.googleEdgenetworkNetwork.GoogleEdgenetworkNetwork"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgenetwork_network google_edgenetwork_network}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_edgenetwork_network google_edgenetwork_network}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEdgenetworkNetwork.GoogleEdgenetworkNetwork.Initializer"></a>
 
@@ -522,7 +522,7 @@ The construct id used in the generated config for the GoogleEdgenetworkNetwork t
 
 The id of the existing GoogleEdgenetworkNetwork that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgenetwork_network#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_edgenetwork_network#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1012,10 +1012,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleedgen
 | <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkNetwork.GoogleEdgenetworkNetworkConfig.property.networkId">NetworkId</a></code> | <code>*string</code> | A unique ID that identifies this network. |
 | <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkNetwork.GoogleEdgenetworkNetworkConfig.property.zone">Zone</a></code> | <code>*string</code> | The name of the target Distributed Cloud Edge zone. |
 | <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkNetwork.GoogleEdgenetworkNetworkConfig.property.description">Description</a></code> | <code>*string</code> | A free-text description of the resource. Max length 1024 characters. |
-| <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkNetwork.GoogleEdgenetworkNetworkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgenetwork_network#id GoogleEdgenetworkNetwork#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkNetwork.GoogleEdgenetworkNetworkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_edgenetwork_network#id GoogleEdgenetworkNetwork#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkNetwork.GoogleEdgenetworkNetworkConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Labels associated with this resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkNetwork.GoogleEdgenetworkNetworkConfig.property.mtu">Mtu</a></code> | <code>*f64</code> | IP (L3) MTU value of the network. Default value is '1500'. Possible values are: '1500', '9000'. |
-| <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkNetwork.GoogleEdgenetworkNetworkConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgenetwork_network#project GoogleEdgenetworkNetwork#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkNetwork.GoogleEdgenetworkNetworkConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_edgenetwork_network#project GoogleEdgenetworkNetwork#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkNetwork.GoogleEdgenetworkNetworkConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkNetwork.GoogleEdgenetworkNetworkTimeouts">GoogleEdgenetworkNetworkTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1100,7 +1100,7 @@ Location *string
 
 The Google Cloud region to which the target Distributed Cloud Edge zone belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgenetwork_network#location GoogleEdgenetworkNetwork#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_edgenetwork_network#location GoogleEdgenetworkNetwork#location}
 
 ---
 
@@ -1114,7 +1114,7 @@ NetworkId *string
 
 A unique ID that identifies this network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgenetwork_network#network_id GoogleEdgenetworkNetwork#network_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_edgenetwork_network#network_id GoogleEdgenetworkNetwork#network_id}
 
 ---
 
@@ -1128,7 +1128,7 @@ Zone *string
 
 The name of the target Distributed Cloud Edge zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgenetwork_network#zone GoogleEdgenetworkNetwork#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_edgenetwork_network#zone GoogleEdgenetworkNetwork#zone}
 
 ---
 
@@ -1142,7 +1142,7 @@ Description *string
 
 A free-text description of the resource. Max length 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgenetwork_network#description GoogleEdgenetworkNetwork#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_edgenetwork_network#description GoogleEdgenetworkNetwork#description}
 
 ---
 
@@ -1154,7 +1154,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgenetwork_network#id GoogleEdgenetworkNetwork#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_edgenetwork_network#id GoogleEdgenetworkNetwork#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1174,7 +1174,7 @@ Labels associated with this resource.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgenetwork_network#labels GoogleEdgenetworkNetwork#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_edgenetwork_network#labels GoogleEdgenetworkNetwork#labels}
 
 ---
 
@@ -1188,7 +1188,7 @@ Mtu *f64
 
 IP (L3) MTU value of the network. Default value is '1500'. Possible values are: '1500', '9000'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgenetwork_network#mtu GoogleEdgenetworkNetwork#mtu}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_edgenetwork_network#mtu GoogleEdgenetworkNetwork#mtu}
 
 ---
 
@@ -1200,7 +1200,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgenetwork_network#project GoogleEdgenetworkNetwork#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_edgenetwork_network#project GoogleEdgenetworkNetwork#project}.
 
 ---
 
@@ -1214,7 +1214,7 @@ Timeouts GoogleEdgenetworkNetworkTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgenetwork_network#timeouts GoogleEdgenetworkNetwork#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_edgenetwork_network#timeouts GoogleEdgenetworkNetwork#timeouts}
 
 ---
 
@@ -1236,9 +1236,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleedgen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkNetwork.GoogleEdgenetworkNetworkTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgenetwork_network#create GoogleEdgenetworkNetwork#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkNetwork.GoogleEdgenetworkNetworkTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgenetwork_network#delete GoogleEdgenetworkNetwork#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkNetwork.GoogleEdgenetworkNetworkTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgenetwork_network#update GoogleEdgenetworkNetwork#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkNetwork.GoogleEdgenetworkNetworkTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_edgenetwork_network#create GoogleEdgenetworkNetwork#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkNetwork.GoogleEdgenetworkNetworkTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_edgenetwork_network#delete GoogleEdgenetworkNetwork#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkNetwork.GoogleEdgenetworkNetworkTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_edgenetwork_network#update GoogleEdgenetworkNetwork#update}. |
 
 ---
 
@@ -1250,7 +1250,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgenetwork_network#create GoogleEdgenetworkNetwork#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_edgenetwork_network#create GoogleEdgenetworkNetwork#create}.
 
 ---
 
@@ -1262,7 +1262,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgenetwork_network#delete GoogleEdgenetworkNetwork#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_edgenetwork_network#delete GoogleEdgenetworkNetwork#delete}.
 
 ---
 
@@ -1274,7 +1274,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgenetwork_network#update GoogleEdgenetworkNetwork#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_edgenetwork_network#update GoogleEdgenetworkNetwork#update}.
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_firewall
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_firewall
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,7 +16,7 @@ export interface GoogleComputeFirewallConfig extends cdktf.TerraformMetaArgument
   * An optional description of this resource. Provide this property when
   * you create the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_firewall#description GoogleComputeFirewall#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_firewall#description GoogleComputeFirewall#description}
   */
   readonly description?: string;
   /**
@@ -24,7 +24,7 @@ export interface GoogleComputeFirewallConfig extends cdktf.TerraformMetaArgument
   * traffic that has destination IP address in these ranges. These ranges
   * must be expressed in CIDR format. IPv4 or IPv6 ranges are supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_firewall#destination_ranges GoogleComputeFirewall#destination_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_firewall#destination_ranges GoogleComputeFirewall#destination_ranges}
   */
   readonly destinationRanges?: string[];
   /**
@@ -32,7 +32,7 @@ export interface GoogleComputeFirewallConfig extends cdktf.TerraformMetaArgument
   * INGRESS. Note: For INGRESS traffic, one of 'source_ranges',
   * 'source_tags' or 'source_service_accounts' is required. Possible values: ["INGRESS", "EGRESS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_firewall#direction GoogleComputeFirewall#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_firewall#direction GoogleComputeFirewall#direction}
   */
   readonly direction?: string;
   /**
@@ -41,17 +41,17 @@ export interface GoogleComputeFirewallConfig extends cdktf.TerraformMetaArgument
   * not enforced and the network behaves as if it did not exist. If this
   * is unspecified, the firewall rule will be enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_firewall#disabled GoogleComputeFirewall#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_firewall#disabled GoogleComputeFirewall#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * This field denotes whether to enable logging for a particular firewall rule. If logging is enabled, logs will be exported to Stackdriver.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_firewall#enable_logging GoogleComputeFirewall#enable_logging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_firewall#enable_logging GoogleComputeFirewall#enable_logging}
   */
   readonly enableLogging?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_firewall#id GoogleComputeFirewall#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_firewall#id GoogleComputeFirewall#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -66,13 +66,13 @@ export interface GoogleComputeFirewallConfig extends cdktf.TerraformMetaArgument
   * characters must be a dash, lowercase letter, or digit, except the last
   * character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_firewall#name GoogleComputeFirewall#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_firewall#name GoogleComputeFirewall#name}
   */
   readonly name: string;
   /**
   * The name or self_link of the network to attach this firewall to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_firewall#network GoogleComputeFirewall#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_firewall#network GoogleComputeFirewall#network}
   */
   readonly network: string;
   /**
@@ -83,11 +83,11 @@ export interface GoogleComputeFirewallConfig extends cdktf.TerraformMetaArgument
   * higher precedence than a rule with priority 1). DENY rules take
   * precedence over ALLOW rules having equal priority.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_firewall#priority GoogleComputeFirewall#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_firewall#priority GoogleComputeFirewall#priority}
   */
   readonly priority?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_firewall#project GoogleComputeFirewall#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_firewall#project GoogleComputeFirewall#project}
   */
   readonly project?: string;
   /**
@@ -101,7 +101,7 @@ export interface GoogleComputeFirewallConfig extends cdktf.TerraformMetaArgument
   * apply. IPv4 or IPv6 ranges are supported. For INGRESS traffic, one of
   * 'source_ranges', 'source_tags' or 'source_service_accounts' is required.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_firewall#source_ranges GoogleComputeFirewall#source_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_firewall#source_ranges GoogleComputeFirewall#source_ranges}
   */
   readonly sourceRanges?: string[];
   /**
@@ -118,7 +118,7 @@ export interface GoogleComputeFirewallConfig extends cdktf.TerraformMetaArgument
   * used at the same time as sourceTags or targetTags. For INGRESS traffic,
   * one of 'source_ranges', 'source_tags' or 'source_service_accounts' is required.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_firewall#source_service_accounts GoogleComputeFirewall#source_service_accounts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_firewall#source_service_accounts GoogleComputeFirewall#source_service_accounts}
   */
   readonly sourceServiceAccounts?: string[];
   /**
@@ -133,7 +133,7 @@ export interface GoogleComputeFirewallConfig extends cdktf.TerraformMetaArgument
   * to match both properties for the firewall to apply. For INGRESS traffic,
   * one of 'source_ranges', 'source_tags' or 'source_service_accounts' is required.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_firewall#source_tags GoogleComputeFirewall#source_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_firewall#source_tags GoogleComputeFirewall#source_tags}
   */
   readonly sourceTags?: string[];
   /**
@@ -144,7 +144,7 @@ export interface GoogleComputeFirewallConfig extends cdktf.TerraformMetaArgument
   * specified, the firewall rule applies to all instances on the specified
   * network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_firewall#target_service_accounts GoogleComputeFirewall#target_service_accounts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_firewall#target_service_accounts GoogleComputeFirewall#target_service_accounts}
   */
   readonly targetServiceAccounts?: string[];
   /**
@@ -153,31 +153,31 @@ export interface GoogleComputeFirewallConfig extends cdktf.TerraformMetaArgument
   * If no targetTags are specified, the firewall rule applies to all
   * instances on the specified network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_firewall#target_tags GoogleComputeFirewall#target_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_firewall#target_tags GoogleComputeFirewall#target_tags}
   */
   readonly targetTags?: string[];
   /**
   * allow block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_firewall#allow GoogleComputeFirewall#allow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_firewall#allow GoogleComputeFirewall#allow}
   */
   readonly allow?: GoogleComputeFirewallAllow[] | cdktf.IResolvable;
   /**
   * deny block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_firewall#deny GoogleComputeFirewall#deny}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_firewall#deny GoogleComputeFirewall#deny}
   */
   readonly deny?: GoogleComputeFirewallDeny[] | cdktf.IResolvable;
   /**
   * log_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_firewall#log_config GoogleComputeFirewall#log_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_firewall#log_config GoogleComputeFirewall#log_config}
   */
   readonly logConfig?: GoogleComputeFirewallLogConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_firewall#timeouts GoogleComputeFirewall#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_firewall#timeouts GoogleComputeFirewall#timeouts}
   */
   readonly timeouts?: GoogleComputeFirewallTimeouts;
 }
@@ -191,7 +191,7 @@ export interface GoogleComputeFirewallAllow {
   * Example inputs include: [22], [80, 443], and
   * ["12345-12349"].
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_firewall#ports GoogleComputeFirewall#ports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_firewall#ports GoogleComputeFirewall#ports}
   */
   readonly ports?: string[];
   /**
@@ -200,7 +200,7 @@ export interface GoogleComputeFirewallAllow {
   * one of the following well known protocol strings (tcp, udp,
   * icmp, esp, ah, sctp, ipip, all), or the IP protocol number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_firewall#protocol GoogleComputeFirewall#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_firewall#protocol GoogleComputeFirewall#protocol}
   */
   readonly protocol: string;
 }
@@ -350,7 +350,7 @@ export interface GoogleComputeFirewallDeny {
   * Example inputs include: [22], [80, 443], and
   * ["12345-12349"].
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_firewall#ports GoogleComputeFirewall#ports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_firewall#ports GoogleComputeFirewall#ports}
   */
   readonly ports?: string[];
   /**
@@ -359,7 +359,7 @@ export interface GoogleComputeFirewallDeny {
   * one of the following well known protocol strings (tcp, udp,
   * icmp, esp, ah, sctp, ipip, all), or the IP protocol number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_firewall#protocol GoogleComputeFirewall#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_firewall#protocol GoogleComputeFirewall#protocol}
   */
   readonly protocol: string;
 }
@@ -503,7 +503,7 @@ export interface GoogleComputeFirewallLogConfig {
   /**
   * This field denotes whether to include or exclude metadata for firewall logs. Possible values: ["EXCLUDE_ALL_METADATA", "INCLUDE_ALL_METADATA"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_firewall#metadata GoogleComputeFirewall#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_firewall#metadata GoogleComputeFirewall#metadata}
   */
   readonly metadata: string;
 }
@@ -584,15 +584,15 @@ export class GoogleComputeFirewallLogConfigOutputReference extends cdktf.Complex
 }
 export interface GoogleComputeFirewallTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_firewall#create GoogleComputeFirewall#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_firewall#create GoogleComputeFirewall#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_firewall#delete GoogleComputeFirewall#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_firewall#delete GoogleComputeFirewall#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_firewall#update GoogleComputeFirewall#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_firewall#update GoogleComputeFirewall#update}
   */
   readonly update?: string;
 }
@@ -744,7 +744,7 @@ export class GoogleComputeFirewallTimeoutsOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_firewall google_compute_firewall}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_firewall google_compute_firewall}
 */
 export class GoogleComputeFirewall extends cdktf.TerraformResource {
 
@@ -760,7 +760,7 @@ export class GoogleComputeFirewall extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleComputeFirewall resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleComputeFirewall to import
-  * @param importFromId The id of the existing GoogleComputeFirewall that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_firewall#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleComputeFirewall that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_firewall#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleComputeFirewall to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -772,7 +772,7 @@ export class GoogleComputeFirewall extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_firewall google_compute_firewall} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_firewall google_compute_firewall} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -783,7 +783,7 @@ export class GoogleComputeFirewall extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_firewall',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.22.0',
+        providerVersion: '6.23.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

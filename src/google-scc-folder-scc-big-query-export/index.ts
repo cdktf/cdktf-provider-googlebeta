@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_folder_scc_big_query_export
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_scc_folder_scc_big_query_export
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface GoogleSccFolderSccBigQueryExportConfig extends cdktf.TerraformM
   /**
   * This must be unique within the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_folder_scc_big_query_export#big_query_export_id GoogleSccFolderSccBigQueryExport#big_query_export_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_scc_folder_scc_big_query_export#big_query_export_id GoogleSccFolderSccBigQueryExport#big_query_export_id}
   */
   readonly bigQueryExportId: string;
   /**
@@ -23,13 +23,13 @@ export interface GoogleSccFolderSccBigQueryExportConfig extends cdktf.TerraformM
   * Its format is "projects/[projectId]/datasets/[bigquery_dataset_id]".
   * BigQuery Dataset unique ID must contain only letters (a-z, A-Z), numbers (0-9), or underscores (_).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_folder_scc_big_query_export#dataset GoogleSccFolderSccBigQueryExport#dataset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_scc_folder_scc_big_query_export#dataset GoogleSccFolderSccBigQueryExport#dataset}
   */
   readonly dataset: string;
   /**
   * The description of the export (max of 1024 characters).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_folder_scc_big_query_export#description GoogleSccFolderSccBigQueryExport#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_scc_folder_scc_big_query_export#description GoogleSccFolderSccBigQueryExport#description}
   */
   readonly description: string;
   /**
@@ -59,18 +59,18 @@ export interface GoogleSccFolderSccBigQueryExportConfig extends cdktf.TerraformM
   * [Filtering notifications](https://cloud.google.com/security-command-center/docs/how-to-api-filter-notifications)
   * for information on how to write a filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_folder_scc_big_query_export#filter GoogleSccFolderSccBigQueryExport#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_scc_folder_scc_big_query_export#filter GoogleSccFolderSccBigQueryExport#filter}
   */
   readonly filter: string;
   /**
   * The folder where Cloud Security Command Center Big Query Export
   * Config lives in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_folder_scc_big_query_export#folder GoogleSccFolderSccBigQueryExport#folder}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_scc_folder_scc_big_query_export#folder GoogleSccFolderSccBigQueryExport#folder}
   */
   readonly folder: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_folder_scc_big_query_export#id GoogleSccFolderSccBigQueryExport#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_scc_folder_scc_big_query_export#id GoogleSccFolderSccBigQueryExport#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -79,21 +79,21 @@ export interface GoogleSccFolderSccBigQueryExportConfig extends cdktf.TerraformM
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_folder_scc_big_query_export#timeouts GoogleSccFolderSccBigQueryExport#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_scc_folder_scc_big_query_export#timeouts GoogleSccFolderSccBigQueryExport#timeouts}
   */
   readonly timeouts?: GoogleSccFolderSccBigQueryExportTimeouts;
 }
 export interface GoogleSccFolderSccBigQueryExportTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_folder_scc_big_query_export#create GoogleSccFolderSccBigQueryExport#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_scc_folder_scc_big_query_export#create GoogleSccFolderSccBigQueryExport#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_folder_scc_big_query_export#delete GoogleSccFolderSccBigQueryExport#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_scc_folder_scc_big_query_export#delete GoogleSccFolderSccBigQueryExport#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_folder_scc_big_query_export#update GoogleSccFolderSccBigQueryExport#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_scc_folder_scc_big_query_export#update GoogleSccFolderSccBigQueryExport#update}
   */
   readonly update?: string;
 }
@@ -245,7 +245,7 @@ export class GoogleSccFolderSccBigQueryExportTimeoutsOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_folder_scc_big_query_export google_scc_folder_scc_big_query_export}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_scc_folder_scc_big_query_export google_scc_folder_scc_big_query_export}
 */
 export class GoogleSccFolderSccBigQueryExport extends cdktf.TerraformResource {
 
@@ -261,7 +261,7 @@ export class GoogleSccFolderSccBigQueryExport extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleSccFolderSccBigQueryExport resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleSccFolderSccBigQueryExport to import
-  * @param importFromId The id of the existing GoogleSccFolderSccBigQueryExport that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_folder_scc_big_query_export#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleSccFolderSccBigQueryExport that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_scc_folder_scc_big_query_export#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleSccFolderSccBigQueryExport to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -273,7 +273,7 @@ export class GoogleSccFolderSccBigQueryExport extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_scc_folder_scc_big_query_export google_scc_folder_scc_big_query_export} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_scc_folder_scc_big_query_export google_scc_folder_scc_big_query_export} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -284,7 +284,7 @@ export class GoogleSccFolderSccBigQueryExport extends cdktf.TerraformResource {
       terraformResourceType: 'google_scc_folder_scc_big_query_export',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.22.0',
+        providerVersion: '6.23.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

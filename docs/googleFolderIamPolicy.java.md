@@ -4,7 +4,7 @@
 
 ### GoogleFolderIamPolicy <a name="GoogleFolderIamPolicy" id="@cdktf/provider-google-beta.googleFolderIamPolicy.GoogleFolderIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_folder_iam_policy google_folder_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_folder_iam_policy google_folder_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFolderIamPolicy.GoogleFolderIamPolicy.Initializer"></a>
 
@@ -40,9 +40,9 @@ GoogleFolderIamPolicy.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-google-beta.googleFolderIamPolicy.GoogleFolderIamPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFolderIamPolicy.GoogleFolderIamPolicy.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFolderIamPolicy.GoogleFolderIamPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleFolderIamPolicy.GoogleFolderIamPolicy.Initializer.parameter.folder">folder</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_folder_iam_policy#folder GoogleFolderIamPolicy#folder}. |
-| <code><a href="#@cdktf/provider-google-beta.googleFolderIamPolicy.GoogleFolderIamPolicy.Initializer.parameter.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_folder_iam_policy#policy_data GoogleFolderIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleFolderIamPolicy.GoogleFolderIamPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_folder_iam_policy#id GoogleFolderIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamPolicy.GoogleFolderIamPolicy.Initializer.parameter.folder">folder</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_folder_iam_policy#folder GoogleFolderIamPolicy#folder}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamPolicy.GoogleFolderIamPolicy.Initializer.parameter.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_folder_iam_policy#policy_data GoogleFolderIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamPolicy.GoogleFolderIamPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_folder_iam_policy#id GoogleFolderIamPolicy#id}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_folder_iam_policy#folder GoogleFolderIamPolicy#folder}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_folder_iam_policy#folder GoogleFolderIamPolicy#folder}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_folder_iam_policy#policy_data GoogleFolderIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_folder_iam_policy#policy_data GoogleFolderIamPolicy#policy_data}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_folder_iam_policy#id GoogleFolderIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_folder_iam_policy#id GoogleFolderIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -563,7 +563,7 @@ The construct id used in the generated config for the GoogleFolderIamPolicy to i
 
 The id of the existing GoogleFolderIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_folder_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_folder_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -871,9 +871,9 @@ GoogleFolderIamPolicyConfig.builder()
 | <code><a href="#@cdktf/provider-google-beta.googleFolderIamPolicy.GoogleFolderIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFolderIamPolicy.GoogleFolderIamPolicyConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFolderIamPolicy.GoogleFolderIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleFolderIamPolicy.GoogleFolderIamPolicyConfig.property.folder">folder</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_folder_iam_policy#folder GoogleFolderIamPolicy#folder}. |
-| <code><a href="#@cdktf/provider-google-beta.googleFolderIamPolicy.GoogleFolderIamPolicyConfig.property.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_folder_iam_policy#policy_data GoogleFolderIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleFolderIamPolicy.GoogleFolderIamPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_folder_iam_policy#id GoogleFolderIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamPolicy.GoogleFolderIamPolicyConfig.property.folder">folder</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_folder_iam_policy#folder GoogleFolderIamPolicy#folder}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamPolicy.GoogleFolderIamPolicyConfig.property.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_folder_iam_policy#policy_data GoogleFolderIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamPolicy.GoogleFolderIamPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_folder_iam_policy#id GoogleFolderIamPolicy#id}. |
 
 ---
 
@@ -955,7 +955,7 @@ public java.lang.String getFolder();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_folder_iam_policy#folder GoogleFolderIamPolicy#folder}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_folder_iam_policy#folder GoogleFolderIamPolicy#folder}.
 
 ---
 
@@ -967,7 +967,7 @@ public java.lang.String getPolicyData();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_folder_iam_policy#policy_data GoogleFolderIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_folder_iam_policy#policy_data GoogleFolderIamPolicy#policy_data}.
 
 ---
 
@@ -979,7 +979,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_folder_iam_policy#id GoogleFolderIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_folder_iam_policy#id GoogleFolderIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
