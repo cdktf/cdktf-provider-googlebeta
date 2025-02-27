@@ -4,12 +4,12 @@
 
 ### GoogleFirebaseAppCheckAppAttestConfig <a name="GoogleFirebaseAppCheckAppAttestConfig" id="@cdktf/provider-google-beta.googleFirebaseAppCheckAppAttestConfig.GoogleFirebaseAppCheckAppAttestConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_firebase_app_check_app_attest_config google_firebase_app_check_app_attest_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_firebase_app_check_app_attest_config google_firebase_app_check_app_attest_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseAppCheckAppAttestConfig.GoogleFirebaseAppCheckAppAttestConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirebaseappcheckappattestconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseappcheckappattestconfig"
 
 googlefirebaseappcheckappattestconfig.NewGoogleFirebaseAppCheckAppAttestConfig(scope Construct, id *string, config GoogleFirebaseAppCheckAppAttestConfigConfig) GoogleFirebaseAppCheckAppAttestConfig
 ```
@@ -419,7 +419,7 @@ func ResetTokenTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleFirebaseAppCheckAppAttestConfig.GoogleFirebaseAppCheckAppAttestConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirebaseappcheckappattestconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseappcheckappattestconfig"
 
 googlefirebaseappcheckappattestconfig.GoogleFirebaseAppCheckAppAttestConfig_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleFirebaseAppCheckAppAttestConfig.GoogleFirebaseAppCheckAppAttestConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirebaseappcheckappattestconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseappcheckappattestconfig"
 
 googlefirebaseappcheckappattestconfig.GoogleFirebaseAppCheckAppAttestConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ googlefirebaseappcheckappattestconfig.GoogleFirebaseAppCheckAppAttestConfig_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleFirebaseAppCheckAppAttestConfig.GoogleFirebaseAppCheckAppAttestConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirebaseappcheckappattestconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseappcheckappattestconfig"
 
 googlefirebaseappcheckappattestconfig.GoogleFirebaseAppCheckAppAttestConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ googlefirebaseappcheckappattestconfig.GoogleFirebaseAppCheckAppAttestConfig_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleFirebaseAppCheckAppAttestConfig.GoogleFirebaseAppCheckAppAttestConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirebaseappcheckappattestconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseappcheckappattestconfig"
 
 googlefirebaseappcheckappattestconfig.GoogleFirebaseAppCheckAppAttestConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -508,7 +508,7 @@ The construct id used in the generated config for the GoogleFirebaseAppCheckAppA
 
 The id of the existing GoogleFirebaseAppCheckAppAttestConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_firebase_app_check_app_attest_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_firebase_app_check_app_attest_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -829,7 +829,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseAppCheckAppAttestConfig.GoogleFirebaseAppCheckAppAttestConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirebaseappcheckappattestconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseappcheckappattestconfig"
 
 &googlefirebaseappcheckappattestconfig.GoogleFirebaseAppCheckAppAttestConfigConfig {
 	Connection: interface{},
@@ -842,7 +842,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefireb
 	AppId: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleFirebaseAppCheckAppAttestConfig.GoogleFirebaseAppCheckAppAttestConfigTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleFirebaseAppCheckAppAttestConfig.GoogleFirebaseAppCheckAppAttestConfigTimeouts,
 	TokenTtl: *string,
 }
 ```
@@ -859,8 +859,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefireb
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckAppAttestConfig.GoogleFirebaseAppCheckAppAttestConfigConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckAppAttestConfig.GoogleFirebaseAppCheckAppAttestConfigConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckAppAttestConfig.GoogleFirebaseAppCheckAppAttestConfigConfig.property.appId">AppId</a></code> | <code>*string</code> | The ID of an [Apple App](https://firebase.google.com/docs/reference/firebase-management/rest/v1beta1/projects.iosApps#IosApp.FIELDS.app_id). |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckAppAttestConfig.GoogleFirebaseAppCheckAppAttestConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_firebase_app_check_app_attest_config#id GoogleFirebaseAppCheckAppAttestConfig#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckAppAttestConfig.GoogleFirebaseAppCheckAppAttestConfigConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_firebase_app_check_app_attest_config#project GoogleFirebaseAppCheckAppAttestConfig#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckAppAttestConfig.GoogleFirebaseAppCheckAppAttestConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_firebase_app_check_app_attest_config#id GoogleFirebaseAppCheckAppAttestConfig#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckAppAttestConfig.GoogleFirebaseAppCheckAppAttestConfigConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_firebase_app_check_app_attest_config#project GoogleFirebaseAppCheckAppAttestConfig#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckAppAttestConfig.GoogleFirebaseAppCheckAppAttestConfigConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckAppAttestConfig.GoogleFirebaseAppCheckAppAttestConfigTimeouts">GoogleFirebaseAppCheckAppAttestConfigTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckAppAttestConfig.GoogleFirebaseAppCheckAppAttestConfigConfig.property.tokenTtl">TokenTtl</a></code> | <code>*string</code> | Specifies the duration for which App Check tokens exchanged from App Attest artifacts will be valid. |
 
@@ -946,7 +946,7 @@ AppId *string
 
 The ID of an [Apple App](https://firebase.google.com/docs/reference/firebase-management/rest/v1beta1/projects.iosApps#IosApp.FIELDS.app_id).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_firebase_app_check_app_attest_config#app_id GoogleFirebaseAppCheckAppAttestConfig#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_firebase_app_check_app_attest_config#app_id GoogleFirebaseAppCheckAppAttestConfig#app_id}
 
 ---
 
@@ -958,7 +958,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_firebase_app_check_app_attest_config#id GoogleFirebaseAppCheckAppAttestConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_firebase_app_check_app_attest_config#id GoogleFirebaseAppCheckAppAttestConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -973,7 +973,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_firebase_app_check_app_attest_config#project GoogleFirebaseAppCheckAppAttestConfig#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_firebase_app_check_app_attest_config#project GoogleFirebaseAppCheckAppAttestConfig#project}.
 
 ---
 
@@ -987,7 +987,7 @@ Timeouts GoogleFirebaseAppCheckAppAttestConfigTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_firebase_app_check_app_attest_config#timeouts GoogleFirebaseAppCheckAppAttestConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_firebase_app_check_app_attest_config#timeouts GoogleFirebaseAppCheckAppAttestConfig#timeouts}
 
 ---
 
@@ -1005,7 +1005,7 @@ If unset, a default value of 1 hour is assumed. Must be between 30 minutes and 7
 
 A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_firebase_app_check_app_attest_config#token_ttl GoogleFirebaseAppCheckAppAttestConfig#token_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_firebase_app_check_app_attest_config#token_ttl GoogleFirebaseAppCheckAppAttestConfig#token_ttl}
 
 ---
 
@@ -1014,7 +1014,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseAppCheckAppAttestConfig.GoogleFirebaseAppCheckAppAttestConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirebaseappcheckappattestconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseappcheckappattestconfig"
 
 &googlefirebaseappcheckappattestconfig.GoogleFirebaseAppCheckAppAttestConfigTimeouts {
 	Create: *string,
@@ -1027,9 +1027,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefireb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckAppAttestConfig.GoogleFirebaseAppCheckAppAttestConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_firebase_app_check_app_attest_config#create GoogleFirebaseAppCheckAppAttestConfig#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckAppAttestConfig.GoogleFirebaseAppCheckAppAttestConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_firebase_app_check_app_attest_config#delete GoogleFirebaseAppCheckAppAttestConfig#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckAppAttestConfig.GoogleFirebaseAppCheckAppAttestConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_firebase_app_check_app_attest_config#update GoogleFirebaseAppCheckAppAttestConfig#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckAppAttestConfig.GoogleFirebaseAppCheckAppAttestConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_firebase_app_check_app_attest_config#create GoogleFirebaseAppCheckAppAttestConfig#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckAppAttestConfig.GoogleFirebaseAppCheckAppAttestConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_firebase_app_check_app_attest_config#delete GoogleFirebaseAppCheckAppAttestConfig#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckAppAttestConfig.GoogleFirebaseAppCheckAppAttestConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_firebase_app_check_app_attest_config#update GoogleFirebaseAppCheckAppAttestConfig#update}. |
 
 ---
 
@@ -1041,7 +1041,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_firebase_app_check_app_attest_config#create GoogleFirebaseAppCheckAppAttestConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_firebase_app_check_app_attest_config#create GoogleFirebaseAppCheckAppAttestConfig#create}.
 
 ---
 
@@ -1053,7 +1053,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_firebase_app_check_app_attest_config#delete GoogleFirebaseAppCheckAppAttestConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_firebase_app_check_app_attest_config#delete GoogleFirebaseAppCheckAppAttestConfig#delete}.
 
 ---
 
@@ -1065,7 +1065,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_firebase_app_check_app_attest_config#update GoogleFirebaseAppCheckAppAttestConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_firebase_app_check_app_attest_config#update GoogleFirebaseAppCheckAppAttestConfig#update}.
 
 ---
 
@@ -1076,7 +1076,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseAppCheckAppAttestConfig.GoogleFirebaseAppCheckAppAttestConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirebaseappcheckappattestconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseappcheckappattestconfig"
 
 googlefirebaseappcheckappattestconfig.NewGoogleFirebaseAppCheckAppAttestConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleFirebaseAppCheckAppAttestConfigTimeoutsOutputReference
 ```

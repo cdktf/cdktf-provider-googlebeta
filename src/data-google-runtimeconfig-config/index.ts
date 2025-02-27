@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/data-sources/google_runtimeconfig_config
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/data-sources/google_runtimeconfig_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataGoogleRuntimeconfigConfigConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/data-sources/google_runtimeconfig_config#id DataGoogleRuntimeconfigConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/data-sources/google_runtimeconfig_config#id DataGoogleRuntimeconfigConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +17,19 @@ export interface DataGoogleRuntimeconfigConfigConfig extends cdktf.TerraformMeta
   /**
   * The name of the runtime config.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/data-sources/google_runtimeconfig_config#name DataGoogleRuntimeconfigConfig#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/data-sources/google_runtimeconfig_config#name DataGoogleRuntimeconfigConfig#name}
   */
   readonly name: string;
   /**
   * The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/data-sources/google_runtimeconfig_config#project DataGoogleRuntimeconfigConfig#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/data-sources/google_runtimeconfig_config#project DataGoogleRuntimeconfigConfig#project}
   */
   readonly project?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/data-sources/google_runtimeconfig_config google_runtimeconfig_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/data-sources/google_runtimeconfig_config google_runtimeconfig_config}
 */
 export class DataGoogleRuntimeconfigConfig extends cdktf.TerraformDataSource {
 
@@ -50,7 +45,7 @@ export class DataGoogleRuntimeconfigConfig extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGoogleRuntimeconfigConfig resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleRuntimeconfigConfig to import
-  * @param importFromId The id of the existing DataGoogleRuntimeconfigConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/data-sources/google_runtimeconfig_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleRuntimeconfigConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/data-sources/google_runtimeconfig_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleRuntimeconfigConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +57,7 @@ export class DataGoogleRuntimeconfigConfig extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/data-sources/google_runtimeconfig_config google_runtimeconfig_config} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/data-sources/google_runtimeconfig_config google_runtimeconfig_config} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +68,7 @@ export class DataGoogleRuntimeconfigConfig extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_runtimeconfig_config',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.22.0',
+        providerVersion: '6.23.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### GoogleDataplexEntryGroup <a name="GoogleDataplexEntryGroup" id="@cdktf/provider-google-beta.googleDataplexEntryGroup.GoogleDataplexEntryGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group google_dataplex_entry_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_group google_dataplex_entry_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexEntryGroup.GoogleDataplexEntryGroup.Initializer"></a>
 
@@ -46,10 +46,10 @@ googleDataplexEntryGroup.GoogleDataplexEntryGroup(
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroup.GoogleDataplexEntryGroup.Initializer.parameter.description">description</a></code> | <code>str</code> | Description of the EntryGroup. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroup.GoogleDataplexEntryGroup.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | User friendly display name. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroup.GoogleDataplexEntryGroup.Initializer.parameter.entryGroupId">entry_group_id</a></code> | <code>str</code> | The entry group id of the entry group. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroup.GoogleDataplexEntryGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group#id GoogleDataplexEntryGroup#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroup.GoogleDataplexEntryGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_group#id GoogleDataplexEntryGroup#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroup.GoogleDataplexEntryGroup.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | User-defined labels for the EntryGroup. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroup.GoogleDataplexEntryGroup.Initializer.parameter.location">location</a></code> | <code>str</code> | The location where entry group will be created in. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroup.GoogleDataplexEntryGroup.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group#project GoogleDataplexEntryGroup#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroup.GoogleDataplexEntryGroup.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_group#project GoogleDataplexEntryGroup#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroup.GoogleDataplexEntryGroup.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroup.GoogleDataplexEntryGroupTimeouts">GoogleDataplexEntryGroupTimeouts</a></code> | timeouts block. |
 
 ---
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 Description of the EntryGroup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group#description GoogleDataplexEntryGroup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_group#description GoogleDataplexEntryGroup#description}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 User friendly display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group#display_name GoogleDataplexEntryGroup#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_group#display_name GoogleDataplexEntryGroup#display_name}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The entry group id of the entry group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group#entry_group_id GoogleDataplexEntryGroup#entry_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_group#entry_group_id GoogleDataplexEntryGroup#entry_group_id}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group#id GoogleDataplexEntryGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_group#id GoogleDataplexEntryGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -164,7 +164,7 @@ User-defined labels for the EntryGroup.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group#labels GoogleDataplexEntryGroup#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_group#labels GoogleDataplexEntryGroup#labels}
 
 ---
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The location where entry group will be created in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group#location GoogleDataplexEntryGroup#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_group#location GoogleDataplexEntryGroup#location}
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group#project GoogleDataplexEntryGroup#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_group#project GoogleDataplexEntryGroup#project}.
 
 ---
 
@@ -192,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group#timeouts GoogleDataplexEntryGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_group#timeouts GoogleDataplexEntryGroup#timeouts}
 
 ---
 
@@ -574,7 +574,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group#create GoogleDataplexEntryGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_group#create GoogleDataplexEntryGroup#create}.
 
 ---
 
@@ -582,7 +582,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group#delete GoogleDataplexEntryGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_group#delete GoogleDataplexEntryGroup#delete}.
 
 ---
 
@@ -590,7 +590,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group#update GoogleDataplexEntryGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_group#update GoogleDataplexEntryGroup#update}.
 
 ---
 
@@ -756,7 +756,7 @@ The construct id used in the generated config for the GoogleDataplexEntryGroup t
 
 The id of the existing GoogleDataplexEntryGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1244,10 +1244,10 @@ googleDataplexEntryGroup.GoogleDataplexEntryGroupConfig(
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroup.GoogleDataplexEntryGroupConfig.property.description">description</a></code> | <code>str</code> | Description of the EntryGroup. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroup.GoogleDataplexEntryGroupConfig.property.displayName">display_name</a></code> | <code>str</code> | User friendly display name. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroup.GoogleDataplexEntryGroupConfig.property.entryGroupId">entry_group_id</a></code> | <code>str</code> | The entry group id of the entry group. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroup.GoogleDataplexEntryGroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group#id GoogleDataplexEntryGroup#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroup.GoogleDataplexEntryGroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_group#id GoogleDataplexEntryGroup#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroup.GoogleDataplexEntryGroupConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | User-defined labels for the EntryGroup. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroup.GoogleDataplexEntryGroupConfig.property.location">location</a></code> | <code>str</code> | The location where entry group will be created in. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroup.GoogleDataplexEntryGroupConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group#project GoogleDataplexEntryGroup#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroup.GoogleDataplexEntryGroupConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_group#project GoogleDataplexEntryGroup#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroup.GoogleDataplexEntryGroupConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroup.GoogleDataplexEntryGroupTimeouts">GoogleDataplexEntryGroupTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1332,7 +1332,7 @@ description: str
 
 Description of the EntryGroup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group#description GoogleDataplexEntryGroup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_group#description GoogleDataplexEntryGroup#description}
 
 ---
 
@@ -1346,7 +1346,7 @@ display_name: str
 
 User friendly display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group#display_name GoogleDataplexEntryGroup#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_group#display_name GoogleDataplexEntryGroup#display_name}
 
 ---
 
@@ -1360,7 +1360,7 @@ entry_group_id: str
 
 The entry group id of the entry group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group#entry_group_id GoogleDataplexEntryGroup#entry_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_group#entry_group_id GoogleDataplexEntryGroup#entry_group_id}
 
 ---
 
@@ -1372,7 +1372,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group#id GoogleDataplexEntryGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_group#id GoogleDataplexEntryGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1392,7 +1392,7 @@ User-defined labels for the EntryGroup.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group#labels GoogleDataplexEntryGroup#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_group#labels GoogleDataplexEntryGroup#labels}
 
 ---
 
@@ -1406,7 +1406,7 @@ location: str
 
 The location where entry group will be created in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group#location GoogleDataplexEntryGroup#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_group#location GoogleDataplexEntryGroup#location}
 
 ---
 
@@ -1418,7 +1418,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group#project GoogleDataplexEntryGroup#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_group#project GoogleDataplexEntryGroup#project}.
 
 ---
 
@@ -1432,7 +1432,7 @@ timeouts: GoogleDataplexEntryGroupTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group#timeouts GoogleDataplexEntryGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_group#timeouts GoogleDataplexEntryGroup#timeouts}
 
 ---
 
@@ -1454,9 +1454,9 @@ googleDataplexEntryGroup.GoogleDataplexEntryGroupTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroup.GoogleDataplexEntryGroupTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group#create GoogleDataplexEntryGroup#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroup.GoogleDataplexEntryGroupTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group#delete GoogleDataplexEntryGroup#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroup.GoogleDataplexEntryGroupTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group#update GoogleDataplexEntryGroup#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroup.GoogleDataplexEntryGroupTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_group#create GoogleDataplexEntryGroup#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroup.GoogleDataplexEntryGroupTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_group#delete GoogleDataplexEntryGroup#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexEntryGroup.GoogleDataplexEntryGroupTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_group#update GoogleDataplexEntryGroup#update}. |
 
 ---
 
@@ -1468,7 +1468,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group#create GoogleDataplexEntryGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_group#create GoogleDataplexEntryGroup#create}.
 
 ---
 
@@ -1480,7 +1480,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group#delete GoogleDataplexEntryGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_group#delete GoogleDataplexEntryGroup#delete}.
 
 ---
 
@@ -1492,7 +1492,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_group#update GoogleDataplexEntryGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_group#update GoogleDataplexEntryGroup#update}.
 
 ---
 

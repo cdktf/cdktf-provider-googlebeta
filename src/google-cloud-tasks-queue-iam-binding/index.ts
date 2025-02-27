@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_cloud_tasks_queue_iam_binding
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_cloud_tasks_queue_iam_binding
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +8,50 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleCloudTasksQueueIamBindingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_cloud_tasks_queue_iam_binding#id GoogleCloudTasksQueueIamBinding#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_cloud_tasks_queue_iam_binding#id GoogleCloudTasksQueueIamBinding#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_cloud_tasks_queue_iam_binding#location GoogleCloudTasksQueueIamBinding#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_cloud_tasks_queue_iam_binding#location GoogleCloudTasksQueueIamBinding#location}
   */
   readonly location?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_cloud_tasks_queue_iam_binding#members GoogleCloudTasksQueueIamBinding#members}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_cloud_tasks_queue_iam_binding#members GoogleCloudTasksQueueIamBinding#members}
   */
   readonly members: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_cloud_tasks_queue_iam_binding#name GoogleCloudTasksQueueIamBinding#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_cloud_tasks_queue_iam_binding#name GoogleCloudTasksQueueIamBinding#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_cloud_tasks_queue_iam_binding#project GoogleCloudTasksQueueIamBinding#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_cloud_tasks_queue_iam_binding#project GoogleCloudTasksQueueIamBinding#project}
   */
   readonly project?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_cloud_tasks_queue_iam_binding#role GoogleCloudTasksQueueIamBinding#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_cloud_tasks_queue_iam_binding#role GoogleCloudTasksQueueIamBinding#role}
   */
   readonly role: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_cloud_tasks_queue_iam_binding#condition GoogleCloudTasksQueueIamBinding#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_cloud_tasks_queue_iam_binding#condition GoogleCloudTasksQueueIamBinding#condition}
   */
   readonly condition?: GoogleCloudTasksQueueIamBindingCondition;
 }
 export interface GoogleCloudTasksQueueIamBindingCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_cloud_tasks_queue_iam_binding#description GoogleCloudTasksQueueIamBinding#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_cloud_tasks_queue_iam_binding#description GoogleCloudTasksQueueIamBinding#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_cloud_tasks_queue_iam_binding#expression GoogleCloudTasksQueueIamBinding#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_cloud_tasks_queue_iam_binding#expression GoogleCloudTasksQueueIamBinding#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_cloud_tasks_queue_iam_binding#title GoogleCloudTasksQueueIamBinding#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_cloud_tasks_queue_iam_binding#title GoogleCloudTasksQueueIamBinding#title}
   */
   readonly title: string;
 }
@@ -192,7 +187,7 @@ export class GoogleCloudTasksQueueIamBindingConditionOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_cloud_tasks_queue_iam_binding google_cloud_tasks_queue_iam_binding}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_cloud_tasks_queue_iam_binding google_cloud_tasks_queue_iam_binding}
 */
 export class GoogleCloudTasksQueueIamBinding extends cdktf.TerraformResource {
 
@@ -208,7 +203,7 @@ export class GoogleCloudTasksQueueIamBinding extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleCloudTasksQueueIamBinding resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleCloudTasksQueueIamBinding to import
-  * @param importFromId The id of the existing GoogleCloudTasksQueueIamBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_cloud_tasks_queue_iam_binding#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleCloudTasksQueueIamBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_cloud_tasks_queue_iam_binding#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleCloudTasksQueueIamBinding to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -220,7 +215,7 @@ export class GoogleCloudTasksQueueIamBinding extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_cloud_tasks_queue_iam_binding google_cloud_tasks_queue_iam_binding} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_cloud_tasks_queue_iam_binding google_cloud_tasks_queue_iam_binding} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -231,7 +226,7 @@ export class GoogleCloudTasksQueueIamBinding extends cdktf.TerraformResource {
       terraformResourceType: 'google_cloud_tasks_queue_iam_binding',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.22.0',
+        providerVersion: '6.23.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

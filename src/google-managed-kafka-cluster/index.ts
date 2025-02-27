@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_managed_kafka_cluster
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_managed_kafka_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface GoogleManagedKafkaClusterConfig extends cdktf.TerraformMetaArgu
   /**
   * The ID to use for the cluster, which will become the final component of the cluster's name. The ID must be 1-63 characters long, and match the regular expression '[a-z]([-a-z0-9]*[a-z0-9])?' to comply with RFC 1035. This value is structured like: 'my-cluster-id'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_managed_kafka_cluster#cluster_id GoogleManagedKafkaCluster#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_managed_kafka_cluster#cluster_id GoogleManagedKafkaCluster#cluster_id}
   */
   readonly clusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_managed_kafka_cluster#id GoogleManagedKafkaCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_managed_kafka_cluster#id GoogleManagedKafkaCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -31,41 +26,41 @@ export interface GoogleManagedKafkaClusterConfig extends cdktf.TerraformMetaArgu
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_managed_kafka_cluster#labels GoogleManagedKafkaCluster#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_managed_kafka_cluster#labels GoogleManagedKafkaCluster#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * ID of the location of the Kafka resource. See https://cloud.google.com/managed-kafka/docs/locations for a list of supported locations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_managed_kafka_cluster#location GoogleManagedKafkaCluster#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_managed_kafka_cluster#location GoogleManagedKafkaCluster#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_managed_kafka_cluster#project GoogleManagedKafkaCluster#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_managed_kafka_cluster#project GoogleManagedKafkaCluster#project}
   */
   readonly project?: string;
   /**
   * capacity_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_managed_kafka_cluster#capacity_config GoogleManagedKafkaCluster#capacity_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_managed_kafka_cluster#capacity_config GoogleManagedKafkaCluster#capacity_config}
   */
   readonly capacityConfig: GoogleManagedKafkaClusterCapacityConfig;
   /**
   * gcp_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_managed_kafka_cluster#gcp_config GoogleManagedKafkaCluster#gcp_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_managed_kafka_cluster#gcp_config GoogleManagedKafkaCluster#gcp_config}
   */
   readonly gcpConfig: GoogleManagedKafkaClusterGcpConfig;
   /**
   * rebalance_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_managed_kafka_cluster#rebalance_config GoogleManagedKafkaCluster#rebalance_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_managed_kafka_cluster#rebalance_config GoogleManagedKafkaCluster#rebalance_config}
   */
   readonly rebalanceConfig?: GoogleManagedKafkaClusterRebalanceConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_managed_kafka_cluster#timeouts GoogleManagedKafkaCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_managed_kafka_cluster#timeouts GoogleManagedKafkaCluster#timeouts}
   */
   readonly timeouts?: GoogleManagedKafkaClusterTimeouts;
 }
@@ -73,13 +68,13 @@ export interface GoogleManagedKafkaClusterCapacityConfig {
   /**
   * The memory to provision for the cluster in bytes. The value must be between 1 GiB and 8 GiB per vCPU. Ex. 1024Mi, 4Gi.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_managed_kafka_cluster#memory_bytes GoogleManagedKafkaCluster#memory_bytes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_managed_kafka_cluster#memory_bytes GoogleManagedKafkaCluster#memory_bytes}
   */
   readonly memoryBytes: string;
   /**
   * The number of vCPUs to provision for the cluster. The minimum is 3.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_managed_kafka_cluster#vcpu_count GoogleManagedKafkaCluster#vcpu_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_managed_kafka_cluster#vcpu_count GoogleManagedKafkaCluster#vcpu_count}
   */
   readonly vcpuCount: string;
 }
@@ -188,7 +183,7 @@ export interface GoogleManagedKafkaClusterGcpConfigAccessConfigNetworkConfigs {
   /**
   * Name of the VPC subnet from which the cluster is accessible. Both broker and bootstrap server IP addresses and DNS entries are automatically created in the subnet. The subnet must be located in the same region as the cluster. The project may differ. The name of the subnet must be in the format 'projects/PROJECT_ID/regions/REGION/subnetworks/SUBNET'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_managed_kafka_cluster#subnet GoogleManagedKafkaCluster#subnet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_managed_kafka_cluster#subnet GoogleManagedKafkaCluster#subnet}
   */
   readonly subnet: string;
 }
@@ -303,7 +298,7 @@ export interface GoogleManagedKafkaClusterGcpConfigAccessConfig {
   /**
   * network_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_managed_kafka_cluster#network_configs GoogleManagedKafkaCluster#network_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_managed_kafka_cluster#network_configs GoogleManagedKafkaCluster#network_configs}
   */
   readonly networkConfigs: GoogleManagedKafkaClusterGcpConfigAccessConfigNetworkConfigs[] | cdktf.IResolvable;
 }
@@ -386,13 +381,13 @@ export interface GoogleManagedKafkaClusterGcpConfig {
   /**
   * The Cloud KMS Key name to use for encryption. The key must be located in the same region as the cluster and cannot be changed. Must be in the format 'projects/PROJECT_ID/locations/LOCATION/keyRings/KEY_RING/cryptoKeys/KEY'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_managed_kafka_cluster#kms_key GoogleManagedKafkaCluster#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_managed_kafka_cluster#kms_key GoogleManagedKafkaCluster#kms_key}
   */
   readonly kmsKey?: string;
   /**
   * access_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_managed_kafka_cluster#access_config GoogleManagedKafkaCluster#access_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_managed_kafka_cluster#access_config GoogleManagedKafkaCluster#access_config}
   */
   readonly accessConfig: GoogleManagedKafkaClusterGcpConfigAccessConfig;
 }
@@ -504,7 +499,7 @@ export interface GoogleManagedKafkaClusterRebalanceConfig {
   /**
   * The rebalance behavior for the cluster. When not specified, defaults to 'NO_REBALANCE'. Possible values: 'MODE_UNSPECIFIED', 'NO_REBALANCE', 'AUTO_REBALANCE_ON_SCALE_UP'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_managed_kafka_cluster#mode GoogleManagedKafkaCluster#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_managed_kafka_cluster#mode GoogleManagedKafkaCluster#mode}
   */
   readonly mode?: string;
 }
@@ -588,15 +583,15 @@ export class GoogleManagedKafkaClusterRebalanceConfigOutputReference extends cdk
 }
 export interface GoogleManagedKafkaClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_managed_kafka_cluster#create GoogleManagedKafkaCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_managed_kafka_cluster#create GoogleManagedKafkaCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_managed_kafka_cluster#delete GoogleManagedKafkaCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_managed_kafka_cluster#delete GoogleManagedKafkaCluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_managed_kafka_cluster#update GoogleManagedKafkaCluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_managed_kafka_cluster#update GoogleManagedKafkaCluster#update}
   */
   readonly update?: string;
 }
@@ -748,7 +743,7 @@ export class GoogleManagedKafkaClusterTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_managed_kafka_cluster google_managed_kafka_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_managed_kafka_cluster google_managed_kafka_cluster}
 */
 export class GoogleManagedKafkaCluster extends cdktf.TerraformResource {
 
@@ -764,7 +759,7 @@ export class GoogleManagedKafkaCluster extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleManagedKafkaCluster resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleManagedKafkaCluster to import
-  * @param importFromId The id of the existing GoogleManagedKafkaCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_managed_kafka_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleManagedKafkaCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_managed_kafka_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleManagedKafkaCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -776,7 +771,7 @@ export class GoogleManagedKafkaCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_managed_kafka_cluster google_managed_kafka_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_managed_kafka_cluster google_managed_kafka_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -787,7 +782,7 @@ export class GoogleManagedKafkaCluster extends cdktf.TerraformResource {
       terraformResourceType: 'google_managed_kafka_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.22.0',
+        providerVersion: '6.23.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

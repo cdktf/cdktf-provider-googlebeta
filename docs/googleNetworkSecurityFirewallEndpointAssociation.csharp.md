@@ -4,7 +4,7 @@
 
 ### GoogleNetworkSecurityFirewallEndpointAssociation <a name="GoogleNetworkSecurityFirewallEndpointAssociation" id="@cdktf/provider-google-beta.googleNetworkSecurityFirewallEndpointAssociation.GoogleNetworkSecurityFirewallEndpointAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_network_security_firewall_endpoint_association google_network_security_firewall_endpoint_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_network_security_firewall_endpoint_association google_network_security_firewall_endpoint_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkSecurityFirewallEndpointAssociation.GoogleNetworkSecurityFirewallEndpointAssociation.Initializer"></a>
 
@@ -522,7 +522,7 @@ The construct id used in the generated config for the GoogleNetworkSecurityFirew
 
 The id of the existing GoogleNetworkSecurityFirewallEndpointAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_network_security_firewall_endpoint_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_network_security_firewall_endpoint_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1058,7 +1058,7 @@ new GoogleNetworkSecurityFirewallEndpointAssociationConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkSecurityFirewallEndpointAssociation.GoogleNetworkSecurityFirewallEndpointAssociationConfig.property.name">Name</a></code> | <code>string</code> | The name of the firewall endpoint association resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkSecurityFirewallEndpointAssociation.GoogleNetworkSecurityFirewallEndpointAssociationConfig.property.network">Network</a></code> | <code>string</code> | The URL of the network that is being associated. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkSecurityFirewallEndpointAssociation.GoogleNetworkSecurityFirewallEndpointAssociationConfig.property.disabled">Disabled</a></code> | <code>object</code> | Whether the association is disabled. True indicates that traffic will not be intercepted. |
-| <code><a href="#@cdktf/provider-google-beta.googleNetworkSecurityFirewallEndpointAssociation.GoogleNetworkSecurityFirewallEndpointAssociationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_network_security_firewall_endpoint_association#id GoogleNetworkSecurityFirewallEndpointAssociation#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetworkSecurityFirewallEndpointAssociation.GoogleNetworkSecurityFirewallEndpointAssociationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_network_security_firewall_endpoint_association#id GoogleNetworkSecurityFirewallEndpointAssociation#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkSecurityFirewallEndpointAssociation.GoogleNetworkSecurityFirewallEndpointAssociationConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of key/value label pairs to assign to the resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkSecurityFirewallEndpointAssociation.GoogleNetworkSecurityFirewallEndpointAssociationConfig.property.parent">Parent</a></code> | <code>string</code> | The name of the parent this firewall endpoint association belongs to. Format: projects/{project_id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkSecurityFirewallEndpointAssociation.GoogleNetworkSecurityFirewallEndpointAssociationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleNetworkSecurityFirewallEndpointAssociation.GoogleNetworkSecurityFirewallEndpointAssociationTimeouts">GoogleNetworkSecurityFirewallEndpointAssociationTimeouts</a></code> | timeouts block. |
@@ -1146,7 +1146,7 @@ public string FirewallEndpoint { get; set; }
 
 The URL of the firewall endpoint that is being associated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_network_security_firewall_endpoint_association#firewall_endpoint GoogleNetworkSecurityFirewallEndpointAssociation#firewall_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_network_security_firewall_endpoint_association#firewall_endpoint GoogleNetworkSecurityFirewallEndpointAssociation#firewall_endpoint}
 
 ---
 
@@ -1160,7 +1160,7 @@ public string Location { get; set; }
 
 The location (zone) of the firewall endpoint association.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_network_security_firewall_endpoint_association#location GoogleNetworkSecurityFirewallEndpointAssociation#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_network_security_firewall_endpoint_association#location GoogleNetworkSecurityFirewallEndpointAssociation#location}
 
 ---
 
@@ -1174,7 +1174,7 @@ public string Name { get; set; }
 
 The name of the firewall endpoint association resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_network_security_firewall_endpoint_association#name GoogleNetworkSecurityFirewallEndpointAssociation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_network_security_firewall_endpoint_association#name GoogleNetworkSecurityFirewallEndpointAssociation#name}
 
 ---
 
@@ -1188,7 +1188,7 @@ public string Network { get; set; }
 
 The URL of the network that is being associated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_network_security_firewall_endpoint_association#network GoogleNetworkSecurityFirewallEndpointAssociation#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_network_security_firewall_endpoint_association#network GoogleNetworkSecurityFirewallEndpointAssociation#network}
 
 ---
 
@@ -1205,7 +1205,7 @@ Whether the association is disabled. True indicates that traffic will not be int
 ~> **Note:** The API will reject the request if this value is set to true when creating the resource,
 otherwise on an update the association can be disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_network_security_firewall_endpoint_association#disabled GoogleNetworkSecurityFirewallEndpointAssociation#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_network_security_firewall_endpoint_association#disabled GoogleNetworkSecurityFirewallEndpointAssociation#disabled}
 
 ---
 
@@ -1217,7 +1217,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_network_security_firewall_endpoint_association#id GoogleNetworkSecurityFirewallEndpointAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_network_security_firewall_endpoint_association#id GoogleNetworkSecurityFirewallEndpointAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1237,7 +1237,7 @@ A map of key/value label pairs to assign to the resource.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_network_security_firewall_endpoint_association#labels GoogleNetworkSecurityFirewallEndpointAssociation#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_network_security_firewall_endpoint_association#labels GoogleNetworkSecurityFirewallEndpointAssociation#labels}
 
 ---
 
@@ -1251,7 +1251,7 @@ public string Parent { get; set; }
 
 The name of the parent this firewall endpoint association belongs to. Format: projects/{project_id}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_network_security_firewall_endpoint_association#parent GoogleNetworkSecurityFirewallEndpointAssociation#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_network_security_firewall_endpoint_association#parent GoogleNetworkSecurityFirewallEndpointAssociation#parent}
 
 ---
 
@@ -1265,7 +1265,7 @@ public GoogleNetworkSecurityFirewallEndpointAssociationTimeouts Timeouts { get; 
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_network_security_firewall_endpoint_association#timeouts GoogleNetworkSecurityFirewallEndpointAssociation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_network_security_firewall_endpoint_association#timeouts GoogleNetworkSecurityFirewallEndpointAssociation#timeouts}
 
 ---
 
@@ -1279,7 +1279,7 @@ public string TlsInspectionPolicy { get; set; }
 
 The URL of the TlsInspectionPolicy that is being associated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_network_security_firewall_endpoint_association#tls_inspection_policy GoogleNetworkSecurityFirewallEndpointAssociation#tls_inspection_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_network_security_firewall_endpoint_association#tls_inspection_policy GoogleNetworkSecurityFirewallEndpointAssociation#tls_inspection_policy}
 
 ---
 
@@ -1301,9 +1301,9 @@ new GoogleNetworkSecurityFirewallEndpointAssociationTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleNetworkSecurityFirewallEndpointAssociation.GoogleNetworkSecurityFirewallEndpointAssociationTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_network_security_firewall_endpoint_association#create GoogleNetworkSecurityFirewallEndpointAssociation#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleNetworkSecurityFirewallEndpointAssociation.GoogleNetworkSecurityFirewallEndpointAssociationTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_network_security_firewall_endpoint_association#delete GoogleNetworkSecurityFirewallEndpointAssociation#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleNetworkSecurityFirewallEndpointAssociation.GoogleNetworkSecurityFirewallEndpointAssociationTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_network_security_firewall_endpoint_association#update GoogleNetworkSecurityFirewallEndpointAssociation#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetworkSecurityFirewallEndpointAssociation.GoogleNetworkSecurityFirewallEndpointAssociationTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_network_security_firewall_endpoint_association#create GoogleNetworkSecurityFirewallEndpointAssociation#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetworkSecurityFirewallEndpointAssociation.GoogleNetworkSecurityFirewallEndpointAssociationTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_network_security_firewall_endpoint_association#delete GoogleNetworkSecurityFirewallEndpointAssociation#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetworkSecurityFirewallEndpointAssociation.GoogleNetworkSecurityFirewallEndpointAssociationTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_network_security_firewall_endpoint_association#update GoogleNetworkSecurityFirewallEndpointAssociation#update}. |
 
 ---
 
@@ -1315,7 +1315,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_network_security_firewall_endpoint_association#create GoogleNetworkSecurityFirewallEndpointAssociation#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_network_security_firewall_endpoint_association#create GoogleNetworkSecurityFirewallEndpointAssociation#create}.
 
 ---
 
@@ -1327,7 +1327,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_network_security_firewall_endpoint_association#delete GoogleNetworkSecurityFirewallEndpointAssociation#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_network_security_firewall_endpoint_association#delete GoogleNetworkSecurityFirewallEndpointAssociation#delete}.
 
 ---
 
@@ -1339,7 +1339,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_network_security_firewall_endpoint_association#update GoogleNetworkSecurityFirewallEndpointAssociation#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_network_security_firewall_endpoint_association#update GoogleNetworkSecurityFirewallEndpointAssociation#update}.
 
 ---
 

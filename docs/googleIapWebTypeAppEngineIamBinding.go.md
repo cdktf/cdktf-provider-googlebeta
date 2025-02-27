@@ -4,12 +4,12 @@
 
 ### GoogleIapWebTypeAppEngineIamBinding <a name="GoogleIapWebTypeAppEngineIamBinding" id="@cdktf/provider-google-beta.googleIapWebTypeAppEngineIamBinding.GoogleIapWebTypeAppEngineIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_iap_web_type_app_engine_iam_binding google_iap_web_type_app_engine_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_iap_web_type_app_engine_iam_binding google_iap_web_type_app_engine_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIapWebTypeAppEngineIamBinding.GoogleIapWebTypeAppEngineIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiapwebtypeappengineiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebtypeappengineiambinding"
 
 googleiapwebtypeappengineiambinding.NewGoogleIapWebTypeAppEngineIamBinding(scope Construct, id *string, config GoogleIapWebTypeAppEngineIamBindingConfig) GoogleIapWebTypeAppEngineIamBinding
 ```
@@ -412,7 +412,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleIapWebTypeAppEngineIamBinding.GoogleIapWebTypeAppEngineIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiapwebtypeappengineiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebtypeappengineiambinding"
 
 googleiapwebtypeappengineiambinding.GoogleIapWebTypeAppEngineIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleIapWebTypeAppEngineIamBinding.GoogleIapWebTypeAppEngineIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiapwebtypeappengineiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebtypeappengineiambinding"
 
 googleiapwebtypeappengineiambinding.GoogleIapWebTypeAppEngineIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ googleiapwebtypeappengineiambinding.GoogleIapWebTypeAppEngineIamBinding_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleIapWebTypeAppEngineIamBinding.GoogleIapWebTypeAppEngineIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiapwebtypeappengineiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebtypeappengineiambinding"
 
 googleiapwebtypeappengineiambinding.GoogleIapWebTypeAppEngineIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ googleiapwebtypeappengineiambinding.GoogleIapWebTypeAppEngineIamBinding_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleIapWebTypeAppEngineIamBinding.GoogleIapWebTypeAppEngineIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiapwebtypeappengineiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebtypeappengineiambinding"
 
 googleiapwebtypeappengineiambinding.GoogleIapWebTypeAppEngineIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the GoogleIapWebTypeAppEngineI
 
 The id of the existing GoogleIapWebTypeAppEngineIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_iap_web_type_app_engine_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_iap_web_type_app_engine_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -844,7 +844,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIapWebTypeAppEngineIamBinding.GoogleIapWebTypeAppEngineIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiapwebtypeappengineiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebtypeappengineiambinding"
 
 &googleiapwebtypeappengineiambinding.GoogleIapWebTypeAppEngineIamBindingCondition {
 	Expression: *string,
@@ -857,9 +857,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiapwe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeAppEngineIamBinding.GoogleIapWebTypeAppEngineIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_iap_web_type_app_engine_iam_binding#expression GoogleIapWebTypeAppEngineIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeAppEngineIamBinding.GoogleIapWebTypeAppEngineIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_iap_web_type_app_engine_iam_binding#title GoogleIapWebTypeAppEngineIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeAppEngineIamBinding.GoogleIapWebTypeAppEngineIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_iap_web_type_app_engine_iam_binding#description GoogleIapWebTypeAppEngineIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeAppEngineIamBinding.GoogleIapWebTypeAppEngineIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_iap_web_type_app_engine_iam_binding#expression GoogleIapWebTypeAppEngineIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeAppEngineIamBinding.GoogleIapWebTypeAppEngineIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_iap_web_type_app_engine_iam_binding#title GoogleIapWebTypeAppEngineIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeAppEngineIamBinding.GoogleIapWebTypeAppEngineIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_iap_web_type_app_engine_iam_binding#description GoogleIapWebTypeAppEngineIamBinding#description}. |
 
 ---
 
@@ -871,7 +871,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_iap_web_type_app_engine_iam_binding#expression GoogleIapWebTypeAppEngineIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_iap_web_type_app_engine_iam_binding#expression GoogleIapWebTypeAppEngineIamBinding#expression}.
 
 ---
 
@@ -883,7 +883,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_iap_web_type_app_engine_iam_binding#title GoogleIapWebTypeAppEngineIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_iap_web_type_app_engine_iam_binding#title GoogleIapWebTypeAppEngineIamBinding#title}.
 
 ---
 
@@ -895,7 +895,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_iap_web_type_app_engine_iam_binding#description GoogleIapWebTypeAppEngineIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_iap_web_type_app_engine_iam_binding#description GoogleIapWebTypeAppEngineIamBinding#description}.
 
 ---
 
@@ -904,7 +904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIapWebTypeAppEngineIamBinding.GoogleIapWebTypeAppEngineIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiapwebtypeappengineiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebtypeappengineiambinding"
 
 &googleiapwebtypeappengineiambinding.GoogleIapWebTypeAppEngineIamBindingConfig {
 	Connection: interface{},
@@ -917,7 +917,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiapwe
 	AppId: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleIapWebTypeAppEngineIamBinding.GoogleIapWebTypeAppEngineIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIapWebTypeAppEngineIamBinding.GoogleIapWebTypeAppEngineIamBindingCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -934,12 +934,12 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiapwe
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeAppEngineIamBinding.GoogleIapWebTypeAppEngineIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeAppEngineIamBinding.GoogleIapWebTypeAppEngineIamBindingConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeAppEngineIamBinding.GoogleIapWebTypeAppEngineIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeAppEngineIamBinding.GoogleIapWebTypeAppEngineIamBindingConfig.property.appId">AppId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_iap_web_type_app_engine_iam_binding#app_id GoogleIapWebTypeAppEngineIamBinding#app_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeAppEngineIamBinding.GoogleIapWebTypeAppEngineIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_iap_web_type_app_engine_iam_binding#members GoogleIapWebTypeAppEngineIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeAppEngineIamBinding.GoogleIapWebTypeAppEngineIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_iap_web_type_app_engine_iam_binding#role GoogleIapWebTypeAppEngineIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeAppEngineIamBinding.GoogleIapWebTypeAppEngineIamBindingConfig.property.appId">AppId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_iap_web_type_app_engine_iam_binding#app_id GoogleIapWebTypeAppEngineIamBinding#app_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeAppEngineIamBinding.GoogleIapWebTypeAppEngineIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_iap_web_type_app_engine_iam_binding#members GoogleIapWebTypeAppEngineIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeAppEngineIamBinding.GoogleIapWebTypeAppEngineIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_iap_web_type_app_engine_iam_binding#role GoogleIapWebTypeAppEngineIamBinding#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeAppEngineIamBinding.GoogleIapWebTypeAppEngineIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeAppEngineIamBinding.GoogleIapWebTypeAppEngineIamBindingCondition">GoogleIapWebTypeAppEngineIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeAppEngineIamBinding.GoogleIapWebTypeAppEngineIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_iap_web_type_app_engine_iam_binding#id GoogleIapWebTypeAppEngineIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeAppEngineIamBinding.GoogleIapWebTypeAppEngineIamBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_iap_web_type_app_engine_iam_binding#project GoogleIapWebTypeAppEngineIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeAppEngineIamBinding.GoogleIapWebTypeAppEngineIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_iap_web_type_app_engine_iam_binding#id GoogleIapWebTypeAppEngineIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeAppEngineIamBinding.GoogleIapWebTypeAppEngineIamBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_iap_web_type_app_engine_iam_binding#project GoogleIapWebTypeAppEngineIamBinding#project}. |
 
 ---
 
@@ -1021,7 +1021,7 @@ AppId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_iap_web_type_app_engine_iam_binding#app_id GoogleIapWebTypeAppEngineIamBinding#app_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_iap_web_type_app_engine_iam_binding#app_id GoogleIapWebTypeAppEngineIamBinding#app_id}.
 
 ---
 
@@ -1033,7 +1033,7 @@ Members *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_iap_web_type_app_engine_iam_binding#members GoogleIapWebTypeAppEngineIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_iap_web_type_app_engine_iam_binding#members GoogleIapWebTypeAppEngineIamBinding#members}.
 
 ---
 
@@ -1045,7 +1045,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_iap_web_type_app_engine_iam_binding#role GoogleIapWebTypeAppEngineIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_iap_web_type_app_engine_iam_binding#role GoogleIapWebTypeAppEngineIamBinding#role}.
 
 ---
 
@@ -1059,7 +1059,7 @@ Condition GoogleIapWebTypeAppEngineIamBindingCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_iap_web_type_app_engine_iam_binding#condition GoogleIapWebTypeAppEngineIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_iap_web_type_app_engine_iam_binding#condition GoogleIapWebTypeAppEngineIamBinding#condition}
 
 ---
 
@@ -1071,7 +1071,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_iap_web_type_app_engine_iam_binding#id GoogleIapWebTypeAppEngineIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_iap_web_type_app_engine_iam_binding#id GoogleIapWebTypeAppEngineIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1086,7 +1086,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_iap_web_type_app_engine_iam_binding#project GoogleIapWebTypeAppEngineIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_iap_web_type_app_engine_iam_binding#project GoogleIapWebTypeAppEngineIamBinding#project}.
 
 ---
 
@@ -1097,7 +1097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIapWebTypeAppEngineIamBinding.GoogleIapWebTypeAppEngineIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiapwebtypeappengineiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebtypeappengineiambinding"
 
 googleiapwebtypeappengineiambinding.NewGoogleIapWebTypeAppEngineIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIapWebTypeAppEngineIamBindingConditionOutputReference
 ```

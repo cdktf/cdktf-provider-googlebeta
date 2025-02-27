@@ -4,12 +4,12 @@
 
 ### GoogleChronicleRule <a name="GoogleChronicleRule" id="@cdktf/provider-google-beta.googleChronicleRule.GoogleChronicleRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_chronicle_rule google_chronicle_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_chronicle_rule google_chronicle_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleChronicleRule.GoogleChronicleRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechroniclerule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechroniclerule"
 
 googlechroniclerule.NewGoogleChronicleRule(scope Construct, id *string, config GoogleChronicleRuleConfig) GoogleChronicleRule
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleChronicleRule.GoogleChronicleRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechroniclerule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechroniclerule"
 
 googlechroniclerule.GoogleChronicleRule_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleChronicleRule.GoogleChronicleRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechroniclerule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechroniclerule"
 
 googlechroniclerule.GoogleChronicleRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ googlechroniclerule.GoogleChronicleRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleChronicleRule.GoogleChronicleRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechroniclerule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechroniclerule"
 
 googlechroniclerule.GoogleChronicleRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ googlechroniclerule.GoogleChronicleRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleChronicleRule.GoogleChronicleRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechroniclerule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechroniclerule"
 
 googlechroniclerule.GoogleChronicleRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -536,7 +536,7 @@ The construct id used in the generated config for the GoogleChronicleRule to imp
 
 The id of the existing GoogleChronicleRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_chronicle_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_chronicle_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1121,7 +1121,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleChronicleRule.GoogleChronicleRuleCompilationDiagnostics.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechroniclerule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechroniclerule"
 
 &googlechroniclerule.GoogleChronicleRuleCompilationDiagnostics {
 
@@ -1134,7 +1134,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechron
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleChronicleRule.GoogleChronicleRuleCompilationDiagnosticsPosition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechroniclerule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechroniclerule"
 
 &googlechroniclerule.GoogleChronicleRuleCompilationDiagnosticsPosition {
 
@@ -1147,7 +1147,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechron
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleChronicleRule.GoogleChronicleRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechroniclerule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechroniclerule"
 
 &googlechroniclerule.GoogleChronicleRuleConfig {
 	Connection: interface{},
@@ -1166,7 +1166,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechron
 	RuleId: *string,
 	Scope: *string,
 	Text: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleChronicleRule.GoogleChronicleRuleTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleChronicleRule.GoogleChronicleRuleTimeouts,
 }
 ```
 
@@ -1185,8 +1185,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechron
 | <code><a href="#@cdktf/provider-google-beta.googleChronicleRule.GoogleChronicleRuleConfig.property.location">Location</a></code> | <code>*string</code> | The location of the resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleChronicleRule.GoogleChronicleRuleConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Policy to determine if the rule should be deleted forcefully. |
 | <code><a href="#@cdktf/provider-google-beta.googleChronicleRule.GoogleChronicleRuleConfig.property.etag">Etag</a></code> | <code>*string</code> | The etag for this rule. |
-| <code><a href="#@cdktf/provider-google-beta.googleChronicleRule.GoogleChronicleRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_chronicle_rule#id GoogleChronicleRule#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleChronicleRule.GoogleChronicleRuleConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_chronicle_rule#project GoogleChronicleRule#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleChronicleRule.GoogleChronicleRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_chronicle_rule#id GoogleChronicleRule#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleChronicleRule.GoogleChronicleRuleConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_chronicle_rule#project GoogleChronicleRule#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleChronicleRule.GoogleChronicleRuleConfig.property.ruleId">RuleId</a></code> | <code>*string</code> | Rule Id is the ID of the Rule. |
 | <code><a href="#@cdktf/provider-google-beta.googleChronicleRule.GoogleChronicleRuleConfig.property.scope">Scope</a></code> | <code>*string</code> | Resource name of the DataAccessScope bound to this rule. |
 | <code><a href="#@cdktf/provider-google-beta.googleChronicleRule.GoogleChronicleRuleConfig.property.text">Text</a></code> | <code>*string</code> | The YARA-L content of the rule. Populated in FULL view. |
@@ -1274,7 +1274,7 @@ Instance *string
 
 The unique identifier for the Chronicle instance, which is the same as the customer ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_chronicle_rule#instance GoogleChronicleRule#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_chronicle_rule#instance GoogleChronicleRule#instance}
 
 ---
 
@@ -1290,7 +1290,7 @@ The location of the resource.
 
 This is the geographical region where the Chronicle instance resides, such as "us" or "europe-west2".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_chronicle_rule#location GoogleChronicleRule#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_chronicle_rule#location GoogleChronicleRule#location}
 
 ---
 
@@ -1311,7 +1311,7 @@ associated detections. Regardless of this field's value, the rule
 deployment associated with this rule will also be deleted.
 Possible values: DEFAULT, FORCE
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_chronicle_rule#deletion_policy GoogleChronicleRule#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_chronicle_rule#deletion_policy GoogleChronicleRule#deletion_policy}
 
 ---
 
@@ -1330,7 +1330,7 @@ matches the server-computed value, and will fail with an ABORTED error
 otherwise.
 Populated in BASIC view and FULL view.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_chronicle_rule#etag GoogleChronicleRule#etag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_chronicle_rule#etag GoogleChronicleRule#etag}
 
 ---
 
@@ -1342,7 +1342,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_chronicle_rule#id GoogleChronicleRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_chronicle_rule#id GoogleChronicleRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1357,7 +1357,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_chronicle_rule#project GoogleChronicleRule#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_chronicle_rule#project GoogleChronicleRule#project}.
 
 ---
 
@@ -1371,7 +1371,7 @@ RuleId *string
 
 Rule Id is the ID of the Rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_chronicle_rule#rule_id GoogleChronicleRule#rule_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_chronicle_rule#rule_id GoogleChronicleRule#rule_id}
 
 ---
 
@@ -1392,7 +1392,7 @@ both the user's and the rule's scopes.
 The scope should be in the format:
 "projects/{project}/locations/{location}/instances/{instance}/dataAccessScopes/{scope}".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_chronicle_rule#scope GoogleChronicleRule#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_chronicle_rule#scope GoogleChronicleRule#scope}
 
 ---
 
@@ -1406,7 +1406,7 @@ Text *string
 
 The YARA-L content of the rule. Populated in FULL view.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_chronicle_rule#text GoogleChronicleRule#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_chronicle_rule#text GoogleChronicleRule#text}
 
 ---
 
@@ -1420,7 +1420,7 @@ Timeouts GoogleChronicleRuleTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_chronicle_rule#timeouts GoogleChronicleRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_chronicle_rule#timeouts GoogleChronicleRule#timeouts}
 
 ---
 
@@ -1429,7 +1429,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleChronicleRule.GoogleChronicleRuleSeverity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechroniclerule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechroniclerule"
 
 &googlechroniclerule.GoogleChronicleRuleSeverity {
 
@@ -1442,7 +1442,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechron
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleChronicleRule.GoogleChronicleRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechroniclerule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechroniclerule"
 
 &googlechroniclerule.GoogleChronicleRuleTimeouts {
 	Create: *string,
@@ -1455,9 +1455,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechron
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleChronicleRule.GoogleChronicleRuleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_chronicle_rule#create GoogleChronicleRule#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleChronicleRule.GoogleChronicleRuleTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_chronicle_rule#delete GoogleChronicleRule#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleChronicleRule.GoogleChronicleRuleTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_chronicle_rule#update GoogleChronicleRule#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleChronicleRule.GoogleChronicleRuleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_chronicle_rule#create GoogleChronicleRule#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleChronicleRule.GoogleChronicleRuleTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_chronicle_rule#delete GoogleChronicleRule#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleChronicleRule.GoogleChronicleRuleTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_chronicle_rule#update GoogleChronicleRule#update}. |
 
 ---
 
@@ -1469,7 +1469,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_chronicle_rule#create GoogleChronicleRule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_chronicle_rule#create GoogleChronicleRule#create}.
 
 ---
 
@@ -1481,7 +1481,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_chronicle_rule#delete GoogleChronicleRule#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_chronicle_rule#delete GoogleChronicleRule#delete}.
 
 ---
 
@@ -1493,7 +1493,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_chronicle_rule#update GoogleChronicleRule#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_chronicle_rule#update GoogleChronicleRule#update}.
 
 ---
 
@@ -1504,7 +1504,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleChronicleRule.GoogleChronicleRuleCompilationDiagnosticsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechroniclerule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechroniclerule"
 
 googlechroniclerule.NewGoogleChronicleRuleCompilationDiagnosticsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleChronicleRuleCompilationDiagnosticsList
 ```
@@ -1653,7 +1653,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleChronicleRule.GoogleChronicleRuleCompilationDiagnosticsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechroniclerule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechroniclerule"
 
 googlechroniclerule.NewGoogleChronicleRuleCompilationDiagnosticsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleChronicleRuleCompilationDiagnosticsOutputReference
 ```
@@ -1964,7 +1964,7 @@ func InternalValue() GoogleChronicleRuleCompilationDiagnostics
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleChronicleRule.GoogleChronicleRuleCompilationDiagnosticsPositionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechroniclerule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechroniclerule"
 
 googlechroniclerule.NewGoogleChronicleRuleCompilationDiagnosticsPositionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleChronicleRuleCompilationDiagnosticsPositionList
 ```
@@ -2113,7 +2113,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleChronicleRule.GoogleChronicleRuleCompilationDiagnosticsPositionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechroniclerule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechroniclerule"
 
 googlechroniclerule.NewGoogleChronicleRuleCompilationDiagnosticsPositionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleChronicleRuleCompilationDiagnosticsPositionOutputReference
 ```
@@ -2424,7 +2424,7 @@ func InternalValue() GoogleChronicleRuleCompilationDiagnosticsPosition
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleChronicleRule.GoogleChronicleRuleSeverityList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechroniclerule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechroniclerule"
 
 googlechroniclerule.NewGoogleChronicleRuleSeverityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleChronicleRuleSeverityList
 ```
@@ -2573,7 +2573,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleChronicleRule.GoogleChronicleRuleSeverityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechroniclerule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechroniclerule"
 
 googlechroniclerule.NewGoogleChronicleRuleSeverityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleChronicleRuleSeverityOutputReference
 ```
@@ -2851,7 +2851,7 @@ func InternalValue() GoogleChronicleRuleSeverity
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleChronicleRule.GoogleChronicleRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechroniclerule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechroniclerule"
 
 googlechroniclerule.NewGoogleChronicleRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleChronicleRuleTimeoutsOutputReference
 ```

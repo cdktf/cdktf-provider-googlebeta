@@ -4,7 +4,7 @@
 
 ### GoogleColabRuntime <a name="GoogleColabRuntime" id="@cdktf/provider-google-beta.googleColabRuntime.GoogleColabRuntime"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_colab_runtime google_colab_runtime}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_colab_runtime google_colab_runtime}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleColabRuntime.GoogleColabRuntime.Initializer"></a>
 
@@ -549,7 +549,7 @@ The construct id used in the generated config for the GoogleColabRuntime to impo
 
 The id of the existing GoogleColabRuntime that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_colab_runtime#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_colab_runtime#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1057,10 +1057,10 @@ const googleColabRuntimeConfig: googleColabRuntime.GoogleColabRuntimeConfig = { 
 | <code><a href="#@cdktf/provider-google-beta.googleColabRuntime.GoogleColabRuntimeConfig.property.autoUpgrade">autoUpgrade</a></code> | <code>boolean \| cdktf.IResolvable</code> | Triggers an upgrade anytime the runtime is started if it is upgradable. |
 | <code><a href="#@cdktf/provider-google-beta.googleColabRuntime.GoogleColabRuntimeConfig.property.description">description</a></code> | <code>string</code> | The description of the Runtime. |
 | <code><a href="#@cdktf/provider-google-beta.googleColabRuntime.GoogleColabRuntimeConfig.property.desiredState">desiredState</a></code> | <code>string</code> | Desired state of the Colab Runtime. |
-| <code><a href="#@cdktf/provider-google-beta.googleColabRuntime.GoogleColabRuntimeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_colab_runtime#id GoogleColabRuntime#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleColabRuntime.GoogleColabRuntimeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_colab_runtime#id GoogleColabRuntime#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleColabRuntime.GoogleColabRuntimeConfig.property.name">name</a></code> | <code>string</code> | The resource name of the Runtime. |
 | <code><a href="#@cdktf/provider-google-beta.googleColabRuntime.GoogleColabRuntimeConfig.property.notebookRuntimeTemplateRef">notebookRuntimeTemplateRef</a></code> | <code><a href="#@cdktf/provider-google-beta.googleColabRuntime.GoogleColabRuntimeNotebookRuntimeTemplateRef">GoogleColabRuntimeNotebookRuntimeTemplateRef</a></code> | notebook_runtime_template_ref block. |
-| <code><a href="#@cdktf/provider-google-beta.googleColabRuntime.GoogleColabRuntimeConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_colab_runtime#project GoogleColabRuntime#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleColabRuntime.GoogleColabRuntimeConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_colab_runtime#project GoogleColabRuntime#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleColabRuntime.GoogleColabRuntimeConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleColabRuntime.GoogleColabRuntimeTimeouts">GoogleColabRuntimeTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1145,7 +1145,7 @@ public readonly displayName: string;
 
 Required. The display name of the Runtime.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_colab_runtime#display_name GoogleColabRuntime#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_colab_runtime#display_name GoogleColabRuntime#display_name}
 
 ---
 
@@ -1159,7 +1159,7 @@ public readonly location: string;
 
 The location for the resource: https://cloud.google.com/colab/docs/locations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_colab_runtime#location GoogleColabRuntime#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_colab_runtime#location GoogleColabRuntime#location}
 
 ---
 
@@ -1173,7 +1173,7 @@ public readonly runtimeUser: string;
 
 The user email of the NotebookRuntime.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_colab_runtime#runtime_user GoogleColabRuntime#runtime_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_colab_runtime#runtime_user GoogleColabRuntime#runtime_user}
 
 ---
 
@@ -1187,7 +1187,7 @@ public readonly autoUpgrade: boolean | IResolvable;
 
 Triggers an upgrade anytime the runtime is started if it is upgradable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_colab_runtime#auto_upgrade GoogleColabRuntime#auto_upgrade}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_colab_runtime#auto_upgrade GoogleColabRuntime#auto_upgrade}
 
 ---
 
@@ -1201,7 +1201,7 @@ public readonly description: string;
 
 The description of the Runtime.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_colab_runtime#description GoogleColabRuntime#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_colab_runtime#description GoogleColabRuntime#description}
 
 ---
 
@@ -1217,7 +1217,7 @@ Desired state of the Colab Runtime.
 
 Set this field to 'RUNNING' to start the runtime, and 'STOPPED' to stop it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_colab_runtime#desired_state GoogleColabRuntime#desired_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_colab_runtime#desired_state GoogleColabRuntime#desired_state}
 
 ---
 
@@ -1229,7 +1229,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_colab_runtime#id GoogleColabRuntime#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_colab_runtime#id GoogleColabRuntime#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1246,7 +1246,7 @@ public readonly name: string;
 
 The resource name of the Runtime.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_colab_runtime#name GoogleColabRuntime#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_colab_runtime#name GoogleColabRuntime#name}
 
 ---
 
@@ -1260,7 +1260,7 @@ public readonly notebookRuntimeTemplateRef: GoogleColabRuntimeNotebookRuntimeTem
 
 notebook_runtime_template_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_colab_runtime#notebook_runtime_template_ref GoogleColabRuntime#notebook_runtime_template_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_colab_runtime#notebook_runtime_template_ref GoogleColabRuntime#notebook_runtime_template_ref}
 
 ---
 
@@ -1272,7 +1272,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_colab_runtime#project GoogleColabRuntime#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_colab_runtime#project GoogleColabRuntime#project}.
 
 ---
 
@@ -1286,7 +1286,7 @@ public readonly timeouts: GoogleColabRuntimeTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_colab_runtime#timeouts GoogleColabRuntime#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_colab_runtime#timeouts GoogleColabRuntime#timeouts}
 
 ---
 
@@ -1318,7 +1318,7 @@ public readonly notebookRuntimeTemplate: string;
 
 The resource name of the NotebookRuntimeTemplate based on which a NotebookRuntime will be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_colab_runtime#notebook_runtime_template GoogleColabRuntime#notebook_runtime_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_colab_runtime#notebook_runtime_template GoogleColabRuntime#notebook_runtime_template}
 
 ---
 
@@ -1336,9 +1336,9 @@ const googleColabRuntimeTimeouts: googleColabRuntime.GoogleColabRuntimeTimeouts 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleColabRuntime.GoogleColabRuntimeTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_colab_runtime#create GoogleColabRuntime#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleColabRuntime.GoogleColabRuntimeTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_colab_runtime#delete GoogleColabRuntime#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleColabRuntime.GoogleColabRuntimeTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_colab_runtime#update GoogleColabRuntime#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleColabRuntime.GoogleColabRuntimeTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_colab_runtime#create GoogleColabRuntime#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleColabRuntime.GoogleColabRuntimeTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_colab_runtime#delete GoogleColabRuntime#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleColabRuntime.GoogleColabRuntimeTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_colab_runtime#update GoogleColabRuntime#update}. |
 
 ---
 
@@ -1350,7 +1350,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_colab_runtime#create GoogleColabRuntime#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_colab_runtime#create GoogleColabRuntime#create}.
 
 ---
 
@@ -1362,7 +1362,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_colab_runtime#delete GoogleColabRuntime#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_colab_runtime#delete GoogleColabRuntime#delete}.
 
 ---
 
@@ -1374,7 +1374,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_colab_runtime#update GoogleColabRuntime#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_colab_runtime#update GoogleColabRuntime#update}.
 
 ---
 

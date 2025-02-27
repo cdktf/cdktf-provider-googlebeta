@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_access_context_manager_access_policy_iam_binding
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_access_context_manager_access_policy_iam_binding
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,42 +8,42 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleAccessContextManagerAccessPolicyIamBindingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_access_context_manager_access_policy_iam_binding#id GoogleAccessContextManagerAccessPolicyIamBinding#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_access_context_manager_access_policy_iam_binding#id GoogleAccessContextManagerAccessPolicyIamBinding#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_access_context_manager_access_policy_iam_binding#members GoogleAccessContextManagerAccessPolicyIamBinding#members}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_access_context_manager_access_policy_iam_binding#members GoogleAccessContextManagerAccessPolicyIamBinding#members}
   */
   readonly members: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_access_context_manager_access_policy_iam_binding#name GoogleAccessContextManagerAccessPolicyIamBinding#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_access_context_manager_access_policy_iam_binding#name GoogleAccessContextManagerAccessPolicyIamBinding#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_access_context_manager_access_policy_iam_binding#role GoogleAccessContextManagerAccessPolicyIamBinding#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_access_context_manager_access_policy_iam_binding#role GoogleAccessContextManagerAccessPolicyIamBinding#role}
   */
   readonly role: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_access_context_manager_access_policy_iam_binding#condition GoogleAccessContextManagerAccessPolicyIamBinding#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_access_context_manager_access_policy_iam_binding#condition GoogleAccessContextManagerAccessPolicyIamBinding#condition}
   */
   readonly condition?: GoogleAccessContextManagerAccessPolicyIamBindingCondition;
 }
 export interface GoogleAccessContextManagerAccessPolicyIamBindingCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_access_context_manager_access_policy_iam_binding#description GoogleAccessContextManagerAccessPolicyIamBinding#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_access_context_manager_access_policy_iam_binding#description GoogleAccessContextManagerAccessPolicyIamBinding#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_access_context_manager_access_policy_iam_binding#expression GoogleAccessContextManagerAccessPolicyIamBinding#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_access_context_manager_access_policy_iam_binding#expression GoogleAccessContextManagerAccessPolicyIamBinding#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_access_context_manager_access_policy_iam_binding#title GoogleAccessContextManagerAccessPolicyIamBinding#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_access_context_manager_access_policy_iam_binding#title GoogleAccessContextManagerAccessPolicyIamBinding#title}
   */
   readonly title: string;
 }
@@ -184,7 +179,7 @@ export class GoogleAccessContextManagerAccessPolicyIamBindingConditionOutputRefe
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_access_context_manager_access_policy_iam_binding google_access_context_manager_access_policy_iam_binding}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_access_context_manager_access_policy_iam_binding google_access_context_manager_access_policy_iam_binding}
 */
 export class GoogleAccessContextManagerAccessPolicyIamBinding extends cdktf.TerraformResource {
 
@@ -200,7 +195,7 @@ export class GoogleAccessContextManagerAccessPolicyIamBinding extends cdktf.Terr
   * Generates CDKTF code for importing a GoogleAccessContextManagerAccessPolicyIamBinding resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleAccessContextManagerAccessPolicyIamBinding to import
-  * @param importFromId The id of the existing GoogleAccessContextManagerAccessPolicyIamBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_access_context_manager_access_policy_iam_binding#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleAccessContextManagerAccessPolicyIamBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_access_context_manager_access_policy_iam_binding#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleAccessContextManagerAccessPolicyIamBinding to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -212,7 +207,7 @@ export class GoogleAccessContextManagerAccessPolicyIamBinding extends cdktf.Terr
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_access_context_manager_access_policy_iam_binding google_access_context_manager_access_policy_iam_binding} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_access_context_manager_access_policy_iam_binding google_access_context_manager_access_policy_iam_binding} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -223,7 +218,7 @@ export class GoogleAccessContextManagerAccessPolicyIamBinding extends cdktf.Terr
       terraformResourceType: 'google_access_context_manager_access_policy_iam_binding',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.22.0',
+        providerVersion: '6.23.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
