@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddeployCustomTargetTypeIamPolicy.GoogleClouddeployCustomTargetTypeIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeploycustomtargettypeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddeploycustomtargettypeiampolicy"
 
 googleclouddeploycustomtargettypeiampolicy.NewGoogleClouddeployCustomTargetTypeIamPolicy(scope Construct, id *string, config GoogleClouddeployCustomTargetTypeIamPolicyConfig) GoogleClouddeployCustomTargetTypeIamPolicy
 ```
@@ -399,7 +399,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleClouddeployCustomTargetTypeIamPolicy.GoogleClouddeployCustomTargetTypeIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeploycustomtargettypeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddeploycustomtargettypeiampolicy"
 
 googleclouddeploycustomtargettypeiampolicy.GoogleClouddeployCustomTargetTypeIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleClouddeployCustomTargetTypeIamPolicy.GoogleClouddeployCustomTargetTypeIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeploycustomtargettypeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddeploycustomtargettypeiampolicy"
 
 googleclouddeploycustomtargettypeiampolicy.GoogleClouddeployCustomTargetTypeIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ googleclouddeploycustomtargettypeiampolicy.GoogleClouddeployCustomTargetTypeIamP
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleClouddeployCustomTargetTypeIamPolicy.GoogleClouddeployCustomTargetTypeIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeploycustomtargettypeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddeploycustomtargettypeiampolicy"
 
 googleclouddeploycustomtargettypeiampolicy.GoogleClouddeployCustomTargetTypeIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ googleclouddeploycustomtargettypeiampolicy.GoogleClouddeployCustomTargetTypeIamP
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleClouddeployCustomTargetTypeIamPolicy.GoogleClouddeployCustomTargetTypeIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeploycustomtargettypeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddeploycustomtargettypeiampolicy"
 
 googleclouddeploycustomtargettypeiampolicy.GoogleClouddeployCustomTargetTypeIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -809,7 +809,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleClouddeployCustomTargetTypeIamPolicy.GoogleClouddeployCustomTargetTypeIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeploycustomtargettypeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddeploycustomtargettypeiampolicy"
 
 &googleclouddeploycustomtargettypeiampolicy.GoogleClouddeployCustomTargetTypeIamPolicyConfig {
 	Connection: interface{},
