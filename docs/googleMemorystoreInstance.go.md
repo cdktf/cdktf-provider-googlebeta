@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 googlememorystoreinstance.NewGoogleMemorystoreInstance(scope Construct, id *string, config GoogleMemorystoreInstanceConfig) GoogleMemorystoreInstance
 ```
@@ -528,7 +528,7 @@ func ResetZoneDistributionConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 googlememorystoreinstance.GoogleMemorystoreInstance_IsConstruct(x interface{}) *bool
 ```
@@ -560,7 +560,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 googlememorystoreinstance.GoogleMemorystoreInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -574,7 +574,7 @@ googlememorystoreinstance.GoogleMemorystoreInstance_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 googlememorystoreinstance.GoogleMemorystoreInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ googlememorystoreinstance.GoogleMemorystoreInstance_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 googlememorystoreinstance.GoogleMemorystoreInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1345,7 +1345,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 &googlememorystoreinstance.GoogleMemorystoreInstanceConfig {
 	Connection: interface{},
@@ -1367,12 +1367,12 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememor
 	Labels: *map[string]*string,
 	Mode: *string,
 	NodeType: *string,
-	PersistenceConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleMemorystoreInstance.GoogleMemorystoreInstancePersistenceConfig,
+	PersistenceConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMemorystoreInstance.GoogleMemorystoreInstancePersistenceConfig,
 	Project: *string,
 	ReplicaCount: *f64,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleMemorystoreInstance.GoogleMemorystoreInstanceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMemorystoreInstance.GoogleMemorystoreInstanceTimeouts,
 	TransitEncryptionMode: *string,
-	ZoneDistributionConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleMemorystoreInstance.GoogleMemorystoreInstanceZoneDistributionConfig,
+	ZoneDistributionConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMemorystoreInstance.GoogleMemorystoreInstanceZoneDistributionConfig,
 }
 ```
 
@@ -1747,7 +1747,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstanceDesiredPscAutoConnections.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 &googlememorystoreinstance.GoogleMemorystoreInstanceDesiredPscAutoConnections {
 	Network: *string,
@@ -1797,7 +1797,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstanceDiscoveryEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 &googlememorystoreinstance.GoogleMemorystoreInstanceDiscoveryEndpoints {
 
@@ -1810,7 +1810,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememor
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstanceEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 &googlememorystoreinstance.GoogleMemorystoreInstanceEndpoints {
 
@@ -1823,7 +1823,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememor
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstanceEndpointsConnections.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 &googlememorystoreinstance.GoogleMemorystoreInstanceEndpointsConnections {
 
@@ -1836,7 +1836,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememor
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstanceEndpointsConnectionsPscAutoConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 &googlememorystoreinstance.GoogleMemorystoreInstanceEndpointsConnectionsPscAutoConnection {
 
@@ -1849,7 +1849,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememor
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstanceNodeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 &googlememorystoreinstance.GoogleMemorystoreInstanceNodeConfig {
 
@@ -1862,12 +1862,12 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememor
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstancePersistenceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 &googlememorystoreinstance.GoogleMemorystoreInstancePersistenceConfig {
-	AofConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleMemorystoreInstance.GoogleMemorystoreInstancePersistenceConfigAofConfig,
+	AofConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMemorystoreInstance.GoogleMemorystoreInstancePersistenceConfigAofConfig,
 	Mode: *string,
-	RdbConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleMemorystoreInstance.GoogleMemorystoreInstancePersistenceConfigRdbConfig,
+	RdbConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMemorystoreInstance.GoogleMemorystoreInstancePersistenceConfigRdbConfig,
 }
 ```
 
@@ -1928,7 +1928,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstancePersistenceConfigAofConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 &googlememorystoreinstance.GoogleMemorystoreInstancePersistenceConfigAofConfig {
 	AppendFsync: *string,
@@ -1962,7 +1962,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstancePersistenceConfigRdbConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 &googlememorystoreinstance.GoogleMemorystoreInstancePersistenceConfigRdbConfig {
 	RdbSnapshotPeriod: *string,
@@ -2016,7 +2016,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstancePscAutoConnections.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 &googlememorystoreinstance.GoogleMemorystoreInstancePscAutoConnections {
 
@@ -2029,7 +2029,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememor
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstanceStateInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 &googlememorystoreinstance.GoogleMemorystoreInstanceStateInfo {
 
@@ -2042,7 +2042,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememor
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstanceStateInfoUpdateInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 &googlememorystoreinstance.GoogleMemorystoreInstanceStateInfoUpdateInfo {
 
@@ -2055,7 +2055,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememor
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 &googlememorystoreinstance.GoogleMemorystoreInstanceTimeouts {
 	Create: *string,
@@ -2115,7 +2115,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstanceZoneDistributionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 &googlememorystoreinstance.GoogleMemorystoreInstanceZoneDistributionConfig {
 	Mode: *string,
@@ -2167,7 +2167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstanceDesiredPscAutoConnectionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 googlememorystoreinstance.NewGoogleMemorystoreInstanceDesiredPscAutoConnectionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleMemorystoreInstanceDesiredPscAutoConnectionsList
 ```
@@ -2327,7 +2327,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstanceDesiredPscAutoConnectionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 googlememorystoreinstance.NewGoogleMemorystoreInstanceDesiredPscAutoConnectionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleMemorystoreInstanceDesiredPscAutoConnectionsOutputReference
 ```
@@ -2638,7 +2638,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstanceDiscoveryEndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 googlememorystoreinstance.NewGoogleMemorystoreInstanceDiscoveryEndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleMemorystoreInstanceDiscoveryEndpointsList
 ```
@@ -2787,7 +2787,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstanceDiscoveryEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 googlememorystoreinstance.NewGoogleMemorystoreInstanceDiscoveryEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleMemorystoreInstanceDiscoveryEndpointsOutputReference
 ```
@@ -3087,7 +3087,7 @@ func InternalValue() GoogleMemorystoreInstanceDiscoveryEndpoints
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstanceEndpointsConnectionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 googlememorystoreinstance.NewGoogleMemorystoreInstanceEndpointsConnectionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleMemorystoreInstanceEndpointsConnectionsList
 ```
@@ -3236,7 +3236,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstanceEndpointsConnectionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 googlememorystoreinstance.NewGoogleMemorystoreInstanceEndpointsConnectionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleMemorystoreInstanceEndpointsConnectionsOutputReference
 ```
@@ -3514,7 +3514,7 @@ func InternalValue() GoogleMemorystoreInstanceEndpointsConnections
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstanceEndpointsConnectionsPscAutoConnectionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 googlememorystoreinstance.NewGoogleMemorystoreInstanceEndpointsConnectionsPscAutoConnectionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleMemorystoreInstanceEndpointsConnectionsPscAutoConnectionList
 ```
@@ -3663,7 +3663,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstanceEndpointsConnectionsPscAutoConnectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 googlememorystoreinstance.NewGoogleMemorystoreInstanceEndpointsConnectionsPscAutoConnectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleMemorystoreInstanceEndpointsConnectionsPscAutoConnectionOutputReference
 ```
@@ -4018,7 +4018,7 @@ func InternalValue() GoogleMemorystoreInstanceEndpointsConnectionsPscAutoConnect
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstanceEndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 googlememorystoreinstance.NewGoogleMemorystoreInstanceEndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleMemorystoreInstanceEndpointsList
 ```
@@ -4167,7 +4167,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstanceEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 googlememorystoreinstance.NewGoogleMemorystoreInstanceEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleMemorystoreInstanceEndpointsOutputReference
 ```
@@ -4445,7 +4445,7 @@ func InternalValue() GoogleMemorystoreInstanceEndpoints
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstanceNodeConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 googlememorystoreinstance.NewGoogleMemorystoreInstanceNodeConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleMemorystoreInstanceNodeConfigList
 ```
@@ -4594,7 +4594,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstanceNodeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 googlememorystoreinstance.NewGoogleMemorystoreInstanceNodeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleMemorystoreInstanceNodeConfigOutputReference
 ```
@@ -4872,7 +4872,7 @@ func InternalValue() GoogleMemorystoreInstanceNodeConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstancePersistenceConfigAofConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 googlememorystoreinstance.NewGoogleMemorystoreInstancePersistenceConfigAofConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMemorystoreInstancePersistenceConfigAofConfigOutputReference
 ```
@@ -5150,7 +5150,7 @@ func InternalValue() GoogleMemorystoreInstancePersistenceConfigAofConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstancePersistenceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 googlememorystoreinstance.NewGoogleMemorystoreInstancePersistenceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMemorystoreInstancePersistenceConfigOutputReference
 ```
@@ -5512,7 +5512,7 @@ func InternalValue() GoogleMemorystoreInstancePersistenceConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstancePersistenceConfigRdbConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 googlememorystoreinstance.NewGoogleMemorystoreInstancePersistenceConfigRdbConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMemorystoreInstancePersistenceConfigRdbConfigOutputReference
 ```
@@ -5819,7 +5819,7 @@ func InternalValue() GoogleMemorystoreInstancePersistenceConfigRdbConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstancePscAutoConnectionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 googlememorystoreinstance.NewGoogleMemorystoreInstancePscAutoConnectionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleMemorystoreInstancePscAutoConnectionsList
 ```
@@ -5968,7 +5968,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstancePscAutoConnectionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 googlememorystoreinstance.NewGoogleMemorystoreInstancePscAutoConnectionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleMemorystoreInstancePscAutoConnectionsOutputReference
 ```
@@ -6334,7 +6334,7 @@ func InternalValue() GoogleMemorystoreInstancePscAutoConnections
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstanceStateInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 googlememorystoreinstance.NewGoogleMemorystoreInstanceStateInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleMemorystoreInstanceStateInfoList
 ```
@@ -6483,7 +6483,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstanceStateInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 googlememorystoreinstance.NewGoogleMemorystoreInstanceStateInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleMemorystoreInstanceStateInfoOutputReference
 ```
@@ -6761,7 +6761,7 @@ func InternalValue() GoogleMemorystoreInstanceStateInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstanceStateInfoUpdateInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 googlememorystoreinstance.NewGoogleMemorystoreInstanceStateInfoUpdateInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleMemorystoreInstanceStateInfoUpdateInfoList
 ```
@@ -6910,7 +6910,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstanceStateInfoUpdateInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 googlememorystoreinstance.NewGoogleMemorystoreInstanceStateInfoUpdateInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleMemorystoreInstanceStateInfoUpdateInfoOutputReference
 ```
@@ -7199,7 +7199,7 @@ func InternalValue() GoogleMemorystoreInstanceStateInfoUpdateInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 googlememorystoreinstance.NewGoogleMemorystoreInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMemorystoreInstanceTimeoutsOutputReference
 ```
@@ -7535,7 +7535,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstanceZoneDistributionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlememorystoreinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlememorystoreinstance"
 
 googlememorystoreinstance.NewGoogleMemorystoreInstanceZoneDistributionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMemorystoreInstanceZoneDistributionConfigOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLoggingLogViewIamMember.GoogleLoggingLogViewIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelogginglogviewiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelogginglogviewiammember"
 
 googlelogginglogviewiammember.NewGoogleLoggingLogViewIamMember(scope Construct, id *string, config GoogleLoggingLogViewIamMemberConfig) GoogleLoggingLogViewIamMember
 ```
@@ -412,7 +412,7 @@ func ResetLocation()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleLoggingLogViewIamMember.GoogleLoggingLogViewIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelogginglogviewiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelogginglogviewiammember"
 
 googlelogginglogviewiammember.GoogleLoggingLogViewIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleLoggingLogViewIamMember.GoogleLoggingLogViewIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelogginglogviewiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelogginglogviewiammember"
 
 googlelogginglogviewiammember.GoogleLoggingLogViewIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ googlelogginglogviewiammember.GoogleLoggingLogViewIamMember_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleLoggingLogViewIamMember.GoogleLoggingLogViewIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelogginglogviewiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelogginglogviewiammember"
 
 googlelogginglogviewiammember.GoogleLoggingLogViewIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ googlelogginglogviewiammember.GoogleLoggingLogViewIamMember_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleLoggingLogViewIamMember.GoogleLoggingLogViewIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelogginglogviewiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelogginglogviewiammember"
 
 googlelogginglogviewiammember.GoogleLoggingLogViewIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -888,7 +888,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleLoggingLogViewIamMember.GoogleLoggingLogViewIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelogginglogviewiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelogginglogviewiammember"
 
 &googlelogginglogviewiammember.GoogleLoggingLogViewIamMemberCondition {
 	Expression: *string,
@@ -948,7 +948,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleLoggingLogViewIamMember.GoogleLoggingLogViewIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelogginglogviewiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelogginglogviewiammember"
 
 &googlelogginglogviewiammember.GoogleLoggingLogViewIamMemberConfig {
 	Connection: interface{},
@@ -963,7 +963,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleloggi
 	Name: *string,
 	Parent: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleLoggingLogViewIamMember.GoogleLoggingLogViewIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleLoggingLogViewIamMember.GoogleLoggingLogViewIamMemberCondition,
 	Id: *string,
 	Location: *string,
 }
@@ -1169,7 +1169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLoggingLogViewIamMember.GoogleLoggingLogViewIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelogginglogviewiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelogginglogviewiammember"
 
 googlelogginglogviewiammember.NewGoogleLoggingLogViewIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleLoggingLogViewIamMemberConditionOutputReference
 ```
