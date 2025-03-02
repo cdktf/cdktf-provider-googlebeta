@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionTargetHttpProxy.GoogleComputeRegionTargetHttpProxy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiontargethttpproxy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregiontargethttpproxy"
 
 googlecomputeregiontargethttpproxy.NewGoogleComputeRegionTargetHttpProxy(scope Construct, id *string, config GoogleComputeRegionTargetHttpProxyConfig) GoogleComputeRegionTargetHttpProxy
 ```
@@ -433,7 +433,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeRegionTargetHttpProxy.GoogleComputeRegionTargetHttpProxy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiontargethttpproxy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregiontargethttpproxy"
 
 googlecomputeregiontargethttpproxy.GoogleComputeRegionTargetHttpProxy_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeRegionTargetHttpProxy.GoogleComputeRegionTargetHttpProxy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiontargethttpproxy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregiontargethttpproxy"
 
 googlecomputeregiontargethttpproxy.GoogleComputeRegionTargetHttpProxy_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ googlecomputeregiontargethttpproxy.GoogleComputeRegionTargetHttpProxy_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeRegionTargetHttpProxy.GoogleComputeRegionTargetHttpProxy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiontargethttpproxy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregiontargethttpproxy"
 
 googlecomputeregiontargethttpproxy.GoogleComputeRegionTargetHttpProxy_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ googlecomputeregiontargethttpproxy.GoogleComputeRegionTargetHttpProxy_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleComputeRegionTargetHttpProxy.GoogleComputeRegionTargetHttpProxy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiontargethttpproxy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregiontargethttpproxy"
 
 googlecomputeregiontargethttpproxy.GoogleComputeRegionTargetHttpProxy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -931,7 +931,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionTargetHttpProxy.GoogleComputeRegionTargetHttpProxyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiontargethttpproxy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregiontargethttpproxy"
 
 &googlecomputeregiontargethttpproxy.GoogleComputeRegionTargetHttpProxyConfig {
 	Connection: interface{},
@@ -948,7 +948,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputere
 	Id: *string,
 	Project: *string,
 	Region: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionTargetHttpProxy.GoogleComputeRegionTargetHttpProxyTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionTargetHttpProxy.GoogleComputeRegionTargetHttpProxyTimeouts,
 }
 ```
 
@@ -1175,7 +1175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionTargetHttpProxy.GoogleComputeRegionTargetHttpProxyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiontargethttpproxy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregiontargethttpproxy"
 
 &googlecomputeregiontargethttpproxy.GoogleComputeRegionTargetHttpProxyTimeouts {
 	Create: *string,
@@ -1237,7 +1237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionTargetHttpProxy.GoogleComputeRegionTargetHttpProxyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiontargethttpproxy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregiontargethttpproxy"
 
 googlecomputeregiontargethttpproxy.NewGoogleComputeRegionTargetHttpProxyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionTargetHttpProxyTimeoutsOutputReference
 ```

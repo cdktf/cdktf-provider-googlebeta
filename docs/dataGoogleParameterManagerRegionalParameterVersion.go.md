@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleParameterManagerRegionalParameterVersion.DataGoogleParameterManagerRegionalParameterVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleparametermanagerregionalparameterversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleparametermanagerregionalparameterversion"
 
 datagoogleparametermanagerregionalparameterversion.NewDataGoogleParameterManagerRegionalParameterVersion(scope Construct, id *string, config DataGoogleParameterManagerRegionalParameterVersionConfig) DataGoogleParameterManagerRegionalParameterVersion
 ```
@@ -297,7 +297,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleParameterManagerRegionalParameterVersion.DataGoogleParameterManagerRegionalParameterVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleparametermanagerregionalparameterversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleparametermanagerregionalparameterversion"
 
 datagoogleparametermanagerregionalparameterversion.DataGoogleParameterManagerRegionalParameterVersion_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleParameterManagerRegionalParameterVersion.DataGoogleParameterManagerRegionalParameterVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleparametermanagerregionalparameterversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleparametermanagerregionalparameterversion"
 
 datagoogleparametermanagerregionalparameterversion.DataGoogleParameterManagerRegionalParameterVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagoogleparametermanagerregionalparameterversion.DataGoogleParameterManagerReg
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleParameterManagerRegionalParameterVersion.DataGoogleParameterManagerRegionalParameterVersion.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleparametermanagerregionalparameterversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleparametermanagerregionalparameterversion"
 
 datagoogleparametermanagerregionalparameterversion.DataGoogleParameterManagerRegionalParameterVersion_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datagoogleparametermanagerregionalparameterversion.DataGoogleParameterManagerReg
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleParameterManagerRegionalParameterVersion.DataGoogleParameterManagerRegionalParameterVersion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleparametermanagerregionalparameterversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleparametermanagerregionalparameterversion"
 
 datagoogleparametermanagerregionalparameterversion.DataGoogleParameterManagerRegionalParameterVersion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -729,7 +729,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleParameterManagerRegionalParameterVersion.DataGoogleParameterManagerRegionalParameterVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleparametermanagerregionalparameterversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleparametermanagerregionalparameterversion"
 
 &datagoogleparametermanagerregionalparameterversion.DataGoogleParameterManagerRegionalParameterVersionConfig {
 	Connection: interface{},

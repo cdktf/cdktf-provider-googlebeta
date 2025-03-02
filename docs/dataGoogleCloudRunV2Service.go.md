@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2Service(scope Construct, id *string, config DataGoogleCloudRunV2ServiceConfig) DataGoogleCloudRunV2Service
 ```
@@ -297,7 +297,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.DataGoogleCloudRunV2Service_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.DataGoogleCloudRunV2Service_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagooglecloudrunv2service.DataGoogleCloudRunV2Service_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.DataGoogleCloudRunV2Service_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datagooglecloudrunv2service.DataGoogleCloudRunV2Service_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.DataGoogleCloudRunV2Service_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1059,7 +1059,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceBinaryAuthorization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceBinaryAuthorization {
 
@@ -1072,7 +1072,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceBuildConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceBuildConfig {
 
@@ -1085,7 +1085,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceConditions {
 
@@ -1098,7 +1098,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceConfig {
 	Connection: interface{},
@@ -1263,7 +1263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceScaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceScaling {
 
@@ -1276,7 +1276,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceTemplate {
 
@@ -1289,7 +1289,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceTemplateContainers {
 
@@ -1302,7 +1302,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersBuildInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceTemplateContainersBuildInfo {
 
@@ -1315,7 +1315,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceTemplateContainersEnv {
 
@@ -1328,7 +1328,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersEnvValueSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceTemplateContainersEnvValueSource {
 
@@ -1341,7 +1341,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRef.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRef {
 
@@ -1354,7 +1354,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbe {
 
@@ -1367,7 +1367,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc {
 
@@ -1380,7 +1380,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGet {
 
@@ -1393,7 +1393,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeaders {
 
@@ -1406,7 +1406,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeTcpSocket {
 
@@ -1419,7 +1419,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersPorts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceTemplateContainersPorts {
 
@@ -1432,7 +1432,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersResources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceTemplateContainersResources {
 
@@ -1445,7 +1445,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersStartupProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceTemplateContainersStartupProbe {
 
@@ -1458,7 +1458,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpc {
 
@@ -1471,7 +1471,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGet {
 
@@ -1484,7 +1484,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeaders {
 
@@ -1497,7 +1497,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersStartupProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceTemplateContainersStartupProbeTcpSocket {
 
@@ -1510,7 +1510,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersVolumeMounts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceTemplateContainersVolumeMounts {
 
@@ -1523,7 +1523,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateNodeSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceTemplateNodeSelector {
 
@@ -1536,7 +1536,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateScaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceTemplateScaling {
 
@@ -1549,7 +1549,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateServiceMesh.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceTemplateServiceMesh {
 
@@ -1562,7 +1562,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateVolumes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceTemplateVolumes {
 
@@ -1575,7 +1575,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateVolumesCloudSqlInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceTemplateVolumesCloudSqlInstance {
 
@@ -1588,7 +1588,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateVolumesEmptyDir.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceTemplateVolumesEmptyDir {
 
@@ -1601,7 +1601,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateVolumesGcs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceTemplateVolumesGcs {
 
@@ -1614,7 +1614,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateVolumesNfs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceTemplateVolumesNfs {
 
@@ -1627,7 +1627,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateVolumesSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceTemplateVolumesSecret {
 
@@ -1640,7 +1640,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateVolumesSecretItems.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceTemplateVolumesSecretItems {
 
@@ -1653,7 +1653,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateVpcAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceTemplateVpcAccess {
 
@@ -1666,7 +1666,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateVpcAccessNetworkInterfaces.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceTemplateVpcAccessNetworkInterfaces {
 
@@ -1679,7 +1679,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTerminalCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceTerminalCondition {
 
@@ -1692,7 +1692,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTraffic.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceTraffic {
 
@@ -1705,7 +1705,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTrafficStatuses.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 &datagooglecloudrunv2service.DataGoogleCloudRunV2ServiceTrafficStatuses {
 
@@ -1720,7 +1720,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceBinaryAuthorizationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceBinaryAuthorizationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceBinaryAuthorizationList
 ```
@@ -1869,7 +1869,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceBinaryAuthorizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceBinaryAuthorizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceBinaryAuthorizationOutputReference
 ```
@@ -2169,7 +2169,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceBinaryAuthorization
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceBuildConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceBuildConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceBuildConfigList
 ```
@@ -2318,7 +2318,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceBuildConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceBuildConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceBuildConfigOutputReference
 ```
@@ -2684,7 +2684,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceBuildConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConditionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceConditionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceConditionsList
 ```
@@ -2833,7 +2833,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceConditionsOutputReference
 ```
@@ -3188,7 +3188,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceConditions
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceScalingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceScalingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceScalingList
 ```
@@ -3337,7 +3337,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceScalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceScalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceScalingOutputReference
 ```
@@ -3615,7 +3615,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceScaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersBuildInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateContainersBuildInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceTemplateContainersBuildInfoList
 ```
@@ -3764,7 +3764,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersBuildInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateContainersBuildInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceTemplateContainersBuildInfoOutputReference
 ```
@@ -4053,7 +4053,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceTemplateContainersBuildInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateContainersEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceTemplateContainersEnvList
 ```
@@ -4202,7 +4202,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateContainersEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceTemplateContainersEnvOutputReference
 ```
@@ -4502,7 +4502,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceTemplateContainersEnv
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersEnvValueSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateContainersEnvValueSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceTemplateContainersEnvValueSourceList
 ```
@@ -4651,7 +4651,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersEnvValueSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateContainersEnvValueSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceTemplateContainersEnvValueSourceOutputReference
 ```
@@ -4929,7 +4929,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceTemplateContainersEnvValueSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRefList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRefList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRefList
 ```
@@ -5078,7 +5078,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRefOutputReference
 ```
@@ -5367,7 +5367,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceTemplateContainersEnvValueSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateContainersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceTemplateContainersList
 ```
@@ -5516,7 +5516,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcList
 ```
@@ -5665,7 +5665,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference
 ```
@@ -5954,7 +5954,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeG
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeadersList
 ```
@@ -6103,7 +6103,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference
 ```
@@ -6392,7 +6392,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeH
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGetList
 ```
@@ -6541,7 +6541,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGetOutputReference
 ```
@@ -6841,7 +6841,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeH
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeList
 ```
@@ -6990,7 +6990,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference
 ```
@@ -7334,7 +7334,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbe
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeTcpSocketList
 ```
@@ -7483,7 +7483,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeTcpSocketOutputReference
 ```
@@ -7761,7 +7761,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeT
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateContainersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceTemplateContainersOutputReference
 ```
@@ -8182,7 +8182,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceTemplateContainers
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersPortsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateContainersPortsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceTemplateContainersPortsList
 ```
@@ -8331,7 +8331,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersPortsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateContainersPortsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceTemplateContainersPortsOutputReference
 ```
@@ -8620,7 +8620,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceTemplateContainersPorts
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateContainersResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceTemplateContainersResourcesList
 ```
@@ -8769,7 +8769,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateContainersResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceTemplateContainersResourcesOutputReference
 ```
@@ -9069,7 +9069,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceTemplateContainersResources
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcList
 ```
@@ -9218,7 +9218,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference
 ```
@@ -9507,7 +9507,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceTemplateContainersStartupProbeGr
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersList
 ```
@@ -9656,7 +9656,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference
 ```
@@ -9945,7 +9945,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceTemplateContainersStartupProbeHt
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetList
 ```
@@ -10094,7 +10094,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetOutputReference
 ```
@@ -10394,7 +10394,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceTemplateContainersStartupProbeHt
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersStartupProbeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateContainersStartupProbeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceTemplateContainersStartupProbeList
 ```
@@ -10543,7 +10543,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference
 ```
@@ -10887,7 +10887,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceTemplateContainersStartupProbe
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersStartupProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateContainersStartupProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceTemplateContainersStartupProbeTcpSocketList
 ```
@@ -11036,7 +11036,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersStartupProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateContainersStartupProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceTemplateContainersStartupProbeTcpSocketOutputReference
 ```
@@ -11314,7 +11314,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceTemplateContainersStartupProbeTc
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersVolumeMountsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateContainersVolumeMountsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceTemplateContainersVolumeMountsList
 ```
@@ -11463,7 +11463,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersVolumeMountsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateContainersVolumeMountsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceTemplateContainersVolumeMountsOutputReference
 ```
@@ -11752,7 +11752,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceTemplateContainersVolumeMounts
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceTemplateList
 ```
@@ -11901,7 +11901,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateNodeSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateNodeSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceTemplateNodeSelectorList
 ```
@@ -12050,7 +12050,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateNodeSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateNodeSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceTemplateNodeSelectorOutputReference
 ```
@@ -12328,7 +12328,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceTemplateNodeSelector
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceTemplateOutputReference
 ```
@@ -12760,7 +12760,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceTemplate
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateScalingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateScalingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceTemplateScalingList
 ```
@@ -12909,7 +12909,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateScalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateScalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceTemplateScalingOutputReference
 ```
@@ -13198,7 +13198,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceTemplateScaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateServiceMeshList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateServiceMeshList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceTemplateServiceMeshList
 ```
@@ -13347,7 +13347,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateServiceMeshOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateServiceMeshOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceTemplateServiceMeshOutputReference
 ```
@@ -13625,7 +13625,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceTemplateServiceMesh
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateVolumesCloudSqlInstanceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateVolumesCloudSqlInstanceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceTemplateVolumesCloudSqlInstanceList
 ```
@@ -13774,7 +13774,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateVolumesCloudSqlInstanceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateVolumesCloudSqlInstanceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceTemplateVolumesCloudSqlInstanceOutputReference
 ```
@@ -14052,7 +14052,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceTemplateVolumesCloudSqlInstance
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateVolumesEmptyDirList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateVolumesEmptyDirList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceTemplateVolumesEmptyDirList
 ```
@@ -14201,7 +14201,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateVolumesEmptyDirOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateVolumesEmptyDirOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceTemplateVolumesEmptyDirOutputReference
 ```
@@ -14490,7 +14490,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceTemplateVolumesEmptyDir
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateVolumesGcsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateVolumesGcsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceTemplateVolumesGcsList
 ```
@@ -14639,7 +14639,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateVolumesGcsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateVolumesGcsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceTemplateVolumesGcsOutputReference
 ```
@@ -14939,7 +14939,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceTemplateVolumesGcs
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateVolumesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateVolumesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceTemplateVolumesList
 ```
@@ -15088,7 +15088,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateVolumesNfsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateVolumesNfsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceTemplateVolumesNfsList
 ```
@@ -15237,7 +15237,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateVolumesNfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateVolumesNfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceTemplateVolumesNfsOutputReference
 ```
@@ -15537,7 +15537,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceTemplateVolumesNfs
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateVolumesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateVolumesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceTemplateVolumesOutputReference
 ```
@@ -15870,7 +15870,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceTemplateVolumes
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateVolumesSecretItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateVolumesSecretItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceTemplateVolumesSecretItemsList
 ```
@@ -16019,7 +16019,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference
 ```
@@ -16319,7 +16319,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceTemplateVolumesSecretItems
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateVolumesSecretList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateVolumesSecretList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceTemplateVolumesSecretList
 ```
@@ -16468,7 +16468,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateVolumesSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateVolumesSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceTemplateVolumesSecretOutputReference
 ```
@@ -16768,7 +16768,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceTemplateVolumesSecret
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateVpcAccessList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateVpcAccessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceTemplateVpcAccessList
 ```
@@ -16917,7 +16917,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateVpcAccessNetworkInterfacesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateVpcAccessNetworkInterfacesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceTemplateVpcAccessNetworkInterfacesList
 ```
@@ -17066,7 +17066,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateVpcAccessNetworkInterfacesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateVpcAccessNetworkInterfacesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceTemplateVpcAccessNetworkInterfacesOutputReference
 ```
@@ -17366,7 +17366,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceTemplateVpcAccessNetworkInterfac
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateVpcAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTemplateVpcAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceTemplateVpcAccessOutputReference
 ```
@@ -17666,7 +17666,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceTemplateVpcAccess
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTerminalConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTerminalConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceTerminalConditionList
 ```
@@ -17815,7 +17815,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTerminalConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTerminalConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceTerminalConditionOutputReference
 ```
@@ -18170,7 +18170,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceTerminalCondition
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTrafficList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTrafficList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceTrafficList
 ```
@@ -18319,7 +18319,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTrafficOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTrafficOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceTrafficOutputReference
 ```
@@ -18630,7 +18630,7 @@ func InternalValue() DataGoogleCloudRunV2ServiceTraffic
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTrafficStatusesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTrafficStatusesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudRunV2ServiceTrafficStatusesList
 ```
@@ -18779,7 +18779,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTrafficStatusesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecloudrunv2service"
 
 datagooglecloudrunv2service.NewDataGoogleCloudRunV2ServiceTrafficStatusesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2ServiceTrafficStatusesOutputReference
 ```

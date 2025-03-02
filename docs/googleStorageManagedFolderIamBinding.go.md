@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleStorageManagedFolderIamBinding.GoogleStorageManagedFolderIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragemanagedfolderiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlestoragemanagedfolderiambinding"
 
 googlestoragemanagedfolderiambinding.NewGoogleStorageManagedFolderIamBinding(scope Construct, id *string, config GoogleStorageManagedFolderIamBindingConfig) GoogleStorageManagedFolderIamBinding
 ```
@@ -405,7 +405,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleStorageManagedFolderIamBinding.GoogleStorageManagedFolderIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragemanagedfolderiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlestoragemanagedfolderiambinding"
 
 googlestoragemanagedfolderiambinding.GoogleStorageManagedFolderIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleStorageManagedFolderIamBinding.GoogleStorageManagedFolderIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragemanagedfolderiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlestoragemanagedfolderiambinding"
 
 googlestoragemanagedfolderiambinding.GoogleStorageManagedFolderIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ googlestoragemanagedfolderiambinding.GoogleStorageManagedFolderIamBinding_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleStorageManagedFolderIamBinding.GoogleStorageManagedFolderIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragemanagedfolderiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlestoragemanagedfolderiambinding"
 
 googlestoragemanagedfolderiambinding.GoogleStorageManagedFolderIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ googlestoragemanagedfolderiambinding.GoogleStorageManagedFolderIamBinding_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleStorageManagedFolderIamBinding.GoogleStorageManagedFolderIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragemanagedfolderiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlestoragemanagedfolderiambinding"
 
 googlestoragemanagedfolderiambinding.GoogleStorageManagedFolderIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleStorageManagedFolderIamBinding.GoogleStorageManagedFolderIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragemanagedfolderiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlestoragemanagedfolderiambinding"
 
 &googlestoragemanagedfolderiambinding.GoogleStorageManagedFolderIamBindingCondition {
 	Expression: *string,
@@ -897,7 +897,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleStorageManagedFolderIamBinding.GoogleStorageManagedFolderIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragemanagedfolderiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlestoragemanagedfolderiambinding"
 
 &googlestoragemanagedfolderiambinding.GoogleStorageManagedFolderIamBindingConfig {
 	Connection: interface{},
@@ -911,7 +911,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragema
 	ManagedFolder: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleStorageManagedFolderIamBinding.GoogleStorageManagedFolderIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleStorageManagedFolderIamBinding.GoogleStorageManagedFolderIamBindingCondition,
 	Id: *string,
 }
 ```
@@ -1090,7 +1090,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleStorageManagedFolderIamBinding.GoogleStorageManagedFolderIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragemanagedfolderiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlestoragemanagedfolderiambinding"
 
 googlestoragemanagedfolderiambinding.NewGoogleStorageManagedFolderIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleStorageManagedFolderIamBindingConditionOutputReference
 ```
