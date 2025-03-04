@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_healthcare_pipeline_job
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_healthcare_pipeline_job
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface GoogleHealthcarePipelineJobConfig extends cdktf.TerraformMetaAr
   /**
   * Healthcare Dataset under which the Pipeline Job is to run
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_healthcare_pipeline_job#dataset GoogleHealthcarePipelineJob#dataset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_healthcare_pipeline_job#dataset GoogleHealthcarePipelineJob#dataset}
   */
   readonly dataset: string;
   /**
   * If true, disables writing lineage for the pipeline.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_healthcare_pipeline_job#disable_lineage GoogleHealthcarePipelineJob#disable_lineage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_healthcare_pipeline_job#disable_lineage GoogleHealthcarePipelineJob#disable_lineage}
   */
   readonly disableLineage?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_healthcare_pipeline_job#id GoogleHealthcarePipelineJob#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_healthcare_pipeline_job#id GoogleHealthcarePipelineJob#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -47,43 +47,43 @@ export interface GoogleHealthcarePipelineJobConfig extends cdktf.TerraformMetaAr
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_healthcare_pipeline_job#labels GoogleHealthcarePipelineJob#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_healthcare_pipeline_job#labels GoogleHealthcarePipelineJob#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Location where the Pipeline Job is to run
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_healthcare_pipeline_job#location GoogleHealthcarePipelineJob#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_healthcare_pipeline_job#location GoogleHealthcarePipelineJob#location}
   */
   readonly location: string;
   /**
   * Specifies the name of the pipeline job. This field is user-assigned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_healthcare_pipeline_job#name GoogleHealthcarePipelineJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_healthcare_pipeline_job#name GoogleHealthcarePipelineJob#name}
   */
   readonly name: string;
   /**
   * backfill_pipeline_job block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_healthcare_pipeline_job#backfill_pipeline_job GoogleHealthcarePipelineJob#backfill_pipeline_job}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_healthcare_pipeline_job#backfill_pipeline_job GoogleHealthcarePipelineJob#backfill_pipeline_job}
   */
   readonly backfillPipelineJob?: GoogleHealthcarePipelineJobBackfillPipelineJob;
   /**
   * mapping_pipeline_job block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_healthcare_pipeline_job#mapping_pipeline_job GoogleHealthcarePipelineJob#mapping_pipeline_job}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_healthcare_pipeline_job#mapping_pipeline_job GoogleHealthcarePipelineJob#mapping_pipeline_job}
   */
   readonly mappingPipelineJob?: GoogleHealthcarePipelineJobMappingPipelineJob;
   /**
   * reconciliation_pipeline_job block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_healthcare_pipeline_job#reconciliation_pipeline_job GoogleHealthcarePipelineJob#reconciliation_pipeline_job}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_healthcare_pipeline_job#reconciliation_pipeline_job GoogleHealthcarePipelineJob#reconciliation_pipeline_job}
   */
   readonly reconciliationPipelineJob?: GoogleHealthcarePipelineJobReconciliationPipelineJob;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_healthcare_pipeline_job#timeouts GoogleHealthcarePipelineJob#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_healthcare_pipeline_job#timeouts GoogleHealthcarePipelineJob#timeouts}
   */
   readonly timeouts?: GoogleHealthcarePipelineJobTimeouts;
 }
@@ -92,7 +92,7 @@ export interface GoogleHealthcarePipelineJobBackfillPipelineJob {
   * Specifies the mapping pipeline job to backfill, the name format
   * should follow: projects/{projectId}/locations/{locationId}/datasets/{datasetId}/pipelineJobs/{pipelineJobId}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_healthcare_pipeline_job#mapping_pipeline_job GoogleHealthcarePipelineJob#mapping_pipeline_job}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_healthcare_pipeline_job#mapping_pipeline_job GoogleHealthcarePipelineJob#mapping_pipeline_job}
   */
   readonly mappingPipelineJob?: string;
 }
@@ -178,13 +178,13 @@ export interface GoogleHealthcarePipelineJobMappingPipelineJobFhirStreamingSourc
   /**
   * Describes the streaming FHIR data source.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_healthcare_pipeline_job#description GoogleHealthcarePipelineJob#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_healthcare_pipeline_job#description GoogleHealthcarePipelineJob#description}
   */
   readonly description?: string;
   /**
   * The path to the FHIR store in the format projects/{projectId}/locations/{locationId}/datasets/{datasetId}/fhirStores/{fhirStoreId}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_healthcare_pipeline_job#fhir_store GoogleHealthcarePipelineJob#fhir_store}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_healthcare_pipeline_job#fhir_store GoogleHealthcarePipelineJob#fhir_store}
   */
   readonly fhirStore: string;
 }
@@ -297,14 +297,14 @@ export interface GoogleHealthcarePipelineJobMappingPipelineJobMappingConfigWhist
   * Directory path where all the Whistle files are located.
   * Example: gs://{bucket-id}/{path/to/import-root/dir}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_healthcare_pipeline_job#import_uri_prefix GoogleHealthcarePipelineJob#import_uri_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_healthcare_pipeline_job#import_uri_prefix GoogleHealthcarePipelineJob#import_uri_prefix}
   */
   readonly importUriPrefix: string;
   /**
   * Main configuration file which has the entrypoint or the root function.
   * Example: gs://{bucket-id}/{path/to/import-root/dir}/entrypoint-file-name.wstl.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_healthcare_pipeline_job#uri GoogleHealthcarePipelineJob#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_healthcare_pipeline_job#uri GoogleHealthcarePipelineJob#uri}
   */
   readonly uri: string;
 }
@@ -413,13 +413,13 @@ export interface GoogleHealthcarePipelineJobMappingPipelineJobMappingConfig {
   /**
   * Describes the mapping configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_healthcare_pipeline_job#description GoogleHealthcarePipelineJob#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_healthcare_pipeline_job#description GoogleHealthcarePipelineJob#description}
   */
   readonly description?: string;
   /**
   * whistle_config_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_healthcare_pipeline_job#whistle_config_source GoogleHealthcarePipelineJob#whistle_config_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_healthcare_pipeline_job#whistle_config_source GoogleHealthcarePipelineJob#whistle_config_source}
   */
   readonly whistleConfigSource?: GoogleHealthcarePipelineJobMappingPipelineJobMappingConfigWhistleConfigSource;
 }
@@ -542,7 +542,7 @@ export interface GoogleHealthcarePipelineJobMappingPipelineJob {
   * to true. The destination store must use FHIR version R4.
   * Format: project/{projectID}/locations/{locationID}/datasets/{datasetName}/fhirStores/{fhirStoreID}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_healthcare_pipeline_job#fhir_store_destination GoogleHealthcarePipelineJob#fhir_store_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_healthcare_pipeline_job#fhir_store_destination GoogleHealthcarePipelineJob#fhir_store_destination}
   */
   readonly fhirStoreDestination?: string;
   /**
@@ -551,19 +551,19 @@ export interface GoogleHealthcarePipelineJobMappingPipelineJob {
   * pipeline must exist in this dataset before a mapping pipeline
   * with a reconciliation destination can be created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_healthcare_pipeline_job#reconciliation_destination GoogleHealthcarePipelineJob#reconciliation_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_healthcare_pipeline_job#reconciliation_destination GoogleHealthcarePipelineJob#reconciliation_destination}
   */
   readonly reconciliationDestination?: boolean | cdktf.IResolvable;
   /**
   * fhir_streaming_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_healthcare_pipeline_job#fhir_streaming_source GoogleHealthcarePipelineJob#fhir_streaming_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_healthcare_pipeline_job#fhir_streaming_source GoogleHealthcarePipelineJob#fhir_streaming_source}
   */
   readonly fhirStreamingSource?: GoogleHealthcarePipelineJobMappingPipelineJobFhirStreamingSource;
   /**
   * mapping_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_healthcare_pipeline_job#mapping_config GoogleHealthcarePipelineJob#mapping_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_healthcare_pipeline_job#mapping_config GoogleHealthcarePipelineJob#mapping_config}
   */
   readonly mappingConfig: GoogleHealthcarePipelineJobMappingPipelineJobMappingConfig;
 }
@@ -734,14 +734,14 @@ export interface GoogleHealthcarePipelineJobReconciliationPipelineJobMergeConfig
   * Directory path where all the Whistle files are located.
   * Example: gs://{bucket-id}/{path/to/import-root/dir}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_healthcare_pipeline_job#import_uri_prefix GoogleHealthcarePipelineJob#import_uri_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_healthcare_pipeline_job#import_uri_prefix GoogleHealthcarePipelineJob#import_uri_prefix}
   */
   readonly importUriPrefix: string;
   /**
   * Main configuration file which has the entrypoint or the root function.
   * Example: gs://{bucket-id}/{path/to/import-root/dir}/entrypoint-file-name.wstl.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_healthcare_pipeline_job#uri GoogleHealthcarePipelineJob#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_healthcare_pipeline_job#uri GoogleHealthcarePipelineJob#uri}
   */
   readonly uri: string;
 }
@@ -850,13 +850,13 @@ export interface GoogleHealthcarePipelineJobReconciliationPipelineJobMergeConfig
   /**
   * Describes the mapping configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_healthcare_pipeline_job#description GoogleHealthcarePipelineJob#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_healthcare_pipeline_job#description GoogleHealthcarePipelineJob#description}
   */
   readonly description?: string;
   /**
   * whistle_config_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_healthcare_pipeline_job#whistle_config_source GoogleHealthcarePipelineJob#whistle_config_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_healthcare_pipeline_job#whistle_config_source GoogleHealthcarePipelineJob#whistle_config_source}
   */
   readonly whistleConfigSource: GoogleHealthcarePipelineJobReconciliationPipelineJobMergeConfigWhistleConfigSource;
 }
@@ -969,7 +969,7 @@ export interface GoogleHealthcarePipelineJobReconciliationPipelineJob {
   * The harmonized FHIR store to write harmonized FHIR resources to,
   * in the format of: project/{projectID}/locations/{locationID}/datasets/{datasetName}/fhirStores/{id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_healthcare_pipeline_job#fhir_store_destination GoogleHealthcarePipelineJob#fhir_store_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_healthcare_pipeline_job#fhir_store_destination GoogleHealthcarePipelineJob#fhir_store_destination}
   */
   readonly fhirStoreDestination?: string;
   /**
@@ -978,13 +978,13 @@ export interface GoogleHealthcarePipelineJobReconciliationPipelineJob {
   * to be matched on.
   * Example: gs://{bucket-id}/{path/to/matching/configs}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_healthcare_pipeline_job#matching_uri_prefix GoogleHealthcarePipelineJob#matching_uri_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_healthcare_pipeline_job#matching_uri_prefix GoogleHealthcarePipelineJob#matching_uri_prefix}
   */
   readonly matchingUriPrefix: string;
   /**
   * merge_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_healthcare_pipeline_job#merge_config GoogleHealthcarePipelineJob#merge_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_healthcare_pipeline_job#merge_config GoogleHealthcarePipelineJob#merge_config}
   */
   readonly mergeConfig: GoogleHealthcarePipelineJobReconciliationPipelineJobMergeConfig;
 }
@@ -1120,15 +1120,15 @@ export class GoogleHealthcarePipelineJobReconciliationPipelineJobOutputReference
 }
 export interface GoogleHealthcarePipelineJobTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_healthcare_pipeline_job#create GoogleHealthcarePipelineJob#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_healthcare_pipeline_job#create GoogleHealthcarePipelineJob#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_healthcare_pipeline_job#delete GoogleHealthcarePipelineJob#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_healthcare_pipeline_job#delete GoogleHealthcarePipelineJob#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_healthcare_pipeline_job#update GoogleHealthcarePipelineJob#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_healthcare_pipeline_job#update GoogleHealthcarePipelineJob#update}
   */
   readonly update?: string;
 }
@@ -1280,7 +1280,7 @@ export class GoogleHealthcarePipelineJobTimeoutsOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_healthcare_pipeline_job google_healthcare_pipeline_job}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_healthcare_pipeline_job google_healthcare_pipeline_job}
 */
 export class GoogleHealthcarePipelineJob extends cdktf.TerraformResource {
 
@@ -1296,7 +1296,7 @@ export class GoogleHealthcarePipelineJob extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleHealthcarePipelineJob resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleHealthcarePipelineJob to import
-  * @param importFromId The id of the existing GoogleHealthcarePipelineJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_healthcare_pipeline_job#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleHealthcarePipelineJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_healthcare_pipeline_job#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleHealthcarePipelineJob to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1308,7 +1308,7 @@ export class GoogleHealthcarePipelineJob extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_healthcare_pipeline_job google_healthcare_pipeline_job} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_healthcare_pipeline_job google_healthcare_pipeline_job} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1319,7 +1319,7 @@ export class GoogleHealthcarePipelineJob extends cdktf.TerraformResource {
       terraformResourceType: 'google_healthcare_pipeline_job',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.23.0',
+        providerVersion: '6.24.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

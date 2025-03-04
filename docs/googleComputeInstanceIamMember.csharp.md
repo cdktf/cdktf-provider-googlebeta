@@ -4,7 +4,7 @@
 
 ### GoogleComputeInstanceIamMember <a name="GoogleComputeInstanceIamMember" id="@cdktf/provider-google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_instance_iam_member google_compute_instance_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instance_iam_member google_compute_instance_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMember.Initializer"></a>
 
@@ -508,7 +508,7 @@ The construct id used in the generated config for the GoogleComputeInstanceIamMe
 
 The id of the existing GoogleComputeInstanceIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_instance_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instance_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -886,9 +886,9 @@ new GoogleComputeInstanceIamMemberCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMemberCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_instance_iam_member#expression GoogleComputeInstanceIamMember#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMemberCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_instance_iam_member#title GoogleComputeInstanceIamMember#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMemberCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_instance_iam_member#description GoogleComputeInstanceIamMember#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMemberCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instance_iam_member#expression GoogleComputeInstanceIamMember#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMemberCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instance_iam_member#title GoogleComputeInstanceIamMember#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMemberCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instance_iam_member#description GoogleComputeInstanceIamMember#description}. |
 
 ---
 
@@ -900,7 +900,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_instance_iam_member#expression GoogleComputeInstanceIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instance_iam_member#expression GoogleComputeInstanceIamMember#expression}.
 
 ---
 
@@ -912,7 +912,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_instance_iam_member#title GoogleComputeInstanceIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instance_iam_member#title GoogleComputeInstanceIamMember#title}.
 
 ---
 
@@ -924,7 +924,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_instance_iam_member#description GoogleComputeInstanceIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instance_iam_member#description GoogleComputeInstanceIamMember#description}.
 
 ---
 
@@ -964,13 +964,13 @@ new GoogleComputeInstanceIamMemberConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMemberConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMemberConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMemberConfig.property.instanceName">InstanceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_instance_iam_member#instance_name GoogleComputeInstanceIamMember#instance_name}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMemberConfig.property.member">Member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_instance_iam_member#member GoogleComputeInstanceIamMember#member}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMemberConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_instance_iam_member#role GoogleComputeInstanceIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMemberConfig.property.instanceName">InstanceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instance_iam_member#instance_name GoogleComputeInstanceIamMember#instance_name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMemberConfig.property.member">Member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instance_iam_member#member GoogleComputeInstanceIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMemberConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instance_iam_member#role GoogleComputeInstanceIamMember#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMemberConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMemberCondition">GoogleComputeInstanceIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_instance_iam_member#id GoogleComputeInstanceIamMember#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMemberConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_instance_iam_member#project GoogleComputeInstanceIamMember#project}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMemberConfig.property.zone">Zone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_instance_iam_member#zone GoogleComputeInstanceIamMember#zone}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instance_iam_member#id GoogleComputeInstanceIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMemberConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instance_iam_member#project GoogleComputeInstanceIamMember#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMemberConfig.property.zone">Zone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instance_iam_member#zone GoogleComputeInstanceIamMember#zone}. |
 
 ---
 
@@ -1052,7 +1052,7 @@ public string InstanceName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_instance_iam_member#instance_name GoogleComputeInstanceIamMember#instance_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instance_iam_member#instance_name GoogleComputeInstanceIamMember#instance_name}.
 
 ---
 
@@ -1064,7 +1064,7 @@ public string Member { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_instance_iam_member#member GoogleComputeInstanceIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instance_iam_member#member GoogleComputeInstanceIamMember#member}.
 
 ---
 
@@ -1076,7 +1076,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_instance_iam_member#role GoogleComputeInstanceIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instance_iam_member#role GoogleComputeInstanceIamMember#role}.
 
 ---
 
@@ -1090,7 +1090,7 @@ public GoogleComputeInstanceIamMemberCondition Condition { get; set; }
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_instance_iam_member#condition GoogleComputeInstanceIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instance_iam_member#condition GoogleComputeInstanceIamMember#condition}
 
 ---
 
@@ -1102,7 +1102,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_instance_iam_member#id GoogleComputeInstanceIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instance_iam_member#id GoogleComputeInstanceIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1117,7 +1117,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_instance_iam_member#project GoogleComputeInstanceIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instance_iam_member#project GoogleComputeInstanceIamMember#project}.
 
 ---
 
@@ -1129,7 +1129,7 @@ public string Zone { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_instance_iam_member#zone GoogleComputeInstanceIamMember#zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instance_iam_member#zone GoogleComputeInstanceIamMember#zone}.
 
 ---
 

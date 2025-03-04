@@ -4,7 +4,7 @@
 
 ### GooglePublicCaExternalAccountKey <a name="GooglePublicCaExternalAccountKey" id="@cdktf/provider-google-beta.googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_public_ca_external_account_key google_public_ca_external_account_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_public_ca_external_account_key google_public_ca_external_account_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKey.Initializer"></a>
 
@@ -39,9 +39,9 @@ googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKey(
 | <code><a href="#@cdktf/provider-google-beta.googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKey.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKey.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKey.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKey.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_public_ca_external_account_key#id GooglePublicCaExternalAccountKey#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKey.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_public_ca_external_account_key#id GooglePublicCaExternalAccountKey#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKey.Initializer.parameter.location">location</a></code> | <code>str</code> | Location for the externalAccountKey. Currently only 'global' is supported. |
-| <code><a href="#@cdktf/provider-google-beta.googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKey.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_public_ca_external_account_key#project GooglePublicCaExternalAccountKey#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKey.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_public_ca_external_account_key#project GooglePublicCaExternalAccountKey#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKey.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKeyTimeouts">GooglePublicCaExternalAccountKeyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_public_ca_external_account_key#id GooglePublicCaExternalAccountKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_public_ca_external_account_key#id GooglePublicCaExternalAccountKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -123,7 +123,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Location for the externalAccountKey. Currently only 'global' is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_public_ca_external_account_key#location GooglePublicCaExternalAccountKey#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_public_ca_external_account_key#location GooglePublicCaExternalAccountKey#location}
 
 ---
 
@@ -131,7 +131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_public_ca_external_account_key#project GooglePublicCaExternalAccountKey#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_public_ca_external_account_key#project GooglePublicCaExternalAccountKey#project}.
 
 ---
 
@@ -141,7 +141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_public_ca_external_account_key#timeouts GooglePublicCaExternalAccountKey#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_public_ca_external_account_key#timeouts GooglePublicCaExternalAccountKey#timeouts}
 
 ---
 
@@ -518,7 +518,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_public_ca_external_account_key#create GooglePublicCaExternalAccountKey#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_public_ca_external_account_key#create GooglePublicCaExternalAccountKey#create}.
 
 ---
 
@@ -526,7 +526,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_public_ca_external_account_key#delete GooglePublicCaExternalAccountKey#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_public_ca_external_account_key#delete GooglePublicCaExternalAccountKey#delete}.
 
 ---
 
@@ -668,7 +668,7 @@ The construct id used in the generated config for the GooglePublicCaExternalAcco
 
 The id of the existing GooglePublicCaExternalAccountKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_public_ca_external_account_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_public_ca_external_account_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -699,6 +699,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKey.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKey.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKey.property.b64MacKey">b64_mac_key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKey.property.b64UrlMacKey">b64_url_mac_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKey.property.keyId">key_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKey.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKey.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKeyTimeoutsOutputReference">GooglePublicCaExternalAccountKeyTimeoutsOutputReference</a></code> | *No description.* |
@@ -864,6 +865,16 @@ b64_mac_key: str
 
 ---
 
+##### `b64_url_mac_key`<sup>Required</sup> <a name="b64_url_mac_key" id="@cdktf/provider-google-beta.googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKey.property.b64UrlMacKey"></a>
+
+```python
+b64_url_mac_key: str
+```
+
+- *Type:* str
+
+---
+
 ##### `key_id`<sup>Required</sup> <a name="key_id" id="@cdktf/provider-google-beta.googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKey.property.keyId"></a>
 
 ```python
@@ -1017,9 +1028,9 @@ googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKeyConfig(
 | <code><a href="#@cdktf/provider-google-beta.googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKeyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKeyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKeyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKeyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_public_ca_external_account_key#id GooglePublicCaExternalAccountKey#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKeyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_public_ca_external_account_key#id GooglePublicCaExternalAccountKey#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKeyConfig.property.location">location</a></code> | <code>str</code> | Location for the externalAccountKey. Currently only 'global' is supported. |
-| <code><a href="#@cdktf/provider-google-beta.googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKeyConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_public_ca_external_account_key#project GooglePublicCaExternalAccountKey#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKeyConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_public_ca_external_account_key#project GooglePublicCaExternalAccountKey#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKeyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKeyTimeouts">GooglePublicCaExternalAccountKeyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1102,7 +1113,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_public_ca_external_account_key#id GooglePublicCaExternalAccountKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_public_ca_external_account_key#id GooglePublicCaExternalAccountKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1119,7 +1130,7 @@ location: str
 
 Location for the externalAccountKey. Currently only 'global' is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_public_ca_external_account_key#location GooglePublicCaExternalAccountKey#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_public_ca_external_account_key#location GooglePublicCaExternalAccountKey#location}
 
 ---
 
@@ -1131,7 +1142,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_public_ca_external_account_key#project GooglePublicCaExternalAccountKey#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_public_ca_external_account_key#project GooglePublicCaExternalAccountKey#project}.
 
 ---
 
@@ -1145,7 +1156,7 @@ timeouts: GooglePublicCaExternalAccountKeyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_public_ca_external_account_key#timeouts GooglePublicCaExternalAccountKey#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_public_ca_external_account_key#timeouts GooglePublicCaExternalAccountKey#timeouts}
 
 ---
 
@@ -1166,8 +1177,8 @@ googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKeyTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKeyTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_public_ca_external_account_key#create GooglePublicCaExternalAccountKey#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKeyTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_public_ca_external_account_key#delete GooglePublicCaExternalAccountKey#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKeyTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_public_ca_external_account_key#create GooglePublicCaExternalAccountKey#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePublicCaExternalAccountKey.GooglePublicCaExternalAccountKeyTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_public_ca_external_account_key#delete GooglePublicCaExternalAccountKey#delete}. |
 
 ---
 
@@ -1179,7 +1190,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_public_ca_external_account_key#create GooglePublicCaExternalAccountKey#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_public_ca_external_account_key#create GooglePublicCaExternalAccountKey#create}.
 
 ---
 
@@ -1191,7 +1202,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_public_ca_external_account_key#delete GooglePublicCaExternalAccountKey#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_public_ca_external_account_key#delete GooglePublicCaExternalAccountKey#delete}.
 
 ---
 

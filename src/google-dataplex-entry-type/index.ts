@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_type
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_entry_type
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface GoogleDataplexEntryTypeConfig extends cdktf.TerraformMetaArgume
   /**
   * Description of the EntryType.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_type#description GoogleDataplexEntryType#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_entry_type#description GoogleDataplexEntryType#description}
   */
   readonly description?: string;
   /**
   * User friendly display name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_type#display_name GoogleDataplexEntryType#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_entry_type#display_name GoogleDataplexEntryType#display_name}
   */
   readonly displayName?: string;
   /**
   * The entry type id of the entry type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_type#entry_type_id GoogleDataplexEntryType#entry_type_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_entry_type#entry_type_id GoogleDataplexEntryType#entry_type_id}
   */
   readonly entryTypeId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_type#id GoogleDataplexEntryType#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_entry_type#id GoogleDataplexEntryType#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,47 +44,47 @@ export interface GoogleDataplexEntryTypeConfig extends cdktf.TerraformMetaArgume
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_type#labels GoogleDataplexEntryType#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_entry_type#labels GoogleDataplexEntryType#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location where entry type will be created in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_type#location GoogleDataplexEntryType#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_entry_type#location GoogleDataplexEntryType#location}
   */
   readonly location?: string;
   /**
   * The platform that Entries of this type belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_type#platform GoogleDataplexEntryType#platform}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_entry_type#platform GoogleDataplexEntryType#platform}
   */
   readonly platform?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_type#project GoogleDataplexEntryType#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_entry_type#project GoogleDataplexEntryType#project}
   */
   readonly project?: string;
   /**
   * The system that Entries of this type belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_type#system GoogleDataplexEntryType#system}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_entry_type#system GoogleDataplexEntryType#system}
   */
   readonly systemAttribute?: string;
   /**
   * Indicates the class this Entry Type belongs to, for example, TABLE, DATABASE, MODEL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_type#type_aliases GoogleDataplexEntryType#type_aliases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_entry_type#type_aliases GoogleDataplexEntryType#type_aliases}
   */
   readonly typeAliases?: string[];
   /**
   * required_aspects block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_type#required_aspects GoogleDataplexEntryType#required_aspects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_entry_type#required_aspects GoogleDataplexEntryType#required_aspects}
   */
   readonly requiredAspects?: GoogleDataplexEntryTypeRequiredAspects[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_type#timeouts GoogleDataplexEntryType#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_entry_type#timeouts GoogleDataplexEntryType#timeouts}
   */
   readonly timeouts?: GoogleDataplexEntryTypeTimeouts;
 }
@@ -92,7 +92,7 @@ export interface GoogleDataplexEntryTypeRequiredAspects {
   /**
   * Required aspect type for the entry type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_type#type GoogleDataplexEntryType#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_entry_type#type GoogleDataplexEntryType#type}
   */
   readonly type?: string;
 }
@@ -208,15 +208,15 @@ export class GoogleDataplexEntryTypeRequiredAspectsList extends cdktf.ComplexLis
 }
 export interface GoogleDataplexEntryTypeTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_type#create GoogleDataplexEntryType#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_entry_type#create GoogleDataplexEntryType#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_type#delete GoogleDataplexEntryType#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_entry_type#delete GoogleDataplexEntryType#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_type#update GoogleDataplexEntryType#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_entry_type#update GoogleDataplexEntryType#update}
   */
   readonly update?: string;
 }
@@ -368,7 +368,7 @@ export class GoogleDataplexEntryTypeTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_type google_dataplex_entry_type}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_entry_type google_dataplex_entry_type}
 */
 export class GoogleDataplexEntryType extends cdktf.TerraformResource {
 
@@ -384,7 +384,7 @@ export class GoogleDataplexEntryType extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleDataplexEntryType resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleDataplexEntryType to import
-  * @param importFromId The id of the existing GoogleDataplexEntryType that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_type#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleDataplexEntryType that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_entry_type#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleDataplexEntryType to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -396,7 +396,7 @@ export class GoogleDataplexEntryType extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_dataplex_entry_type google_dataplex_entry_type} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_entry_type google_dataplex_entry_type} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -407,7 +407,7 @@ export class GoogleDataplexEntryType extends cdktf.TerraformResource {
       terraformResourceType: 'google_dataplex_entry_type',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.23.0',
+        providerVersion: '6.24.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

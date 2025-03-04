@@ -4,7 +4,7 @@
 
 ### GoogleSccV2OrganizationSourceIamBinding <a name="GoogleSccV2OrganizationSourceIamBinding" id="@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamBinding.GoogleSccV2OrganizationSourceIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_scc_v2_organization_source_iam_binding google_scc_v2_organization_source_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_binding google_scc_v2_organization_source_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamBinding.GoogleSccV2OrganizationSourceIamBinding.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the GoogleSccV2OrganizationSou
 
 The id of the existing GoogleSccV2OrganizationSourceIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_scc_v2_organization_source_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -846,9 +846,9 @@ const googleSccV2OrganizationSourceIamBindingCondition: googleSccV2OrganizationS
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamBinding.GoogleSccV2OrganizationSourceIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_scc_v2_organization_source_iam_binding#expression GoogleSccV2OrganizationSourceIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamBinding.GoogleSccV2OrganizationSourceIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_scc_v2_organization_source_iam_binding#title GoogleSccV2OrganizationSourceIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamBinding.GoogleSccV2OrganizationSourceIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_scc_v2_organization_source_iam_binding#description GoogleSccV2OrganizationSourceIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamBinding.GoogleSccV2OrganizationSourceIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_binding#expression GoogleSccV2OrganizationSourceIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamBinding.GoogleSccV2OrganizationSourceIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_binding#title GoogleSccV2OrganizationSourceIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamBinding.GoogleSccV2OrganizationSourceIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_binding#description GoogleSccV2OrganizationSourceIamBinding#description}. |
 
 ---
 
@@ -860,7 +860,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_scc_v2_organization_source_iam_binding#expression GoogleSccV2OrganizationSourceIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_binding#expression GoogleSccV2OrganizationSourceIamBinding#expression}.
 
 ---
 
@@ -872,7 +872,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_scc_v2_organization_source_iam_binding#title GoogleSccV2OrganizationSourceIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_binding#title GoogleSccV2OrganizationSourceIamBinding#title}.
 
 ---
 
@@ -884,7 +884,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_scc_v2_organization_source_iam_binding#description GoogleSccV2OrganizationSourceIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_binding#description GoogleSccV2OrganizationSourceIamBinding#description}.
 
 ---
 
@@ -909,12 +909,12 @@ const googleSccV2OrganizationSourceIamBindingConfig: googleSccV2OrganizationSour
 | <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamBinding.GoogleSccV2OrganizationSourceIamBindingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamBinding.GoogleSccV2OrganizationSourceIamBindingConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamBinding.GoogleSccV2OrganizationSourceIamBindingConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamBinding.GoogleSccV2OrganizationSourceIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_scc_v2_organization_source_iam_binding#members GoogleSccV2OrganizationSourceIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamBinding.GoogleSccV2OrganizationSourceIamBindingConfig.property.organization">organization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_scc_v2_organization_source_iam_binding#organization GoogleSccV2OrganizationSourceIamBinding#organization}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamBinding.GoogleSccV2OrganizationSourceIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_scc_v2_organization_source_iam_binding#role GoogleSccV2OrganizationSourceIamBinding#role}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamBinding.GoogleSccV2OrganizationSourceIamBindingConfig.property.source">source</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_scc_v2_organization_source_iam_binding#source GoogleSccV2OrganizationSourceIamBinding#source}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamBinding.GoogleSccV2OrganizationSourceIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_binding#members GoogleSccV2OrganizationSourceIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamBinding.GoogleSccV2OrganizationSourceIamBindingConfig.property.organization">organization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_binding#organization GoogleSccV2OrganizationSourceIamBinding#organization}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamBinding.GoogleSccV2OrganizationSourceIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_binding#role GoogleSccV2OrganizationSourceIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamBinding.GoogleSccV2OrganizationSourceIamBindingConfig.property.source">source</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_binding#source GoogleSccV2OrganizationSourceIamBinding#source}. |
 | <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamBinding.GoogleSccV2OrganizationSourceIamBindingConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamBinding.GoogleSccV2OrganizationSourceIamBindingCondition">GoogleSccV2OrganizationSourceIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamBinding.GoogleSccV2OrganizationSourceIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_scc_v2_organization_source_iam_binding#id GoogleSccV2OrganizationSourceIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamBinding.GoogleSccV2OrganizationSourceIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_binding#id GoogleSccV2OrganizationSourceIamBinding#id}. |
 
 ---
 
@@ -996,7 +996,7 @@ public readonly members: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_scc_v2_organization_source_iam_binding#members GoogleSccV2OrganizationSourceIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_binding#members GoogleSccV2OrganizationSourceIamBinding#members}.
 
 ---
 
@@ -1008,7 +1008,7 @@ public readonly organization: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_scc_v2_organization_source_iam_binding#organization GoogleSccV2OrganizationSourceIamBinding#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_binding#organization GoogleSccV2OrganizationSourceIamBinding#organization}.
 
 ---
 
@@ -1020,7 +1020,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_scc_v2_organization_source_iam_binding#role GoogleSccV2OrganizationSourceIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_binding#role GoogleSccV2OrganizationSourceIamBinding#role}.
 
 ---
 
@@ -1032,7 +1032,7 @@ public readonly source: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_scc_v2_organization_source_iam_binding#source GoogleSccV2OrganizationSourceIamBinding#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_binding#source GoogleSccV2OrganizationSourceIamBinding#source}.
 
 ---
 
@@ -1046,7 +1046,7 @@ public readonly condition: GoogleSccV2OrganizationSourceIamBindingCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_scc_v2_organization_source_iam_binding#condition GoogleSccV2OrganizationSourceIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_binding#condition GoogleSccV2OrganizationSourceIamBinding#condition}
 
 ---
 
@@ -1058,7 +1058,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_scc_v2_organization_source_iam_binding#id GoogleSccV2OrganizationSourceIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_binding#id GoogleSccV2OrganizationSourceIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

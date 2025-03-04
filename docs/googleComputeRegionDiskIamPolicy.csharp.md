@@ -4,7 +4,7 @@
 
 ### GoogleComputeRegionDiskIamPolicy <a name="GoogleComputeRegionDiskIamPolicy" id="@cdktf/provider-google-beta.googleComputeRegionDiskIamPolicy.GoogleComputeRegionDiskIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_region_disk_iam_policy google_compute_region_disk_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_region_disk_iam_policy google_compute_region_disk_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionDiskIamPolicy.GoogleComputeRegionDiskIamPolicy.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the GoogleComputeRegionDiskIam
 
 The id of the existing GoogleComputeRegionDiskIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_region_disk_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_region_disk_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -838,11 +838,11 @@ new GoogleComputeRegionDiskIamPolicyConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDiskIamPolicy.GoogleComputeRegionDiskIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDiskIamPolicy.GoogleComputeRegionDiskIamPolicyConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDiskIamPolicy.GoogleComputeRegionDiskIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDiskIamPolicy.GoogleComputeRegionDiskIamPolicyConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_region_disk_iam_policy#name GoogleComputeRegionDiskIamPolicy#name}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDiskIamPolicy.GoogleComputeRegionDiskIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_region_disk_iam_policy#policy_data GoogleComputeRegionDiskIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDiskIamPolicy.GoogleComputeRegionDiskIamPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_region_disk_iam_policy#id GoogleComputeRegionDiskIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDiskIamPolicy.GoogleComputeRegionDiskIamPolicyConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_region_disk_iam_policy#project GoogleComputeRegionDiskIamPolicy#project}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDiskIamPolicy.GoogleComputeRegionDiskIamPolicyConfig.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_region_disk_iam_policy#region GoogleComputeRegionDiskIamPolicy#region}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDiskIamPolicy.GoogleComputeRegionDiskIamPolicyConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_region_disk_iam_policy#name GoogleComputeRegionDiskIamPolicy#name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDiskIamPolicy.GoogleComputeRegionDiskIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_region_disk_iam_policy#policy_data GoogleComputeRegionDiskIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDiskIamPolicy.GoogleComputeRegionDiskIamPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_region_disk_iam_policy#id GoogleComputeRegionDiskIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDiskIamPolicy.GoogleComputeRegionDiskIamPolicyConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_region_disk_iam_policy#project GoogleComputeRegionDiskIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDiskIamPolicy.GoogleComputeRegionDiskIamPolicyConfig.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_region_disk_iam_policy#region GoogleComputeRegionDiskIamPolicy#region}. |
 
 ---
 
@@ -924,7 +924,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_region_disk_iam_policy#name GoogleComputeRegionDiskIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_region_disk_iam_policy#name GoogleComputeRegionDiskIamPolicy#name}.
 
 ---
 
@@ -936,7 +936,7 @@ public string PolicyData { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_region_disk_iam_policy#policy_data GoogleComputeRegionDiskIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_region_disk_iam_policy#policy_data GoogleComputeRegionDiskIamPolicy#policy_data}.
 
 ---
 
@@ -948,7 +948,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_region_disk_iam_policy#id GoogleComputeRegionDiskIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_region_disk_iam_policy#id GoogleComputeRegionDiskIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -963,7 +963,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_region_disk_iam_policy#project GoogleComputeRegionDiskIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_region_disk_iam_policy#project GoogleComputeRegionDiskIamPolicy#project}.
 
 ---
 
@@ -975,7 +975,7 @@ public string Region { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_compute_region_disk_iam_policy#region GoogleComputeRegionDiskIamPolicy#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_region_disk_iam_policy#region GoogleComputeRegionDiskIamPolicy#region}.
 
 ---
 

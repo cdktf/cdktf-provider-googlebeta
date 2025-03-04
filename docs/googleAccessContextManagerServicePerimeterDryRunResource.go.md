@@ -4,7 +4,7 @@
 
 ### GoogleAccessContextManagerServicePerimeterDryRunResource <a name="GoogleAccessContextManagerServicePerimeterDryRunResource" id="@cdktf/provider-google-beta.googleAccessContextManagerServicePerimeterDryRunResource.GoogleAccessContextManagerServicePerimeterDryRunResource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_access_context_manager_service_perimeter_dry_run_resource google_access_context_manager_service_perimeter_dry_run_resource}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_access_context_manager_service_perimeter_dry_run_resource google_access_context_manager_service_perimeter_dry_run_resource}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAccessContextManagerServicePerimeterDryRunResource.GoogleAccessContextManagerServicePerimeterDryRunResource.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the GoogleAccessContextManager
 
 The id of the existing GoogleAccessContextManagerServicePerimeterDryRunResource that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_access_context_manager_service_perimeter_dry_run_resource#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_access_context_manager_service_perimeter_dry_run_resource#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -834,7 +834,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleacces
 | <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerServicePerimeterDryRunResource.GoogleAccessContextManagerServicePerimeterDryRunResourceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerServicePerimeterDryRunResource.GoogleAccessContextManagerServicePerimeterDryRunResourceConfig.property.perimeterName">PerimeterName</a></code> | <code>*string</code> | The name of the Service Perimeter to add this resource to. |
 | <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerServicePerimeterDryRunResource.GoogleAccessContextManagerServicePerimeterDryRunResourceConfig.property.resource">Resource</a></code> | <code>*string</code> | A GCP resource that is inside of the service perimeter. Currently only projects are allowed. Format: projects/{project_number}. |
-| <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerServicePerimeterDryRunResource.GoogleAccessContextManagerServicePerimeterDryRunResourceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_access_context_manager_service_perimeter_dry_run_resource#id GoogleAccessContextManagerServicePerimeterDryRunResource#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerServicePerimeterDryRunResource.GoogleAccessContextManagerServicePerimeterDryRunResourceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_access_context_manager_service_perimeter_dry_run_resource#id GoogleAccessContextManagerServicePerimeterDryRunResource#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerServicePerimeterDryRunResource.GoogleAccessContextManagerServicePerimeterDryRunResourceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerServicePerimeterDryRunResource.GoogleAccessContextManagerServicePerimeterDryRunResourceTimeouts">GoogleAccessContextManagerServicePerimeterDryRunResourceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -919,7 +919,7 @@ PerimeterName *string
 
 The name of the Service Perimeter to add this resource to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_access_context_manager_service_perimeter_dry_run_resource#perimeter_name GoogleAccessContextManagerServicePerimeterDryRunResource#perimeter_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_access_context_manager_service_perimeter_dry_run_resource#perimeter_name GoogleAccessContextManagerServicePerimeterDryRunResource#perimeter_name}
 
 ---
 
@@ -933,7 +933,7 @@ Resource *string
 
 A GCP resource that is inside of the service perimeter. Currently only projects are allowed. Format: projects/{project_number}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_access_context_manager_service_perimeter_dry_run_resource#resource GoogleAccessContextManagerServicePerimeterDryRunResource#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_access_context_manager_service_perimeter_dry_run_resource#resource GoogleAccessContextManagerServicePerimeterDryRunResource#resource}
 
 ---
 
@@ -945,7 +945,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_access_context_manager_service_perimeter_dry_run_resource#id GoogleAccessContextManagerServicePerimeterDryRunResource#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_access_context_manager_service_perimeter_dry_run_resource#id GoogleAccessContextManagerServicePerimeterDryRunResource#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -962,7 +962,7 @@ Timeouts GoogleAccessContextManagerServicePerimeterDryRunResourceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_access_context_manager_service_perimeter_dry_run_resource#timeouts GoogleAccessContextManagerServicePerimeterDryRunResource#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_access_context_manager_service_perimeter_dry_run_resource#timeouts GoogleAccessContextManagerServicePerimeterDryRunResource#timeouts}
 
 ---
 
@@ -983,8 +983,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleacces
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerServicePerimeterDryRunResource.GoogleAccessContextManagerServicePerimeterDryRunResourceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_access_context_manager_service_perimeter_dry_run_resource#create GoogleAccessContextManagerServicePerimeterDryRunResource#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerServicePerimeterDryRunResource.GoogleAccessContextManagerServicePerimeterDryRunResourceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_access_context_manager_service_perimeter_dry_run_resource#delete GoogleAccessContextManagerServicePerimeterDryRunResource#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerServicePerimeterDryRunResource.GoogleAccessContextManagerServicePerimeterDryRunResourceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_access_context_manager_service_perimeter_dry_run_resource#create GoogleAccessContextManagerServicePerimeterDryRunResource#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerServicePerimeterDryRunResource.GoogleAccessContextManagerServicePerimeterDryRunResourceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_access_context_manager_service_perimeter_dry_run_resource#delete GoogleAccessContextManagerServicePerimeterDryRunResource#delete}. |
 
 ---
 
@@ -996,7 +996,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_access_context_manager_service_perimeter_dry_run_resource#create GoogleAccessContextManagerServicePerimeterDryRunResource#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_access_context_manager_service_perimeter_dry_run_resource#create GoogleAccessContextManagerServicePerimeterDryRunResource#create}.
 
 ---
 
@@ -1008,7 +1008,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_access_context_manager_service_perimeter_dry_run_resource#delete GoogleAccessContextManagerServicePerimeterDryRunResource#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_access_context_manager_service_perimeter_dry_run_resource#delete GoogleAccessContextManagerServicePerimeterDryRunResource#delete}.
 
 ---
 
