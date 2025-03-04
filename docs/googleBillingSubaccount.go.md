@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBillingSubaccount.GoogleBillingSubaccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingsubaccount"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebillingsubaccount"
 
 googlebillingsubaccount.NewGoogleBillingSubaccount(scope Construct, id *string, config GoogleBillingSubaccountConfig) GoogleBillingSubaccount
 ```
@@ -392,7 +392,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleBillingSubaccount.GoogleBillingSubaccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingsubaccount"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebillingsubaccount"
 
 googlebillingsubaccount.GoogleBillingSubaccount_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleBillingSubaccount.GoogleBillingSubaccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingsubaccount"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebillingsubaccount"
 
 googlebillingsubaccount.GoogleBillingSubaccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ googlebillingsubaccount.GoogleBillingSubaccount_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleBillingSubaccount.GoogleBillingSubaccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingsubaccount"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebillingsubaccount"
 
 googlebillingsubaccount.GoogleBillingSubaccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ googlebillingsubaccount.GoogleBillingSubaccount_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleBillingSubaccount.GoogleBillingSubaccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingsubaccount"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebillingsubaccount"
 
 googlebillingsubaccount.GoogleBillingSubaccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -802,7 +802,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBillingSubaccount.GoogleBillingSubaccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingsubaccount"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebillingsubaccount"
 
 &googlebillingsubaccount.GoogleBillingSubaccountConfig {
 	Connection: interface{},
