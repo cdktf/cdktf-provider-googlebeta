@@ -4,12 +4,12 @@
 
 ### DataGoogleKmsKeyHandle <a name="DataGoogleKmsKeyHandle" id="@cdktf/provider-google-beta.dataGoogleKmsKeyHandle.DataGoogleKmsKeyHandle"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/data-sources/google_kms_key_handle google_kms_key_handle}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/data-sources/google_kms_key_handle google_kms_key_handle}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleKmsKeyHandle.DataGoogleKmsKeyHandle.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglekmskeyhandle"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglekmskeyhandle"
 
 datagooglekmskeyhandle.NewDataGoogleKmsKeyHandle(scope Construct, id *string, config DataGoogleKmsKeyHandleConfig) DataGoogleKmsKeyHandle
 ```
@@ -290,7 +290,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleKmsKeyHandle.DataGoogleKmsKeyHandle.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglekmskeyhandle"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglekmskeyhandle"
 
 datagooglekmskeyhandle.DataGoogleKmsKeyHandle_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleKmsKeyHandle.DataGoogleKmsKeyHandle.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglekmskeyhandle"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglekmskeyhandle"
 
 datagooglekmskeyhandle.DataGoogleKmsKeyHandle_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datagooglekmskeyhandle.DataGoogleKmsKeyHandle_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleKmsKeyHandle.DataGoogleKmsKeyHandle.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglekmskeyhandle"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglekmskeyhandle"
 
 datagooglekmskeyhandle.DataGoogleKmsKeyHandle_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datagooglekmskeyhandle.DataGoogleKmsKeyHandle_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleKmsKeyHandle.DataGoogleKmsKeyHandle.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglekmskeyhandle"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglekmskeyhandle"
 
 datagooglekmskeyhandle.DataGoogleKmsKeyHandle_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataGoogleKmsKeyHandle to 
 
 The id of the existing DataGoogleKmsKeyHandle that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/data-sources/google_kms_key_handle#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/data-sources/google_kms_key_handle#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -667,7 +667,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleKmsKeyHandle.DataGoogleKmsKeyHandleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglekmskeyhandle"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglekmskeyhandle"
 
 &datagooglekmskeyhandle.DataGoogleKmsKeyHandleConfig {
 	Connection: interface{},
@@ -697,8 +697,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglek
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsKeyHandle.DataGoogleKmsKeyHandleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsKeyHandle.DataGoogleKmsKeyHandleConfig.property.location">Location</a></code> | <code>*string</code> | The location for the KeyHandle. A full list of valid locations can be found by running 'gcloud kms locations list'. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsKeyHandle.DataGoogleKmsKeyHandleConfig.property.name">Name</a></code> | <code>*string</code> | The resource name for the KeyHandle. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsKeyHandle.DataGoogleKmsKeyHandleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/data-sources/google_kms_key_handle#id DataGoogleKmsKeyHandle#id}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsKeyHandle.DataGoogleKmsKeyHandleConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/data-sources/google_kms_key_handle#project DataGoogleKmsKeyHandle#project}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsKeyHandle.DataGoogleKmsKeyHandleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/data-sources/google_kms_key_handle#id DataGoogleKmsKeyHandle#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsKeyHandle.DataGoogleKmsKeyHandleConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/data-sources/google_kms_key_handle#project DataGoogleKmsKeyHandle#project}. |
 
 ---
 
@@ -782,7 +782,7 @@ Location *string
 
 The location for the KeyHandle. A full list of valid locations can be found by running 'gcloud kms locations list'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/data-sources/google_kms_key_handle#location DataGoogleKmsKeyHandle#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/data-sources/google_kms_key_handle#location DataGoogleKmsKeyHandle#location}
 
 ---
 
@@ -796,7 +796,7 @@ Name *string
 
 The resource name for the KeyHandle.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/data-sources/google_kms_key_handle#name DataGoogleKmsKeyHandle#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/data-sources/google_kms_key_handle#name DataGoogleKmsKeyHandle#name}
 
 ---
 
@@ -808,7 +808,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/data-sources/google_kms_key_handle#id DataGoogleKmsKeyHandle#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/data-sources/google_kms_key_handle#id DataGoogleKmsKeyHandle#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -823,7 +823,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/data-sources/google_kms_key_handle#project DataGoogleKmsKeyHandle#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/data-sources/google_kms_key_handle#project DataGoogleKmsKeyHandle#project}.
 
 ---
 
