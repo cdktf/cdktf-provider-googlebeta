@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecretManagerRegionalSecretVersion.GoogleSecretManagerRegionalSecretVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagerregionalsecretversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecretmanagerregionalsecretversion"
 
 googlesecretmanagerregionalsecretversion.NewGoogleSecretManagerRegionalSecretVersion(scope Construct, id *string, config GoogleSecretManagerRegionalSecretVersionConfig) GoogleSecretManagerRegionalSecretVersion
 ```
@@ -426,7 +426,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleSecretManagerRegionalSecretVersion.GoogleSecretManagerRegionalSecretVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagerregionalsecretversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecretmanagerregionalsecretversion"
 
 googlesecretmanagerregionalsecretversion.GoogleSecretManagerRegionalSecretVersion_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleSecretManagerRegionalSecretVersion.GoogleSecretManagerRegionalSecretVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagerregionalsecretversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecretmanagerregionalsecretversion"
 
 googlesecretmanagerregionalsecretversion.GoogleSecretManagerRegionalSecretVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ googlesecretmanagerregionalsecretversion.GoogleSecretManagerRegionalSecretVersio
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleSecretManagerRegionalSecretVersion.GoogleSecretManagerRegionalSecretVersion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagerregionalsecretversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecretmanagerregionalsecretversion"
 
 googlesecretmanagerregionalsecretversion.GoogleSecretManagerRegionalSecretVersion_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ googlesecretmanagerregionalsecretversion.GoogleSecretManagerRegionalSecretVersio
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleSecretManagerRegionalSecretVersion.GoogleSecretManagerRegionalSecretVersion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagerregionalsecretversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecretmanagerregionalsecretversion"
 
 googlesecretmanagerregionalsecretversion.GoogleSecretManagerRegionalSecretVersion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -935,7 +935,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecretManagerRegionalSecretVersion.GoogleSecretManagerRegionalSecretVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagerregionalsecretversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecretmanagerregionalsecretversion"
 
 &googlesecretmanagerregionalsecretversion.GoogleSecretManagerRegionalSecretVersionConfig {
 	Connection: interface{},
@@ -951,7 +951,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretman
 	Enabled: interface{},
 	Id: *string,
 	IsSecretDataBase64: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSecretManagerRegionalSecretVersion.GoogleSecretManagerRegionalSecretVersionTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSecretManagerRegionalSecretVersion.GoogleSecretManagerRegionalSecretVersionTimeouts,
 }
 ```
 
@@ -1158,7 +1158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecretManagerRegionalSecretVersion.GoogleSecretManagerRegionalSecretVersionCustomerManagedEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagerregionalsecretversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecretmanagerregionalsecretversion"
 
 &googlesecretmanagerregionalsecretversion.GoogleSecretManagerRegionalSecretVersionCustomerManagedEncryption {
 
@@ -1171,7 +1171,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretman
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecretManagerRegionalSecretVersion.GoogleSecretManagerRegionalSecretVersionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagerregionalsecretversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecretmanagerregionalsecretversion"
 
 &googlesecretmanagerregionalsecretversion.GoogleSecretManagerRegionalSecretVersionTimeouts {
 	Create: *string,
@@ -1233,7 +1233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecretManagerRegionalSecretVersion.GoogleSecretManagerRegionalSecretVersionCustomerManagedEncryptionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagerregionalsecretversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecretmanagerregionalsecretversion"
 
 googlesecretmanagerregionalsecretversion.NewGoogleSecretManagerRegionalSecretVersionCustomerManagedEncryptionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleSecretManagerRegionalSecretVersionCustomerManagedEncryptionList
 ```
@@ -1382,7 +1382,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecretManagerRegionalSecretVersion.GoogleSecretManagerRegionalSecretVersionCustomerManagedEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagerregionalsecretversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecretmanagerregionalsecretversion"
 
 googlesecretmanagerregionalsecretversion.NewGoogleSecretManagerRegionalSecretVersionCustomerManagedEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleSecretManagerRegionalSecretVersionCustomerManagedEncryptionOutputReference
 ```
@@ -1660,7 +1660,7 @@ func InternalValue() GoogleSecretManagerRegionalSecretVersionCustomerManagedEncr
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecretManagerRegionalSecretVersion.GoogleSecretManagerRegionalSecretVersionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagerregionalsecretversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecretmanagerregionalsecretversion"
 
 googlesecretmanagerregionalsecretversion.NewGoogleSecretManagerRegionalSecretVersionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSecretManagerRegionalSecretVersionTimeoutsOutputReference
 ```
