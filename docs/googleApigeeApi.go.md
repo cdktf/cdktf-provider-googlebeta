@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeApi.GoogleApigeeApi.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeapi"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeapi"
 
 googleapigeeapi.NewGoogleApigeeApi(scope Construct, id *string, config GoogleApigeeApiConfig) GoogleApigeeApi
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleApigeeApi.GoogleApigeeApi.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeapi"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeapi"
 
 googleapigeeapi.GoogleApigeeApi_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleApigeeApi.GoogleApigeeApi.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeapi"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeapi"
 
 googleapigeeapi.GoogleApigeeApi_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ googleapigeeapi.GoogleApigeeApi_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleApigeeApi.GoogleApigeeApi.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeapi"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeapi"
 
 googleapigeeapi.GoogleApigeeApi_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ googleapigeeapi.GoogleApigeeApi_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleApigeeApi.GoogleApigeeApi.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeapi"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeapi"
 
 googleapigeeapi.GoogleApigeeApi_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -877,7 +877,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeApi.GoogleApigeeApiConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeapi"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeapi"
 
 &googleapigeeapi.GoogleApigeeApiConfig {
 	Connection: interface{},
@@ -892,7 +892,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapige
 	OrgId: *string,
 	DetectMd5Hash: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleApigeeApi.GoogleApigeeApiTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApigeeApi.GoogleApigeeApiTimeouts,
 }
 ```
 
@@ -1078,7 +1078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeApi.GoogleApigeeApiMetaData.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeapi"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeapi"
 
 &googleapigeeapi.GoogleApigeeApiMetaData {
 
@@ -1091,7 +1091,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapige
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeApi.GoogleApigeeApiTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeapi"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeapi"
 
 &googleapigeeapi.GoogleApigeeApiTimeouts {
 	Create: *string,
@@ -1153,7 +1153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeApi.GoogleApigeeApiMetaDataList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeapi"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeapi"
 
 googleapigeeapi.NewGoogleApigeeApiMetaDataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleApigeeApiMetaDataList
 ```
@@ -1302,7 +1302,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeApi.GoogleApigeeApiMetaDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeapi"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeapi"
 
 googleapigeeapi.NewGoogleApigeeApiMetaDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleApigeeApiMetaDataOutputReference
 ```
@@ -1602,7 +1602,7 @@ func InternalValue() GoogleApigeeApiMetaData
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeApi.GoogleApigeeApiTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeapi"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeapi"
 
 googleapigeeapi.NewGoogleApigeeApiTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApigeeApiTimeoutsOutputReference
 ```

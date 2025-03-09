@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseDatabaseInstance.GoogleFirebaseDatabaseInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirebasedatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasedatabaseinstance"
 
 googlefirebasedatabaseinstance.NewGoogleFirebaseDatabaseInstance(scope Construct, id *string, config GoogleFirebaseDatabaseInstanceConfig) GoogleFirebaseDatabaseInstance
 ```
@@ -426,7 +426,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleFirebaseDatabaseInstance.GoogleFirebaseDatabaseInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirebasedatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasedatabaseinstance"
 
 googlefirebasedatabaseinstance.GoogleFirebaseDatabaseInstance_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleFirebaseDatabaseInstance.GoogleFirebaseDatabaseInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirebasedatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasedatabaseinstance"
 
 googlefirebasedatabaseinstance.GoogleFirebaseDatabaseInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ googlefirebasedatabaseinstance.GoogleFirebaseDatabaseInstance_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleFirebaseDatabaseInstance.GoogleFirebaseDatabaseInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirebasedatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasedatabaseinstance"
 
 googlefirebasedatabaseinstance.GoogleFirebaseDatabaseInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ googlefirebasedatabaseinstance.GoogleFirebaseDatabaseInstance_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleFirebaseDatabaseInstance.GoogleFirebaseDatabaseInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirebasedatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasedatabaseinstance"
 
 googlefirebasedatabaseinstance.GoogleFirebaseDatabaseInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -902,7 +902,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseDatabaseInstance.GoogleFirebaseDatabaseInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirebasedatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasedatabaseinstance"
 
 &googlefirebasedatabaseinstance.GoogleFirebaseDatabaseInstanceConfig {
 	Connection: interface{},
@@ -917,7 +917,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefireb
 	DesiredState: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleFirebaseDatabaseInstance.GoogleFirebaseDatabaseInstanceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleFirebaseDatabaseInstance.GoogleFirebaseDatabaseInstanceTimeouts,
 	Type: *string,
 }
 ```
@@ -1119,7 +1119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseDatabaseInstance.GoogleFirebaseDatabaseInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirebasedatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasedatabaseinstance"
 
 &googlefirebasedatabaseinstance.GoogleFirebaseDatabaseInstanceTimeouts {
 	Create: *string,
@@ -1181,7 +1181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseDatabaseInstance.GoogleFirebaseDatabaseInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirebasedatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasedatabaseinstance"
 
 googlefirebasedatabaseinstance.NewGoogleFirebaseDatabaseInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleFirebaseDatabaseInstanceTimeoutsOutputReference
 ```

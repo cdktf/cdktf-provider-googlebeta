@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleStorageManagedFolderIamMember.GoogleStorageManagedFolderIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlestoragemanagedfolderiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragemanagedfolderiammember"
 
 googlestoragemanagedfolderiammember.NewGoogleStorageManagedFolderIamMember(scope Construct, id *string, config GoogleStorageManagedFolderIamMemberConfig) GoogleStorageManagedFolderIamMember
 ```
@@ -405,7 +405,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleStorageManagedFolderIamMember.GoogleStorageManagedFolderIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlestoragemanagedfolderiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragemanagedfolderiammember"
 
 googlestoragemanagedfolderiammember.GoogleStorageManagedFolderIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleStorageManagedFolderIamMember.GoogleStorageManagedFolderIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlestoragemanagedfolderiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragemanagedfolderiammember"
 
 googlestoragemanagedfolderiammember.GoogleStorageManagedFolderIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ googlestoragemanagedfolderiammember.GoogleStorageManagedFolderIamMember_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleStorageManagedFolderIamMember.GoogleStorageManagedFolderIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlestoragemanagedfolderiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragemanagedfolderiammember"
 
 googlestoragemanagedfolderiammember.GoogleStorageManagedFolderIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ googlestoragemanagedfolderiammember.GoogleStorageManagedFolderIamMember_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleStorageManagedFolderIamMember.GoogleStorageManagedFolderIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlestoragemanagedfolderiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragemanagedfolderiammember"
 
 googlestoragemanagedfolderiammember.GoogleStorageManagedFolderIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleStorageManagedFolderIamMember.GoogleStorageManagedFolderIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlestoragemanagedfolderiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragemanagedfolderiammember"
 
 &googlestoragemanagedfolderiammember.GoogleStorageManagedFolderIamMemberCondition {
 	Expression: *string,
@@ -897,7 +897,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleStorageManagedFolderIamMember.GoogleStorageManagedFolderIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlestoragemanagedfolderiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragemanagedfolderiammember"
 
 &googlestoragemanagedfolderiammember.GoogleStorageManagedFolderIamMemberConfig {
 	Connection: interface{},
@@ -911,7 +911,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlestora
 	ManagedFolder: *string,
 	Member: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleStorageManagedFolderIamMember.GoogleStorageManagedFolderIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleStorageManagedFolderIamMember.GoogleStorageManagedFolderIamMemberCondition,
 	Id: *string,
 }
 ```
@@ -1090,7 +1090,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleStorageManagedFolderIamMember.GoogleStorageManagedFolderIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlestoragemanagedfolderiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragemanagedfolderiammember"
 
 googlestoragemanagedfolderiammember.NewGoogleStorageManagedFolderIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleStorageManagedFolderIamMemberConditionOutputReference
 ```

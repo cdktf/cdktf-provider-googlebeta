@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputehavpngateway"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputehavpngateway"
 
 googlecomputehavpngateway.NewGoogleComputeHaVpnGateway(scope Construct, id *string, config GoogleComputeHaVpnGatewayConfig) GoogleComputeHaVpnGateway
 ```
@@ -467,7 +467,7 @@ func ResetVpnInterfaces()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputehavpngateway"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputehavpngateway"
 
 googlecomputehavpngateway.GoogleComputeHaVpnGateway_IsConstruct(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputehavpngateway"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputehavpngateway"
 
 googlecomputehavpngateway.GoogleComputeHaVpnGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ googlecomputehavpngateway.GoogleComputeHaVpnGateway_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGateway.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputehavpngateway"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputehavpngateway"
 
 googlecomputehavpngateway.GoogleComputeHaVpnGateway_IsTerraformResource(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ googlecomputehavpngateway.GoogleComputeHaVpnGateway_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputehavpngateway"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputehavpngateway"
 
 googlecomputehavpngateway.GoogleComputeHaVpnGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1042,7 +1042,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputehavpngateway"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputehavpngateway"
 
 &googlecomputehavpngateway.GoogleComputeHaVpnGatewayConfig {
 	Connection: interface{},
@@ -1061,7 +1061,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecompu
 	Project: *string,
 	Region: *string,
 	StackType: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeHaVpnGateway.GoogleComputeHaVpnGatewayTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeHaVpnGateway.GoogleComputeHaVpnGatewayTimeouts,
 	VpnInterfaces: interface{},
 }
 ```
@@ -1337,7 +1337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGatewayTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputehavpngateway"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputehavpngateway"
 
 &googlecomputehavpngateway.GoogleComputeHaVpnGatewayTimeouts {
 	Create: *string,
@@ -1397,7 +1397,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGatewayVpnInterfaces.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputehavpngateway"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputehavpngateway"
 
 &googlecomputehavpngateway.GoogleComputeHaVpnGatewayVpnInterfaces {
 	Id: *f64,
@@ -1460,7 +1460,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGatewayTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputehavpngateway"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputehavpngateway"
 
 googlecomputehavpngateway.NewGoogleComputeHaVpnGatewayTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeHaVpnGatewayTimeoutsOutputReference
 ```
@@ -1796,7 +1796,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGatewayVpnInterfacesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputehavpngateway"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputehavpngateway"
 
 googlecomputehavpngateway.NewGoogleComputeHaVpnGatewayVpnInterfacesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeHaVpnGatewayVpnInterfacesList
 ```
@@ -1956,7 +1956,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGatewayVpnInterfacesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputehavpngateway"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputehavpngateway"
 
 googlecomputehavpngateway.NewGoogleComputeHaVpnGatewayVpnInterfacesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeHaVpnGatewayVpnInterfacesOutputReference
 ```

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_target_https_proxy
 // generated from terraform resource schema
 

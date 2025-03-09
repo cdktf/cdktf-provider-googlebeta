@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_gemini_data_sharing_with_google_setting_binding
 // generated from terraform resource schema
 

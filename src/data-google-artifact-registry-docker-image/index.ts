@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/data-sources/google_artifact_registry_docker_image
 // generated from terraform resource schema
 
