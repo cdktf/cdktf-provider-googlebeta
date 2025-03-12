@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_app_engine_domain_mapping
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_app_engine_domain_mapping
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface GoogleAppEngineDomainMappingConfig extends cdktf.TerraformMetaA
   /**
   * Relative name of the domain serving the application. Example: example.com.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_app_engine_domain_mapping#domain_name GoogleAppEngineDomainMapping#domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_app_engine_domain_mapping#domain_name GoogleAppEngineDomainMapping#domain_name}
   */
   readonly domainName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_app_engine_domain_mapping#id GoogleAppEngineDomainMapping#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_app_engine_domain_mapping#id GoogleAppEngineDomainMapping#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,23 +29,23 @@ export interface GoogleAppEngineDomainMappingConfig extends cdktf.TerraformMetaA
   * Whether the domain creation should override any existing mappings for this domain.
   * By default, overrides are rejected. Default value: "STRICT" Possible values: ["STRICT", "OVERRIDE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_app_engine_domain_mapping#override_strategy GoogleAppEngineDomainMapping#override_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_app_engine_domain_mapping#override_strategy GoogleAppEngineDomainMapping#override_strategy}
   */
   readonly overrideStrategy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_app_engine_domain_mapping#project GoogleAppEngineDomainMapping#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_app_engine_domain_mapping#project GoogleAppEngineDomainMapping#project}
   */
   readonly project?: string;
   /**
   * ssl_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_app_engine_domain_mapping#ssl_settings GoogleAppEngineDomainMapping#ssl_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_app_engine_domain_mapping#ssl_settings GoogleAppEngineDomainMapping#ssl_settings}
   */
   readonly sslSettings?: GoogleAppEngineDomainMappingSslSettings;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_app_engine_domain_mapping#timeouts GoogleAppEngineDomainMapping#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_app_engine_domain_mapping#timeouts GoogleAppEngineDomainMapping#timeouts}
   */
   readonly timeouts?: GoogleAppEngineDomainMappingTimeouts;
 }
@@ -143,14 +143,14 @@ export interface GoogleAppEngineDomainMappingSslSettings {
   * authorized to administer the 'AuthorizedCertificate' resource to manually map it to a DomainMapping resource.
   * Example: 12345.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_app_engine_domain_mapping#certificate_id GoogleAppEngineDomainMapping#certificate_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_app_engine_domain_mapping#certificate_id GoogleAppEngineDomainMapping#certificate_id}
   */
   readonly certificateId?: string;
   /**
   * SSL management type for this domain. If 'AUTOMATIC', a managed certificate is automatically provisioned.
   * If 'MANUAL', 'certificateId' must be manually specified in order to configure SSL for this domain. Possible values: ["AUTOMATIC", "MANUAL"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_app_engine_domain_mapping#ssl_management_type GoogleAppEngineDomainMapping#ssl_management_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_app_engine_domain_mapping#ssl_management_type GoogleAppEngineDomainMapping#ssl_management_type}
   */
   readonly sslManagementType: string;
 }
@@ -265,15 +265,15 @@ export class GoogleAppEngineDomainMappingSslSettingsOutputReference extends cdkt
 }
 export interface GoogleAppEngineDomainMappingTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_app_engine_domain_mapping#create GoogleAppEngineDomainMapping#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_app_engine_domain_mapping#create GoogleAppEngineDomainMapping#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_app_engine_domain_mapping#delete GoogleAppEngineDomainMapping#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_app_engine_domain_mapping#delete GoogleAppEngineDomainMapping#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_app_engine_domain_mapping#update GoogleAppEngineDomainMapping#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_app_engine_domain_mapping#update GoogleAppEngineDomainMapping#update}
   */
   readonly update?: string;
 }
@@ -425,7 +425,7 @@ export class GoogleAppEngineDomainMappingTimeoutsOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_app_engine_domain_mapping google_app_engine_domain_mapping}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_app_engine_domain_mapping google_app_engine_domain_mapping}
 */
 export class GoogleAppEngineDomainMapping extends cdktf.TerraformResource {
 
@@ -441,7 +441,7 @@ export class GoogleAppEngineDomainMapping extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleAppEngineDomainMapping resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleAppEngineDomainMapping to import
-  * @param importFromId The id of the existing GoogleAppEngineDomainMapping that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_app_engine_domain_mapping#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleAppEngineDomainMapping that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_app_engine_domain_mapping#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleAppEngineDomainMapping to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -453,7 +453,7 @@ export class GoogleAppEngineDomainMapping extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_app_engine_domain_mapping google_app_engine_domain_mapping} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_app_engine_domain_mapping google_app_engine_domain_mapping} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -464,7 +464,7 @@ export class GoogleAppEngineDomainMapping extends cdktf.TerraformResource {
       terraformResourceType: 'google_app_engine_domain_mapping',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.24.0',
+        providerVersion: '6.25.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### GoogleComputeInstantSnapshotIamBinding <a name="GoogleComputeInstantSnapshotIamBinding" id="@cdktf/provider-google-beta.googleComputeInstantSnapshotIamBinding.GoogleComputeInstantSnapshotIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instant_snapshot_iam_binding google_compute_instant_snapshot_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_compute_instant_snapshot_iam_binding google_compute_instant_snapshot_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstantSnapshotIamBinding.GoogleComputeInstantSnapshotIamBinding.Initializer"></a>
 
@@ -508,7 +508,7 @@ The construct id used in the generated config for the GoogleComputeInstantSnapsh
 
 The id of the existing GoogleComputeInstantSnapshotIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instant_snapshot_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_compute_instant_snapshot_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -886,9 +886,9 @@ new GoogleComputeInstantSnapshotIamBindingCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeInstantSnapshotIamBinding.GoogleComputeInstantSnapshotIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instant_snapshot_iam_binding#expression GoogleComputeInstantSnapshotIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeInstantSnapshotIamBinding.GoogleComputeInstantSnapshotIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instant_snapshot_iam_binding#title GoogleComputeInstantSnapshotIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeInstantSnapshotIamBinding.GoogleComputeInstantSnapshotIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instant_snapshot_iam_binding#description GoogleComputeInstantSnapshotIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeInstantSnapshotIamBinding.GoogleComputeInstantSnapshotIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_compute_instant_snapshot_iam_binding#expression GoogleComputeInstantSnapshotIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeInstantSnapshotIamBinding.GoogleComputeInstantSnapshotIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_compute_instant_snapshot_iam_binding#title GoogleComputeInstantSnapshotIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeInstantSnapshotIamBinding.GoogleComputeInstantSnapshotIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_compute_instant_snapshot_iam_binding#description GoogleComputeInstantSnapshotIamBinding#description}. |
 
 ---
 
@@ -900,7 +900,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instant_snapshot_iam_binding#expression GoogleComputeInstantSnapshotIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_compute_instant_snapshot_iam_binding#expression GoogleComputeInstantSnapshotIamBinding#expression}.
 
 ---
 
@@ -912,7 +912,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instant_snapshot_iam_binding#title GoogleComputeInstantSnapshotIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_compute_instant_snapshot_iam_binding#title GoogleComputeInstantSnapshotIamBinding#title}.
 
 ---
 
@@ -924,7 +924,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instant_snapshot_iam_binding#description GoogleComputeInstantSnapshotIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_compute_instant_snapshot_iam_binding#description GoogleComputeInstantSnapshotIamBinding#description}.
 
 ---
 
@@ -964,13 +964,13 @@ new GoogleComputeInstantSnapshotIamBindingConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleComputeInstantSnapshotIamBinding.GoogleComputeInstantSnapshotIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeInstantSnapshotIamBinding.GoogleComputeInstantSnapshotIamBindingConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeInstantSnapshotIamBinding.GoogleComputeInstantSnapshotIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeInstantSnapshotIamBinding.GoogleComputeInstantSnapshotIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instant_snapshot_iam_binding#members GoogleComputeInstantSnapshotIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeInstantSnapshotIamBinding.GoogleComputeInstantSnapshotIamBindingConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instant_snapshot_iam_binding#name GoogleComputeInstantSnapshotIamBinding#name}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeInstantSnapshotIamBinding.GoogleComputeInstantSnapshotIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instant_snapshot_iam_binding#role GoogleComputeInstantSnapshotIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeInstantSnapshotIamBinding.GoogleComputeInstantSnapshotIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_compute_instant_snapshot_iam_binding#members GoogleComputeInstantSnapshotIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeInstantSnapshotIamBinding.GoogleComputeInstantSnapshotIamBindingConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_compute_instant_snapshot_iam_binding#name GoogleComputeInstantSnapshotIamBinding#name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeInstantSnapshotIamBinding.GoogleComputeInstantSnapshotIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_compute_instant_snapshot_iam_binding#role GoogleComputeInstantSnapshotIamBinding#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeInstantSnapshotIamBinding.GoogleComputeInstantSnapshotIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeInstantSnapshotIamBinding.GoogleComputeInstantSnapshotIamBindingCondition">GoogleComputeInstantSnapshotIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeInstantSnapshotIamBinding.GoogleComputeInstantSnapshotIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instant_snapshot_iam_binding#id GoogleComputeInstantSnapshotIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeInstantSnapshotIamBinding.GoogleComputeInstantSnapshotIamBindingConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instant_snapshot_iam_binding#project GoogleComputeInstantSnapshotIamBinding#project}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeInstantSnapshotIamBinding.GoogleComputeInstantSnapshotIamBindingConfig.property.zone">Zone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instant_snapshot_iam_binding#zone GoogleComputeInstantSnapshotIamBinding#zone}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeInstantSnapshotIamBinding.GoogleComputeInstantSnapshotIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_compute_instant_snapshot_iam_binding#id GoogleComputeInstantSnapshotIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeInstantSnapshotIamBinding.GoogleComputeInstantSnapshotIamBindingConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_compute_instant_snapshot_iam_binding#project GoogleComputeInstantSnapshotIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeInstantSnapshotIamBinding.GoogleComputeInstantSnapshotIamBindingConfig.property.zone">Zone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_compute_instant_snapshot_iam_binding#zone GoogleComputeInstantSnapshotIamBinding#zone}. |
 
 ---
 
@@ -1052,7 +1052,7 @@ public string[] Members { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instant_snapshot_iam_binding#members GoogleComputeInstantSnapshotIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_compute_instant_snapshot_iam_binding#members GoogleComputeInstantSnapshotIamBinding#members}.
 
 ---
 
@@ -1064,7 +1064,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instant_snapshot_iam_binding#name GoogleComputeInstantSnapshotIamBinding#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_compute_instant_snapshot_iam_binding#name GoogleComputeInstantSnapshotIamBinding#name}.
 
 ---
 
@@ -1076,7 +1076,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instant_snapshot_iam_binding#role GoogleComputeInstantSnapshotIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_compute_instant_snapshot_iam_binding#role GoogleComputeInstantSnapshotIamBinding#role}.
 
 ---
 
@@ -1090,7 +1090,7 @@ public GoogleComputeInstantSnapshotIamBindingCondition Condition { get; set; }
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instant_snapshot_iam_binding#condition GoogleComputeInstantSnapshotIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_compute_instant_snapshot_iam_binding#condition GoogleComputeInstantSnapshotIamBinding#condition}
 
 ---
 
@@ -1102,7 +1102,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instant_snapshot_iam_binding#id GoogleComputeInstantSnapshotIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_compute_instant_snapshot_iam_binding#id GoogleComputeInstantSnapshotIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1117,7 +1117,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instant_snapshot_iam_binding#project GoogleComputeInstantSnapshotIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_compute_instant_snapshot_iam_binding#project GoogleComputeInstantSnapshotIamBinding#project}.
 
 ---
 
@@ -1129,7 +1129,7 @@ public string Zone { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_instant_snapshot_iam_binding#zone GoogleComputeInstantSnapshotIamBinding#zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_compute_instant_snapshot_iam_binding#zone GoogleComputeInstantSnapshotIamBinding#zone}.
 
 ---
 

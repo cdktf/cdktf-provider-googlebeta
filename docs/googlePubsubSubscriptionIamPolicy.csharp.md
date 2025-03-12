@@ -4,7 +4,7 @@
 
 ### GooglePubsubSubscriptionIamPolicy <a name="GooglePubsubSubscriptionIamPolicy" id="@cdktf/provider-google-beta.googlePubsubSubscriptionIamPolicy.GooglePubsubSubscriptionIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_pubsub_subscription_iam_policy google_pubsub_subscription_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_pubsub_subscription_iam_policy google_pubsub_subscription_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePubsubSubscriptionIamPolicy.GooglePubsubSubscriptionIamPolicy.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the GooglePubsubSubscriptionIa
 
 The id of the existing GooglePubsubSubscriptionIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_pubsub_subscription_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_pubsub_subscription_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -808,10 +808,10 @@ new GooglePubsubSubscriptionIamPolicyConfig {
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamPolicy.GooglePubsubSubscriptionIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamPolicy.GooglePubsubSubscriptionIamPolicyConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamPolicy.GooglePubsubSubscriptionIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamPolicy.GooglePubsubSubscriptionIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_pubsub_subscription_iam_policy#policy_data GooglePubsubSubscriptionIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamPolicy.GooglePubsubSubscriptionIamPolicyConfig.property.subscription">Subscription</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_pubsub_subscription_iam_policy#subscription GooglePubsubSubscriptionIamPolicy#subscription}. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamPolicy.GooglePubsubSubscriptionIamPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_pubsub_subscription_iam_policy#id GooglePubsubSubscriptionIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamPolicy.GooglePubsubSubscriptionIamPolicyConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_pubsub_subscription_iam_policy#project GooglePubsubSubscriptionIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamPolicy.GooglePubsubSubscriptionIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_pubsub_subscription_iam_policy#policy_data GooglePubsubSubscriptionIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamPolicy.GooglePubsubSubscriptionIamPolicyConfig.property.subscription">Subscription</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_pubsub_subscription_iam_policy#subscription GooglePubsubSubscriptionIamPolicy#subscription}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamPolicy.GooglePubsubSubscriptionIamPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_pubsub_subscription_iam_policy#id GooglePubsubSubscriptionIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamPolicy.GooglePubsubSubscriptionIamPolicyConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_pubsub_subscription_iam_policy#project GooglePubsubSubscriptionIamPolicy#project}. |
 
 ---
 
@@ -893,7 +893,7 @@ public string PolicyData { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_pubsub_subscription_iam_policy#policy_data GooglePubsubSubscriptionIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_pubsub_subscription_iam_policy#policy_data GooglePubsubSubscriptionIamPolicy#policy_data}.
 
 ---
 
@@ -905,7 +905,7 @@ public string Subscription { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_pubsub_subscription_iam_policy#subscription GooglePubsubSubscriptionIamPolicy#subscription}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_pubsub_subscription_iam_policy#subscription GooglePubsubSubscriptionIamPolicy#subscription}.
 
 ---
 
@@ -917,7 +917,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_pubsub_subscription_iam_policy#id GooglePubsubSubscriptionIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_pubsub_subscription_iam_policy#id GooglePubsubSubscriptionIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -932,7 +932,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_pubsub_subscription_iam_policy#project GooglePubsubSubscriptionIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_pubsub_subscription_iam_policy#project GooglePubsubSubscriptionIamPolicy#project}.
 
 ---
 

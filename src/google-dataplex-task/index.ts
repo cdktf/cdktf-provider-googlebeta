@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface GoogleDataplexTaskConfig extends cdktf.TerraformMetaArguments {
   /**
   * User-provided description of the task.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#description GoogleDataplexTask#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#description GoogleDataplexTask#description}
   */
   readonly description?: string;
   /**
   * User friendly display name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#display_name GoogleDataplexTask#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#display_name GoogleDataplexTask#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#id GoogleDataplexTask#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#id GoogleDataplexTask#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -38,59 +38,59 @@ export interface GoogleDataplexTaskConfig extends cdktf.TerraformMetaArguments {
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#labels GoogleDataplexTask#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#labels GoogleDataplexTask#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The lake in which the task will be created in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#lake GoogleDataplexTask#lake}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#lake GoogleDataplexTask#lake}
   */
   readonly lake?: string;
   /**
   * The location in which the task will be created in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#location GoogleDataplexTask#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#location GoogleDataplexTask#location}
   */
   readonly location?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#project GoogleDataplexTask#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#project GoogleDataplexTask#project}
   */
   readonly project?: string;
   /**
   * The task Id of the task.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#task_id GoogleDataplexTask#task_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#task_id GoogleDataplexTask#task_id}
   */
   readonly taskId?: string;
   /**
   * execution_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#execution_spec GoogleDataplexTask#execution_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#execution_spec GoogleDataplexTask#execution_spec}
   */
   readonly executionSpec: GoogleDataplexTaskExecutionSpec;
   /**
   * notebook block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#notebook GoogleDataplexTask#notebook}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#notebook GoogleDataplexTask#notebook}
   */
   readonly notebook?: GoogleDataplexTaskNotebook;
   /**
   * spark block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#spark GoogleDataplexTask#spark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#spark GoogleDataplexTask#spark}
   */
   readonly spark?: GoogleDataplexTaskSpark;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#timeouts GoogleDataplexTask#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#timeouts GoogleDataplexTask#timeouts}
   */
   readonly timeouts?: GoogleDataplexTaskTimeouts;
   /**
   * trigger_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#trigger_spec GoogleDataplexTask#trigger_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#trigger_spec GoogleDataplexTask#trigger_spec}
   */
   readonly triggerSpec: GoogleDataplexTaskTriggerSpec;
 }
@@ -294,31 +294,31 @@ export interface GoogleDataplexTaskExecutionSpec {
   /**
   * The arguments to pass to the task. The args can use placeholders of the format ${placeholder} as part of key/value string. These will be interpolated before passing the args to the driver. Currently supported placeholders: - ${taskId} - ${job_time} To pass positional args, set the key as TASK_ARGS. The value should be a comma-separated string of all the positional arguments. To use a delimiter other than comma, refer to https://cloud.google.com/sdk/gcloud/reference/topic/escaping. In case of other keys being present in the args, then TASK_ARGS will be passed as the last argument. An object containing a list of 'key': value pairs. Example: { 'name': 'wrench', 'mass': '1.3kg', 'count': '3' }.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#args GoogleDataplexTask#args}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#args GoogleDataplexTask#args}
   */
   readonly args?: { [key: string]: string };
   /**
   * The Cloud KMS key to use for encryption, of the form: projects/{project_number}/locations/{locationId}/keyRings/{key-ring-name}/cryptoKeys/{key-name}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#kms_key GoogleDataplexTask#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#kms_key GoogleDataplexTask#kms_key}
   */
   readonly kmsKey?: string;
   /**
   * The maximum duration after which the job execution is expired. A duration in seconds with up to nine fractional digits, ending with 's'. Example: '3.5s'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#max_job_execution_lifetime GoogleDataplexTask#max_job_execution_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#max_job_execution_lifetime GoogleDataplexTask#max_job_execution_lifetime}
   */
   readonly maxJobExecutionLifetime?: string;
   /**
   * The project in which jobs are run. By default, the project containing the Lake is used. If a project is provided, the ExecutionSpec.service_account must belong to this project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#project GoogleDataplexTask#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#project GoogleDataplexTask#project}
   */
   readonly project?: string;
   /**
   * Service account to use to execute a task. If not provided, the default Compute service account for the project is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#service_account GoogleDataplexTask#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#service_account GoogleDataplexTask#service_account}
   */
   readonly serviceAccount: string;
 }
@@ -517,13 +517,13 @@ export interface GoogleDataplexTaskNotebookInfrastructureSpecBatch {
   /**
   * Total number of job executors. Executor Count should be between 2 and 100. [Default=2]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#executors_count GoogleDataplexTask#executors_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#executors_count GoogleDataplexTask#executors_count}
   */
   readonly executorsCount?: number;
   /**
   * Max configurable executors. If maxExecutorsCount > executorsCount, then auto-scaling is enabled. Max Executor Count should be between 2 and 1000. [Default=1000]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#max_executors_count GoogleDataplexTask#max_executors_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#max_executors_count GoogleDataplexTask#max_executors_count}
   */
   readonly maxExecutorsCount?: number;
 }
@@ -638,25 +638,25 @@ export interface GoogleDataplexTaskNotebookInfrastructureSpecContainerImage {
   /**
   * Container image to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#image GoogleDataplexTask#image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#image GoogleDataplexTask#image}
   */
   readonly image?: string;
   /**
   * A list of Java JARS to add to the classpath. Valid input includes Cloud Storage URIs to Jar binaries. For example, gs://bucket-name/my/path/to/file.jar
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#java_jars GoogleDataplexTask#java_jars}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#java_jars GoogleDataplexTask#java_jars}
   */
   readonly javaJars?: string[];
   /**
   * Override to common configuration of open source components installed on the Dataproc cluster. The properties to set on daemon config files. Property keys are specified in prefix:property format, for example core:hadoop.tmp.dir. For more information, see Cluster properties.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#properties GoogleDataplexTask#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#properties GoogleDataplexTask#properties}
   */
   readonly properties?: { [key: string]: string };
   /**
   * A list of python packages to be installed. Valid formats include Cloud Storage URI to a PIP installable library. For example, gs://bucket-name/my/path/to/lib.tar.gz
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#python_packages GoogleDataplexTask#python_packages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#python_packages GoogleDataplexTask#python_packages}
   */
   readonly pythonPackages?: string[];
 }
@@ -829,19 +829,19 @@ export interface GoogleDataplexTaskNotebookInfrastructureSpecVpcNetwork {
   /**
   * The Cloud VPC network in which the job is run. By default, the Cloud VPC network named Default within the project is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#network GoogleDataplexTask#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#network GoogleDataplexTask#network}
   */
   readonly network?: string;
   /**
   * List of network tags to apply to the job.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#network_tags GoogleDataplexTask#network_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#network_tags GoogleDataplexTask#network_tags}
   */
   readonly networkTags?: string[];
   /**
   * The Cloud VPC sub-network in which the job is run.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#sub_network GoogleDataplexTask#sub_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#sub_network GoogleDataplexTask#sub_network}
   */
   readonly subNetwork?: string;
 }
@@ -985,19 +985,19 @@ export interface GoogleDataplexTaskNotebookInfrastructureSpec {
   /**
   * batch block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#batch GoogleDataplexTask#batch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#batch GoogleDataplexTask#batch}
   */
   readonly batch?: GoogleDataplexTaskNotebookInfrastructureSpecBatch;
   /**
   * container_image block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#container_image GoogleDataplexTask#container_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#container_image GoogleDataplexTask#container_image}
   */
   readonly containerImage?: GoogleDataplexTaskNotebookInfrastructureSpecContainerImage;
   /**
   * vpc_network block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#vpc_network GoogleDataplexTask#vpc_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#vpc_network GoogleDataplexTask#vpc_network}
   */
   readonly vpcNetwork?: GoogleDataplexTaskNotebookInfrastructureSpecVpcNetwork;
 }
@@ -1141,25 +1141,25 @@ export interface GoogleDataplexTaskNotebook {
   /**
   * Cloud Storage URIs of archives to be extracted into the working directory of each executor. Supported file types: .jar, .tar, .tar.gz, .tgz, and .zip.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#archive_uris GoogleDataplexTask#archive_uris}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#archive_uris GoogleDataplexTask#archive_uris}
   */
   readonly archiveUris?: string[];
   /**
   * Cloud Storage URIs of files to be placed in the working directory of each executor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#file_uris GoogleDataplexTask#file_uris}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#file_uris GoogleDataplexTask#file_uris}
   */
   readonly fileUris?: string[];
   /**
   * Path to input notebook. This can be the Cloud Storage URI of the notebook file or the path to a Notebook Content. The execution args are accessible as environment variables (TASK_key=value).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#notebook GoogleDataplexTask#notebook}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#notebook GoogleDataplexTask#notebook}
   */
   readonly notebook: string;
   /**
   * infrastructure_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#infrastructure_spec GoogleDataplexTask#infrastructure_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#infrastructure_spec GoogleDataplexTask#infrastructure_spec}
   */
   readonly infrastructureSpec?: GoogleDataplexTaskNotebookInfrastructureSpec;
 }
@@ -1329,13 +1329,13 @@ export interface GoogleDataplexTaskSparkInfrastructureSpecBatch {
   /**
   * Total number of job executors. Executor Count should be between 2 and 100. [Default=2]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#executors_count GoogleDataplexTask#executors_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#executors_count GoogleDataplexTask#executors_count}
   */
   readonly executorsCount?: number;
   /**
   * Max configurable executors. If maxExecutorsCount > executorsCount, then auto-scaling is enabled. Max Executor Count should be between 2 and 1000. [Default=1000]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#max_executors_count GoogleDataplexTask#max_executors_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#max_executors_count GoogleDataplexTask#max_executors_count}
   */
   readonly maxExecutorsCount?: number;
 }
@@ -1450,25 +1450,25 @@ export interface GoogleDataplexTaskSparkInfrastructureSpecContainerImage {
   /**
   * Container image to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#image GoogleDataplexTask#image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#image GoogleDataplexTask#image}
   */
   readonly image?: string;
   /**
   * A list of Java JARS to add to the classpath. Valid input includes Cloud Storage URIs to Jar binaries. For example, gs://bucket-name/my/path/to/file.jar
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#java_jars GoogleDataplexTask#java_jars}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#java_jars GoogleDataplexTask#java_jars}
   */
   readonly javaJars?: string[];
   /**
   * Override to common configuration of open source components installed on the Dataproc cluster. The properties to set on daemon config files. Property keys are specified in prefix:property format, for example core:hadoop.tmp.dir. For more information, see Cluster properties.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#properties GoogleDataplexTask#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#properties GoogleDataplexTask#properties}
   */
   readonly properties?: { [key: string]: string };
   /**
   * A list of python packages to be installed. Valid formats include Cloud Storage URI to a PIP installable library. For example, gs://bucket-name/my/path/to/lib.tar.gz
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#python_packages GoogleDataplexTask#python_packages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#python_packages GoogleDataplexTask#python_packages}
   */
   readonly pythonPackages?: string[];
 }
@@ -1641,19 +1641,19 @@ export interface GoogleDataplexTaskSparkInfrastructureSpecVpcNetwork {
   /**
   * The Cloud VPC network in which the job is run. By default, the Cloud VPC network named Default within the project is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#network GoogleDataplexTask#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#network GoogleDataplexTask#network}
   */
   readonly network?: string;
   /**
   * List of network tags to apply to the job.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#network_tags GoogleDataplexTask#network_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#network_tags GoogleDataplexTask#network_tags}
   */
   readonly networkTags?: string[];
   /**
   * The Cloud VPC sub-network in which the job is run.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#sub_network GoogleDataplexTask#sub_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#sub_network GoogleDataplexTask#sub_network}
   */
   readonly subNetwork?: string;
 }
@@ -1797,19 +1797,19 @@ export interface GoogleDataplexTaskSparkInfrastructureSpec {
   /**
   * batch block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#batch GoogleDataplexTask#batch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#batch GoogleDataplexTask#batch}
   */
   readonly batch?: GoogleDataplexTaskSparkInfrastructureSpecBatch;
   /**
   * container_image block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#container_image GoogleDataplexTask#container_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#container_image GoogleDataplexTask#container_image}
   */
   readonly containerImage?: GoogleDataplexTaskSparkInfrastructureSpecContainerImage;
   /**
   * vpc_network block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#vpc_network GoogleDataplexTask#vpc_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#vpc_network GoogleDataplexTask#vpc_network}
   */
   readonly vpcNetwork?: GoogleDataplexTaskSparkInfrastructureSpecVpcNetwork;
 }
@@ -1953,49 +1953,49 @@ export interface GoogleDataplexTaskSpark {
   /**
   * Cloud Storage URIs of archives to be extracted into the working directory of each executor. Supported file types: .jar, .tar, .tar.gz, .tgz, and .zip.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#archive_uris GoogleDataplexTask#archive_uris}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#archive_uris GoogleDataplexTask#archive_uris}
   */
   readonly archiveUris?: string[];
   /**
   * Cloud Storage URIs of files to be placed in the working directory of each executor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#file_uris GoogleDataplexTask#file_uris}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#file_uris GoogleDataplexTask#file_uris}
   */
   readonly fileUris?: string[];
   /**
   * The name of the driver's main class. The jar file that contains the class must be in the default CLASSPATH or specified in jar_file_uris. The execution args are passed in as a sequence of named process arguments (--key=value).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#main_class GoogleDataplexTask#main_class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#main_class GoogleDataplexTask#main_class}
   */
   readonly mainClass?: string;
   /**
   * The Cloud Storage URI of the jar file that contains the main class. The execution args are passed in as a sequence of named process arguments (--key=value).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#main_jar_file_uri GoogleDataplexTask#main_jar_file_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#main_jar_file_uri GoogleDataplexTask#main_jar_file_uri}
   */
   readonly mainJarFileUri?: string;
   /**
   * The Gcloud Storage URI of the main Python file to use as the driver. Must be a .py file. The execution args are passed in as a sequence of named process arguments (--key=value).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#python_script_file GoogleDataplexTask#python_script_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#python_script_file GoogleDataplexTask#python_script_file}
   */
   readonly pythonScriptFile?: string;
   /**
   * The query text. The execution args are used to declare a set of script variables (set key='value';).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#sql_script GoogleDataplexTask#sql_script}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#sql_script GoogleDataplexTask#sql_script}
   */
   readonly sqlScript?: string;
   /**
   * A reference to a query file. This can be the Cloud Storage URI of the query file or it can the path to a SqlScript Content. The execution args are used to declare a set of script variables (set key='value';).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#sql_script_file GoogleDataplexTask#sql_script_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#sql_script_file GoogleDataplexTask#sql_script_file}
   */
   readonly sqlScriptFile?: string;
   /**
   * infrastructure_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#infrastructure_spec GoogleDataplexTask#infrastructure_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#infrastructure_spec GoogleDataplexTask#infrastructure_spec}
   */
   readonly infrastructureSpec?: GoogleDataplexTaskSparkInfrastructureSpec;
 }
@@ -2282,15 +2282,15 @@ export class GoogleDataplexTaskSparkOutputReference extends cdktf.ComplexObject 
 }
 export interface GoogleDataplexTaskTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#create GoogleDataplexTask#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#create GoogleDataplexTask#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#delete GoogleDataplexTask#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#delete GoogleDataplexTask#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#update GoogleDataplexTask#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#update GoogleDataplexTask#update}
   */
   readonly update?: string;
 }
@@ -2444,31 +2444,31 @@ export interface GoogleDataplexTaskTriggerSpec {
   /**
   * Prevent the task from executing. This does not cancel already running tasks. It is intended to temporarily disable RECURRING tasks.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#disabled GoogleDataplexTask#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#disabled GoogleDataplexTask#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * Number of retry attempts before aborting. Set to zero to never attempt to retry a failed task.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#max_retries GoogleDataplexTask#max_retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#max_retries GoogleDataplexTask#max_retries}
   */
   readonly maxRetries?: number;
   /**
   * Cron schedule (https://en.wikipedia.org/wiki/Cron) for running tasks periodically. To explicitly set a timezone to the cron tab, apply a prefix in the cron tab: 'CRON_TZ=${IANA_TIME_ZONE}' or 'TZ=${IANA_TIME_ZONE}'. The ${IANA_TIME_ZONE} may only be a valid string from IANA time zone database. For example, CRON_TZ=America/New_York 1 * * * *, or TZ=America/New_York 1 * * * *. This field is required for RECURRING tasks.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#schedule GoogleDataplexTask#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#schedule GoogleDataplexTask#schedule}
   */
   readonly schedule?: string;
   /**
   * The first run of the task will be after this time. If not specified, the task will run shortly after being submitted if ON_DEMAND and based on the schedule if RECURRING.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#start_time GoogleDataplexTask#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#start_time GoogleDataplexTask#start_time}
   */
   readonly startTime?: string;
   /**
   * Trigger type of the user-specified Task Possible values: ["ON_DEMAND", "RECURRING"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#type GoogleDataplexTask#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#type GoogleDataplexTask#type}
   */
   readonly type: string;
 }
@@ -2665,7 +2665,7 @@ export class GoogleDataplexTaskTriggerSpecOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task google_dataplex_task}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task google_dataplex_task}
 */
 export class GoogleDataplexTask extends cdktf.TerraformResource {
 
@@ -2681,7 +2681,7 @@ export class GoogleDataplexTask extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleDataplexTask resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleDataplexTask to import
-  * @param importFromId The id of the existing GoogleDataplexTask that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleDataplexTask that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleDataplexTask to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -2693,7 +2693,7 @@ export class GoogleDataplexTask extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_dataplex_task google_dataplex_task} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dataplex_task google_dataplex_task} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2704,7 +2704,7 @@ export class GoogleDataplexTask extends cdktf.TerraformResource {
       terraformResourceType: 'google_dataplex_task',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.24.0',
+        providerVersion: '6.25.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

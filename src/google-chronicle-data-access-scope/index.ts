@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_chronicle_data_access_scope
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_chronicle_data_access_scope
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -22,7 +22,7 @@ export interface GoogleChronicleDataAccessScopeConfig extends cdktf.TerraformMet
   * to see all data except data labeled with A and data labeled with B and data
   * with labels A and B.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_chronicle_data_access_scope#allow_all GoogleChronicleDataAccessScope#allow_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_chronicle_data_access_scope#allow_all GoogleChronicleDataAccessScope#allow_all}
   */
   readonly allowAll?: boolean | cdktf.IResolvable;
   /**
@@ -30,17 +30,17 @@ export interface GoogleChronicleDataAccessScopeConfig extends cdktf.TerraformMet
   * of the scope resource.
   * Needs to be compliant with https://google.aip.dev/122
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_chronicle_data_access_scope#data_access_scope_id GoogleChronicleDataAccessScope#data_access_scope_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_chronicle_data_access_scope#data_access_scope_id GoogleChronicleDataAccessScope#data_access_scope_id}
   */
   readonly dataAccessScopeId: string;
   /**
   * Optional. A description of the data access scope for a human reader.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_chronicle_data_access_scope#description GoogleChronicleDataAccessScope#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_chronicle_data_access_scope#description GoogleChronicleDataAccessScope#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_chronicle_data_access_scope#id GoogleChronicleDataAccessScope#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_chronicle_data_access_scope#id GoogleChronicleDataAccessScope#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -49,35 +49,35 @@ export interface GoogleChronicleDataAccessScopeConfig extends cdktf.TerraformMet
   /**
   * The unique identifier for the Chronicle instance, which is the same as the customer ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_chronicle_data_access_scope#instance GoogleChronicleDataAccessScope#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_chronicle_data_access_scope#instance GoogleChronicleDataAccessScope#instance}
   */
   readonly instance: string;
   /**
   * The location of the resource. This is the geographical region where the Chronicle instance resides, such as "us" or "europe-west2".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_chronicle_data_access_scope#location GoogleChronicleDataAccessScope#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_chronicle_data_access_scope#location GoogleChronicleDataAccessScope#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_chronicle_data_access_scope#project GoogleChronicleDataAccessScope#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_chronicle_data_access_scope#project GoogleChronicleDataAccessScope#project}
   */
   readonly project?: string;
   /**
   * allowed_data_access_labels block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_chronicle_data_access_scope#allowed_data_access_labels GoogleChronicleDataAccessScope#allowed_data_access_labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_chronicle_data_access_scope#allowed_data_access_labels GoogleChronicleDataAccessScope#allowed_data_access_labels}
   */
   readonly allowedDataAccessLabels?: GoogleChronicleDataAccessScopeAllowedDataAccessLabels[] | cdktf.IResolvable;
   /**
   * denied_data_access_labels block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_chronicle_data_access_scope#denied_data_access_labels GoogleChronicleDataAccessScope#denied_data_access_labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_chronicle_data_access_scope#denied_data_access_labels GoogleChronicleDataAccessScope#denied_data_access_labels}
   */
   readonly deniedDataAccessLabels?: GoogleChronicleDataAccessScopeDeniedDataAccessLabels[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_chronicle_data_access_scope#timeouts GoogleChronicleDataAccessScope#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_chronicle_data_access_scope#timeouts GoogleChronicleDataAccessScope#timeouts}
   */
   readonly timeouts?: GoogleChronicleDataAccessScopeTimeouts;
 }
@@ -85,7 +85,7 @@ export interface GoogleChronicleDataAccessScopeAllowedDataAccessLabelsIngestionL
   /**
   * Required. The key of the ingestion label. Always required.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_chronicle_data_access_scope#ingestion_label_key GoogleChronicleDataAccessScope#ingestion_label_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_chronicle_data_access_scope#ingestion_label_key GoogleChronicleDataAccessScope#ingestion_label_key}
   */
   readonly ingestionLabelKey: string;
   /**
@@ -93,7 +93,7 @@ export interface GoogleChronicleDataAccessScopeAllowedDataAccessLabelsIngestionL
   * with no provided value and some key provided would match
   * against the given key and ANY value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_chronicle_data_access_scope#ingestion_label_value GoogleChronicleDataAccessScope#ingestion_label_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_chronicle_data_access_scope#ingestion_label_value GoogleChronicleDataAccessScope#ingestion_label_value}
   */
   readonly ingestionLabelValue?: string;
 }
@@ -206,25 +206,25 @@ export interface GoogleChronicleDataAccessScopeAllowedDataAccessLabels {
   * The asset namespace configured in the forwarder
   * of the customer's events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_chronicle_data_access_scope#asset_namespace GoogleChronicleDataAccessScope#asset_namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_chronicle_data_access_scope#asset_namespace GoogleChronicleDataAccessScope#asset_namespace}
   */
   readonly assetNamespace?: string;
   /**
   * The name of the data access label.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_chronicle_data_access_scope#data_access_label GoogleChronicleDataAccessScope#data_access_label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_chronicle_data_access_scope#data_access_label GoogleChronicleDataAccessScope#data_access_label}
   */
   readonly dataAccessLabel?: string;
   /**
   * The name of the log type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_chronicle_data_access_scope#log_type GoogleChronicleDataAccessScope#log_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_chronicle_data_access_scope#log_type GoogleChronicleDataAccessScope#log_type}
   */
   readonly logType?: string;
   /**
   * ingestion_label block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_chronicle_data_access_scope#ingestion_label GoogleChronicleDataAccessScope#ingestion_label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_chronicle_data_access_scope#ingestion_label GoogleChronicleDataAccessScope#ingestion_label}
   */
   readonly ingestionLabel?: GoogleChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabel;
 }
@@ -434,7 +434,7 @@ export interface GoogleChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLa
   /**
   * Required. The key of the ingestion label. Always required.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_chronicle_data_access_scope#ingestion_label_key GoogleChronicleDataAccessScope#ingestion_label_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_chronicle_data_access_scope#ingestion_label_key GoogleChronicleDataAccessScope#ingestion_label_key}
   */
   readonly ingestionLabelKey: string;
   /**
@@ -442,7 +442,7 @@ export interface GoogleChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLa
   * with no provided value and some key provided would match
   * against the given key and ANY value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_chronicle_data_access_scope#ingestion_label_value GoogleChronicleDataAccessScope#ingestion_label_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_chronicle_data_access_scope#ingestion_label_value GoogleChronicleDataAccessScope#ingestion_label_value}
   */
   readonly ingestionLabelValue?: string;
 }
@@ -555,25 +555,25 @@ export interface GoogleChronicleDataAccessScopeDeniedDataAccessLabels {
   * The asset namespace configured in the forwarder
   * of the customer's events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_chronicle_data_access_scope#asset_namespace GoogleChronicleDataAccessScope#asset_namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_chronicle_data_access_scope#asset_namespace GoogleChronicleDataAccessScope#asset_namespace}
   */
   readonly assetNamespace?: string;
   /**
   * The name of the data access label.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_chronicle_data_access_scope#data_access_label GoogleChronicleDataAccessScope#data_access_label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_chronicle_data_access_scope#data_access_label GoogleChronicleDataAccessScope#data_access_label}
   */
   readonly dataAccessLabel?: string;
   /**
   * The name of the log type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_chronicle_data_access_scope#log_type GoogleChronicleDataAccessScope#log_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_chronicle_data_access_scope#log_type GoogleChronicleDataAccessScope#log_type}
   */
   readonly logType?: string;
   /**
   * ingestion_label block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_chronicle_data_access_scope#ingestion_label GoogleChronicleDataAccessScope#ingestion_label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_chronicle_data_access_scope#ingestion_label GoogleChronicleDataAccessScope#ingestion_label}
   */
   readonly ingestionLabel?: GoogleChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabel;
 }
@@ -781,15 +781,15 @@ export class GoogleChronicleDataAccessScopeDeniedDataAccessLabelsList extends cd
 }
 export interface GoogleChronicleDataAccessScopeTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_chronicle_data_access_scope#create GoogleChronicleDataAccessScope#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_chronicle_data_access_scope#create GoogleChronicleDataAccessScope#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_chronicle_data_access_scope#delete GoogleChronicleDataAccessScope#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_chronicle_data_access_scope#delete GoogleChronicleDataAccessScope#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_chronicle_data_access_scope#update GoogleChronicleDataAccessScope#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_chronicle_data_access_scope#update GoogleChronicleDataAccessScope#update}
   */
   readonly update?: string;
 }
@@ -941,7 +941,7 @@ export class GoogleChronicleDataAccessScopeTimeoutsOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_chronicle_data_access_scope google_chronicle_data_access_scope}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_chronicle_data_access_scope google_chronicle_data_access_scope}
 */
 export class GoogleChronicleDataAccessScope extends cdktf.TerraformResource {
 
@@ -957,7 +957,7 @@ export class GoogleChronicleDataAccessScope extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleChronicleDataAccessScope resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleChronicleDataAccessScope to import
-  * @param importFromId The id of the existing GoogleChronicleDataAccessScope that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_chronicle_data_access_scope#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleChronicleDataAccessScope that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_chronicle_data_access_scope#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleChronicleDataAccessScope to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -969,7 +969,7 @@ export class GoogleChronicleDataAccessScope extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_chronicle_data_access_scope google_chronicle_data_access_scope} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_chronicle_data_access_scope google_chronicle_data_access_scope} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -980,7 +980,7 @@ export class GoogleChronicleDataAccessScope extends cdktf.TerraformResource {
       terraformResourceType: 'google_chronicle_data_access_scope',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.24.0',
+        providerVersion: '6.25.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
