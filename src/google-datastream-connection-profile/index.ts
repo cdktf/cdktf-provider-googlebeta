@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +10,23 @@ export interface GoogleDatastreamConnectionProfileConfig extends cdktf.Terraform
   /**
   * The connection profile identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#connection_profile_id GoogleDatastreamConnectionProfile#connection_profile_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#connection_profile_id GoogleDatastreamConnectionProfile#connection_profile_id}
   */
   readonly connectionProfileId: string;
   /**
   * Create the connection profile without validating it.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#create_without_validation GoogleDatastreamConnectionProfile#create_without_validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#create_without_validation GoogleDatastreamConnectionProfile#create_without_validation}
   */
   readonly createWithoutValidation?: boolean | cdktf.IResolvable;
   /**
   * Display name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#display_name GoogleDatastreamConnectionProfile#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#display_name GoogleDatastreamConnectionProfile#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#id GoogleDatastreamConnectionProfile#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#id GoogleDatastreamConnectionProfile#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -43,71 +38,77 @@ export interface GoogleDatastreamConnectionProfileConfig extends cdktf.Terraform
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#labels GoogleDatastreamConnectionProfile#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#labels GoogleDatastreamConnectionProfile#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The name of the location this connection profile is located in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#location GoogleDatastreamConnectionProfile#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#location GoogleDatastreamConnectionProfile#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#project GoogleDatastreamConnectionProfile#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#project GoogleDatastreamConnectionProfile#project}
   */
   readonly project?: string;
   /**
   * bigquery_profile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#bigquery_profile GoogleDatastreamConnectionProfile#bigquery_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#bigquery_profile GoogleDatastreamConnectionProfile#bigquery_profile}
   */
   readonly bigqueryProfile?: GoogleDatastreamConnectionProfileBigqueryProfile;
   /**
   * forward_ssh_connectivity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#forward_ssh_connectivity GoogleDatastreamConnectionProfile#forward_ssh_connectivity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#forward_ssh_connectivity GoogleDatastreamConnectionProfile#forward_ssh_connectivity}
   */
   readonly forwardSshConnectivity?: GoogleDatastreamConnectionProfileForwardSshConnectivity;
   /**
   * gcs_profile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#gcs_profile GoogleDatastreamConnectionProfile#gcs_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#gcs_profile GoogleDatastreamConnectionProfile#gcs_profile}
   */
   readonly gcsProfile?: GoogleDatastreamConnectionProfileGcsProfile;
   /**
   * mysql_profile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#mysql_profile GoogleDatastreamConnectionProfile#mysql_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#mysql_profile GoogleDatastreamConnectionProfile#mysql_profile}
   */
   readonly mysqlProfile?: GoogleDatastreamConnectionProfileMysqlProfile;
   /**
   * oracle_profile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#oracle_profile GoogleDatastreamConnectionProfile#oracle_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#oracle_profile GoogleDatastreamConnectionProfile#oracle_profile}
   */
   readonly oracleProfile?: GoogleDatastreamConnectionProfileOracleProfile;
   /**
   * postgresql_profile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#postgresql_profile GoogleDatastreamConnectionProfile#postgresql_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#postgresql_profile GoogleDatastreamConnectionProfile#postgresql_profile}
   */
   readonly postgresqlProfile?: GoogleDatastreamConnectionProfilePostgresqlProfile;
   /**
   * private_connectivity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#private_connectivity GoogleDatastreamConnectionProfile#private_connectivity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#private_connectivity GoogleDatastreamConnectionProfile#private_connectivity}
   */
   readonly privateConnectivity?: GoogleDatastreamConnectionProfilePrivateConnectivity;
   /**
+  * salesforce_profile block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#salesforce_profile GoogleDatastreamConnectionProfile#salesforce_profile}
+  */
+  readonly salesforceProfile?: GoogleDatastreamConnectionProfileSalesforceProfile;
+  /**
   * sql_server_profile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#sql_server_profile GoogleDatastreamConnectionProfile#sql_server_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#sql_server_profile GoogleDatastreamConnectionProfile#sql_server_profile}
   */
   readonly sqlServerProfile?: GoogleDatastreamConnectionProfileSqlServerProfile;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#timeouts GoogleDatastreamConnectionProfile#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#timeouts GoogleDatastreamConnectionProfile#timeouts}
   */
   readonly timeouts?: GoogleDatastreamConnectionProfileTimeouts;
 }
@@ -164,31 +165,31 @@ export interface GoogleDatastreamConnectionProfileForwardSshConnectivity {
   /**
   * Hostname for the SSH tunnel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#hostname GoogleDatastreamConnectionProfile#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#hostname GoogleDatastreamConnectionProfile#hostname}
   */
   readonly hostname: string;
   /**
   * SSH password.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#password GoogleDatastreamConnectionProfile#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#password GoogleDatastreamConnectionProfile#password}
   */
   readonly password?: string;
   /**
   * Port for the SSH tunnel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#port GoogleDatastreamConnectionProfile#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#port GoogleDatastreamConnectionProfile#port}
   */
   readonly port?: number;
   /**
   * SSH private key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#private_key GoogleDatastreamConnectionProfile#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#private_key GoogleDatastreamConnectionProfile#private_key}
   */
   readonly privateKey?: string;
   /**
   * Username for the SSH tunnel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#username GoogleDatastreamConnectionProfile#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#username GoogleDatastreamConnectionProfile#username}
   */
   readonly username: string;
 }
@@ -384,13 +385,13 @@ export interface GoogleDatastreamConnectionProfileGcsProfile {
   /**
   * The Cloud Storage bucket name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#bucket GoogleDatastreamConnectionProfile#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#bucket GoogleDatastreamConnectionProfile#bucket}
   */
   readonly bucket: string;
   /**
   * The root path inside the Cloud Storage bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#root_path GoogleDatastreamConnectionProfile#root_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#root_path GoogleDatastreamConnectionProfile#root_path}
   */
   readonly rootPath?: string;
 }
@@ -503,7 +504,7 @@ export interface GoogleDatastreamConnectionProfileMysqlProfileSslConfig {
   * PEM-encoded certificate of the CA that signed the source database
   * server's certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#ca_certificate GoogleDatastreamConnectionProfile#ca_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#ca_certificate GoogleDatastreamConnectionProfile#ca_certificate}
   */
   readonly caCertificate?: string;
   /**
@@ -512,7 +513,7 @@ export interface GoogleDatastreamConnectionProfileMysqlProfileSslConfig {
   * is used then the 'clientKey' and the 'caCertificate' fields are
   * mandatory.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#client_certificate GoogleDatastreamConnectionProfile#client_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#client_certificate GoogleDatastreamConnectionProfile#client_certificate}
   */
   readonly clientCertificate?: string;
   /**
@@ -520,7 +521,7 @@ export interface GoogleDatastreamConnectionProfileMysqlProfileSslConfig {
   * If this field is used then the 'client_certificate' and the
   * 'ca_certificate' fields are mandatory.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#client_key GoogleDatastreamConnectionProfile#client_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#client_key GoogleDatastreamConnectionProfile#client_key}
   */
   readonly clientKey?: string;
 }
@@ -679,31 +680,31 @@ export interface GoogleDatastreamConnectionProfileMysqlProfile {
   /**
   * Hostname for the MySQL connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#hostname GoogleDatastreamConnectionProfile#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#hostname GoogleDatastreamConnectionProfile#hostname}
   */
   readonly hostname: string;
   /**
   * Password for the MySQL connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#password GoogleDatastreamConnectionProfile#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#password GoogleDatastreamConnectionProfile#password}
   */
   readonly password: string;
   /**
   * Port for the MySQL connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#port GoogleDatastreamConnectionProfile#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#port GoogleDatastreamConnectionProfile#port}
   */
   readonly port?: number;
   /**
   * Username for the MySQL connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#username GoogleDatastreamConnectionProfile#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#username GoogleDatastreamConnectionProfile#username}
   */
   readonly username: string;
   /**
   * ssl_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#ssl_config GoogleDatastreamConnectionProfile#ssl_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#ssl_config GoogleDatastreamConnectionProfile#ssl_config}
   */
   readonly sslConfig?: GoogleDatastreamConnectionProfileMysqlProfileSslConfig;
 }
@@ -896,37 +897,37 @@ export interface GoogleDatastreamConnectionProfileOracleProfile {
   /**
   * Connection string attributes
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#connection_attributes GoogleDatastreamConnectionProfile#connection_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#connection_attributes GoogleDatastreamConnectionProfile#connection_attributes}
   */
   readonly connectionAttributes?: { [key: string]: string };
   /**
   * Database for the Oracle connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#database_service GoogleDatastreamConnectionProfile#database_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#database_service GoogleDatastreamConnectionProfile#database_service}
   */
   readonly databaseService: string;
   /**
   * Hostname for the Oracle connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#hostname GoogleDatastreamConnectionProfile#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#hostname GoogleDatastreamConnectionProfile#hostname}
   */
   readonly hostname: string;
   /**
   * Password for the Oracle connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#password GoogleDatastreamConnectionProfile#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#password GoogleDatastreamConnectionProfile#password}
   */
   readonly password: string;
   /**
   * Port for the Oracle connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#port GoogleDatastreamConnectionProfile#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#port GoogleDatastreamConnectionProfile#port}
   */
   readonly port?: number;
   /**
   * Username for the Oracle connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#username GoogleDatastreamConnectionProfile#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#username GoogleDatastreamConnectionProfile#username}
   */
   readonly username: string;
 }
@@ -1145,31 +1146,31 @@ export interface GoogleDatastreamConnectionProfilePostgresqlProfile {
   /**
   * Database for the PostgreSQL connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#database GoogleDatastreamConnectionProfile#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#database GoogleDatastreamConnectionProfile#database}
   */
   readonly database: string;
   /**
   * Hostname for the PostgreSQL connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#hostname GoogleDatastreamConnectionProfile#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#hostname GoogleDatastreamConnectionProfile#hostname}
   */
   readonly hostname: string;
   /**
   * Password for the PostgreSQL connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#password GoogleDatastreamConnectionProfile#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#password GoogleDatastreamConnectionProfile#password}
   */
   readonly password: string;
   /**
   * Port for the PostgreSQL connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#port GoogleDatastreamConnectionProfile#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#port GoogleDatastreamConnectionProfile#port}
   */
   readonly port?: number;
   /**
   * Username for the PostgreSQL connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#username GoogleDatastreamConnectionProfile#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#username GoogleDatastreamConnectionProfile#username}
   */
   readonly username: string;
 }
@@ -1359,7 +1360,7 @@ export interface GoogleDatastreamConnectionProfilePrivateConnectivity {
   /**
   * A reference to a private connection resource. Format: 'projects/{project}/locations/{location}/privateConnections/{name}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#private_connection GoogleDatastreamConnectionProfile#private_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#private_connection GoogleDatastreamConnectionProfile#private_connection}
   */
   readonly privateConnection: string;
 }
@@ -1438,35 +1439,570 @@ export class GoogleDatastreamConnectionProfilePrivateConnectivityOutputReference
     return this._privateConnection;
   }
 }
+export interface GoogleDatastreamConnectionProfileSalesforceProfileOauth2ClientCredentials {
+  /**
+  * Client ID to use for authentication.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#client_id GoogleDatastreamConnectionProfile#client_id}
+  */
+  readonly clientId?: string;
+  /**
+  * Client secret to use for authentication.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#client_secret GoogleDatastreamConnectionProfile#client_secret}
+  */
+  readonly clientSecret?: string;
+  /**
+  * A reference to a Secret Manager resource name storing the client secret.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#secret_manager_stored_client_secret GoogleDatastreamConnectionProfile#secret_manager_stored_client_secret}
+  */
+  readonly secretManagerStoredClientSecret?: string;
+}
+
+export function googleDatastreamConnectionProfileSalesforceProfileOauth2ClientCredentialsToTerraform(struct?: GoogleDatastreamConnectionProfileSalesforceProfileOauth2ClientCredentialsOutputReference | GoogleDatastreamConnectionProfileSalesforceProfileOauth2ClientCredentials): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    client_id: cdktf.stringToTerraform(struct!.clientId),
+    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
+    secret_manager_stored_client_secret: cdktf.stringToTerraform(struct!.secretManagerStoredClientSecret),
+  }
+}
+
+
+export function googleDatastreamConnectionProfileSalesforceProfileOauth2ClientCredentialsToHclTerraform(struct?: GoogleDatastreamConnectionProfileSalesforceProfileOauth2ClientCredentialsOutputReference | GoogleDatastreamConnectionProfileSalesforceProfileOauth2ClientCredentials): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    client_id: {
+      value: cdktf.stringToHclTerraform(struct!.clientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_secret: {
+      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    secret_manager_stored_client_secret: {
+      value: cdktf.stringToHclTerraform(struct!.secretManagerStoredClientSecret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDatastreamConnectionProfileSalesforceProfileOauth2ClientCredentialsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDatastreamConnectionProfileSalesforceProfileOauth2ClientCredentials | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._clientId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientId = this._clientId;
+    }
+    if (this._clientSecret !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientSecret = this._clientSecret;
+    }
+    if (this._secretManagerStoredClientSecret !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secretManagerStoredClientSecret = this._secretManagerStoredClientSecret;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDatastreamConnectionProfileSalesforceProfileOauth2ClientCredentials | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._clientId = undefined;
+      this._clientSecret = undefined;
+      this._secretManagerStoredClientSecret = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._clientId = value.clientId;
+      this._clientSecret = value.clientSecret;
+      this._secretManagerStoredClientSecret = value.secretManagerStoredClientSecret;
+    }
+  }
+
+  // client_id - computed: false, optional: true, required: false
+  private _clientId?: string; 
+  public get clientId() {
+    return this.getStringAttribute('client_id');
+  }
+  public set clientId(value: string) {
+    this._clientId = value;
+  }
+  public resetClientId() {
+    this._clientId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientIdInput() {
+    return this._clientId;
+  }
+
+  // client_secret - computed: false, optional: true, required: false
+  private _clientSecret?: string; 
+  public get clientSecret() {
+    return this.getStringAttribute('client_secret');
+  }
+  public set clientSecret(value: string) {
+    this._clientSecret = value;
+  }
+  public resetClientSecret() {
+    this._clientSecret = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientSecretInput() {
+    return this._clientSecret;
+  }
+
+  // secret_manager_stored_client_secret - computed: false, optional: true, required: false
+  private _secretManagerStoredClientSecret?: string; 
+  public get secretManagerStoredClientSecret() {
+    return this.getStringAttribute('secret_manager_stored_client_secret');
+  }
+  public set secretManagerStoredClientSecret(value: string) {
+    this._secretManagerStoredClientSecret = value;
+  }
+  public resetSecretManagerStoredClientSecret() {
+    this._secretManagerStoredClientSecret = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretManagerStoredClientSecretInput() {
+    return this._secretManagerStoredClientSecret;
+  }
+}
+export interface GoogleDatastreamConnectionProfileSalesforceProfileUserCredentials {
+  /**
+  * Password of the user.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#password GoogleDatastreamConnectionProfile#password}
+  */
+  readonly password?: string;
+  /**
+  * A reference to a Secret Manager resource name storing the user's password.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#secret_manager_stored_password GoogleDatastreamConnectionProfile#secret_manager_stored_password}
+  */
+  readonly secretManagerStoredPassword?: string;
+  /**
+  * A reference to a Secret Manager resource name storing the user's security token.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#secret_manager_stored_security_token GoogleDatastreamConnectionProfile#secret_manager_stored_security_token}
+  */
+  readonly secretManagerStoredSecurityToken?: string;
+  /**
+  * Security token of the user.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#security_token GoogleDatastreamConnectionProfile#security_token}
+  */
+  readonly securityToken?: string;
+  /**
+  * Username to use for authentication.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#username GoogleDatastreamConnectionProfile#username}
+  */
+  readonly username?: string;
+}
+
+export function googleDatastreamConnectionProfileSalesforceProfileUserCredentialsToTerraform(struct?: GoogleDatastreamConnectionProfileSalesforceProfileUserCredentialsOutputReference | GoogleDatastreamConnectionProfileSalesforceProfileUserCredentials): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    password: cdktf.stringToTerraform(struct!.password),
+    secret_manager_stored_password: cdktf.stringToTerraform(struct!.secretManagerStoredPassword),
+    secret_manager_stored_security_token: cdktf.stringToTerraform(struct!.secretManagerStoredSecurityToken),
+    security_token: cdktf.stringToTerraform(struct!.securityToken),
+    username: cdktf.stringToTerraform(struct!.username),
+  }
+}
+
+
+export function googleDatastreamConnectionProfileSalesforceProfileUserCredentialsToHclTerraform(struct?: GoogleDatastreamConnectionProfileSalesforceProfileUserCredentialsOutputReference | GoogleDatastreamConnectionProfileSalesforceProfileUserCredentials): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    secret_manager_stored_password: {
+      value: cdktf.stringToHclTerraform(struct!.secretManagerStoredPassword),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    secret_manager_stored_security_token: {
+      value: cdktf.stringToHclTerraform(struct!.secretManagerStoredSecurityToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    security_token: {
+      value: cdktf.stringToHclTerraform(struct!.securityToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDatastreamConnectionProfileSalesforceProfileUserCredentialsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDatastreamConnectionProfileSalesforceProfileUserCredentials | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._password !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.password = this._password;
+    }
+    if (this._secretManagerStoredPassword !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secretManagerStoredPassword = this._secretManagerStoredPassword;
+    }
+    if (this._secretManagerStoredSecurityToken !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secretManagerStoredSecurityToken = this._secretManagerStoredSecurityToken;
+    }
+    if (this._securityToken !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.securityToken = this._securityToken;
+    }
+    if (this._username !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.username = this._username;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDatastreamConnectionProfileSalesforceProfileUserCredentials | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._password = undefined;
+      this._secretManagerStoredPassword = undefined;
+      this._secretManagerStoredSecurityToken = undefined;
+      this._securityToken = undefined;
+      this._username = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._password = value.password;
+      this._secretManagerStoredPassword = value.secretManagerStoredPassword;
+      this._secretManagerStoredSecurityToken = value.secretManagerStoredSecurityToken;
+      this._securityToken = value.securityToken;
+      this._username = value.username;
+    }
+  }
+
+  // password - computed: false, optional: true, required: false
+  private _password?: string; 
+  public get password() {
+    return this.getStringAttribute('password');
+  }
+  public set password(value: string) {
+    this._password = value;
+  }
+  public resetPassword() {
+    this._password = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordInput() {
+    return this._password;
+  }
+
+  // secret_manager_stored_password - computed: false, optional: true, required: false
+  private _secretManagerStoredPassword?: string; 
+  public get secretManagerStoredPassword() {
+    return this.getStringAttribute('secret_manager_stored_password');
+  }
+  public set secretManagerStoredPassword(value: string) {
+    this._secretManagerStoredPassword = value;
+  }
+  public resetSecretManagerStoredPassword() {
+    this._secretManagerStoredPassword = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretManagerStoredPasswordInput() {
+    return this._secretManagerStoredPassword;
+  }
+
+  // secret_manager_stored_security_token - computed: false, optional: true, required: false
+  private _secretManagerStoredSecurityToken?: string; 
+  public get secretManagerStoredSecurityToken() {
+    return this.getStringAttribute('secret_manager_stored_security_token');
+  }
+  public set secretManagerStoredSecurityToken(value: string) {
+    this._secretManagerStoredSecurityToken = value;
+  }
+  public resetSecretManagerStoredSecurityToken() {
+    this._secretManagerStoredSecurityToken = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretManagerStoredSecurityTokenInput() {
+    return this._secretManagerStoredSecurityToken;
+  }
+
+  // security_token - computed: false, optional: true, required: false
+  private _securityToken?: string; 
+  public get securityToken() {
+    return this.getStringAttribute('security_token');
+  }
+  public set securityToken(value: string) {
+    this._securityToken = value;
+  }
+  public resetSecurityToken() {
+    this._securityToken = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityTokenInput() {
+    return this._securityToken;
+  }
+
+  // username - computed: false, optional: true, required: false
+  private _username?: string; 
+  public get username() {
+    return this.getStringAttribute('username');
+  }
+  public set username(value: string) {
+    this._username = value;
+  }
+  public resetUsername() {
+    this._username = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usernameInput() {
+    return this._username;
+  }
+}
+export interface GoogleDatastreamConnectionProfileSalesforceProfile {
+  /**
+  * Domain for the Salesforce Org.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#domain GoogleDatastreamConnectionProfile#domain}
+  */
+  readonly domain: string;
+  /**
+  * oauth2_client_credentials block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#oauth2_client_credentials GoogleDatastreamConnectionProfile#oauth2_client_credentials}
+  */
+  readonly oauth2ClientCredentials?: GoogleDatastreamConnectionProfileSalesforceProfileOauth2ClientCredentials;
+  /**
+  * user_credentials block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#user_credentials GoogleDatastreamConnectionProfile#user_credentials}
+  */
+  readonly userCredentials?: GoogleDatastreamConnectionProfileSalesforceProfileUserCredentials;
+}
+
+export function googleDatastreamConnectionProfileSalesforceProfileToTerraform(struct?: GoogleDatastreamConnectionProfileSalesforceProfileOutputReference | GoogleDatastreamConnectionProfileSalesforceProfile): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    domain: cdktf.stringToTerraform(struct!.domain),
+    oauth2_client_credentials: googleDatastreamConnectionProfileSalesforceProfileOauth2ClientCredentialsToTerraform(struct!.oauth2ClientCredentials),
+    user_credentials: googleDatastreamConnectionProfileSalesforceProfileUserCredentialsToTerraform(struct!.userCredentials),
+  }
+}
+
+
+export function googleDatastreamConnectionProfileSalesforceProfileToHclTerraform(struct?: GoogleDatastreamConnectionProfileSalesforceProfileOutputReference | GoogleDatastreamConnectionProfileSalesforceProfile): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    domain: {
+      value: cdktf.stringToHclTerraform(struct!.domain),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oauth2_client_credentials: {
+      value: googleDatastreamConnectionProfileSalesforceProfileOauth2ClientCredentialsToHclTerraform(struct!.oauth2ClientCredentials),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDatastreamConnectionProfileSalesforceProfileOauth2ClientCredentialsList",
+    },
+    user_credentials: {
+      value: googleDatastreamConnectionProfileSalesforceProfileUserCredentialsToHclTerraform(struct!.userCredentials),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDatastreamConnectionProfileSalesforceProfileUserCredentialsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDatastreamConnectionProfileSalesforceProfileOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDatastreamConnectionProfileSalesforceProfile | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._domain !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.domain = this._domain;
+    }
+    if (this._oauth2ClientCredentials?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.oauth2ClientCredentials = this._oauth2ClientCredentials?.internalValue;
+    }
+    if (this._userCredentials?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.userCredentials = this._userCredentials?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDatastreamConnectionProfileSalesforceProfile | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._domain = undefined;
+      this._oauth2ClientCredentials.internalValue = undefined;
+      this._userCredentials.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._domain = value.domain;
+      this._oauth2ClientCredentials.internalValue = value.oauth2ClientCredentials;
+      this._userCredentials.internalValue = value.userCredentials;
+    }
+  }
+
+  // domain - computed: false, optional: false, required: true
+  private _domain?: string; 
+  public get domain() {
+    return this.getStringAttribute('domain');
+  }
+  public set domain(value: string) {
+    this._domain = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get domainInput() {
+    return this._domain;
+  }
+
+  // oauth2_client_credentials - computed: false, optional: true, required: false
+  private _oauth2ClientCredentials = new GoogleDatastreamConnectionProfileSalesforceProfileOauth2ClientCredentialsOutputReference(this, "oauth2_client_credentials");
+  public get oauth2ClientCredentials() {
+    return this._oauth2ClientCredentials;
+  }
+  public putOauth2ClientCredentials(value: GoogleDatastreamConnectionProfileSalesforceProfileOauth2ClientCredentials) {
+    this._oauth2ClientCredentials.internalValue = value;
+  }
+  public resetOauth2ClientCredentials() {
+    this._oauth2ClientCredentials.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oauth2ClientCredentialsInput() {
+    return this._oauth2ClientCredentials.internalValue;
+  }
+
+  // user_credentials - computed: false, optional: true, required: false
+  private _userCredentials = new GoogleDatastreamConnectionProfileSalesforceProfileUserCredentialsOutputReference(this, "user_credentials");
+  public get userCredentials() {
+    return this._userCredentials;
+  }
+  public putUserCredentials(value: GoogleDatastreamConnectionProfileSalesforceProfileUserCredentials) {
+    this._userCredentials.internalValue = value;
+  }
+  public resetUserCredentials() {
+    this._userCredentials.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userCredentialsInput() {
+    return this._userCredentials.internalValue;
+  }
+}
 export interface GoogleDatastreamConnectionProfileSqlServerProfile {
   /**
   * Database for the SQL Server connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#database GoogleDatastreamConnectionProfile#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#database GoogleDatastreamConnectionProfile#database}
   */
   readonly database: string;
   /**
   * Hostname for the SQL Server connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#hostname GoogleDatastreamConnectionProfile#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#hostname GoogleDatastreamConnectionProfile#hostname}
   */
   readonly hostname: string;
   /**
   * Password for the SQL Server connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#password GoogleDatastreamConnectionProfile#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#password GoogleDatastreamConnectionProfile#password}
   */
   readonly password: string;
   /**
   * Port for the SQL Server connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#port GoogleDatastreamConnectionProfile#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#port GoogleDatastreamConnectionProfile#port}
   */
   readonly port?: number;
   /**
   * Username for the SQL Server connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#username GoogleDatastreamConnectionProfile#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#username GoogleDatastreamConnectionProfile#username}
   */
   readonly username: string;
 }
@@ -1654,15 +2190,15 @@ export class GoogleDatastreamConnectionProfileSqlServerProfileOutputReference ex
 }
 export interface GoogleDatastreamConnectionProfileTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#create GoogleDatastreamConnectionProfile#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#create GoogleDatastreamConnectionProfile#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#delete GoogleDatastreamConnectionProfile#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#delete GoogleDatastreamConnectionProfile#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#update GoogleDatastreamConnectionProfile#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#update GoogleDatastreamConnectionProfile#update}
   */
   readonly update?: string;
 }
@@ -1814,7 +2350,7 @@ export class GoogleDatastreamConnectionProfileTimeoutsOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile google_datastream_connection_profile}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile google_datastream_connection_profile}
 */
 export class GoogleDatastreamConnectionProfile extends cdktf.TerraformResource {
 
@@ -1830,7 +2366,7 @@ export class GoogleDatastreamConnectionProfile extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleDatastreamConnectionProfile resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleDatastreamConnectionProfile to import
-  * @param importFromId The id of the existing GoogleDatastreamConnectionProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleDatastreamConnectionProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleDatastreamConnectionProfile to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1842,7 +2378,7 @@ export class GoogleDatastreamConnectionProfile extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile google_datastream_connection_profile} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile google_datastream_connection_profile} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1853,7 +2389,7 @@ export class GoogleDatastreamConnectionProfile extends cdktf.TerraformResource {
       terraformResourceType: 'google_datastream_connection_profile',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.24.0',
+        providerVersion: '6.25.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -1878,6 +2414,7 @@ export class GoogleDatastreamConnectionProfile extends cdktf.TerraformResource {
     this._oracleProfile.internalValue = config.oracleProfile;
     this._postgresqlProfile.internalValue = config.postgresqlProfile;
     this._privateConnectivity.internalValue = config.privateConnectivity;
+    this._salesforceProfile.internalValue = config.salesforceProfile;
     this._sqlServerProfile.internalValue = config.sqlServerProfile;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -2118,6 +2655,22 @@ export class GoogleDatastreamConnectionProfile extends cdktf.TerraformResource {
     return this._privateConnectivity.internalValue;
   }
 
+  // salesforce_profile - computed: false, optional: true, required: false
+  private _salesforceProfile = new GoogleDatastreamConnectionProfileSalesforceProfileOutputReference(this, "salesforce_profile");
+  public get salesforceProfile() {
+    return this._salesforceProfile;
+  }
+  public putSalesforceProfile(value: GoogleDatastreamConnectionProfileSalesforceProfile) {
+    this._salesforceProfile.internalValue = value;
+  }
+  public resetSalesforceProfile() {
+    this._salesforceProfile.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get salesforceProfileInput() {
+    return this._salesforceProfile.internalValue;
+  }
+
   // sql_server_profile - computed: false, optional: true, required: false
   private _sqlServerProfile = new GoogleDatastreamConnectionProfileSqlServerProfileOutputReference(this, "sql_server_profile");
   public get sqlServerProfile() {
@@ -2170,6 +2723,7 @@ export class GoogleDatastreamConnectionProfile extends cdktf.TerraformResource {
       oracle_profile: googleDatastreamConnectionProfileOracleProfileToTerraform(this._oracleProfile.internalValue),
       postgresql_profile: googleDatastreamConnectionProfilePostgresqlProfileToTerraform(this._postgresqlProfile.internalValue),
       private_connectivity: googleDatastreamConnectionProfilePrivateConnectivityToTerraform(this._privateConnectivity.internalValue),
+      salesforce_profile: googleDatastreamConnectionProfileSalesforceProfileToTerraform(this._salesforceProfile.internalValue),
       sql_server_profile: googleDatastreamConnectionProfileSqlServerProfileToTerraform(this._sqlServerProfile.internalValue),
       timeouts: googleDatastreamConnectionProfileTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -2260,6 +2814,12 @@ export class GoogleDatastreamConnectionProfile extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "GoogleDatastreamConnectionProfilePrivateConnectivityList",
+      },
+      salesforce_profile: {
+        value: googleDatastreamConnectionProfileSalesforceProfileToHclTerraform(this._salesforceProfile.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDatastreamConnectionProfileSalesforceProfileList",
       },
       sql_server_profile: {
         value: googleDatastreamConnectionProfileSqlServerProfileToHclTerraform(this._sqlServerProfile.internalValue),

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleCloudTasksQueueConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#id GoogleCloudTasksQueue#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#id GoogleCloudTasksQueue#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,53 +17,53 @@ export interface GoogleCloudTasksQueueConfig extends cdktf.TerraformMetaArgument
   /**
   * The location of the queue
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#location GoogleCloudTasksQueue#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#location GoogleCloudTasksQueue#location}
   */
   readonly location: string;
   /**
   * The queue name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#name GoogleCloudTasksQueue#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#name GoogleCloudTasksQueue#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#project GoogleCloudTasksQueue#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#project GoogleCloudTasksQueue#project}
   */
   readonly project?: string;
   /**
   * app_engine_routing_override block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#app_engine_routing_override GoogleCloudTasksQueue#app_engine_routing_override}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#app_engine_routing_override GoogleCloudTasksQueue#app_engine_routing_override}
   */
   readonly appEngineRoutingOverride?: GoogleCloudTasksQueueAppEngineRoutingOverride;
   /**
   * http_target block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#http_target GoogleCloudTasksQueue#http_target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#http_target GoogleCloudTasksQueue#http_target}
   */
   readonly httpTarget?: GoogleCloudTasksQueueHttpTarget;
   /**
   * rate_limits block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#rate_limits GoogleCloudTasksQueue#rate_limits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#rate_limits GoogleCloudTasksQueue#rate_limits}
   */
   readonly rateLimits?: GoogleCloudTasksQueueRateLimits;
   /**
   * retry_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#retry_config GoogleCloudTasksQueue#retry_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#retry_config GoogleCloudTasksQueue#retry_config}
   */
   readonly retryConfig?: GoogleCloudTasksQueueRetryConfig;
   /**
   * stackdriver_logging_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#stackdriver_logging_config GoogleCloudTasksQueue#stackdriver_logging_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#stackdriver_logging_config GoogleCloudTasksQueue#stackdriver_logging_config}
   */
   readonly stackdriverLoggingConfig?: GoogleCloudTasksQueueStackdriverLoggingConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#timeouts GoogleCloudTasksQueue#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#timeouts GoogleCloudTasksQueue#timeouts}
   */
   readonly timeouts?: GoogleCloudTasksQueueTimeouts;
 }
@@ -78,7 +73,7 @@ export interface GoogleCloudTasksQueueAppEngineRoutingOverride {
   * 
   * By default, the task is sent to an instance which is available when the task is attempted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#instance GoogleCloudTasksQueue#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#instance GoogleCloudTasksQueue#instance}
   */
   readonly instance?: string;
   /**
@@ -86,7 +81,7 @@ export interface GoogleCloudTasksQueueAppEngineRoutingOverride {
   * 
   * By default, the task is sent to the service which is the default service when the task is attempted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#service GoogleCloudTasksQueue#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#service GoogleCloudTasksQueue#service}
   */
   readonly service?: string;
   /**
@@ -94,7 +89,7 @@ export interface GoogleCloudTasksQueueAppEngineRoutingOverride {
   * 
   * By default, the task is sent to the version which is the default version when the task is attempted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#version GoogleCloudTasksQueue#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#version GoogleCloudTasksQueue#version}
   */
   readonly version?: string;
 }
@@ -243,13 +238,13 @@ export interface GoogleCloudTasksQueueHttpTargetHeaderOverridesHeader {
   /**
   * The Key of the header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#key GoogleCloudTasksQueue#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#key GoogleCloudTasksQueue#key}
   */
   readonly key: string;
   /**
   * The Value of the header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#value GoogleCloudTasksQueue#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#value GoogleCloudTasksQueue#value}
   */
   readonly value: string;
 }
@@ -358,7 +353,7 @@ export interface GoogleCloudTasksQueueHttpTargetHeaderOverrides {
   /**
   * header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#header GoogleCloudTasksQueue#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#header GoogleCloudTasksQueue#header}
   */
   readonly header: GoogleCloudTasksQueueHttpTargetHeaderOverridesHeader;
 }
@@ -474,7 +469,7 @@ export interface GoogleCloudTasksQueueHttpTargetOauthToken {
   * OAuth scope to be used for generating OAuth access token.
   * If not specified, "https://www.googleapis.com/auth/cloud-platform" will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#scope GoogleCloudTasksQueue#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#scope GoogleCloudTasksQueue#scope}
   */
   readonly scope?: string;
   /**
@@ -482,7 +477,7 @@ export interface GoogleCloudTasksQueueHttpTargetOauthToken {
   * The service account must be within the same project as the queue.
   * The caller must have iam.serviceAccounts.actAs permission for the service account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#service_account_email GoogleCloudTasksQueue#service_account_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#service_account_email GoogleCloudTasksQueue#service_account_email}
   */
   readonly serviceAccountEmail: string;
 }
@@ -594,7 +589,7 @@ export interface GoogleCloudTasksQueueHttpTargetOidcToken {
   /**
   * Audience to be used when generating OIDC token. If not specified, the URI specified in target will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#audience GoogleCloudTasksQueue#audience}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#audience GoogleCloudTasksQueue#audience}
   */
   readonly audience?: string;
   /**
@@ -602,7 +597,7 @@ export interface GoogleCloudTasksQueueHttpTargetOidcToken {
   * The service account must be within the same project as the queue.
   * The caller must have iam.serviceAccounts.actAs permission for the service account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#service_account_email GoogleCloudTasksQueue#service_account_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#service_account_email GoogleCloudTasksQueue#service_account_email}
   */
   readonly serviceAccountEmail: string;
 }
@@ -714,7 +709,7 @@ export interface GoogleCloudTasksQueueHttpTargetUriOverridePathOverride {
   /**
   * The URI path (e.g., /users/1234). Default is an empty string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#path GoogleCloudTasksQueue#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#path GoogleCloudTasksQueue#path}
   */
   readonly path?: string;
 }
@@ -800,7 +795,7 @@ export interface GoogleCloudTasksQueueHttpTargetUriOverrideQueryOverride {
   /**
   * The query parameters (e.g., qparam1=123&qparam2=456). Default is an empty string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#query_params GoogleCloudTasksQueue#query_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#query_params GoogleCloudTasksQueue#query_params}
   */
   readonly queryParams?: string;
 }
@@ -891,7 +886,7 @@ export interface GoogleCloudTasksQueueHttpTargetUriOverride {
   * is set to "example.net", the overridden URI will be changed to "https://example.net".
   * Host value cannot be an empty string (INVALID_ARGUMENT).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#host GoogleCloudTasksQueue#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#host GoogleCloudTasksQueue#host}
   */
   readonly host?: string;
   /**
@@ -902,7 +897,7 @@ export interface GoogleCloudTasksQueueHttpTargetUriOverride {
   * Note that the port value must be a positive integer.
   * Setting the port to 0 (Zero) clears the URI port.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#port GoogleCloudTasksQueue#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#port GoogleCloudTasksQueue#port}
   */
   readonly port?: string;
   /**
@@ -910,7 +905,7 @@ export interface GoogleCloudTasksQueueHttpTargetUriOverride {
   * 
   * When specified, the task URI scheme is replaced by the provided value (HTTP or HTTPS). Possible values: ["HTTP", "HTTPS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#scheme GoogleCloudTasksQueue#scheme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#scheme GoogleCloudTasksQueue#scheme}
   */
   readonly scheme?: string;
   /**
@@ -918,19 +913,19 @@ export interface GoogleCloudTasksQueueHttpTargetUriOverride {
   * 
   * When specified, determines the Target UriOverride mode. If not specified, it defaults to ALWAYS. Possible values: ["ALWAYS", "IF_NOT_EXISTS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#uri_override_enforce_mode GoogleCloudTasksQueue#uri_override_enforce_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#uri_override_enforce_mode GoogleCloudTasksQueue#uri_override_enforce_mode}
   */
   readonly uriOverrideEnforceMode?: string;
   /**
   * path_override block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#path_override GoogleCloudTasksQueue#path_override}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#path_override GoogleCloudTasksQueue#path_override}
   */
   readonly pathOverride?: GoogleCloudTasksQueueHttpTargetUriOverridePathOverride;
   /**
   * query_override block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#query_override GoogleCloudTasksQueue#query_override}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#query_override GoogleCloudTasksQueue#query_override}
   */
   readonly queryOverride?: GoogleCloudTasksQueueHttpTargetUriOverrideQueryOverride;
 }
@@ -1164,31 +1159,31 @@ export interface GoogleCloudTasksQueueHttpTarget {
   * When specified, it overrides HttpRequest for the task.
   * Note that if the value is set to GET the body of the task will be ignored at execution time. Possible values: ["HTTP_METHOD_UNSPECIFIED", "POST", "GET", "HEAD", "PUT", "DELETE", "PATCH", "OPTIONS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#http_method GoogleCloudTasksQueue#http_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#http_method GoogleCloudTasksQueue#http_method}
   */
   readonly httpMethod?: string;
   /**
   * header_overrides block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#header_overrides GoogleCloudTasksQueue#header_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#header_overrides GoogleCloudTasksQueue#header_overrides}
   */
   readonly headerOverrides?: GoogleCloudTasksQueueHttpTargetHeaderOverrides[] | cdktf.IResolvable;
   /**
   * oauth_token block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#oauth_token GoogleCloudTasksQueue#oauth_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#oauth_token GoogleCloudTasksQueue#oauth_token}
   */
   readonly oauthToken?: GoogleCloudTasksQueueHttpTargetOauthToken;
   /**
   * oidc_token block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#oidc_token GoogleCloudTasksQueue#oidc_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#oidc_token GoogleCloudTasksQueue#oidc_token}
   */
   readonly oidcToken?: GoogleCloudTasksQueueHttpTargetOidcToken;
   /**
   * uri_override block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#uri_override GoogleCloudTasksQueue#uri_override}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#uri_override GoogleCloudTasksQueue#uri_override}
   */
   readonly uriOverride?: GoogleCloudTasksQueueHttpTargetUriOverride;
 }
@@ -1393,7 +1388,7 @@ export interface GoogleCloudTasksQueueRateLimits {
   * reached, Cloud Tasks stops dispatching tasks until the number of
   * concurrent requests decreases.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#max_concurrent_dispatches GoogleCloudTasksQueue#max_concurrent_dispatches}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#max_concurrent_dispatches GoogleCloudTasksQueue#max_concurrent_dispatches}
   */
   readonly maxConcurrentDispatches?: number;
   /**
@@ -1401,7 +1396,7 @@ export interface GoogleCloudTasksQueueRateLimits {
   * 
   * If unspecified when the queue is created, Cloud Tasks will pick the default.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#max_dispatches_per_second GoogleCloudTasksQueue#max_dispatches_per_second}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#max_dispatches_per_second GoogleCloudTasksQueue#max_dispatches_per_second}
   */
   readonly maxDispatchesPerSecond?: number;
 }
@@ -1530,7 +1525,7 @@ export interface GoogleCloudTasksQueueRetryConfig {
   * 
   * -1 indicates unlimited attempts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#max_attempts GoogleCloudTasksQueue#max_attempts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#max_attempts GoogleCloudTasksQueue#max_attempts}
   */
   readonly maxAttempts?: number;
   /**
@@ -1538,7 +1533,7 @@ export interface GoogleCloudTasksQueueRetryConfig {
   * maxBackoff duration after it fails, if the queue's RetryConfig
   * specifies that the task should be retried.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#max_backoff GoogleCloudTasksQueue#max_backoff}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#max_backoff GoogleCloudTasksQueue#max_backoff}
   */
   readonly maxBackoff?: string;
   /**
@@ -1548,7 +1543,7 @@ export interface GoogleCloudTasksQueueRetryConfig {
   * then increases linearly, and finally retries retries at intervals of maxBackoff
   * up to maxAttempts times.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#max_doublings GoogleCloudTasksQueue#max_doublings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#max_doublings GoogleCloudTasksQueue#max_doublings}
   */
   readonly maxDoublings?: number;
   /**
@@ -1560,7 +1555,7 @@ export interface GoogleCloudTasksQueueRetryConfig {
   * 
   * If zero, then the task age is unlimited.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#max_retry_duration GoogleCloudTasksQueue#max_retry_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#max_retry_duration GoogleCloudTasksQueue#max_retry_duration}
   */
   readonly maxRetryDuration?: string;
   /**
@@ -1568,7 +1563,7 @@ export interface GoogleCloudTasksQueueRetryConfig {
   * maxBackoff duration after it fails, if the queue's RetryConfig
   * specifies that the task should be retried.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#min_backoff GoogleCloudTasksQueue#min_backoff}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#min_backoff GoogleCloudTasksQueue#min_backoff}
   */
   readonly minBackoff?: string;
 }
@@ -1772,7 +1767,7 @@ export interface GoogleCloudTasksQueueStackdriverLoggingConfig {
   * This field may contain any value between 0.0 and 1.0, inclusive. 0.0 is the
   * default and means that no operations are logged.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#sampling_ratio GoogleCloudTasksQueue#sampling_ratio}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#sampling_ratio GoogleCloudTasksQueue#sampling_ratio}
   */
   readonly samplingRatio: number;
 }
@@ -1853,15 +1848,15 @@ export class GoogleCloudTasksQueueStackdriverLoggingConfigOutputReference extend
 }
 export interface GoogleCloudTasksQueueTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#create GoogleCloudTasksQueue#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#create GoogleCloudTasksQueue#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#delete GoogleCloudTasksQueue#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#delete GoogleCloudTasksQueue#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#update GoogleCloudTasksQueue#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#update GoogleCloudTasksQueue#update}
   */
   readonly update?: string;
 }
@@ -2013,7 +2008,7 @@ export class GoogleCloudTasksQueueTimeoutsOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue google_cloud_tasks_queue}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue google_cloud_tasks_queue}
 */
 export class GoogleCloudTasksQueue extends cdktf.TerraformResource {
 
@@ -2029,7 +2024,7 @@ export class GoogleCloudTasksQueue extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleCloudTasksQueue resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleCloudTasksQueue to import
-  * @param importFromId The id of the existing GoogleCloudTasksQueue that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleCloudTasksQueue that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleCloudTasksQueue to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -2041,7 +2036,7 @@ export class GoogleCloudTasksQueue extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_cloud_tasks_queue google_cloud_tasks_queue} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue google_cloud_tasks_queue} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2052,7 +2047,7 @@ export class GoogleCloudTasksQueue extends cdktf.TerraformResource {
       terraformResourceType: 'google_cloud_tasks_queue',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.24.0',
+        providerVersion: '6.25.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

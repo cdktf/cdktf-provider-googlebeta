@@ -4,7 +4,7 @@
 
 ### GoogleBigqueryAnalyticsHubListingIamPolicy <a name="GoogleBigqueryAnalyticsHubListingIamPolicy" id="@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamPolicy.GoogleBigqueryAnalyticsHubListingIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy google_bigquery_analytics_hub_listing_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy google_bigquery_analytics_hub_listing_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamPolicy.GoogleBigqueryAnalyticsHubListingIamPolicy.Initializer"></a>
 
@@ -41,12 +41,12 @@ googleBigqueryAnalyticsHubListingIamPolicy.GoogleBigqueryAnalyticsHubListingIamP
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamPolicy.GoogleBigqueryAnalyticsHubListingIamPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamPolicy.GoogleBigqueryAnalyticsHubListingIamPolicy.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamPolicy.GoogleBigqueryAnalyticsHubListingIamPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamPolicy.GoogleBigqueryAnalyticsHubListingIamPolicy.Initializer.parameter.dataExchangeId">data_exchange_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#data_exchange_id GoogleBigqueryAnalyticsHubListingIamPolicy#data_exchange_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamPolicy.GoogleBigqueryAnalyticsHubListingIamPolicy.Initializer.parameter.listingId">listing_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#listing_id GoogleBigqueryAnalyticsHubListingIamPolicy#listing_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamPolicy.GoogleBigqueryAnalyticsHubListingIamPolicy.Initializer.parameter.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#policy_data GoogleBigqueryAnalyticsHubListingIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamPolicy.GoogleBigqueryAnalyticsHubListingIamPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#id GoogleBigqueryAnalyticsHubListingIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamPolicy.GoogleBigqueryAnalyticsHubListingIamPolicy.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#location GoogleBigqueryAnalyticsHubListingIamPolicy#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamPolicy.GoogleBigqueryAnalyticsHubListingIamPolicy.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#project GoogleBigqueryAnalyticsHubListingIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamPolicy.GoogleBigqueryAnalyticsHubListingIamPolicy.Initializer.parameter.dataExchangeId">data_exchange_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#data_exchange_id GoogleBigqueryAnalyticsHubListingIamPolicy#data_exchange_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamPolicy.GoogleBigqueryAnalyticsHubListingIamPolicy.Initializer.parameter.listingId">listing_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#listing_id GoogleBigqueryAnalyticsHubListingIamPolicy#listing_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamPolicy.GoogleBigqueryAnalyticsHubListingIamPolicy.Initializer.parameter.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#policy_data GoogleBigqueryAnalyticsHubListingIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamPolicy.GoogleBigqueryAnalyticsHubListingIamPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#id GoogleBigqueryAnalyticsHubListingIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamPolicy.GoogleBigqueryAnalyticsHubListingIamPolicy.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#location GoogleBigqueryAnalyticsHubListingIamPolicy#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamPolicy.GoogleBigqueryAnalyticsHubListingIamPolicy.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#project GoogleBigqueryAnalyticsHubListingIamPolicy#project}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#data_exchange_id GoogleBigqueryAnalyticsHubListingIamPolicy#data_exchange_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#data_exchange_id GoogleBigqueryAnalyticsHubListingIamPolicy#data_exchange_id}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#listing_id GoogleBigqueryAnalyticsHubListingIamPolicy#listing_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#listing_id GoogleBigqueryAnalyticsHubListingIamPolicy#listing_id}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#policy_data GoogleBigqueryAnalyticsHubListingIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#policy_data GoogleBigqueryAnalyticsHubListingIamPolicy#policy_data}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#id GoogleBigqueryAnalyticsHubListingIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#id GoogleBigqueryAnalyticsHubListingIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -149,7 +149,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#location GoogleBigqueryAnalyticsHubListingIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#location GoogleBigqueryAnalyticsHubListingIamPolicy#location}.
 
 ---
 
@@ -157,7 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#project GoogleBigqueryAnalyticsHubListingIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#project GoogleBigqueryAnalyticsHubListingIamPolicy#project}.
 
 ---
 
@@ -651,7 +651,7 @@ The construct id used in the generated config for the GoogleBigqueryAnalyticsHub
 
 The id of the existing GoogleBigqueryAnalyticsHubListingIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1024,12 +1024,12 @@ googleBigqueryAnalyticsHubListingIamPolicy.GoogleBigqueryAnalyticsHubListingIamP
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamPolicy.GoogleBigqueryAnalyticsHubListingIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamPolicy.GoogleBigqueryAnalyticsHubListingIamPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamPolicy.GoogleBigqueryAnalyticsHubListingIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamPolicy.GoogleBigqueryAnalyticsHubListingIamPolicyConfig.property.dataExchangeId">data_exchange_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#data_exchange_id GoogleBigqueryAnalyticsHubListingIamPolicy#data_exchange_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamPolicy.GoogleBigqueryAnalyticsHubListingIamPolicyConfig.property.listingId">listing_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#listing_id GoogleBigqueryAnalyticsHubListingIamPolicy#listing_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamPolicy.GoogleBigqueryAnalyticsHubListingIamPolicyConfig.property.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#policy_data GoogleBigqueryAnalyticsHubListingIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamPolicy.GoogleBigqueryAnalyticsHubListingIamPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#id GoogleBigqueryAnalyticsHubListingIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamPolicy.GoogleBigqueryAnalyticsHubListingIamPolicyConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#location GoogleBigqueryAnalyticsHubListingIamPolicy#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamPolicy.GoogleBigqueryAnalyticsHubListingIamPolicyConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#project GoogleBigqueryAnalyticsHubListingIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamPolicy.GoogleBigqueryAnalyticsHubListingIamPolicyConfig.property.dataExchangeId">data_exchange_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#data_exchange_id GoogleBigqueryAnalyticsHubListingIamPolicy#data_exchange_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamPolicy.GoogleBigqueryAnalyticsHubListingIamPolicyConfig.property.listingId">listing_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#listing_id GoogleBigqueryAnalyticsHubListingIamPolicy#listing_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamPolicy.GoogleBigqueryAnalyticsHubListingIamPolicyConfig.property.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#policy_data GoogleBigqueryAnalyticsHubListingIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamPolicy.GoogleBigqueryAnalyticsHubListingIamPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#id GoogleBigqueryAnalyticsHubListingIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamPolicy.GoogleBigqueryAnalyticsHubListingIamPolicyConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#location GoogleBigqueryAnalyticsHubListingIamPolicy#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamPolicy.GoogleBigqueryAnalyticsHubListingIamPolicyConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#project GoogleBigqueryAnalyticsHubListingIamPolicy#project}. |
 
 ---
 
@@ -1111,7 +1111,7 @@ data_exchange_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#data_exchange_id GoogleBigqueryAnalyticsHubListingIamPolicy#data_exchange_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#data_exchange_id GoogleBigqueryAnalyticsHubListingIamPolicy#data_exchange_id}.
 
 ---
 
@@ -1123,7 +1123,7 @@ listing_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#listing_id GoogleBigqueryAnalyticsHubListingIamPolicy#listing_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#listing_id GoogleBigqueryAnalyticsHubListingIamPolicy#listing_id}.
 
 ---
 
@@ -1135,7 +1135,7 @@ policy_data: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#policy_data GoogleBigqueryAnalyticsHubListingIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#policy_data GoogleBigqueryAnalyticsHubListingIamPolicy#policy_data}.
 
 ---
 
@@ -1147,7 +1147,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#id GoogleBigqueryAnalyticsHubListingIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#id GoogleBigqueryAnalyticsHubListingIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1162,7 +1162,7 @@ location: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#location GoogleBigqueryAnalyticsHubListingIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#location GoogleBigqueryAnalyticsHubListingIamPolicy#location}.
 
 ---
 
@@ -1174,7 +1174,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#project GoogleBigqueryAnalyticsHubListingIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy#project GoogleBigqueryAnalyticsHubListingIamPolicy#project}.
 
 ---
 

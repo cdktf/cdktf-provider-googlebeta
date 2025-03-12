@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apphub_workload
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_workload
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +10,29 @@ export interface GoogleApphubWorkloadConfig extends cdktf.TerraformMetaArguments
   /**
   * Part of 'parent'.  Full resource name of a parent Application. Example: projects/{HOST_PROJECT_ID}/locations/{LOCATION}/applications/{APPLICATION_ID}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apphub_workload#application_id GoogleApphubWorkload#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_workload#application_id GoogleApphubWorkload#application_id}
   */
   readonly applicationId: string;
   /**
   * User-defined description of a Workload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apphub_workload#description GoogleApphubWorkload#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_workload#description GoogleApphubWorkload#description}
   */
   readonly description?: string;
   /**
   * Immutable. The resource name of the original discovered workload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apphub_workload#discovered_workload GoogleApphubWorkload#discovered_workload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_workload#discovered_workload GoogleApphubWorkload#discovered_workload}
   */
   readonly discoveredWorkload: string;
   /**
   * User-defined name for the Workload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apphub_workload#display_name GoogleApphubWorkload#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_workload#display_name GoogleApphubWorkload#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apphub_workload#id GoogleApphubWorkload#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_workload#id GoogleApphubWorkload#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,29 +41,29 @@ export interface GoogleApphubWorkloadConfig extends cdktf.TerraformMetaArguments
   /**
   * Part of 'parent'.  Full resource name of a parent Application. Example: projects/{HOST_PROJECT_ID}/locations/{LOCATION}/applications/{APPLICATION_ID}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apphub_workload#location GoogleApphubWorkload#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_workload#location GoogleApphubWorkload#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apphub_workload#project GoogleApphubWorkload#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_workload#project GoogleApphubWorkload#project}
   */
   readonly project?: string;
   /**
   * The Workload identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apphub_workload#workload_id GoogleApphubWorkload#workload_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_workload#workload_id GoogleApphubWorkload#workload_id}
   */
   readonly workloadId: string;
   /**
   * attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apphub_workload#attributes GoogleApphubWorkload#attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_workload#attributes GoogleApphubWorkload#attributes}
   */
   readonly attributes?: GoogleApphubWorkloadAttributes;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apphub_workload#timeouts GoogleApphubWorkload#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_workload#timeouts GoogleApphubWorkload#timeouts}
   */
   readonly timeouts?: GoogleApphubWorkloadTimeouts;
 }
@@ -236,13 +231,13 @@ export interface GoogleApphubWorkloadAttributesBusinessOwners {
   /**
   * Contact's name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apphub_workload#display_name GoogleApphubWorkload#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_workload#display_name GoogleApphubWorkload#display_name}
   */
   readonly displayName?: string;
   /**
   * Email address of the contacts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apphub_workload#email GoogleApphubWorkload#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_workload#email GoogleApphubWorkload#email}
   */
   readonly email: string;
 }
@@ -386,7 +381,7 @@ export interface GoogleApphubWorkloadAttributesCriticality {
   /**
   * Criticality type. Possible values: ["MISSION_CRITICAL", "HIGH", "MEDIUM", "LOW"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apphub_workload#type GoogleApphubWorkload#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_workload#type GoogleApphubWorkload#type}
   */
   readonly type: string;
 }
@@ -469,13 +464,13 @@ export interface GoogleApphubWorkloadAttributesDeveloperOwners {
   /**
   * Contact's name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apphub_workload#display_name GoogleApphubWorkload#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_workload#display_name GoogleApphubWorkload#display_name}
   */
   readonly displayName?: string;
   /**
   * Email address of the contacts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apphub_workload#email GoogleApphubWorkload#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_workload#email GoogleApphubWorkload#email}
   */
   readonly email: string;
 }
@@ -619,7 +614,7 @@ export interface GoogleApphubWorkloadAttributesEnvironment {
   /**
   * Environment type. Possible values: ["PRODUCTION", "STAGING", "TEST", "DEVELOPMENT"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apphub_workload#type GoogleApphubWorkload#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_workload#type GoogleApphubWorkload#type}
   */
   readonly type: string;
 }
@@ -702,13 +697,13 @@ export interface GoogleApphubWorkloadAttributesOperatorOwners {
   /**
   * Contact's name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apphub_workload#display_name GoogleApphubWorkload#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_workload#display_name GoogleApphubWorkload#display_name}
   */
   readonly displayName?: string;
   /**
   * Email address of the contacts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apphub_workload#email GoogleApphubWorkload#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_workload#email GoogleApphubWorkload#email}
   */
   readonly email: string;
 }
@@ -852,31 +847,31 @@ export interface GoogleApphubWorkloadAttributes {
   /**
   * business_owners block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apphub_workload#business_owners GoogleApphubWorkload#business_owners}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_workload#business_owners GoogleApphubWorkload#business_owners}
   */
   readonly businessOwners?: GoogleApphubWorkloadAttributesBusinessOwners[] | cdktf.IResolvable;
   /**
   * criticality block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apphub_workload#criticality GoogleApphubWorkload#criticality}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_workload#criticality GoogleApphubWorkload#criticality}
   */
   readonly criticality?: GoogleApphubWorkloadAttributesCriticality;
   /**
   * developer_owners block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apphub_workload#developer_owners GoogleApphubWorkload#developer_owners}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_workload#developer_owners GoogleApphubWorkload#developer_owners}
   */
   readonly developerOwners?: GoogleApphubWorkloadAttributesDeveloperOwners[] | cdktf.IResolvable;
   /**
   * environment block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apphub_workload#environment GoogleApphubWorkload#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_workload#environment GoogleApphubWorkload#environment}
   */
   readonly environment?: GoogleApphubWorkloadAttributesEnvironment;
   /**
   * operator_owners block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apphub_workload#operator_owners GoogleApphubWorkload#operator_owners}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_workload#operator_owners GoogleApphubWorkload#operator_owners}
   */
   readonly operatorOwners?: GoogleApphubWorkloadAttributesOperatorOwners[] | cdktf.IResolvable;
 }
@@ -1076,15 +1071,15 @@ export class GoogleApphubWorkloadAttributesOutputReference extends cdktf.Complex
 }
 export interface GoogleApphubWorkloadTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apphub_workload#create GoogleApphubWorkload#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_workload#create GoogleApphubWorkload#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apphub_workload#delete GoogleApphubWorkload#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_workload#delete GoogleApphubWorkload#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apphub_workload#update GoogleApphubWorkload#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_workload#update GoogleApphubWorkload#update}
   */
   readonly update?: string;
 }
@@ -1236,7 +1231,7 @@ export class GoogleApphubWorkloadTimeoutsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apphub_workload google_apphub_workload}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_workload google_apphub_workload}
 */
 export class GoogleApphubWorkload extends cdktf.TerraformResource {
 
@@ -1252,7 +1247,7 @@ export class GoogleApphubWorkload extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleApphubWorkload resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleApphubWorkload to import
-  * @param importFromId The id of the existing GoogleApphubWorkload that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apphub_workload#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleApphubWorkload that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_workload#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleApphubWorkload to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1264,7 +1259,7 @@ export class GoogleApphubWorkload extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apphub_workload google_apphub_workload} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_workload google_apphub_workload} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1275,7 +1270,7 @@ export class GoogleApphubWorkload extends cdktf.TerraformResource {
       terraformResourceType: 'google_apphub_workload',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.24.0',
+        providerVersion: '6.25.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

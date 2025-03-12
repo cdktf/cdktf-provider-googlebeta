@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apigee_organization
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apigee_organization
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +10,13 @@ export interface GoogleApigeeOrganizationConfig extends cdktf.TerraformMetaArgum
   /**
   * Primary GCP region for analytics data storage. For valid values, see [Create an Apigee organization](https://cloud.google.com/apigee/docs/api-platform/get-started/create-org).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apigee_organization#analytics_region GoogleApigeeOrganization#analytics_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apigee_organization#analytics_region GoogleApigeeOrganization#analytics_region}
   */
   readonly analyticsRegion?: string;
   /**
   * Cloud KMS key name used for encrypting API consumer data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apigee_organization#api_consumer_data_encryption_key_name GoogleApigeeOrganization#api_consumer_data_encryption_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apigee_organization#api_consumer_data_encryption_key_name GoogleApigeeOrganization#api_consumer_data_encryption_key_name}
   */
   readonly apiConsumerDataEncryptionKeyName?: string;
   /**
@@ -29,7 +24,7 @@ export interface GoogleApigeeOrganizationConfig extends cdktf.TerraformMetaArgum
   * Apigee stores some control plane data only in single region.
   * This field determines which single region Apigee should use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apigee_organization#api_consumer_data_location GoogleApigeeOrganization#api_consumer_data_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apigee_organization#api_consumer_data_location GoogleApigeeOrganization#api_consumer_data_location}
   */
   readonly apiConsumerDataLocation?: string;
   /**
@@ -37,26 +32,26 @@ export interface GoogleApigeeOrganizationConfig extends cdktf.TerraformMetaArgum
   * See [Getting started with the Service Networking API](https://cloud.google.com/service-infrastructure/docs/service-networking/getting-started).
   * Valid only when 'RuntimeType' is set to CLOUD. The value can be updated only when there are no runtime instances. For example: "default".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apigee_organization#authorized_network GoogleApigeeOrganization#authorized_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apigee_organization#authorized_network GoogleApigeeOrganization#authorized_network}
   */
   readonly authorizedNetwork?: string;
   /**
   * Billing type of the Apigee organization. See [Apigee pricing](https://cloud.google.com/apigee/pricing).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apigee_organization#billing_type GoogleApigeeOrganization#billing_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apigee_organization#billing_type GoogleApigeeOrganization#billing_type}
   */
   readonly billingType?: string;
   /**
   * Cloud KMS key name used for encrypting control plane data that is stored in a multi region.
   * Only used for the data residency region "US" or "EU".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apigee_organization#control_plane_encryption_key_name GoogleApigeeOrganization#control_plane_encryption_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apigee_organization#control_plane_encryption_key_name GoogleApigeeOrganization#control_plane_encryption_key_name}
   */
   readonly controlPlaneEncryptionKeyName?: string;
   /**
   * Description of the Apigee organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apigee_organization#description GoogleApigeeOrganization#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apigee_organization#description GoogleApigeeOrganization#description}
   */
   readonly description?: string;
   /**
@@ -66,17 +61,17 @@ export interface GoogleApigeeOrganizationConfig extends cdktf.TerraformMetaArgum
   * Valid only when 'RuntimeType' is set to CLOUD. The value must be set before the creation
   * of any Apigee runtime instance and can be updated only when there are no runtime instances.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apigee_organization#disable_vpc_peering GoogleApigeeOrganization#disable_vpc_peering}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apigee_organization#disable_vpc_peering GoogleApigeeOrganization#disable_vpc_peering}
   */
   readonly disableVpcPeering?: boolean | cdktf.IResolvable;
   /**
   * The display name of the Apigee organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apigee_organization#display_name GoogleApigeeOrganization#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apigee_organization#display_name GoogleApigeeOrganization#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apigee_organization#id GoogleApigeeOrganization#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apigee_organization#id GoogleApigeeOrganization#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -85,7 +80,7 @@ export interface GoogleApigeeOrganizationConfig extends cdktf.TerraformMetaArgum
   /**
   * The project ID associated with the Apigee organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apigee_organization#project_id GoogleApigeeOrganization#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apigee_organization#project_id GoogleApigeeOrganization#project_id}
   */
   readonly projectId: string;
   /**
@@ -94,7 +89,7 @@ export interface GoogleApigeeOrganizationConfig extends cdktf.TerraformMetaArgum
   * operation completes. During this period, the Organization may be restored to its last known state.
   * After this period, the Organization will no longer be able to be restored. Default value: "DELETION_RETENTION_UNSPECIFIED" Possible values: ["DELETION_RETENTION_UNSPECIFIED", "MINIMUM"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apigee_organization#retention GoogleApigeeOrganization#retention}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apigee_organization#retention GoogleApigeeOrganization#retention}
   */
   readonly retention?: string;
   /**
@@ -103,25 +98,25 @@ export interface GoogleApigeeOrganizationConfig extends cdktf.TerraformMetaArgum
   * If not specified, a Google-Managed encryption key will be used.
   * Valid only when 'RuntimeType' is CLOUD. For example: 'projects/foo/locations/us/keyRings/bar/cryptoKeys/baz'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apigee_organization#runtime_database_encryption_key_name GoogleApigeeOrganization#runtime_database_encryption_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apigee_organization#runtime_database_encryption_key_name GoogleApigeeOrganization#runtime_database_encryption_key_name}
   */
   readonly runtimeDatabaseEncryptionKeyName?: string;
   /**
   * Runtime type of the Apigee organization based on the Apigee subscription purchased. Default value: "CLOUD" Possible values: ["CLOUD", "HYBRID"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apigee_organization#runtime_type GoogleApigeeOrganization#runtime_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apigee_organization#runtime_type GoogleApigeeOrganization#runtime_type}
   */
   readonly runtimeType?: string;
   /**
   * properties block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apigee_organization#properties GoogleApigeeOrganization#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apigee_organization#properties GoogleApigeeOrganization#properties}
   */
   readonly properties?: GoogleApigeeOrganizationProperties;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apigee_organization#timeouts GoogleApigeeOrganization#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apigee_organization#timeouts GoogleApigeeOrganization#timeouts}
   */
   readonly timeouts?: GoogleApigeeOrganizationTimeouts;
 }
@@ -129,13 +124,13 @@ export interface GoogleApigeeOrganizationPropertiesProperty {
   /**
   * Name of the property.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apigee_organization#name GoogleApigeeOrganization#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apigee_organization#name GoogleApigeeOrganization#name}
   */
   readonly name?: string;
   /**
   * Value of the property.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apigee_organization#value GoogleApigeeOrganization#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apigee_organization#value GoogleApigeeOrganization#value}
   */
   readonly value?: string;
 }
@@ -282,7 +277,7 @@ export interface GoogleApigeeOrganizationProperties {
   /**
   * property block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apigee_organization#property GoogleApigeeOrganization#property}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apigee_organization#property GoogleApigeeOrganization#property}
   */
   readonly property?: GoogleApigeeOrganizationPropertiesProperty[] | cdktf.IResolvable;
 }
@@ -366,15 +361,15 @@ export class GoogleApigeeOrganizationPropertiesOutputReference extends cdktf.Com
 }
 export interface GoogleApigeeOrganizationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apigee_organization#create GoogleApigeeOrganization#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apigee_organization#create GoogleApigeeOrganization#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apigee_organization#delete GoogleApigeeOrganization#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apigee_organization#delete GoogleApigeeOrganization#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apigee_organization#update GoogleApigeeOrganization#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apigee_organization#update GoogleApigeeOrganization#update}
   */
   readonly update?: string;
 }
@@ -526,7 +521,7 @@ export class GoogleApigeeOrganizationTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apigee_organization google_apigee_organization}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apigee_organization google_apigee_organization}
 */
 export class GoogleApigeeOrganization extends cdktf.TerraformResource {
 
@@ -542,7 +537,7 @@ export class GoogleApigeeOrganization extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleApigeeOrganization resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleApigeeOrganization to import
-  * @param importFromId The id of the existing GoogleApigeeOrganization that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apigee_organization#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleApigeeOrganization that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apigee_organization#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleApigeeOrganization to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -554,7 +549,7 @@ export class GoogleApigeeOrganization extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_apigee_organization google_apigee_organization} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apigee_organization google_apigee_organization} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -565,7 +560,7 @@ export class GoogleApigeeOrganization extends cdktf.TerraformResource {
       terraformResourceType: 'google_apigee_organization',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.24.0',
+        providerVersion: '6.25.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -4,12 +4,12 @@
 
 ### GoogleFolderIamBinding <a name="GoogleFolderIamBinding" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_folder_iam_binding google_folder_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_folder_iam_binding google_folder_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolderiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderiambinding"
 
 googlefolderiambinding.NewGoogleFolderIamBinding(scope Construct, id *string, config GoogleFolderIamBindingConfig) GoogleFolderIamBinding
 ```
@@ -405,7 +405,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolderiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderiambinding"
 
 googlefolderiambinding.GoogleFolderIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolderiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderiambinding"
 
 googlefolderiambinding.GoogleFolderIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ googlefolderiambinding.GoogleFolderIamBinding_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolderiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderiambinding"
 
 googlefolderiambinding.GoogleFolderIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ googlefolderiambinding.GoogleFolderIamBinding_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolderiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderiambinding"
 
 googlefolderiambinding.GoogleFolderIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the GoogleFolderIamBinding to 
 
 The id of the existing GoogleFolderIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_folder_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_folder_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -815,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolderiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderiambinding"
 
 &googlefolderiambinding.GoogleFolderIamBindingCondition {
 	Expression: *string,
@@ -828,9 +828,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolde
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_folder_iam_binding#expression GoogleFolderIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_folder_iam_binding#title GoogleFolderIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_folder_iam_binding#description GoogleFolderIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_folder_iam_binding#expression GoogleFolderIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_folder_iam_binding#title GoogleFolderIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_folder_iam_binding#description GoogleFolderIamBinding#description}. |
 
 ---
 
@@ -842,7 +842,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_folder_iam_binding#expression GoogleFolderIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_folder_iam_binding#expression GoogleFolderIamBinding#expression}.
 
 ---
 
@@ -854,7 +854,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_folder_iam_binding#title GoogleFolderIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_folder_iam_binding#title GoogleFolderIamBinding#title}.
 
 ---
 
@@ -866,7 +866,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_folder_iam_binding#description GoogleFolderIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_folder_iam_binding#description GoogleFolderIamBinding#description}.
 
 ---
 
@@ -875,7 +875,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolderiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderiambinding"
 
 &googlefolderiambinding.GoogleFolderIamBindingConfig {
 	Connection: interface{},
@@ -888,7 +888,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolde
 	Folder: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleFolderIamBinding.GoogleFolderIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleFolderIamBinding.GoogleFolderIamBindingCondition,
 	Id: *string,
 }
 ```
@@ -904,11 +904,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolde
 | <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.property.folder">Folder</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_folder_iam_binding#folder GoogleFolderIamBinding#folder}. |
-| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_folder_iam_binding#members GoogleFolderIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_folder_iam_binding#role GoogleFolderIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.property.folder">Folder</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_folder_iam_binding#folder GoogleFolderIamBinding#folder}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_folder_iam_binding#members GoogleFolderIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_folder_iam_binding#role GoogleFolderIamBinding#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingCondition">GoogleFolderIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_folder_iam_binding#id GoogleFolderIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_folder_iam_binding#id GoogleFolderIamBinding#id}. |
 
 ---
 
@@ -990,7 +990,7 @@ Folder *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_folder_iam_binding#folder GoogleFolderIamBinding#folder}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_folder_iam_binding#folder GoogleFolderIamBinding#folder}.
 
 ---
 
@@ -1002,7 +1002,7 @@ Members *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_folder_iam_binding#members GoogleFolderIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_folder_iam_binding#members GoogleFolderIamBinding#members}.
 
 ---
 
@@ -1014,7 +1014,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_folder_iam_binding#role GoogleFolderIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_folder_iam_binding#role GoogleFolderIamBinding#role}.
 
 ---
 
@@ -1028,7 +1028,7 @@ Condition GoogleFolderIamBindingCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_folder_iam_binding#condition GoogleFolderIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_folder_iam_binding#condition GoogleFolderIamBinding#condition}
 
 ---
 
@@ -1040,7 +1040,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_folder_iam_binding#id GoogleFolderIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_folder_iam_binding#id GoogleFolderIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1054,7 +1054,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolderiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderiambinding"
 
 googlefolderiambinding.NewGoogleFolderIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleFolderIamBindingConditionOutputReference
 ```

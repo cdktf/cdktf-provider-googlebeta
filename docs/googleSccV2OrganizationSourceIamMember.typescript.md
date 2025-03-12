@@ -4,7 +4,7 @@
 
 ### GoogleSccV2OrganizationSourceIamMember <a name="GoogleSccV2OrganizationSourceIamMember" id="@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamMember.GoogleSccV2OrganizationSourceIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_member google_scc_v2_organization_source_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_scc_v2_organization_source_iam_member google_scc_v2_organization_source_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamMember.GoogleSccV2OrganizationSourceIamMember.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the GoogleSccV2OrganizationSou
 
 The id of the existing GoogleSccV2OrganizationSourceIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_scc_v2_organization_source_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -846,9 +846,9 @@ const googleSccV2OrganizationSourceIamMemberCondition: googleSccV2OrganizationSo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamMember.GoogleSccV2OrganizationSourceIamMemberCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_member#expression GoogleSccV2OrganizationSourceIamMember#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamMember.GoogleSccV2OrganizationSourceIamMemberCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_member#title GoogleSccV2OrganizationSourceIamMember#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamMember.GoogleSccV2OrganizationSourceIamMemberCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_member#description GoogleSccV2OrganizationSourceIamMember#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamMember.GoogleSccV2OrganizationSourceIamMemberCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_scc_v2_organization_source_iam_member#expression GoogleSccV2OrganizationSourceIamMember#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamMember.GoogleSccV2OrganizationSourceIamMemberCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_scc_v2_organization_source_iam_member#title GoogleSccV2OrganizationSourceIamMember#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamMember.GoogleSccV2OrganizationSourceIamMemberCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_scc_v2_organization_source_iam_member#description GoogleSccV2OrganizationSourceIamMember#description}. |
 
 ---
 
@@ -860,7 +860,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_member#expression GoogleSccV2OrganizationSourceIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_scc_v2_organization_source_iam_member#expression GoogleSccV2OrganizationSourceIamMember#expression}.
 
 ---
 
@@ -872,7 +872,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_member#title GoogleSccV2OrganizationSourceIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_scc_v2_organization_source_iam_member#title GoogleSccV2OrganizationSourceIamMember#title}.
 
 ---
 
@@ -884,7 +884,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_member#description GoogleSccV2OrganizationSourceIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_scc_v2_organization_source_iam_member#description GoogleSccV2OrganizationSourceIamMember#description}.
 
 ---
 
@@ -909,12 +909,12 @@ const googleSccV2OrganizationSourceIamMemberConfig: googleSccV2OrganizationSourc
 | <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamMember.GoogleSccV2OrganizationSourceIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamMember.GoogleSccV2OrganizationSourceIamMemberConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamMember.GoogleSccV2OrganizationSourceIamMemberConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamMember.GoogleSccV2OrganizationSourceIamMemberConfig.property.member">member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_member#member GoogleSccV2OrganizationSourceIamMember#member}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamMember.GoogleSccV2OrganizationSourceIamMemberConfig.property.organization">organization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_member#organization GoogleSccV2OrganizationSourceIamMember#organization}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamMember.GoogleSccV2OrganizationSourceIamMemberConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_member#role GoogleSccV2OrganizationSourceIamMember#role}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamMember.GoogleSccV2OrganizationSourceIamMemberConfig.property.source">source</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_member#source GoogleSccV2OrganizationSourceIamMember#source}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamMember.GoogleSccV2OrganizationSourceIamMemberConfig.property.member">member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_scc_v2_organization_source_iam_member#member GoogleSccV2OrganizationSourceIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamMember.GoogleSccV2OrganizationSourceIamMemberConfig.property.organization">organization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_scc_v2_organization_source_iam_member#organization GoogleSccV2OrganizationSourceIamMember#organization}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamMember.GoogleSccV2OrganizationSourceIamMemberConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_scc_v2_organization_source_iam_member#role GoogleSccV2OrganizationSourceIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamMember.GoogleSccV2OrganizationSourceIamMemberConfig.property.source">source</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_scc_v2_organization_source_iam_member#source GoogleSccV2OrganizationSourceIamMember#source}. |
 | <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamMember.GoogleSccV2OrganizationSourceIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamMember.GoogleSccV2OrganizationSourceIamMemberCondition">GoogleSccV2OrganizationSourceIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamMember.GoogleSccV2OrganizationSourceIamMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_member#id GoogleSccV2OrganizationSourceIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSccV2OrganizationSourceIamMember.GoogleSccV2OrganizationSourceIamMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_scc_v2_organization_source_iam_member#id GoogleSccV2OrganizationSourceIamMember#id}. |
 
 ---
 
@@ -996,7 +996,7 @@ public readonly member: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_member#member GoogleSccV2OrganizationSourceIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_scc_v2_organization_source_iam_member#member GoogleSccV2OrganizationSourceIamMember#member}.
 
 ---
 
@@ -1008,7 +1008,7 @@ public readonly organization: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_member#organization GoogleSccV2OrganizationSourceIamMember#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_scc_v2_organization_source_iam_member#organization GoogleSccV2OrganizationSourceIamMember#organization}.
 
 ---
 
@@ -1020,7 +1020,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_member#role GoogleSccV2OrganizationSourceIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_scc_v2_organization_source_iam_member#role GoogleSccV2OrganizationSourceIamMember#role}.
 
 ---
 
@@ -1032,7 +1032,7 @@ public readonly source: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_member#source GoogleSccV2OrganizationSourceIamMember#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_scc_v2_organization_source_iam_member#source GoogleSccV2OrganizationSourceIamMember#source}.
 
 ---
 
@@ -1046,7 +1046,7 @@ public readonly condition: GoogleSccV2OrganizationSourceIamMemberCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_member#condition GoogleSccV2OrganizationSourceIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_scc_v2_organization_source_iam_member#condition GoogleSccV2OrganizationSourceIamMember#condition}
 
 ---
 
@@ -1058,7 +1058,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_scc_v2_organization_source_iam_member#id GoogleSccV2OrganizationSourceIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_scc_v2_organization_source_iam_member#id GoogleSccV2OrganizationSourceIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
