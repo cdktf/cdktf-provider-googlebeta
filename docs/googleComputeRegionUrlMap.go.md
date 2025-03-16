@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMap(scope Construct, id *string, config GoogleComputeRegionUrlMapConfig) GoogleComputeRegionUrlMap
 ```
@@ -533,7 +533,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMap.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.GoogleComputeRegionUrlMap_IsConstruct(x interface{}) *bool
 ```
@@ -565,7 +565,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMap.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.GoogleComputeRegionUrlMap_IsTerraformElement(x interface{}) *bool
 ```
@@ -579,7 +579,7 @@ googlecomputeregionurlmap.GoogleComputeRegionUrlMap_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMap.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.GoogleComputeRegionUrlMap_IsTerraformResource(x interface{}) *bool
 ```
@@ -593,7 +593,7 @@ googlecomputeregionurlmap.GoogleComputeRegionUrlMap_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMap.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.GoogleComputeRegionUrlMap_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1130,7 +1130,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapConfig {
 	Connection: interface{},
@@ -1141,9 +1141,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecompu
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	DefaultRouteAction: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteAction,
+	DefaultRouteAction: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteAction,
 	DefaultService: *string,
-	DefaultUrlRedirect: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultUrlRedirect,
+	DefaultUrlRedirect: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultUrlRedirect,
 	Description: *string,
 	HostRule: interface{},
 	Id: *string,
@@ -1151,7 +1151,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecompu
 	Project: *string,
 	Region: *string,
 	Test: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapTimeouts,
 }
 ```
 
@@ -1438,15 +1438,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapDefaultRouteAction {
-	CorsPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionCorsPolicy,
-	FaultInjectionPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicy,
-	RequestMirrorPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicy,
-	RetryPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionRetryPolicy,
-	Timeout: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionTimeout,
-	UrlRewrite: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionUrlRewrite,
+	CorsPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionCorsPolicy,
+	FaultInjectionPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicy,
+	RequestMirrorPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicy,
+	RetryPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionRetryPolicy,
+	Timeout: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionTimeout,
+	UrlRewrite: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionUrlRewrite,
 	WeightedBackendServices: interface{},
 }
 ```
@@ -1568,7 +1568,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionCorsPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapDefaultRouteActionCorsPolicy {
 	AllowCredentials: interface{},
@@ -1725,11 +1725,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicy {
-	Abort: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbort,
-	Delay: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelay,
+	Abort: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbort,
+	Delay: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelay,
 }
 ```
 
@@ -1775,7 +1775,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbort.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbort {
 	HttpStatus: *f64,
@@ -1827,10 +1827,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelay.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelay {
-	FixedDelay: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelay,
+	FixedDelay: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelay,
 	Percentage: *f64,
 }
 ```
@@ -1879,7 +1879,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelay.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelay {
 	Nanos: *f64,
@@ -1935,7 +1935,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicy {
 	BackendService: *string,
@@ -1972,11 +1972,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionRetryPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapDefaultRouteActionRetryPolicy {
 	NumRetries: *f64,
-	PerTryTimeout: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeout,
+	PerTryTimeout: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeout,
 	RetryConditions: *[]*string,
 }
 ```
@@ -2051,7 +2051,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeout.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeout {
 	Nanos: *f64,
@@ -2107,7 +2107,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionTimeout.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapDefaultRouteActionTimeout {
 	Nanos: *f64,
@@ -2161,7 +2161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionUrlRewrite.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapDefaultRouteActionUrlRewrite {
 	HostRewrite: *string,
@@ -2215,11 +2215,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServices {
 	BackendService: *string,
-	HeaderAction: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction,
+	HeaderAction: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction,
 	Weight: *f64,
 }
 ```
@@ -2286,7 +2286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction {
 	RequestHeadersToAdd: interface{},
@@ -2368,7 +2368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd {
 	HeaderName: *string,
@@ -2437,7 +2437,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd {
 	HeaderName: *string,
@@ -2506,7 +2506,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultUrlRedirect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapDefaultUrlRedirect {
 	StripQuery: interface{},
@@ -2648,7 +2648,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapHostRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapHostRule {
 	Hosts: *[]*string,
@@ -2719,12 +2719,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcher.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcher {
 	Name: *string,
 	DefaultService: *string,
-	DefaultUrlRedirect: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherDefaultUrlRedirect,
+	DefaultUrlRedirect: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherDefaultUrlRedirect,
 	Description: *string,
 	PathRule: interface{},
 	RouteRules: interface{},
@@ -2837,7 +2837,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherDefaultUrlRedirect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherDefaultUrlRedirect {
 	StripQuery: interface{},
@@ -2979,13 +2979,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherPathRule {
 	Paths: *[]*string,
-	RouteAction: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteAction,
+	RouteAction: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteAction,
 	Service: *string,
-	UrlRedirect: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleUrlRedirect,
+	UrlRedirect: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleUrlRedirect,
 }
 ```
 
@@ -3073,15 +3073,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteAction {
-	CorsPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicy,
-	FaultInjectionPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicy,
-	RequestMirrorPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicy,
-	RetryPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicy,
-	Timeout: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeout,
-	UrlRewrite: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewrite,
+	CorsPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicy,
+	FaultInjectionPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicy,
+	RequestMirrorPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicy,
+	RetryPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicy,
+	Timeout: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeout,
+	UrlRewrite: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewrite,
 	WeightedBackendServices: interface{},
 }
 ```
@@ -3203,7 +3203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicy {
 	Disabled: interface{},
@@ -3362,11 +3362,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicy {
-	Abort: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbort,
-	Delay: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelay,
+	Abort: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbort,
+	Delay: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelay,
 }
 ```
 
@@ -3412,7 +3412,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbort.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbort {
 	HttpStatus: *f64,
@@ -3465,10 +3465,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelay.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelay {
-	FixedDelay: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelay,
+	FixedDelay: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelay,
 	Percentage: *f64,
 }
 ```
@@ -3518,7 +3518,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelay.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelay {
 	Seconds: *string,
@@ -3572,7 +3572,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicy {
 	BackendService: *string,
@@ -3606,11 +3606,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicy {
 	NumRetries: *f64,
-	PerTryTimeout: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeout,
+	PerTryTimeout: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeout,
 	RetryConditions: *[]*string,
 }
 ```
@@ -3693,7 +3693,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeout.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeout {
 	Seconds: *string,
@@ -3747,7 +3747,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeout.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeout {
 	Seconds: *string,
@@ -3801,7 +3801,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewrite.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewrite {
 	HostRewrite: *string,
@@ -3857,12 +3857,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices {
 	BackendService: *string,
 	Weight: *f64,
-	HeaderAction: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction,
+	HeaderAction: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction,
 }
 ```
 
@@ -3933,7 +3933,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction {
 	RequestHeadersToAdd: interface{},
@@ -4015,7 +4015,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd {
 	HeaderName: *string,
@@ -4084,7 +4084,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd {
 	HeaderName: *string,
@@ -4153,7 +4153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleUrlRedirect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherPathRuleUrlRedirect {
 	StripQuery: interface{},
@@ -4297,15 +4297,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherRouteRules {
 	Priority: *f64,
-	HeaderAction: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesHeaderAction,
+	HeaderAction: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesHeaderAction,
 	MatchRules: interface{},
-	RouteAction: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteAction,
+	RouteAction: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteAction,
 	Service: *string,
-	UrlRedirect: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect,
+	UrlRedirect: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect,
 }
 ```
 
@@ -4433,7 +4433,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesHeaderAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherRouteRulesHeaderAction {
 	RequestHeadersToAdd: interface{},
@@ -4515,7 +4515,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd {
 	HeaderName: *string,
@@ -4584,7 +4584,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd {
 	HeaderName: *string,
@@ -4653,7 +4653,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRules {
 	FullPathMatch: *string,
@@ -4816,7 +4816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches {
 	HeaderName: *string,
@@ -4824,7 +4824,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecompu
 	InvertMatch: interface{},
 	PrefixMatch: *string,
 	PresentMatch: interface{},
-	RangeMatch: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatch,
+	RangeMatch: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatch,
 	RegexMatch: *string,
 	SuffixMatch: *string,
 }
@@ -4991,7 +4991,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatch {
 	RangeEnd: *f64,
@@ -5041,7 +5041,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters {
 	FilterLabels: interface{},
@@ -5096,7 +5096,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels {
 	Name: *string,
@@ -5149,7 +5149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches {
 	Name: *string,
@@ -5244,15 +5244,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteAction {
-	CorsPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicy,
-	FaultInjectionPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicy,
-	RequestMirrorPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicy,
-	RetryPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicy,
-	Timeout: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeout,
-	UrlRewrite: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewrite,
+	CorsPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicy,
+	FaultInjectionPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicy,
+	RequestMirrorPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicy,
+	RetryPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicy,
+	Timeout: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeout,
+	UrlRewrite: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewrite,
 	WeightedBackendServices: interface{},
 }
 ```
@@ -5374,7 +5374,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicy {
 	AllowCredentials: interface{},
@@ -5533,11 +5533,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicy {
-	Abort: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbort,
-	Delay: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelay,
+	Abort: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbort,
+	Delay: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelay,
 }
 ```
 
@@ -5583,7 +5583,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbort.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbort {
 	HttpStatus: *f64,
@@ -5636,10 +5636,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelay.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelay {
-	FixedDelay: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelay,
+	FixedDelay: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelay,
 	Percentage: *f64,
 }
 ```
@@ -5689,7 +5689,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelay.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelay {
 	Seconds: *string,
@@ -5743,7 +5743,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicy {
 	BackendService: *string,
@@ -5777,11 +5777,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicy {
 	NumRetries: *f64,
-	PerTryTimeout: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeout,
+	PerTryTimeout: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeout,
 	RetryConditions: *[]*string,
 }
 ```
@@ -5864,7 +5864,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeout.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeout {
 	Seconds: *string,
@@ -5918,7 +5918,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeout.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeout {
 	Seconds: *string,
@@ -5972,7 +5972,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewrite.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewrite {
 	HostRewrite: *string,
@@ -6054,12 +6054,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices {
 	BackendService: *string,
 	Weight: *f64,
-	HeaderAction: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction,
+	HeaderAction: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction,
 }
 ```
 
@@ -6130,7 +6130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction {
 	RequestHeadersToAdd: interface{},
@@ -6212,7 +6212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd {
 	HeaderName: *string,
@@ -6281,7 +6281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd {
 	HeaderName: *string,
@@ -6350,7 +6350,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect {
 	HostRedirect: *string,
@@ -6493,7 +6493,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapTest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapTest {
 	Host: *string,
@@ -6575,7 +6575,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 &googlecomputeregionurlmap.GoogleComputeRegionUrlMapTimeouts {
 	Create: *string,
@@ -6637,7 +6637,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference
 ```
@@ -7118,7 +7118,7 @@ func InternalValue() GoogleComputeRegionUrlMapDefaultRouteActionCorsPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference
 ```
@@ -7425,7 +7425,7 @@ func InternalValue() GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPo
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference
 ```
@@ -7732,7 +7732,7 @@ func InternalValue() GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPo
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayOutputReference
 ```
@@ -8052,7 +8052,7 @@ func InternalValue() GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPo
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyOutputReference
 ```
@@ -8385,7 +8385,7 @@ func InternalValue() GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPo
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapDefaultRouteActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapDefaultRouteActionOutputReference
 ```
@@ -8928,7 +8928,7 @@ func InternalValue() GoogleComputeRegionUrlMapDefaultRouteAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference
 ```
@@ -9206,7 +9206,7 @@ func InternalValue() GoogleComputeRegionUrlMapDefaultRouteActionRequestMirrorPol
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionRetryPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapDefaultRouteActionRetryPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapDefaultRouteActionRetryPolicyOutputReference
 ```
@@ -9555,7 +9555,7 @@ func InternalValue() GoogleComputeRegionUrlMapDefaultRouteActionRetryPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference
 ```
@@ -9862,7 +9862,7 @@ func InternalValue() GoogleComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTr
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionTimeoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapDefaultRouteActionTimeoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapDefaultRouteActionTimeoutOutputReference
 ```
@@ -10169,7 +10169,7 @@ func InternalValue() GoogleComputeRegionUrlMapDefaultRouteActionTimeout
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference
 ```
@@ -10476,7 +10476,7 @@ func InternalValue() GoogleComputeRegionUrlMapDefaultRouteActionUrlRewrite
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference
 ```
@@ -10867,7 +10867,7 @@ func InternalValue() GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendS
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList
 ```
@@ -11027,7 +11027,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference
 ```
@@ -11381,7 +11381,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList
 ```
@@ -11541,7 +11541,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference
 ```
@@ -11895,7 +11895,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesList
 ```
@@ -12055,7 +12055,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesOutputReference
 ```
@@ -12422,7 +12422,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultUrlRedirectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapDefaultUrlRedirectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapDefaultUrlRedirectOutputReference
 ```
@@ -12838,7 +12838,7 @@ func InternalValue() GoogleComputeRegionUrlMapDefaultUrlRedirect
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapHostRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapHostRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRegionUrlMapHostRuleList
 ```
@@ -12998,7 +12998,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapHostRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapHostRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeRegionUrlMapHostRuleOutputReference
 ```
@@ -13338,7 +13338,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference
 ```
@@ -13754,7 +13754,7 @@ func InternalValue() GoogleComputeRegionUrlMapPathMatcherDefaultUrlRedirect
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRegionUrlMapPathMatcherList
 ```
@@ -13914,7 +13914,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeRegionUrlMapPathMatcherOutputReference
 ```
@@ -14387,7 +14387,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherPathRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRegionUrlMapPathMatcherPathRuleList
 ```
@@ -14547,7 +14547,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherPathRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeRegionUrlMapPathMatcherPathRuleOutputReference
 ```
@@ -14949,7 +14949,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference
 ```
@@ -15423,7 +15423,7 @@ func InternalValue() GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionCors
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbortOutputReference
 ```
@@ -15716,7 +15716,7 @@ func InternalValue() GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionFaul
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference
 ```
@@ -16016,7 +16016,7 @@ func InternalValue() GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionFaul
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayOutputReference
 ```
@@ -16322,7 +16322,7 @@ func InternalValue() GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionFaul
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyOutputReference
 ```
@@ -16655,7 +16655,7 @@ func InternalValue() GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionFaul
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionOutputReference
 ```
@@ -17198,7 +17198,7 @@ func InternalValue() GoogleComputeRegionUrlMapPathMatcherPathRuleRouteAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicyOutputReference
 ```
@@ -17469,7 +17469,7 @@ func InternalValue() GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionRequ
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyOutputReference
 ```
@@ -17818,7 +17818,7 @@ func InternalValue() GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionRetr
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeoutOutputReference
 ```
@@ -18118,7 +18118,7 @@ func InternalValue() GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionRetr
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeoutOutputReference
 ```
@@ -18418,7 +18418,7 @@ func InternalValue() GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionTime
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewriteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewriteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewriteOutputReference
 ```
@@ -18725,7 +18725,7 @@ func InternalValue() GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlR
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference
 ```
@@ -19116,7 +19116,7 @@ func InternalValue() GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionWeig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList
 ```
@@ -19276,7 +19276,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference
 ```
@@ -19609,7 +19609,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList
 ```
@@ -19769,7 +19769,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference
 ```
@@ -20102,7 +20102,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList
 ```
@@ -20262,7 +20262,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesOutputReference
 ```
@@ -20615,7 +20615,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference
 ```
@@ -21031,7 +21031,7 @@ func InternalValue() GoogleComputeRegionUrlMapPathMatcherPathRuleUrlRedirect
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference
 ```
@@ -21422,7 +21422,7 @@ func InternalValue() GoogleComputeRegionUrlMapPathMatcherRouteRulesHeaderAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList
 ```
@@ -21582,7 +21582,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference
 ```
@@ -21915,7 +21915,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList
 ```
@@ -22075,7 +22075,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference
 ```
@@ -22408,7 +22408,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRegionUrlMapPathMatcherRouteRulesList
 ```
@@ -22568,7 +22568,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesList
 ```
@@ -22728,7 +22728,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference
 ```
@@ -23233,7 +23233,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatchOutputReference
 ```
@@ -23526,7 +23526,7 @@ func InternalValue() GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHea
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesList
 ```
@@ -23686,7 +23686,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList
 ```
@@ -23846,7 +23846,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsOutputReference
 ```
@@ -24157,7 +24157,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList
 ```
@@ -24317,7 +24317,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference
 ```
@@ -24641,7 +24641,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference
 ```
@@ -25179,7 +25179,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList
 ```
@@ -25339,7 +25339,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference
 ```
@@ -25715,7 +25715,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeRegionUrlMapPathMatcherRouteRulesOutputReference
 ```
@@ -26201,7 +26201,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference
 ```
@@ -26682,7 +26682,7 @@ func InternalValue() GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionCo
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbortOutputReference
 ```
@@ -26989,7 +26989,7 @@ func InternalValue() GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionFa
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference
 ```
@@ -27289,7 +27289,7 @@ func InternalValue() GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionFa
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayOutputReference
 ```
@@ -27609,7 +27609,7 @@ func InternalValue() GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionFa
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyOutputReference
 ```
@@ -27942,7 +27942,7 @@ func InternalValue() GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionFa
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionOutputReference
 ```
@@ -28485,7 +28485,7 @@ func InternalValue() GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicyOutputReference
 ```
@@ -28756,7 +28756,7 @@ func InternalValue() GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionRe
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyOutputReference
 ```
@@ -29098,7 +29098,7 @@ func InternalValue() GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionRe
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeoutOutputReference
 ```
@@ -29398,7 +29398,7 @@ func InternalValue() GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionRe
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeoutOutputReference
 ```
@@ -29698,7 +29698,7 @@ func InternalValue() GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionTi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutputReference
 ```
@@ -30034,7 +30034,7 @@ func InternalValue() GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionUr
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference
 ```
@@ -30425,7 +30425,7 @@ func InternalValue() GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionWe
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList
 ```
@@ -30585,7 +30585,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference
 ```
@@ -30918,7 +30918,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList
 ```
@@ -31078,7 +31078,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference
 ```
@@ -31411,7 +31411,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesList
 ```
@@ -31571,7 +31571,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesOutputReference
 ```
@@ -31924,7 +31924,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference
 ```
@@ -32347,7 +32347,7 @@ func InternalValue() GoogleComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapTestList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapTestList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRegionUrlMapTestList
 ```
@@ -32507,7 +32507,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapTestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapTestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeRegionUrlMapTestOutputReference
 ```
@@ -32869,7 +32869,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionurlmap"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionurlmap"
 
 googlecomputeregionurlmap.NewGoogleComputeRegionUrlMapTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionUrlMapTimeoutsOutputReference
 ```
