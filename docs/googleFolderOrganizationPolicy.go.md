@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolderorganizationpolicy"
 
 googlefolderorganizationpolicy.NewGoogleFolderOrganizationPolicy(scope Construct, id *string, config GoogleFolderOrganizationPolicyConfig) GoogleFolderOrganizationPolicy
 ```
@@ -472,7 +472,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolderorganizationpolicy"
 
 googlefolderorganizationpolicy.GoogleFolderOrganizationPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -504,7 +504,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolderorganizationpolicy"
 
 googlefolderorganizationpolicy.GoogleFolderOrganizationPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -518,7 +518,7 @@ googlefolderorganizationpolicy.GoogleFolderOrganizationPolicy_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolderorganizationpolicy"
 
 googlefolderorganizationpolicy.GoogleFolderOrganizationPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -532,7 +532,7 @@ googlefolderorganizationpolicy.GoogleFolderOrganizationPolicy_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolderorganizationpolicy"
 
 googlefolderorganizationpolicy.GoogleFolderOrganizationPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -959,7 +959,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyBooleanPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolderorganizationpolicy"
 
 &googlefolderorganizationpolicy.GoogleFolderOrganizationPolicyBooleanPolicy {
 	Enforced: interface{},
@@ -993,7 +993,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolderorganizationpolicy"
 
 &googlefolderorganizationpolicy.GoogleFolderOrganizationPolicyConfig {
 	Connection: interface{},
@@ -1005,11 +1005,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderorg
 	Provisioners: *[]interface{},
 	Constraint: *string,
 	Folder: *string,
-	BooleanPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyBooleanPolicy,
+	BooleanPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyBooleanPolicy,
 	Id: *string,
-	ListPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyListPolicy,
-	RestorePolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyRestorePolicy,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyTimeouts,
+	ListPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyListPolicy,
+	RestorePolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyRestorePolicy,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyTimeouts,
 	Version: *f64,
 }
 ```
@@ -1224,11 +1224,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyListPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolderorganizationpolicy"
 
 &googlefolderorganizationpolicy.GoogleFolderOrganizationPolicyListPolicy {
-	Allow: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyListPolicyAllow,
-	Deny: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyListPolicyDeny,
+	Allow: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyListPolicyAllow,
+	Deny: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyListPolicyDeny,
 	InheritFromParent: interface{},
 	SuggestedValue: *string,
 }
@@ -1306,7 +1306,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyListPolicyAllow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolderorganizationpolicy"
 
 &googlefolderorganizationpolicy.GoogleFolderOrganizationPolicyListPolicyAllow {
 	All: interface{},
@@ -1356,7 +1356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyListPolicyDeny.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolderorganizationpolicy"
 
 &googlefolderorganizationpolicy.GoogleFolderOrganizationPolicyListPolicyDeny {
 	All: interface{},
@@ -1406,7 +1406,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyRestorePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolderorganizationpolicy"
 
 &googlefolderorganizationpolicy.GoogleFolderOrganizationPolicyRestorePolicy {
 	Default: interface{},
@@ -1440,7 +1440,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolderorganizationpolicy"
 
 &googlefolderorganizationpolicy.GoogleFolderOrganizationPolicyTimeouts {
 	Create: *string,
@@ -1516,7 +1516,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyBooleanPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolderorganizationpolicy"
 
 googlefolderorganizationpolicy.NewGoogleFolderOrganizationPolicyBooleanPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleFolderOrganizationPolicyBooleanPolicyOutputReference
 ```
@@ -1787,7 +1787,7 @@ func InternalValue() GoogleFolderOrganizationPolicyBooleanPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyListPolicyAllowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolderorganizationpolicy"
 
 googlefolderorganizationpolicy.NewGoogleFolderOrganizationPolicyListPolicyAllowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleFolderOrganizationPolicyListPolicyAllowOutputReference
 ```
@@ -2094,7 +2094,7 @@ func InternalValue() GoogleFolderOrganizationPolicyListPolicyAllow
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyListPolicyDenyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolderorganizationpolicy"
 
 googlefolderorganizationpolicy.NewGoogleFolderOrganizationPolicyListPolicyDenyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleFolderOrganizationPolicyListPolicyDenyOutputReference
 ```
@@ -2401,7 +2401,7 @@ func InternalValue() GoogleFolderOrganizationPolicyListPolicyDeny
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyListPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolderorganizationpolicy"
 
 googlefolderorganizationpolicy.NewGoogleFolderOrganizationPolicyListPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleFolderOrganizationPolicyListPolicyOutputReference
 ```
@@ -2792,7 +2792,7 @@ func InternalValue() GoogleFolderOrganizationPolicyListPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyRestorePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolderorganizationpolicy"
 
 googlefolderorganizationpolicy.NewGoogleFolderOrganizationPolicyRestorePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleFolderOrganizationPolicyRestorePolicyOutputReference
 ```
@@ -3063,7 +3063,7 @@ func InternalValue() GoogleFolderOrganizationPolicyRestorePolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolderorganizationpolicy"
 
 googlefolderorganizationpolicy.NewGoogleFolderOrganizationPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleFolderOrganizationPolicyTimeoutsOutputReference
 ```
