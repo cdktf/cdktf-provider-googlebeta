@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEventarcMessageBus.GoogleEventarcMessageBus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleeventarcmessagebus"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleeventarcmessagebus"
 
 googleeventarcmessagebus.NewGoogleEventarcMessageBus(scope Construct, id *string, config GoogleEventarcMessageBusConfig) GoogleEventarcMessageBus
 ```
@@ -460,7 +460,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleEventarcMessageBus.GoogleEventarcMessageBus.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleeventarcmessagebus"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleeventarcmessagebus"
 
 googleeventarcmessagebus.GoogleEventarcMessageBus_IsConstruct(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleEventarcMessageBus.GoogleEventarcMessageBus.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleeventarcmessagebus"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleeventarcmessagebus"
 
 googleeventarcmessagebus.GoogleEventarcMessageBus_IsTerraformElement(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ googleeventarcmessagebus.GoogleEventarcMessageBus_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleEventarcMessageBus.GoogleEventarcMessageBus.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleeventarcmessagebus"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleeventarcmessagebus"
 
 googleeventarcmessagebus.GoogleEventarcMessageBus_IsTerraformResource(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ googleeventarcmessagebus.GoogleEventarcMessageBus_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleEventarcMessageBus.GoogleEventarcMessageBus.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleeventarcmessagebus"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleeventarcmessagebus"
 
 googleeventarcmessagebus.GoogleEventarcMessageBus_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1057,7 +1057,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEventarcMessageBus.GoogleEventarcMessageBusConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleeventarcmessagebus"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleeventarcmessagebus"
 
 &googleeventarcmessagebus.GoogleEventarcMessageBusConfig {
 	Connection: interface{},
@@ -1074,9 +1074,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleevent
 	DisplayName: *string,
 	Id: *string,
 	Labels: *map[string]*string,
-	LoggingConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleEventarcMessageBus.GoogleEventarcMessageBusLoggingConfig,
+	LoggingConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleEventarcMessageBus.GoogleEventarcMessageBusLoggingConfig,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleEventarcMessageBus.GoogleEventarcMessageBusTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleEventarcMessageBus.GoogleEventarcMessageBusTimeouts,
 }
 ```
 
@@ -1329,7 +1329,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEventarcMessageBus.GoogleEventarcMessageBusLoggingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleeventarcmessagebus"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleeventarcmessagebus"
 
 &googleeventarcmessagebus.GoogleEventarcMessageBusLoggingConfig {
 	LogSeverity: *string,
@@ -1366,7 +1366,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEventarcMessageBus.GoogleEventarcMessageBusTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleeventarcmessagebus"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleeventarcmessagebus"
 
 &googleeventarcmessagebus.GoogleEventarcMessageBusTimeouts {
 	Create: *string,
@@ -1428,7 +1428,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEventarcMessageBus.GoogleEventarcMessageBusLoggingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleeventarcmessagebus"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleeventarcmessagebus"
 
 googleeventarcmessagebus.NewGoogleEventarcMessageBusLoggingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleEventarcMessageBusLoggingConfigOutputReference
 ```
@@ -1706,7 +1706,7 @@ func InternalValue() GoogleEventarcMessageBusLoggingConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEventarcMessageBus.GoogleEventarcMessageBusTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleeventarcmessagebus"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleeventarcmessagebus"
 
 googleeventarcmessagebus.NewGoogleEventarcMessageBusTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleEventarcMessageBusTimeoutsOutputReference
 ```
