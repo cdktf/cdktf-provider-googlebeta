@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecureSourceManagerRepositoryIamPolicy.GoogleSecureSourceManagerRepositoryIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuresourcemanagerrepositoryiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuresourcemanagerrepositoryiampolicy"
 
 googlesecuresourcemanagerrepositoryiampolicy.NewGoogleSecureSourceManagerRepositoryIamPolicy(scope Construct, id *string, config GoogleSecureSourceManagerRepositoryIamPolicyConfig) GoogleSecureSourceManagerRepositoryIamPolicy
 ```
@@ -399,7 +399,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleSecureSourceManagerRepositoryIamPolicy.GoogleSecureSourceManagerRepositoryIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuresourcemanagerrepositoryiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuresourcemanagerrepositoryiampolicy"
 
 googlesecuresourcemanagerrepositoryiampolicy.GoogleSecureSourceManagerRepositoryIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleSecureSourceManagerRepositoryIamPolicy.GoogleSecureSourceManagerRepositoryIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuresourcemanagerrepositoryiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuresourcemanagerrepositoryiampolicy"
 
 googlesecuresourcemanagerrepositoryiampolicy.GoogleSecureSourceManagerRepositoryIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ googlesecuresourcemanagerrepositoryiampolicy.GoogleSecureSourceManagerRepository
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleSecureSourceManagerRepositoryIamPolicy.GoogleSecureSourceManagerRepositoryIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuresourcemanagerrepositoryiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuresourcemanagerrepositoryiampolicy"
 
 googlesecuresourcemanagerrepositoryiampolicy.GoogleSecureSourceManagerRepositoryIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ googlesecuresourcemanagerrepositoryiampolicy.GoogleSecureSourceManagerRepository
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleSecureSourceManagerRepositoryIamPolicy.GoogleSecureSourceManagerRepositoryIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuresourcemanagerrepositoryiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuresourcemanagerrepositoryiampolicy"
 
 googlesecuresourcemanagerrepositoryiampolicy.GoogleSecureSourceManagerRepositoryIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -809,7 +809,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecureSourceManagerRepositoryIamPolicy.GoogleSecureSourceManagerRepositoryIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecuresourcemanagerrepositoryiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuresourcemanagerrepositoryiampolicy"
 
 &googlesecuresourcemanagerrepositoryiampolicy.GoogleSecureSourceManagerRepositoryIamPolicyConfig {
 	Connection: interface{},

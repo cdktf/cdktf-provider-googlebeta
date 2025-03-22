@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSourcerepoRepositoryIamBinding.GoogleSourcerepoRepositoryIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesourcereporepositoryiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesourcereporepositoryiambinding"
 
 googlesourcereporepositoryiambinding.NewGoogleSourcerepoRepositoryIamBinding(scope Construct, id *string, config GoogleSourcerepoRepositoryIamBindingConfig) GoogleSourcerepoRepositoryIamBinding
 ```
@@ -412,7 +412,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleSourcerepoRepositoryIamBinding.GoogleSourcerepoRepositoryIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesourcereporepositoryiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesourcereporepositoryiambinding"
 
 googlesourcereporepositoryiambinding.GoogleSourcerepoRepositoryIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleSourcerepoRepositoryIamBinding.GoogleSourcerepoRepositoryIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesourcereporepositoryiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesourcereporepositoryiambinding"
 
 googlesourcereporepositoryiambinding.GoogleSourcerepoRepositoryIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ googlesourcereporepositoryiambinding.GoogleSourcerepoRepositoryIamBinding_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleSourcerepoRepositoryIamBinding.GoogleSourcerepoRepositoryIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesourcereporepositoryiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesourcereporepositoryiambinding"
 
 googlesourcereporepositoryiambinding.GoogleSourcerepoRepositoryIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ googlesourcereporepositoryiambinding.GoogleSourcerepoRepositoryIamBinding_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleSourcerepoRepositoryIamBinding.GoogleSourcerepoRepositoryIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesourcereporepositoryiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesourcereporepositoryiambinding"
 
 googlesourcereporepositoryiambinding.GoogleSourcerepoRepositoryIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -844,7 +844,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSourcerepoRepositoryIamBinding.GoogleSourcerepoRepositoryIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesourcereporepositoryiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesourcereporepositoryiambinding"
 
 &googlesourcereporepositoryiambinding.GoogleSourcerepoRepositoryIamBindingCondition {
 	Expression: *string,
@@ -904,7 +904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSourcerepoRepositoryIamBinding.GoogleSourcerepoRepositoryIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesourcereporepositoryiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesourcereporepositoryiambinding"
 
 &googlesourcereporepositoryiambinding.GoogleSourcerepoRepositoryIamBindingConfig {
 	Connection: interface{},
@@ -917,7 +917,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesourcerep
 	Members: *[]*string,
 	Repository: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSourcerepoRepositoryIamBinding.GoogleSourcerepoRepositoryIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSourcerepoRepositoryIamBinding.GoogleSourcerepoRepositoryIamBindingCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -1097,7 +1097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSourcerepoRepositoryIamBinding.GoogleSourcerepoRepositoryIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesourcereporepositoryiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesourcereporepositoryiambinding"
 
 googlesourcereporepositoryiambinding.NewGoogleSourcerepoRepositoryIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSourcerepoRepositoryIamBindingConditionOutputReference
 ```

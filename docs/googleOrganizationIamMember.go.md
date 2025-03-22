@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorganizationiammember"
 
 googleorganizationiammember.NewGoogleOrganizationIamMember(scope Construct, id *string, config GoogleOrganizationIamMemberConfig) GoogleOrganizationIamMember
 ```
@@ -405,7 +405,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorganizationiammember"
 
 googleorganizationiammember.GoogleOrganizationIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorganizationiammember"
 
 googleorganizationiammember.GoogleOrganizationIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ googleorganizationiammember.GoogleOrganizationIamMember_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorganizationiammember"
 
 googleorganizationiammember.GoogleOrganizationIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ googleorganizationiammember.GoogleOrganizationIamMember_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorganizationiammember"
 
 googleorganizationiammember.GoogleOrganizationIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -815,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorganizationiammember"
 
 &googleorganizationiammember.GoogleOrganizationIamMemberCondition {
 	Expression: *string,
@@ -875,7 +875,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorganizationiammember"
 
 &googleorganizationiammember.GoogleOrganizationIamMemberConfig {
 	Connection: interface{},
@@ -888,7 +888,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizat
 	Member: *string,
 	OrgId: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOrganizationIamMember.GoogleOrganizationIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleOrganizationIamMember.GoogleOrganizationIamMemberCondition,
 	Id: *string,
 }
 ```
@@ -1056,7 +1056,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorganizationiammember"
 
 googleorganizationiammember.NewGoogleOrganizationIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOrganizationIamMemberConditionOutputReference
 ```

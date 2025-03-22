@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVertexAiFeaturestoreIamPolicy.DataGoogleVertexAiFeaturestoreIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaifeaturestoreiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglevertexaifeaturestoreiampolicy"
 
 datagooglevertexaifeaturestoreiampolicy.NewDataGoogleVertexAiFeaturestoreIamPolicy(scope Construct, id *string, config DataGoogleVertexAiFeaturestoreIamPolicyConfig) DataGoogleVertexAiFeaturestoreIamPolicy
 ```
@@ -297,7 +297,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleVertexAiFeaturestoreIamPolicy.DataGoogleVertexAiFeaturestoreIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaifeaturestoreiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglevertexaifeaturestoreiampolicy"
 
 datagooglevertexaifeaturestoreiampolicy.DataGoogleVertexAiFeaturestoreIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleVertexAiFeaturestoreIamPolicy.DataGoogleVertexAiFeaturestoreIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaifeaturestoreiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglevertexaifeaturestoreiampolicy"
 
 datagooglevertexaifeaturestoreiampolicy.DataGoogleVertexAiFeaturestoreIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagooglevertexaifeaturestoreiampolicy.DataGoogleVertexAiFeaturestoreIamPolicy_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleVertexAiFeaturestoreIamPolicy.DataGoogleVertexAiFeaturestoreIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaifeaturestoreiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglevertexaifeaturestoreiampolicy"
 
 datagooglevertexaifeaturestoreiampolicy.DataGoogleVertexAiFeaturestoreIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datagooglevertexaifeaturestoreiampolicy.DataGoogleVertexAiFeaturestoreIamPolicy_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleVertexAiFeaturestoreIamPolicy.DataGoogleVertexAiFeaturestoreIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaifeaturestoreiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglevertexaifeaturestoreiampolicy"
 
 datagooglevertexaifeaturestoreiampolicy.DataGoogleVertexAiFeaturestoreIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -674,7 +674,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleVertexAiFeaturestoreIamPolicy.DataGoogleVertexAiFeaturestoreIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaifeaturestoreiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglevertexaifeaturestoreiampolicy"
 
 &datagooglevertexaifeaturestoreiampolicy.DataGoogleVertexAiFeaturestoreIamPolicyConfig {
 	Connection: interface{},

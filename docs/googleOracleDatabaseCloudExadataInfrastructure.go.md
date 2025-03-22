@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOracleDatabaseCloudExadataInfrastructure.GoogleOracleDatabaseCloudExadataInfrastructure.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleoracledatabasecloudexadatainfrastructure"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleoracledatabasecloudexadatainfrastructure"
 
 googleoracledatabasecloudexadatainfrastructure.NewGoogleOracleDatabaseCloudExadataInfrastructure(scope Construct, id *string, config GoogleOracleDatabaseCloudExadataInfrastructureConfig) GoogleOracleDatabaseCloudExadataInfrastructure
 ```
@@ -460,7 +460,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleOracleDatabaseCloudExadataInfrastructure.GoogleOracleDatabaseCloudExadataInfrastructure.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleoracledatabasecloudexadatainfrastructure"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleoracledatabasecloudexadatainfrastructure"
 
 googleoracledatabasecloudexadatainfrastructure.GoogleOracleDatabaseCloudExadataInfrastructure_IsConstruct(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleOracleDatabaseCloudExadataInfrastructure.GoogleOracleDatabaseCloudExadataInfrastructure.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleoracledatabasecloudexadatainfrastructure"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleoracledatabasecloudexadatainfrastructure"
 
 googleoracledatabasecloudexadatainfrastructure.GoogleOracleDatabaseCloudExadataInfrastructure_IsTerraformElement(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ googleoracledatabasecloudexadatainfrastructure.GoogleOracleDatabaseCloudExadataI
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleOracleDatabaseCloudExadataInfrastructure.GoogleOracleDatabaseCloudExadataInfrastructure.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleoracledatabasecloudexadatainfrastructure"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleoracledatabasecloudexadatainfrastructure"
 
 googleoracledatabasecloudexadatainfrastructure.GoogleOracleDatabaseCloudExadataInfrastructure_IsTerraformResource(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ googleoracledatabasecloudexadatainfrastructure.GoogleOracleDatabaseCloudExadataI
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleOracleDatabaseCloudExadataInfrastructure.GoogleOracleDatabaseCloudExadataInfrastructure.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleoracledatabasecloudexadatainfrastructure"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleoracledatabasecloudexadatainfrastructure"
 
 googleoracledatabasecloudexadatainfrastructure.GoogleOracleDatabaseCloudExadataInfrastructure_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1024,7 +1024,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOracleDatabaseCloudExadataInfrastructure.GoogleOracleDatabaseCloudExadataInfrastructureConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleoracledatabasecloudexadatainfrastructure"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleoracledatabasecloudexadatainfrastructure"
 
 &googleoracledatabasecloudexadatainfrastructure.GoogleOracleDatabaseCloudExadataInfrastructureConfig {
 	Connection: interface{},
@@ -1042,8 +1042,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleoracledat
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Properties: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOracleDatabaseCloudExadataInfrastructure.GoogleOracleDatabaseCloudExadataInfrastructureProperties,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOracleDatabaseCloudExadataInfrastructure.GoogleOracleDatabaseCloudExadataInfrastructureTimeouts,
+	Properties: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleOracleDatabaseCloudExadataInfrastructure.GoogleOracleDatabaseCloudExadataInfrastructureProperties,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleOracleDatabaseCloudExadataInfrastructure.GoogleOracleDatabaseCloudExadataInfrastructureTimeouts,
 }
 ```
 
@@ -1295,13 +1295,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOracleDatabaseCloudExadataInfrastructure.GoogleOracleDatabaseCloudExadataInfrastructureProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleoracledatabasecloudexadatainfrastructure"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleoracledatabasecloudexadatainfrastructure"
 
 &googleoracledatabasecloudexadatainfrastructure.GoogleOracleDatabaseCloudExadataInfrastructureProperties {
 	Shape: *string,
 	ComputeCount: *f64,
 	CustomerContacts: interface{},
-	MaintenanceWindow: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOracleDatabaseCloudExadataInfrastructure.GoogleOracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindow,
+	MaintenanceWindow: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleOracleDatabaseCloudExadataInfrastructure.GoogleOracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindow,
 	StorageCount: *f64,
 	TotalStorageSizeGb: *f64,
 }
@@ -1412,7 +1412,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOracleDatabaseCloudExadataInfrastructure.GoogleOracleDatabaseCloudExadataInfrastructurePropertiesCustomerContacts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleoracledatabasecloudexadatainfrastructure"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleoracledatabasecloudexadatainfrastructure"
 
 &googleoracledatabasecloudexadatainfrastructure.GoogleOracleDatabaseCloudExadataInfrastructurePropertiesCustomerContacts {
 	Email: *string,
@@ -1446,7 +1446,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOracleDatabaseCloudExadataInfrastructure.GoogleOracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleoracledatabasecloudexadatainfrastructure"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleoracledatabasecloudexadatainfrastructure"
 
 &googleoracledatabasecloudexadatainfrastructure.GoogleOracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindow {
 	CustomActionTimeoutMins: *f64,
@@ -1625,7 +1625,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOracleDatabaseCloudExadataInfrastructure.GoogleOracleDatabaseCloudExadataInfrastructureTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleoracledatabasecloudexadatainfrastructure"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleoracledatabasecloudexadatainfrastructure"
 
 &googleoracledatabasecloudexadatainfrastructure.GoogleOracleDatabaseCloudExadataInfrastructureTimeouts {
 	Create: *string,
@@ -1687,7 +1687,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOracleDatabaseCloudExadataInfrastructure.GoogleOracleDatabaseCloudExadataInfrastructurePropertiesCustomerContactsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleoracledatabasecloudexadatainfrastructure"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleoracledatabasecloudexadatainfrastructure"
 
 googleoracledatabasecloudexadatainfrastructure.NewGoogleOracleDatabaseCloudExadataInfrastructurePropertiesCustomerContactsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleOracleDatabaseCloudExadataInfrastructurePropertiesCustomerContactsList
 ```
@@ -1847,7 +1847,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOracleDatabaseCloudExadataInfrastructure.GoogleOracleDatabaseCloudExadataInfrastructurePropertiesCustomerContactsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleoracledatabasecloudexadatainfrastructure"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleoracledatabasecloudexadatainfrastructure"
 
 googleoracledatabasecloudexadatainfrastructure.NewGoogleOracleDatabaseCloudExadataInfrastructurePropertiesCustomerContactsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleOracleDatabaseCloudExadataInfrastructurePropertiesCustomerContactsOutputReference
 ```
@@ -2136,7 +2136,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOracleDatabaseCloudExadataInfrastructure.GoogleOracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleoracledatabasecloudexadatainfrastructure"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleoracledatabasecloudexadatainfrastructure"
 
 googleoracledatabasecloudexadatainfrastructure.NewGoogleOracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference
 ```
@@ -2646,7 +2646,7 @@ func InternalValue() GoogleOracleDatabaseCloudExadataInfrastructurePropertiesMai
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOracleDatabaseCloudExadataInfrastructure.GoogleOracleDatabaseCloudExadataInfrastructurePropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleoracledatabasecloudexadatainfrastructure"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleoracledatabasecloudexadatainfrastructure"
 
 googleoracledatabasecloudexadatainfrastructure.NewGoogleOracleDatabaseCloudExadataInfrastructurePropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOracleDatabaseCloudExadataInfrastructurePropertiesOutputReference
 ```
@@ -3319,7 +3319,7 @@ func InternalValue() GoogleOracleDatabaseCloudExadataInfrastructureProperties
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOracleDatabaseCloudExadataInfrastructure.GoogleOracleDatabaseCloudExadataInfrastructureTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleoracledatabasecloudexadatainfrastructure"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleoracledatabasecloudexadatainfrastructure"
 
 googleoracledatabasecloudexadatainfrastructure.NewGoogleOracleDatabaseCloudExadataInfrastructureTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOracleDatabaseCloudExadataInfrastructureTimeoutsOutputReference
 ```

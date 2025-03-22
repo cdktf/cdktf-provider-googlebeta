@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGuestAttributes.DataGoogleComputeInstanceGuestAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstanceguestattributes"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecomputeinstanceguestattributes"
 
 datagooglecomputeinstanceguestattributes.NewDataGoogleComputeInstanceGuestAttributes(scope Construct, id *string, config DataGoogleComputeInstanceGuestAttributesConfig) DataGoogleComputeInstanceGuestAttributes
 ```
@@ -318,7 +318,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGuestAttributes.DataGoogleComputeInstanceGuestAttributes.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstanceguestattributes"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecomputeinstanceguestattributes"
 
 datagooglecomputeinstanceguestattributes.DataGoogleComputeInstanceGuestAttributes_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGuestAttributes.DataGoogleComputeInstanceGuestAttributes.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstanceguestattributes"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecomputeinstanceguestattributes"
 
 datagooglecomputeinstanceguestattributes.DataGoogleComputeInstanceGuestAttributes_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ datagooglecomputeinstanceguestattributes.DataGoogleComputeInstanceGuestAttribute
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGuestAttributes.DataGoogleComputeInstanceGuestAttributes.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstanceguestattributes"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecomputeinstanceguestattributes"
 
 datagooglecomputeinstanceguestattributes.DataGoogleComputeInstanceGuestAttributes_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ datagooglecomputeinstanceguestattributes.DataGoogleComputeInstanceGuestAttribute
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGuestAttributes.DataGoogleComputeInstanceGuestAttributes.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstanceguestattributes"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecomputeinstanceguestattributes"
 
 datagooglecomputeinstanceguestattributes.DataGoogleComputeInstanceGuestAttributes_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -761,7 +761,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGuestAttributes.DataGoogleComputeInstanceGuestAttributesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstanceguestattributes"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecomputeinstanceguestattributes"
 
 &datagooglecomputeinstanceguestattributes.DataGoogleComputeInstanceGuestAttributesConfig {
 	Connection: interface{},
@@ -964,7 +964,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGuestAttributes.DataGoogleComputeInstanceGuestAttributesQueryValue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstanceguestattributes"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecomputeinstanceguestattributes"
 
 &datagooglecomputeinstanceguestattributes.DataGoogleComputeInstanceGuestAttributesQueryValue {
 
@@ -979,7 +979,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecompu
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGuestAttributes.DataGoogleComputeInstanceGuestAttributesQueryValueList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstanceguestattributes"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecomputeinstanceguestattributes"
 
 datagooglecomputeinstanceguestattributes.NewDataGoogleComputeInstanceGuestAttributesQueryValueList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeInstanceGuestAttributesQueryValueList
 ```
@@ -1128,7 +1128,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGuestAttributes.DataGoogleComputeInstanceGuestAttributesQueryValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstanceguestattributes"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecomputeinstanceguestattributes"
 
 datagooglecomputeinstanceguestattributes.NewDataGoogleComputeInstanceGuestAttributesQueryValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeInstanceGuestAttributesQueryValueOutputReference
 ```

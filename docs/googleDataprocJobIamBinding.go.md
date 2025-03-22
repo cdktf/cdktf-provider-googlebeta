@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocjobiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledataprocjobiambinding"
 
 googledataprocjobiambinding.NewGoogleDataprocJobIamBinding(scope Construct, id *string, config GoogleDataprocJobIamBindingConfig) GoogleDataprocJobIamBinding
 ```
@@ -419,7 +419,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocjobiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledataprocjobiambinding"
 
 googledataprocjobiambinding.GoogleDataprocJobIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocjobiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledataprocjobiambinding"
 
 googledataprocjobiambinding.GoogleDataprocJobIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ googledataprocjobiambinding.GoogleDataprocJobIamBinding_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocjobiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledataprocjobiambinding"
 
 googledataprocjobiambinding.GoogleDataprocJobIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ googledataprocjobiambinding.GoogleDataprocJobIamBinding_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocjobiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledataprocjobiambinding"
 
 googledataprocjobiambinding.GoogleDataprocJobIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -873,7 +873,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocjobiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledataprocjobiambinding"
 
 &googledataprocjobiambinding.GoogleDataprocJobIamBindingCondition {
 	Expression: *string,
@@ -933,7 +933,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocjobiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledataprocjobiambinding"
 
 &googledataprocjobiambinding.GoogleDataprocJobIamBindingConfig {
 	Connection: interface{},
@@ -946,7 +946,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocj
 	JobId: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataprocJobIamBinding.GoogleDataprocJobIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleDataprocJobIamBinding.GoogleDataprocJobIamBindingCondition,
 	Id: *string,
 	Project: *string,
 	Region: *string,
@@ -1140,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocjobiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledataprocjobiambinding"
 
 googledataprocjobiambinding.NewGoogleDataprocJobIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataprocJobIamBindingConditionOutputReference
 ```

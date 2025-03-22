@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeKeystoresAliasesKeyCertFile.GoogleApigeeKeystoresAliasesKeyCertFile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeekeystoresaliaseskeycertfile"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeekeystoresaliaseskeycertfile"
 
 googleapigeekeystoresaliaseskeycertfile.NewGoogleApigeeKeystoresAliasesKeyCertFile(scope Construct, id *string, config GoogleApigeeKeystoresAliasesKeyCertFileConfig) GoogleApigeeKeystoresAliasesKeyCertFile
 ```
@@ -439,7 +439,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleApigeeKeystoresAliasesKeyCertFile.GoogleApigeeKeystoresAliasesKeyCertFile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeekeystoresaliaseskeycertfile"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeekeystoresaliaseskeycertfile"
 
 googleapigeekeystoresaliaseskeycertfile.GoogleApigeeKeystoresAliasesKeyCertFile_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleApigeeKeystoresAliasesKeyCertFile.GoogleApigeeKeystoresAliasesKeyCertFile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeekeystoresaliaseskeycertfile"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeekeystoresaliaseskeycertfile"
 
 googleapigeekeystoresaliaseskeycertfile.GoogleApigeeKeystoresAliasesKeyCertFile_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ googleapigeekeystoresaliaseskeycertfile.GoogleApigeeKeystoresAliasesKeyCertFile_
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleApigeeKeystoresAliasesKeyCertFile.GoogleApigeeKeystoresAliasesKeyCertFile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeekeystoresaliaseskeycertfile"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeekeystoresaliaseskeycertfile"
 
 googleapigeekeystoresaliaseskeycertfile.GoogleApigeeKeystoresAliasesKeyCertFile_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ googleapigeekeystoresaliaseskeycertfile.GoogleApigeeKeystoresAliasesKeyCertFile_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleApigeeKeystoresAliasesKeyCertFile.GoogleApigeeKeystoresAliasesKeyCertFile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeekeystoresaliaseskeycertfile"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeekeystoresaliaseskeycertfile"
 
 googleapigeekeystoresaliaseskeycertfile.GoogleApigeeKeystoresAliasesKeyCertFile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -959,7 +959,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeKeystoresAliasesKeyCertFile.GoogleApigeeKeystoresAliasesKeyCertFileCertsInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeekeystoresaliaseskeycertfile"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeekeystoresaliaseskeycertfile"
 
 &googleapigeekeystoresaliaseskeycertfile.GoogleApigeeKeystoresAliasesKeyCertFileCertsInfo {
 	CertInfo: interface{},
@@ -993,7 +993,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeKeystoresAliasesKeyCertFile.GoogleApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeekeystoresaliaseskeycertfile"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeekeystoresaliaseskeycertfile"
 
 &googleapigeekeystoresaliaseskeycertfile.GoogleApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfo {
 	BasicConstraints: *string,
@@ -1189,7 +1189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeKeystoresAliasesKeyCertFile.GoogleApigeeKeystoresAliasesKeyCertFileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeekeystoresaliaseskeycertfile"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeekeystoresaliaseskeycertfile"
 
 &googleapigeekeystoresaliaseskeycertfile.GoogleApigeeKeystoresAliasesKeyCertFileConfig {
 	Connection: interface{},
@@ -1204,11 +1204,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeekey
 	Environment: *string,
 	Keystore: *string,
 	OrgId: *string,
-	CertsInfo: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApigeeKeystoresAliasesKeyCertFile.GoogleApigeeKeystoresAliasesKeyCertFileCertsInfo,
+	CertsInfo: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleApigeeKeystoresAliasesKeyCertFile.GoogleApigeeKeystoresAliasesKeyCertFileCertsInfo,
 	Id: *string,
 	Key: *string,
 	Password: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApigeeKeystoresAliasesKeyCertFile.GoogleApigeeKeystoresAliasesKeyCertFileTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleApigeeKeystoresAliasesKeyCertFile.GoogleApigeeKeystoresAliasesKeyCertFileTimeouts,
 }
 ```
 
@@ -1452,7 +1452,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeKeystoresAliasesKeyCertFile.GoogleApigeeKeystoresAliasesKeyCertFileTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeekeystoresaliaseskeycertfile"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeekeystoresaliaseskeycertfile"
 
 &googleapigeekeystoresaliaseskeycertfile.GoogleApigeeKeystoresAliasesKeyCertFileTimeouts {
 	Create: *string,
@@ -1528,7 +1528,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeKeystoresAliasesKeyCertFile.GoogleApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeekeystoresaliaseskeycertfile"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeekeystoresaliaseskeycertfile"
 
 googleapigeekeystoresaliaseskeycertfile.NewGoogleApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoList
 ```
@@ -1688,7 +1688,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeKeystoresAliasesKeyCertFile.GoogleApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeekeystoresaliaseskeycertfile"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeekeystoresaliaseskeycertfile"
 
 googleapigeekeystoresaliaseskeycertfile.NewGoogleApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference
 ```
@@ -2274,7 +2274,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeKeystoresAliasesKeyCertFile.GoogleApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeekeystoresaliaseskeycertfile"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeekeystoresaliaseskeycertfile"
 
 googleapigeekeystoresaliaseskeycertfile.NewGoogleApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReference
 ```
@@ -2565,7 +2565,7 @@ func InternalValue() GoogleApigeeKeystoresAliasesKeyCertFileCertsInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeKeystoresAliasesKeyCertFile.GoogleApigeeKeystoresAliasesKeyCertFileTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeekeystoresaliaseskeycertfile"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeekeystoresaliaseskeycertfile"
 
 googleapigeekeystoresaliaseskeycertfile.NewGoogleApigeeKeystoresAliasesKeyCertFileTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApigeeKeystoresAliasesKeyCertFileTimeoutsOutputReference
 ```

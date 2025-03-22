@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleSecretManagerRegionalSecret.DataGoogleSecretManagerRegionalSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesecretmanagerregionalsecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglesecretmanagerregionalsecret"
 
 datagooglesecretmanagerregionalsecret.NewDataGoogleSecretManagerRegionalSecret(scope Construct, id *string, config DataGoogleSecretManagerRegionalSecretConfig) DataGoogleSecretManagerRegionalSecret
 ```
@@ -290,7 +290,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleSecretManagerRegionalSecret.DataGoogleSecretManagerRegionalSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesecretmanagerregionalsecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglesecretmanagerregionalsecret"
 
 datagooglesecretmanagerregionalsecret.DataGoogleSecretManagerRegionalSecret_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleSecretManagerRegionalSecret.DataGoogleSecretManagerRegionalSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesecretmanagerregionalsecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglesecretmanagerregionalsecret"
 
 datagooglesecretmanagerregionalsecret.DataGoogleSecretManagerRegionalSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datagooglesecretmanagerregionalsecret.DataGoogleSecretManagerRegionalSecret_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleSecretManagerRegionalSecret.DataGoogleSecretManagerRegionalSecret.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesecretmanagerregionalsecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglesecretmanagerregionalsecret"
 
 datagooglesecretmanagerregionalsecret.DataGoogleSecretManagerRegionalSecret_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datagooglesecretmanagerregionalsecret.DataGoogleSecretManagerRegionalSecret_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleSecretManagerRegionalSecret.DataGoogleSecretManagerRegionalSecret.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesecretmanagerregionalsecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglesecretmanagerregionalsecret"
 
 datagooglesecretmanagerregionalsecret.DataGoogleSecretManagerRegionalSecret_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -799,7 +799,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleSecretManagerRegionalSecret.DataGoogleSecretManagerRegionalSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesecretmanagerregionalsecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglesecretmanagerregionalsecret"
 
 &datagooglesecretmanagerregionalsecret.DataGoogleSecretManagerRegionalSecretConfig {
 	Connection: interface{},
@@ -964,7 +964,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleSecretManagerRegionalSecret.DataGoogleSecretManagerRegionalSecretCustomerManagedEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesecretmanagerregionalsecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglesecretmanagerregionalsecret"
 
 &datagooglesecretmanagerregionalsecret.DataGoogleSecretManagerRegionalSecretCustomerManagedEncryption {
 
@@ -977,7 +977,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesecre
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleSecretManagerRegionalSecret.DataGoogleSecretManagerRegionalSecretRotation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesecretmanagerregionalsecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglesecretmanagerregionalsecret"
 
 &datagooglesecretmanagerregionalsecret.DataGoogleSecretManagerRegionalSecretRotation {
 
@@ -990,7 +990,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesecre
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleSecretManagerRegionalSecret.DataGoogleSecretManagerRegionalSecretTopics.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesecretmanagerregionalsecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglesecretmanagerregionalsecret"
 
 &datagooglesecretmanagerregionalsecret.DataGoogleSecretManagerRegionalSecretTopics {
 
@@ -1005,7 +1005,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesecre
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleSecretManagerRegionalSecret.DataGoogleSecretManagerRegionalSecretCustomerManagedEncryptionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesecretmanagerregionalsecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglesecretmanagerregionalsecret"
 
 datagooglesecretmanagerregionalsecret.NewDataGoogleSecretManagerRegionalSecretCustomerManagedEncryptionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleSecretManagerRegionalSecretCustomerManagedEncryptionList
 ```
@@ -1154,7 +1154,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleSecretManagerRegionalSecret.DataGoogleSecretManagerRegionalSecretCustomerManagedEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesecretmanagerregionalsecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglesecretmanagerregionalsecret"
 
 datagooglesecretmanagerregionalsecret.NewDataGoogleSecretManagerRegionalSecretCustomerManagedEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleSecretManagerRegionalSecretCustomerManagedEncryptionOutputReference
 ```
@@ -1432,7 +1432,7 @@ func InternalValue() DataGoogleSecretManagerRegionalSecretCustomerManagedEncrypt
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleSecretManagerRegionalSecret.DataGoogleSecretManagerRegionalSecretRotationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesecretmanagerregionalsecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglesecretmanagerregionalsecret"
 
 datagooglesecretmanagerregionalsecret.NewDataGoogleSecretManagerRegionalSecretRotationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleSecretManagerRegionalSecretRotationList
 ```
@@ -1581,7 +1581,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleSecretManagerRegionalSecret.DataGoogleSecretManagerRegionalSecretRotationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesecretmanagerregionalsecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglesecretmanagerregionalsecret"
 
 datagooglesecretmanagerregionalsecret.NewDataGoogleSecretManagerRegionalSecretRotationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleSecretManagerRegionalSecretRotationOutputReference
 ```
@@ -1870,7 +1870,7 @@ func InternalValue() DataGoogleSecretManagerRegionalSecretRotation
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleSecretManagerRegionalSecret.DataGoogleSecretManagerRegionalSecretTopicsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesecretmanagerregionalsecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglesecretmanagerregionalsecret"
 
 datagooglesecretmanagerregionalsecret.NewDataGoogleSecretManagerRegionalSecretTopicsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleSecretManagerRegionalSecretTopicsList
 ```
@@ -2019,7 +2019,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleSecretManagerRegionalSecret.DataGoogleSecretManagerRegionalSecretTopicsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesecretmanagerregionalsecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglesecretmanagerregionalsecret"
 
 datagooglesecretmanagerregionalsecret.NewDataGoogleSecretManagerRegionalSecretTopicsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleSecretManagerRegionalSecretTopicsOutputReference
 ```
