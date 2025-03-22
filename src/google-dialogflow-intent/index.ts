@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dialogflow_intent
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dialogflow_intent
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,20 +16,20 @@ export interface GoogleDialogflowIntentConfig extends cdktf.TerraformMetaArgumen
   * The name of the action associated with the intent.
   * Note: The action name must not contain whitespaces.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dialogflow_intent#action GoogleDialogflowIntent#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dialogflow_intent#action GoogleDialogflowIntent#action}
   */
   readonly action?: string;
   /**
   * The list of platforms for which the first responses will be copied from the messages in PLATFORM_UNSPECIFIED
   * (i.e. default platform). Possible values: ["FACEBOOK", "SLACK", "TELEGRAM", "KIK", "SKYPE", "LINE", "VIBER", "ACTIONS_ON_GOOGLE", "GOOGLE_HANGOUTS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dialogflow_intent#default_response_platforms GoogleDialogflowIntent#default_response_platforms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dialogflow_intent#default_response_platforms GoogleDialogflowIntent#default_response_platforms}
   */
   readonly defaultResponsePlatforms?: string[];
   /**
   * The name of this intent to be displayed on the console.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dialogflow_intent#display_name GoogleDialogflowIntent#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dialogflow_intent#display_name GoogleDialogflowIntent#display_name}
   */
   readonly displayName: string;
   /**
@@ -37,11 +37,11 @@ export interface GoogleDialogflowIntentConfig extends cdktf.TerraformMetaArgumen
   * the contexts must be present in the active user session for an event to trigger this intent. See the
   * [events reference](https://cloud.google.com/dialogflow/docs/events-overview) for more details.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dialogflow_intent#events GoogleDialogflowIntent#events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dialogflow_intent#events GoogleDialogflowIntent#events}
   */
   readonly events?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dialogflow_intent#id GoogleDialogflowIntent#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dialogflow_intent#id GoogleDialogflowIntent#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -51,13 +51,13 @@ export interface GoogleDialogflowIntentConfig extends cdktf.TerraformMetaArgumen
   * The list of context names required for this intent to be triggered.
   * Format: projects/<Project ID>/agent/sessions/-/contexts/<Context ID>.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dialogflow_intent#input_context_names GoogleDialogflowIntent#input_context_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dialogflow_intent#input_context_names GoogleDialogflowIntent#input_context_names}
   */
   readonly inputContextNames?: string[];
   /**
   * Indicates whether this is a fallback intent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dialogflow_intent#is_fallback GoogleDialogflowIntent#is_fallback}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dialogflow_intent#is_fallback GoogleDialogflowIntent#is_fallback}
   */
   readonly isFallback?: boolean | cdktf.IResolvable;
   /**
@@ -65,14 +65,14 @@ export interface GoogleDialogflowIntentConfig extends cdktf.TerraformMetaArgumen
   * Note: If mlDisabled setting is set to true, then this intent is not taken into account during inference in ML
   * ONLY match mode. Also, auto-markup in the UI is turned off.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dialogflow_intent#ml_disabled GoogleDialogflowIntent#ml_disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dialogflow_intent#ml_disabled GoogleDialogflowIntent#ml_disabled}
   */
   readonly mlDisabled?: boolean | cdktf.IResolvable;
   /**
   * The unique identifier of the parent intent in the chain of followup intents.
   * Format: projects/<Project ID>/agent/intents/<Intent ID>.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dialogflow_intent#parent_followup_intent_name GoogleDialogflowIntent#parent_followup_intent_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dialogflow_intent#parent_followup_intent_name GoogleDialogflowIntent#parent_followup_intent_name}
   */
   readonly parentFollowupIntentName?: string;
   /**
@@ -81,17 +81,17 @@ export interface GoogleDialogflowIntentConfig extends cdktf.TerraformMetaArgumen
   *   to the Normal priority in the console.
   *   - If the supplied value is negative, the intent is ignored in runtime detect intent requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dialogflow_intent#priority GoogleDialogflowIntent#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dialogflow_intent#priority GoogleDialogflowIntent#priority}
   */
   readonly priority?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dialogflow_intent#project GoogleDialogflowIntent#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dialogflow_intent#project GoogleDialogflowIntent#project}
   */
   readonly project?: string;
   /**
   * Indicates whether to delete all contexts in the current session when this intent is matched.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dialogflow_intent#reset_contexts GoogleDialogflowIntent#reset_contexts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dialogflow_intent#reset_contexts GoogleDialogflowIntent#reset_contexts}
   */
   readonly resetContexts?: boolean | cdktf.IResolvable;
   /**
@@ -100,13 +100,13 @@ export interface GoogleDialogflowIntentConfig extends cdktf.TerraformMetaArgumen
   * * WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING: Webhook is enabled in the agent and in the intent. Also, each slot
   * filling prompt is forwarded to the webhook. Possible values: ["WEBHOOK_STATE_ENABLED", "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dialogflow_intent#webhook_state GoogleDialogflowIntent#webhook_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dialogflow_intent#webhook_state GoogleDialogflowIntent#webhook_state}
   */
   readonly webhookState?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dialogflow_intent#timeouts GoogleDialogflowIntent#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dialogflow_intent#timeouts GoogleDialogflowIntent#timeouts}
   */
   readonly timeouts?: GoogleDialogflowIntentTimeouts;
 }
@@ -192,15 +192,15 @@ export class GoogleDialogflowIntentFollowupIntentInfoList extends cdktf.ComplexL
 }
 export interface GoogleDialogflowIntentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dialogflow_intent#create GoogleDialogflowIntent#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dialogflow_intent#create GoogleDialogflowIntent#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dialogflow_intent#delete GoogleDialogflowIntent#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dialogflow_intent#delete GoogleDialogflowIntent#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dialogflow_intent#update GoogleDialogflowIntent#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dialogflow_intent#update GoogleDialogflowIntent#update}
   */
   readonly update?: string;
 }
@@ -352,7 +352,7 @@ export class GoogleDialogflowIntentTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dialogflow_intent google_dialogflow_intent}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dialogflow_intent google_dialogflow_intent}
 */
 export class GoogleDialogflowIntent extends cdktf.TerraformResource {
 
@@ -368,7 +368,7 @@ export class GoogleDialogflowIntent extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleDialogflowIntent resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleDialogflowIntent to import
-  * @param importFromId The id of the existing GoogleDialogflowIntent that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dialogflow_intent#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleDialogflowIntent that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dialogflow_intent#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleDialogflowIntent to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -380,7 +380,7 @@ export class GoogleDialogflowIntent extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dialogflow_intent google_dialogflow_intent} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dialogflow_intent google_dialogflow_intent} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -391,7 +391,7 @@ export class GoogleDialogflowIntent extends cdktf.TerraformResource {
       terraformResourceType: 'google_dialogflow_intent',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.25.0',
+        providerVersion: '6.26.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
