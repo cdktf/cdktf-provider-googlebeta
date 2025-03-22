@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apihub_host_project_registration
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apihub_host_project_registration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -17,7 +12,7 @@ export interface GoogleApihubHostProjectRegistrationConfig extends cdktf.Terrafo
   * As input, project name with either project id or number are accepted.
   * As output, this field will contain project number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apihub_host_project_registration#gcp_project GoogleApihubHostProjectRegistration#gcp_project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apihub_host_project_registration#gcp_project GoogleApihubHostProjectRegistration#gcp_project}
   */
   readonly gcpProject: string;
   /**
@@ -26,11 +21,11 @@ export interface GoogleApihubHostProjectRegistrationConfig extends cdktf.Terrafo
   * must be the same as the Google cloud project specified in the
   * host_project_registration.gcp_project field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apihub_host_project_registration#host_project_registration_id GoogleApihubHostProjectRegistration#host_project_registration_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apihub_host_project_registration#host_project_registration_id GoogleApihubHostProjectRegistration#host_project_registration_id}
   */
   readonly hostProjectRegistrationId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apihub_host_project_registration#id GoogleApihubHostProjectRegistration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apihub_host_project_registration#id GoogleApihubHostProjectRegistration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -39,27 +34,27 @@ export interface GoogleApihubHostProjectRegistrationConfig extends cdktf.Terrafo
   /**
   * Part of 'parent'. See documentation of 'projectsId'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apihub_host_project_registration#location GoogleApihubHostProjectRegistration#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apihub_host_project_registration#location GoogleApihubHostProjectRegistration#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apihub_host_project_registration#project GoogleApihubHostProjectRegistration#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apihub_host_project_registration#project GoogleApihubHostProjectRegistration#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apihub_host_project_registration#timeouts GoogleApihubHostProjectRegistration#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apihub_host_project_registration#timeouts GoogleApihubHostProjectRegistration#timeouts}
   */
   readonly timeouts?: GoogleApihubHostProjectRegistrationTimeouts;
 }
 export interface GoogleApihubHostProjectRegistrationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apihub_host_project_registration#create GoogleApihubHostProjectRegistration#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apihub_host_project_registration#create GoogleApihubHostProjectRegistration#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apihub_host_project_registration#delete GoogleApihubHostProjectRegistration#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apihub_host_project_registration#delete GoogleApihubHostProjectRegistration#delete}
   */
   readonly delete?: string;
 }
@@ -182,7 +177,7 @@ export class GoogleApihubHostProjectRegistrationTimeoutsOutputReference extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apihub_host_project_registration google_apihub_host_project_registration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apihub_host_project_registration google_apihub_host_project_registration}
 */
 export class GoogleApihubHostProjectRegistration extends cdktf.TerraformResource {
 
@@ -198,7 +193,7 @@ export class GoogleApihubHostProjectRegistration extends cdktf.TerraformResource
   * Generates CDKTF code for importing a GoogleApihubHostProjectRegistration resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleApihubHostProjectRegistration to import
-  * @param importFromId The id of the existing GoogleApihubHostProjectRegistration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apihub_host_project_registration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleApihubHostProjectRegistration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apihub_host_project_registration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleApihubHostProjectRegistration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -210,7 +205,7 @@ export class GoogleApihubHostProjectRegistration extends cdktf.TerraformResource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apihub_host_project_registration google_apihub_host_project_registration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apihub_host_project_registration google_apihub_host_project_registration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -221,7 +216,7 @@ export class GoogleApihubHostProjectRegistration extends cdktf.TerraformResource
       terraformResourceType: 'google_apihub_host_project_registration',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.25.0',
+        providerVersion: '6.26.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

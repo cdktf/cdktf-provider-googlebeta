@@ -4,12 +4,12 @@
 
 ### DataGoogleKmsAutokeyConfig <a name="DataGoogleKmsAutokeyConfig" id="@cdktf/provider-google-beta.dataGoogleKmsAutokeyConfig.DataGoogleKmsAutokeyConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/data-sources/google_kms_autokey_config google_kms_autokey_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/data-sources/google_kms_autokey_config google_kms_autokey_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleKmsAutokeyConfig.DataGoogleKmsAutokeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglekmsautokeyconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglekmsautokeyconfig"
 
 datagooglekmsautokeyconfig.NewDataGoogleKmsAutokeyConfig(scope Construct, id *string, config DataGoogleKmsAutokeyConfigConfig) DataGoogleKmsAutokeyConfig
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleKmsAutokeyConfig.DataGoogleKmsAutokeyConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglekmsautokeyconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglekmsautokeyconfig"
 
 datagooglekmsautokeyconfig.DataGoogleKmsAutokeyConfig_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleKmsAutokeyConfig.DataGoogleKmsAutokeyConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglekmsautokeyconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglekmsautokeyconfig"
 
 datagooglekmsautokeyconfig.DataGoogleKmsAutokeyConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datagooglekmsautokeyconfig.DataGoogleKmsAutokeyConfig_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleKmsAutokeyConfig.DataGoogleKmsAutokeyConfig.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglekmsautokeyconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglekmsautokeyconfig"
 
 datagooglekmsautokeyconfig.DataGoogleKmsAutokeyConfig_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagooglekmsautokeyconfig.DataGoogleKmsAutokeyConfig_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleKmsAutokeyConfig.DataGoogleKmsAutokeyConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglekmsautokeyconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglekmsautokeyconfig"
 
 datagooglekmsautokeyconfig.DataGoogleKmsAutokeyConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataGoogleKmsAutokeyConfig
 
 The id of the existing DataGoogleKmsAutokeyConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/data-sources/google_kms_autokey_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/data-sources/google_kms_autokey_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleKmsAutokeyConfig.DataGoogleKmsAutokeyConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglekmsautokeyconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglekmsautokeyconfig"
 
 &datagooglekmsautokeyconfig.DataGoogleKmsAutokeyConfigConfig {
 	Connection: interface{},
@@ -632,7 +632,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglek
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsAutokeyConfig.DataGoogleKmsAutokeyConfigConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsAutokeyConfig.DataGoogleKmsAutokeyConfigConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsAutokeyConfig.DataGoogleKmsAutokeyConfigConfig.property.folder">Folder</a></code> | <code>*string</code> | The folder for which to retrieve config. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsAutokeyConfig.DataGoogleKmsAutokeyConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/data-sources/google_kms_autokey_config#id DataGoogleKmsAutokeyConfig#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsAutokeyConfig.DataGoogleKmsAutokeyConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/data-sources/google_kms_autokey_config#id DataGoogleKmsAutokeyConfig#id}. |
 
 ---
 
@@ -716,7 +716,7 @@ Folder *string
 
 The folder for which to retrieve config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/data-sources/google_kms_autokey_config#folder DataGoogleKmsAutokeyConfig#folder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/data-sources/google_kms_autokey_config#folder DataGoogleKmsAutokeyConfig#folder}
 
 ---
 
@@ -728,7 +728,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/data-sources/google_kms_autokey_config#id DataGoogleKmsAutokeyConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/data-sources/google_kms_autokey_config#id DataGoogleKmsAutokeyConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

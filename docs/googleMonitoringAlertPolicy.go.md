@@ -4,12 +4,12 @@
 
 ### GoogleMonitoringAlertPolicy <a name="GoogleMonitoringAlertPolicy" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy google_monitoring_alert_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy google_monitoring_alert_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.NewGoogleMonitoringAlertPolicy(scope Construct, id *string, config GoogleMonitoringAlertPolicyConfig) GoogleMonitoringAlertPolicy
 ```
@@ -493,7 +493,7 @@ func ResetUserLabels()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.GoogleMonitoringAlertPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -525,7 +525,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.GoogleMonitoringAlertPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -539,7 +539,7 @@ googlemonitoringalertpolicy.GoogleMonitoringAlertPolicy_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.GoogleMonitoringAlertPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -553,7 +553,7 @@ googlemonitoringalertpolicy.GoogleMonitoringAlertPolicy_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.GoogleMonitoringAlertPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -582,7 +582,7 @@ The construct id used in the generated config for the GoogleMonitoringAlertPolic
 
 The id of the existing GoogleMonitoringAlertPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1068,13 +1068,13 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyAlertStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 &googlemonitoringalertpolicy.GoogleMonitoringAlertPolicyAlertStrategy {
 	AutoClose: *string,
 	NotificationChannelStrategy: interface{},
 	NotificationPrompts: *[]*string,
-	NotificationRateLimit: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimit,
+	NotificationRateLimit: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimit,
 }
 ```
 
@@ -1099,7 +1099,7 @@ AutoClose *string
 
 If an alert policy that was active has no data for this long, any open incidents will close.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#auto_close GoogleMonitoringAlertPolicy#auto_close}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#auto_close GoogleMonitoringAlertPolicy#auto_close}
 
 ---
 
@@ -1113,7 +1113,7 @@ NotificationChannelStrategy interface{}
 
 notification_channel_strategy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#notification_channel_strategy GoogleMonitoringAlertPolicy#notification_channel_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#notification_channel_strategy GoogleMonitoringAlertPolicy#notification_channel_strategy}
 
 ---
 
@@ -1127,7 +1127,7 @@ NotificationPrompts *[]*string
 
 Control when notifications will be sent out. Possible values: ["NOTIFICATION_PROMPT_UNSPECIFIED", "OPENED", "CLOSED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#notification_prompts GoogleMonitoringAlertPolicy#notification_prompts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#notification_prompts GoogleMonitoringAlertPolicy#notification_prompts}
 
 ---
 
@@ -1141,7 +1141,7 @@ NotificationRateLimit GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLi
 
 notification_rate_limit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#notification_rate_limit GoogleMonitoringAlertPolicy#notification_rate_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#notification_rate_limit GoogleMonitoringAlertPolicy#notification_rate_limit}
 
 ---
 
@@ -1150,7 +1150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 &googlemonitoringalertpolicy.GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategy {
 	NotificationChannelNames: *[]*string,
@@ -1182,7 +1182,7 @@ correspond to the name field in one of the NotificationChannel objects
 referenced in the notification_channels field of this AlertPolicy. The format is
 'projects/[PROJECT_ID_OR_NUMBER]/notificationChannels/[CHANNEL_ID]'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#notification_channel_names GoogleMonitoringAlertPolicy#notification_channel_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#notification_channel_names GoogleMonitoringAlertPolicy#notification_channel_names}
 
 ---
 
@@ -1196,7 +1196,7 @@ RenotifyInterval *string
 
 The frequency at which to send reminder notifications for open incidents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#renotify_interval GoogleMonitoringAlertPolicy#renotify_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#renotify_interval GoogleMonitoringAlertPolicy#renotify_interval}
 
 ---
 
@@ -1205,7 +1205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 &googlemonitoringalertpolicy.GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimit {
 	Period: *string,
@@ -1232,7 +1232,7 @@ Not more than one notification per period.
 
 A duration in seconds with up to nine fractional digits, terminated by 's'. Example "60.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#period GoogleMonitoringAlertPolicy#period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#period GoogleMonitoringAlertPolicy#period}
 
 ---
 
@@ -1241,16 +1241,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 &googlemonitoringalertpolicy.GoogleMonitoringAlertPolicyConditions {
 	DisplayName: *string,
-	ConditionAbsent: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionAbsent,
-	ConditionMatchedLog: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionMatchedLog,
-	ConditionMonitoringQueryLanguage: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguage,
-	ConditionPrometheusQueryLanguage: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage,
-	ConditionSql: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSql,
-	ConditionThreshold: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThreshold,
+	ConditionAbsent: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionAbsent,
+	ConditionMatchedLog: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionMatchedLog,
+	ConditionMonitoringQueryLanguage: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguage,
+	ConditionPrometheusQueryLanguage: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage,
+	ConditionSql: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSql,
+	ConditionThreshold: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThreshold,
 }
 ```
 
@@ -1282,7 +1282,7 @@ To avoid confusion, don't use the same
 display name for multiple conditions in the same
 policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#display_name GoogleMonitoringAlertPolicy#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#display_name GoogleMonitoringAlertPolicy#display_name}
 
 ---
 
@@ -1296,7 +1296,7 @@ ConditionAbsent GoogleMonitoringAlertPolicyConditionsConditionAbsent
 
 condition_absent block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#condition_absent GoogleMonitoringAlertPolicy#condition_absent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#condition_absent GoogleMonitoringAlertPolicy#condition_absent}
 
 ---
 
@@ -1310,7 +1310,7 @@ ConditionMatchedLog GoogleMonitoringAlertPolicyConditionsConditionMatchedLog
 
 condition_matched_log block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#condition_matched_log GoogleMonitoringAlertPolicy#condition_matched_log}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#condition_matched_log GoogleMonitoringAlertPolicy#condition_matched_log}
 
 ---
 
@@ -1324,7 +1324,7 @@ ConditionMonitoringQueryLanguage GoogleMonitoringAlertPolicyConditionsConditionM
 
 condition_monitoring_query_language block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#condition_monitoring_query_language GoogleMonitoringAlertPolicy#condition_monitoring_query_language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#condition_monitoring_query_language GoogleMonitoringAlertPolicy#condition_monitoring_query_language}
 
 ---
 
@@ -1338,7 +1338,7 @@ ConditionPrometheusQueryLanguage GoogleMonitoringAlertPolicyConditionsConditionP
 
 condition_prometheus_query_language block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#condition_prometheus_query_language GoogleMonitoringAlertPolicy#condition_prometheus_query_language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#condition_prometheus_query_language GoogleMonitoringAlertPolicy#condition_prometheus_query_language}
 
 ---
 
@@ -1352,7 +1352,7 @@ ConditionSql GoogleMonitoringAlertPolicyConditionsConditionSql
 
 condition_sql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#condition_sql GoogleMonitoringAlertPolicy#condition_sql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#condition_sql GoogleMonitoringAlertPolicy#condition_sql}
 
 ---
 
@@ -1366,7 +1366,7 @@ ConditionThreshold GoogleMonitoringAlertPolicyConditionsConditionThreshold
 
 condition_threshold block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#condition_threshold GoogleMonitoringAlertPolicy#condition_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#condition_threshold GoogleMonitoringAlertPolicy#condition_threshold}
 
 ---
 
@@ -1375,13 +1375,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionAbsent.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 &googlemonitoringalertpolicy.GoogleMonitoringAlertPolicyConditionsConditionAbsent {
 	Duration: *string,
 	Aggregations: interface{},
 	Filter: *string,
-	Trigger: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionAbsentTrigger,
+	Trigger: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionAbsentTrigger,
 }
 ```
 
@@ -1410,7 +1410,7 @@ Currently, only values that are a
 multiple of a minute--e.g. 60s, 120s, or 300s
 --are supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#duration GoogleMonitoringAlertPolicy#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#duration GoogleMonitoringAlertPolicy#duration}
 
 ---
 
@@ -1424,7 +1424,7 @@ Aggregations interface{}
 
 aggregations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#aggregations GoogleMonitoringAlertPolicy#aggregations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#aggregations GoogleMonitoringAlertPolicy#aggregations}
 
 ---
 
@@ -1438,7 +1438,7 @@ Filter *string
 
 A filter that identifies which time series should be compared with the threshold.The filter is similar to the one that is specified in the MetricService.ListTimeSeries request (that call is useful to verify the time series that will be retrieved / processed) and must specify the metric type and optionally may contain restrictions on resource type, resource labels, and metric labels. This field may not exceed 2048 Unicode characters in length.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#filter GoogleMonitoringAlertPolicy#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#filter GoogleMonitoringAlertPolicy#filter}
 
 ---
 
@@ -1452,7 +1452,7 @@ Trigger GoogleMonitoringAlertPolicyConditionsConditionAbsentTrigger
 
 trigger block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#trigger GoogleMonitoringAlertPolicy#trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#trigger GoogleMonitoringAlertPolicy#trigger}
 
 ---
 
@@ -1461,7 +1461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionAbsentAggregations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 &googlemonitoringalertpolicy.GoogleMonitoringAlertPolicyConditionsConditionAbsentAggregations {
 	AlignmentPeriod: *string,
@@ -1506,7 +1506,7 @@ does not equal ALIGN_NONE, then
 this field must be defined;
 otherwise an error is returned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#alignment_period GoogleMonitoringAlertPolicy#alignment_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#alignment_period GoogleMonitoringAlertPolicy#alignment_period}
 
 ---
 
@@ -1537,7 +1537,7 @@ and alignmentPeriod must be
 specified; otherwise, an error is
 returned. Possible values: ["REDUCE_NONE", "REDUCE_MEAN", "REDUCE_MIN", "REDUCE_MAX", "REDUCE_SUM", "REDUCE_STDDEV", "REDUCE_COUNT", "REDUCE_COUNT_TRUE", "REDUCE_COUNT_FALSE", "REDUCE_FRACTION_TRUE", "REDUCE_PERCENTILE_99", "REDUCE_PERCENTILE_95", "REDUCE_PERCENTILE_50", "REDUCE_PERCENTILE_05"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#cross_series_reducer GoogleMonitoringAlertPolicy#cross_series_reducer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#cross_series_reducer GoogleMonitoringAlertPolicy#cross_series_reducer}
 
 ---
 
@@ -1575,7 +1575,7 @@ time series. If crossSeriesReducer
 is not defined, this field is
 ignored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#group_by_fields GoogleMonitoringAlertPolicy#group_by_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#group_by_fields GoogleMonitoringAlertPolicy#group_by_fields}
 
 ---
 
@@ -1606,7 +1606,7 @@ and alignmentPeriod must be
 specified; otherwise, an error is
 returned. Possible values: ["ALIGN_NONE", "ALIGN_DELTA", "ALIGN_RATE", "ALIGN_INTERPOLATE", "ALIGN_NEXT_OLDER", "ALIGN_MIN", "ALIGN_MAX", "ALIGN_MEAN", "ALIGN_COUNT", "ALIGN_SUM", "ALIGN_STDDEV", "ALIGN_COUNT_TRUE", "ALIGN_COUNT_FALSE", "ALIGN_FRACTION_TRUE", "ALIGN_PERCENTILE_99", "ALIGN_PERCENTILE_95", "ALIGN_PERCENTILE_50", "ALIGN_PERCENTILE_05", "ALIGN_PERCENT_CHANGE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#per_series_aligner GoogleMonitoringAlertPolicy#per_series_aligner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#per_series_aligner GoogleMonitoringAlertPolicy#per_series_aligner}
 
 ---
 
@@ -1615,7 +1615,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionAbsentTrigger.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 &googlemonitoringalertpolicy.GoogleMonitoringAlertPolicyConditionsConditionAbsentTrigger {
 	Count: *f64,
@@ -1642,7 +1642,7 @@ Count *f64
 
 The absolute number of time series that must fail the predicate for the condition to be triggered.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#count GoogleMonitoringAlertPolicy#count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#count GoogleMonitoringAlertPolicy#count}
 
 ---
 
@@ -1656,7 +1656,7 @@ Percent *f64
 
 The percentage of time series that must fail the predicate for the condition to be triggered.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#percent GoogleMonitoringAlertPolicy#percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#percent GoogleMonitoringAlertPolicy#percent}
 
 ---
 
@@ -1665,7 +1665,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionMatchedLog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 &googlemonitoringalertpolicy.GoogleMonitoringAlertPolicyConditionsConditionMatchedLog {
 	Filter: *string,
@@ -1692,7 +1692,7 @@ Filter *string
 
 A logs-based filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#filter GoogleMonitoringAlertPolicy#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#filter GoogleMonitoringAlertPolicy#filter}
 
 ---
 
@@ -1713,7 +1713,7 @@ a separate rule for the purposes of triggering notifications.
 Label keys and corresponding values can be used in notifications
 generated by this condition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#label_extractors GoogleMonitoringAlertPolicy#label_extractors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#label_extractors GoogleMonitoringAlertPolicy#label_extractors}
 
 ---
 
@@ -1722,13 +1722,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 &googlemonitoringalertpolicy.GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguage {
 	Duration: *string,
 	Query: *string,
 	EvaluationMissingData: *string,
-	Trigger: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTrigger,
+	Trigger: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTrigger,
 }
 ```
 
@@ -1767,7 +1767,7 @@ generate spurious alerts, but short enough
 that unhealthy states are detected and
 alerted on quickly.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#duration GoogleMonitoringAlertPolicy#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#duration GoogleMonitoringAlertPolicy#duration}
 
 ---
 
@@ -1781,7 +1781,7 @@ Query *string
 
 Monitoring Query Language query that outputs a boolean stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#query GoogleMonitoringAlertPolicy#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#query GoogleMonitoringAlertPolicy#query}
 
 ---
 
@@ -1795,7 +1795,7 @@ EvaluationMissingData *string
 
 A condition control that determines how metric-threshold conditions are evaluated when data stops arriving. Possible values: ["EVALUATION_MISSING_DATA_INACTIVE", "EVALUATION_MISSING_DATA_ACTIVE", "EVALUATION_MISSING_DATA_NO_OP"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#evaluation_missing_data GoogleMonitoringAlertPolicy#evaluation_missing_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#evaluation_missing_data GoogleMonitoringAlertPolicy#evaluation_missing_data}
 
 ---
 
@@ -1809,7 +1809,7 @@ Trigger GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTri
 
 trigger block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#trigger GoogleMonitoringAlertPolicy#trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#trigger GoogleMonitoringAlertPolicy#trigger}
 
 ---
 
@@ -1818,7 +1818,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTrigger.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 &googlemonitoringalertpolicy.GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTrigger {
 	Count: *f64,
@@ -1845,7 +1845,7 @@ Count *f64
 
 The absolute number of time series that must fail the predicate for the condition to be triggered.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#count GoogleMonitoringAlertPolicy#count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#count GoogleMonitoringAlertPolicy#count}
 
 ---
 
@@ -1859,7 +1859,7 @@ Percent *f64
 
 The percentage of time series that must fail the predicate for the condition to be triggered.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#percent GoogleMonitoringAlertPolicy#percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#percent GoogleMonitoringAlertPolicy#percent}
 
 ---
 
@@ -1868,7 +1868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 &googlemonitoringalertpolicy.GoogleMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage {
 	Query: *string,
@@ -1909,7 +1909,7 @@ Every evaluation cycle this
 expression is evaluated at the current time, and all resultant time
 series become pending/firing alerts. This field must not be empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#query GoogleMonitoringAlertPolicy#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#query GoogleMonitoringAlertPolicy#query}
 
 ---
 
@@ -1932,7 +1932,7 @@ in the future.
 This field is optional. If this field is not empty, then it must be a
 valid Prometheus label name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#alert_rule GoogleMonitoringAlertPolicy#alert_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#alert_rule GoogleMonitoringAlertPolicy#alert_rule}
 
 ---
 
@@ -1953,7 +1953,7 @@ alerting policies using Terraform.
 Users with the 'monitoring.alertPolicyViewer' role are able to see the
 name of the non-existent metric in the alerting policy condition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#disable_metric_validation GoogleMonitoringAlertPolicy#disable_metric_validation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#disable_metric_validation GoogleMonitoringAlertPolicy#disable_metric_validation}
 
 ---
 
@@ -1971,7 +1971,7 @@ Alerts whose PromQL expression was not
 evaluated to be "true" for long enough are considered pending. The
 default value is zero. Must be zero or positive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#duration GoogleMonitoringAlertPolicy#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#duration GoogleMonitoringAlertPolicy#duration}
 
 ---
 
@@ -1991,7 +1991,7 @@ PrometheusQueryLanguageCondition was generated from a Prometheus
 alerting rule, then this value should be taken from the enclosing
 rule group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#evaluation_interval GoogleMonitoringAlertPolicy#evaluation_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#evaluation_interval GoogleMonitoringAlertPolicy#evaluation_interval}
 
 ---
 
@@ -2011,7 +2011,7 @@ although label names beginning with __ (two "_") are reserved for
 internal use. "labels" may be empty. This field is intended to be used
 for organizing and identifying the AlertPolicy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#labels GoogleMonitoringAlertPolicy#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#labels GoogleMonitoringAlertPolicy#labels}
 
 ---
 
@@ -2031,7 +2031,7 @@ The rule group name and the alert name are necessary to update the
 relevant AlertPolicies in case the definition of the rule group changes
 in the future. This field is optional.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#rule_group GoogleMonitoringAlertPolicy#rule_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#rule_group GoogleMonitoringAlertPolicy#rule_group}
 
 ---
 
@@ -2040,15 +2040,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSql.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 &googlemonitoringalertpolicy.GoogleMonitoringAlertPolicyConditionsConditionSql {
 	Query: *string,
-	BooleanTest: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlBooleanTest,
-	Daily: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlDaily,
-	Hourly: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlHourly,
-	Minutes: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlMinutes,
-	RowCountTest: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlRowCountTest,
+	BooleanTest: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlBooleanTest,
+	Daily: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlDaily,
+	Hourly: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlHourly,
+	Minutes: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlMinutes,
+	RowCountTest: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlRowCountTest,
 }
 ```
 
@@ -2081,7 +2081,7 @@ filter the input by time.  A filter will automatically be applied
 to filter the input so that the query receives all rows received
 since the last time the query was run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#query GoogleMonitoringAlertPolicy#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#query GoogleMonitoringAlertPolicy#query}
 
 ---
 
@@ -2095,7 +2095,7 @@ BooleanTest GoogleMonitoringAlertPolicyConditionsConditionSqlBooleanTest
 
 boolean_test block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#boolean_test GoogleMonitoringAlertPolicy#boolean_test}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#boolean_test GoogleMonitoringAlertPolicy#boolean_test}
 
 ---
 
@@ -2109,7 +2109,7 @@ Daily GoogleMonitoringAlertPolicyConditionsConditionSqlDaily
 
 daily block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#daily GoogleMonitoringAlertPolicy#daily}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#daily GoogleMonitoringAlertPolicy#daily}
 
 ---
 
@@ -2123,7 +2123,7 @@ Hourly GoogleMonitoringAlertPolicyConditionsConditionSqlHourly
 
 hourly block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#hourly GoogleMonitoringAlertPolicy#hourly}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#hourly GoogleMonitoringAlertPolicy#hourly}
 
 ---
 
@@ -2137,7 +2137,7 @@ Minutes GoogleMonitoringAlertPolicyConditionsConditionSqlMinutes
 
 minutes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#minutes GoogleMonitoringAlertPolicy#minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#minutes GoogleMonitoringAlertPolicy#minutes}
 
 ---
 
@@ -2151,7 +2151,7 @@ RowCountTest GoogleMonitoringAlertPolicyConditionsConditionSqlRowCountTest
 
 row_count_test block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#row_count_test GoogleMonitoringAlertPolicy#row_count_test}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#row_count_test GoogleMonitoringAlertPolicy#row_count_test}
 
 ---
 
@@ -2160,7 +2160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlBooleanTest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 &googlemonitoringalertpolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlBooleanTest {
 	Column: *string,
@@ -2188,7 +2188,7 @@ The name of the column containing the boolean value.
 If the value in a row is
 NULL, that row is ignored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#column GoogleMonitoringAlertPolicy#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#column GoogleMonitoringAlertPolicy#column}
 
 ---
 
@@ -2197,11 +2197,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlDaily.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 &googlemonitoringalertpolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlDaily {
 	Periodicity: *f64,
-	ExecutionTime: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlDailyExecutionTime,
+	ExecutionTime: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlDailyExecutionTime,
 }
 ```
 
@@ -2227,7 +2227,7 @@ The number of days between runs.
 Must be greater than or equal
 to 1 day and less than or equal to 30 days.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#periodicity GoogleMonitoringAlertPolicy#periodicity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#periodicity GoogleMonitoringAlertPolicy#periodicity}
 
 ---
 
@@ -2241,7 +2241,7 @@ ExecutionTime GoogleMonitoringAlertPolicyConditionsConditionSqlDailyExecutionTim
 
 execution_time block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#execution_time GoogleMonitoringAlertPolicy#execution_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#execution_time GoogleMonitoringAlertPolicy#execution_time}
 
 ---
 
@@ -2250,7 +2250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlDailyExecutionTime.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 &googlemonitoringalertpolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlDailyExecutionTime {
 	Hours: *f64,
@@ -2286,7 +2286,7 @@ to 0 and typically must be less than or equal to 23. An API may
 choose to allow the value "24:00:00" for scenarios like business
 closing time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#hours GoogleMonitoringAlertPolicy#hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#hours GoogleMonitoringAlertPolicy#hours}
 
 ---
 
@@ -2300,7 +2300,7 @@ Minutes *f64
 
 Minutes of an hour. Must be greater than or equal to 0 and less than or equal to 59.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#minutes GoogleMonitoringAlertPolicy#minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#minutes GoogleMonitoringAlertPolicy#minutes}
 
 ---
 
@@ -2314,7 +2314,7 @@ Nanos *f64
 
 Fractions of seconds, in nanoseconds. Must be greater than or equal to 0 and less than or equal to 999,999,999.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#nanos GoogleMonitoringAlertPolicy#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#nanos GoogleMonitoringAlertPolicy#nanos}
 
 ---
 
@@ -2332,7 +2332,7 @@ Must be greater than or equal to 0 and
 typically must be less than or equal to 59. An API may allow the
 value 60 if it allows leap-seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#seconds GoogleMonitoringAlertPolicy#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#seconds GoogleMonitoringAlertPolicy#seconds}
 
 ---
 
@@ -2341,7 +2341,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlHourly.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 &googlemonitoringalertpolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlHourly {
 	Periodicity: *f64,
@@ -2371,7 +2371,7 @@ Number of hours between runs.
 The interval must be greater than or
 equal to 1 hour and less than or equal to 48 hours.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#periodicity GoogleMonitoringAlertPolicy#periodicity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#periodicity GoogleMonitoringAlertPolicy#periodicity}
 
 ---
 
@@ -2388,7 +2388,7 @@ The number of minutes after the hour (in UTC) to run the query.
 Must be greater than or equal to 0 minutes and less than or equal to
 59 minutes.  If left unspecified, then an arbitrary offset is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#minute_offset GoogleMonitoringAlertPolicy#minute_offset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#minute_offset GoogleMonitoringAlertPolicy#minute_offset}
 
 ---
 
@@ -2397,7 +2397,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlMinutes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 &googlemonitoringalertpolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlMinutes {
 	Periodicity: *f64,
@@ -2425,7 +2425,7 @@ Number of minutes between runs.
 The interval must be greater than or
 equal to 5 minutes and less than or equal to 1440 minutes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#periodicity GoogleMonitoringAlertPolicy#periodicity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#periodicity GoogleMonitoringAlertPolicy#periodicity}
 
 ---
 
@@ -2434,7 +2434,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlRowCountTest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 &googlemonitoringalertpolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlRowCountTest {
 	Comparison: *string,
@@ -2467,7 +2467,7 @@ the left-hand side and the threshold on the
 right-hand side. Only COMPARISON_LT and
 COMPARISON_GT are supported currently. Possible values: ["COMPARISON_GT", "COMPARISON_GE", "COMPARISON_LT", "COMPARISON_LE", "COMPARISON_EQ", "COMPARISON_NE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#comparison GoogleMonitoringAlertPolicy#comparison}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#comparison GoogleMonitoringAlertPolicy#comparison}
 
 ---
 
@@ -2481,7 +2481,7 @@ Threshold *f64
 
 The value against which to compare the row count.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#threshold GoogleMonitoringAlertPolicy#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#threshold GoogleMonitoringAlertPolicy#threshold}
 
 ---
 
@@ -2490,7 +2490,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThreshold.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 &googlemonitoringalertpolicy.GoogleMonitoringAlertPolicyConditionsConditionThreshold {
 	Comparison: *string,
@@ -2500,9 +2500,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonit
 	DenominatorFilter: *string,
 	EvaluationMissingData: *string,
 	Filter: *string,
-	ForecastOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptions,
+	ForecastOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptions,
 	ThresholdValue: *f64,
-	Trigger: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdTrigger,
+	Trigger: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdTrigger,
 }
 ```
 
@@ -2539,7 +2539,7 @@ the left-hand side and the threshold on the
 right-hand side. Only COMPARISON_LT and
 COMPARISON_GT are supported currently. Possible values: ["COMPARISON_GT", "COMPARISON_GE", "COMPARISON_LT", "COMPARISON_LE", "COMPARISON_EQ", "COMPARISON_NE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#comparison GoogleMonitoringAlertPolicy#comparison}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#comparison GoogleMonitoringAlertPolicy#comparison}
 
 ---
 
@@ -2567,7 +2567,7 @@ generate spurious alerts, but short enough
 that unhealthy states are detected and
 alerted on quickly.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#duration GoogleMonitoringAlertPolicy#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#duration GoogleMonitoringAlertPolicy#duration}
 
 ---
 
@@ -2581,7 +2581,7 @@ Aggregations interface{}
 
 aggregations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#aggregations GoogleMonitoringAlertPolicy#aggregations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#aggregations GoogleMonitoringAlertPolicy#aggregations}
 
 ---
 
@@ -2595,7 +2595,7 @@ DenominatorAggregations interface{}
 
 denominator_aggregations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#denominator_aggregations GoogleMonitoringAlertPolicy#denominator_aggregations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#denominator_aggregations GoogleMonitoringAlertPolicy#denominator_aggregations}
 
 ---
 
@@ -2623,7 +2623,7 @@ resource labels, and metric labels. This
 field may not exceed 2048 Unicode characters
 in length.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#denominator_filter GoogleMonitoringAlertPolicy#denominator_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#denominator_filter GoogleMonitoringAlertPolicy#denominator_filter}
 
 ---
 
@@ -2637,7 +2637,7 @@ EvaluationMissingData *string
 
 A condition control that determines how metric-threshold conditions are evaluated when data stops arriving. Possible values: ["EVALUATION_MISSING_DATA_INACTIVE", "EVALUATION_MISSING_DATA_ACTIVE", "EVALUATION_MISSING_DATA_NO_OP"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#evaluation_missing_data GoogleMonitoringAlertPolicy#evaluation_missing_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#evaluation_missing_data GoogleMonitoringAlertPolicy#evaluation_missing_data}
 
 ---
 
@@ -2651,7 +2651,7 @@ Filter *string
 
 A filter that identifies which time series should be compared with the threshold.The filter is similar to the one that is specified in the MetricService.ListTimeSeries request (that call is useful to verify the time series that will be retrieved / processed) and must specify the metric type and optionally may contain restrictions on resource type, resource labels, and metric labels. This field may not exceed 2048 Unicode characters in length.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#filter GoogleMonitoringAlertPolicy#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#filter GoogleMonitoringAlertPolicy#filter}
 
 ---
 
@@ -2665,7 +2665,7 @@ ForecastOptions GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastO
 
 forecast_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#forecast_options GoogleMonitoringAlertPolicy#forecast_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#forecast_options GoogleMonitoringAlertPolicy#forecast_options}
 
 ---
 
@@ -2679,7 +2679,7 @@ ThresholdValue *f64
 
 A value against which to compare the time series.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#threshold_value GoogleMonitoringAlertPolicy#threshold_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#threshold_value GoogleMonitoringAlertPolicy#threshold_value}
 
 ---
 
@@ -2693,7 +2693,7 @@ Trigger GoogleMonitoringAlertPolicyConditionsConditionThresholdTrigger
 
 trigger block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#trigger GoogleMonitoringAlertPolicy#trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#trigger GoogleMonitoringAlertPolicy#trigger}
 
 ---
 
@@ -2702,7 +2702,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 &googlemonitoringalertpolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregations {
 	AlignmentPeriod: *string,
@@ -2747,7 +2747,7 @@ does not equal ALIGN_NONE, then
 this field must be defined;
 otherwise an error is returned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#alignment_period GoogleMonitoringAlertPolicy#alignment_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#alignment_period GoogleMonitoringAlertPolicy#alignment_period}
 
 ---
 
@@ -2778,7 +2778,7 @@ and alignmentPeriod must be
 specified; otherwise, an error is
 returned. Possible values: ["REDUCE_NONE", "REDUCE_MEAN", "REDUCE_MIN", "REDUCE_MAX", "REDUCE_SUM", "REDUCE_STDDEV", "REDUCE_COUNT", "REDUCE_COUNT_TRUE", "REDUCE_COUNT_FALSE", "REDUCE_FRACTION_TRUE", "REDUCE_PERCENTILE_99", "REDUCE_PERCENTILE_95", "REDUCE_PERCENTILE_50", "REDUCE_PERCENTILE_05"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#cross_series_reducer GoogleMonitoringAlertPolicy#cross_series_reducer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#cross_series_reducer GoogleMonitoringAlertPolicy#cross_series_reducer}
 
 ---
 
@@ -2816,7 +2816,7 @@ time series. If crossSeriesReducer
 is not defined, this field is
 ignored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#group_by_fields GoogleMonitoringAlertPolicy#group_by_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#group_by_fields GoogleMonitoringAlertPolicy#group_by_fields}
 
 ---
 
@@ -2847,7 +2847,7 @@ and alignmentPeriod must be
 specified; otherwise, an error is
 returned. Possible values: ["ALIGN_NONE", "ALIGN_DELTA", "ALIGN_RATE", "ALIGN_INTERPOLATE", "ALIGN_NEXT_OLDER", "ALIGN_MIN", "ALIGN_MAX", "ALIGN_MEAN", "ALIGN_COUNT", "ALIGN_SUM", "ALIGN_STDDEV", "ALIGN_COUNT_TRUE", "ALIGN_COUNT_FALSE", "ALIGN_FRACTION_TRUE", "ALIGN_PERCENTILE_99", "ALIGN_PERCENTILE_95", "ALIGN_PERCENTILE_50", "ALIGN_PERCENTILE_05", "ALIGN_PERCENT_CHANGE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#per_series_aligner GoogleMonitoringAlertPolicy#per_series_aligner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#per_series_aligner GoogleMonitoringAlertPolicy#per_series_aligner}
 
 ---
 
@@ -2856,7 +2856,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 &googlemonitoringalertpolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregations {
 	AlignmentPeriod: *string,
@@ -2901,7 +2901,7 @@ does not equal ALIGN_NONE, then
 this field must be defined;
 otherwise an error is returned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#alignment_period GoogleMonitoringAlertPolicy#alignment_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#alignment_period GoogleMonitoringAlertPolicy#alignment_period}
 
 ---
 
@@ -2932,7 +2932,7 @@ and alignmentPeriod must be
 specified; otherwise, an error is
 returned. Possible values: ["REDUCE_NONE", "REDUCE_MEAN", "REDUCE_MIN", "REDUCE_MAX", "REDUCE_SUM", "REDUCE_STDDEV", "REDUCE_COUNT", "REDUCE_COUNT_TRUE", "REDUCE_COUNT_FALSE", "REDUCE_FRACTION_TRUE", "REDUCE_PERCENTILE_99", "REDUCE_PERCENTILE_95", "REDUCE_PERCENTILE_50", "REDUCE_PERCENTILE_05"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#cross_series_reducer GoogleMonitoringAlertPolicy#cross_series_reducer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#cross_series_reducer GoogleMonitoringAlertPolicy#cross_series_reducer}
 
 ---
 
@@ -2970,7 +2970,7 @@ time series. If crossSeriesReducer
 is not defined, this field is
 ignored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#group_by_fields GoogleMonitoringAlertPolicy#group_by_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#group_by_fields GoogleMonitoringAlertPolicy#group_by_fields}
 
 ---
 
@@ -3001,7 +3001,7 @@ and alignmentPeriod must be
 specified; otherwise, an error is
 returned. Possible values: ["ALIGN_NONE", "ALIGN_DELTA", "ALIGN_RATE", "ALIGN_INTERPOLATE", "ALIGN_NEXT_OLDER", "ALIGN_MIN", "ALIGN_MAX", "ALIGN_MEAN", "ALIGN_COUNT", "ALIGN_SUM", "ALIGN_STDDEV", "ALIGN_COUNT_TRUE", "ALIGN_COUNT_FALSE", "ALIGN_FRACTION_TRUE", "ALIGN_PERCENTILE_99", "ALIGN_PERCENTILE_95", "ALIGN_PERCENTILE_50", "ALIGN_PERCENTILE_05", "ALIGN_PERCENT_CHANGE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#per_series_aligner GoogleMonitoringAlertPolicy#per_series_aligner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#per_series_aligner GoogleMonitoringAlertPolicy#per_series_aligner}
 
 ---
 
@@ -3010,7 +3010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 &googlemonitoringalertpolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptions {
 	ForecastHorizon: *string,
@@ -3040,7 +3040,7 @@ threshold, and the violation is observed in all
 forecasts made for the Configured 'duration',
 then the timeseries is considered to be failing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#forecast_horizon GoogleMonitoringAlertPolicy#forecast_horizon}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#forecast_horizon GoogleMonitoringAlertPolicy#forecast_horizon}
 
 ---
 
@@ -3049,7 +3049,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdTrigger.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 &googlemonitoringalertpolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdTrigger {
 	Count: *f64,
@@ -3076,7 +3076,7 @@ Count *f64
 
 The absolute number of time series that must fail the predicate for the condition to be triggered.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#count GoogleMonitoringAlertPolicy#count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#count GoogleMonitoringAlertPolicy#count}
 
 ---
 
@@ -3090,7 +3090,7 @@ Percent *f64
 
 The percentage of time series that must fail the predicate for the condition to be triggered.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#percent GoogleMonitoringAlertPolicy#percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#percent GoogleMonitoringAlertPolicy#percent}
 
 ---
 
@@ -3099,7 +3099,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 &googlemonitoringalertpolicy.GoogleMonitoringAlertPolicyConfig {
 	Connection: interface{},
@@ -3112,14 +3112,14 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonit
 	Combiner: *string,
 	Conditions: interface{},
 	DisplayName: *string,
-	AlertStrategy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyAlertStrategy,
-	Documentation: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyDocumentation,
+	AlertStrategy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyAlertStrategy,
+	Documentation: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyDocumentation,
 	Enabled: interface{},
 	Id: *string,
 	NotificationChannels: *[]*string,
 	Project: *string,
 	Severity: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyTimeouts,
 	UserLabels: *map[string]*string,
 }
 ```
@@ -3141,9 +3141,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonit
 | <code><a href="#@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConfig.property.alertStrategy">AlertStrategy</a></code> | <code><a href="#@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyAlertStrategy">GoogleMonitoringAlertPolicyAlertStrategy</a></code> | alert_strategy block. |
 | <code><a href="#@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConfig.property.documentation">Documentation</a></code> | <code><a href="#@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyDocumentation">GoogleMonitoringAlertPolicyDocumentation</a></code> | documentation block. |
 | <code><a href="#@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Whether or not the policy is enabled. The default is true. |
-| <code><a href="#@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#id GoogleMonitoringAlertPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#id GoogleMonitoringAlertPolicy#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConfig.property.notificationChannels">NotificationChannels</a></code> | <code>*[]*string</code> | Identifies the notification channels to which notifications should be sent when incidents are opened or closed or when new violations occur on an already opened incident. |
-| <code><a href="#@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#project GoogleMonitoringAlertPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#project GoogleMonitoringAlertPolicy#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConfig.property.severity">Severity</a></code> | <code>*string</code> | The severity of an alert policy indicates how important incidents generated by that policy are. |
 | <code><a href="#@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyTimeouts">GoogleMonitoringAlertPolicyTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConfig.property.userLabels">UserLabels</a></code> | <code>*map[string]*string</code> | This field is intended to be used for organizing and identifying the AlertPolicy objects.The field can contain up to 64 entries. Each key and value is limited to 63 Unicode characters or 128 bytes, whichever is smaller. Labels and values can contain only lowercase letters, numerals, underscores, and dashes. Keys must begin with a letter. |
@@ -3232,7 +3232,7 @@ How to combine the results of multiple conditions to determine if an incident sh
 
 Possible values: ["AND", "OR", "AND_WITH_MATCHING_RESOURCE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#combiner GoogleMonitoringAlertPolicy#combiner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#combiner GoogleMonitoringAlertPolicy#combiner}
 
 ---
 
@@ -3246,7 +3246,7 @@ Conditions interface{}
 
 conditions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#conditions GoogleMonitoringAlertPolicy#conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#conditions GoogleMonitoringAlertPolicy#conditions}
 
 ---
 
@@ -3264,7 +3264,7 @@ To avoid confusion, don't use
 the same display name for multiple policies in the same project. The
 name is limited to 512 Unicode characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#display_name GoogleMonitoringAlertPolicy#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#display_name GoogleMonitoringAlertPolicy#display_name}
 
 ---
 
@@ -3278,7 +3278,7 @@ AlertStrategy GoogleMonitoringAlertPolicyAlertStrategy
 
 alert_strategy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#alert_strategy GoogleMonitoringAlertPolicy#alert_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#alert_strategy GoogleMonitoringAlertPolicy#alert_strategy}
 
 ---
 
@@ -3292,7 +3292,7 @@ Documentation GoogleMonitoringAlertPolicyDocumentation
 
 documentation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#documentation GoogleMonitoringAlertPolicy#documentation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#documentation GoogleMonitoringAlertPolicy#documentation}
 
 ---
 
@@ -3306,7 +3306,7 @@ Enabled interface{}
 
 Whether or not the policy is enabled. The default is true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#enabled GoogleMonitoringAlertPolicy#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#enabled GoogleMonitoringAlertPolicy#enabled}
 
 ---
 
@@ -3318,7 +3318,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#id GoogleMonitoringAlertPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#id GoogleMonitoringAlertPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3341,7 +3341,7 @@ returned from the notificationChannels.list method. The syntax of the
 entries in this field is
 'projects/[PROJECT_ID]/notificationChannels/[CHANNEL_ID]'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#notification_channels GoogleMonitoringAlertPolicy#notification_channels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#notification_channels GoogleMonitoringAlertPolicy#notification_channels}
 
 ---
 
@@ -3353,7 +3353,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#project GoogleMonitoringAlertPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#project GoogleMonitoringAlertPolicy#project}.
 
 ---
 
@@ -3370,7 +3370,7 @@ The severity of an alert policy indicates how important incidents generated by t
 The severity level will be displayed on the Incident
 detail page and in notifications. Possible values: ["CRITICAL", "ERROR", "WARNING"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#severity GoogleMonitoringAlertPolicy#severity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#severity GoogleMonitoringAlertPolicy#severity}
 
 ---
 
@@ -3384,7 +3384,7 @@ Timeouts GoogleMonitoringAlertPolicyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#timeouts GoogleMonitoringAlertPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#timeouts GoogleMonitoringAlertPolicy#timeouts}
 
 ---
 
@@ -3398,7 +3398,7 @@ UserLabels *map[string]*string
 
 This field is intended to be used for organizing and identifying the AlertPolicy objects.The field can contain up to 64 entries. Each key and value is limited to 63 Unicode characters or 128 bytes, whichever is smaller. Labels and values can contain only lowercase letters, numerals, underscores, and dashes. Keys must begin with a letter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#user_labels GoogleMonitoringAlertPolicy#user_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#user_labels GoogleMonitoringAlertPolicy#user_labels}
 
 ---
 
@@ -3407,7 +3407,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyCreationRecord.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 &googlemonitoringalertpolicy.GoogleMonitoringAlertPolicyCreationRecord {
 
@@ -3420,7 +3420,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonit
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyDocumentation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 &googlemonitoringalertpolicy.GoogleMonitoringAlertPolicyDocumentation {
 	Content: *string,
@@ -3455,7 +3455,7 @@ The content may not exceed 8,192 Unicode characters and may not
 exceed more than 10,240 bytes when encoded in UTF-8 format,
 whichever is smaller.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#content GoogleMonitoringAlertPolicy#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#content GoogleMonitoringAlertPolicy#content}
 
 ---
 
@@ -3469,7 +3469,7 @@ Links interface{}
 
 links block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#links GoogleMonitoringAlertPolicy#links}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#links GoogleMonitoringAlertPolicy#links}
 
 ---
 
@@ -3483,7 +3483,7 @@ MimeType *string
 
 The format of the content field. Presently, only the value "text/markdown" is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#mime_type GoogleMonitoringAlertPolicy#mime_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#mime_type GoogleMonitoringAlertPolicy#mime_type}
 
 ---
 
@@ -3502,7 +3502,7 @@ exceed 10,240 bytes. In notifications generated by this policy the contents
 of the subject line after variable expansion will be truncated to 255 bytes
 or shorter at the latest UTF-8 character boundary.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#subject GoogleMonitoringAlertPolicy#subject}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#subject GoogleMonitoringAlertPolicy#subject}
 
 ---
 
@@ -3511,7 +3511,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyDocumentationLinks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 &googlemonitoringalertpolicy.GoogleMonitoringAlertPolicyDocumentationLinks {
 	DisplayName: *string,
@@ -3540,7 +3540,7 @@ A short display name for the link.
 
 The display name must not be empty or exceed 63 characters. Example: "playbook".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#display_name GoogleMonitoringAlertPolicy#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#display_name GoogleMonitoringAlertPolicy#display_name}
 
 ---
 
@@ -3556,7 +3556,7 @@ The url of a webpage.
 
 A url can be templatized by using variables in the path or the query parameters. The total length of a URL should not exceed 2083 characters before and after variable expansion. Example: "https://my_domain.com/playbook?name=${resource.name}".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#url GoogleMonitoringAlertPolicy#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#url GoogleMonitoringAlertPolicy#url}
 
 ---
 
@@ -3565,7 +3565,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 &googlemonitoringalertpolicy.GoogleMonitoringAlertPolicyTimeouts {
 	Create: *string,
@@ -3578,9 +3578,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonit
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#create GoogleMonitoringAlertPolicy#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#delete GoogleMonitoringAlertPolicy#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#update GoogleMonitoringAlertPolicy#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#create GoogleMonitoringAlertPolicy#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#delete GoogleMonitoringAlertPolicy#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#update GoogleMonitoringAlertPolicy#update}. |
 
 ---
 
@@ -3592,7 +3592,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#create GoogleMonitoringAlertPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#create GoogleMonitoringAlertPolicy#create}.
 
 ---
 
@@ -3604,7 +3604,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#delete GoogleMonitoringAlertPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#delete GoogleMonitoringAlertPolicy#delete}.
 
 ---
 
@@ -3616,7 +3616,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_monitoring_alert_policy#update GoogleMonitoringAlertPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_monitoring_alert_policy#update GoogleMonitoringAlertPolicy#update}.
 
 ---
 
@@ -3627,7 +3627,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.NewGoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList
 ```
@@ -3787,7 +3787,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.NewGoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyOutputReference
 ```
@@ -4112,7 +4112,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.NewGoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference
 ```
@@ -4390,7 +4390,7 @@ func InternalValue() GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLim
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyAlertStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.NewGoogleMonitoringAlertPolicyAlertStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringAlertPolicyAlertStrategyOutputReference
 ```
@@ -4781,7 +4781,7 @@ func InternalValue() GoogleMonitoringAlertPolicyAlertStrategy
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionAbsentAggregationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.NewGoogleMonitoringAlertPolicyConditionsConditionAbsentAggregationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleMonitoringAlertPolicyConditionsConditionAbsentAggregationsList
 ```
@@ -4941,7 +4941,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionAbsentAggregationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.NewGoogleMonitoringAlertPolicyConditionsConditionAbsentAggregationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleMonitoringAlertPolicyConditionsConditionAbsentAggregationsOutputReference
 ```
@@ -5324,7 +5324,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionAbsentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.NewGoogleMonitoringAlertPolicyConditionsConditionAbsentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringAlertPolicyConditionsConditionAbsentOutputReference
 ```
@@ -5708,7 +5708,7 @@ func InternalValue() GoogleMonitoringAlertPolicyConditionsConditionAbsent
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionAbsentTriggerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.NewGoogleMonitoringAlertPolicyConditionsConditionAbsentTriggerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringAlertPolicyConditionsConditionAbsentTriggerOutputReference
 ```
@@ -6015,7 +6015,7 @@ func InternalValue() GoogleMonitoringAlertPolicyConditionsConditionAbsentTrigger
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionMatchedLogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.NewGoogleMonitoringAlertPolicyConditionsConditionMatchedLogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringAlertPolicyConditionsConditionMatchedLogOutputReference
 ```
@@ -6315,7 +6315,7 @@ func InternalValue() GoogleMonitoringAlertPolicyConditionsConditionMatchedLog
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.NewGoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageOutputReference
 ```
@@ -6679,7 +6679,7 @@ func InternalValue() GoogleMonitoringAlertPolicyConditionsConditionMonitoringQue
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTriggerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.NewGoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTriggerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTriggerOutputReference
 ```
@@ -6986,7 +6986,7 @@ func InternalValue() GoogleMonitoringAlertPolicyConditionsConditionMonitoringQue
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.NewGoogleMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference
 ```
@@ -7431,7 +7431,7 @@ func InternalValue() GoogleMonitoringAlertPolicyConditionsConditionPrometheusQue
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlBooleanTestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.NewGoogleMonitoringAlertPolicyConditionsConditionSqlBooleanTestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringAlertPolicyConditionsConditionSqlBooleanTestOutputReference
 ```
@@ -7702,7 +7702,7 @@ func InternalValue() GoogleMonitoringAlertPolicyConditionsConditionSqlBooleanTes
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlDailyExecutionTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.NewGoogleMonitoringAlertPolicyConditionsConditionSqlDailyExecutionTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringAlertPolicyConditionsConditionSqlDailyExecutionTimeOutputReference
 ```
@@ -8067,7 +8067,7 @@ func InternalValue() GoogleMonitoringAlertPolicyConditionsConditionSqlDailyExecu
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.NewGoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputReference
 ```
@@ -8380,7 +8380,7 @@ func InternalValue() GoogleMonitoringAlertPolicyConditionsConditionSqlDaily
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlHourlyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.NewGoogleMonitoringAlertPolicyConditionsConditionSqlHourlyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringAlertPolicyConditionsConditionSqlHourlyOutputReference
 ```
@@ -8680,7 +8680,7 @@ func InternalValue() GoogleMonitoringAlertPolicyConditionsConditionSqlHourly
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlMinutesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.NewGoogleMonitoringAlertPolicyConditionsConditionSqlMinutesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringAlertPolicyConditionsConditionSqlMinutesOutputReference
 ```
@@ -8951,7 +8951,7 @@ func InternalValue() GoogleMonitoringAlertPolicyConditionsConditionSqlMinutes
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.NewGoogleMonitoringAlertPolicyConditionsConditionSqlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringAlertPolicyConditionsConditionSqlOutputReference
 ```
@@ -9432,7 +9432,7 @@ func InternalValue() GoogleMonitoringAlertPolicyConditionsConditionSql
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlRowCountTestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.NewGoogleMonitoringAlertPolicyConditionsConditionSqlRowCountTestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringAlertPolicyConditionsConditionSqlRowCountTestOutputReference
 ```
@@ -9725,7 +9725,7 @@ func InternalValue() GoogleMonitoringAlertPolicyConditionsConditionSqlRowCountTe
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.NewGoogleMonitoringAlertPolicyConditionsConditionThresholdAggregationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregationsList
 ```
@@ -9885,7 +9885,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.NewGoogleMonitoringAlertPolicyConditionsConditionThresholdAggregationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregationsOutputReference
 ```
@@ -10268,7 +10268,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.NewGoogleMonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleMonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsList
 ```
@@ -10428,7 +10428,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.NewGoogleMonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleMonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsOutputReference
 ```
@@ -10811,7 +10811,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.NewGoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptionsOutputReference
 ```
@@ -11082,7 +11082,7 @@ func InternalValue() GoogleMonitoringAlertPolicyConditionsConditionThresholdFore
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.NewGoogleMonitoringAlertPolicyConditionsConditionThresholdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringAlertPolicyConditionsConditionThresholdOutputReference
 ```
@@ -11659,7 +11659,7 @@ func InternalValue() GoogleMonitoringAlertPolicyConditionsConditionThreshold
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdTriggerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.NewGoogleMonitoringAlertPolicyConditionsConditionThresholdTriggerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringAlertPolicyConditionsConditionThresholdTriggerOutputReference
 ```
@@ -11966,7 +11966,7 @@ func InternalValue() GoogleMonitoringAlertPolicyConditionsConditionThresholdTrig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.NewGoogleMonitoringAlertPolicyConditionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleMonitoringAlertPolicyConditionsList
 ```
@@ -12126,7 +12126,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.NewGoogleMonitoringAlertPolicyConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleMonitoringAlertPolicyConditionsOutputReference
 ```
@@ -12678,7 +12678,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyCreationRecordList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.NewGoogleMonitoringAlertPolicyCreationRecordList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleMonitoringAlertPolicyCreationRecordList
 ```
@@ -12827,7 +12827,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyCreationRecordOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.NewGoogleMonitoringAlertPolicyCreationRecordOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleMonitoringAlertPolicyCreationRecordOutputReference
 ```
@@ -13116,7 +13116,7 @@ func InternalValue() GoogleMonitoringAlertPolicyCreationRecord
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyDocumentationLinksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.NewGoogleMonitoringAlertPolicyDocumentationLinksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleMonitoringAlertPolicyDocumentationLinksList
 ```
@@ -13276,7 +13276,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyDocumentationLinksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.NewGoogleMonitoringAlertPolicyDocumentationLinksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleMonitoringAlertPolicyDocumentationLinksOutputReference
 ```
@@ -13601,7 +13601,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyDocumentationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.NewGoogleMonitoringAlertPolicyDocumentationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringAlertPolicyDocumentationOutputReference
 ```
@@ -13979,7 +13979,7 @@ func InternalValue() GoogleMonitoringAlertPolicyDocumentation
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringalertpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringalertpolicy"
 
 googlemonitoringalertpolicy.NewGoogleMonitoringAlertPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringAlertPolicyTimeoutsOutputReference
 ```
