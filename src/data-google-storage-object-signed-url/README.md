@@ -1,3 +1,3 @@
 # `data_google_storage_object_signed_url`
 
-Refer to the Terraform Registry for docs: [`data_google_storage_object_signed_url`](https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/data-sources/google_storage_object_signed_url).
+Refer to the Terraform Registry for docs: [`data_google_storage_object_signed_url`](https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/data-sources/google_storage_object_signed_url).

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +10,23 @@ export interface GoogleDnsManagedZoneConfig extends cdktf.TerraformMetaArguments
   /**
   * A textual description field. Defaults to 'Managed by Terraform'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#description GoogleDnsManagedZone#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#description GoogleDnsManagedZone#description}
   */
   readonly description?: string;
   /**
   * The DNS name of this managed zone, for instance "example.com.".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#dns_name GoogleDnsManagedZone#dns_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#dns_name GoogleDnsManagedZone#dns_name}
   */
   readonly dnsName: string;
   /**
   * Set this true to delete all records in the zone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#force_destroy GoogleDnsManagedZone#force_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#force_destroy GoogleDnsManagedZone#force_destroy}
   */
   readonly forceDestroy?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#id GoogleDnsManagedZone#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#id GoogleDnsManagedZone#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,18 +39,18 @@ export interface GoogleDnsManagedZoneConfig extends cdktf.TerraformMetaArguments
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#labels GoogleDnsManagedZone#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#labels GoogleDnsManagedZone#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * User assigned name for this resource.
   * Must be unique within the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#name GoogleDnsManagedZone#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#name GoogleDnsManagedZone#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#project GoogleDnsManagedZone#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#project GoogleDnsManagedZone#project}
   */
   readonly project?: string;
   /**
@@ -63,56 +58,56 @@ export interface GoogleDnsManagedZoneConfig extends cdktf.TerraformMetaArguments
   * lookup queries using automatically configured records for VPC resources. This only applies
   * to networks listed under 'private_visibility_config'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#reverse_lookup GoogleDnsManagedZone#reverse_lookup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#reverse_lookup GoogleDnsManagedZone#reverse_lookup}
   */
   readonly reverseLookup?: boolean | cdktf.IResolvable;
   /**
   * The zone's visibility: public zones are exposed to the Internet,
   * while private zones are visible only to Virtual Private Cloud resources. Default value: "public" Possible values: ["private", "public"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#visibility GoogleDnsManagedZone#visibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#visibility GoogleDnsManagedZone#visibility}
   */
   readonly visibility?: string;
   /**
   * cloud_logging_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#cloud_logging_config GoogleDnsManagedZone#cloud_logging_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#cloud_logging_config GoogleDnsManagedZone#cloud_logging_config}
   */
   readonly cloudLoggingConfig?: GoogleDnsManagedZoneCloudLoggingConfig;
   /**
   * dnssec_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#dnssec_config GoogleDnsManagedZone#dnssec_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#dnssec_config GoogleDnsManagedZone#dnssec_config}
   */
   readonly dnssecConfig?: GoogleDnsManagedZoneDnssecConfig;
   /**
   * forwarding_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#forwarding_config GoogleDnsManagedZone#forwarding_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#forwarding_config GoogleDnsManagedZone#forwarding_config}
   */
   readonly forwardingConfig?: GoogleDnsManagedZoneForwardingConfig;
   /**
   * peering_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#peering_config GoogleDnsManagedZone#peering_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#peering_config GoogleDnsManagedZone#peering_config}
   */
   readonly peeringConfig?: GoogleDnsManagedZonePeeringConfig;
   /**
   * private_visibility_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#private_visibility_config GoogleDnsManagedZone#private_visibility_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#private_visibility_config GoogleDnsManagedZone#private_visibility_config}
   */
   readonly privateVisibilityConfig?: GoogleDnsManagedZonePrivateVisibilityConfig;
   /**
   * service_directory_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#service_directory_config GoogleDnsManagedZone#service_directory_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#service_directory_config GoogleDnsManagedZone#service_directory_config}
   */
   readonly serviceDirectoryConfig?: GoogleDnsManagedZoneServiceDirectoryConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#timeouts GoogleDnsManagedZone#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#timeouts GoogleDnsManagedZone#timeouts}
   */
   readonly timeouts?: GoogleDnsManagedZoneTimeouts;
 }
@@ -120,7 +115,7 @@ export interface GoogleDnsManagedZoneCloudLoggingConfig {
   /**
   * If set, enable query logging for this ManagedZone. False by default, making logging opt-in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#enable_logging GoogleDnsManagedZone#enable_logging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#enable_logging GoogleDnsManagedZone#enable_logging}
   */
   readonly enableLogging: boolean | cdktf.IResolvable;
 }
@@ -203,13 +198,13 @@ export interface GoogleDnsManagedZoneDnssecConfigDefaultKeySpecs {
   /**
   * String mnemonic specifying the DNSSEC algorithm of this key Possible values: ["ecdsap256sha256", "ecdsap384sha384", "rsasha1", "rsasha256", "rsasha512"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#algorithm GoogleDnsManagedZone#algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#algorithm GoogleDnsManagedZone#algorithm}
   */
   readonly algorithm?: string;
   /**
   * Length of the keys in bits
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#key_length GoogleDnsManagedZone#key_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#key_length GoogleDnsManagedZone#key_length}
   */
   readonly keyLength?: number;
   /**
@@ -220,13 +215,13 @@ export interface GoogleDnsManagedZoneDnssecConfigDefaultKeySpecs {
   * not have the Secure Entry Point flag set and will be used
   * to sign all other types of resource record sets. Possible values: ["keySigning", "zoneSigning"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#key_type GoogleDnsManagedZone#key_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#key_type GoogleDnsManagedZone#key_type}
   */
   readonly keyType?: string;
   /**
   * Identifies what kind of resource this is
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#kind GoogleDnsManagedZone#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#kind GoogleDnsManagedZone#kind}
   */
   readonly kind?: string;
 }
@@ -431,26 +426,26 @@ export interface GoogleDnsManagedZoneDnssecConfig {
   /**
   * Identifies what kind of resource this is
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#kind GoogleDnsManagedZone#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#kind GoogleDnsManagedZone#kind}
   */
   readonly kind?: string;
   /**
   * Specifies the mechanism used to provide authenticated denial-of-existence responses.
   * non_existence can only be updated when the state is 'off'. Possible values: ["nsec", "nsec3"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#non_existence GoogleDnsManagedZone#non_existence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#non_existence GoogleDnsManagedZone#non_existence}
   */
   readonly nonExistence?: string;
   /**
   * Specifies whether DNSSEC is enabled, and what mode it is in Possible values: ["off", "on", "transfer"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#state GoogleDnsManagedZone#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#state GoogleDnsManagedZone#state}
   */
   readonly state?: string;
   /**
   * default_key_specs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#default_key_specs GoogleDnsManagedZone#default_key_specs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#default_key_specs GoogleDnsManagedZone#default_key_specs}
   */
   readonly defaultKeySpecs?: GoogleDnsManagedZoneDnssecConfigDefaultKeySpecs[] | cdktf.IResolvable;
 }
@@ -625,13 +620,13 @@ export interface GoogleDnsManagedZoneForwardingConfigTargetNameServers {
   * decision based on address ranges, i.e. RFC1918 addresses go to the VPC, Non-RFC1918 addresses go
   * to the Internet. When set to 'private', Cloud DNS will always send queries through VPC for this target Possible values: ["default", "private"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#forwarding_path GoogleDnsManagedZone#forwarding_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#forwarding_path GoogleDnsManagedZone#forwarding_path}
   */
   readonly forwardingPath?: string;
   /**
   * IPv4 address of a target name server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#ipv4_address GoogleDnsManagedZone#ipv4_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#ipv4_address GoogleDnsManagedZone#ipv4_address}
   */
   readonly ipv4Address: string;
 }
@@ -775,7 +770,7 @@ export interface GoogleDnsManagedZoneForwardingConfig {
   /**
   * target_name_servers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#target_name_servers GoogleDnsManagedZone#target_name_servers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#target_name_servers GoogleDnsManagedZone#target_name_servers}
   */
   readonly targetNameServers: GoogleDnsManagedZoneForwardingConfigTargetNameServers[] | cdktf.IResolvable;
 }
@@ -860,7 +855,7 @@ export interface GoogleDnsManagedZonePeeringConfigTargetNetwork {
   * This should be formatted like 'projects/{project}/global/networks/{network}' or
   * 'https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{network}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#network_url GoogleDnsManagedZone#network_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#network_url GoogleDnsManagedZone#network_url}
   */
   readonly networkUrl: string;
 }
@@ -943,7 +938,7 @@ export interface GoogleDnsManagedZonePeeringConfig {
   /**
   * target_network block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#target_network GoogleDnsManagedZone#target_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#target_network GoogleDnsManagedZone#target_network}
   */
   readonly targetNetwork: GoogleDnsManagedZonePeeringConfigTargetNetwork;
 }
@@ -1028,7 +1023,7 @@ export interface GoogleDnsManagedZonePrivateVisibilityConfigGkeClusters {
   * This should be specified in the format like
   * 'projects/* /locations/* /clusters/*'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#gke_cluster_name GoogleDnsManagedZone#gke_cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#gke_cluster_name GoogleDnsManagedZone#gke_cluster_name}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -1147,7 +1142,7 @@ export interface GoogleDnsManagedZonePrivateVisibilityConfigNetworks {
   * This should be formatted like 'projects/{project}/global/networks/{network}' or
   * 'https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{network}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#network_url GoogleDnsManagedZone#network_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#network_url GoogleDnsManagedZone#network_url}
   */
   readonly networkUrl: string;
 }
@@ -1262,13 +1257,13 @@ export interface GoogleDnsManagedZonePrivateVisibilityConfig {
   /**
   * gke_clusters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#gke_clusters GoogleDnsManagedZone#gke_clusters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#gke_clusters GoogleDnsManagedZone#gke_clusters}
   */
   readonly gkeClusters?: GoogleDnsManagedZonePrivateVisibilityConfigGkeClusters[] | cdktf.IResolvable;
   /**
   * networks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#networks GoogleDnsManagedZone#networks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#networks GoogleDnsManagedZone#networks}
   */
   readonly networks?: GoogleDnsManagedZonePrivateVisibilityConfigNetworks[] | cdktf.IResolvable;
 }
@@ -1387,7 +1382,7 @@ export interface GoogleDnsManagedZoneServiceDirectoryConfigNamespace {
   * or simply 'projects/{project}/locations/{location}/namespaces/{namespace_id}'
   * Ignored for 'public' visibility zones.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#namespace_url GoogleDnsManagedZone#namespace_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#namespace_url GoogleDnsManagedZone#namespace_url}
   */
   readonly namespaceUrl: string;
 }
@@ -1470,7 +1465,7 @@ export interface GoogleDnsManagedZoneServiceDirectoryConfig {
   /**
   * namespace block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#namespace GoogleDnsManagedZone#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#namespace GoogleDnsManagedZone#namespace}
   */
   readonly namespace: GoogleDnsManagedZoneServiceDirectoryConfigNamespace;
 }
@@ -1551,15 +1546,15 @@ export class GoogleDnsManagedZoneServiceDirectoryConfigOutputReference extends c
 }
 export interface GoogleDnsManagedZoneTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#create GoogleDnsManagedZone#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#create GoogleDnsManagedZone#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#delete GoogleDnsManagedZone#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#delete GoogleDnsManagedZone#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#update GoogleDnsManagedZone#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#update GoogleDnsManagedZone#update}
   */
   readonly update?: string;
 }
@@ -1711,7 +1706,7 @@ export class GoogleDnsManagedZoneTimeoutsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone google_dns_managed_zone}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone google_dns_managed_zone}
 */
 export class GoogleDnsManagedZone extends cdktf.TerraformResource {
 
@@ -1727,7 +1722,7 @@ export class GoogleDnsManagedZone extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleDnsManagedZone resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleDnsManagedZone to import
-  * @param importFromId The id of the existing GoogleDnsManagedZone that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleDnsManagedZone that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleDnsManagedZone to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1739,7 +1734,7 @@ export class GoogleDnsManagedZone extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_dns_managed_zone google_dns_managed_zone} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_dns_managed_zone google_dns_managed_zone} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1750,7 +1745,7 @@ export class GoogleDnsManagedZone extends cdktf.TerraformResource {
       terraformResourceType: 'google_dns_managed_zone',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.25.0',
+        providerVersion: '6.26.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
