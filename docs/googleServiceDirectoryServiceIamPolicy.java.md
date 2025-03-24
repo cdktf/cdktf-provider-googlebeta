@@ -4,7 +4,7 @@
 
 ### GoogleServiceDirectoryServiceIamPolicy <a name="GoogleServiceDirectoryServiceIamPolicy" id="@cdktf/provider-google-beta.googleServiceDirectoryServiceIamPolicy.GoogleServiceDirectoryServiceIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_service_directory_service_iam_policy google_service_directory_service_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_service_directory_service_iam_policy google_service_directory_service_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleServiceDirectoryServiceIamPolicy.GoogleServiceDirectoryServiceIamPolicy.Initializer"></a>
 
@@ -40,9 +40,9 @@ GoogleServiceDirectoryServiceIamPolicy.Builder.create(Construct scope, java.lang
 | <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryServiceIamPolicy.GoogleServiceDirectoryServiceIamPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryServiceIamPolicy.GoogleServiceDirectoryServiceIamPolicy.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryServiceIamPolicy.GoogleServiceDirectoryServiceIamPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryServiceIamPolicy.GoogleServiceDirectoryServiceIamPolicy.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_service_directory_service_iam_policy#name GoogleServiceDirectoryServiceIamPolicy#name}. |
-| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryServiceIamPolicy.GoogleServiceDirectoryServiceIamPolicy.Initializer.parameter.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_service_directory_service_iam_policy#policy_data GoogleServiceDirectoryServiceIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryServiceIamPolicy.GoogleServiceDirectoryServiceIamPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_service_directory_service_iam_policy#id GoogleServiceDirectoryServiceIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryServiceIamPolicy.GoogleServiceDirectoryServiceIamPolicy.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_service_directory_service_iam_policy#name GoogleServiceDirectoryServiceIamPolicy#name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryServiceIamPolicy.GoogleServiceDirectoryServiceIamPolicy.Initializer.parameter.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_service_directory_service_iam_policy#policy_data GoogleServiceDirectoryServiceIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryServiceIamPolicy.GoogleServiceDirectoryServiceIamPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_service_directory_service_iam_policy#id GoogleServiceDirectoryServiceIamPolicy#id}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_service_directory_service_iam_policy#name GoogleServiceDirectoryServiceIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_service_directory_service_iam_policy#name GoogleServiceDirectoryServiceIamPolicy#name}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_service_directory_service_iam_policy#policy_data GoogleServiceDirectoryServiceIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_service_directory_service_iam_policy#policy_data GoogleServiceDirectoryServiceIamPolicy#policy_data}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_service_directory_service_iam_policy#id GoogleServiceDirectoryServiceIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_service_directory_service_iam_policy#id GoogleServiceDirectoryServiceIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -563,7 +563,7 @@ The construct id used in the generated config for the GoogleServiceDirectoryServ
 
 The id of the existing GoogleServiceDirectoryServiceIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_service_directory_service_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_service_directory_service_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -871,9 +871,9 @@ GoogleServiceDirectoryServiceIamPolicyConfig.builder()
 | <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryServiceIamPolicy.GoogleServiceDirectoryServiceIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryServiceIamPolicy.GoogleServiceDirectoryServiceIamPolicyConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryServiceIamPolicy.GoogleServiceDirectoryServiceIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryServiceIamPolicy.GoogleServiceDirectoryServiceIamPolicyConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_service_directory_service_iam_policy#name GoogleServiceDirectoryServiceIamPolicy#name}. |
-| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryServiceIamPolicy.GoogleServiceDirectoryServiceIamPolicyConfig.property.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_service_directory_service_iam_policy#policy_data GoogleServiceDirectoryServiceIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryServiceIamPolicy.GoogleServiceDirectoryServiceIamPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_service_directory_service_iam_policy#id GoogleServiceDirectoryServiceIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryServiceIamPolicy.GoogleServiceDirectoryServiceIamPolicyConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_service_directory_service_iam_policy#name GoogleServiceDirectoryServiceIamPolicy#name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryServiceIamPolicy.GoogleServiceDirectoryServiceIamPolicyConfig.property.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_service_directory_service_iam_policy#policy_data GoogleServiceDirectoryServiceIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryServiceIamPolicy.GoogleServiceDirectoryServiceIamPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_service_directory_service_iam_policy#id GoogleServiceDirectoryServiceIamPolicy#id}. |
 
 ---
 
@@ -955,7 +955,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_service_directory_service_iam_policy#name GoogleServiceDirectoryServiceIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_service_directory_service_iam_policy#name GoogleServiceDirectoryServiceIamPolicy#name}.
 
 ---
 
@@ -967,7 +967,7 @@ public java.lang.String getPolicyData();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_service_directory_service_iam_policy#policy_data GoogleServiceDirectoryServiceIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_service_directory_service_iam_policy#policy_data GoogleServiceDirectoryServiceIamPolicy#policy_data}.
 
 ---
 
@@ -979,7 +979,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_service_directory_service_iam_policy#id GoogleServiceDirectoryServiceIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_service_directory_service_iam_policy#id GoogleServiceDirectoryServiceIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

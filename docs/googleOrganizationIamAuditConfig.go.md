@@ -4,7 +4,7 @@
 
 ### GoogleOrganizationIamAuditConfig <a name="GoogleOrganizationIamAuditConfig" id="@cdktf/provider-google-beta.googleOrganizationIamAuditConfig.GoogleOrganizationIamAuditConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_organization_iam_audit_config google_organization_iam_audit_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_iam_audit_config google_organization_iam_audit_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOrganizationIamAuditConfig.GoogleOrganizationIamAuditConfig.Initializer"></a>
 
@@ -487,7 +487,7 @@ The construct id used in the generated config for the GoogleOrganizationIamAudit
 
 The id of the existing GoogleOrganizationIamAuditConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_organization_iam_audit_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_iam_audit_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -813,7 +813,7 @@ LogType *string
 
 Permission type for which logging is to be configured. Must be one of DATA_READ, DATA_WRITE, or ADMIN_READ.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_organization_iam_audit_config#log_type GoogleOrganizationIamAuditConfig#log_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_iam_audit_config#log_type GoogleOrganizationIamAuditConfig#log_type}
 
 ---
 
@@ -829,7 +829,7 @@ Identities that do not cause logging for this type of permission.
 
 Each entry can have one of the following values:user:{emailid}: An email address that represents a specific Google account. For example, alice@gmail.com or joe@example.com. serviceAccount:{emailid}: An email address that represents a service account. For example, my-other-app@appspot.gserviceaccount.com. group:{emailid}: An email address that represents a Google group. For example, admins@example.com. domain:{domain}: A G Suite domain (primary, instead of alias) name that represents all the users of that domain. For example, google.com or example.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_organization_iam_audit_config#exempted_members GoogleOrganizationIamAuditConfig#exempted_members}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_iam_audit_config#exempted_members GoogleOrganizationIamAuditConfig#exempted_members}
 
 ---
 
@@ -869,7 +869,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorgan
 | <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamAuditConfig.GoogleOrganizationIamAuditConfigConfig.property.auditLogConfig">AuditLogConfig</a></code> | <code>interface{}</code> | audit_log_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamAuditConfig.GoogleOrganizationIamAuditConfigConfig.property.orgId">OrgId</a></code> | <code>*string</code> | The numeric ID of the organization in which you want to manage the audit logging config. |
 | <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamAuditConfig.GoogleOrganizationIamAuditConfigConfig.property.service">Service</a></code> | <code>*string</code> | Service which will be enabled for audit logging. The special value allServices covers all services. |
-| <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamAuditConfig.GoogleOrganizationIamAuditConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_organization_iam_audit_config#id GoogleOrganizationIamAuditConfig#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamAuditConfig.GoogleOrganizationIamAuditConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_iam_audit_config#id GoogleOrganizationIamAuditConfig#id}. |
 
 ---
 
@@ -953,7 +953,7 @@ AuditLogConfig interface{}
 
 audit_log_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_organization_iam_audit_config#audit_log_config GoogleOrganizationIamAuditConfig#audit_log_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_iam_audit_config#audit_log_config GoogleOrganizationIamAuditConfig#audit_log_config}
 
 ---
 
@@ -967,7 +967,7 @@ OrgId *string
 
 The numeric ID of the organization in which you want to manage the audit logging config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_organization_iam_audit_config#org_id GoogleOrganizationIamAuditConfig#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_iam_audit_config#org_id GoogleOrganizationIamAuditConfig#org_id}
 
 ---
 
@@ -981,7 +981,7 @@ Service *string
 
 Service which will be enabled for audit logging. The special value allServices covers all services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_organization_iam_audit_config#service GoogleOrganizationIamAuditConfig#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_iam_audit_config#service GoogleOrganizationIamAuditConfig#service}
 
 ---
 
@@ -993,7 +993,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_organization_iam_audit_config#id GoogleOrganizationIamAuditConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_iam_audit_config#id GoogleOrganizationIamAuditConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

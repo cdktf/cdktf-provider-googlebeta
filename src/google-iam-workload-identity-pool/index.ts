@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_iam_workload_identity_pool
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iam_workload_identity_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface GoogleIamWorkloadIdentityPoolConfig extends cdktf.TerraformMeta
   /**
   * A description of the pool. Cannot exceed 256 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_iam_workload_identity_pool#description GoogleIamWorkloadIdentityPool#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iam_workload_identity_pool#description GoogleIamWorkloadIdentityPool#description}
   */
   readonly description?: string;
   /**
@@ -23,24 +23,24 @@ export interface GoogleIamWorkloadIdentityPoolConfig extends cdktf.TerraformMeta
   * existing tokens to access resources. If the pool is re-enabled, existing tokens grant
   * access again.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_iam_workload_identity_pool#disabled GoogleIamWorkloadIdentityPool#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iam_workload_identity_pool#disabled GoogleIamWorkloadIdentityPool#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * A display name for the pool. Cannot exceed 32 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_iam_workload_identity_pool#display_name GoogleIamWorkloadIdentityPool#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iam_workload_identity_pool#display_name GoogleIamWorkloadIdentityPool#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_iam_workload_identity_pool#id GoogleIamWorkloadIdentityPool#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iam_workload_identity_pool#id GoogleIamWorkloadIdentityPool#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_iam_workload_identity_pool#project GoogleIamWorkloadIdentityPool#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iam_workload_identity_pool#project GoogleIamWorkloadIdentityPool#project}
   */
   readonly project?: string;
   /**
@@ -48,27 +48,27 @@ export interface GoogleIamWorkloadIdentityPoolConfig extends cdktf.TerraformMeta
   * value should be 4-32 characters, and may contain the characters [a-z0-9-]. The prefix
   * 'gcp-' is reserved for use by Google, and may not be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_iam_workload_identity_pool#workload_identity_pool_id GoogleIamWorkloadIdentityPool#workload_identity_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iam_workload_identity_pool#workload_identity_pool_id GoogleIamWorkloadIdentityPool#workload_identity_pool_id}
   */
   readonly workloadIdentityPoolId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_iam_workload_identity_pool#timeouts GoogleIamWorkloadIdentityPool#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iam_workload_identity_pool#timeouts GoogleIamWorkloadIdentityPool#timeouts}
   */
   readonly timeouts?: GoogleIamWorkloadIdentityPoolTimeouts;
 }
 export interface GoogleIamWorkloadIdentityPoolTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_iam_workload_identity_pool#create GoogleIamWorkloadIdentityPool#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iam_workload_identity_pool#create GoogleIamWorkloadIdentityPool#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_iam_workload_identity_pool#delete GoogleIamWorkloadIdentityPool#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iam_workload_identity_pool#delete GoogleIamWorkloadIdentityPool#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_iam_workload_identity_pool#update GoogleIamWorkloadIdentityPool#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iam_workload_identity_pool#update GoogleIamWorkloadIdentityPool#update}
   */
   readonly update?: string;
 }
@@ -220,7 +220,7 @@ export class GoogleIamWorkloadIdentityPoolTimeoutsOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_iam_workload_identity_pool google_iam_workload_identity_pool}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iam_workload_identity_pool google_iam_workload_identity_pool}
 */
 export class GoogleIamWorkloadIdentityPool extends cdktf.TerraformResource {
 
@@ -236,7 +236,7 @@ export class GoogleIamWorkloadIdentityPool extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleIamWorkloadIdentityPool resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleIamWorkloadIdentityPool to import
-  * @param importFromId The id of the existing GoogleIamWorkloadIdentityPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_iam_workload_identity_pool#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleIamWorkloadIdentityPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iam_workload_identity_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleIamWorkloadIdentityPool to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -248,7 +248,7 @@ export class GoogleIamWorkloadIdentityPool extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_iam_workload_identity_pool google_iam_workload_identity_pool} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iam_workload_identity_pool google_iam_workload_identity_pool} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -259,7 +259,7 @@ export class GoogleIamWorkloadIdentityPool extends cdktf.TerraformResource {
       terraformResourceType: 'google_iam_workload_identity_pool',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.25.0',
+        providerVersion: '6.26.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### GoogleCloudTasksQueue <a name="GoogleCloudTasksQueue" id="@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueue"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue google_cloud_tasks_queue}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue google_cloud_tasks_queue}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueue.Initializer"></a>
 
@@ -608,7 +608,7 @@ The construct id used in the generated config for the GoogleCloudTasksQueue to i
 
 The id of the existing GoogleCloudTasksQueue that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1059,7 +1059,7 @@ App instance.
 
 By default, the task is sent to an instance which is available when the task is attempted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#instance GoogleCloudTasksQueue#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#instance GoogleCloudTasksQueue#instance}
 
 ---
 
@@ -1075,7 +1075,7 @@ App service.
 
 By default, the task is sent to the service which is the default service when the task is attempted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#service GoogleCloudTasksQueue#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#service GoogleCloudTasksQueue#service}
 
 ---
 
@@ -1091,7 +1091,7 @@ App version.
 
 By default, the task is sent to the version which is the default version when the task is attempted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#version GoogleCloudTasksQueue#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#version GoogleCloudTasksQueue#version}
 
 ---
 
@@ -1137,9 +1137,9 @@ new GoogleCloudTasksQueueConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueConfig.property.location">Location</a></code> | <code>string</code> | The location of the queue. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueConfig.property.appEngineRoutingOverride">AppEngineRoutingOverride</a></code> | <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueAppEngineRoutingOverride">GoogleCloudTasksQueueAppEngineRoutingOverride</a></code> | app_engine_routing_override block. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueConfig.property.httpTarget">HttpTarget</a></code> | <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueHttpTarget">GoogleCloudTasksQueueHttpTarget</a></code> | http_target block. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#id GoogleCloudTasksQueue#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#id GoogleCloudTasksQueue#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueConfig.property.name">Name</a></code> | <code>string</code> | The queue name. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#project GoogleCloudTasksQueue#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#project GoogleCloudTasksQueue#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueConfig.property.rateLimits">RateLimits</a></code> | <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueRateLimits">GoogleCloudTasksQueueRateLimits</a></code> | rate_limits block. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueConfig.property.retryConfig">RetryConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueRetryConfig">GoogleCloudTasksQueueRetryConfig</a></code> | retry_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueConfig.property.stackdriverLoggingConfig">StackdriverLoggingConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueStackdriverLoggingConfig">GoogleCloudTasksQueueStackdriverLoggingConfig</a></code> | stackdriver_logging_config block. |
@@ -1227,7 +1227,7 @@ public string Location { get; set; }
 
 The location of the queue.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#location GoogleCloudTasksQueue#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#location GoogleCloudTasksQueue#location}
 
 ---
 
@@ -1241,7 +1241,7 @@ public GoogleCloudTasksQueueAppEngineRoutingOverride AppEngineRoutingOverride { 
 
 app_engine_routing_override block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#app_engine_routing_override GoogleCloudTasksQueue#app_engine_routing_override}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#app_engine_routing_override GoogleCloudTasksQueue#app_engine_routing_override}
 
 ---
 
@@ -1255,7 +1255,7 @@ public GoogleCloudTasksQueueHttpTarget HttpTarget { get; set; }
 
 http_target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#http_target GoogleCloudTasksQueue#http_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#http_target GoogleCloudTasksQueue#http_target}
 
 ---
 
@@ -1267,7 +1267,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#id GoogleCloudTasksQueue#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#id GoogleCloudTasksQueue#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1284,7 +1284,7 @@ public string Name { get; set; }
 
 The queue name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#name GoogleCloudTasksQueue#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#name GoogleCloudTasksQueue#name}
 
 ---
 
@@ -1296,7 +1296,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#project GoogleCloudTasksQueue#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#project GoogleCloudTasksQueue#project}.
 
 ---
 
@@ -1310,7 +1310,7 @@ public GoogleCloudTasksQueueRateLimits RateLimits { get; set; }
 
 rate_limits block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#rate_limits GoogleCloudTasksQueue#rate_limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#rate_limits GoogleCloudTasksQueue#rate_limits}
 
 ---
 
@@ -1324,7 +1324,7 @@ public GoogleCloudTasksQueueRetryConfig RetryConfig { get; set; }
 
 retry_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#retry_config GoogleCloudTasksQueue#retry_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#retry_config GoogleCloudTasksQueue#retry_config}
 
 ---
 
@@ -1338,7 +1338,7 @@ public GoogleCloudTasksQueueStackdriverLoggingConfig StackdriverLoggingConfig { 
 
 stackdriver_logging_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#stackdriver_logging_config GoogleCloudTasksQueue#stackdriver_logging_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#stackdriver_logging_config GoogleCloudTasksQueue#stackdriver_logging_config}
 
 ---
 
@@ -1352,7 +1352,7 @@ public GoogleCloudTasksQueueTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#timeouts GoogleCloudTasksQueue#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#timeouts GoogleCloudTasksQueue#timeouts}
 
 ---
 
@@ -1394,7 +1394,7 @@ public object HeaderOverrides { get; set; }
 
 header_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#header_overrides GoogleCloudTasksQueue#header_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#header_overrides GoogleCloudTasksQueue#header_overrides}
 
 ---
 
@@ -1411,7 +1411,7 @@ The HTTP method to use for the request.
 When specified, it overrides HttpRequest for the task.
 Note that if the value is set to GET the body of the task will be ignored at execution time. Possible values: ["HTTP_METHOD_UNSPECIFIED", "POST", "GET", "HEAD", "PUT", "DELETE", "PATCH", "OPTIONS"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#http_method GoogleCloudTasksQueue#http_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#http_method GoogleCloudTasksQueue#http_method}
 
 ---
 
@@ -1425,7 +1425,7 @@ public GoogleCloudTasksQueueHttpTargetOauthToken OauthToken { get; set; }
 
 oauth_token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#oauth_token GoogleCloudTasksQueue#oauth_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#oauth_token GoogleCloudTasksQueue#oauth_token}
 
 ---
 
@@ -1439,7 +1439,7 @@ public GoogleCloudTasksQueueHttpTargetOidcToken OidcToken { get; set; }
 
 oidc_token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#oidc_token GoogleCloudTasksQueue#oidc_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#oidc_token GoogleCloudTasksQueue#oidc_token}
 
 ---
 
@@ -1453,7 +1453,7 @@ public GoogleCloudTasksQueueHttpTargetUriOverride UriOverride { get; set; }
 
 uri_override block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#uri_override GoogleCloudTasksQueue#uri_override}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#uri_override GoogleCloudTasksQueue#uri_override}
 
 ---
 
@@ -1487,7 +1487,7 @@ public GoogleCloudTasksQueueHttpTargetHeaderOverridesHeader Header { get; set; }
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#header GoogleCloudTasksQueue#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#header GoogleCloudTasksQueue#header}
 
 ---
 
@@ -1523,7 +1523,7 @@ public string Key { get; set; }
 
 The Key of the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#key GoogleCloudTasksQueue#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#key GoogleCloudTasksQueue#key}
 
 ---
 
@@ -1537,7 +1537,7 @@ public string Value { get; set; }
 
 The Value of the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#value GoogleCloudTasksQueue#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#value GoogleCloudTasksQueue#value}
 
 ---
 
@@ -1576,7 +1576,7 @@ Service account email to be used for generating OAuth token.
 The service account must be within the same project as the queue.
 The caller must have iam.serviceAccounts.actAs permission for the service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#service_account_email GoogleCloudTasksQueue#service_account_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#service_account_email GoogleCloudTasksQueue#service_account_email}
 
 ---
 
@@ -1590,7 +1590,7 @@ public string Scope { get; set; }
 
 OAuth scope to be used for generating OAuth access token. If not specified, "https://www.googleapis.com/auth/cloud-platform" will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#scope GoogleCloudTasksQueue#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#scope GoogleCloudTasksQueue#scope}
 
 ---
 
@@ -1629,7 +1629,7 @@ Service account email to be used for generating OIDC token.
 The service account must be within the same project as the queue.
 The caller must have iam.serviceAccounts.actAs permission for the service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#service_account_email GoogleCloudTasksQueue#service_account_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#service_account_email GoogleCloudTasksQueue#service_account_email}
 
 ---
 
@@ -1643,7 +1643,7 @@ public string Audience { get; set; }
 
 Audience to be used when generating OIDC token. If not specified, the URI specified in target will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#audience GoogleCloudTasksQueue#audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#audience GoogleCloudTasksQueue#audience}
 
 ---
 
@@ -1692,7 +1692,7 @@ For example, if the task URL is "https://www.google.com", and host value
 is set to "example.net", the overridden URI will be changed to "https://example.net".
 Host value cannot be an empty string (INVALID_ARGUMENT).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#host GoogleCloudTasksQueue#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#host GoogleCloudTasksQueue#host}
 
 ---
 
@@ -1706,7 +1706,7 @@ public GoogleCloudTasksQueueHttpTargetUriOverridePathOverride PathOverride { get
 
 path_override block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#path_override GoogleCloudTasksQueue#path_override}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#path_override GoogleCloudTasksQueue#path_override}
 
 ---
 
@@ -1725,7 +1725,7 @@ For instance, for a URI http://www.google.com/foo and port=123, the overridden U
 Note that the port value must be a positive integer.
 Setting the port to 0 (Zero) clears the URI port.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#port GoogleCloudTasksQueue#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#port GoogleCloudTasksQueue#port}
 
 ---
 
@@ -1739,7 +1739,7 @@ public GoogleCloudTasksQueueHttpTargetUriOverrideQueryOverride QueryOverride { g
 
 query_override block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#query_override GoogleCloudTasksQueue#query_override}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#query_override GoogleCloudTasksQueue#query_override}
 
 ---
 
@@ -1755,7 +1755,7 @@ Scheme override.
 
 When specified, the task URI scheme is replaced by the provided value (HTTP or HTTPS). Possible values: ["HTTP", "HTTPS"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#scheme GoogleCloudTasksQueue#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#scheme GoogleCloudTasksQueue#scheme}
 
 ---
 
@@ -1771,7 +1771,7 @@ URI Override Enforce Mode.
 
 When specified, determines the Target UriOverride mode. If not specified, it defaults to ALWAYS. Possible values: ["ALWAYS", "IF_NOT_EXISTS"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#uri_override_enforce_mode GoogleCloudTasksQueue#uri_override_enforce_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#uri_override_enforce_mode GoogleCloudTasksQueue#uri_override_enforce_mode}
 
 ---
 
@@ -1805,7 +1805,7 @@ public string Path { get; set; }
 
 The URI path (e.g., /users/1234). Default is an empty string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#path GoogleCloudTasksQueue#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#path GoogleCloudTasksQueue#path}
 
 ---
 
@@ -1839,7 +1839,7 @@ public string QueryParams { get; set; }
 
 The query parameters (e.g., qparam1=123&qparam2=456). Default is an empty string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#query_params GoogleCloudTasksQueue#query_params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#query_params GoogleCloudTasksQueue#query_params}
 
 ---
 
@@ -1879,7 +1879,7 @@ After this threshold has been
 reached, Cloud Tasks stops dispatching tasks until the number of
 concurrent requests decreases.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#max_concurrent_dispatches GoogleCloudTasksQueue#max_concurrent_dispatches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#max_concurrent_dispatches GoogleCloudTasksQueue#max_concurrent_dispatches}
 
 ---
 
@@ -1895,7 +1895,7 @@ The maximum rate at which tasks are dispatched from this queue.
 
 If unspecified when the queue is created, Cloud Tasks will pick the default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#max_dispatches_per_second GoogleCloudTasksQueue#max_dispatches_per_second}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#max_dispatches_per_second GoogleCloudTasksQueue#max_dispatches_per_second}
 
 ---
 
@@ -1946,7 +1946,7 @@ the default.
 
 -1 indicates unlimited attempts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#max_attempts GoogleCloudTasksQueue#max_attempts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#max_attempts GoogleCloudTasksQueue#max_attempts}
 
 ---
 
@@ -1960,7 +1960,7 @@ public string MaxBackoff { get; set; }
 
 A task will be scheduled for retry between minBackoff and maxBackoff duration after it fails, if the queue's RetryConfig specifies that the task should be retried.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#max_backoff GoogleCloudTasksQueue#max_backoff}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#max_backoff GoogleCloudTasksQueue#max_backoff}
 
 ---
 
@@ -1978,7 +1978,7 @@ A task's retry interval starts at minBackoff, then doubles maxDoublings times,
 then increases linearly, and finally retries retries at intervals of maxBackoff
 up to maxAttempts times.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#max_doublings GoogleCloudTasksQueue#max_doublings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#max_doublings GoogleCloudTasksQueue#max_doublings}
 
 ---
 
@@ -1998,7 +1998,7 @@ made and the task will be deleted.
 
 If zero, then the task age is unlimited.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#max_retry_duration GoogleCloudTasksQueue#max_retry_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#max_retry_duration GoogleCloudTasksQueue#max_retry_duration}
 
 ---
 
@@ -2012,7 +2012,7 @@ public string MinBackoff { get; set; }
 
 A task will be scheduled for retry between minBackoff and maxBackoff duration after it fails, if the queue's RetryConfig specifies that the task should be retried.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#min_backoff GoogleCloudTasksQueue#min_backoff}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#min_backoff GoogleCloudTasksQueue#min_backoff}
 
 ---
 
@@ -2049,7 +2049,7 @@ Specifies the fraction of operations to write to Stackdriver Logging.
 This field may contain any value between 0.0 and 1.0, inclusive. 0.0 is the
 default and means that no operations are logged.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#sampling_ratio GoogleCloudTasksQueue#sampling_ratio}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#sampling_ratio GoogleCloudTasksQueue#sampling_ratio}
 
 ---
 
@@ -2071,9 +2071,9 @@ new GoogleCloudTasksQueueTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#create GoogleCloudTasksQueue#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#delete GoogleCloudTasksQueue#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#update GoogleCloudTasksQueue#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#create GoogleCloudTasksQueue#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#delete GoogleCloudTasksQueue#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#update GoogleCloudTasksQueue#update}. |
 
 ---
 
@@ -2085,7 +2085,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#create GoogleCloudTasksQueue#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#create GoogleCloudTasksQueue#create}.
 
 ---
 
@@ -2097,7 +2097,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#delete GoogleCloudTasksQueue#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#delete GoogleCloudTasksQueue#delete}.
 
 ---
 
@@ -2109,7 +2109,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_cloud_tasks_queue#update GoogleCloudTasksQueue#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_tasks_queue#update GoogleCloudTasksQueue#update}.
 
 ---
 

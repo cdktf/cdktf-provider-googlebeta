@@ -4,7 +4,7 @@
 
 ### GoogleEndpointsServiceConsumersIamPolicy <a name="GoogleEndpointsServiceConsumersIamPolicy" id="@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_endpoints_service_consumers_iam_policy google_endpoints_service_consumers_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_endpoints_service_consumers_iam_policy google_endpoints_service_consumers_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicy.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the GoogleEndpointsServiceCons
 
 The id of the existing GoogleEndpointsServiceConsumersIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_endpoints_service_consumers_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_endpoints_service_consumers_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -801,10 +801,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleendpo
 | <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicyConfig.property.consumerProject">ConsumerProject</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_endpoints_service_consumers_iam_policy#consumer_project GoogleEndpointsServiceConsumersIamPolicy#consumer_project}. |
-| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_endpoints_service_consumers_iam_policy#policy_data GoogleEndpointsServiceConsumersIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicyConfig.property.serviceName">ServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_endpoints_service_consumers_iam_policy#service_name GoogleEndpointsServiceConsumersIamPolicy#service_name}. |
-| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_endpoints_service_consumers_iam_policy#id GoogleEndpointsServiceConsumersIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicyConfig.property.consumerProject">ConsumerProject</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_endpoints_service_consumers_iam_policy#consumer_project GoogleEndpointsServiceConsumersIamPolicy#consumer_project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_endpoints_service_consumers_iam_policy#policy_data GoogleEndpointsServiceConsumersIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicyConfig.property.serviceName">ServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_endpoints_service_consumers_iam_policy#service_name GoogleEndpointsServiceConsumersIamPolicy#service_name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_endpoints_service_consumers_iam_policy#id GoogleEndpointsServiceConsumersIamPolicy#id}. |
 
 ---
 
@@ -886,7 +886,7 @@ ConsumerProject *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_endpoints_service_consumers_iam_policy#consumer_project GoogleEndpointsServiceConsumersIamPolicy#consumer_project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_endpoints_service_consumers_iam_policy#consumer_project GoogleEndpointsServiceConsumersIamPolicy#consumer_project}.
 
 ---
 
@@ -898,7 +898,7 @@ PolicyData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_endpoints_service_consumers_iam_policy#policy_data GoogleEndpointsServiceConsumersIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_endpoints_service_consumers_iam_policy#policy_data GoogleEndpointsServiceConsumersIamPolicy#policy_data}.
 
 ---
 
@@ -910,7 +910,7 @@ ServiceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_endpoints_service_consumers_iam_policy#service_name GoogleEndpointsServiceConsumersIamPolicy#service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_endpoints_service_consumers_iam_policy#service_name GoogleEndpointsServiceConsumersIamPolicy#service_name}.
 
 ---
 
@@ -922,7 +922,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_endpoints_service_consumers_iam_policy#id GoogleEndpointsServiceConsumersIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_endpoints_service_consumers_iam_policy#id GoogleEndpointsServiceConsumersIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

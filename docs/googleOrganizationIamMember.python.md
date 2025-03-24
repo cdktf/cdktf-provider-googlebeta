@@ -4,7 +4,7 @@
 
 ### GoogleOrganizationIamMember <a name="GoogleOrganizationIamMember" id="@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_organization_iam_member google_organization_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_iam_member google_organization_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMember.Initializer"></a>
 
@@ -40,11 +40,11 @@ googleOrganizationIamMember.GoogleOrganizationIamMember(
 | <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMember.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMember.Initializer.parameter.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_organization_iam_member#member GoogleOrganizationIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMember.Initializer.parameter.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_iam_member#member GoogleOrganizationIamMember#member}. |
 | <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMember.Initializer.parameter.orgId">org_id</a></code> | <code>str</code> | The numeric ID of the organization in which you want to manage the audit logging config. |
-| <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMember.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_organization_iam_member#role GoogleOrganizationIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMember.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_iam_member#role GoogleOrganizationIamMember#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMember.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMemberCondition">GoogleOrganizationIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMember.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_organization_iam_member#id GoogleOrganizationIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMember.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_iam_member#id GoogleOrganizationIamMember#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_organization_iam_member#member GoogleOrganizationIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_iam_member#member GoogleOrganizationIamMember#member}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The numeric ID of the organization in which you want to manage the audit logging config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_organization_iam_member#org_id GoogleOrganizationIamMember#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_iam_member#org_id GoogleOrganizationIamMember#org_id}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_organization_iam_member#role GoogleOrganizationIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_iam_member#role GoogleOrganizationIamMember#role}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_organization_iam_member#condition GoogleOrganizationIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_iam_member#condition GoogleOrganizationIamMember#condition}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_organization_iam_member#id GoogleOrganizationIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_iam_member#id GoogleOrganizationIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -527,7 +527,7 @@ def put_condition(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_organization_iam_member#expression GoogleOrganizationIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_iam_member#expression GoogleOrganizationIamMember#expression}.
 
 ---
 
@@ -535,7 +535,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_organization_iam_member#title GoogleOrganizationIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_iam_member#title GoogleOrganizationIamMember#title}.
 
 ---
 
@@ -543,7 +543,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_organization_iam_member#description GoogleOrganizationIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_iam_member#description GoogleOrganizationIamMember#description}.
 
 ---
 
@@ -673,7 +673,7 @@ The construct id used in the generated config for the GoogleOrganizationIamMembe
 
 The id of the existing GoogleOrganizationIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_organization_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1007,9 +1007,9 @@ googleOrganizationIamMember.GoogleOrganizationIamMemberCondition(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMemberCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_organization_iam_member#expression GoogleOrganizationIamMember#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMemberCondition.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_organization_iam_member#title GoogleOrganizationIamMember#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMemberCondition.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_organization_iam_member#description GoogleOrganizationIamMember#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMemberCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_iam_member#expression GoogleOrganizationIamMember#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMemberCondition.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_iam_member#title GoogleOrganizationIamMember#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMemberCondition.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_iam_member#description GoogleOrganizationIamMember#description}. |
 
 ---
 
@@ -1021,7 +1021,7 @@ expression: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_organization_iam_member#expression GoogleOrganizationIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_iam_member#expression GoogleOrganizationIamMember#expression}.
 
 ---
 
@@ -1033,7 +1033,7 @@ title: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_organization_iam_member#title GoogleOrganizationIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_iam_member#title GoogleOrganizationIamMember#title}.
 
 ---
 
@@ -1045,7 +1045,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_organization_iam_member#description GoogleOrganizationIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_iam_member#description GoogleOrganizationIamMember#description}.
 
 ---
 
@@ -1083,11 +1083,11 @@ googleOrganizationIamMember.GoogleOrganizationIamMemberConfig(
 | <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMemberConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMemberConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMemberConfig.property.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_organization_iam_member#member GoogleOrganizationIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMemberConfig.property.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_iam_member#member GoogleOrganizationIamMember#member}. |
 | <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMemberConfig.property.orgId">org_id</a></code> | <code>str</code> | The numeric ID of the organization in which you want to manage the audit logging config. |
-| <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMemberConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_organization_iam_member#role GoogleOrganizationIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMemberConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_iam_member#role GoogleOrganizationIamMember#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMemberCondition">GoogleOrganizationIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMemberConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_organization_iam_member#id GoogleOrganizationIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMemberConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_iam_member#id GoogleOrganizationIamMember#id}. |
 
 ---
 
@@ -1169,7 +1169,7 @@ member: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_organization_iam_member#member GoogleOrganizationIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_iam_member#member GoogleOrganizationIamMember#member}.
 
 ---
 
@@ -1183,7 +1183,7 @@ org_id: str
 
 The numeric ID of the organization in which you want to manage the audit logging config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_organization_iam_member#org_id GoogleOrganizationIamMember#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_iam_member#org_id GoogleOrganizationIamMember#org_id}
 
 ---
 
@@ -1195,7 +1195,7 @@ role: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_organization_iam_member#role GoogleOrganizationIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_iam_member#role GoogleOrganizationIamMember#role}.
 
 ---
 
@@ -1209,7 +1209,7 @@ condition: GoogleOrganizationIamMemberCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_organization_iam_member#condition GoogleOrganizationIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_iam_member#condition GoogleOrganizationIamMember#condition}
 
 ---
 
@@ -1221,7 +1221,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_organization_iam_member#id GoogleOrganizationIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_iam_member#id GoogleOrganizationIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

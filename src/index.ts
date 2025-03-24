@@ -564,6 +564,7 @@ export * as googleEventarcChannel from './google-eventarc-channel';
 export * as googleEventarcGoogleApiSource from './google-eventarc-google-api-source';
 export * as googleEventarcGoogleChannelConfig from './google-eventarc-google-channel-config';
 export * as googleEventarcMessageBus from './google-eventarc-message-bus';
+export * as googleEventarcPipeline from './google-eventarc-pipeline';
 export * as googleEventarcTrigger from './google-eventarc-trigger';
 export * as googleFilestoreBackup from './google-filestore-backup';
 export * as googleFilestoreInstance from './google-filestore-instance';
@@ -576,6 +577,7 @@ export * as googleFirebaseAppCheckPlayIntegrityConfig from './google-firebase-ap
 export * as googleFirebaseAppCheckRecaptchaEnterpriseConfig from './google-firebase-app-check-recaptcha-enterprise-config';
 export * as googleFirebaseAppCheckRecaptchaV3Config from './google-firebase-app-check-recaptcha-v3-config';
 export * as googleFirebaseAppCheckServiceConfig from './google-firebase-app-check-service-config';
+export * as googleFirebaseAppHostingBackend from './google-firebase-app-hosting-backend';
 export * as googleFirebaseAppleApp from './google-firebase-apple-app';
 export * as googleFirebaseDataConnectService from './google-firebase-data-connect-service';
 export * as googleFirebaseDatabaseInstance from './google-firebase-database-instance';
@@ -768,6 +770,8 @@ export * as googleLoggingProjectExclusion from './google-logging-project-exclusi
 export * as googleLoggingProjectSink from './google-logging-project-sink';
 export * as googleLookerInstance from './google-looker-instance';
 export * as googleManagedKafkaCluster from './google-managed-kafka-cluster';
+export * as googleManagedKafkaConnectCluster from './google-managed-kafka-connect-cluster';
+export * as googleManagedKafkaConnector from './google-managed-kafka-connector';
 export * as googleManagedKafkaTopic from './google-managed-kafka-topic';
 export * as googleMemcacheInstance from './google-memcache-instance';
 export * as googleMemorystoreInstance from './google-memorystore-instance';
@@ -1379,6 +1383,8 @@ export * as dataGooglePrivatecaCertificateTemplateIamPolicy from './data-google-
 export * as dataGooglePrivilegedAccessManagerEntitlement from './data-google-privileged-access-manager-entitlement';
 export * as dataGoogleProject from './data-google-project';
 export * as dataGoogleProjectAncestry from './data-google-project-ancestry';
+export * as dataGoogleProjectIamCustomRole from './data-google-project-iam-custom-role';
+export * as dataGoogleProjectIamCustomRoles from './data-google-project-iam-custom-roles';
 export * as dataGoogleProjectIamPolicy from './data-google-project-iam-policy';
 export * as dataGoogleProjectOrganizationPolicy from './data-google-project-organization-policy';
 export * as dataGoogleProjectService from './data-google-project-service';

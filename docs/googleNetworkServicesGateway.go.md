@@ -4,7 +4,7 @@
 
 ### GoogleNetworkServicesGateway <a name="GoogleNetworkServicesGateway" id="@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_network_services_gateway google_network_services_gateway}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_network_services_gateway google_network_services_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.Initializer"></a>
 
@@ -78,8 +78,10 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.resetCertificateUrls">ResetCertificateUrls</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.resetDeleteSwgAutogenRouterOnDestroy">ResetDeleteSwgAutogenRouterOnDestroy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.resetDescription">ResetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.resetEnvoyHeaders">ResetEnvoyHeaders</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.resetGatewaySecurityPolicy">ResetGatewaySecurityPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.resetIpVersion">ResetIpVersion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.resetLabels">ResetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.resetLocation">ResetLocation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.resetNetwork">ResetNetwork</a></code> | *No description.* |
@@ -416,6 +418,12 @@ func ResetDeleteSwgAutogenRouterOnDestroy()
 func ResetDescription()
 ```
 
+##### `ResetEnvoyHeaders` <a name="ResetEnvoyHeaders" id="@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.resetEnvoyHeaders"></a>
+
+```go
+func ResetEnvoyHeaders()
+```
+
 ##### `ResetGatewaySecurityPolicy` <a name="ResetGatewaySecurityPolicy" id="@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.resetGatewaySecurityPolicy"></a>
 
 ```go
@@ -426,6 +434,12 @@ func ResetGatewaySecurityPolicy()
 
 ```go
 func ResetId()
+```
+
+##### `ResetIpVersion` <a name="ResetIpVersion" id="@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.resetIpVersion"></a>
+
+```go
+func ResetIpVersion()
 ```
 
 ##### `ResetLabels` <a name="ResetLabels" id="@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.resetLabels"></a>
@@ -585,7 +599,7 @@ The construct id used in the generated config for the GoogleNetworkServicesGatew
 
 The id of the existing GoogleNetworkServicesGateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_network_services_gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_network_services_gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -625,8 +639,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.property.certificateUrlsInput">CertificateUrlsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.property.deleteSwgAutogenRouterOnDestroyInput">DeleteSwgAutogenRouterOnDestroyInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.property.envoyHeadersInput">EnvoyHeadersInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.property.gatewaySecurityPolicyInput">GatewaySecurityPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.property.ipVersionInput">IpVersionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.property.labelsInput">LabelsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.property.locationInput">LocationInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
@@ -643,8 +659,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.property.certificateUrls">CertificateUrls</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.property.deleteSwgAutogenRouterOnDestroy">DeleteSwgAutogenRouterOnDestroy</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.property.description">Description</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.property.envoyHeaders">EnvoyHeaders</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.property.gatewaySecurityPolicy">GatewaySecurityPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.property.ipVersion">IpVersion</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.property.labels">Labels</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.property.location">Location</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.property.name">Name</a></code> | <code>*string</code> | *No description.* |
@@ -901,6 +919,16 @@ func DescriptionInput() *string
 
 ---
 
+##### `EnvoyHeadersInput`<sup>Optional</sup> <a name="EnvoyHeadersInput" id="@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.property.envoyHeadersInput"></a>
+
+```go
+func EnvoyHeadersInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `GatewaySecurityPolicyInput`<sup>Optional</sup> <a name="GatewaySecurityPolicyInput" id="@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.property.gatewaySecurityPolicyInput"></a>
 
 ```go
@@ -915,6 +943,16 @@ func GatewaySecurityPolicyInput() *string
 
 ```go
 func IdInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `IpVersionInput`<sup>Optional</sup> <a name="IpVersionInput" id="@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.property.ipVersionInput"></a>
+
+```go
+func IpVersionInput() *string
 ```
 
 - *Type:* *string
@@ -1081,6 +1119,16 @@ func Description() *string
 
 ---
 
+##### `EnvoyHeaders`<sup>Required</sup> <a name="EnvoyHeaders" id="@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.property.envoyHeaders"></a>
+
+```go
+func EnvoyHeaders() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `GatewaySecurityPolicy`<sup>Required</sup> <a name="GatewaySecurityPolicy" id="@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.property.gatewaySecurityPolicy"></a>
 
 ```go
@@ -1095,6 +1143,16 @@ func GatewaySecurityPolicy() *string
 
 ```go
 func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `IpVersion`<sup>Required</sup> <a name="IpVersion" id="@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.property.ipVersion"></a>
+
+```go
+func IpVersion() *string
 ```
 
 - *Type:* *string
@@ -1253,8 +1311,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlenetwo
 	CertificateUrls: *[]*string,
 	DeleteSwgAutogenRouterOnDestroy: interface{},
 	Description: *string,
+	EnvoyHeaders: *string,
 	GatewaySecurityPolicy: *string,
 	Id: *string,
+	IpVersion: *string,
 	Labels: *map[string]*string,
 	Location: *string,
 	Network: *string,
@@ -1278,23 +1338,25 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlenetwo
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.name">Name</a></code> | <code>*string</code> | Short name of the Gateway resource to be created. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.name">Name</a></code> | <code>*string</code> | Name of the Gateway resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.ports">Ports</a></code> | <code>*[]*f64</code> | One or more port numbers (1-65535), on which the Gateway will receive traffic. |
-| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.type">Type</a></code> | <code>*string</code> | Immutable. The type of the customer-managed gateway. Possible values are: * OPEN_MESH * SECURE_WEB_GATEWAY. Possible values: ["TYPE_UNSPECIFIED", "OPEN_MESH", "SECURE_WEB_GATEWAY"]. |
-| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.addresses">Addresses</a></code> | <code>*[]*string</code> | Zero or one IPv4-address on which the Gateway will receive the traffic. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.type">Type</a></code> | <code>*string</code> | Immutable. The type of the customer managed gateway. Possible values: ["OPEN_MESH", "SECURE_WEB_GATEWAY"]. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.addresses">Addresses</a></code> | <code>*[]*string</code> | Zero or one IPv4 or IPv6 address on which the Gateway will receive the traffic. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.certificateUrls">CertificateUrls</a></code> | <code>*[]*string</code> | A fully-qualified Certificates URL reference. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.deleteSwgAutogenRouterOnDestroy">DeleteSwgAutogenRouterOnDestroy</a></code> | <code>interface{}</code> | When deleting a gateway of type 'SECURE_WEB_GATEWAY', this boolean option will also delete auto generated router by the gateway creation. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.description">Description</a></code> | <code>*string</code> | A free-text description of the resource. Max length 1024 characters. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.envoyHeaders">EnvoyHeaders</a></code> | <code>*string</code> | Determines if envoy will insert internal debug headers into upstream requests. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.gatewaySecurityPolicy">GatewaySecurityPolicy</a></code> | <code>*string</code> | A fully-qualified GatewaySecurityPolicy URL reference. |
-| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_network_services_gateway#id GoogleNetworkServicesGateway#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_network_services_gateway#id GoogleNetworkServicesGateway#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.ipVersion">IpVersion</a></code> | <code>*string</code> | The IP Version that will be used by this gateway. Possible values: ["IPV4", "IPV6"]. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Set of label tags associated with the Gateway resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.location">Location</a></code> | <code>*string</code> | The location of the gateway. The default value is 'global'. |
-| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.network">Network</a></code> | <code>*string</code> | The relative resource name identifying the VPC network that is using this configuration. |
-| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_network_services_gateway#project GoogleNetworkServicesGateway#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.network">Network</a></code> | <code>*string</code> | The relative resource name identifying the VPC network that is using this configuration. For example: 'projects/* /global/networks/network-1'. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_network_services_gateway#project GoogleNetworkServicesGateway#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.routingMode">RoutingMode</a></code> | <code>*string</code> | The routing mode of the Gateway. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.scope">Scope</a></code> | <code>*string</code> | Immutable. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.serverTlsPolicy">ServerTlsPolicy</a></code> | <code>*string</code> | A fully-qualified ServerTLSPolicy URL reference. Specifies how TLS traffic is terminated. If empty, TLS termination is disabled. |
-| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.subnetwork">Subnetwork</a></code> | <code>*string</code> | The relative resource name identifying the subnetwork in which this SWG is allocated. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.subnetwork">Subnetwork</a></code> | <code>*string</code> | The relative resource name identifying the subnetwork in which this SWG is allocated. For example: projects/* /regions/us-central1/subnetworks/network-1. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayTimeouts">GoogleNetworkServicesGatewayTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1377,9 +1439,9 @@ Name *string
 
 - *Type:* *string
 
-Short name of the Gateway resource to be created.
+Name of the Gateway resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_network_services_gateway#name GoogleNetworkServicesGateway#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_network_services_gateway#name GoogleNetworkServicesGateway#name}
 
 ---
 
@@ -1393,10 +1455,10 @@ Ports *[]*f64
 
 One or more port numbers (1-65535), on which the Gateway will receive traffic.
 
-The proxy binds to the specified ports. Gateways of type 'SECURE_WEB_GATEWAY' are
-limited to 1 port. Gateways of type 'OPEN_MESH' listen on 0.0.0.0 and support multiple ports.
+The proxy binds to the specified ports. Gateways of type 'SECURE_WEB_GATEWAY' are limited to 1 port.
+Gateways of type 'OPEN_MESH' listen on 0.0.0.0 for IPv4 and :: for IPv6 and support multiple ports.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_network_services_gateway#ports GoogleNetworkServicesGateway#ports}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_network_services_gateway#ports GoogleNetworkServicesGateway#ports}
 
 ---
 
@@ -1408,9 +1470,9 @@ Type *string
 
 - *Type:* *string
 
-Immutable. The type of the customer-managed gateway. Possible values are: * OPEN_MESH * SECURE_WEB_GATEWAY. Possible values: ["TYPE_UNSPECIFIED", "OPEN_MESH", "SECURE_WEB_GATEWAY"].
+Immutable. The type of the customer managed gateway. Possible values: ["OPEN_MESH", "SECURE_WEB_GATEWAY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_network_services_gateway#type GoogleNetworkServicesGateway#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_network_services_gateway#type GoogleNetworkServicesGateway#type}
 
 ---
 
@@ -1422,13 +1484,14 @@ Addresses *[]*string
 
 - *Type:* *[]*string
 
-Zero or one IPv4-address on which the Gateway will receive the traffic.
+Zero or one IPv4 or IPv6 address on which the Gateway will receive the traffic.
 
-When no address is provided,
-an IP from the subnetwork is allocated This field only applies to gateways of type 'SECURE_WEB_GATEWAY'.
-Gateways of type 'OPEN_MESH' listen on 0.0.0.0.
+When no address is provided, an IP from the subnetwork is allocated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_network_services_gateway#addresses GoogleNetworkServicesGateway#addresses}
+This field only applies to gateways of type 'SECURE_WEB_GATEWAY'.
+Gateways of type 'OPEN_MESH' listen on 0.0.0.0 for IPv4 and :: for IPv6.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_network_services_gateway#addresses GoogleNetworkServicesGateway#addresses}
 
 ---
 
@@ -1445,7 +1508,7 @@ A fully-qualified Certificates URL reference.
 The proxy presents a Certificate (selected based on SNI) when establishing a TLS connection.
 This feature only applies to gateways of type 'SECURE_WEB_GATEWAY'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_network_services_gateway#certificate_urls GoogleNetworkServicesGateway#certificate_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_network_services_gateway#certificate_urls GoogleNetworkServicesGateway#certificate_urls}
 
 ---
 
@@ -1461,7 +1524,7 @@ When deleting a gateway of type 'SECURE_WEB_GATEWAY', this boolean option will a
 
 If there is no other gateway of type 'SECURE_WEB_GATEWAY' remaining for that region and network it will be deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_network_services_gateway#delete_swg_autogen_router_on_destroy GoogleNetworkServicesGateway#delete_swg_autogen_router_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_network_services_gateway#delete_swg_autogen_router_on_destroy GoogleNetworkServicesGateway#delete_swg_autogen_router_on_destroy}
 
 ---
 
@@ -1475,7 +1538,24 @@ Description *string
 
 A free-text description of the resource. Max length 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_network_services_gateway#description GoogleNetworkServicesGateway#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_network_services_gateway#description GoogleNetworkServicesGateway#description}
+
+---
+
+##### `EnvoyHeaders`<sup>Optional</sup> <a name="EnvoyHeaders" id="@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.envoyHeaders"></a>
+
+```go
+EnvoyHeaders *string
+```
+
+- *Type:* *string
+
+Determines if envoy will insert internal debug headers into upstream requests.
+
+Other Envoy headers may still be injected.
+By default, envoy will not insert any debug headers. Possible values: ["NONE", "DEBUG_HEADERS"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_network_services_gateway#envoy_headers GoogleNetworkServicesGateway#envoy_headers}
 
 ---
 
@@ -1493,7 +1573,7 @@ Defines how a server should apply security policy to inbound (VM to Proxy) initi
 For example: 'projects/* /locations/* /gatewaySecurityPolicies/swg-policy'.
 This policy is specific to gateways of type 'SECURE_WEB_GATEWAY'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_network_services_gateway#gateway_security_policy GoogleNetworkServicesGateway#gateway_security_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_network_services_gateway#gateway_security_policy GoogleNetworkServicesGateway#gateway_security_policy}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1507,10 +1587,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_network_services_gateway#id GoogleNetworkServicesGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_network_services_gateway#id GoogleNetworkServicesGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `IpVersion`<sup>Optional</sup> <a name="IpVersion" id="@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.ipVersion"></a>
+
+```go
+IpVersion *string
+```
+
+- *Type:* *string
+
+The IP Version that will be used by this gateway. Possible values: ["IPV4", "IPV6"].
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_network_services_gateway#ip_version GoogleNetworkServicesGateway#ip_version}
 
 ---
 
@@ -1527,7 +1621,7 @@ Set of label tags associated with the Gateway resource.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_network_services_gateway#labels GoogleNetworkServicesGateway#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_network_services_gateway#labels GoogleNetworkServicesGateway#labels}
 
 ---
 
@@ -1541,7 +1635,7 @@ Location *string
 
 The location of the gateway. The default value is 'global'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_network_services_gateway#location GoogleNetworkServicesGateway#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_network_services_gateway#location GoogleNetworkServicesGateway#location}
 
 ---
 
@@ -1553,12 +1647,11 @@ Network *string
 
 - *Type:* *string
 
-The relative resource name identifying the VPC network that is using this configuration.
+The relative resource name identifying the VPC network that is using this configuration. For example: 'projects/* /global/networks/network-1'.
 
-For example: 'projects/* /global/networks/network-1'.
 Currently, this field is specific to gateways of type 'SECURE_WEB_GATEWAY'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_network_services_gateway#network GoogleNetworkServicesGateway#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_network_services_gateway#network GoogleNetworkServicesGateway#network}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1572,7 +1665,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_network_services_gateway#project GoogleNetworkServicesGateway#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_network_services_gateway#project GoogleNetworkServicesGateway#project}.
 
 ---
 
@@ -1588,7 +1681,7 @@ The routing mode of the Gateway.
 
 This field is configurable only for gateways of type SECURE_WEB_GATEWAY. This field is required for gateways of type SECURE_WEB_GATEWAY. Possible values: ["NEXT_HOP_ROUTING_MODE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_network_services_gateway#routing_mode GoogleNetworkServicesGateway#routing_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_network_services_gateway#routing_mode GoogleNetworkServicesGateway#routing_mode}
 
 ---
 
@@ -1603,11 +1696,11 @@ Scope *string
 Immutable.
 
 Scope determines how configuration across multiple Gateway instances are merged.
-The configuration for multiple Gateway instances with the same scope will be merged as presented as
-a single coniguration to the proxy/load balancer.
+The configuration for multiple Gateway instances with the same scope will be merged as presented as a single coniguration to the proxy/load balancer.
+
 Max length 64 characters. Scope should start with a letter and can only have letters, numbers, hyphens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_network_services_gateway#scope GoogleNetworkServicesGateway#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_network_services_gateway#scope GoogleNetworkServicesGateway#scope}
 
 ---
 
@@ -1621,7 +1714,7 @@ ServerTlsPolicy *string
 
 A fully-qualified ServerTLSPolicy URL reference. Specifies how TLS traffic is terminated. If empty, TLS termination is disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_network_services_gateway#server_tls_policy GoogleNetworkServicesGateway#server_tls_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_network_services_gateway#server_tls_policy GoogleNetworkServicesGateway#server_tls_policy}
 
 ---
 
@@ -1633,12 +1726,11 @@ Subnetwork *string
 
 - *Type:* *string
 
-The relative resource name identifying the subnetwork in which this SWG is allocated.
+The relative resource name identifying the subnetwork in which this SWG is allocated. For example: projects/* /regions/us-central1/subnetworks/network-1.
 
-For example: 'projects/* /regions/us-central1/subnetworks/network-1'.
-Currently, this field is specific to gateways of type 'SECURE_WEB_GATEWAY.
+Currently, this field is specific to gateways of type 'SECURE_WEB_GATEWAY'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_network_services_gateway#subnetwork GoogleNetworkServicesGateway#subnetwork}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_network_services_gateway#subnetwork GoogleNetworkServicesGateway#subnetwork}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1654,7 +1746,7 @@ Timeouts GoogleNetworkServicesGatewayTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_network_services_gateway#timeouts GoogleNetworkServicesGateway#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_network_services_gateway#timeouts GoogleNetworkServicesGateway#timeouts}
 
 ---
 
@@ -1676,9 +1768,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlenetwo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_network_services_gateway#create GoogleNetworkServicesGateway#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_network_services_gateway#delete GoogleNetworkServicesGateway#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_network_services_gateway#update GoogleNetworkServicesGateway#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_network_services_gateway#create GoogleNetworkServicesGateway#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_network_services_gateway#delete GoogleNetworkServicesGateway#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_network_services_gateway#update GoogleNetworkServicesGateway#update}. |
 
 ---
 
@@ -1690,7 +1782,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_network_services_gateway#create GoogleNetworkServicesGateway#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_network_services_gateway#create GoogleNetworkServicesGateway#create}.
 
 ---
 
@@ -1702,7 +1794,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_network_services_gateway#delete GoogleNetworkServicesGateway#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_network_services_gateway#delete GoogleNetworkServicesGateway#delete}.
 
 ---
 
@@ -1714,7 +1806,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_network_services_gateway#update GoogleNetworkServicesGateway#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_network_services_gateway#update GoogleNetworkServicesGateway#update}.
 
 ---
 
