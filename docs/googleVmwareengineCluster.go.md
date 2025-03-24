@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwareenginecluster"
 
 googlevmwareenginecluster.NewGoogleVmwareengineCluster(scope Construct, id *string, config GoogleVmwareengineClusterConfig) GoogleVmwareengineCluster
 ```
@@ -445,7 +445,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwareenginecluster"
 
 googlevmwareenginecluster.GoogleVmwareengineCluster_IsConstruct(x interface{}) *bool
 ```
@@ -477,7 +477,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwareenginecluster"
 
 googlevmwareenginecluster.GoogleVmwareengineCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -491,7 +491,7 @@ googlevmwareenginecluster.GoogleVmwareengineCluster_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwareenginecluster"
 
 googlevmwareenginecluster.GoogleVmwareengineCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ googlevmwareenginecluster.GoogleVmwareengineCluster_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwareenginecluster"
 
 googlevmwareenginecluster.GoogleVmwareengineCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -899,7 +899,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterAutoscalingSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwareenginecluster"
 
 &googlevmwareenginecluster.GoogleVmwareengineClusterAutoscalingSettings {
 	AutoscalingPolicies: interface{},
@@ -986,15 +986,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterAutoscalingSettingsAutoscalingPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwareenginecluster"
 
 &googlevmwareenginecluster.GoogleVmwareengineClusterAutoscalingSettingsAutoscalingPolicies {
 	AutoscalePolicyId: *string,
 	NodeTypeId: *string,
 	ScaleOutSize: *f64,
-	ConsumedMemoryThresholds: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleVmwareengineCluster.GoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholds,
-	CpuThresholds: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleVmwareengineCluster.GoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholds,
-	StorageThresholds: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleVmwareengineCluster.GoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholds,
+	ConsumedMemoryThresholds: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleVmwareengineCluster.GoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholds,
+	CpuThresholds: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleVmwareengineCluster.GoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholds,
+	StorageThresholds: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleVmwareengineCluster.GoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholds,
 }
 ```
 
@@ -1098,7 +1098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwareenginecluster"
 
 &googlevmwareenginecluster.GoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholds {
 	ScaleIn: *f64,
@@ -1148,7 +1148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwareenginecluster"
 
 &googlevmwareenginecluster.GoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholds {
 	ScaleIn: *f64,
@@ -1198,7 +1198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwareenginecluster"
 
 &googlevmwareenginecluster.GoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholds {
 	ScaleIn: *f64,
@@ -1248,7 +1248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwareenginecluster"
 
 &googlevmwareenginecluster.GoogleVmwareengineClusterConfig {
 	Connection: interface{},
@@ -1260,10 +1260,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareeng
 	Provisioners: *[]interface{},
 	Name: *string,
 	Parent: *string,
-	AutoscalingSettings: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleVmwareengineCluster.GoogleVmwareengineClusterAutoscalingSettings,
+	AutoscalingSettings: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleVmwareengineCluster.GoogleVmwareengineClusterAutoscalingSettings,
 	Id: *string,
 	NodeTypeConfigs: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleVmwareengineCluster.GoogleVmwareengineClusterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleVmwareengineCluster.GoogleVmwareengineClusterTimeouts,
 }
 ```
 
@@ -1450,7 +1450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterNodeTypeConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwareenginecluster"
 
 &googlevmwareenginecluster.GoogleVmwareengineClusterNodeTypeConfigs {
 	NodeCount: *f64,
@@ -1518,7 +1518,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwareenginecluster"
 
 &googlevmwareenginecluster.GoogleVmwareengineClusterTimeouts {
 	Create: *string,
@@ -1580,7 +1580,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwareenginecluster"
 
 googlevmwareenginecluster.NewGoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholdsOutputReference
 ```
@@ -1873,7 +1873,7 @@ func InternalValue() GoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoli
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwareenginecluster"
 
 googlevmwareenginecluster.NewGoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholdsOutputReference
 ```
@@ -2166,7 +2166,7 @@ func InternalValue() GoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoli
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwareenginecluster"
 
 googlevmwareenginecluster.NewGoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesList
 ```
@@ -2326,7 +2326,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwareenginecluster"
 
 googlevmwareenginecluster.NewGoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesOutputReference
 ```
@@ -2785,7 +2785,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwareenginecluster"
 
 googlevmwareenginecluster.NewGoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholdsOutputReference
 ```
@@ -3078,7 +3078,7 @@ func InternalValue() GoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoli
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterAutoscalingSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwareenginecluster"
 
 googlevmwareenginecluster.NewGoogleVmwareengineClusterAutoscalingSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVmwareengineClusterAutoscalingSettingsOutputReference
 ```
@@ -3449,7 +3449,7 @@ func InternalValue() GoogleVmwareengineClusterAutoscalingSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterNodeTypeConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwareenginecluster"
 
 googlevmwareenginecluster.NewGoogleVmwareengineClusterNodeTypeConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleVmwareengineClusterNodeTypeConfigsList
 ```
@@ -3609,7 +3609,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterNodeTypeConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwareenginecluster"
 
 googlevmwareenginecluster.NewGoogleVmwareengineClusterNodeTypeConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleVmwareengineClusterNodeTypeConfigsOutputReference
 ```
@@ -3949,7 +3949,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevmwareenginecluster"
 
 googlevmwareenginecluster.NewGoogleVmwareengineClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVmwareengineClusterTimeoutsOutputReference
 ```
