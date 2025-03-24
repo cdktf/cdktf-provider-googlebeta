@@ -4,12 +4,12 @@
 
 ### GoogleApphubApplication <a name="GoogleApphubApplication" id="@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_application google_apphub_application}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apphub_application google_apphub_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubapplication"
 
 googleapphubapplication.NewGoogleApphubApplication(scope Construct, id *string, config GoogleApphubApplicationConfig) GoogleApphubApplication
 ```
@@ -459,7 +459,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubapplication"
 
 googleapphubapplication.GoogleApphubApplication_IsConstruct(x interface{}) *bool
 ```
@@ -491,7 +491,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubapplication"
 
 googleapphubapplication.GoogleApphubApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ googleapphubapplication.GoogleApphubApplication_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubapplication"
 
 googleapphubapplication.GoogleApphubApplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -519,7 +519,7 @@ googleapphubapplication.GoogleApphubApplication_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubapplication"
 
 googleapphubapplication.GoogleApphubApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -548,7 +548,7 @@ The construct id used in the generated config for the GoogleApphubApplication to
 
 The id of the existing GoogleApphubApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apphub_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1001,13 +1001,13 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplicationAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubapplication"
 
 &googleapphubapplication.GoogleApphubApplicationAttributes {
 	BusinessOwners: interface{},
-	Criticality: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleApphubApplication.GoogleApphubApplicationAttributesCriticality,
+	Criticality: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApphubApplication.GoogleApphubApplicationAttributesCriticality,
 	DeveloperOwners: interface{},
-	Environment: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleApphubApplication.GoogleApphubApplicationAttributesEnvironment,
+	Environment: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApphubApplication.GoogleApphubApplicationAttributesEnvironment,
 	OperatorOwners: interface{},
 }
 ```
@@ -1034,7 +1034,7 @@ BusinessOwners interface{}
 
 business_owners block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_application#business_owners GoogleApphubApplication#business_owners}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apphub_application#business_owners GoogleApphubApplication#business_owners}
 
 ---
 
@@ -1048,7 +1048,7 @@ Criticality GoogleApphubApplicationAttributesCriticality
 
 criticality block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_application#criticality GoogleApphubApplication#criticality}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apphub_application#criticality GoogleApphubApplication#criticality}
 
 ---
 
@@ -1062,7 +1062,7 @@ DeveloperOwners interface{}
 
 developer_owners block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_application#developer_owners GoogleApphubApplication#developer_owners}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apphub_application#developer_owners GoogleApphubApplication#developer_owners}
 
 ---
 
@@ -1076,7 +1076,7 @@ Environment GoogleApphubApplicationAttributesEnvironment
 
 environment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_application#environment GoogleApphubApplication#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apphub_application#environment GoogleApphubApplication#environment}
 
 ---
 
@@ -1090,7 +1090,7 @@ OperatorOwners interface{}
 
 operator_owners block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_application#operator_owners GoogleApphubApplication#operator_owners}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apphub_application#operator_owners GoogleApphubApplication#operator_owners}
 
 ---
 
@@ -1099,7 +1099,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplicationAttributesBusinessOwners.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubapplication"
 
 &googleapphubapplication.GoogleApphubApplicationAttributesBusinessOwners {
 	Email: *string,
@@ -1126,7 +1126,7 @@ Email *string
 
 Required. Email address of the contacts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_application#email GoogleApphubApplication#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apphub_application#email GoogleApphubApplication#email}
 
 ---
 
@@ -1140,7 +1140,7 @@ DisplayName *string
 
 Optional. Contact's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_application#display_name GoogleApphubApplication#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apphub_application#display_name GoogleApphubApplication#display_name}
 
 ---
 
@@ -1149,7 +1149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplicationAttributesCriticality.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubapplication"
 
 &googleapphubapplication.GoogleApphubApplicationAttributesCriticality {
 	Type: *string,
@@ -1174,7 +1174,7 @@ Type *string
 
 Criticality type. Possible values: ["MISSION_CRITICAL", "HIGH", "MEDIUM", "LOW"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_application#type GoogleApphubApplication#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apphub_application#type GoogleApphubApplication#type}
 
 ---
 
@@ -1183,7 +1183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplicationAttributesDeveloperOwners.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubapplication"
 
 &googleapphubapplication.GoogleApphubApplicationAttributesDeveloperOwners {
 	Email: *string,
@@ -1210,7 +1210,7 @@ Email *string
 
 Required. Email address of the contacts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_application#email GoogleApphubApplication#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apphub_application#email GoogleApphubApplication#email}
 
 ---
 
@@ -1224,7 +1224,7 @@ DisplayName *string
 
 Optional. Contact's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_application#display_name GoogleApphubApplication#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apphub_application#display_name GoogleApphubApplication#display_name}
 
 ---
 
@@ -1233,7 +1233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplicationAttributesEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubapplication"
 
 &googleapphubapplication.GoogleApphubApplicationAttributesEnvironment {
 	Type: *string,
@@ -1258,7 +1258,7 @@ Type *string
 
 Environment type. Possible values: ["PRODUCTION", "STAGING", "TEST", "DEVELOPMENT"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_application#type GoogleApphubApplication#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apphub_application#type GoogleApphubApplication#type}
 
 ---
 
@@ -1267,7 +1267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplicationAttributesOperatorOwners.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubapplication"
 
 &googleapphubapplication.GoogleApphubApplicationAttributesOperatorOwners {
 	Email: *string,
@@ -1294,7 +1294,7 @@ Email *string
 
 Required. Email address of the contacts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_application#email GoogleApphubApplication#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apphub_application#email GoogleApphubApplication#email}
 
 ---
 
@@ -1308,7 +1308,7 @@ DisplayName *string
 
 Optional. Contact's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_application#display_name GoogleApphubApplication#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apphub_application#display_name GoogleApphubApplication#display_name}
 
 ---
 
@@ -1317,7 +1317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubapplication"
 
 &googleapphubapplication.GoogleApphubApplicationConfig {
 	Connection: interface{},
@@ -1329,13 +1329,13 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphu
 	Provisioners: *[]interface{},
 	ApplicationId: *string,
 	Location: *string,
-	Scope: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleApphubApplication.GoogleApphubApplicationScope,
-	Attributes: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleApphubApplication.GoogleApphubApplicationAttributes,
+	Scope: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApphubApplication.GoogleApphubApplicationScope,
+	Attributes: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApphubApplication.GoogleApphubApplicationAttributes,
 	Description: *string,
 	DisplayName: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleApphubApplication.GoogleApphubApplicationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApphubApplication.GoogleApphubApplicationTimeouts,
 }
 ```
 
@@ -1356,8 +1356,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphu
 | <code><a href="#@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplicationConfig.property.attributes">Attributes</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplicationAttributes">GoogleApphubApplicationAttributes</a></code> | attributes block. |
 | <code><a href="#@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplicationConfig.property.description">Description</a></code> | <code>*string</code> | Optional. User-defined description of an Application. |
 | <code><a href="#@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplicationConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Optional. User-defined name for the Application. |
-| <code><a href="#@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplicationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_application#id GoogleApphubApplication#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplicationConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_application#project GoogleApphubApplication#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplicationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apphub_application#id GoogleApphubApplication#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplicationConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apphub_application#project GoogleApphubApplication#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplicationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplicationTimeouts">GoogleApphubApplicationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1442,7 +1442,7 @@ ApplicationId *string
 
 Required. The Application identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_application#application_id GoogleApphubApplication#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apphub_application#application_id GoogleApphubApplication#application_id}
 
 ---
 
@@ -1456,7 +1456,7 @@ Location *string
 
 Part of 'parent'. See documentation of 'projectsId'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_application#location GoogleApphubApplication#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apphub_application#location GoogleApphubApplication#location}
 
 ---
 
@@ -1470,7 +1470,7 @@ Scope GoogleApphubApplicationScope
 
 scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_application#scope GoogleApphubApplication#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apphub_application#scope GoogleApphubApplication#scope}
 
 ---
 
@@ -1484,7 +1484,7 @@ Attributes GoogleApphubApplicationAttributes
 
 attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_application#attributes GoogleApphubApplication#attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apphub_application#attributes GoogleApphubApplication#attributes}
 
 ---
 
@@ -1498,7 +1498,7 @@ Description *string
 
 Optional. User-defined description of an Application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_application#description GoogleApphubApplication#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apphub_application#description GoogleApphubApplication#description}
 
 ---
 
@@ -1512,7 +1512,7 @@ DisplayName *string
 
 Optional. User-defined name for the Application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_application#display_name GoogleApphubApplication#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apphub_application#display_name GoogleApphubApplication#display_name}
 
 ---
 
@@ -1524,7 +1524,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_application#id GoogleApphubApplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apphub_application#id GoogleApphubApplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1539,7 +1539,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_application#project GoogleApphubApplication#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apphub_application#project GoogleApphubApplication#project}.
 
 ---
 
@@ -1553,7 +1553,7 @@ Timeouts GoogleApphubApplicationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_application#timeouts GoogleApphubApplication#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apphub_application#timeouts GoogleApphubApplication#timeouts}
 
 ---
 
@@ -1562,7 +1562,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplicationScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubapplication"
 
 &googleapphubapplication.GoogleApphubApplicationScope {
 	Type: *string,
@@ -1587,7 +1587,7 @@ Type *string
 
 Required. Scope Type.   Possible values: REGIONAL GLOBAL Possible values: ["REGIONAL", "GLOBAL"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_application#type GoogleApphubApplication#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apphub_application#type GoogleApphubApplication#type}
 
 ---
 
@@ -1596,7 +1596,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplicationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubapplication"
 
 &googleapphubapplication.GoogleApphubApplicationTimeouts {
 	Create: *string,
@@ -1609,9 +1609,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplicationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_application#create GoogleApphubApplication#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplicationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_application#delete GoogleApphubApplication#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplicationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_application#update GoogleApphubApplication#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplicationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apphub_application#create GoogleApphubApplication#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplicationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apphub_application#delete GoogleApphubApplication#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplicationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apphub_application#update GoogleApphubApplication#update}. |
 
 ---
 
@@ -1623,7 +1623,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_application#create GoogleApphubApplication#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apphub_application#create GoogleApphubApplication#create}.
 
 ---
 
@@ -1635,7 +1635,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_application#delete GoogleApphubApplication#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apphub_application#delete GoogleApphubApplication#delete}.
 
 ---
 
@@ -1647,7 +1647,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_apphub_application#update GoogleApphubApplication#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_apphub_application#update GoogleApphubApplication#update}.
 
 ---
 
@@ -1658,7 +1658,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplicationAttributesBusinessOwnersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubapplication"
 
 googleapphubapplication.NewGoogleApphubApplicationAttributesBusinessOwnersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleApphubApplicationAttributesBusinessOwnersList
 ```
@@ -1818,7 +1818,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplicationAttributesBusinessOwnersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubapplication"
 
 googleapphubapplication.NewGoogleApphubApplicationAttributesBusinessOwnersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleApphubApplicationAttributesBusinessOwnersOutputReference
 ```
@@ -2136,7 +2136,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplicationAttributesCriticalityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubapplication"
 
 googleapphubapplication.NewGoogleApphubApplicationAttributesCriticalityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApphubApplicationAttributesCriticalityOutputReference
 ```
@@ -2407,7 +2407,7 @@ func InternalValue() GoogleApphubApplicationAttributesCriticality
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplicationAttributesDeveloperOwnersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubapplication"
 
 googleapphubapplication.NewGoogleApphubApplicationAttributesDeveloperOwnersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleApphubApplicationAttributesDeveloperOwnersList
 ```
@@ -2567,7 +2567,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplicationAttributesDeveloperOwnersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubapplication"
 
 googleapphubapplication.NewGoogleApphubApplicationAttributesDeveloperOwnersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleApphubApplicationAttributesDeveloperOwnersOutputReference
 ```
@@ -2885,7 +2885,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplicationAttributesEnvironmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubapplication"
 
 googleapphubapplication.NewGoogleApphubApplicationAttributesEnvironmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApphubApplicationAttributesEnvironmentOutputReference
 ```
@@ -3156,7 +3156,7 @@ func InternalValue() GoogleApphubApplicationAttributesEnvironment
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplicationAttributesOperatorOwnersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubapplication"
 
 googleapphubapplication.NewGoogleApphubApplicationAttributesOperatorOwnersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleApphubApplicationAttributesOperatorOwnersList
 ```
@@ -3316,7 +3316,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplicationAttributesOperatorOwnersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubapplication"
 
 googleapphubapplication.NewGoogleApphubApplicationAttributesOperatorOwnersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleApphubApplicationAttributesOperatorOwnersOutputReference
 ```
@@ -3634,7 +3634,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplicationAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubapplication"
 
 googleapphubapplication.NewGoogleApphubApplicationAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApphubApplicationAttributesOutputReference
 ```
@@ -4093,7 +4093,7 @@ func InternalValue() GoogleApphubApplicationAttributes
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplicationScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubapplication"
 
 googleapphubapplication.NewGoogleApphubApplicationScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApphubApplicationScopeOutputReference
 ```
@@ -4364,7 +4364,7 @@ func InternalValue() GoogleApphubApplicationScope
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApphubApplication.GoogleApphubApplicationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubapplication"
 
 googleapphubapplication.NewGoogleApphubApplicationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApphubApplicationTimeoutsOutputReference
 ```

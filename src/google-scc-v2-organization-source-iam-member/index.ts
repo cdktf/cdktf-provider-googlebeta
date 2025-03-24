@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_scc_v2_organization_source_iam_member
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_scc_v2_organization_source_iam_member
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +8,46 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleSccV2OrganizationSourceIamMemberConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_scc_v2_organization_source_iam_member#id GoogleSccV2OrganizationSourceIamMember#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_scc_v2_organization_source_iam_member#id GoogleSccV2OrganizationSourceIamMember#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_scc_v2_organization_source_iam_member#member GoogleSccV2OrganizationSourceIamMember#member}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_scc_v2_organization_source_iam_member#member GoogleSccV2OrganizationSourceIamMember#member}
   */
   readonly member: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_scc_v2_organization_source_iam_member#organization GoogleSccV2OrganizationSourceIamMember#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_scc_v2_organization_source_iam_member#organization GoogleSccV2OrganizationSourceIamMember#organization}
   */
   readonly organization: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_scc_v2_organization_source_iam_member#role GoogleSccV2OrganizationSourceIamMember#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_scc_v2_organization_source_iam_member#role GoogleSccV2OrganizationSourceIamMember#role}
   */
   readonly role: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_scc_v2_organization_source_iam_member#source GoogleSccV2OrganizationSourceIamMember#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_scc_v2_organization_source_iam_member#source GoogleSccV2OrganizationSourceIamMember#source}
   */
   readonly source: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_scc_v2_organization_source_iam_member#condition GoogleSccV2OrganizationSourceIamMember#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_scc_v2_organization_source_iam_member#condition GoogleSccV2OrganizationSourceIamMember#condition}
   */
   readonly condition?: GoogleSccV2OrganizationSourceIamMemberCondition;
 }
 export interface GoogleSccV2OrganizationSourceIamMemberCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_scc_v2_organization_source_iam_member#description GoogleSccV2OrganizationSourceIamMember#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_scc_v2_organization_source_iam_member#description GoogleSccV2OrganizationSourceIamMember#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_scc_v2_organization_source_iam_member#expression GoogleSccV2OrganizationSourceIamMember#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_scc_v2_organization_source_iam_member#expression GoogleSccV2OrganizationSourceIamMember#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_scc_v2_organization_source_iam_member#title GoogleSccV2OrganizationSourceIamMember#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_scc_v2_organization_source_iam_member#title GoogleSccV2OrganizationSourceIamMember#title}
   */
   readonly title: string;
 }
@@ -188,7 +183,7 @@ export class GoogleSccV2OrganizationSourceIamMemberConditionOutputReference exte
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_scc_v2_organization_source_iam_member google_scc_v2_organization_source_iam_member}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_scc_v2_organization_source_iam_member google_scc_v2_organization_source_iam_member}
 */
 export class GoogleSccV2OrganizationSourceIamMember extends cdktf.TerraformResource {
 
@@ -204,7 +199,7 @@ export class GoogleSccV2OrganizationSourceIamMember extends cdktf.TerraformResou
   * Generates CDKTF code for importing a GoogleSccV2OrganizationSourceIamMember resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleSccV2OrganizationSourceIamMember to import
-  * @param importFromId The id of the existing GoogleSccV2OrganizationSourceIamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_scc_v2_organization_source_iam_member#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleSccV2OrganizationSourceIamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_scc_v2_organization_source_iam_member#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleSccV2OrganizationSourceIamMember to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -216,7 +211,7 @@ export class GoogleSccV2OrganizationSourceIamMember extends cdktf.TerraformResou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_scc_v2_organization_source_iam_member google_scc_v2_organization_source_iam_member} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_scc_v2_organization_source_iam_member google_scc_v2_organization_source_iam_member} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -227,7 +222,7 @@ export class GoogleSccV2OrganizationSourceIamMember extends cdktf.TerraformResou
       terraformResourceType: 'google_scc_v2_organization_source_iam_member',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.25.0',
+        providerVersion: '6.26.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
