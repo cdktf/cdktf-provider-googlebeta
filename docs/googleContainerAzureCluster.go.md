@@ -4,12 +4,12 @@
 
 ### GoogleContainerAzureCluster <a name="GoogleContainerAzureCluster" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster google_container_azure_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster google_container_azure_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 googlecontainerazurecluster.NewGoogleContainerAzureCluster(scope Construct, id *string, config GoogleContainerAzureClusterConfig) GoogleContainerAzureCluster
 ```
@@ -525,7 +525,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 googlecontainerazurecluster.GoogleContainerAzureCluster_IsConstruct(x interface{}) *bool
 ```
@@ -557,7 +557,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 googlecontainerazurecluster.GoogleContainerAzureCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -571,7 +571,7 @@ googlecontainerazurecluster.GoogleContainerAzureCluster_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 googlecontainerazurecluster.GoogleContainerAzureCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -585,7 +585,7 @@ googlecontainerazurecluster.GoogleContainerAzureCluster_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 googlecontainerazurecluster.GoogleContainerAzureCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -614,7 +614,7 @@ The construct id used in the generated config for the GoogleContainerAzureCluste
 
 The id of the existing GoogleContainerAzureCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1265,7 +1265,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterAuthorization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 &googlecontainerazurecluster.GoogleContainerAzureClusterAuthorization {
 	AdminUsers: interface{},
@@ -1292,7 +1292,7 @@ AdminUsers interface{}
 
 admin_users block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#admin_users GoogleContainerAzureCluster#admin_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#admin_users GoogleContainerAzureCluster#admin_users}
 
 ---
 
@@ -1306,7 +1306,7 @@ AdminGroups interface{}
 
 admin_groups block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#admin_groups GoogleContainerAzureCluster#admin_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#admin_groups GoogleContainerAzureCluster#admin_groups}
 
 ---
 
@@ -1315,7 +1315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterAuthorizationAdminGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 &googlecontainerazurecluster.GoogleContainerAzureClusterAuthorizationAdminGroups {
 	Group: *string,
@@ -1340,7 +1340,7 @@ Group *string
 
 The name of the group, e.g. `my-group@domain.com`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#group GoogleContainerAzureCluster#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#group GoogleContainerAzureCluster#group}
 
 ---
 
@@ -1349,7 +1349,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterAuthorizationAdminUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 &googlecontainerazurecluster.GoogleContainerAzureClusterAuthorizationAdminUsers {
 	Username: *string,
@@ -1374,7 +1374,7 @@ Username *string
 
 The name of the user, e.g. `my-gcp-id@gmail.com`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#username GoogleContainerAzureCluster#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#username GoogleContainerAzureCluster#username}
 
 ---
 
@@ -1383,7 +1383,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterAzureServicesAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 &googlecontainerazurecluster.GoogleContainerAzureClusterAzureServicesAuthentication {
 	ApplicationId: *string,
@@ -1410,7 +1410,7 @@ ApplicationId *string
 
 The Azure Active Directory Application ID for Authentication configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#application_id GoogleContainerAzureCluster#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#application_id GoogleContainerAzureCluster#application_id}
 
 ---
 
@@ -1424,7 +1424,7 @@ TenantId *string
 
 The Azure Active Directory Tenant ID for Authentication configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#tenant_id GoogleContainerAzureCluster#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#tenant_id GoogleContainerAzureCluster#tenant_id}
 
 ---
 
@@ -1433,7 +1433,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 &googlecontainerazurecluster.GoogleContainerAzureClusterConfig {
 	Connection: interface{},
@@ -1443,22 +1443,22 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleconta
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Authorization: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleContainerAzureCluster.GoogleContainerAzureClusterAuthorization,
+	Authorization: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAzureCluster.GoogleContainerAzureClusterAuthorization,
 	AzureRegion: *string,
-	ControlPlane: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlane,
-	Fleet: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleContainerAzureCluster.GoogleContainerAzureClusterFleet,
+	ControlPlane: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlane,
+	Fleet: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAzureCluster.GoogleContainerAzureClusterFleet,
 	Location: *string,
 	Name: *string,
-	Networking: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleContainerAzureCluster.GoogleContainerAzureClusterNetworking,
+	Networking: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAzureCluster.GoogleContainerAzureClusterNetworking,
 	ResourceGroupId: *string,
 	Annotations: *map[string]*string,
-	AzureServicesAuthentication: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleContainerAzureCluster.GoogleContainerAzureClusterAzureServicesAuthentication,
+	AzureServicesAuthentication: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAzureCluster.GoogleContainerAzureClusterAzureServicesAuthentication,
 	Client: *string,
 	Description: *string,
 	Id: *string,
-	LoggingConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleContainerAzureCluster.GoogleContainerAzureClusterLoggingConfig,
+	LoggingConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAzureCluster.GoogleContainerAzureClusterLoggingConfig,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleContainerAzureCluster.GoogleContainerAzureClusterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAzureCluster.GoogleContainerAzureClusterTimeouts,
 }
 ```
 
@@ -1485,7 +1485,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleconta
 | <code><a href="#@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterConfig.property.azureServicesAuthentication">AzureServicesAuthentication</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterAzureServicesAuthentication">GoogleContainerAzureClusterAzureServicesAuthentication</a></code> | azure_services_authentication block. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterConfig.property.client">Client</a></code> | <code>*string</code> | Name of the AzureClient. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterConfig.property.description">Description</a></code> | <code>*string</code> | Optional. A human readable description of this cluster. Cannot be longer than 255 UTF-8 encoded bytes. |
-| <code><a href="#@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#id GoogleContainerAzureCluster#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#id GoogleContainerAzureCluster#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterConfig.property.loggingConfig">LoggingConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterLoggingConfig">GoogleContainerAzureClusterLoggingConfig</a></code> | logging_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterConfig.property.project">Project</a></code> | <code>*string</code> | The project for the resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterTimeouts">GoogleContainerAzureClusterTimeouts</a></code> | timeouts block. |
@@ -1572,7 +1572,7 @@ Authorization GoogleContainerAzureClusterAuthorization
 
 authorization block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#authorization GoogleContainerAzureCluster#authorization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#authorization GoogleContainerAzureCluster#authorization}
 
 ---
 
@@ -1588,7 +1588,7 @@ The Azure region where the cluster runs.
 
 Each Google Cloud region supports a subset of nearby Azure regions. You can call to list all supported Azure regions within a given Google Cloud region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#azure_region GoogleContainerAzureCluster#azure_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#azure_region GoogleContainerAzureCluster#azure_region}
 
 ---
 
@@ -1602,7 +1602,7 @@ ControlPlane GoogleContainerAzureClusterControlPlane
 
 control_plane block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#control_plane GoogleContainerAzureCluster#control_plane}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#control_plane GoogleContainerAzureCluster#control_plane}
 
 ---
 
@@ -1616,7 +1616,7 @@ Fleet GoogleContainerAzureClusterFleet
 
 fleet block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#fleet GoogleContainerAzureCluster#fleet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#fleet GoogleContainerAzureCluster#fleet}
 
 ---
 
@@ -1630,7 +1630,7 @@ Location *string
 
 The location for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#location GoogleContainerAzureCluster#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#location GoogleContainerAzureCluster#location}
 
 ---
 
@@ -1644,7 +1644,7 @@ Name *string
 
 The name of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#name GoogleContainerAzureCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#name GoogleContainerAzureCluster#name}
 
 ---
 
@@ -1658,7 +1658,7 @@ Networking GoogleContainerAzureClusterNetworking
 
 networking block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#networking GoogleContainerAzureCluster#networking}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#networking GoogleContainerAzureCluster#networking}
 
 ---
 
@@ -1672,7 +1672,7 @@ ResourceGroupId *string
 
 The ARM ID of the resource group where the cluster resources are deployed. For example: `/subscriptions/* /resourceGroups/*`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#resource_group_id GoogleContainerAzureCluster#resource_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#resource_group_id GoogleContainerAzureCluster#resource_group_id}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1693,7 +1693,7 @@ Annotations on the cluster. This field has the same restrictions as Kubernetes a
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field `effective_annotations` for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#annotations GoogleContainerAzureCluster#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#annotations GoogleContainerAzureCluster#annotations}
 
 ---
 
@@ -1707,7 +1707,7 @@ AzureServicesAuthentication GoogleContainerAzureClusterAzureServicesAuthenticati
 
 azure_services_authentication block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#azure_services_authentication GoogleContainerAzureCluster#azure_services_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#azure_services_authentication GoogleContainerAzureCluster#azure_services_authentication}
 
 ---
 
@@ -1723,7 +1723,7 @@ Name of the AzureClient.
 
 The `AzureClient` resource must reside on the same GCP project and region as the `AzureCluster`. `AzureClient` names are formatted as `projects/<project-number>/locations/<region>/azureClients/<client-id>`. See Resource Names (https:cloud.google.com/apis/design/resource_names) for more details on Google Cloud resource names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#client GoogleContainerAzureCluster#client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#client GoogleContainerAzureCluster#client}
 
 ---
 
@@ -1737,7 +1737,7 @@ Description *string
 
 Optional. A human readable description of this cluster. Cannot be longer than 255 UTF-8 encoded bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#description GoogleContainerAzureCluster#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#description GoogleContainerAzureCluster#description}
 
 ---
 
@@ -1749,7 +1749,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#id GoogleContainerAzureCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#id GoogleContainerAzureCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1766,7 +1766,7 @@ LoggingConfig GoogleContainerAzureClusterLoggingConfig
 
 logging_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#logging_config GoogleContainerAzureCluster#logging_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#logging_config GoogleContainerAzureCluster#logging_config}
 
 ---
 
@@ -1780,7 +1780,7 @@ Project *string
 
 The project for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#project GoogleContainerAzureCluster#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#project GoogleContainerAzureCluster#project}
 
 ---
 
@@ -1794,7 +1794,7 @@ Timeouts GoogleContainerAzureClusterTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#timeouts GoogleContainerAzureCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#timeouts GoogleContainerAzureCluster#timeouts}
 
 ---
 
@@ -1803,17 +1803,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlane.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 &googlecontainerazurecluster.GoogleContainerAzureClusterControlPlane {
-	SshConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneSshConfig,
+	SshConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneSshConfig,
 	SubnetId: *string,
 	Version: *string,
-	DatabaseEncryption: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneDatabaseEncryption,
-	MainVolume: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneMainVolume,
-	ProxyConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneProxyConfig,
+	DatabaseEncryption: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneDatabaseEncryption,
+	MainVolume: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneMainVolume,
+	ProxyConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneProxyConfig,
 	ReplicaPlacements: interface{},
-	RootVolume: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneRootVolume,
+	RootVolume: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneRootVolume,
 	Tags: *map[string]*string,
 	VmSize: *string,
 }
@@ -1846,7 +1846,7 @@ SshConfig GoogleContainerAzureClusterControlPlaneSshConfig
 
 ssh_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#ssh_config GoogleContainerAzureCluster#ssh_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#ssh_config GoogleContainerAzureCluster#ssh_config}
 
 ---
 
@@ -1860,7 +1860,7 @@ SubnetId *string
 
 The ARM ID of the subnet where the control plane VMs are deployed. Example: `/subscriptions//resourceGroups//providers/Microsoft.Network/virtualNetworks//subnets/default`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#subnet_id GoogleContainerAzureCluster#subnet_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#subnet_id GoogleContainerAzureCluster#subnet_id}
 
 ---
 
@@ -1874,7 +1874,7 @@ Version *string
 
 The Kubernetes version to run on control plane replicas (e.g. `1.19.10-gke.1000`). You can list all supported versions on a given Google Cloud region by calling GetAzureServerConfig.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#version GoogleContainerAzureCluster#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#version GoogleContainerAzureCluster#version}
 
 ---
 
@@ -1888,7 +1888,7 @@ DatabaseEncryption GoogleContainerAzureClusterControlPlaneDatabaseEncryption
 
 database_encryption block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#database_encryption GoogleContainerAzureCluster#database_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#database_encryption GoogleContainerAzureCluster#database_encryption}
 
 ---
 
@@ -1902,7 +1902,7 @@ MainVolume GoogleContainerAzureClusterControlPlaneMainVolume
 
 main_volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#main_volume GoogleContainerAzureCluster#main_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#main_volume GoogleContainerAzureCluster#main_volume}
 
 ---
 
@@ -1916,7 +1916,7 @@ ProxyConfig GoogleContainerAzureClusterControlPlaneProxyConfig
 
 proxy_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#proxy_config GoogleContainerAzureCluster#proxy_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#proxy_config GoogleContainerAzureCluster#proxy_config}
 
 ---
 
@@ -1930,7 +1930,7 @@ ReplicaPlacements interface{}
 
 replica_placements block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#replica_placements GoogleContainerAzureCluster#replica_placements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#replica_placements GoogleContainerAzureCluster#replica_placements}
 
 ---
 
@@ -1944,7 +1944,7 @@ RootVolume GoogleContainerAzureClusterControlPlaneRootVolume
 
 root_volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#root_volume GoogleContainerAzureCluster#root_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#root_volume GoogleContainerAzureCluster#root_volume}
 
 ---
 
@@ -1958,7 +1958,7 @@ Tags *map[string]*string
 
 Optional. A set of tags to apply to all underlying control plane Azure resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#tags GoogleContainerAzureCluster#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#tags GoogleContainerAzureCluster#tags}
 
 ---
 
@@ -1974,7 +1974,7 @@ Optional.
 
 The Azure VM size name. Example: `Standard_DS2_v2`. For available VM sizes, see https://docs.microsoft.com/en-us/azure/virtual-machines/vm-naming-conventions. When unspecified, it defaults to `Standard_DS2_v2`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#vm_size GoogleContainerAzureCluster#vm_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#vm_size GoogleContainerAzureCluster#vm_size}
 
 ---
 
@@ -1983,7 +1983,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneDatabaseEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 &googlecontainerazurecluster.GoogleContainerAzureClusterControlPlaneDatabaseEncryption {
 	KeyId: *string,
@@ -2010,7 +2010,7 @@ The ARM ID of the Azure Key Vault key to encrypt / decrypt data.
 
 For example: `/subscriptions/<subscription-id>/resourceGroups/<resource-group-id>/providers/Microsoft.KeyVault/vaults/<key-vault-id>/keys/<key-name>` Encryption will always take the latest version of the key and hence specific version is not supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#key_id GoogleContainerAzureCluster#key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#key_id GoogleContainerAzureCluster#key_id}
 
 ---
 
@@ -2019,7 +2019,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneMainVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 &googlecontainerazurecluster.GoogleContainerAzureClusterControlPlaneMainVolume {
 	SizeGib: *f64,
@@ -2046,7 +2046,7 @@ Optional.
 
 The size of the disk, in GiBs. When unspecified, a default value is provided. See the specific reference in the parent resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#size_gib GoogleContainerAzureCluster#size_gib}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#size_gib GoogleContainerAzureCluster#size_gib}
 
 ---
 
@@ -2055,7 +2055,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneProxyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 &googlecontainerazurecluster.GoogleContainerAzureClusterControlPlaneProxyConfig {
 	ResourceGroupId: *string,
@@ -2082,7 +2082,7 @@ ResourceGroupId *string
 
 The ARM ID the of the resource group containing proxy keyvault. Resource group ids are formatted as `/subscriptions/<subscription-id>/resourceGroups/<resource-group-name>`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#resource_group_id GoogleContainerAzureCluster#resource_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#resource_group_id GoogleContainerAzureCluster#resource_group_id}
 
 ---
 
@@ -2096,7 +2096,7 @@ SecretId *string
 
 The URL the of the proxy setting secret with its version. Secret ids are formatted as `https:<key-vault-name>.vault.azure.net/secrets/<secret-name>/<secret-version>`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#secret_id GoogleContainerAzureCluster#secret_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#secret_id GoogleContainerAzureCluster#secret_id}
 
 ---
 
@@ -2105,7 +2105,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneReplicaPlacements.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 &googlecontainerazurecluster.GoogleContainerAzureClusterControlPlaneReplicaPlacements {
 	AzureAvailabilityZone: *string,
@@ -2132,7 +2132,7 @@ AzureAvailabilityZone *string
 
 For a given replica, the Azure availability zone where to provision the control plane VM and the ETCD disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#azure_availability_zone GoogleContainerAzureCluster#azure_availability_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#azure_availability_zone GoogleContainerAzureCluster#azure_availability_zone}
 
 ---
 
@@ -2148,7 +2148,7 @@ For a given replica, the ARM ID of the subnet where the control plane VM is depl
 
 Make sure it's a subnet under the virtual network in the cluster configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#subnet_id GoogleContainerAzureCluster#subnet_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#subnet_id GoogleContainerAzureCluster#subnet_id}
 
 ---
 
@@ -2157,7 +2157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneRootVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 &googlecontainerazurecluster.GoogleContainerAzureClusterControlPlaneRootVolume {
 	SizeGib: *f64,
@@ -2184,7 +2184,7 @@ Optional.
 
 The size of the disk, in GiBs. When unspecified, a default value is provided. See the specific reference in the parent resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#size_gib GoogleContainerAzureCluster#size_gib}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#size_gib GoogleContainerAzureCluster#size_gib}
 
 ---
 
@@ -2193,7 +2193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneSshConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 &googlecontainerazurecluster.GoogleContainerAzureClusterControlPlaneSshConfig {
 	AuthorizedKey: *string,
@@ -2220,7 +2220,7 @@ The SSH public key data for VMs managed by Anthos.
 
 This accepts the authorized_keys file format used in OpenSSH according to the sshd(8) manual page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#authorized_key GoogleContainerAzureCluster#authorized_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#authorized_key GoogleContainerAzureCluster#authorized_key}
 
 ---
 
@@ -2229,7 +2229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterFleet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 &googlecontainerazurecluster.GoogleContainerAzureClusterFleet {
 	Project: *string,
@@ -2254,7 +2254,7 @@ Project *string
 
 The number of the Fleet host project where this cluster will be registered.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#project GoogleContainerAzureCluster#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#project GoogleContainerAzureCluster#project}
 
 ---
 
@@ -2263,10 +2263,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterLoggingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 &googlecontainerazurecluster.GoogleContainerAzureClusterLoggingConfig {
-	ComponentConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleContainerAzureCluster.GoogleContainerAzureClusterLoggingConfigComponentConfig,
+	ComponentConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAzureCluster.GoogleContainerAzureClusterLoggingConfigComponentConfig,
 }
 ```
 
@@ -2288,7 +2288,7 @@ ComponentConfig GoogleContainerAzureClusterLoggingConfigComponentConfig
 
 component_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#component_config GoogleContainerAzureCluster#component_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#component_config GoogleContainerAzureCluster#component_config}
 
 ---
 
@@ -2297,7 +2297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterLoggingConfigComponentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 &googlecontainerazurecluster.GoogleContainerAzureClusterLoggingConfigComponentConfig {
 	EnableComponents: *[]*string,
@@ -2322,7 +2322,7 @@ EnableComponents *[]*string
 
 Components of the logging configuration to be enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#enable_components GoogleContainerAzureCluster#enable_components}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#enable_components GoogleContainerAzureCluster#enable_components}
 
 ---
 
@@ -2331,7 +2331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterNetworking.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 &googlecontainerazurecluster.GoogleContainerAzureClusterNetworking {
 	PodAddressCidrBlocks: *[]*string,
@@ -2360,7 +2360,7 @@ PodAddressCidrBlocks *[]*string
 
 The IP address range of the pods in this cluster, in CIDR notation (e.g. `10.96.0.0/14`). All pods in the cluster get assigned a unique RFC1918 IPv4 address from these ranges. Only a single range is supported. This field cannot be changed after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#pod_address_cidr_blocks GoogleContainerAzureCluster#pod_address_cidr_blocks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#pod_address_cidr_blocks GoogleContainerAzureCluster#pod_address_cidr_blocks}
 
 ---
 
@@ -2374,7 +2374,7 @@ ServiceAddressCidrBlocks *[]*string
 
 The IP address range for services in this cluster, in CIDR notation (e.g. `10.96.0.0/14`). All services in the cluster get assigned a unique RFC1918 IPv4 address from these ranges. Only a single range is supported. This field cannot be changed after creating a cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#service_address_cidr_blocks GoogleContainerAzureCluster#service_address_cidr_blocks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#service_address_cidr_blocks GoogleContainerAzureCluster#service_address_cidr_blocks}
 
 ---
 
@@ -2390,7 +2390,7 @@ The Azure Resource Manager (ARM) ID of the VNet associated with your cluster.
 
 All components in the cluster (i.e. control plane and node pools) run on a single VNet. Example: `/subscriptions/* /resourceGroups/* /providers/Microsoft.Network/virtualNetworks/*` This field cannot be changed after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#virtual_network_id GoogleContainerAzureCluster#virtual_network_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#virtual_network_id GoogleContainerAzureCluster#virtual_network_id}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -2401,7 +2401,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 &googlecontainerazurecluster.GoogleContainerAzureClusterTimeouts {
 	Create: *string,
@@ -2414,9 +2414,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleconta
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#create GoogleContainerAzureCluster#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#delete GoogleContainerAzureCluster#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#update GoogleContainerAzureCluster#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#create GoogleContainerAzureCluster#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#delete GoogleContainerAzureCluster#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#update GoogleContainerAzureCluster#update}. |
 
 ---
 
@@ -2428,7 +2428,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#create GoogleContainerAzureCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#create GoogleContainerAzureCluster#create}.
 
 ---
 
@@ -2440,7 +2440,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#delete GoogleContainerAzureCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#delete GoogleContainerAzureCluster#delete}.
 
 ---
 
@@ -2452,7 +2452,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_azure_cluster#update GoogleContainerAzureCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_azure_cluster#update GoogleContainerAzureCluster#update}.
 
 ---
 
@@ -2461,7 +2461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterWorkloadIdentityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 &googlecontainerazurecluster.GoogleContainerAzureClusterWorkloadIdentityConfig {
 
@@ -2476,7 +2476,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleconta
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterAuthorizationAdminGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 googlecontainerazurecluster.NewGoogleContainerAzureClusterAuthorizationAdminGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleContainerAzureClusterAuthorizationAdminGroupsList
 ```
@@ -2636,7 +2636,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterAuthorizationAdminGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 googlecontainerazurecluster.NewGoogleContainerAzureClusterAuthorizationAdminGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleContainerAzureClusterAuthorizationAdminGroupsOutputReference
 ```
@@ -2925,7 +2925,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterAuthorizationAdminUsersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 googlecontainerazurecluster.NewGoogleContainerAzureClusterAuthorizationAdminUsersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleContainerAzureClusterAuthorizationAdminUsersList
 ```
@@ -3085,7 +3085,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterAuthorizationAdminUsersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 googlecontainerazurecluster.NewGoogleContainerAzureClusterAuthorizationAdminUsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleContainerAzureClusterAuthorizationAdminUsersOutputReference
 ```
@@ -3374,7 +3374,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterAuthorizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 googlecontainerazurecluster.NewGoogleContainerAzureClusterAuthorizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAzureClusterAuthorizationOutputReference
 ```
@@ -3700,7 +3700,7 @@ func InternalValue() GoogleContainerAzureClusterAuthorization
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterAzureServicesAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 googlecontainerazurecluster.NewGoogleContainerAzureClusterAzureServicesAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAzureClusterAzureServicesAuthenticationOutputReference
 ```
@@ -3993,7 +3993,7 @@ func InternalValue() GoogleContainerAzureClusterAzureServicesAuthentication
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneDatabaseEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 googlecontainerazurecluster.NewGoogleContainerAzureClusterControlPlaneDatabaseEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAzureClusterControlPlaneDatabaseEncryptionOutputReference
 ```
@@ -4264,7 +4264,7 @@ func InternalValue() GoogleContainerAzureClusterControlPlaneDatabaseEncryption
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneMainVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 googlecontainerazurecluster.NewGoogleContainerAzureClusterControlPlaneMainVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAzureClusterControlPlaneMainVolumeOutputReference
 ```
@@ -4542,7 +4542,7 @@ func InternalValue() GoogleContainerAzureClusterControlPlaneMainVolume
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 googlecontainerazurecluster.NewGoogleContainerAzureClusterControlPlaneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAzureClusterControlPlaneOutputReference
 ```
@@ -5138,7 +5138,7 @@ func InternalValue() GoogleContainerAzureClusterControlPlane
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneProxyConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 googlecontainerazurecluster.NewGoogleContainerAzureClusterControlPlaneProxyConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAzureClusterControlPlaneProxyConfigOutputReference
 ```
@@ -5431,7 +5431,7 @@ func InternalValue() GoogleContainerAzureClusterControlPlaneProxyConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneReplicaPlacementsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 googlecontainerazurecluster.NewGoogleContainerAzureClusterControlPlaneReplicaPlacementsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleContainerAzureClusterControlPlaneReplicaPlacementsList
 ```
@@ -5591,7 +5591,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneReplicaPlacementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 googlecontainerazurecluster.NewGoogleContainerAzureClusterControlPlaneReplicaPlacementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleContainerAzureClusterControlPlaneReplicaPlacementsOutputReference
 ```
@@ -5902,7 +5902,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneRootVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 googlecontainerazurecluster.NewGoogleContainerAzureClusterControlPlaneRootVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAzureClusterControlPlaneRootVolumeOutputReference
 ```
@@ -6180,7 +6180,7 @@ func InternalValue() GoogleContainerAzureClusterControlPlaneRootVolume
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneSshConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 googlecontainerazurecluster.NewGoogleContainerAzureClusterControlPlaneSshConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAzureClusterControlPlaneSshConfigOutputReference
 ```
@@ -6451,7 +6451,7 @@ func InternalValue() GoogleContainerAzureClusterControlPlaneSshConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterFleetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 googlecontainerazurecluster.NewGoogleContainerAzureClusterFleetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAzureClusterFleetOutputReference
 ```
@@ -6740,7 +6740,7 @@ func InternalValue() GoogleContainerAzureClusterFleet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterLoggingConfigComponentConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 googlecontainerazurecluster.NewGoogleContainerAzureClusterLoggingConfigComponentConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAzureClusterLoggingConfigComponentConfigOutputReference
 ```
@@ -7018,7 +7018,7 @@ func InternalValue() GoogleContainerAzureClusterLoggingConfigComponentConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterLoggingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 googlecontainerazurecluster.NewGoogleContainerAzureClusterLoggingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAzureClusterLoggingConfigOutputReference
 ```
@@ -7309,7 +7309,7 @@ func InternalValue() GoogleContainerAzureClusterLoggingConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterNetworkingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 googlecontainerazurecluster.NewGoogleContainerAzureClusterNetworkingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAzureClusterNetworkingOutputReference
 ```
@@ -7624,7 +7624,7 @@ func InternalValue() GoogleContainerAzureClusterNetworking
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 googlecontainerazurecluster.NewGoogleContainerAzureClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAzureClusterTimeoutsOutputReference
 ```
@@ -7960,7 +7960,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterWorkloadIdentityConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 googlecontainerazurecluster.NewGoogleContainerAzureClusterWorkloadIdentityConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleContainerAzureClusterWorkloadIdentityConfigList
 ```
@@ -8109,7 +8109,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterWorkloadIdentityConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainerazurecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerazurecluster"
 
 googlecontainerazurecluster.NewGoogleContainerAzureClusterWorkloadIdentityConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleContainerAzureClusterWorkloadIdentityConfigOutputReference
 ```

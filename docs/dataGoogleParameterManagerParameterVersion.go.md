@@ -4,12 +4,12 @@
 
 ### DataGoogleParameterManagerParameterVersion <a name="DataGoogleParameterManagerParameterVersion" id="@cdktf/provider-google-beta.dataGoogleParameterManagerParameterVersion.DataGoogleParameterManagerParameterVersion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/data-sources/google_parameter_manager_parameter_version google_parameter_manager_parameter_version}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/data-sources/google_parameter_manager_parameter_version google_parameter_manager_parameter_version}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleParameterManagerParameterVersion.DataGoogleParameterManagerParameterVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleparametermanagerparameterversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleparametermanagerparameterversion"
 
 datagoogleparametermanagerparameterversion.NewDataGoogleParameterManagerParameterVersion(scope Construct, id *string, config DataGoogleParameterManagerParameterVersionConfig) DataGoogleParameterManagerParameterVersion
 ```
@@ -290,7 +290,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleParameterManagerParameterVersion.DataGoogleParameterManagerParameterVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleparametermanagerparameterversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleparametermanagerparameterversion"
 
 datagoogleparametermanagerparameterversion.DataGoogleParameterManagerParameterVersion_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleParameterManagerParameterVersion.DataGoogleParameterManagerParameterVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleparametermanagerparameterversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleparametermanagerparameterversion"
 
 datagoogleparametermanagerparameterversion.DataGoogleParameterManagerParameterVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datagoogleparametermanagerparameterversion.DataGoogleParameterManagerParameterVe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleParameterManagerParameterVersion.DataGoogleParameterManagerParameterVersion.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleparametermanagerparameterversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleparametermanagerparameterversion"
 
 datagoogleparametermanagerparameterversion.DataGoogleParameterManagerParameterVersion_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datagoogleparametermanagerparameterversion.DataGoogleParameterManagerParameterVe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleParameterManagerParameterVersion.DataGoogleParameterManagerParameterVersion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleparametermanagerparameterversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleparametermanagerparameterversion"
 
 datagoogleparametermanagerparameterversion.DataGoogleParameterManagerParameterVersion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataGoogleParameterManager
 
 The id of the existing DataGoogleParameterManagerParameterVersion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/data-sources/google_parameter_manager_parameter_version#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/data-sources/google_parameter_manager_parameter_version#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -700,7 +700,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleParameterManagerParameterVersion.DataGoogleParameterManagerParameterVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleparametermanagerparameterversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleparametermanagerparameterversion"
 
 &datagoogleparametermanagerparameterversion.DataGoogleParameterManagerParameterVersionConfig {
 	Connection: interface{},
@@ -728,10 +728,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglep
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleParameterManagerParameterVersion.DataGoogleParameterManagerParameterVersionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleParameterManagerParameterVersion.DataGoogleParameterManagerParameterVersionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleParameterManagerParameterVersion.DataGoogleParameterManagerParameterVersionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleParameterManagerParameterVersion.DataGoogleParameterManagerParameterVersionConfig.property.parameter">Parameter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/data-sources/google_parameter_manager_parameter_version#parameter DataGoogleParameterManagerParameterVersion#parameter}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleParameterManagerParameterVersion.DataGoogleParameterManagerParameterVersionConfig.property.parameterVersionId">ParameterVersionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/data-sources/google_parameter_manager_parameter_version#parameter_version_id DataGoogleParameterManagerParameterVersion#parameter_version_id}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleParameterManagerParameterVersion.DataGoogleParameterManagerParameterVersionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/data-sources/google_parameter_manager_parameter_version#id DataGoogleParameterManagerParameterVersion#id}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleParameterManagerParameterVersion.DataGoogleParameterManagerParameterVersionConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/data-sources/google_parameter_manager_parameter_version#project DataGoogleParameterManagerParameterVersion#project}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleParameterManagerParameterVersion.DataGoogleParameterManagerParameterVersionConfig.property.parameter">Parameter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/data-sources/google_parameter_manager_parameter_version#parameter DataGoogleParameterManagerParameterVersion#parameter}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleParameterManagerParameterVersion.DataGoogleParameterManagerParameterVersionConfig.property.parameterVersionId">ParameterVersionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/data-sources/google_parameter_manager_parameter_version#parameter_version_id DataGoogleParameterManagerParameterVersion#parameter_version_id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleParameterManagerParameterVersion.DataGoogleParameterManagerParameterVersionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/data-sources/google_parameter_manager_parameter_version#id DataGoogleParameterManagerParameterVersion#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleParameterManagerParameterVersion.DataGoogleParameterManagerParameterVersionConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/data-sources/google_parameter_manager_parameter_version#project DataGoogleParameterManagerParameterVersion#project}. |
 
 ---
 
@@ -813,7 +813,7 @@ Parameter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/data-sources/google_parameter_manager_parameter_version#parameter DataGoogleParameterManagerParameterVersion#parameter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/data-sources/google_parameter_manager_parameter_version#parameter DataGoogleParameterManagerParameterVersion#parameter}.
 
 ---
 
@@ -825,7 +825,7 @@ ParameterVersionId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/data-sources/google_parameter_manager_parameter_version#parameter_version_id DataGoogleParameterManagerParameterVersion#parameter_version_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/data-sources/google_parameter_manager_parameter_version#parameter_version_id DataGoogleParameterManagerParameterVersion#parameter_version_id}.
 
 ---
 
@@ -837,7 +837,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/data-sources/google_parameter_manager_parameter_version#id DataGoogleParameterManagerParameterVersion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/data-sources/google_parameter_manager_parameter_version#id DataGoogleParameterManagerParameterVersion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -852,7 +852,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/data-sources/google_parameter_manager_parameter_version#project DataGoogleParameterManagerParameterVersion#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/data-sources/google_parameter_manager_parameter_version#project DataGoogleParameterManagerParameterVersion#project}.
 
 ---
 

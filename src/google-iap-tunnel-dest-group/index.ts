@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iap_tunnel_dest_group
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_iap_tunnel_dest_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,56 +10,56 @@ export interface GoogleIapTunnelDestGroupConfig extends cdktf.TerraformMetaArgum
   /**
   * List of CIDRs that this group applies to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iap_tunnel_dest_group#cidrs GoogleIapTunnelDestGroup#cidrs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_iap_tunnel_dest_group#cidrs GoogleIapTunnelDestGroup#cidrs}
   */
   readonly cidrs?: string[];
   /**
   * List of FQDNs that this group applies to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iap_tunnel_dest_group#fqdns GoogleIapTunnelDestGroup#fqdns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_iap_tunnel_dest_group#fqdns GoogleIapTunnelDestGroup#fqdns}
   */
   readonly fqdns?: string[];
   /**
   * Unique tunnel destination group name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iap_tunnel_dest_group#group_name GoogleIapTunnelDestGroup#group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_iap_tunnel_dest_group#group_name GoogleIapTunnelDestGroup#group_name}
   */
   readonly groupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iap_tunnel_dest_group#id GoogleIapTunnelDestGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_iap_tunnel_dest_group#id GoogleIapTunnelDestGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iap_tunnel_dest_group#project GoogleIapTunnelDestGroup#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_iap_tunnel_dest_group#project GoogleIapTunnelDestGroup#project}
   */
   readonly project?: string;
   /**
   * The region of the tunnel group. Must be the same as the network resources in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iap_tunnel_dest_group#region GoogleIapTunnelDestGroup#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_iap_tunnel_dest_group#region GoogleIapTunnelDestGroup#region}
   */
   readonly region?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iap_tunnel_dest_group#timeouts GoogleIapTunnelDestGroup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_iap_tunnel_dest_group#timeouts GoogleIapTunnelDestGroup#timeouts}
   */
   readonly timeouts?: GoogleIapTunnelDestGroupTimeouts;
 }
 export interface GoogleIapTunnelDestGroupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iap_tunnel_dest_group#create GoogleIapTunnelDestGroup#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_iap_tunnel_dest_group#create GoogleIapTunnelDestGroup#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iap_tunnel_dest_group#delete GoogleIapTunnelDestGroup#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_iap_tunnel_dest_group#delete GoogleIapTunnelDestGroup#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iap_tunnel_dest_group#update GoogleIapTunnelDestGroup#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_iap_tunnel_dest_group#update GoogleIapTunnelDestGroup#update}
   */
   readonly update?: string;
 }
@@ -216,7 +211,7 @@ export class GoogleIapTunnelDestGroupTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iap_tunnel_dest_group google_iap_tunnel_dest_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_iap_tunnel_dest_group google_iap_tunnel_dest_group}
 */
 export class GoogleIapTunnelDestGroup extends cdktf.TerraformResource {
 
@@ -232,7 +227,7 @@ export class GoogleIapTunnelDestGroup extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleIapTunnelDestGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleIapTunnelDestGroup to import
-  * @param importFromId The id of the existing GoogleIapTunnelDestGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iap_tunnel_dest_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleIapTunnelDestGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_iap_tunnel_dest_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleIapTunnelDestGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -244,7 +239,7 @@ export class GoogleIapTunnelDestGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iap_tunnel_dest_group google_iap_tunnel_dest_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_iap_tunnel_dest_group google_iap_tunnel_dest_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -255,7 +250,7 @@ export class GoogleIapTunnelDestGroup extends cdktf.TerraformResource {
       terraformResourceType: 'google_iap_tunnel_dest_group',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.26.0',
+        providerVersion: '6.27.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

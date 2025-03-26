@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_secret_manager_secret_iam_binding
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_secret_manager_secret_iam_binding
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +8,46 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleSecretManagerSecretIamBindingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_secret_manager_secret_iam_binding#id GoogleSecretManagerSecretIamBinding#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_secret_manager_secret_iam_binding#id GoogleSecretManagerSecretIamBinding#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_secret_manager_secret_iam_binding#members GoogleSecretManagerSecretIamBinding#members}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_secret_manager_secret_iam_binding#members GoogleSecretManagerSecretIamBinding#members}
   */
   readonly members: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_secret_manager_secret_iam_binding#project GoogleSecretManagerSecretIamBinding#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_secret_manager_secret_iam_binding#project GoogleSecretManagerSecretIamBinding#project}
   */
   readonly project?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_secret_manager_secret_iam_binding#role GoogleSecretManagerSecretIamBinding#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_secret_manager_secret_iam_binding#role GoogleSecretManagerSecretIamBinding#role}
   */
   readonly role: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_secret_manager_secret_iam_binding#secret_id GoogleSecretManagerSecretIamBinding#secret_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_secret_manager_secret_iam_binding#secret_id GoogleSecretManagerSecretIamBinding#secret_id}
   */
   readonly secretId: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_secret_manager_secret_iam_binding#condition GoogleSecretManagerSecretIamBinding#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_secret_manager_secret_iam_binding#condition GoogleSecretManagerSecretIamBinding#condition}
   */
   readonly condition?: GoogleSecretManagerSecretIamBindingCondition;
 }
 export interface GoogleSecretManagerSecretIamBindingCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_secret_manager_secret_iam_binding#description GoogleSecretManagerSecretIamBinding#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_secret_manager_secret_iam_binding#description GoogleSecretManagerSecretIamBinding#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_secret_manager_secret_iam_binding#expression GoogleSecretManagerSecretIamBinding#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_secret_manager_secret_iam_binding#expression GoogleSecretManagerSecretIamBinding#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_secret_manager_secret_iam_binding#title GoogleSecretManagerSecretIamBinding#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_secret_manager_secret_iam_binding#title GoogleSecretManagerSecretIamBinding#title}
   */
   readonly title: string;
 }
@@ -188,7 +183,7 @@ export class GoogleSecretManagerSecretIamBindingConditionOutputReference extends
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_secret_manager_secret_iam_binding google_secret_manager_secret_iam_binding}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_secret_manager_secret_iam_binding google_secret_manager_secret_iam_binding}
 */
 export class GoogleSecretManagerSecretIamBinding extends cdktf.TerraformResource {
 
@@ -204,7 +199,7 @@ export class GoogleSecretManagerSecretIamBinding extends cdktf.TerraformResource
   * Generates CDKTF code for importing a GoogleSecretManagerSecretIamBinding resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleSecretManagerSecretIamBinding to import
-  * @param importFromId The id of the existing GoogleSecretManagerSecretIamBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_secret_manager_secret_iam_binding#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleSecretManagerSecretIamBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_secret_manager_secret_iam_binding#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleSecretManagerSecretIamBinding to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -216,7 +211,7 @@ export class GoogleSecretManagerSecretIamBinding extends cdktf.TerraformResource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_secret_manager_secret_iam_binding google_secret_manager_secret_iam_binding} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_secret_manager_secret_iam_binding google_secret_manager_secret_iam_binding} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -227,7 +222,7 @@ export class GoogleSecretManagerSecretIamBinding extends cdktf.TerraformResource
       terraformResourceType: 'google_secret_manager_secret_iam_binding',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.26.0',
+        providerVersion: '6.27.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

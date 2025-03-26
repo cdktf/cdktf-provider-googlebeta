@@ -4,7 +4,7 @@
 
 ### GoogleGkeBackupRestorePlanIamBinding <a name="GoogleGkeBackupRestorePlanIamBinding" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlanIamBinding.GoogleGkeBackupRestorePlanIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_backup_restore_plan_iam_binding google_gke_backup_restore_plan_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_backup_restore_plan_iam_binding google_gke_backup_restore_plan_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlanIamBinding.GoogleGkeBackupRestorePlanIamBinding.Initializer"></a>
 
@@ -508,7 +508,7 @@ The construct id used in the generated config for the GoogleGkeBackupRestorePlan
 
 The id of the existing GoogleGkeBackupRestorePlanIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_backup_restore_plan_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_backup_restore_plan_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -882,9 +882,9 @@ const googleGkeBackupRestorePlanIamBindingCondition: googleGkeBackupRestorePlanI
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlanIamBinding.GoogleGkeBackupRestorePlanIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_backup_restore_plan_iam_binding#expression GoogleGkeBackupRestorePlanIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlanIamBinding.GoogleGkeBackupRestorePlanIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_backup_restore_plan_iam_binding#title GoogleGkeBackupRestorePlanIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlanIamBinding.GoogleGkeBackupRestorePlanIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_backup_restore_plan_iam_binding#description GoogleGkeBackupRestorePlanIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlanIamBinding.GoogleGkeBackupRestorePlanIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_backup_restore_plan_iam_binding#expression GoogleGkeBackupRestorePlanIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlanIamBinding.GoogleGkeBackupRestorePlanIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_backup_restore_plan_iam_binding#title GoogleGkeBackupRestorePlanIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlanIamBinding.GoogleGkeBackupRestorePlanIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_backup_restore_plan_iam_binding#description GoogleGkeBackupRestorePlanIamBinding#description}. |
 
 ---
 
@@ -896,7 +896,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_backup_restore_plan_iam_binding#expression GoogleGkeBackupRestorePlanIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_backup_restore_plan_iam_binding#expression GoogleGkeBackupRestorePlanIamBinding#expression}.
 
 ---
 
@@ -908,7 +908,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_backup_restore_plan_iam_binding#title GoogleGkeBackupRestorePlanIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_backup_restore_plan_iam_binding#title GoogleGkeBackupRestorePlanIamBinding#title}.
 
 ---
 
@@ -920,7 +920,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_backup_restore_plan_iam_binding#description GoogleGkeBackupRestorePlanIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_backup_restore_plan_iam_binding#description GoogleGkeBackupRestorePlanIamBinding#description}.
 
 ---
 
@@ -945,13 +945,13 @@ const googleGkeBackupRestorePlanIamBindingConfig: googleGkeBackupRestorePlanIamB
 | <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlanIamBinding.GoogleGkeBackupRestorePlanIamBindingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlanIamBinding.GoogleGkeBackupRestorePlanIamBindingConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlanIamBinding.GoogleGkeBackupRestorePlanIamBindingConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlanIamBinding.GoogleGkeBackupRestorePlanIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_backup_restore_plan_iam_binding#members GoogleGkeBackupRestorePlanIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlanIamBinding.GoogleGkeBackupRestorePlanIamBindingConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_backup_restore_plan_iam_binding#name GoogleGkeBackupRestorePlanIamBinding#name}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlanIamBinding.GoogleGkeBackupRestorePlanIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_backup_restore_plan_iam_binding#role GoogleGkeBackupRestorePlanIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlanIamBinding.GoogleGkeBackupRestorePlanIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_backup_restore_plan_iam_binding#members GoogleGkeBackupRestorePlanIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlanIamBinding.GoogleGkeBackupRestorePlanIamBindingConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_backup_restore_plan_iam_binding#name GoogleGkeBackupRestorePlanIamBinding#name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlanIamBinding.GoogleGkeBackupRestorePlanIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_backup_restore_plan_iam_binding#role GoogleGkeBackupRestorePlanIamBinding#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlanIamBinding.GoogleGkeBackupRestorePlanIamBindingConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlanIamBinding.GoogleGkeBackupRestorePlanIamBindingCondition">GoogleGkeBackupRestorePlanIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlanIamBinding.GoogleGkeBackupRestorePlanIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_backup_restore_plan_iam_binding#id GoogleGkeBackupRestorePlanIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlanIamBinding.GoogleGkeBackupRestorePlanIamBindingConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_backup_restore_plan_iam_binding#location GoogleGkeBackupRestorePlanIamBinding#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlanIamBinding.GoogleGkeBackupRestorePlanIamBindingConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_backup_restore_plan_iam_binding#project GoogleGkeBackupRestorePlanIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlanIamBinding.GoogleGkeBackupRestorePlanIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_backup_restore_plan_iam_binding#id GoogleGkeBackupRestorePlanIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlanIamBinding.GoogleGkeBackupRestorePlanIamBindingConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_backup_restore_plan_iam_binding#location GoogleGkeBackupRestorePlanIamBinding#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlanIamBinding.GoogleGkeBackupRestorePlanIamBindingConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_backup_restore_plan_iam_binding#project GoogleGkeBackupRestorePlanIamBinding#project}. |
 
 ---
 
@@ -1033,7 +1033,7 @@ public readonly members: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_backup_restore_plan_iam_binding#members GoogleGkeBackupRestorePlanIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_backup_restore_plan_iam_binding#members GoogleGkeBackupRestorePlanIamBinding#members}.
 
 ---
 
@@ -1045,7 +1045,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_backup_restore_plan_iam_binding#name GoogleGkeBackupRestorePlanIamBinding#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_backup_restore_plan_iam_binding#name GoogleGkeBackupRestorePlanIamBinding#name}.
 
 ---
 
@@ -1057,7 +1057,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_backup_restore_plan_iam_binding#role GoogleGkeBackupRestorePlanIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_backup_restore_plan_iam_binding#role GoogleGkeBackupRestorePlanIamBinding#role}.
 
 ---
 
@@ -1071,7 +1071,7 @@ public readonly condition: GoogleGkeBackupRestorePlanIamBindingCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_backup_restore_plan_iam_binding#condition GoogleGkeBackupRestorePlanIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_backup_restore_plan_iam_binding#condition GoogleGkeBackupRestorePlanIamBinding#condition}
 
 ---
 
@@ -1083,7 +1083,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_backup_restore_plan_iam_binding#id GoogleGkeBackupRestorePlanIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_backup_restore_plan_iam_binding#id GoogleGkeBackupRestorePlanIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1098,7 +1098,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_backup_restore_plan_iam_binding#location GoogleGkeBackupRestorePlanIamBinding#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_backup_restore_plan_iam_binding#location GoogleGkeBackupRestorePlanIamBinding#location}.
 
 ---
 
@@ -1110,7 +1110,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_backup_restore_plan_iam_binding#project GoogleGkeBackupRestorePlanIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_backup_restore_plan_iam_binding#project GoogleGkeBackupRestorePlanIamBinding#project}.
 
 ---
 

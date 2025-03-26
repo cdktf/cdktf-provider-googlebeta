@@ -4,12 +4,12 @@
 
 ### GoogleBeyondcorpApplicationIamBinding <a name="GoogleBeyondcorpApplicationIamBinding" id="@cdktf/provider-google-beta.googleBeyondcorpApplicationIamBinding.GoogleBeyondcorpApplicationIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_beyondcorp_application_iam_binding google_beyondcorp_application_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_beyondcorp_application_iam_binding google_beyondcorp_application_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBeyondcorpApplicationIamBinding.GoogleBeyondcorpApplicationIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebeyondcorpapplicationiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebeyondcorpapplicationiambinding"
 
 googlebeyondcorpapplicationiambinding.NewGoogleBeyondcorpApplicationIamBinding(scope Construct, id *string, config GoogleBeyondcorpApplicationIamBindingConfig) GoogleBeyondcorpApplicationIamBinding
 ```
@@ -412,7 +412,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleBeyondcorpApplicationIamBinding.GoogleBeyondcorpApplicationIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebeyondcorpapplicationiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebeyondcorpapplicationiambinding"
 
 googlebeyondcorpapplicationiambinding.GoogleBeyondcorpApplicationIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleBeyondcorpApplicationIamBinding.GoogleBeyondcorpApplicationIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebeyondcorpapplicationiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebeyondcorpapplicationiambinding"
 
 googlebeyondcorpapplicationiambinding.GoogleBeyondcorpApplicationIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ googlebeyondcorpapplicationiambinding.GoogleBeyondcorpApplicationIamBinding_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleBeyondcorpApplicationIamBinding.GoogleBeyondcorpApplicationIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebeyondcorpapplicationiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebeyondcorpapplicationiambinding"
 
 googlebeyondcorpapplicationiambinding.GoogleBeyondcorpApplicationIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ googlebeyondcorpapplicationiambinding.GoogleBeyondcorpApplicationIamBinding_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleBeyondcorpApplicationIamBinding.GoogleBeyondcorpApplicationIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebeyondcorpapplicationiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebeyondcorpapplicationiambinding"
 
 googlebeyondcorpapplicationiambinding.GoogleBeyondcorpApplicationIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the GoogleBeyondcorpApplicatio
 
 The id of the existing GoogleBeyondcorpApplicationIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_beyondcorp_application_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_beyondcorp_application_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -866,7 +866,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBeyondcorpApplicationIamBinding.GoogleBeyondcorpApplicationIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebeyondcorpapplicationiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebeyondcorpapplicationiambinding"
 
 &googlebeyondcorpapplicationiambinding.GoogleBeyondcorpApplicationIamBindingCondition {
 	Expression: *string,
@@ -879,9 +879,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebeyon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleBeyondcorpApplicationIamBinding.GoogleBeyondcorpApplicationIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_beyondcorp_application_iam_binding#expression GoogleBeyondcorpApplicationIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBeyondcorpApplicationIamBinding.GoogleBeyondcorpApplicationIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_beyondcorp_application_iam_binding#title GoogleBeyondcorpApplicationIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBeyondcorpApplicationIamBinding.GoogleBeyondcorpApplicationIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_beyondcorp_application_iam_binding#description GoogleBeyondcorpApplicationIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBeyondcorpApplicationIamBinding.GoogleBeyondcorpApplicationIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_beyondcorp_application_iam_binding#expression GoogleBeyondcorpApplicationIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBeyondcorpApplicationIamBinding.GoogleBeyondcorpApplicationIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_beyondcorp_application_iam_binding#title GoogleBeyondcorpApplicationIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBeyondcorpApplicationIamBinding.GoogleBeyondcorpApplicationIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_beyondcorp_application_iam_binding#description GoogleBeyondcorpApplicationIamBinding#description}. |
 
 ---
 
@@ -893,7 +893,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_beyondcorp_application_iam_binding#expression GoogleBeyondcorpApplicationIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_beyondcorp_application_iam_binding#expression GoogleBeyondcorpApplicationIamBinding#expression}.
 
 ---
 
@@ -905,7 +905,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_beyondcorp_application_iam_binding#title GoogleBeyondcorpApplicationIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_beyondcorp_application_iam_binding#title GoogleBeyondcorpApplicationIamBinding#title}.
 
 ---
 
@@ -917,7 +917,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_beyondcorp_application_iam_binding#description GoogleBeyondcorpApplicationIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_beyondcorp_application_iam_binding#description GoogleBeyondcorpApplicationIamBinding#description}.
 
 ---
 
@@ -926,7 +926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBeyondcorpApplicationIamBinding.GoogleBeyondcorpApplicationIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebeyondcorpapplicationiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebeyondcorpapplicationiambinding"
 
 &googlebeyondcorpapplicationiambinding.GoogleBeyondcorpApplicationIamBindingConfig {
 	Connection: interface{},
@@ -940,7 +940,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebeyon
 	Members: *[]*string,
 	Role: *string,
 	SecurityGatewaysId: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleBeyondcorpApplicationIamBinding.GoogleBeyondcorpApplicationIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBeyondcorpApplicationIamBinding.GoogleBeyondcorpApplicationIamBindingCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -957,13 +957,13 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebeyon
 | <code><a href="#@cdktf/provider-google-beta.googleBeyondcorpApplicationIamBinding.GoogleBeyondcorpApplicationIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBeyondcorpApplicationIamBinding.GoogleBeyondcorpApplicationIamBindingConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBeyondcorpApplicationIamBinding.GoogleBeyondcorpApplicationIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleBeyondcorpApplicationIamBinding.GoogleBeyondcorpApplicationIamBindingConfig.property.applicationId">ApplicationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_beyondcorp_application_iam_binding#application_id GoogleBeyondcorpApplicationIamBinding#application_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBeyondcorpApplicationIamBinding.GoogleBeyondcorpApplicationIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_beyondcorp_application_iam_binding#members GoogleBeyondcorpApplicationIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBeyondcorpApplicationIamBinding.GoogleBeyondcorpApplicationIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_beyondcorp_application_iam_binding#role GoogleBeyondcorpApplicationIamBinding#role}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBeyondcorpApplicationIamBinding.GoogleBeyondcorpApplicationIamBindingConfig.property.securityGatewaysId">SecurityGatewaysId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_beyondcorp_application_iam_binding#security_gateways_id GoogleBeyondcorpApplicationIamBinding#security_gateways_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBeyondcorpApplicationIamBinding.GoogleBeyondcorpApplicationIamBindingConfig.property.applicationId">ApplicationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_beyondcorp_application_iam_binding#application_id GoogleBeyondcorpApplicationIamBinding#application_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBeyondcorpApplicationIamBinding.GoogleBeyondcorpApplicationIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_beyondcorp_application_iam_binding#members GoogleBeyondcorpApplicationIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBeyondcorpApplicationIamBinding.GoogleBeyondcorpApplicationIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_beyondcorp_application_iam_binding#role GoogleBeyondcorpApplicationIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBeyondcorpApplicationIamBinding.GoogleBeyondcorpApplicationIamBindingConfig.property.securityGatewaysId">SecurityGatewaysId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_beyondcorp_application_iam_binding#security_gateways_id GoogleBeyondcorpApplicationIamBinding#security_gateways_id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleBeyondcorpApplicationIamBinding.GoogleBeyondcorpApplicationIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleBeyondcorpApplicationIamBinding.GoogleBeyondcorpApplicationIamBindingCondition">GoogleBeyondcorpApplicationIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleBeyondcorpApplicationIamBinding.GoogleBeyondcorpApplicationIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_beyondcorp_application_iam_binding#id GoogleBeyondcorpApplicationIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBeyondcorpApplicationIamBinding.GoogleBeyondcorpApplicationIamBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_beyondcorp_application_iam_binding#project GoogleBeyondcorpApplicationIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBeyondcorpApplicationIamBinding.GoogleBeyondcorpApplicationIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_beyondcorp_application_iam_binding#id GoogleBeyondcorpApplicationIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBeyondcorpApplicationIamBinding.GoogleBeyondcorpApplicationIamBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_beyondcorp_application_iam_binding#project GoogleBeyondcorpApplicationIamBinding#project}. |
 
 ---
 
@@ -1045,7 +1045,7 @@ ApplicationId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_beyondcorp_application_iam_binding#application_id GoogleBeyondcorpApplicationIamBinding#application_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_beyondcorp_application_iam_binding#application_id GoogleBeyondcorpApplicationIamBinding#application_id}.
 
 ---
 
@@ -1057,7 +1057,7 @@ Members *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_beyondcorp_application_iam_binding#members GoogleBeyondcorpApplicationIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_beyondcorp_application_iam_binding#members GoogleBeyondcorpApplicationIamBinding#members}.
 
 ---
 
@@ -1069,7 +1069,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_beyondcorp_application_iam_binding#role GoogleBeyondcorpApplicationIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_beyondcorp_application_iam_binding#role GoogleBeyondcorpApplicationIamBinding#role}.
 
 ---
 
@@ -1081,7 +1081,7 @@ SecurityGatewaysId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_beyondcorp_application_iam_binding#security_gateways_id GoogleBeyondcorpApplicationIamBinding#security_gateways_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_beyondcorp_application_iam_binding#security_gateways_id GoogleBeyondcorpApplicationIamBinding#security_gateways_id}.
 
 ---
 
@@ -1095,7 +1095,7 @@ Condition GoogleBeyondcorpApplicationIamBindingCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_beyondcorp_application_iam_binding#condition GoogleBeyondcorpApplicationIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_beyondcorp_application_iam_binding#condition GoogleBeyondcorpApplicationIamBinding#condition}
 
 ---
 
@@ -1107,7 +1107,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_beyondcorp_application_iam_binding#id GoogleBeyondcorpApplicationIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_beyondcorp_application_iam_binding#id GoogleBeyondcorpApplicationIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1122,7 +1122,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_beyondcorp_application_iam_binding#project GoogleBeyondcorpApplicationIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_beyondcorp_application_iam_binding#project GoogleBeyondcorpApplicationIamBinding#project}.
 
 ---
 
@@ -1133,7 +1133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBeyondcorpApplicationIamBinding.GoogleBeyondcorpApplicationIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebeyondcorpapplicationiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebeyondcorpapplicationiambinding"
 
 googlebeyondcorpapplicationiambinding.NewGoogleBeyondcorpApplicationIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBeyondcorpApplicationIamBindingConditionOutputReference
 ```

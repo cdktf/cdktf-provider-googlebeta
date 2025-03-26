@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iap_client
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_iap_client
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -17,17 +12,17 @@ export interface GoogleIapClientConfig extends cdktf.TerraformMetaArguments {
   * is attached to. The format is
   * 'projects/{project_number}/brands/{brand_id}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iap_client#brand GoogleIapClient#brand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_iap_client#brand GoogleIapClient#brand}
   */
   readonly brand: string;
   /**
   * Human-friendly name given to the OAuth client.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iap_client#display_name GoogleIapClient#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_iap_client#display_name GoogleIapClient#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iap_client#id GoogleIapClient#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_iap_client#id GoogleIapClient#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -36,17 +31,17 @@ export interface GoogleIapClientConfig extends cdktf.TerraformMetaArguments {
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iap_client#timeouts GoogleIapClient#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_iap_client#timeouts GoogleIapClient#timeouts}
   */
   readonly timeouts?: GoogleIapClientTimeouts;
 }
 export interface GoogleIapClientTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iap_client#create GoogleIapClient#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_iap_client#create GoogleIapClient#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iap_client#delete GoogleIapClient#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_iap_client#delete GoogleIapClient#delete}
   */
   readonly delete?: string;
 }
@@ -169,7 +164,7 @@ export class GoogleIapClientTimeoutsOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iap_client google_iap_client}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_iap_client google_iap_client}
 */
 export class GoogleIapClient extends cdktf.TerraformResource {
 
@@ -185,7 +180,7 @@ export class GoogleIapClient extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleIapClient resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleIapClient to import
-  * @param importFromId The id of the existing GoogleIapClient that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iap_client#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleIapClient that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_iap_client#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleIapClient to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -197,7 +192,7 @@ export class GoogleIapClient extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iap_client google_iap_client} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_iap_client google_iap_client} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -208,7 +203,7 @@ export class GoogleIapClient extends cdktf.TerraformResource {
       terraformResourceType: 'google_iap_client',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.26.0',
+        providerVersion: '6.27.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

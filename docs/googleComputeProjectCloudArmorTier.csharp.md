@@ -4,7 +4,7 @@
 
 ### GoogleComputeProjectCloudArmorTier <a name="GoogleComputeProjectCloudArmorTier" id="@cdktf/provider-google-beta.googleComputeProjectCloudArmorTier.GoogleComputeProjectCloudArmorTier"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_project_cloud_armor_tier google_compute_project_cloud_armor_tier}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_project_cloud_armor_tier google_compute_project_cloud_armor_tier}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeProjectCloudArmorTier.GoogleComputeProjectCloudArmorTier.Initializer"></a>
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the GoogleComputeProjectCloudA
 
 The id of the existing GoogleComputeProjectCloudArmorTier that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_project_cloud_armor_tier#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_project_cloud_armor_tier#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -818,8 +818,8 @@ new GoogleComputeProjectCloudArmorTierConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleComputeProjectCloudArmorTier.GoogleComputeProjectCloudArmorTierConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeProjectCloudArmorTier.GoogleComputeProjectCloudArmorTierConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeProjectCloudArmorTier.GoogleComputeProjectCloudArmorTierConfig.property.cloudArmorTier">CloudArmorTier</a></code> | <code>string</code> | Managed protection tier to be set. Possible values: ["CA_STANDARD", "CA_ENTERPRISE_PAYGO", "CA_ENTERPRISE_ANNUAL"]. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeProjectCloudArmorTier.GoogleComputeProjectCloudArmorTierConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_project_cloud_armor_tier#id GoogleComputeProjectCloudArmorTier#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeProjectCloudArmorTier.GoogleComputeProjectCloudArmorTierConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_project_cloud_armor_tier#project GoogleComputeProjectCloudArmorTier#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeProjectCloudArmorTier.GoogleComputeProjectCloudArmorTierConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_project_cloud_armor_tier#id GoogleComputeProjectCloudArmorTier#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeProjectCloudArmorTier.GoogleComputeProjectCloudArmorTierConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_project_cloud_armor_tier#project GoogleComputeProjectCloudArmorTier#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeProjectCloudArmorTier.GoogleComputeProjectCloudArmorTierConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeProjectCloudArmorTier.GoogleComputeProjectCloudArmorTierTimeouts">GoogleComputeProjectCloudArmorTierTimeouts</a></code> | timeouts block. |
 
 ---
@@ -904,7 +904,7 @@ public string CloudArmorTier { get; set; }
 
 Managed protection tier to be set. Possible values: ["CA_STANDARD", "CA_ENTERPRISE_PAYGO", "CA_ENTERPRISE_ANNUAL"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_project_cloud_armor_tier#cloud_armor_tier GoogleComputeProjectCloudArmorTier#cloud_armor_tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_project_cloud_armor_tier#cloud_armor_tier GoogleComputeProjectCloudArmorTier#cloud_armor_tier}
 
 ---
 
@@ -916,7 +916,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_project_cloud_armor_tier#id GoogleComputeProjectCloudArmorTier#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_project_cloud_armor_tier#id GoogleComputeProjectCloudArmorTier#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -931,7 +931,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_project_cloud_armor_tier#project GoogleComputeProjectCloudArmorTier#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_project_cloud_armor_tier#project GoogleComputeProjectCloudArmorTier#project}.
 
 ---
 
@@ -945,7 +945,7 @@ public GoogleComputeProjectCloudArmorTierTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_project_cloud_armor_tier#timeouts GoogleComputeProjectCloudArmorTier#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_project_cloud_armor_tier#timeouts GoogleComputeProjectCloudArmorTier#timeouts}
 
 ---
 
@@ -967,9 +967,9 @@ new GoogleComputeProjectCloudArmorTierTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeProjectCloudArmorTier.GoogleComputeProjectCloudArmorTierTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_project_cloud_armor_tier#create GoogleComputeProjectCloudArmorTier#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeProjectCloudArmorTier.GoogleComputeProjectCloudArmorTierTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_project_cloud_armor_tier#delete GoogleComputeProjectCloudArmorTier#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeProjectCloudArmorTier.GoogleComputeProjectCloudArmorTierTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_project_cloud_armor_tier#update GoogleComputeProjectCloudArmorTier#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeProjectCloudArmorTier.GoogleComputeProjectCloudArmorTierTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_project_cloud_armor_tier#create GoogleComputeProjectCloudArmorTier#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeProjectCloudArmorTier.GoogleComputeProjectCloudArmorTierTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_project_cloud_armor_tier#delete GoogleComputeProjectCloudArmorTier#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeProjectCloudArmorTier.GoogleComputeProjectCloudArmorTierTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_project_cloud_armor_tier#update GoogleComputeProjectCloudArmorTier#update}. |
 
 ---
 
@@ -981,7 +981,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_project_cloud_armor_tier#create GoogleComputeProjectCloudArmorTier#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_project_cloud_armor_tier#create GoogleComputeProjectCloudArmorTier#create}.
 
 ---
 
@@ -993,7 +993,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_project_cloud_armor_tier#delete GoogleComputeProjectCloudArmorTier#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_project_cloud_armor_tier#delete GoogleComputeProjectCloudArmorTier#delete}.
 
 ---
 
@@ -1005,7 +1005,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_project_cloud_armor_tier#update GoogleComputeProjectCloudArmorTier#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_project_cloud_armor_tier#update GoogleComputeProjectCloudArmorTier#update}.
 
 ---
 

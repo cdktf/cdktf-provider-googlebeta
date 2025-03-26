@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iap_tunnel_dest_group_iam_policy
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_iap_tunnel_dest_group_iam_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +8,32 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleIapTunnelDestGroupIamPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iap_tunnel_dest_group_iam_policy#dest_group GoogleIapTunnelDestGroupIamPolicy#dest_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_iap_tunnel_dest_group_iam_policy#dest_group GoogleIapTunnelDestGroupIamPolicy#dest_group}
   */
   readonly destGroup: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iap_tunnel_dest_group_iam_policy#id GoogleIapTunnelDestGroupIamPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_iap_tunnel_dest_group_iam_policy#id GoogleIapTunnelDestGroupIamPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iap_tunnel_dest_group_iam_policy#policy_data GoogleIapTunnelDestGroupIamPolicy#policy_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_iap_tunnel_dest_group_iam_policy#policy_data GoogleIapTunnelDestGroupIamPolicy#policy_data}
   */
   readonly policyData: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iap_tunnel_dest_group_iam_policy#project GoogleIapTunnelDestGroupIamPolicy#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_iap_tunnel_dest_group_iam_policy#project GoogleIapTunnelDestGroupIamPolicy#project}
   */
   readonly project?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iap_tunnel_dest_group_iam_policy#region GoogleIapTunnelDestGroupIamPolicy#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_iap_tunnel_dest_group_iam_policy#region GoogleIapTunnelDestGroupIamPolicy#region}
   */
   readonly region?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iap_tunnel_dest_group_iam_policy google_iap_tunnel_dest_group_iam_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_iap_tunnel_dest_group_iam_policy google_iap_tunnel_dest_group_iam_policy}
 */
 export class GoogleIapTunnelDestGroupIamPolicy extends cdktf.TerraformResource {
 
@@ -54,7 +49,7 @@ export class GoogleIapTunnelDestGroupIamPolicy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleIapTunnelDestGroupIamPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleIapTunnelDestGroupIamPolicy to import
-  * @param importFromId The id of the existing GoogleIapTunnelDestGroupIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iap_tunnel_dest_group_iam_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleIapTunnelDestGroupIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_iap_tunnel_dest_group_iam_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleIapTunnelDestGroupIamPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -66,7 +61,7 @@ export class GoogleIapTunnelDestGroupIamPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_iap_tunnel_dest_group_iam_policy google_iap_tunnel_dest_group_iam_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_iap_tunnel_dest_group_iam_policy google_iap_tunnel_dest_group_iam_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +72,7 @@ export class GoogleIapTunnelDestGroupIamPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'google_iap_tunnel_dest_group_iam_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.26.0',
+        providerVersion: '6.27.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

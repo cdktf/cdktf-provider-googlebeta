@@ -4,7 +4,7 @@
 
 ### GoogleClouddeployDeliveryPipelineIamPolicy <a name="GoogleClouddeployDeliveryPipelineIamPolicy" id="@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamPolicy.GoogleClouddeployDeliveryPipelineIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy google_clouddeploy_delivery_pipeline_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy google_clouddeploy_delivery_pipeline_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamPolicy.GoogleClouddeployDeliveryPipelineIamPolicy.Initializer"></a>
 
@@ -40,11 +40,11 @@ googleClouddeployDeliveryPipelineIamPolicy.GoogleClouddeployDeliveryPipelineIamP
 | <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamPolicy.GoogleClouddeployDeliveryPipelineIamPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamPolicy.GoogleClouddeployDeliveryPipelineIamPolicy.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamPolicy.GoogleClouddeployDeliveryPipelineIamPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamPolicy.GoogleClouddeployDeliveryPipelineIamPolicy.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#name GoogleClouddeployDeliveryPipelineIamPolicy#name}. |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamPolicy.GoogleClouddeployDeliveryPipelineIamPolicy.Initializer.parameter.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#policy_data GoogleClouddeployDeliveryPipelineIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamPolicy.GoogleClouddeployDeliveryPipelineIamPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#id GoogleClouddeployDeliveryPipelineIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamPolicy.GoogleClouddeployDeliveryPipelineIamPolicy.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#location GoogleClouddeployDeliveryPipelineIamPolicy#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamPolicy.GoogleClouddeployDeliveryPipelineIamPolicy.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#project GoogleClouddeployDeliveryPipelineIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamPolicy.GoogleClouddeployDeliveryPipelineIamPolicy.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#name GoogleClouddeployDeliveryPipelineIamPolicy#name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamPolicy.GoogleClouddeployDeliveryPipelineIamPolicy.Initializer.parameter.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#policy_data GoogleClouddeployDeliveryPipelineIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamPolicy.GoogleClouddeployDeliveryPipelineIamPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#id GoogleClouddeployDeliveryPipelineIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamPolicy.GoogleClouddeployDeliveryPipelineIamPolicy.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#location GoogleClouddeployDeliveryPipelineIamPolicy#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamPolicy.GoogleClouddeployDeliveryPipelineIamPolicy.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#project GoogleClouddeployDeliveryPipelineIamPolicy#project}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#name GoogleClouddeployDeliveryPipelineIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#name GoogleClouddeployDeliveryPipelineIamPolicy#name}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#policy_data GoogleClouddeployDeliveryPipelineIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#policy_data GoogleClouddeployDeliveryPipelineIamPolicy#policy_data}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#id GoogleClouddeployDeliveryPipelineIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#id GoogleClouddeployDeliveryPipelineIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -139,7 +139,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#location GoogleClouddeployDeliveryPipelineIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#location GoogleClouddeployDeliveryPipelineIamPolicy#location}.
 
 ---
 
@@ -147,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#project GoogleClouddeployDeliveryPipelineIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#project GoogleClouddeployDeliveryPipelineIamPolicy#project}.
 
 ---
 
@@ -641,7 +641,7 @@ The construct id used in the generated config for the GoogleClouddeployDeliveryP
 
 The id of the existing GoogleClouddeployDeliveryPipelineIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -991,11 +991,11 @@ googleClouddeployDeliveryPipelineIamPolicy.GoogleClouddeployDeliveryPipelineIamP
 | <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamPolicy.GoogleClouddeployDeliveryPipelineIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamPolicy.GoogleClouddeployDeliveryPipelineIamPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamPolicy.GoogleClouddeployDeliveryPipelineIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamPolicy.GoogleClouddeployDeliveryPipelineIamPolicyConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#name GoogleClouddeployDeliveryPipelineIamPolicy#name}. |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamPolicy.GoogleClouddeployDeliveryPipelineIamPolicyConfig.property.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#policy_data GoogleClouddeployDeliveryPipelineIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamPolicy.GoogleClouddeployDeliveryPipelineIamPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#id GoogleClouddeployDeliveryPipelineIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamPolicy.GoogleClouddeployDeliveryPipelineIamPolicyConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#location GoogleClouddeployDeliveryPipelineIamPolicy#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamPolicy.GoogleClouddeployDeliveryPipelineIamPolicyConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#project GoogleClouddeployDeliveryPipelineIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamPolicy.GoogleClouddeployDeliveryPipelineIamPolicyConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#name GoogleClouddeployDeliveryPipelineIamPolicy#name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamPolicy.GoogleClouddeployDeliveryPipelineIamPolicyConfig.property.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#policy_data GoogleClouddeployDeliveryPipelineIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamPolicy.GoogleClouddeployDeliveryPipelineIamPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#id GoogleClouddeployDeliveryPipelineIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamPolicy.GoogleClouddeployDeliveryPipelineIamPolicyConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#location GoogleClouddeployDeliveryPipelineIamPolicy#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamPolicy.GoogleClouddeployDeliveryPipelineIamPolicyConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#project GoogleClouddeployDeliveryPipelineIamPolicy#project}. |
 
 ---
 
@@ -1077,7 +1077,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#name GoogleClouddeployDeliveryPipelineIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#name GoogleClouddeployDeliveryPipelineIamPolicy#name}.
 
 ---
 
@@ -1089,7 +1089,7 @@ policy_data: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#policy_data GoogleClouddeployDeliveryPipelineIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#policy_data GoogleClouddeployDeliveryPipelineIamPolicy#policy_data}.
 
 ---
 
@@ -1101,7 +1101,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#id GoogleClouddeployDeliveryPipelineIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#id GoogleClouddeployDeliveryPipelineIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1116,7 +1116,7 @@ location: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#location GoogleClouddeployDeliveryPipelineIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#location GoogleClouddeployDeliveryPipelineIamPolicy#location}.
 
 ---
 
@@ -1128,7 +1128,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#project GoogleClouddeployDeliveryPipelineIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy#project GoogleClouddeployDeliveryPipelineIamPolicy#project}.
 
 ---
 

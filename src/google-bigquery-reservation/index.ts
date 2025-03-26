@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_bigquery_reservation
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_bigquery_reservation
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface GoogleBigqueryReservationConfig extends cdktf.TerraformMetaArgu
   /**
   * Maximum number of queries that are allowed to run concurrently in this reservation. This is a soft limit due to asynchronous nature of the system and various optimizations for small queries. Default value is 0 which means that concurrency will be automatically set based on the reservation size.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_bigquery_reservation#concurrency GoogleBigqueryReservation#concurrency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_bigquery_reservation#concurrency GoogleBigqueryReservation#concurrency}
   */
   readonly concurrency?: number;
   /**
   * The edition type. Valid values are STANDARD, ENTERPRISE, ENTERPRISE_PLUS
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_bigquery_reservation#edition GoogleBigqueryReservation#edition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_bigquery_reservation#edition GoogleBigqueryReservation#edition}
   */
   readonly edition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_bigquery_reservation#id GoogleBigqueryReservation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_bigquery_reservation#id GoogleBigqueryReservation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -36,51 +31,226 @@ export interface GoogleBigqueryReservationConfig extends cdktf.TerraformMetaArgu
   * the same admin project. If true, a query using this reservation will execute with the slot
   * capacity specified above at most.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_bigquery_reservation#ignore_idle_slots GoogleBigqueryReservation#ignore_idle_slots}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_bigquery_reservation#ignore_idle_slots GoogleBigqueryReservation#ignore_idle_slots}
   */
   readonly ignoreIdleSlots?: boolean | cdktf.IResolvable;
   /**
   * The geographic location where the transfer config should reside.
   * Examples: US, EU, asia-northeast1. The default value is US.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_bigquery_reservation#location GoogleBigqueryReservation#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_bigquery_reservation#location GoogleBigqueryReservation#location}
   */
   readonly location?: string;
   /**
   * The name of the reservation. This field must only contain alphanumeric characters or dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_bigquery_reservation#name GoogleBigqueryReservation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_bigquery_reservation#name GoogleBigqueryReservation#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_bigquery_reservation#project GoogleBigqueryReservation#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_bigquery_reservation#project GoogleBigqueryReservation#project}
   */
   readonly project?: string;
+  /**
+  * The current location of the reservation's secondary replica. This field is only set for
+  * reservations using the managed disaster recovery feature. Users can set this in create
+  * reservation calls to create a failover reservation or in update reservation calls to convert
+  * a non-failover reservation to a failover reservation(or vice versa).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_bigquery_reservation#secondary_location GoogleBigqueryReservation#secondary_location}
+  */
+  readonly secondaryLocation?: string;
   /**
   * Minimum slots available to this reservation. A slot is a unit of computational power in BigQuery, and serves as the
   * unit of parallelism. Queries using this reservation might use more slots during runtime if ignoreIdleSlots is set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_bigquery_reservation#slot_capacity GoogleBigqueryReservation#slot_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_bigquery_reservation#slot_capacity GoogleBigqueryReservation#slot_capacity}
   */
   readonly slotCapacity: number;
   /**
   * autoscale block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_bigquery_reservation#autoscale GoogleBigqueryReservation#autoscale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_bigquery_reservation#autoscale GoogleBigqueryReservation#autoscale}
   */
   readonly autoscale?: GoogleBigqueryReservationAutoscale;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_bigquery_reservation#timeouts GoogleBigqueryReservation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_bigquery_reservation#timeouts GoogleBigqueryReservation#timeouts}
   */
   readonly timeouts?: GoogleBigqueryReservationTimeouts;
+}
+export interface GoogleBigqueryReservationReplicationStatusError {
+}
+
+export function googleBigqueryReservationReplicationStatusErrorToTerraform(struct?: GoogleBigqueryReservationReplicationStatusError): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function googleBigqueryReservationReplicationStatusErrorToHclTerraform(struct?: GoogleBigqueryReservationReplicationStatusError): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class GoogleBigqueryReservationReplicationStatusErrorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleBigqueryReservationReplicationStatusError | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleBigqueryReservationReplicationStatusError | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // code - computed: true, optional: false, required: false
+  public get code() {
+    return this.getNumberAttribute('code');
+  }
+
+  // message - computed: true, optional: false, required: false
+  public get message() {
+    return this.getStringAttribute('message');
+  }
+}
+
+export class GoogleBigqueryReservationReplicationStatusErrorList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleBigqueryReservationReplicationStatusErrorOutputReference {
+    return new GoogleBigqueryReservationReplicationStatusErrorOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleBigqueryReservationReplicationStatus {
+}
+
+export function googleBigqueryReservationReplicationStatusToTerraform(struct?: GoogleBigqueryReservationReplicationStatus): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function googleBigqueryReservationReplicationStatusToHclTerraform(struct?: GoogleBigqueryReservationReplicationStatus): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class GoogleBigqueryReservationReplicationStatusOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleBigqueryReservationReplicationStatus | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleBigqueryReservationReplicationStatus | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // error - computed: true, optional: false, required: false
+  private _error = new GoogleBigqueryReservationReplicationStatusErrorList(this, "error", false);
+  public get error() {
+    return this._error;
+  }
+
+  // last_error_time - computed: true, optional: false, required: false
+  public get lastErrorTime() {
+    return this.getStringAttribute('last_error_time');
+  }
+
+  // last_replication_time - computed: true, optional: false, required: false
+  public get lastReplicationTime() {
+    return this.getStringAttribute('last_replication_time');
+  }
+}
+
+export class GoogleBigqueryReservationReplicationStatusList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleBigqueryReservationReplicationStatusOutputReference {
+    return new GoogleBigqueryReservationReplicationStatusOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface GoogleBigqueryReservationAutoscale {
   /**
   * Number of slots to be scaled when needed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_bigquery_reservation#max_slots GoogleBigqueryReservation#max_slots}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_bigquery_reservation#max_slots GoogleBigqueryReservation#max_slots}
   */
   readonly maxSlots?: number;
 }
@@ -169,15 +339,15 @@ export class GoogleBigqueryReservationAutoscaleOutputReference extends cdktf.Com
 }
 export interface GoogleBigqueryReservationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_bigquery_reservation#create GoogleBigqueryReservation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_bigquery_reservation#create GoogleBigqueryReservation#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_bigquery_reservation#delete GoogleBigqueryReservation#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_bigquery_reservation#delete GoogleBigqueryReservation#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_bigquery_reservation#update GoogleBigqueryReservation#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_bigquery_reservation#update GoogleBigqueryReservation#update}
   */
   readonly update?: string;
 }
@@ -329,7 +499,7 @@ export class GoogleBigqueryReservationTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_bigquery_reservation google_bigquery_reservation}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_bigquery_reservation google_bigquery_reservation}
 */
 export class GoogleBigqueryReservation extends cdktf.TerraformResource {
 
@@ -345,7 +515,7 @@ export class GoogleBigqueryReservation extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleBigqueryReservation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleBigqueryReservation to import
-  * @param importFromId The id of the existing GoogleBigqueryReservation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_bigquery_reservation#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleBigqueryReservation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_bigquery_reservation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleBigqueryReservation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -357,7 +527,7 @@ export class GoogleBigqueryReservation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_bigquery_reservation google_bigquery_reservation} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_bigquery_reservation google_bigquery_reservation} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -368,7 +538,7 @@ export class GoogleBigqueryReservation extends cdktf.TerraformResource {
       terraformResourceType: 'google_bigquery_reservation',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.26.0',
+        providerVersion: '6.27.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -386,6 +556,7 @@ export class GoogleBigqueryReservation extends cdktf.TerraformResource {
     this._location = config.location;
     this._name = config.name;
     this._project = config.project;
+    this._secondaryLocation = config.secondaryLocation;
     this._slotCapacity = config.slotCapacity;
     this._autoscale.internalValue = config.autoscale;
     this._timeouts.internalValue = config.timeouts;
@@ -488,6 +659,16 @@ export class GoogleBigqueryReservation extends cdktf.TerraformResource {
     return this._name;
   }
 
+  // original_primary_location - computed: true, optional: false, required: false
+  public get originalPrimaryLocation() {
+    return this.getStringAttribute('original_primary_location');
+  }
+
+  // primary_location - computed: true, optional: false, required: false
+  public get primaryLocation() {
+    return this.getStringAttribute('primary_location');
+  }
+
   // project - computed: true, optional: true, required: false
   private _project?: string; 
   public get project() {
@@ -502,6 +683,28 @@ export class GoogleBigqueryReservation extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get projectInput() {
     return this._project;
+  }
+
+  // replication_status - computed: true, optional: false, required: false
+  private _replicationStatus = new GoogleBigqueryReservationReplicationStatusList(this, "replication_status", false);
+  public get replicationStatus() {
+    return this._replicationStatus;
+  }
+
+  // secondary_location - computed: false, optional: true, required: false
+  private _secondaryLocation?: string; 
+  public get secondaryLocation() {
+    return this.getStringAttribute('secondary_location');
+  }
+  public set secondaryLocation(value: string) {
+    this._secondaryLocation = value;
+  }
+  public resetSecondaryLocation() {
+    this._secondaryLocation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secondaryLocationInput() {
+    return this._secondaryLocation;
   }
 
   // slot_capacity - computed: false, optional: false, required: true
@@ -562,6 +765,7 @@ export class GoogleBigqueryReservation extends cdktf.TerraformResource {
       location: cdktf.stringToTerraform(this._location),
       name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),
+      secondary_location: cdktf.stringToTerraform(this._secondaryLocation),
       slot_capacity: cdktf.numberToTerraform(this._slotCapacity),
       autoscale: googleBigqueryReservationAutoscaleToTerraform(this._autoscale.internalValue),
       timeouts: googleBigqueryReservationTimeoutsToTerraform(this._timeouts.internalValue),
@@ -608,6 +812,12 @@ export class GoogleBigqueryReservation extends cdktf.TerraformResource {
       },
       project: {
         value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secondary_location: {
+        value: cdktf.stringToHclTerraform(this._secondaryLocation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
