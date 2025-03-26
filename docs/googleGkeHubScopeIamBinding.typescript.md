@@ -4,7 +4,7 @@
 
 ### GoogleGkeHubScopeIamBinding <a name="GoogleGkeHubScopeIamBinding" id="@cdktf/provider-google-beta.googleGkeHubScopeIamBinding.GoogleGkeHubScopeIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_scope_iam_binding google_gke_hub_scope_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_scope_iam_binding google_gke_hub_scope_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeHubScopeIamBinding.GoogleGkeHubScopeIamBinding.Initializer"></a>
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the GoogleGkeHubScopeIamBindin
 
 The id of the existing GoogleGkeHubScopeIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_scope_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_scope_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -853,9 +853,9 @@ const googleGkeHubScopeIamBindingCondition: googleGkeHubScopeIamBinding.GoogleGk
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScopeIamBinding.GoogleGkeHubScopeIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_scope_iam_binding#expression GoogleGkeHubScopeIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScopeIamBinding.GoogleGkeHubScopeIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_scope_iam_binding#title GoogleGkeHubScopeIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScopeIamBinding.GoogleGkeHubScopeIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_scope_iam_binding#description GoogleGkeHubScopeIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScopeIamBinding.GoogleGkeHubScopeIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_scope_iam_binding#expression GoogleGkeHubScopeIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScopeIamBinding.GoogleGkeHubScopeIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_scope_iam_binding#title GoogleGkeHubScopeIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScopeIamBinding.GoogleGkeHubScopeIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_scope_iam_binding#description GoogleGkeHubScopeIamBinding#description}. |
 
 ---
 
@@ -867,7 +867,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_scope_iam_binding#expression GoogleGkeHubScopeIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_scope_iam_binding#expression GoogleGkeHubScopeIamBinding#expression}.
 
 ---
 
@@ -879,7 +879,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_scope_iam_binding#title GoogleGkeHubScopeIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_scope_iam_binding#title GoogleGkeHubScopeIamBinding#title}.
 
 ---
 
@@ -891,7 +891,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_scope_iam_binding#description GoogleGkeHubScopeIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_scope_iam_binding#description GoogleGkeHubScopeIamBinding#description}.
 
 ---
 
@@ -916,12 +916,12 @@ const googleGkeHubScopeIamBindingConfig: googleGkeHubScopeIamBinding.GoogleGkeHu
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScopeIamBinding.GoogleGkeHubScopeIamBindingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScopeIamBinding.GoogleGkeHubScopeIamBindingConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScopeIamBinding.GoogleGkeHubScopeIamBindingConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScopeIamBinding.GoogleGkeHubScopeIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_scope_iam_binding#members GoogleGkeHubScopeIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScopeIamBinding.GoogleGkeHubScopeIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_scope_iam_binding#role GoogleGkeHubScopeIamBinding#role}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScopeIamBinding.GoogleGkeHubScopeIamBindingConfig.property.scopeId">scopeId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_scope_iam_binding#scope_id GoogleGkeHubScopeIamBinding#scope_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScopeIamBinding.GoogleGkeHubScopeIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_scope_iam_binding#members GoogleGkeHubScopeIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScopeIamBinding.GoogleGkeHubScopeIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_scope_iam_binding#role GoogleGkeHubScopeIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScopeIamBinding.GoogleGkeHubScopeIamBindingConfig.property.scopeId">scopeId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_scope_iam_binding#scope_id GoogleGkeHubScopeIamBinding#scope_id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScopeIamBinding.GoogleGkeHubScopeIamBindingConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScopeIamBinding.GoogleGkeHubScopeIamBindingCondition">GoogleGkeHubScopeIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScopeIamBinding.GoogleGkeHubScopeIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_scope_iam_binding#id GoogleGkeHubScopeIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScopeIamBinding.GoogleGkeHubScopeIamBindingConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_scope_iam_binding#project GoogleGkeHubScopeIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScopeIamBinding.GoogleGkeHubScopeIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_scope_iam_binding#id GoogleGkeHubScopeIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScopeIamBinding.GoogleGkeHubScopeIamBindingConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_scope_iam_binding#project GoogleGkeHubScopeIamBinding#project}. |
 
 ---
 
@@ -1003,7 +1003,7 @@ public readonly members: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_scope_iam_binding#members GoogleGkeHubScopeIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_scope_iam_binding#members GoogleGkeHubScopeIamBinding#members}.
 
 ---
 
@@ -1015,7 +1015,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_scope_iam_binding#role GoogleGkeHubScopeIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_scope_iam_binding#role GoogleGkeHubScopeIamBinding#role}.
 
 ---
 
@@ -1027,7 +1027,7 @@ public readonly scopeId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_scope_iam_binding#scope_id GoogleGkeHubScopeIamBinding#scope_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_scope_iam_binding#scope_id GoogleGkeHubScopeIamBinding#scope_id}.
 
 ---
 
@@ -1041,7 +1041,7 @@ public readonly condition: GoogleGkeHubScopeIamBindingCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_scope_iam_binding#condition GoogleGkeHubScopeIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_scope_iam_binding#condition GoogleGkeHubScopeIamBinding#condition}
 
 ---
 
@@ -1053,7 +1053,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_scope_iam_binding#id GoogleGkeHubScopeIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_scope_iam_binding#id GoogleGkeHubScopeIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1068,7 +1068,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_scope_iam_binding#project GoogleGkeHubScopeIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_scope_iam_binding#project GoogleGkeHubScopeIamBinding#project}.
 
 ---
 

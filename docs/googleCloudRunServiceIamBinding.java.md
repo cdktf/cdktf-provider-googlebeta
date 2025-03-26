@@ -4,7 +4,7 @@
 
 ### GoogleCloudRunServiceIamBinding <a name="GoogleCloudRunServiceIamBinding" id="@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_run_service_iam_binding google_cloud_run_service_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_cloud_run_service_iam_binding google_cloud_run_service_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBinding.Initializer"></a>
 
@@ -44,13 +44,13 @@ GoogleCloudRunServiceIamBinding.Builder.create(Construct scope, java.lang.String
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBinding.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBinding.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBinding.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBinding.Initializer.parameter.members">members</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_run_service_iam_binding#members GoogleCloudRunServiceIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBinding.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_run_service_iam_binding#role GoogleCloudRunServiceIamBinding#role}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBinding.Initializer.parameter.service">service</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_run_service_iam_binding#service GoogleCloudRunServiceIamBinding#service}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBinding.Initializer.parameter.members">members</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_cloud_run_service_iam_binding#members GoogleCloudRunServiceIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBinding.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_cloud_run_service_iam_binding#role GoogleCloudRunServiceIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBinding.Initializer.parameter.service">service</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_cloud_run_service_iam_binding#service GoogleCloudRunServiceIamBinding#service}. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBinding.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBindingCondition">GoogleCloudRunServiceIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBinding.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_run_service_iam_binding#id GoogleCloudRunServiceIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBinding.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_run_service_iam_binding#location GoogleCloudRunServiceIamBinding#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBinding.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_run_service_iam_binding#project GoogleCloudRunServiceIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBinding.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_cloud_run_service_iam_binding#id GoogleCloudRunServiceIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBinding.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_cloud_run_service_iam_binding#location GoogleCloudRunServiceIamBinding#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBinding.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_cloud_run_service_iam_binding#project GoogleCloudRunServiceIamBinding#project}. |
 
 ---
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_run_service_iam_binding#members GoogleCloudRunServiceIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_cloud_run_service_iam_binding#members GoogleCloudRunServiceIamBinding#members}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_run_service_iam_binding#role GoogleCloudRunServiceIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_cloud_run_service_iam_binding#role GoogleCloudRunServiceIamBinding#role}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_run_service_iam_binding#service GoogleCloudRunServiceIamBinding#service}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_cloud_run_service_iam_binding#service GoogleCloudRunServiceIamBinding#service}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_run_service_iam_binding#condition GoogleCloudRunServiceIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_cloud_run_service_iam_binding#condition GoogleCloudRunServiceIamBinding#condition}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_run_service_iam_binding#id GoogleCloudRunServiceIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_cloud_run_service_iam_binding#id GoogleCloudRunServiceIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -163,7 +163,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_run_service_iam_binding#location GoogleCloudRunServiceIamBinding#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_cloud_run_service_iam_binding#location GoogleCloudRunServiceIamBinding#location}.
 
 ---
 
@@ -171,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_run_service_iam_binding#project GoogleCloudRunServiceIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_cloud_run_service_iam_binding#project GoogleCloudRunServiceIamBinding#project}.
 
 ---
 
@@ -639,7 +639,7 @@ The construct id used in the generated config for the GoogleCloudRunServiceIamBi
 
 The id of the existing GoogleCloudRunServiceIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_run_service_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_cloud_run_service_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1017,9 +1017,9 @@ GoogleCloudRunServiceIamBindingCondition.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBindingCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_run_service_iam_binding#expression GoogleCloudRunServiceIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBindingCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_run_service_iam_binding#title GoogleCloudRunServiceIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBindingCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_run_service_iam_binding#description GoogleCloudRunServiceIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBindingCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_cloud_run_service_iam_binding#expression GoogleCloudRunServiceIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBindingCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_cloud_run_service_iam_binding#title GoogleCloudRunServiceIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBindingCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_cloud_run_service_iam_binding#description GoogleCloudRunServiceIamBinding#description}. |
 
 ---
 
@@ -1031,7 +1031,7 @@ public java.lang.String getExpression();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_run_service_iam_binding#expression GoogleCloudRunServiceIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_cloud_run_service_iam_binding#expression GoogleCloudRunServiceIamBinding#expression}.
 
 ---
 
@@ -1043,7 +1043,7 @@ public java.lang.String getTitle();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_run_service_iam_binding#title GoogleCloudRunServiceIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_cloud_run_service_iam_binding#title GoogleCloudRunServiceIamBinding#title}.
 
 ---
 
@@ -1055,7 +1055,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_run_service_iam_binding#description GoogleCloudRunServiceIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_cloud_run_service_iam_binding#description GoogleCloudRunServiceIamBinding#description}.
 
 ---
 
@@ -1099,13 +1099,13 @@ GoogleCloudRunServiceIamBindingConfig.builder()
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBindingConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBindingConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBindingConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBindingConfig.property.members">members</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_run_service_iam_binding#members GoogleCloudRunServiceIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBindingConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_run_service_iam_binding#role GoogleCloudRunServiceIamBinding#role}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBindingConfig.property.service">service</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_run_service_iam_binding#service GoogleCloudRunServiceIamBinding#service}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBindingConfig.property.members">members</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_cloud_run_service_iam_binding#members GoogleCloudRunServiceIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBindingConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_cloud_run_service_iam_binding#role GoogleCloudRunServiceIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBindingConfig.property.service">service</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_cloud_run_service_iam_binding#service GoogleCloudRunServiceIamBinding#service}. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBindingConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBindingCondition">GoogleCloudRunServiceIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBindingConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_run_service_iam_binding#id GoogleCloudRunServiceIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBindingConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_run_service_iam_binding#location GoogleCloudRunServiceIamBinding#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBindingConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_run_service_iam_binding#project GoogleCloudRunServiceIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBindingConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_cloud_run_service_iam_binding#id GoogleCloudRunServiceIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBindingConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_cloud_run_service_iam_binding#location GoogleCloudRunServiceIamBinding#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBindingConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_cloud_run_service_iam_binding#project GoogleCloudRunServiceIamBinding#project}. |
 
 ---
 
@@ -1187,7 +1187,7 @@ public java.util.List<java.lang.String> getMembers();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_run_service_iam_binding#members GoogleCloudRunServiceIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_cloud_run_service_iam_binding#members GoogleCloudRunServiceIamBinding#members}.
 
 ---
 
@@ -1199,7 +1199,7 @@ public java.lang.String getRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_run_service_iam_binding#role GoogleCloudRunServiceIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_cloud_run_service_iam_binding#role GoogleCloudRunServiceIamBinding#role}.
 
 ---
 
@@ -1211,7 +1211,7 @@ public java.lang.String getService();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_run_service_iam_binding#service GoogleCloudRunServiceIamBinding#service}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_cloud_run_service_iam_binding#service GoogleCloudRunServiceIamBinding#service}.
 
 ---
 
@@ -1225,7 +1225,7 @@ public GoogleCloudRunServiceIamBindingCondition getCondition();
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_run_service_iam_binding#condition GoogleCloudRunServiceIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_cloud_run_service_iam_binding#condition GoogleCloudRunServiceIamBinding#condition}
 
 ---
 
@@ -1237,7 +1237,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_run_service_iam_binding#id GoogleCloudRunServiceIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_cloud_run_service_iam_binding#id GoogleCloudRunServiceIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1252,7 +1252,7 @@ public java.lang.String getLocation();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_run_service_iam_binding#location GoogleCloudRunServiceIamBinding#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_cloud_run_service_iam_binding#location GoogleCloudRunServiceIamBinding#location}.
 
 ---
 
@@ -1264,7 +1264,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_cloud_run_service_iam_binding#project GoogleCloudRunServiceIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_cloud_run_service_iam_binding#project GoogleCloudRunServiceIamBinding#project}.
 
 ---
 

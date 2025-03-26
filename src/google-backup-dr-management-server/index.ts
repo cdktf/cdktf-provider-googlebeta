@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_backup_dr_management_server
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_backup_dr_management_server
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleBackupDrManagementServerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_backup_dr_management_server#id GoogleBackupDrManagementServer#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_backup_dr_management_server#id GoogleBackupDrManagementServer#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,35 +22,35 @@ export interface GoogleBackupDrManagementServerConfig extends cdktf.TerraformMet
   /**
   * The location for the management server (management console)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_backup_dr_management_server#location GoogleBackupDrManagementServer#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_backup_dr_management_server#location GoogleBackupDrManagementServer#location}
   */
   readonly location: string;
   /**
   * The name of management server (management console)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_backup_dr_management_server#name GoogleBackupDrManagementServer#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_backup_dr_management_server#name GoogleBackupDrManagementServer#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_backup_dr_management_server#project GoogleBackupDrManagementServer#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_backup_dr_management_server#project GoogleBackupDrManagementServer#project}
   */
   readonly project?: string;
   /**
   * The type of management server (management console). Default value: "BACKUP_RESTORE" Possible values: ["BACKUP_RESTORE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_backup_dr_management_server#type GoogleBackupDrManagementServer#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_backup_dr_management_server#type GoogleBackupDrManagementServer#type}
   */
   readonly type?: string;
   /**
   * networks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_backup_dr_management_server#networks GoogleBackupDrManagementServer#networks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_backup_dr_management_server#networks GoogleBackupDrManagementServer#networks}
   */
   readonly networks?: GoogleBackupDrManagementServerNetworks[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_backup_dr_management_server#timeouts GoogleBackupDrManagementServer#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_backup_dr_management_server#timeouts GoogleBackupDrManagementServer#timeouts}
   */
   readonly timeouts?: GoogleBackupDrManagementServerTimeouts;
 }
@@ -138,13 +138,13 @@ export interface GoogleBackupDrManagementServerNetworks {
   /**
   * Network with format 'projects/{{project_id}}/global/networks/{{network_id}}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_backup_dr_management_server#network GoogleBackupDrManagementServer#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_backup_dr_management_server#network GoogleBackupDrManagementServer#network}
   */
   readonly network: string;
   /**
   * Type of Network peeringMode Default value: "PRIVATE_SERVICE_ACCESS" Possible values: ["PRIVATE_SERVICE_ACCESS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_backup_dr_management_server#peering_mode GoogleBackupDrManagementServer#peering_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_backup_dr_management_server#peering_mode GoogleBackupDrManagementServer#peering_mode}
   */
   readonly peeringMode?: string;
 }
@@ -286,11 +286,11 @@ export class GoogleBackupDrManagementServerNetworksList extends cdktf.ComplexLis
 }
 export interface GoogleBackupDrManagementServerTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_backup_dr_management_server#create GoogleBackupDrManagementServer#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_backup_dr_management_server#create GoogleBackupDrManagementServer#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_backup_dr_management_server#delete GoogleBackupDrManagementServer#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_backup_dr_management_server#delete GoogleBackupDrManagementServer#delete}
   */
   readonly delete?: string;
 }
@@ -413,7 +413,7 @@ export class GoogleBackupDrManagementServerTimeoutsOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_backup_dr_management_server google_backup_dr_management_server}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_backup_dr_management_server google_backup_dr_management_server}
 */
 export class GoogleBackupDrManagementServer extends cdktf.TerraformResource {
 
@@ -429,7 +429,7 @@ export class GoogleBackupDrManagementServer extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleBackupDrManagementServer resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleBackupDrManagementServer to import
-  * @param importFromId The id of the existing GoogleBackupDrManagementServer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_backup_dr_management_server#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleBackupDrManagementServer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_backup_dr_management_server#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleBackupDrManagementServer to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -441,7 +441,7 @@ export class GoogleBackupDrManagementServer extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_backup_dr_management_server google_backup_dr_management_server} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_backup_dr_management_server google_backup_dr_management_server} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -452,7 +452,7 @@ export class GoogleBackupDrManagementServer extends cdktf.TerraformResource {
       terraformResourceType: 'google_backup_dr_management_server',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.26.0',
+        providerVersion: '6.27.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

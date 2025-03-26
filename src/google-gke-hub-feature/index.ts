@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleGkeHubFeatureConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#id GoogleGkeHubFeature#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#id GoogleGkeHubFeature#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -25,41 +25,41 @@ export interface GoogleGkeHubFeatureConfig extends cdktf.TerraformMetaArguments 
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#labels GoogleGkeHubFeature#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#labels GoogleGkeHubFeature#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location for the resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#location GoogleGkeHubFeature#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#location GoogleGkeHubFeature#location}
   */
   readonly location: string;
   /**
   * The full, unique name of this Feature resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#name GoogleGkeHubFeature#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#name GoogleGkeHubFeature#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#project GoogleGkeHubFeature#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#project GoogleGkeHubFeature#project}
   */
   readonly project?: string;
   /**
   * fleet_default_member_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#fleet_default_member_config GoogleGkeHubFeature#fleet_default_member_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#fleet_default_member_config GoogleGkeHubFeature#fleet_default_member_config}
   */
   readonly fleetDefaultMemberConfig?: GoogleGkeHubFeatureFleetDefaultMemberConfig;
   /**
   * spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#spec GoogleGkeHubFeature#spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#spec GoogleGkeHubFeature#spec}
   */
   readonly spec?: GoogleGkeHubFeatureSpec;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#timeouts GoogleGkeHubFeature#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#timeouts GoogleGkeHubFeature#timeouts}
   */
   readonly timeouts?: GoogleGkeHubFeatureTimeouts;
 }
@@ -308,49 +308,49 @@ export interface GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConf
   /**
   * The Google Cloud Service Account Email used for auth when secretType is gcpServiceAccount
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#gcp_service_account_email GoogleGkeHubFeature#gcp_service_account_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#gcp_service_account_email GoogleGkeHubFeature#gcp_service_account_email}
   */
   readonly gcpServiceAccountEmail?: string;
   /**
   * URL for the HTTPS Proxy to be used when communicating with the Git repo
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#https_proxy GoogleGkeHubFeature#https_proxy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#https_proxy GoogleGkeHubFeature#https_proxy}
   */
   readonly httpsProxy?: string;
   /**
   * The path within the Git repository that represents the top level of the repo to sync
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#policy_dir GoogleGkeHubFeature#policy_dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#policy_dir GoogleGkeHubFeature#policy_dir}
   */
   readonly policyDir?: string;
   /**
   * Type of secret configured for access to the Git repo
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#secret_type GoogleGkeHubFeature#secret_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#secret_type GoogleGkeHubFeature#secret_type}
   */
   readonly secretType: string;
   /**
   * The branch of the repository to sync from. Default: master
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#sync_branch GoogleGkeHubFeature#sync_branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#sync_branch GoogleGkeHubFeature#sync_branch}
   */
   readonly syncBranch?: string;
   /**
   * The URL of the Git repository to use as the source of truth
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#sync_repo GoogleGkeHubFeature#sync_repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#sync_repo GoogleGkeHubFeature#sync_repo}
   */
   readonly syncRepo?: string;
   /**
   * Git revision (tag or hash) to check out. Default HEAD
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#sync_rev GoogleGkeHubFeature#sync_rev}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#sync_rev GoogleGkeHubFeature#sync_rev}
   */
   readonly syncRev?: string;
   /**
   * Period in seconds between consecutive syncs. Default: 15
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#sync_wait_secs GoogleGkeHubFeature#sync_wait_secs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#sync_wait_secs GoogleGkeHubFeature#sync_wait_secs}
   */
   readonly syncWaitSecs?: string;
 }
@@ -636,37 +636,37 @@ export interface GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConf
   /**
   * The Google Cloud Service Account Email used for auth when secretType is gcpServiceAccount
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#gcp_service_account_email GoogleGkeHubFeature#gcp_service_account_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#gcp_service_account_email GoogleGkeHubFeature#gcp_service_account_email}
   */
   readonly gcpServiceAccountEmail?: string;
   /**
   * The absolute path of the directory that contains the local resources. Default: the root directory of the image
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#policy_dir GoogleGkeHubFeature#policy_dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#policy_dir GoogleGkeHubFeature#policy_dir}
   */
   readonly policyDir?: string;
   /**
   * Type of secret configured for access to the Git repo
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#secret_type GoogleGkeHubFeature#secret_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#secret_type GoogleGkeHubFeature#secret_type}
   */
   readonly secretType: string;
   /**
   * The OCI image repository URL for the package to sync from
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#sync_repo GoogleGkeHubFeature#sync_repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#sync_repo GoogleGkeHubFeature#sync_repo}
   */
   readonly syncRepo?: string;
   /**
   * Period in seconds between consecutive syncs. Default: 15
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#sync_wait_secs GoogleGkeHubFeature#sync_wait_secs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#sync_wait_secs GoogleGkeHubFeature#sync_wait_secs}
   */
   readonly syncWaitSecs?: string;
   /**
   * Version of Config Sync installed
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#version GoogleGkeHubFeature#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#version GoogleGkeHubFeature#version}
   */
   readonly version?: string;
 }
@@ -894,37 +894,37 @@ export interface GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConf
   /**
   * Enables the installation of ConfigSync. If set to true, ConfigSync resources will be created and the other ConfigSync fields will be applied if exist. If set to false, all other ConfigSync fields will be ignored, ConfigSync resources will be deleted. If omitted, ConfigSync resources will be managed depends on the presence of the git or oci field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#enabled GoogleGkeHubFeature#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#enabled GoogleGkeHubFeature#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * The Email of the Google Cloud Service Account (GSA) used for exporting Config Sync metrics to Cloud Monitoring. The GSA should have the Monitoring Metric Writer(roles/monitoring.metricWriter) IAM role. The Kubernetes ServiceAccount 'default' in the namespace 'config-management-monitoring' should be bound to the GSA.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#metrics_gcp_service_account_email GoogleGkeHubFeature#metrics_gcp_service_account_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#metrics_gcp_service_account_email GoogleGkeHubFeature#metrics_gcp_service_account_email}
   */
   readonly metricsGcpServiceAccountEmail?: string;
   /**
   * Set to true to enable the Config Sync admission webhook to prevent drifts. If set to 'false', disables the Config Sync admission webhook and does not prevent drifts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#prevent_drift GoogleGkeHubFeature#prevent_drift}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#prevent_drift GoogleGkeHubFeature#prevent_drift}
   */
   readonly preventDrift?: boolean | cdktf.IResolvable;
   /**
   * Specifies whether the Config Sync Repo is in hierarchical or unstructured mode
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#source_format GoogleGkeHubFeature#source_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#source_format GoogleGkeHubFeature#source_format}
   */
   readonly sourceFormat?: string;
   /**
   * git block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#git GoogleGkeHubFeature#git}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#git GoogleGkeHubFeature#git}
   */
   readonly git?: GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncGit;
   /**
   * oci block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#oci GoogleGkeHubFeature#oci}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#oci GoogleGkeHubFeature#oci}
   */
   readonly oci?: GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOci;
 }
@@ -1155,19 +1155,19 @@ export interface GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagement {
   /**
   * Set this field to MANAGEMENT_AUTOMATIC to enable Config Sync auto-upgrades, and set this field to MANAGEMENT_MANUAL or MANAGEMENT_UNSPECIFIED to disable Config Sync auto-upgrades. Possible values: ["MANAGEMENT_UNSPECIFIED", "MANAGEMENT_AUTOMATIC", "MANAGEMENT_MANUAL"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#management GoogleGkeHubFeature#management}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#management GoogleGkeHubFeature#management}
   */
   readonly management?: string;
   /**
   * Version of Config Sync installed
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#version GoogleGkeHubFeature#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#version GoogleGkeHubFeature#version}
   */
   readonly version?: string;
   /**
   * config_sync block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#config_sync GoogleGkeHubFeature#config_sync}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#config_sync GoogleGkeHubFeature#config_sync}
   */
   readonly configSync?: GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSync;
 }
@@ -1311,7 +1311,7 @@ export interface GoogleGkeHubFeatureFleetDefaultMemberConfigMesh {
   /**
   * Whether to automatically manage Service Mesh Possible values: ["MANAGEMENT_UNSPECIFIED", "MANAGEMENT_AUTOMATIC", "MANAGEMENT_MANUAL"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#management GoogleGkeHubFeature#management}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#management GoogleGkeHubFeature#management}
   */
   readonly management: string;
 }
@@ -1394,13 +1394,13 @@ export interface GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPoli
   /**
   * CPU requirement expressed in Kubernetes resource units.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#cpu GoogleGkeHubFeature#cpu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#cpu GoogleGkeHubFeature#cpu}
   */
   readonly cpu?: string;
   /**
   * Memory requirement expressed in Kubernetes resource units.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#memory GoogleGkeHubFeature#memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#memory GoogleGkeHubFeature#memory}
   */
   readonly memory?: string;
 }
@@ -1515,13 +1515,13 @@ export interface GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPoli
   /**
   * CPU requirement expressed in Kubernetes resource units.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#cpu GoogleGkeHubFeature#cpu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#cpu GoogleGkeHubFeature#cpu}
   */
   readonly cpu?: string;
   /**
   * Memory requirement expressed in Kubernetes resource units.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#memory GoogleGkeHubFeature#memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#memory GoogleGkeHubFeature#memory}
   */
   readonly memory?: string;
 }
@@ -1636,13 +1636,13 @@ export interface GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPoli
   /**
   * limits block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#limits GoogleGkeHubFeature#limits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#limits GoogleGkeHubFeature#limits}
   */
   readonly limits?: GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesLimits;
   /**
   * requests block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#requests GoogleGkeHubFeature#requests}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#requests GoogleGkeHubFeature#requests}
   */
   readonly requests?: GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesRequests;
 }
@@ -1757,25 +1757,25 @@ export interface GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPoli
   /**
   * Matches a taint effect.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#effect GoogleGkeHubFeature#effect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#effect GoogleGkeHubFeature#effect}
   */
   readonly effect?: string;
   /**
   * Matches a taint key (not necessarily unique).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#key GoogleGkeHubFeature#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#key GoogleGkeHubFeature#key}
   */
   readonly key?: string;
   /**
   * Matches a taint operator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#operator GoogleGkeHubFeature#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#operator GoogleGkeHubFeature#operator}
   */
   readonly operator?: string;
   /**
   * Matches a taint value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#value GoogleGkeHubFeature#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#value GoogleGkeHubFeature#value}
   */
   readonly value?: string;
 }
@@ -1978,31 +1978,31 @@ export class GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyCo
 }
 export interface GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#component GoogleGkeHubFeature#component}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#component GoogleGkeHubFeature#component}
   */
   readonly component: string;
   /**
   * Pod affinity configuration. Possible values: ["AFFINITY_UNSPECIFIED", "NO_AFFINITY", "ANTI_AFFINITY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#pod_affinity GoogleGkeHubFeature#pod_affinity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#pod_affinity GoogleGkeHubFeature#pod_affinity}
   */
   readonly podAffinity?: string;
   /**
   * Pod replica count.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#replica_count GoogleGkeHubFeature#replica_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#replica_count GoogleGkeHubFeature#replica_count}
   */
   readonly replicaCount?: number;
   /**
   * container_resources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#container_resources GoogleGkeHubFeature#container_resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#container_resources GoogleGkeHubFeature#container_resources}
   */
   readonly containerResources?: GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResources;
   /**
   * pod_toleration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#pod_toleration GoogleGkeHubFeature#pod_toleration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#pod_toleration GoogleGkeHubFeature#pod_toleration}
   */
   readonly podToleration?: GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsPodToleration[] | cdktf.IResolvable;
 }
@@ -2233,7 +2233,7 @@ export interface GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPoli
   /**
   * Specifies the list of backends Policy Controller will export to. An empty list would effectively disable metrics export. Possible values: ["MONITORING_BACKEND_UNSPECIFIED", "PROMETHEUS", "CLOUD_MONITORING"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#backends GoogleGkeHubFeature#backends}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#backends GoogleGkeHubFeature#backends}
   */
   readonly backends?: string[];
 }
@@ -2317,13 +2317,13 @@ export class GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyCo
 }
 export interface GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentBundles {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#bundle GoogleGkeHubFeature#bundle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#bundle GoogleGkeHubFeature#bundle}
   */
   readonly bundle: string;
   /**
   * The set of namespaces to be exempted from the bundle.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#exempted_namespaces GoogleGkeHubFeature#exempted_namespaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#exempted_namespaces GoogleGkeHubFeature#exempted_namespaces}
   */
   readonly exemptedNamespaces?: string[];
 }
@@ -2467,7 +2467,7 @@ export interface GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPoli
   /**
   * Configures the manner in which the template library is installed on the cluster. Possible values: ["INSTALLATION_UNSPECIFIED", "NOT_INSTALLED", "ALL"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#installation GoogleGkeHubFeature#installation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#installation GoogleGkeHubFeature#installation}
   */
   readonly installation?: string;
 }
@@ -2553,13 +2553,13 @@ export interface GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPoli
   /**
   * bundles block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#bundles GoogleGkeHubFeature#bundles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#bundles GoogleGkeHubFeature#bundles}
   */
   readonly bundles?: GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentBundles[] | cdktf.IResolvable;
   /**
   * template_library block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#template_library GoogleGkeHubFeature#template_library}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#template_library GoogleGkeHubFeature#template_library}
   */
   readonly templateLibrary?: GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibrary;
 }
@@ -2674,61 +2674,61 @@ export interface GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPoli
   /**
   * Interval for Policy Controller Audit scans (in seconds). When set to 0, this disables audit functionality altogether.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#audit_interval_seconds GoogleGkeHubFeature#audit_interval_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#audit_interval_seconds GoogleGkeHubFeature#audit_interval_seconds}
   */
   readonly auditIntervalSeconds?: number;
   /**
   * The maximum number of audit violations to be stored in a constraint. If not set, the internal default of 20 will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#constraint_violation_limit GoogleGkeHubFeature#constraint_violation_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#constraint_violation_limit GoogleGkeHubFeature#constraint_violation_limit}
   */
   readonly constraintViolationLimit?: number;
   /**
   * The set of namespaces that are excluded from Policy Controller checks. Namespaces do not need to currently exist on the cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#exemptable_namespaces GoogleGkeHubFeature#exemptable_namespaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#exemptable_namespaces GoogleGkeHubFeature#exemptable_namespaces}
   */
   readonly exemptableNamespaces?: string[];
   /**
   * Configures the mode of the Policy Controller installation Possible values: ["INSTALL_SPEC_UNSPECIFIED", "INSTALL_SPEC_NOT_INSTALLED", "INSTALL_SPEC_ENABLED", "INSTALL_SPEC_SUSPENDED", "INSTALL_SPEC_DETACHED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#install_spec GoogleGkeHubFeature#install_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#install_spec GoogleGkeHubFeature#install_spec}
   */
   readonly installSpec: string;
   /**
   * Logs all denies and dry run failures.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#log_denies_enabled GoogleGkeHubFeature#log_denies_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#log_denies_enabled GoogleGkeHubFeature#log_denies_enabled}
   */
   readonly logDeniesEnabled?: boolean | cdktf.IResolvable;
   /**
   * Enables the ability to mutate resources using Policy Controller.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#mutation_enabled GoogleGkeHubFeature#mutation_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#mutation_enabled GoogleGkeHubFeature#mutation_enabled}
   */
   readonly mutationEnabled?: boolean | cdktf.IResolvable;
   /**
   * Enables the ability to use Constraint Templates that reference to objects other than the object currently being evaluated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#referential_rules_enabled GoogleGkeHubFeature#referential_rules_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#referential_rules_enabled GoogleGkeHubFeature#referential_rules_enabled}
   */
   readonly referentialRulesEnabled?: boolean | cdktf.IResolvable;
   /**
   * deployment_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#deployment_configs GoogleGkeHubFeature#deployment_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#deployment_configs GoogleGkeHubFeature#deployment_configs}
   */
   readonly deploymentConfigs?: GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigs[] | cdktf.IResolvable;
   /**
   * monitoring block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#monitoring GoogleGkeHubFeature#monitoring}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#monitoring GoogleGkeHubFeature#monitoring}
   */
   readonly monitoring?: GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigMonitoring;
   /**
   * policy_content block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#policy_content GoogleGkeHubFeature#policy_content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#policy_content GoogleGkeHubFeature#policy_content}
   */
   readonly policyContent?: GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContent;
 }
@@ -3072,13 +3072,13 @@ export interface GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontroller {
   /**
   * Configures the version of Policy Controller
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#version GoogleGkeHubFeature#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#version GoogleGkeHubFeature#version}
   */
   readonly version?: string;
   /**
   * policy_controller_hub_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#policy_controller_hub_config GoogleGkeHubFeature#policy_controller_hub_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#policy_controller_hub_config GoogleGkeHubFeature#policy_controller_hub_config}
   */
   readonly policyControllerHubConfig: GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfig;
 }
@@ -3190,19 +3190,19 @@ export interface GoogleGkeHubFeatureFleetDefaultMemberConfig {
   /**
   * configmanagement block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#configmanagement GoogleGkeHubFeature#configmanagement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#configmanagement GoogleGkeHubFeature#configmanagement}
   */
   readonly configmanagement?: GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagement;
   /**
   * mesh block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#mesh GoogleGkeHubFeature#mesh}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#mesh GoogleGkeHubFeature#mesh}
   */
   readonly mesh?: GoogleGkeHubFeatureFleetDefaultMemberConfigMesh;
   /**
   * policycontroller block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#policycontroller GoogleGkeHubFeature#policycontroller}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#policycontroller GoogleGkeHubFeature#policycontroller}
   */
   readonly policycontroller?: GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontroller;
 }
@@ -3346,7 +3346,7 @@ export interface GoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesPostCon
   /**
   * Amount of time to "soak" after a rollout has been finished before marking it COMPLETE. Cannot exceed 30 days.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#soaking GoogleGkeHubFeature#soaking}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#soaking GoogleGkeHubFeature#soaking}
   */
   readonly soaking: string;
 }
@@ -3429,13 +3429,13 @@ export interface GoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesUpgrade
   /**
   * Name of the upgrade, e.g., "k8s_control_plane". It should be a valid upgrade name. It must not exceet 99 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#name GoogleGkeHubFeature#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#name GoogleGkeHubFeature#name}
   */
   readonly name: string;
   /**
   * Version of the upgrade, e.g., "1.22.1-gke.100". It should be a valid version. It must not exceet 99 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#version GoogleGkeHubFeature#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#version GoogleGkeHubFeature#version}
   */
   readonly version: string;
 }
@@ -3544,13 +3544,13 @@ export interface GoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverrides {
   /**
   * post_conditions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#post_conditions GoogleGkeHubFeature#post_conditions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#post_conditions GoogleGkeHubFeature#post_conditions}
   */
   readonly postConditions: GoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesPostConditions;
   /**
   * upgrade block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#upgrade GoogleGkeHubFeature#upgrade}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#upgrade GoogleGkeHubFeature#upgrade}
   */
   readonly upgrade: GoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesUpgrade;
 }
@@ -3691,7 +3691,7 @@ export interface GoogleGkeHubFeatureSpecClusterupgradePostConditions {
   /**
   * Amount of time to "soak" after a rollout has been finished before marking it COMPLETE. Cannot exceed 30 days.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#soaking GoogleGkeHubFeature#soaking}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#soaking GoogleGkeHubFeature#soaking}
   */
   readonly soaking: string;
 }
@@ -3774,19 +3774,19 @@ export interface GoogleGkeHubFeatureSpecClusterupgrade {
   /**
   * Specified if other fleet should be considered as a source of upgrades. Currently, at most one upstream fleet is allowed. The fleet name should be either fleet project number or id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#upstream_fleets GoogleGkeHubFeature#upstream_fleets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#upstream_fleets GoogleGkeHubFeature#upstream_fleets}
   */
   readonly upstreamFleets: string[];
   /**
   * gke_upgrade_overrides block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#gke_upgrade_overrides GoogleGkeHubFeature#gke_upgrade_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#gke_upgrade_overrides GoogleGkeHubFeature#gke_upgrade_overrides}
   */
   readonly gkeUpgradeOverrides?: GoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverrides[] | cdktf.IResolvable;
   /**
   * post_conditions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#post_conditions GoogleGkeHubFeature#post_conditions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#post_conditions GoogleGkeHubFeature#post_conditions}
   */
   readonly postConditions?: GoogleGkeHubFeatureSpecClusterupgradePostConditions;
 }
@@ -3927,7 +3927,7 @@ export interface GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultCo
   /**
   * Specified if fleet logging feature is enabled. Possible values: ["MODE_UNSPECIFIED", "COPY", "MOVE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#mode GoogleGkeHubFeature#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#mode GoogleGkeHubFeature#mode}
   */
   readonly mode?: string;
 }
@@ -4013,7 +4013,7 @@ export interface GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigFleetScop
   /**
   * Specified if fleet logging feature is enabled. Possible values: ["MODE_UNSPECIFIED", "COPY", "MOVE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#mode GoogleGkeHubFeature#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#mode GoogleGkeHubFeature#mode}
   */
   readonly mode?: string;
 }
@@ -4099,13 +4099,13 @@ export interface GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfig {
   /**
   * default_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#default_config GoogleGkeHubFeature#default_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#default_config GoogleGkeHubFeature#default_config}
   */
   readonly defaultConfig?: GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultConfig;
   /**
   * fleet_scope_logs_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#fleet_scope_logs_config GoogleGkeHubFeature#fleet_scope_logs_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#fleet_scope_logs_config GoogleGkeHubFeature#fleet_scope_logs_config}
   */
   readonly fleetScopeLogsConfig?: GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfig;
 }
@@ -4220,7 +4220,7 @@ export interface GoogleGkeHubFeatureSpecFleetobservability {
   /**
   * logging_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#logging_config GoogleGkeHubFeature#logging_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#logging_config GoogleGkeHubFeature#logging_config}
   */
   readonly loggingConfig?: GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfig;
 }
@@ -4306,7 +4306,7 @@ export interface GoogleGkeHubFeatureSpecMulticlusteringress {
   /**
   * Fully-qualified Membership name which hosts the MultiClusterIngress CRD. Example: 'projects/foo-proj/locations/global/memberships/bar'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#config_membership GoogleGkeHubFeature#config_membership}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#config_membership GoogleGkeHubFeature#config_membership}
   */
   readonly configMembership: string;
 }
@@ -4389,19 +4389,19 @@ export interface GoogleGkeHubFeatureSpec {
   /**
   * clusterupgrade block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#clusterupgrade GoogleGkeHubFeature#clusterupgrade}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#clusterupgrade GoogleGkeHubFeature#clusterupgrade}
   */
   readonly clusterupgrade?: GoogleGkeHubFeatureSpecClusterupgrade;
   /**
   * fleetobservability block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#fleetobservability GoogleGkeHubFeature#fleetobservability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#fleetobservability GoogleGkeHubFeature#fleetobservability}
   */
   readonly fleetobservability?: GoogleGkeHubFeatureSpecFleetobservability;
   /**
   * multiclusteringress block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#multiclusteringress GoogleGkeHubFeature#multiclusteringress}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#multiclusteringress GoogleGkeHubFeature#multiclusteringress}
   */
   readonly multiclusteringress?: GoogleGkeHubFeatureSpecMulticlusteringress;
 }
@@ -4543,15 +4543,15 @@ export class GoogleGkeHubFeatureSpecOutputReference extends cdktf.ComplexObject 
 }
 export interface GoogleGkeHubFeatureTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#create GoogleGkeHubFeature#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#create GoogleGkeHubFeature#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#delete GoogleGkeHubFeature#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#delete GoogleGkeHubFeature#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#update GoogleGkeHubFeature#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#update GoogleGkeHubFeature#update}
   */
   readonly update?: string;
 }
@@ -4703,7 +4703,7 @@ export class GoogleGkeHubFeatureTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature google_gke_hub_feature}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature google_gke_hub_feature}
 */
 export class GoogleGkeHubFeature extends cdktf.TerraformResource {
 
@@ -4719,7 +4719,7 @@ export class GoogleGkeHubFeature extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleGkeHubFeature resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleGkeHubFeature to import
-  * @param importFromId The id of the existing GoogleGkeHubFeature that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleGkeHubFeature that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleGkeHubFeature to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -4731,7 +4731,7 @@ export class GoogleGkeHubFeature extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_gke_hub_feature google_gke_hub_feature} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_gke_hub_feature google_gke_hub_feature} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -4742,7 +4742,7 @@ export class GoogleGkeHubFeature extends cdktf.TerraformResource {
       terraformResourceType: 'google_gke_hub_feature',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.26.0',
+        providerVersion: '6.27.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_notebooks_location
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_notebooks_location
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleNotebooksLocationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_notebooks_location#id GoogleNotebooksLocation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_notebooks_location#id GoogleNotebooksLocation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,31 +22,31 @@ export interface GoogleNotebooksLocationConfig extends cdktf.TerraformMetaArgume
   /**
   * Name of the Location resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_notebooks_location#name GoogleNotebooksLocation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_notebooks_location#name GoogleNotebooksLocation#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_notebooks_location#project GoogleNotebooksLocation#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_notebooks_location#project GoogleNotebooksLocation#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_notebooks_location#timeouts GoogleNotebooksLocation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_notebooks_location#timeouts GoogleNotebooksLocation#timeouts}
   */
   readonly timeouts?: GoogleNotebooksLocationTimeouts;
 }
 export interface GoogleNotebooksLocationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_notebooks_location#create GoogleNotebooksLocation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_notebooks_location#create GoogleNotebooksLocation#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_notebooks_location#delete GoogleNotebooksLocation#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_notebooks_location#delete GoogleNotebooksLocation#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_notebooks_location#update GoogleNotebooksLocation#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_notebooks_location#update GoogleNotebooksLocation#update}
   */
   readonly update?: string;
 }
@@ -198,7 +198,7 @@ export class GoogleNotebooksLocationTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_notebooks_location google_notebooks_location}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_notebooks_location google_notebooks_location}
 */
 export class GoogleNotebooksLocation extends cdktf.TerraformResource {
 
@@ -214,7 +214,7 @@ export class GoogleNotebooksLocation extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleNotebooksLocation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleNotebooksLocation to import
-  * @param importFromId The id of the existing GoogleNotebooksLocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_notebooks_location#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleNotebooksLocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_notebooks_location#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleNotebooksLocation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -226,7 +226,7 @@ export class GoogleNotebooksLocation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_notebooks_location google_notebooks_location} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_notebooks_location google_notebooks_location} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -237,7 +237,7 @@ export class GoogleNotebooksLocation extends cdktf.TerraformResource {
       terraformResourceType: 'google_notebooks_location',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.26.0',
+        providerVersion: '6.27.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

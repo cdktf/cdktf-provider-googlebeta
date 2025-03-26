@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_logging_project_bucket_config
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_logging_project_bucket_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface GoogleLoggingProjectBucketConfigConfig extends cdktf.TerraformM
   /**
   * The name of the logging bucket. Logging automatically creates two log buckets: _Required and _Default.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_logging_project_bucket_config#bucket_id GoogleLoggingProjectBucketConfig#bucket_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_logging_project_bucket_config#bucket_id GoogleLoggingProjectBucketConfig#bucket_id}
   */
   readonly bucketId: string;
   /**
   * An optional description for this bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_logging_project_bucket_config#description GoogleLoggingProjectBucketConfig#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_logging_project_bucket_config#description GoogleLoggingProjectBucketConfig#description}
   */
   readonly description?: string;
   /**
   * Enable log analytics for the bucket. Cannot be disabled once enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_logging_project_bucket_config#enable_analytics GoogleLoggingProjectBucketConfig#enable_analytics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_logging_project_bucket_config#enable_analytics GoogleLoggingProjectBucketConfig#enable_analytics}
   */
   readonly enableAnalytics?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_logging_project_bucket_config#id GoogleLoggingProjectBucketConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_logging_project_bucket_config#id GoogleLoggingProjectBucketConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,37 +40,37 @@ export interface GoogleLoggingProjectBucketConfigConfig extends cdktf.TerraformM
   /**
   * The location of the bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_logging_project_bucket_config#location GoogleLoggingProjectBucketConfig#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_logging_project_bucket_config#location GoogleLoggingProjectBucketConfig#location}
   */
   readonly location: string;
   /**
   * Whether the bucket is locked. The retention period on a locked bucket cannot be changed. Locked buckets may only be deleted if they are empty.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_logging_project_bucket_config#locked GoogleLoggingProjectBucketConfig#locked}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_logging_project_bucket_config#locked GoogleLoggingProjectBucketConfig#locked}
   */
   readonly locked?: boolean | cdktf.IResolvable;
   /**
   * The parent project that contains the logging bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_logging_project_bucket_config#project GoogleLoggingProjectBucketConfig#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_logging_project_bucket_config#project GoogleLoggingProjectBucketConfig#project}
   */
   readonly project: string;
   /**
   * Logs will be retained by default for this amount of time, after which they will automatically be deleted. The minimum retention period is 1 day. If this value is set to zero at bucket creation time, the default time of 30 days will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_logging_project_bucket_config#retention_days GoogleLoggingProjectBucketConfig#retention_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_logging_project_bucket_config#retention_days GoogleLoggingProjectBucketConfig#retention_days}
   */
   readonly retentionDays?: number;
   /**
   * cmek_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_logging_project_bucket_config#cmek_settings GoogleLoggingProjectBucketConfig#cmek_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_logging_project_bucket_config#cmek_settings GoogleLoggingProjectBucketConfig#cmek_settings}
   */
   readonly cmekSettings?: GoogleLoggingProjectBucketConfigCmekSettings;
   /**
   * index_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_logging_project_bucket_config#index_configs GoogleLoggingProjectBucketConfig#index_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_logging_project_bucket_config#index_configs GoogleLoggingProjectBucketConfig#index_configs}
   */
   readonly indexConfigs?: GoogleLoggingProjectBucketConfigIndexConfigs[] | cdktf.IResolvable;
 }
@@ -83,7 +83,7 @@ export interface GoogleLoggingProjectBucketConfigCmekSettings {
   * The Cloud KMS key used by the bucket can be updated by changing the kmsKeyName to a new valid key name. Encryption operations that are in progress will be completed with the key that was in use when they started. Decryption operations will be completed using the key that was used at the time of encryption unless access to that key has been revoked.
   * See [Enabling CMEK for Logging Buckets](https://cloud.google.com/logging/docs/routing/managed-encryption-storage) for more information.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_logging_project_bucket_config#kms_key_name GoogleLoggingProjectBucketConfig#kms_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_logging_project_bucket_config#kms_key_name GoogleLoggingProjectBucketConfig#kms_key_name}
   */
   readonly kmsKeyName: string;
 }
@@ -181,7 +181,7 @@ export interface GoogleLoggingProjectBucketConfigIndexConfigs {
   /**
   * The LogEntry field path to index.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_logging_project_bucket_config#field_path GoogleLoggingProjectBucketConfig#field_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_logging_project_bucket_config#field_path GoogleLoggingProjectBucketConfig#field_path}
   */
   readonly fieldPath: string;
   /**
@@ -189,7 +189,7 @@ export interface GoogleLoggingProjectBucketConfigIndexConfigs {
   * Note that some paths are automatically indexed, and other paths are not eligible for indexing. See [indexing documentation]( https://cloud.google.com/logging/docs/view/advanced-queries#indexed-fields) for details.
   * For example: jsonPayload.request.status
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_logging_project_bucket_config#type GoogleLoggingProjectBucketConfig#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_logging_project_bucket_config#type GoogleLoggingProjectBucketConfig#type}
   */
   readonly type: string;
 }
@@ -328,7 +328,7 @@ export class GoogleLoggingProjectBucketConfigIndexConfigsList extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_logging_project_bucket_config google_logging_project_bucket_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_logging_project_bucket_config google_logging_project_bucket_config}
 */
 export class GoogleLoggingProjectBucketConfig extends cdktf.TerraformResource {
 
@@ -344,7 +344,7 @@ export class GoogleLoggingProjectBucketConfig extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleLoggingProjectBucketConfig resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleLoggingProjectBucketConfig to import
-  * @param importFromId The id of the existing GoogleLoggingProjectBucketConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_logging_project_bucket_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleLoggingProjectBucketConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_logging_project_bucket_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleLoggingProjectBucketConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -356,7 +356,7 @@ export class GoogleLoggingProjectBucketConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_logging_project_bucket_config google_logging_project_bucket_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_logging_project_bucket_config google_logging_project_bucket_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -367,7 +367,7 @@ export class GoogleLoggingProjectBucketConfig extends cdktf.TerraformResource {
       terraformResourceType: 'google_logging_project_bucket_config',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.26.0',
+        providerVersion: '6.27.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

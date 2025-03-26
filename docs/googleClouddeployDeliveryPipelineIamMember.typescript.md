@@ -4,7 +4,7 @@
 
 ### GoogleClouddeployDeliveryPipelineIamMember <a name="GoogleClouddeployDeliveryPipelineIamMember" id="@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamMember.GoogleClouddeployDeliveryPipelineIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member google_clouddeploy_delivery_pipeline_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member google_clouddeploy_delivery_pipeline_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamMember.GoogleClouddeployDeliveryPipelineIamMember.Initializer"></a>
 
@@ -508,7 +508,7 @@ The construct id used in the generated config for the GoogleClouddeployDeliveryP
 
 The id of the existing GoogleClouddeployDeliveryPipelineIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -882,9 +882,9 @@ const googleClouddeployDeliveryPipelineIamMemberCondition: googleClouddeployDeli
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamMember.GoogleClouddeployDeliveryPipelineIamMemberCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#expression GoogleClouddeployDeliveryPipelineIamMember#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamMember.GoogleClouddeployDeliveryPipelineIamMemberCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#title GoogleClouddeployDeliveryPipelineIamMember#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamMember.GoogleClouddeployDeliveryPipelineIamMemberCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#description GoogleClouddeployDeliveryPipelineIamMember#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamMember.GoogleClouddeployDeliveryPipelineIamMemberCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#expression GoogleClouddeployDeliveryPipelineIamMember#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamMember.GoogleClouddeployDeliveryPipelineIamMemberCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#title GoogleClouddeployDeliveryPipelineIamMember#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamMember.GoogleClouddeployDeliveryPipelineIamMemberCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#description GoogleClouddeployDeliveryPipelineIamMember#description}. |
 
 ---
 
@@ -896,7 +896,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#expression GoogleClouddeployDeliveryPipelineIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#expression GoogleClouddeployDeliveryPipelineIamMember#expression}.
 
 ---
 
@@ -908,7 +908,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#title GoogleClouddeployDeliveryPipelineIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#title GoogleClouddeployDeliveryPipelineIamMember#title}.
 
 ---
 
@@ -920,7 +920,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#description GoogleClouddeployDeliveryPipelineIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#description GoogleClouddeployDeliveryPipelineIamMember#description}.
 
 ---
 
@@ -945,13 +945,13 @@ const googleClouddeployDeliveryPipelineIamMemberConfig: googleClouddeployDeliver
 | <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamMember.GoogleClouddeployDeliveryPipelineIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamMember.GoogleClouddeployDeliveryPipelineIamMemberConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamMember.GoogleClouddeployDeliveryPipelineIamMemberConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamMember.GoogleClouddeployDeliveryPipelineIamMemberConfig.property.member">member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#member GoogleClouddeployDeliveryPipelineIamMember#member}. |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamMember.GoogleClouddeployDeliveryPipelineIamMemberConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#name GoogleClouddeployDeliveryPipelineIamMember#name}. |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamMember.GoogleClouddeployDeliveryPipelineIamMemberConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#role GoogleClouddeployDeliveryPipelineIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamMember.GoogleClouddeployDeliveryPipelineIamMemberConfig.property.member">member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#member GoogleClouddeployDeliveryPipelineIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamMember.GoogleClouddeployDeliveryPipelineIamMemberConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#name GoogleClouddeployDeliveryPipelineIamMember#name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamMember.GoogleClouddeployDeliveryPipelineIamMemberConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#role GoogleClouddeployDeliveryPipelineIamMember#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamMember.GoogleClouddeployDeliveryPipelineIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamMember.GoogleClouddeployDeliveryPipelineIamMemberCondition">GoogleClouddeployDeliveryPipelineIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamMember.GoogleClouddeployDeliveryPipelineIamMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#id GoogleClouddeployDeliveryPipelineIamMember#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamMember.GoogleClouddeployDeliveryPipelineIamMemberConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#location GoogleClouddeployDeliveryPipelineIamMember#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamMember.GoogleClouddeployDeliveryPipelineIamMemberConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#project GoogleClouddeployDeliveryPipelineIamMember#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamMember.GoogleClouddeployDeliveryPipelineIamMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#id GoogleClouddeployDeliveryPipelineIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamMember.GoogleClouddeployDeliveryPipelineIamMemberConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#location GoogleClouddeployDeliveryPipelineIamMember#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamMember.GoogleClouddeployDeliveryPipelineIamMemberConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#project GoogleClouddeployDeliveryPipelineIamMember#project}. |
 
 ---
 
@@ -1033,7 +1033,7 @@ public readonly member: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#member GoogleClouddeployDeliveryPipelineIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#member GoogleClouddeployDeliveryPipelineIamMember#member}.
 
 ---
 
@@ -1045,7 +1045,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#name GoogleClouddeployDeliveryPipelineIamMember#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#name GoogleClouddeployDeliveryPipelineIamMember#name}.
 
 ---
 
@@ -1057,7 +1057,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#role GoogleClouddeployDeliveryPipelineIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#role GoogleClouddeployDeliveryPipelineIamMember#role}.
 
 ---
 
@@ -1071,7 +1071,7 @@ public readonly condition: GoogleClouddeployDeliveryPipelineIamMemberCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#condition GoogleClouddeployDeliveryPipelineIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#condition GoogleClouddeployDeliveryPipelineIamMember#condition}
 
 ---
 
@@ -1083,7 +1083,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#id GoogleClouddeployDeliveryPipelineIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#id GoogleClouddeployDeliveryPipelineIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1098,7 +1098,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#location GoogleClouddeployDeliveryPipelineIamMember#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#location GoogleClouddeployDeliveryPipelineIamMember#location}.
 
 ---
 
@@ -1110,7 +1110,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#project GoogleClouddeployDeliveryPipelineIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_member#project GoogleClouddeployDeliveryPipelineIamMember#project}.
 
 ---
 

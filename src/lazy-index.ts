@@ -769,6 +769,7 @@ Object.defineProperty(exports, 'googleLoggingProjectBucketConfig', { get: functi
 Object.defineProperty(exports, 'googleLoggingProjectExclusion', { get: function () { return require('./google-logging-project-exclusion'); } });
 Object.defineProperty(exports, 'googleLoggingProjectSink', { get: function () { return require('./google-logging-project-sink'); } });
 Object.defineProperty(exports, 'googleLookerInstance', { get: function () { return require('./google-looker-instance'); } });
+Object.defineProperty(exports, 'googleLustreInstance', { get: function () { return require('./google-lustre-instance'); } });
 Object.defineProperty(exports, 'googleManagedKafkaCluster', { get: function () { return require('./google-managed-kafka-cluster'); } });
 Object.defineProperty(exports, 'googleManagedKafkaConnectCluster', { get: function () { return require('./google-managed-kafka-connect-cluster'); } });
 Object.defineProperty(exports, 'googleManagedKafkaConnector', { get: function () { return require('./google-managed-kafka-connector'); } });
@@ -872,6 +873,7 @@ Object.defineProperty(exports, 'googleOrganizationPolicy', { get: function () { 
 Object.defineProperty(exports, 'googleOsConfigGuestPolicies', { get: function () { return require('./google-os-config-guest-policies'); } });
 Object.defineProperty(exports, 'googleOsConfigOsPolicyAssignment', { get: function () { return require('./google-os-config-os-policy-assignment'); } });
 Object.defineProperty(exports, 'googleOsConfigPatchDeployment', { get: function () { return require('./google-os-config-patch-deployment'); } });
+Object.defineProperty(exports, 'googleOsConfigV2PolicyOrchestrator', { get: function () { return require('./google-os-config-v2-policy-orchestrator'); } });
 Object.defineProperty(exports, 'googleOsLoginSshPublicKey', { get: function () { return require('./google-os-login-ssh-public-key'); } });
 Object.defineProperty(exports, 'googleParallelstoreInstance', { get: function () { return require('./google-parallelstore-instance'); } });
 Object.defineProperty(exports, 'googleParameterManagerParameter', { get: function () { return require('./google-parameter-manager-parameter'); } });
@@ -1031,6 +1033,7 @@ Object.defineProperty(exports, 'googleStorageBucketIamBinding', { get: function 
 Object.defineProperty(exports, 'googleStorageBucketIamMember', { get: function () { return require('./google-storage-bucket-iam-member'); } });
 Object.defineProperty(exports, 'googleStorageBucketIamPolicy', { get: function () { return require('./google-storage-bucket-iam-policy'); } });
 Object.defineProperty(exports, 'googleStorageBucketObject', { get: function () { return require('./google-storage-bucket-object'); } });
+Object.defineProperty(exports, 'googleStorageControlProjectIntelligenceConfig', { get: function () { return require('./google-storage-control-project-intelligence-config'); } });
 Object.defineProperty(exports, 'googleStorageDefaultObjectAccessControl', { get: function () { return require('./google-storage-default-object-access-control'); } });
 Object.defineProperty(exports, 'googleStorageDefaultObjectAcl', { get: function () { return require('./google-storage-default-object-acl'); } });
 Object.defineProperty(exports, 'googleStorageFolder', { get: function () { return require('./google-storage-folder'); } });
@@ -1205,6 +1208,7 @@ Object.defineProperty(exports, 'dataGoogleComputeHaVpnGateway', { get: function 
 Object.defineProperty(exports, 'dataGoogleComputeHealthCheck', { get: function () { return require('./data-google-compute-health-check'); } });
 Object.defineProperty(exports, 'dataGoogleComputeImage', { get: function () { return require('./data-google-compute-image'); } });
 Object.defineProperty(exports, 'dataGoogleComputeImageIamPolicy', { get: function () { return require('./data-google-compute-image-iam-policy'); } });
+Object.defineProperty(exports, 'dataGoogleComputeImages', { get: function () { return require('./data-google-compute-images'); } });
 Object.defineProperty(exports, 'dataGoogleComputeInstance', { get: function () { return require('./data-google-compute-instance'); } });
 Object.defineProperty(exports, 'dataGoogleComputeInstanceGroup', { get: function () { return require('./data-google-compute-instance-group'); } });
 Object.defineProperty(exports, 'dataGoogleComputeInstanceGroupManager', { get: function () { return require('./data-google-compute-instance-group-manager'); } });
@@ -1367,6 +1371,7 @@ Object.defineProperty(exports, 'dataGoogleOracleDatabaseCloudVmClusters', { get:
 Object.defineProperty(exports, 'dataGoogleOracleDatabaseDbNodes', { get: function () { return require('./data-google-oracle-database-db-nodes'); } });
 Object.defineProperty(exports, 'dataGoogleOracleDatabaseDbServers', { get: function () { return require('./data-google-oracle-database-db-servers'); } });
 Object.defineProperty(exports, 'dataGoogleOrganization', { get: function () { return require('./data-google-organization'); } });
+Object.defineProperty(exports, 'dataGoogleOrganizationIamCustomRole', { get: function () { return require('./data-google-organization-iam-custom-role'); } });
 Object.defineProperty(exports, 'dataGoogleOrganizationIamPolicy', { get: function () { return require('./data-google-organization-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleOrganizations', { get: function () { return require('./data-google-organizations'); } });
 Object.defineProperty(exports, 'dataGoogleParameterManagerParameter', { get: function () { return require('./data-google-parameter-manager-parameter'); } });
@@ -1443,6 +1448,7 @@ Object.defineProperty(exports, 'dataGoogleStorageBucketObject', { get: function 
 Object.defineProperty(exports, 'dataGoogleStorageBucketObjectContent', { get: function () { return require('./data-google-storage-bucket-object-content'); } });
 Object.defineProperty(exports, 'dataGoogleStorageBucketObjects', { get: function () { return require('./data-google-storage-bucket-objects'); } });
 Object.defineProperty(exports, 'dataGoogleStorageBuckets', { get: function () { return require('./data-google-storage-buckets'); } });
+Object.defineProperty(exports, 'dataGoogleStorageControlProjectIntelligenceConfig', { get: function () { return require('./data-google-storage-control-project-intelligence-config'); } });
 Object.defineProperty(exports, 'dataGoogleStorageManagedFolderIamPolicy', { get: function () { return require('./data-google-storage-managed-folder-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleStorageObjectSignedUrl', { get: function () { return require('./data-google-storage-object-signed-url'); } });
 Object.defineProperty(exports, 'dataGoogleStorageProjectServiceAccount', { get: function () { return require('./data-google-storage-project-service-account'); } });

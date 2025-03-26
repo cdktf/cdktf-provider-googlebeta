@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_policy
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_organization_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,48 +15,48 @@ export interface GoogleOrganizationPolicyConfig extends cdktf.TerraformMetaArgum
   /**
   * The name of the Constraint the Policy is configuring, for example, serviceuser.services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_policy#constraint GoogleOrganizationPolicy#constraint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_organization_policy#constraint GoogleOrganizationPolicy#constraint}
   */
   readonly constraint: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_policy#id GoogleOrganizationPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_organization_policy#id GoogleOrganizationPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_policy#org_id GoogleOrganizationPolicy#org_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_organization_policy#org_id GoogleOrganizationPolicy#org_id}
   */
   readonly orgId: string;
   /**
   * Version of the Policy. Default version is 0.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_policy#version GoogleOrganizationPolicy#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_organization_policy#version GoogleOrganizationPolicy#version}
   */
   readonly version?: number;
   /**
   * boolean_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_policy#boolean_policy GoogleOrganizationPolicy#boolean_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_organization_policy#boolean_policy GoogleOrganizationPolicy#boolean_policy}
   */
   readonly booleanPolicy?: GoogleOrganizationPolicyBooleanPolicy;
   /**
   * list_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_policy#list_policy GoogleOrganizationPolicy#list_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_organization_policy#list_policy GoogleOrganizationPolicy#list_policy}
   */
   readonly listPolicy?: GoogleOrganizationPolicyListPolicy;
   /**
   * restore_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_policy#restore_policy GoogleOrganizationPolicy#restore_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_organization_policy#restore_policy GoogleOrganizationPolicy#restore_policy}
   */
   readonly restorePolicy?: GoogleOrganizationPolicyRestorePolicy;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_policy#timeouts GoogleOrganizationPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_organization_policy#timeouts GoogleOrganizationPolicy#timeouts}
   */
   readonly timeouts?: GoogleOrganizationPolicyTimeouts;
 }
@@ -64,7 +64,7 @@ export interface GoogleOrganizationPolicyBooleanPolicy {
   /**
   * If true, then the Policy is enforced. If false, then any configuration is acceptable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_policy#enforced GoogleOrganizationPolicy#enforced}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_organization_policy#enforced GoogleOrganizationPolicy#enforced}
   */
   readonly enforced: boolean | cdktf.IResolvable;
 }
@@ -147,13 +147,13 @@ export interface GoogleOrganizationPolicyListPolicyAllow {
   /**
   * The policy allows or denies all values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_policy#all GoogleOrganizationPolicy#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_organization_policy#all GoogleOrganizationPolicy#all}
   */
   readonly all?: boolean | cdktf.IResolvable;
   /**
   * The policy can define specific values that are allowed or denied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_policy#values GoogleOrganizationPolicy#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_organization_policy#values GoogleOrganizationPolicy#values}
   */
   readonly values?: string[];
 }
@@ -268,13 +268,13 @@ export interface GoogleOrganizationPolicyListPolicyDeny {
   /**
   * The policy allows or denies all values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_policy#all GoogleOrganizationPolicy#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_organization_policy#all GoogleOrganizationPolicy#all}
   */
   readonly all?: boolean | cdktf.IResolvable;
   /**
   * The policy can define specific values that are allowed or denied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_policy#values GoogleOrganizationPolicy#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_organization_policy#values GoogleOrganizationPolicy#values}
   */
   readonly values?: string[];
 }
@@ -389,25 +389,25 @@ export interface GoogleOrganizationPolicyListPolicy {
   /**
   * If set to true, the values from the effective Policy of the parent resource are inherited, meaning the values set in this Policy are added to the values inherited up the hierarchy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_policy#inherit_from_parent GoogleOrganizationPolicy#inherit_from_parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_organization_policy#inherit_from_parent GoogleOrganizationPolicy#inherit_from_parent}
   */
   readonly inheritFromParent?: boolean | cdktf.IResolvable;
   /**
   * The Google Cloud Console will try to default to a configuration that matches the value specified in this field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_policy#suggested_value GoogleOrganizationPolicy#suggested_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_organization_policy#suggested_value GoogleOrganizationPolicy#suggested_value}
   */
   readonly suggestedValue?: string;
   /**
   * allow block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_policy#allow GoogleOrganizationPolicy#allow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_organization_policy#allow GoogleOrganizationPolicy#allow}
   */
   readonly allow?: GoogleOrganizationPolicyListPolicyAllow;
   /**
   * deny block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_policy#deny GoogleOrganizationPolicy#deny}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_organization_policy#deny GoogleOrganizationPolicy#deny}
   */
   readonly deny?: GoogleOrganizationPolicyListPolicyDeny;
 }
@@ -580,7 +580,7 @@ export interface GoogleOrganizationPolicyRestorePolicy {
   /**
   * May only be set to true. If set, then the default Policy is restored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_policy#default GoogleOrganizationPolicy#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_organization_policy#default GoogleOrganizationPolicy#default}
   */
   readonly default: boolean | cdktf.IResolvable;
 }
@@ -661,19 +661,19 @@ export class GoogleOrganizationPolicyRestorePolicyOutputReference extends cdktf.
 }
 export interface GoogleOrganizationPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_policy#create GoogleOrganizationPolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_organization_policy#create GoogleOrganizationPolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_policy#delete GoogleOrganizationPolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_organization_policy#delete GoogleOrganizationPolicy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_policy#read GoogleOrganizationPolicy#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_organization_policy#read GoogleOrganizationPolicy#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_policy#update GoogleOrganizationPolicy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_organization_policy#update GoogleOrganizationPolicy#update}
   */
   readonly update?: string;
 }
@@ -854,7 +854,7 @@ export class GoogleOrganizationPolicyTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_policy google_organization_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_organization_policy google_organization_policy}
 */
 export class GoogleOrganizationPolicy extends cdktf.TerraformResource {
 
@@ -870,7 +870,7 @@ export class GoogleOrganizationPolicy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleOrganizationPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleOrganizationPolicy to import
-  * @param importFromId The id of the existing GoogleOrganizationPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleOrganizationPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_organization_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleOrganizationPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -882,7 +882,7 @@ export class GoogleOrganizationPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_organization_policy google_organization_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_organization_policy google_organization_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -893,7 +893,7 @@ export class GoogleOrganizationPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'google_organization_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.26.0',
+        providerVersion: '6.27.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

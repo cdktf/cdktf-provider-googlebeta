@@ -4,7 +4,7 @@
 
 ### GoogleStorageFolder <a name="GoogleStorageFolder" id="@cdktf/provider-google-beta.googleStorageFolder.GoogleStorageFolder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_storage_folder google_storage_folder}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_storage_folder google_storage_folder}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleStorageFolder.GoogleStorageFolder.Initializer"></a>
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the GoogleStorageFolder to imp
 
 The id of the existing GoogleStorageFolder that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_storage_folder#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_storage_folder#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -887,7 +887,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlestora
 | <code><a href="#@cdktf/provider-google-beta.googleStorageFolder.GoogleStorageFolderConfig.property.bucket">Bucket</a></code> | <code>*string</code> | The name of the bucket that contains the folder. |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageFolder.GoogleStorageFolderConfig.property.name">Name</a></code> | <code>*string</code> | The name of the folder expressed as a path. Must include trailing '/'. For example, 'example_dir/example_dir2/', 'example@#/', 'a-b/d-f/'. |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageFolder.GoogleStorageFolderConfig.property.forceDestroy">ForceDestroy</a></code> | <code>interface{}</code> | If set to true, items within folder if any will be force destroyed. |
-| <code><a href="#@cdktf/provider-google-beta.googleStorageFolder.GoogleStorageFolderConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_storage_folder#id GoogleStorageFolder#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleStorageFolder.GoogleStorageFolderConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_storage_folder#id GoogleStorageFolder#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageFolder.GoogleStorageFolderConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleStorageFolder.GoogleStorageFolderTimeouts">GoogleStorageFolderTimeouts</a></code> | timeouts block. |
 
 ---
@@ -972,7 +972,7 @@ Bucket *string
 
 The name of the bucket that contains the folder.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_storage_folder#bucket GoogleStorageFolder#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_storage_folder#bucket GoogleStorageFolder#bucket}
 
 ---
 
@@ -986,7 +986,7 @@ Name *string
 
 The name of the folder expressed as a path. Must include trailing '/'. For example, 'example_dir/example_dir2/', 'example@#/', 'a-b/d-f/'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_storage_folder#name GoogleStorageFolder#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_storage_folder#name GoogleStorageFolder#name}
 
 ---
 
@@ -1000,7 +1000,7 @@ ForceDestroy interface{}
 
 If set to true, items within folder if any will be force destroyed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_storage_folder#force_destroy GoogleStorageFolder#force_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_storage_folder#force_destroy GoogleStorageFolder#force_destroy}
 
 ---
 
@@ -1012,7 +1012,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_storage_folder#id GoogleStorageFolder#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_storage_folder#id GoogleStorageFolder#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1029,7 +1029,7 @@ Timeouts GoogleStorageFolderTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_storage_folder#timeouts GoogleStorageFolder#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_storage_folder#timeouts GoogleStorageFolder#timeouts}
 
 ---
 
@@ -1051,9 +1051,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlestora
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleStorageFolder.GoogleStorageFolderTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_storage_folder#create GoogleStorageFolder#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleStorageFolder.GoogleStorageFolderTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_storage_folder#delete GoogleStorageFolder#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleStorageFolder.GoogleStorageFolderTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_storage_folder#update GoogleStorageFolder#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleStorageFolder.GoogleStorageFolderTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_storage_folder#create GoogleStorageFolder#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleStorageFolder.GoogleStorageFolderTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_storage_folder#delete GoogleStorageFolder#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleStorageFolder.GoogleStorageFolderTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_storage_folder#update GoogleStorageFolder#update}. |
 
 ---
 
@@ -1065,7 +1065,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_storage_folder#create GoogleStorageFolder#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_storage_folder#create GoogleStorageFolder#create}.
 
 ---
 
@@ -1077,7 +1077,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_storage_folder#delete GoogleStorageFolder#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_storage_folder#delete GoogleStorageFolder#delete}.
 
 ---
 
@@ -1089,7 +1089,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_storage_folder#update GoogleStorageFolder#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_storage_folder#update GoogleStorageFolder#update}.
 
 ---
 

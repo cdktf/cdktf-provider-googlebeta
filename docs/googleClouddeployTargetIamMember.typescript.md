@@ -4,7 +4,7 @@
 
 ### GoogleClouddeployTargetIamMember <a name="GoogleClouddeployTargetIamMember" id="@cdktf/provider-google-beta.googleClouddeployTargetIamMember.GoogleClouddeployTargetIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_target_iam_member google_clouddeploy_target_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_target_iam_member google_clouddeploy_target_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddeployTargetIamMember.GoogleClouddeployTargetIamMember.Initializer"></a>
 
@@ -508,7 +508,7 @@ The construct id used in the generated config for the GoogleClouddeployTargetIam
 
 The id of the existing GoogleClouddeployTargetIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_target_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_target_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -882,9 +882,9 @@ const googleClouddeployTargetIamMemberCondition: googleClouddeployTargetIamMembe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployTargetIamMember.GoogleClouddeployTargetIamMemberCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_target_iam_member#expression GoogleClouddeployTargetIamMember#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployTargetIamMember.GoogleClouddeployTargetIamMemberCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_target_iam_member#title GoogleClouddeployTargetIamMember#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployTargetIamMember.GoogleClouddeployTargetIamMemberCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_target_iam_member#description GoogleClouddeployTargetIamMember#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployTargetIamMember.GoogleClouddeployTargetIamMemberCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_target_iam_member#expression GoogleClouddeployTargetIamMember#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployTargetIamMember.GoogleClouddeployTargetIamMemberCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_target_iam_member#title GoogleClouddeployTargetIamMember#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployTargetIamMember.GoogleClouddeployTargetIamMemberCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_target_iam_member#description GoogleClouddeployTargetIamMember#description}. |
 
 ---
 
@@ -896,7 +896,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_target_iam_member#expression GoogleClouddeployTargetIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_target_iam_member#expression GoogleClouddeployTargetIamMember#expression}.
 
 ---
 
@@ -908,7 +908,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_target_iam_member#title GoogleClouddeployTargetIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_target_iam_member#title GoogleClouddeployTargetIamMember#title}.
 
 ---
 
@@ -920,7 +920,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_target_iam_member#description GoogleClouddeployTargetIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_target_iam_member#description GoogleClouddeployTargetIamMember#description}.
 
 ---
 
@@ -945,13 +945,13 @@ const googleClouddeployTargetIamMemberConfig: googleClouddeployTargetIamMember.G
 | <code><a href="#@cdktf/provider-google-beta.googleClouddeployTargetIamMember.GoogleClouddeployTargetIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleClouddeployTargetIamMember.GoogleClouddeployTargetIamMemberConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleClouddeployTargetIamMember.GoogleClouddeployTargetIamMemberConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployTargetIamMember.GoogleClouddeployTargetIamMemberConfig.property.member">member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_target_iam_member#member GoogleClouddeployTargetIamMember#member}. |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployTargetIamMember.GoogleClouddeployTargetIamMemberConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_target_iam_member#name GoogleClouddeployTargetIamMember#name}. |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployTargetIamMember.GoogleClouddeployTargetIamMemberConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_target_iam_member#role GoogleClouddeployTargetIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployTargetIamMember.GoogleClouddeployTargetIamMemberConfig.property.member">member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_target_iam_member#member GoogleClouddeployTargetIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployTargetIamMember.GoogleClouddeployTargetIamMemberConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_target_iam_member#name GoogleClouddeployTargetIamMember#name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployTargetIamMember.GoogleClouddeployTargetIamMemberConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_target_iam_member#role GoogleClouddeployTargetIamMember#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleClouddeployTargetIamMember.GoogleClouddeployTargetIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleClouddeployTargetIamMember.GoogleClouddeployTargetIamMemberCondition">GoogleClouddeployTargetIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployTargetIamMember.GoogleClouddeployTargetIamMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_target_iam_member#id GoogleClouddeployTargetIamMember#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployTargetIamMember.GoogleClouddeployTargetIamMemberConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_target_iam_member#location GoogleClouddeployTargetIamMember#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleClouddeployTargetIamMember.GoogleClouddeployTargetIamMemberConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_target_iam_member#project GoogleClouddeployTargetIamMember#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployTargetIamMember.GoogleClouddeployTargetIamMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_target_iam_member#id GoogleClouddeployTargetIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployTargetIamMember.GoogleClouddeployTargetIamMemberConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_target_iam_member#location GoogleClouddeployTargetIamMember#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployTargetIamMember.GoogleClouddeployTargetIamMemberConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_target_iam_member#project GoogleClouddeployTargetIamMember#project}. |
 
 ---
 
@@ -1033,7 +1033,7 @@ public readonly member: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_target_iam_member#member GoogleClouddeployTargetIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_target_iam_member#member GoogleClouddeployTargetIamMember#member}.
 
 ---
 
@@ -1045,7 +1045,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_target_iam_member#name GoogleClouddeployTargetIamMember#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_target_iam_member#name GoogleClouddeployTargetIamMember#name}.
 
 ---
 
@@ -1057,7 +1057,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_target_iam_member#role GoogleClouddeployTargetIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_target_iam_member#role GoogleClouddeployTargetIamMember#role}.
 
 ---
 
@@ -1071,7 +1071,7 @@ public readonly condition: GoogleClouddeployTargetIamMemberCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_target_iam_member#condition GoogleClouddeployTargetIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_target_iam_member#condition GoogleClouddeployTargetIamMember#condition}
 
 ---
 
@@ -1083,7 +1083,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_target_iam_member#id GoogleClouddeployTargetIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_target_iam_member#id GoogleClouddeployTargetIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1098,7 +1098,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_target_iam_member#location GoogleClouddeployTargetIamMember#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_target_iam_member#location GoogleClouddeployTargetIamMember#location}.
 
 ---
 
@@ -1110,7 +1110,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_clouddeploy_target_iam_member#project GoogleClouddeployTargetIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_clouddeploy_target_iam_member#project GoogleClouddeployTargetIamMember#project}.
 
 ---
 

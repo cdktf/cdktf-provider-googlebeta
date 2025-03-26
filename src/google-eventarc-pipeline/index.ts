@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -18,7 +18,7 @@ export interface GoogleEventarcPipelineConfig extends cdktf.TerraformMetaArgumen
   * **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
   * Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#annotations GoogleEventarcPipeline#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#annotations GoogleEventarcPipeline#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
@@ -27,17 +27,17 @@ export interface GoogleEventarcPipelineConfig extends cdktf.TerraformMetaArgumen
   * will be used to encrypt messages. It must match the pattern
   * "projects/{project}/locations/{location}/keyRings/{keyring}/cryptoKeys/{key}".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#crypto_key_name GoogleEventarcPipeline#crypto_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#crypto_key_name GoogleEventarcPipeline#crypto_key_name}
   */
   readonly cryptoKeyName?: string;
   /**
   * Display name of resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#display_name GoogleEventarcPipeline#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#display_name GoogleEventarcPipeline#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#id GoogleEventarcPipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#id GoogleEventarcPipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -51,60 +51,60 @@ export interface GoogleEventarcPipelineConfig extends cdktf.TerraformMetaArgumen
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#labels GoogleEventarcPipeline#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#labels GoogleEventarcPipeline#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#location GoogleEventarcPipeline#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#location GoogleEventarcPipeline#location}
   */
   readonly location: string;
   /**
   * The user-provided ID to be assigned to the Pipeline. It should match the
   * format '^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#pipeline_id GoogleEventarcPipeline#pipeline_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#pipeline_id GoogleEventarcPipeline#pipeline_id}
   */
   readonly pipelineId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#project GoogleEventarcPipeline#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#project GoogleEventarcPipeline#project}
   */
   readonly project?: string;
   /**
   * destinations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#destinations GoogleEventarcPipeline#destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#destinations GoogleEventarcPipeline#destinations}
   */
   readonly destinations: GoogleEventarcPipelineDestinations[] | cdktf.IResolvable;
   /**
   * input_payload_format block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#input_payload_format GoogleEventarcPipeline#input_payload_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#input_payload_format GoogleEventarcPipeline#input_payload_format}
   */
   readonly inputPayloadFormat?: GoogleEventarcPipelineInputPayloadFormat;
   /**
   * logging_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#logging_config GoogleEventarcPipeline#logging_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#logging_config GoogleEventarcPipeline#logging_config}
   */
   readonly loggingConfig?: GoogleEventarcPipelineLoggingConfig;
   /**
   * mediations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#mediations GoogleEventarcPipeline#mediations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#mediations GoogleEventarcPipeline#mediations}
   */
   readonly mediations?: GoogleEventarcPipelineMediations[] | cdktf.IResolvable;
   /**
   * retry_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#retry_policy GoogleEventarcPipeline#retry_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#retry_policy GoogleEventarcPipeline#retry_policy}
   */
   readonly retryPolicy?: GoogleEventarcPipelineRetryPolicy;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#timeouts GoogleEventarcPipeline#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#timeouts GoogleEventarcPipeline#timeouts}
   */
   readonly timeouts?: GoogleEventarcPipelineTimeouts;
 }
@@ -114,7 +114,7 @@ export interface GoogleEventarcPipelineDestinationsAuthenticationConfigGoogleOid
   * identifies the recipient that the JWT is intended for. If
   * unspecified, the destination URI will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#audience GoogleEventarcPipeline#audience}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#audience GoogleEventarcPipeline#audience}
   */
   readonly audience?: string;
   /**
@@ -126,7 +126,7 @@ export interface GoogleEventarcPipelineDestinationsAuthenticationConfigGoogleOid
   * roles/roles/iam.serviceAccountTokenCreator role to allow the
   * Pipeline to create OpenID tokens for authenticated requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#service_account GoogleEventarcPipeline#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#service_account GoogleEventarcPipeline#service_account}
   */
   readonly serviceAccount: string;
 }
@@ -240,7 +240,7 @@ export interface GoogleEventarcPipelineDestinationsAuthenticationConfigOauthToke
   * specified, "https://www.googleapis.com/auth/cloud-platform" will be
   * used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#scope GoogleEventarcPipeline#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#scope GoogleEventarcPipeline#scope}
   */
   readonly scope?: string;
   /**
@@ -253,7 +253,7 @@ export interface GoogleEventarcPipelineDestinationsAuthenticationConfigOauthToke
   * roles/roles/iam.serviceAccountTokenCreator role to allow Pipeline
   * to create OAuth2 tokens for authenticated requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#service_account GoogleEventarcPipeline#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#service_account GoogleEventarcPipeline#service_account}
   */
   readonly serviceAccount: string;
 }
@@ -365,13 +365,13 @@ export interface GoogleEventarcPipelineDestinationsAuthenticationConfig {
   /**
   * google_oidc block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#google_oidc GoogleEventarcPipeline#google_oidc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#google_oidc GoogleEventarcPipeline#google_oidc}
   */
   readonly googleOidc?: GoogleEventarcPipelineDestinationsAuthenticationConfigGoogleOidc;
   /**
   * oauth_token block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#oauth_token GoogleEventarcPipeline#oauth_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#oauth_token GoogleEventarcPipeline#oauth_token}
   */
   readonly oauthToken?: GoogleEventarcPipelineDestinationsAuthenticationConfigOauthToken;
 }
@@ -651,7 +651,7 @@ export interface GoogleEventarcPipelineDestinationsHttpEndpoint {
   * standard CloudEvent format. If it doesn't then the outgoing message
   * request may fail with a persistent error.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#message_binding_template GoogleEventarcPipeline#message_binding_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#message_binding_template GoogleEventarcPipeline#message_binding_template}
   */
   readonly messageBindingTemplate?: string;
   /**
@@ -661,7 +661,7 @@ export interface GoogleEventarcPipelineDestinationsHttpEndpoint {
   * Examples: 'https://svc.us-central1.p.local:8080/route'.
   * Only the HTTPS protocol is supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#uri GoogleEventarcPipeline#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#uri GoogleEventarcPipeline#uri}
   */
   readonly uri: string;
 }
@@ -775,7 +775,7 @@ export interface GoogleEventarcPipelineDestinationsNetworkConfig {
   * Format:
   * 'projects/{PROJECT_ID}/regions/{REGION}/networkAttachments/{NETWORK_ATTACHMENT_NAME}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#network_attachment GoogleEventarcPipeline#network_attachment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#network_attachment GoogleEventarcPipeline#network_attachment}
   */
   readonly networkAttachment: string;
 }
@@ -858,7 +858,7 @@ export interface GoogleEventarcPipelineDestinationsOutputPayloadFormatAvro {
   /**
   * The entire schema definition is stored in this field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#schema_definition GoogleEventarcPipeline#schema_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#schema_definition GoogleEventarcPipeline#schema_definition}
   */
   readonly schemaDefinition?: string;
 }
@@ -993,7 +993,7 @@ export interface GoogleEventarcPipelineDestinationsOutputPayloadFormatProtobuf {
   /**
   * The entire schema definition is stored in this field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#schema_definition GoogleEventarcPipeline#schema_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#schema_definition GoogleEventarcPipeline#schema_definition}
   */
   readonly schemaDefinition?: string;
 }
@@ -1079,19 +1079,19 @@ export interface GoogleEventarcPipelineDestinationsOutputPayloadFormat {
   /**
   * avro block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#avro GoogleEventarcPipeline#avro}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#avro GoogleEventarcPipeline#avro}
   */
   readonly avro?: GoogleEventarcPipelineDestinationsOutputPayloadFormatAvro;
   /**
   * json block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#json GoogleEventarcPipeline#json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#json GoogleEventarcPipeline#json}
   */
   readonly json?: GoogleEventarcPipelineDestinationsOutputPayloadFormatJson;
   /**
   * protobuf block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#protobuf GoogleEventarcPipeline#protobuf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#protobuf GoogleEventarcPipeline#protobuf}
   */
   readonly protobuf?: GoogleEventarcPipelineDestinationsOutputPayloadFormatProtobuf;
 }
@@ -1238,7 +1238,7 @@ export interface GoogleEventarcPipelineDestinations {
   * the Pipeline. Format:
   * 'projects/{project}/locations/{location}/messageBuses/{message_bus}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#message_bus GoogleEventarcPipeline#message_bus}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#message_bus GoogleEventarcPipeline#message_bus}
   */
   readonly messageBus?: string;
   /**
@@ -1246,7 +1246,7 @@ export interface GoogleEventarcPipelineDestinations {
   * published. Format:
   * 'projects/{project}/locations/{location}/topics/{topic}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#topic GoogleEventarcPipeline#topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#topic GoogleEventarcPipeline#topic}
   */
   readonly topic?: string;
   /**
@@ -1255,31 +1255,31 @@ export interface GoogleEventarcPipelineDestinations {
   * project as the Pipeline. Format:
   * 'projects/{project}/locations/{location}/workflows/{workflow}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#workflow GoogleEventarcPipeline#workflow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#workflow GoogleEventarcPipeline#workflow}
   */
   readonly workflow?: string;
   /**
   * authentication_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#authentication_config GoogleEventarcPipeline#authentication_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#authentication_config GoogleEventarcPipeline#authentication_config}
   */
   readonly authenticationConfig?: GoogleEventarcPipelineDestinationsAuthenticationConfig;
   /**
   * http_endpoint block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#http_endpoint GoogleEventarcPipeline#http_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#http_endpoint GoogleEventarcPipeline#http_endpoint}
   */
   readonly httpEndpoint?: GoogleEventarcPipelineDestinationsHttpEndpoint;
   /**
   * network_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#network_config GoogleEventarcPipeline#network_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#network_config GoogleEventarcPipeline#network_config}
   */
   readonly networkConfig?: GoogleEventarcPipelineDestinationsNetworkConfig;
   /**
   * output_payload_format block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#output_payload_format GoogleEventarcPipeline#output_payload_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#output_payload_format GoogleEventarcPipeline#output_payload_format}
   */
   readonly outputPayloadFormat?: GoogleEventarcPipelineDestinationsOutputPayloadFormat;
 }
@@ -1571,7 +1571,7 @@ export interface GoogleEventarcPipelineInputPayloadFormatAvro {
   /**
   * The entire schema definition is stored in this field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#schema_definition GoogleEventarcPipeline#schema_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#schema_definition GoogleEventarcPipeline#schema_definition}
   */
   readonly schemaDefinition?: string;
 }
@@ -1706,7 +1706,7 @@ export interface GoogleEventarcPipelineInputPayloadFormatProtobuf {
   /**
   * The entire schema definition is stored in this field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#schema_definition GoogleEventarcPipeline#schema_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#schema_definition GoogleEventarcPipeline#schema_definition}
   */
   readonly schemaDefinition?: string;
 }
@@ -1792,19 +1792,19 @@ export interface GoogleEventarcPipelineInputPayloadFormat {
   /**
   * avro block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#avro GoogleEventarcPipeline#avro}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#avro GoogleEventarcPipeline#avro}
   */
   readonly avro?: GoogleEventarcPipelineInputPayloadFormatAvro;
   /**
   * json block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#json GoogleEventarcPipeline#json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#json GoogleEventarcPipeline#json}
   */
   readonly json?: GoogleEventarcPipelineInputPayloadFormatJson;
   /**
   * protobuf block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#protobuf GoogleEventarcPipeline#protobuf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#protobuf GoogleEventarcPipeline#protobuf}
   */
   readonly protobuf?: GoogleEventarcPipelineInputPayloadFormatProtobuf;
 }
@@ -1949,7 +1949,7 @@ export interface GoogleEventarcPipelineLoggingConfig {
   * The minimum severity of logs that will be sent to Stackdriver/Platform
   * Telemetry. Logs at severitiy ≥ this value will be sent, unless it is NONE. Possible values: ["NONE", "DEBUG", "INFO", "NOTICE", "WARNING", "ERROR", "CRITICAL", "ALERT", "EMERGENCY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#log_severity GoogleEventarcPipeline#log_severity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#log_severity GoogleEventarcPipeline#log_severity}
   */
   readonly logSeverity?: string;
 }
@@ -2110,7 +2110,7 @@ export interface GoogleEventarcPipelineMediationsTransformation {
   * representation of the CloudEvent. To convert that data to a JSON
   * string it can be chained with the toJsonString function.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#transformation_template GoogleEventarcPipeline#transformation_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#transformation_template GoogleEventarcPipeline#transformation_template}
   */
   readonly transformationTemplate?: string;
 }
@@ -2196,7 +2196,7 @@ export interface GoogleEventarcPipelineMediations {
   /**
   * transformation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#transformation GoogleEventarcPipeline#transformation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#transformation GoogleEventarcPipeline#transformation}
   */
   readonly transformation?: GoogleEventarcPipelineMediationsTransformation;
 }
@@ -2316,7 +2316,7 @@ export interface GoogleEventarcPipelineRetryPolicy {
   * be between 1 and 100.
   * The default value for this field is 5.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#max_attempts GoogleEventarcPipeline#max_attempts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#max_attempts GoogleEventarcPipeline#max_attempts}
   */
   readonly maxAttempts?: number;
   /**
@@ -2324,7 +2324,7 @@ export interface GoogleEventarcPipelineRetryPolicy {
   * must be between 1 and 600.
   * The default value for this field is 60.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#max_retry_delay GoogleEventarcPipeline#max_retry_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#max_retry_delay GoogleEventarcPipeline#max_retry_delay}
   */
   readonly maxRetryDelay?: string;
   /**
@@ -2332,7 +2332,7 @@ export interface GoogleEventarcPipelineRetryPolicy {
   * must be between 1 and 600.
   * The default value for this field is 5.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#min_retry_delay GoogleEventarcPipeline#min_retry_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#min_retry_delay GoogleEventarcPipeline#min_retry_delay}
   */
   readonly minRetryDelay?: string;
 }
@@ -2474,15 +2474,15 @@ export class GoogleEventarcPipelineRetryPolicyOutputReference extends cdktf.Comp
 }
 export interface GoogleEventarcPipelineTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#create GoogleEventarcPipeline#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#create GoogleEventarcPipeline#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#delete GoogleEventarcPipeline#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#delete GoogleEventarcPipeline#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#update GoogleEventarcPipeline#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#update GoogleEventarcPipeline#update}
   */
   readonly update?: string;
 }
@@ -2634,7 +2634,7 @@ export class GoogleEventarcPipelineTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline google_eventarc_pipeline}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline google_eventarc_pipeline}
 */
 export class GoogleEventarcPipeline extends cdktf.TerraformResource {
 
@@ -2650,7 +2650,7 @@ export class GoogleEventarcPipeline extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleEventarcPipeline resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleEventarcPipeline to import
-  * @param importFromId The id of the existing GoogleEventarcPipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleEventarcPipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleEventarcPipeline to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -2662,7 +2662,7 @@ export class GoogleEventarcPipeline extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_eventarc_pipeline google_eventarc_pipeline} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_eventarc_pipeline google_eventarc_pipeline} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2673,7 +2673,7 @@ export class GoogleEventarcPipeline extends cdktf.TerraformResource {
       terraformResourceType: 'google_eventarc_pipeline',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.26.0',
+        providerVersion: '6.27.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

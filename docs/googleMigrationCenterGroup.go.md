@@ -4,7 +4,7 @@
 
 ### GoogleMigrationCenterGroup <a name="GoogleMigrationCenterGroup" id="@cdktf/provider-google-beta.googleMigrationCenterGroup.GoogleMigrationCenterGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_migration_center_group google_migration_center_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_migration_center_group google_migration_center_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMigrationCenterGroup.GoogleMigrationCenterGroup.Initializer"></a>
 
@@ -522,7 +522,7 @@ The construct id used in the generated config for the GoogleMigrationCenterGroup
 
 The id of the existing GoogleMigrationCenterGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_migration_center_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_migration_center_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -989,9 +989,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemigra
 | <code><a href="#@cdktf/provider-google-beta.googleMigrationCenterGroup.GoogleMigrationCenterGroupConfig.property.location">Location</a></code> | <code>*string</code> | The location of the group. |
 | <code><a href="#@cdktf/provider-google-beta.googleMigrationCenterGroup.GoogleMigrationCenterGroupConfig.property.description">Description</a></code> | <code>*string</code> | Optional. The description of the group. |
 | <code><a href="#@cdktf/provider-google-beta.googleMigrationCenterGroup.GoogleMigrationCenterGroupConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Optional. User-friendly display name. |
-| <code><a href="#@cdktf/provider-google-beta.googleMigrationCenterGroup.GoogleMigrationCenterGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_migration_center_group#id GoogleMigrationCenterGroup#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleMigrationCenterGroup.GoogleMigrationCenterGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_migration_center_group#id GoogleMigrationCenterGroup#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleMigrationCenterGroup.GoogleMigrationCenterGroupConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Labels as key value pairs. |
-| <code><a href="#@cdktf/provider-google-beta.googleMigrationCenterGroup.GoogleMigrationCenterGroupConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_migration_center_group#project GoogleMigrationCenterGroup#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleMigrationCenterGroup.GoogleMigrationCenterGroupConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_migration_center_group#project GoogleMigrationCenterGroup#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleMigrationCenterGroup.GoogleMigrationCenterGroupConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleMigrationCenterGroup.GoogleMigrationCenterGroupTimeouts">GoogleMigrationCenterGroupTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1078,7 +1078,7 @@ Required.
 
 User specified ID for the group. It will become the last component of the group name. The ID must be unique within the project, must conform with RFC-1034, is restricted to lower-cased letters, and has a maximum length of 63 characters. The ID must match the regular expression: '[a-z](%5Ba-z0-9-%5D%7B0,61%7D%5Ba-z0-9%5D)?'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_migration_center_group#group_id GoogleMigrationCenterGroup#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_migration_center_group#group_id GoogleMigrationCenterGroup#group_id}
 
 ---
 
@@ -1092,7 +1092,7 @@ Location *string
 
 The location of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_migration_center_group#location GoogleMigrationCenterGroup#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_migration_center_group#location GoogleMigrationCenterGroup#location}
 
 ---
 
@@ -1106,7 +1106,7 @@ Description *string
 
 Optional. The description of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_migration_center_group#description GoogleMigrationCenterGroup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_migration_center_group#description GoogleMigrationCenterGroup#description}
 
 ---
 
@@ -1120,7 +1120,7 @@ DisplayName *string
 
 Optional. User-friendly display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_migration_center_group#display_name GoogleMigrationCenterGroup#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_migration_center_group#display_name GoogleMigrationCenterGroup#display_name}
 
 ---
 
@@ -1132,7 +1132,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_migration_center_group#id GoogleMigrationCenterGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_migration_center_group#id GoogleMigrationCenterGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1152,7 +1152,7 @@ Labels as key value pairs.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_migration_center_group#labels GoogleMigrationCenterGroup#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_migration_center_group#labels GoogleMigrationCenterGroup#labels}
 
 ---
 
@@ -1164,7 +1164,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_migration_center_group#project GoogleMigrationCenterGroup#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_migration_center_group#project GoogleMigrationCenterGroup#project}.
 
 ---
 
@@ -1178,7 +1178,7 @@ Timeouts GoogleMigrationCenterGroupTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_migration_center_group#timeouts GoogleMigrationCenterGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_migration_center_group#timeouts GoogleMigrationCenterGroup#timeouts}
 
 ---
 
@@ -1200,9 +1200,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemigra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleMigrationCenterGroup.GoogleMigrationCenterGroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_migration_center_group#create GoogleMigrationCenterGroup#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleMigrationCenterGroup.GoogleMigrationCenterGroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_migration_center_group#delete GoogleMigrationCenterGroup#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleMigrationCenterGroup.GoogleMigrationCenterGroupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_migration_center_group#update GoogleMigrationCenterGroup#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleMigrationCenterGroup.GoogleMigrationCenterGroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_migration_center_group#create GoogleMigrationCenterGroup#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleMigrationCenterGroup.GoogleMigrationCenterGroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_migration_center_group#delete GoogleMigrationCenterGroup#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleMigrationCenterGroup.GoogleMigrationCenterGroupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_migration_center_group#update GoogleMigrationCenterGroup#update}. |
 
 ---
 
@@ -1214,7 +1214,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_migration_center_group#create GoogleMigrationCenterGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_migration_center_group#create GoogleMigrationCenterGroup#create}.
 
 ---
 
@@ -1226,7 +1226,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_migration_center_group#delete GoogleMigrationCenterGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_migration_center_group#delete GoogleMigrationCenterGroup#delete}.
 
 ---
 
@@ -1238,7 +1238,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_migration_center_group#update GoogleMigrationCenterGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_migration_center_group#update GoogleMigrationCenterGroup#update}.
 
 ---
 

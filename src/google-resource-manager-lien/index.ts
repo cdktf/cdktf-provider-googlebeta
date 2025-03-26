@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_resource_manager_lien
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_resource_manager_lien
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleResourceManagerLienConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_resource_manager_lien#id GoogleResourceManagerLien#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_resource_manager_lien#id GoogleResourceManagerLien#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,7 +24,7 @@ export interface GoogleResourceManagerLienConfig extends cdktf.TerraformMetaArgu
   * of the Lien, intended to be inspected programmatically. Maximum length of
   * 200 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_resource_manager_lien#origin GoogleResourceManagerLien#origin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_resource_manager_lien#origin GoogleResourceManagerLien#origin}
   */
   readonly origin: string;
   /**
@@ -33,14 +33,14 @@ export interface GoogleResourceManagerLienConfig extends cdktf.TerraformMetaArgu
   * Since a variety of objects can have Liens against them, you must provide the type
   * prefix (e.g. "projects/my-project-name").
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_resource_manager_lien#parent GoogleResourceManagerLien#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_resource_manager_lien#parent GoogleResourceManagerLien#parent}
   */
   readonly parent: string;
   /**
   * Concise user-visible strings indicating why an action cannot be performed
   * on a resource. Maximum length of 200 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_resource_manager_lien#reason GoogleResourceManagerLien#reason}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_resource_manager_lien#reason GoogleResourceManagerLien#reason}
   */
   readonly reason: string;
   /**
@@ -50,23 +50,23 @@ export interface GoogleResourceManagerLienConfig extends cdktf.TerraformMetaArgu
   * list is meaningless and will be rejected.
   * e.g. ['resourcemanager.projects.delete']
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_resource_manager_lien#restrictions GoogleResourceManagerLien#restrictions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_resource_manager_lien#restrictions GoogleResourceManagerLien#restrictions}
   */
   readonly restrictions: string[];
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_resource_manager_lien#timeouts GoogleResourceManagerLien#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_resource_manager_lien#timeouts GoogleResourceManagerLien#timeouts}
   */
   readonly timeouts?: GoogleResourceManagerLienTimeouts;
 }
 export interface GoogleResourceManagerLienTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_resource_manager_lien#create GoogleResourceManagerLien#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_resource_manager_lien#create GoogleResourceManagerLien#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_resource_manager_lien#delete GoogleResourceManagerLien#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_resource_manager_lien#delete GoogleResourceManagerLien#delete}
   */
   readonly delete?: string;
 }
@@ -189,7 +189,7 @@ export class GoogleResourceManagerLienTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_resource_manager_lien google_resource_manager_lien}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_resource_manager_lien google_resource_manager_lien}
 */
 export class GoogleResourceManagerLien extends cdktf.TerraformResource {
 
@@ -205,7 +205,7 @@ export class GoogleResourceManagerLien extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleResourceManagerLien resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleResourceManagerLien to import
-  * @param importFromId The id of the existing GoogleResourceManagerLien that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_resource_manager_lien#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleResourceManagerLien that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_resource_manager_lien#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleResourceManagerLien to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -217,7 +217,7 @@ export class GoogleResourceManagerLien extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_resource_manager_lien google_resource_manager_lien} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_resource_manager_lien google_resource_manager_lien} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -228,7 +228,7 @@ export class GoogleResourceManagerLien extends cdktf.TerraformResource {
       terraformResourceType: 'google_resource_manager_lien',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.26.0',
+        providerVersion: '6.27.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

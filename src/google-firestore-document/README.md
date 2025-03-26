@@ -1,3 +1,3 @@
 # `google_firestore_document`
 
-Refer to the Terraform Registry for docs: [`google_firestore_document`](https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_firestore_document).
+Refer to the Terraform Registry for docs: [`google_firestore_document`](https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_firestore_document).

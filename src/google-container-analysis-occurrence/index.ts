@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_analysis_occurrence
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_analysis_occurrence
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleContainerAnalysisOccurrenceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_analysis_occurrence#id GoogleContainerAnalysisOccurrence#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_analysis_occurrence#id GoogleContainerAnalysisOccurrence#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,17 +24,17 @@ export interface GoogleContainerAnalysisOccurrenceConfig extends cdktf.Terraform
   * projects/[PROJECT]/notes/[NOTE_ID]. This field can be used as a
   * filter in list requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_analysis_occurrence#note_name GoogleContainerAnalysisOccurrence#note_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_analysis_occurrence#note_name GoogleContainerAnalysisOccurrence#note_name}
   */
   readonly noteName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_analysis_occurrence#project GoogleContainerAnalysisOccurrence#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_analysis_occurrence#project GoogleContainerAnalysisOccurrence#project}
   */
   readonly project?: string;
   /**
   * A description of actions that can be taken to remedy the note.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_analysis_occurrence#remediation GoogleContainerAnalysisOccurrence#remediation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_analysis_occurrence#remediation GoogleContainerAnalysisOccurrence#remediation}
   */
   readonly remediation?: string;
   /**
@@ -42,19 +42,19 @@ export interface GoogleContainerAnalysisOccurrenceConfig extends cdktf.Terraform
   * the occurrence applies. For example,
   * https://gcr.io/project/image@sha256:123abc for a Docker image.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_analysis_occurrence#resource_uri GoogleContainerAnalysisOccurrence#resource_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_analysis_occurrence#resource_uri GoogleContainerAnalysisOccurrence#resource_uri}
   */
   readonly resourceUri: string;
   /**
   * attestation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_analysis_occurrence#attestation GoogleContainerAnalysisOccurrence#attestation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_analysis_occurrence#attestation GoogleContainerAnalysisOccurrence#attestation}
   */
   readonly attestation: GoogleContainerAnalysisOccurrenceAttestation;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_analysis_occurrence#timeouts GoogleContainerAnalysisOccurrence#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_analysis_occurrence#timeouts GoogleContainerAnalysisOccurrence#timeouts}
   */
   readonly timeouts?: GoogleContainerAnalysisOccurrenceTimeouts;
 }
@@ -72,7 +72,7 @@ export interface GoogleContainerAnalysisOccurrenceAttestationSignatures {
   * * RFC6920 digest-named SubjectPublicKeyInfo (digest of the DER serialization):
   *     * "ni:///sha-256;cD9o9Cq6LG3jD0iKXqEi_vdjJGecm_iXkbqVoScViaU"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_analysis_occurrence#public_key_id GoogleContainerAnalysisOccurrence#public_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_analysis_occurrence#public_key_id GoogleContainerAnalysisOccurrence#public_key_id}
   */
   readonly publicKeyId: string;
   /**
@@ -84,7 +84,7 @@ export interface GoogleContainerAnalysisOccurrenceAttestationSignatures {
   * have a canonical serialization that can always be
   * unambiguously computed to derive the payload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_analysis_occurrence#signature GoogleContainerAnalysisOccurrence#signature}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_analysis_occurrence#signature GoogleContainerAnalysisOccurrence#signature}
   */
   readonly signature?: string;
 }
@@ -229,13 +229,13 @@ export interface GoogleContainerAnalysisOccurrenceAttestation {
   * The serialized payload that is verified by one or
   * more signatures. A base64-encoded string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_analysis_occurrence#serialized_payload GoogleContainerAnalysisOccurrence#serialized_payload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_analysis_occurrence#serialized_payload GoogleContainerAnalysisOccurrence#serialized_payload}
   */
   readonly serializedPayload: string;
   /**
   * signatures block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_analysis_occurrence#signatures GoogleContainerAnalysisOccurrence#signatures}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_analysis_occurrence#signatures GoogleContainerAnalysisOccurrence#signatures}
   */
   readonly signatures: GoogleContainerAnalysisOccurrenceAttestationSignatures[] | cdktf.IResolvable;
 }
@@ -342,15 +342,15 @@ export class GoogleContainerAnalysisOccurrenceAttestationOutputReference extends
 }
 export interface GoogleContainerAnalysisOccurrenceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_analysis_occurrence#create GoogleContainerAnalysisOccurrence#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_analysis_occurrence#create GoogleContainerAnalysisOccurrence#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_analysis_occurrence#delete GoogleContainerAnalysisOccurrence#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_analysis_occurrence#delete GoogleContainerAnalysisOccurrence#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_analysis_occurrence#update GoogleContainerAnalysisOccurrence#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_analysis_occurrence#update GoogleContainerAnalysisOccurrence#update}
   */
   readonly update?: string;
 }
@@ -502,7 +502,7 @@ export class GoogleContainerAnalysisOccurrenceTimeoutsOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_analysis_occurrence google_container_analysis_occurrence}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_analysis_occurrence google_container_analysis_occurrence}
 */
 export class GoogleContainerAnalysisOccurrence extends cdktf.TerraformResource {
 
@@ -518,7 +518,7 @@ export class GoogleContainerAnalysisOccurrence extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleContainerAnalysisOccurrence resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleContainerAnalysisOccurrence to import
-  * @param importFromId The id of the existing GoogleContainerAnalysisOccurrence that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_analysis_occurrence#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleContainerAnalysisOccurrence that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_analysis_occurrence#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleContainerAnalysisOccurrence to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -530,7 +530,7 @@ export class GoogleContainerAnalysisOccurrence extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_analysis_occurrence google_container_analysis_occurrence} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_analysis_occurrence google_container_analysis_occurrence} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -541,7 +541,7 @@ export class GoogleContainerAnalysisOccurrence extends cdktf.TerraformResource {
       terraformResourceType: 'google_container_analysis_occurrence',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.26.0',
+        providerVersion: '6.27.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

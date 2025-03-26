@@ -4,7 +4,7 @@
 
 ### GoogleDataCatalogEntryGroupIamPolicy <a name="GoogleDataCatalogEntryGroupIamPolicy" id="@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamPolicy.GoogleDataCatalogEntryGroupIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_data_catalog_entry_group_iam_policy google_data_catalog_entry_group_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_data_catalog_entry_group_iam_policy google_data_catalog_entry_group_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamPolicy.GoogleDataCatalogEntryGroupIamPolicy.Initializer"></a>
 
@@ -42,11 +42,11 @@ GoogleDataCatalogEntryGroupIamPolicy.Builder.create(Construct scope, java.lang.S
 | <code><a href="#@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamPolicy.GoogleDataCatalogEntryGroupIamPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamPolicy.GoogleDataCatalogEntryGroupIamPolicy.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamPolicy.GoogleDataCatalogEntryGroupIamPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamPolicy.GoogleDataCatalogEntryGroupIamPolicy.Initializer.parameter.entryGroup">entryGroup</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_data_catalog_entry_group_iam_policy#entry_group GoogleDataCatalogEntryGroupIamPolicy#entry_group}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamPolicy.GoogleDataCatalogEntryGroupIamPolicy.Initializer.parameter.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_data_catalog_entry_group_iam_policy#policy_data GoogleDataCatalogEntryGroupIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamPolicy.GoogleDataCatalogEntryGroupIamPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_data_catalog_entry_group_iam_policy#id GoogleDataCatalogEntryGroupIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamPolicy.GoogleDataCatalogEntryGroupIamPolicy.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_data_catalog_entry_group_iam_policy#project GoogleDataCatalogEntryGroupIamPolicy#project}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamPolicy.GoogleDataCatalogEntryGroupIamPolicy.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_data_catalog_entry_group_iam_policy#region GoogleDataCatalogEntryGroupIamPolicy#region}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamPolicy.GoogleDataCatalogEntryGroupIamPolicy.Initializer.parameter.entryGroup">entryGroup</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_data_catalog_entry_group_iam_policy#entry_group GoogleDataCatalogEntryGroupIamPolicy#entry_group}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamPolicy.GoogleDataCatalogEntryGroupIamPolicy.Initializer.parameter.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_data_catalog_entry_group_iam_policy#policy_data GoogleDataCatalogEntryGroupIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamPolicy.GoogleDataCatalogEntryGroupIamPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_data_catalog_entry_group_iam_policy#id GoogleDataCatalogEntryGroupIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamPolicy.GoogleDataCatalogEntryGroupIamPolicy.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_data_catalog_entry_group_iam_policy#project GoogleDataCatalogEntryGroupIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamPolicy.GoogleDataCatalogEntryGroupIamPolicy.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_data_catalog_entry_group_iam_policy#region GoogleDataCatalogEntryGroupIamPolicy#region}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_data_catalog_entry_group_iam_policy#entry_group GoogleDataCatalogEntryGroupIamPolicy#entry_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_data_catalog_entry_group_iam_policy#entry_group GoogleDataCatalogEntryGroupIamPolicy#entry_group}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_data_catalog_entry_group_iam_policy#policy_data GoogleDataCatalogEntryGroupIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_data_catalog_entry_group_iam_policy#policy_data GoogleDataCatalogEntryGroupIamPolicy#policy_data}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_data_catalog_entry_group_iam_policy#id GoogleDataCatalogEntryGroupIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_data_catalog_entry_group_iam_policy#id GoogleDataCatalogEntryGroupIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -141,7 +141,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_data_catalog_entry_group_iam_policy#project GoogleDataCatalogEntryGroupIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_data_catalog_entry_group_iam_policy#project GoogleDataCatalogEntryGroupIamPolicy#project}.
 
 ---
 
@@ -149,7 +149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_data_catalog_entry_group_iam_policy#region GoogleDataCatalogEntryGroupIamPolicy#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_data_catalog_entry_group_iam_policy#region GoogleDataCatalogEntryGroupIamPolicy#region}.
 
 ---
 
@@ -597,7 +597,7 @@ The construct id used in the generated config for the GoogleDataCatalogEntryGrou
 
 The id of the existing GoogleDataCatalogEntryGroupIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_data_catalog_entry_group_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_data_catalog_entry_group_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -951,11 +951,11 @@ GoogleDataCatalogEntryGroupIamPolicyConfig.builder()
 | <code><a href="#@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamPolicy.GoogleDataCatalogEntryGroupIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamPolicy.GoogleDataCatalogEntryGroupIamPolicyConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamPolicy.GoogleDataCatalogEntryGroupIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamPolicy.GoogleDataCatalogEntryGroupIamPolicyConfig.property.entryGroup">entryGroup</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_data_catalog_entry_group_iam_policy#entry_group GoogleDataCatalogEntryGroupIamPolicy#entry_group}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamPolicy.GoogleDataCatalogEntryGroupIamPolicyConfig.property.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_data_catalog_entry_group_iam_policy#policy_data GoogleDataCatalogEntryGroupIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamPolicy.GoogleDataCatalogEntryGroupIamPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_data_catalog_entry_group_iam_policy#id GoogleDataCatalogEntryGroupIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamPolicy.GoogleDataCatalogEntryGroupIamPolicyConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_data_catalog_entry_group_iam_policy#project GoogleDataCatalogEntryGroupIamPolicy#project}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamPolicy.GoogleDataCatalogEntryGroupIamPolicyConfig.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_data_catalog_entry_group_iam_policy#region GoogleDataCatalogEntryGroupIamPolicy#region}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamPolicy.GoogleDataCatalogEntryGroupIamPolicyConfig.property.entryGroup">entryGroup</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_data_catalog_entry_group_iam_policy#entry_group GoogleDataCatalogEntryGroupIamPolicy#entry_group}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamPolicy.GoogleDataCatalogEntryGroupIamPolicyConfig.property.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_data_catalog_entry_group_iam_policy#policy_data GoogleDataCatalogEntryGroupIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamPolicy.GoogleDataCatalogEntryGroupIamPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_data_catalog_entry_group_iam_policy#id GoogleDataCatalogEntryGroupIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamPolicy.GoogleDataCatalogEntryGroupIamPolicyConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_data_catalog_entry_group_iam_policy#project GoogleDataCatalogEntryGroupIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamPolicy.GoogleDataCatalogEntryGroupIamPolicyConfig.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_data_catalog_entry_group_iam_policy#region GoogleDataCatalogEntryGroupIamPolicy#region}. |
 
 ---
 
@@ -1037,7 +1037,7 @@ public java.lang.String getEntryGroup();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_data_catalog_entry_group_iam_policy#entry_group GoogleDataCatalogEntryGroupIamPolicy#entry_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_data_catalog_entry_group_iam_policy#entry_group GoogleDataCatalogEntryGroupIamPolicy#entry_group}.
 
 ---
 
@@ -1049,7 +1049,7 @@ public java.lang.String getPolicyData();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_data_catalog_entry_group_iam_policy#policy_data GoogleDataCatalogEntryGroupIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_data_catalog_entry_group_iam_policy#policy_data GoogleDataCatalogEntryGroupIamPolicy#policy_data}.
 
 ---
 
@@ -1061,7 +1061,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_data_catalog_entry_group_iam_policy#id GoogleDataCatalogEntryGroupIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_data_catalog_entry_group_iam_policy#id GoogleDataCatalogEntryGroupIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1076,7 +1076,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_data_catalog_entry_group_iam_policy#project GoogleDataCatalogEntryGroupIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_data_catalog_entry_group_iam_policy#project GoogleDataCatalogEntryGroupIamPolicy#project}.
 
 ---
 
@@ -1088,7 +1088,7 @@ public java.lang.String getRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_data_catalog_entry_group_iam_policy#region GoogleDataCatalogEntryGroupIamPolicy#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_data_catalog_entry_group_iam_policy#region GoogleDataCatalogEntryGroupIamPolicy#region}.
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_tpu_v2_queued_resource
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_tpu_v2_queued_resource
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleTpuV2QueuedResourceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_tpu_v2_queued_resource#id GoogleTpuV2QueuedResource#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_tpu_v2_queued_resource#id GoogleTpuV2QueuedResource#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,39 +22,39 @@ export interface GoogleTpuV2QueuedResourceConfig extends cdktf.TerraformMetaArgu
   /**
   * The immutable name of the Queued Resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_tpu_v2_queued_resource#name GoogleTpuV2QueuedResource#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_tpu_v2_queued_resource#name GoogleTpuV2QueuedResource#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_tpu_v2_queued_resource#project GoogleTpuV2QueuedResource#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_tpu_v2_queued_resource#project GoogleTpuV2QueuedResource#project}
   */
   readonly project?: string;
   /**
   * The GCP location for the Queued Resource. If it is not provided, the provider zone is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_tpu_v2_queued_resource#zone GoogleTpuV2QueuedResource#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_tpu_v2_queued_resource#zone GoogleTpuV2QueuedResource#zone}
   */
   readonly zone?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_tpu_v2_queued_resource#timeouts GoogleTpuV2QueuedResource#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_tpu_v2_queued_resource#timeouts GoogleTpuV2QueuedResource#timeouts}
   */
   readonly timeouts?: GoogleTpuV2QueuedResourceTimeouts;
   /**
   * tpu block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_tpu_v2_queued_resource#tpu GoogleTpuV2QueuedResource#tpu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_tpu_v2_queued_resource#tpu GoogleTpuV2QueuedResource#tpu}
   */
   readonly tpu?: GoogleTpuV2QueuedResourceTpu;
 }
 export interface GoogleTpuV2QueuedResourceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_tpu_v2_queued_resource#create GoogleTpuV2QueuedResource#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_tpu_v2_queued_resource#create GoogleTpuV2QueuedResource#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_tpu_v2_queued_resource#delete GoogleTpuV2QueuedResource#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_tpu_v2_queued_resource#delete GoogleTpuV2QueuedResource#delete}
   */
   readonly delete?: string;
 }
@@ -180,34 +180,34 @@ export interface GoogleTpuV2QueuedResourceTpuNodeSpecNodeNetworkConfig {
   * Allows the TPU node to send and receive packets with non-matching destination or source
   * IPs. This is required if you plan to use the TPU workers to forward routes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_tpu_v2_queued_resource#can_ip_forward GoogleTpuV2QueuedResource#can_ip_forward}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_tpu_v2_queued_resource#can_ip_forward GoogleTpuV2QueuedResource#can_ip_forward}
   */
   readonly canIpForward?: boolean | cdktf.IResolvable;
   /**
   * Indicates that external IP addresses would be associated with the TPU workers. If set to
   * false, the specified subnetwork or network should have Private Google Access enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_tpu_v2_queued_resource#enable_external_ips GoogleTpuV2QueuedResource#enable_external_ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_tpu_v2_queued_resource#enable_external_ips GoogleTpuV2QueuedResource#enable_external_ips}
   */
   readonly enableExternalIps?: boolean | cdktf.IResolvable;
   /**
   * The name of the network for the TPU node. It must be a preexisting Google Compute Engine
   * network. If none is provided, "default" will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_tpu_v2_queued_resource#network GoogleTpuV2QueuedResource#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_tpu_v2_queued_resource#network GoogleTpuV2QueuedResource#network}
   */
   readonly network?: string;
   /**
   * Specifies networking queue count for TPU VM instance's network interface.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_tpu_v2_queued_resource#queue_count GoogleTpuV2QueuedResource#queue_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_tpu_v2_queued_resource#queue_count GoogleTpuV2QueuedResource#queue_count}
   */
   readonly queueCount?: number;
   /**
   * The name of the subnetwork for the TPU node. It must be a preexisting Google Compute
   * Engine subnetwork. If none is provided, "default" will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_tpu_v2_queued_resource#subnetwork GoogleTpuV2QueuedResource#subnetwork}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_tpu_v2_queued_resource#subnetwork GoogleTpuV2QueuedResource#subnetwork}
   */
   readonly subnetwork?: string;
 }
@@ -409,25 +409,25 @@ export interface GoogleTpuV2QueuedResourceTpuNodeSpecNode {
   /**
   * TPU accelerator type for the TPU. If not specified, this defaults to 'v2-8'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_tpu_v2_queued_resource#accelerator_type GoogleTpuV2QueuedResource#accelerator_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_tpu_v2_queued_resource#accelerator_type GoogleTpuV2QueuedResource#accelerator_type}
   */
   readonly acceleratorType?: string;
   /**
   * Text description of the TPU.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_tpu_v2_queued_resource#description GoogleTpuV2QueuedResource#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_tpu_v2_queued_resource#description GoogleTpuV2QueuedResource#description}
   */
   readonly description?: string;
   /**
   * Runtime version for the TPU.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_tpu_v2_queued_resource#runtime_version GoogleTpuV2QueuedResource#runtime_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_tpu_v2_queued_resource#runtime_version GoogleTpuV2QueuedResource#runtime_version}
   */
   readonly runtimeVersion: string;
   /**
   * network_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_tpu_v2_queued_resource#network_config GoogleTpuV2QueuedResource#network_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_tpu_v2_queued_resource#network_config GoogleTpuV2QueuedResource#network_config}
   */
   readonly networkConfig?: GoogleTpuV2QueuedResourceTpuNodeSpecNodeNetworkConfig;
 }
@@ -597,19 +597,19 @@ export interface GoogleTpuV2QueuedResourceTpuNodeSpec {
   /**
   * Unqualified node identifier used to identify the node in the project once provisioned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_tpu_v2_queued_resource#node_id GoogleTpuV2QueuedResource#node_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_tpu_v2_queued_resource#node_id GoogleTpuV2QueuedResource#node_id}
   */
   readonly nodeId?: string;
   /**
   * The parent resource name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_tpu_v2_queued_resource#parent GoogleTpuV2QueuedResource#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_tpu_v2_queued_resource#parent GoogleTpuV2QueuedResource#parent}
   */
   readonly parent: string;
   /**
   * node block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_tpu_v2_queued_resource#node GoogleTpuV2QueuedResource#node}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_tpu_v2_queued_resource#node GoogleTpuV2QueuedResource#node}
   */
   readonly nodeAttribute: GoogleTpuV2QueuedResourceTpuNodeSpecNode;
 }
@@ -779,7 +779,7 @@ export interface GoogleTpuV2QueuedResourceTpu {
   /**
   * node_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_tpu_v2_queued_resource#node_spec GoogleTpuV2QueuedResource#node_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_tpu_v2_queued_resource#node_spec GoogleTpuV2QueuedResource#node_spec}
   */
   readonly nodeSpec?: GoogleTpuV2QueuedResourceTpuNodeSpec[] | cdktf.IResolvable;
 }
@@ -863,7 +863,7 @@ export class GoogleTpuV2QueuedResourceTpuOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_tpu_v2_queued_resource google_tpu_v2_queued_resource}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_tpu_v2_queued_resource google_tpu_v2_queued_resource}
 */
 export class GoogleTpuV2QueuedResource extends cdktf.TerraformResource {
 
@@ -879,7 +879,7 @@ export class GoogleTpuV2QueuedResource extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleTpuV2QueuedResource resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleTpuV2QueuedResource to import
-  * @param importFromId The id of the existing GoogleTpuV2QueuedResource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_tpu_v2_queued_resource#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleTpuV2QueuedResource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_tpu_v2_queued_resource#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleTpuV2QueuedResource to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -891,7 +891,7 @@ export class GoogleTpuV2QueuedResource extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_tpu_v2_queued_resource google_tpu_v2_queued_resource} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_tpu_v2_queued_resource google_tpu_v2_queued_resource} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -902,7 +902,7 @@ export class GoogleTpuV2QueuedResource extends cdktf.TerraformResource {
       terraformResourceType: 'google_tpu_v2_queued_resource',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.26.0',
+        providerVersion: '6.27.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

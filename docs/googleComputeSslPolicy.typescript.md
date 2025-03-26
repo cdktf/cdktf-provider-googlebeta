@@ -4,7 +4,7 @@
 
 ### GoogleComputeSslPolicy <a name="GoogleComputeSslPolicy" id="@cdktf/provider-google-beta.googleComputeSslPolicy.GoogleComputeSslPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_ssl_policy google_compute_ssl_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_ssl_policy google_compute_ssl_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSslPolicy.GoogleComputeSslPolicy.Initializer"></a>
 
@@ -529,7 +529,7 @@ The construct id used in the generated config for the GoogleComputeSslPolicy to 
 
 The id of the existing GoogleComputeSslPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_ssl_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_ssl_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -968,10 +968,10 @@ const googleComputeSslPolicyConfig: googleComputeSslPolicy.GoogleComputeSslPolic
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSslPolicy.GoogleComputeSslPolicyConfig.property.name">name</a></code> | <code>string</code> | Name of the resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSslPolicy.GoogleComputeSslPolicyConfig.property.customFeatures">customFeatures</a></code> | <code>string[]</code> | Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSslPolicy.GoogleComputeSslPolicyConfig.property.description">description</a></code> | <code>string</code> | An optional description of this resource. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeSslPolicy.GoogleComputeSslPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_ssl_policy#id GoogleComputeSslPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeSslPolicy.GoogleComputeSslPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_ssl_policy#id GoogleComputeSslPolicy#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSslPolicy.GoogleComputeSslPolicyConfig.property.minTlsVersion">minTlsVersion</a></code> | <code>string</code> | The minimum version of SSL protocol that can be used by the clients to establish a connection with the load balancer. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSslPolicy.GoogleComputeSslPolicyConfig.property.profile">profile</a></code> | <code>string</code> | Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeSslPolicy.GoogleComputeSslPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_ssl_policy#project GoogleComputeSslPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeSslPolicy.GoogleComputeSslPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_ssl_policy#project GoogleComputeSslPolicy#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSslPolicy.GoogleComputeSslPolicyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeSslPolicy.GoogleComputeSslPolicyTimeouts">GoogleComputeSslPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1064,7 +1064,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_ssl_policy#name GoogleComputeSslPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_ssl_policy#name GoogleComputeSslPolicy#name}
 
 ---
 
@@ -1088,7 +1088,7 @@ for which ciphers are available to use. **Note**: this argument
 *must* be present when using the 'CUSTOM' profile. This argument
 *must not* be present when using any other profile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_ssl_policy#custom_features GoogleComputeSslPolicy#custom_features}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_ssl_policy#custom_features GoogleComputeSslPolicy#custom_features}
 
 ---
 
@@ -1102,7 +1102,7 @@ public readonly description: string;
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_ssl_policy#description GoogleComputeSslPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_ssl_policy#description GoogleComputeSslPolicy#description}
 
 ---
 
@@ -1114,7 +1114,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_ssl_policy#id GoogleComputeSslPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_ssl_policy#id GoogleComputeSslPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1133,7 +1133,7 @@ The minimum version of SSL protocol that can be used by the clients to establish
 
 Default value: "TLS_1_0" Possible values: ["TLS_1_0", "TLS_1_1", "TLS_1_2"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_ssl_policy#min_tls_version GoogleComputeSslPolicy#min_tls_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_ssl_policy#min_tls_version GoogleComputeSslPolicy#min_tls_version}
 
 ---
 
@@ -1155,7 +1155,7 @@ See the [official documentation](https://cloud.google.com/compute/docs/load-bala
 for information on what cipher suites each profile provides. If
 'CUSTOM' is used, the 'custom_features' attribute **must be set**. Default value: "COMPATIBLE" Possible values: ["COMPATIBLE", "MODERN", "RESTRICTED", "CUSTOM"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_ssl_policy#profile GoogleComputeSslPolicy#profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_ssl_policy#profile GoogleComputeSslPolicy#profile}
 
 ---
 
@@ -1167,7 +1167,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_ssl_policy#project GoogleComputeSslPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_ssl_policy#project GoogleComputeSslPolicy#project}.
 
 ---
 
@@ -1181,7 +1181,7 @@ public readonly timeouts: GoogleComputeSslPolicyTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_ssl_policy#timeouts GoogleComputeSslPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_ssl_policy#timeouts GoogleComputeSslPolicy#timeouts}
 
 ---
 
@@ -1199,9 +1199,9 @@ const googleComputeSslPolicyTimeouts: googleComputeSslPolicy.GoogleComputeSslPol
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeSslPolicy.GoogleComputeSslPolicyTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_ssl_policy#create GoogleComputeSslPolicy#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeSslPolicy.GoogleComputeSslPolicyTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_ssl_policy#delete GoogleComputeSslPolicy#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeSslPolicy.GoogleComputeSslPolicyTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_ssl_policy#update GoogleComputeSslPolicy#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeSslPolicy.GoogleComputeSslPolicyTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_ssl_policy#create GoogleComputeSslPolicy#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeSslPolicy.GoogleComputeSslPolicyTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_ssl_policy#delete GoogleComputeSslPolicy#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeSslPolicy.GoogleComputeSslPolicyTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_ssl_policy#update GoogleComputeSslPolicy#update}. |
 
 ---
 
@@ -1213,7 +1213,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_ssl_policy#create GoogleComputeSslPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_ssl_policy#create GoogleComputeSslPolicy#create}.
 
 ---
 
@@ -1225,7 +1225,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_ssl_policy#delete GoogleComputeSslPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_ssl_policy#delete GoogleComputeSslPolicy#delete}.
 
 ---
 
@@ -1237,7 +1237,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_ssl_policy#update GoogleComputeSslPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_ssl_policy#update GoogleComputeSslPolicy#update}.
 
 ---
 

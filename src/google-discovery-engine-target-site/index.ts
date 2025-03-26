@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_discovery_engine_target_site
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_discovery_engine_target_site
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface GoogleDiscoveryEngineTargetSiteConfig extends cdktf.TerraformMe
   /**
   * The unique id of the data store.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_discovery_engine_target_site#data_store_id GoogleDiscoveryEngineTargetSite#data_store_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_discovery_engine_target_site#data_store_id GoogleDiscoveryEngineTargetSite#data_store_id}
   */
   readonly dataStoreId: string;
   /**
@@ -26,11 +26,11 @@ export interface GoogleDiscoveryEngineTargetSiteConfig extends cdktf.TerraformMe
   * provided_uri_pattern is always normalized to generate the URI pattern to
   * be used by the search engine.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_discovery_engine_target_site#exact_match GoogleDiscoveryEngineTargetSite#exact_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_discovery_engine_target_site#exact_match GoogleDiscoveryEngineTargetSite#exact_match}
   */
   readonly exactMatch?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_discovery_engine_target_site#id GoogleDiscoveryEngineTargetSite#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_discovery_engine_target_site#id GoogleDiscoveryEngineTargetSite#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,30 +40,30 @@ export interface GoogleDiscoveryEngineTargetSiteConfig extends cdktf.TerraformMe
   * The geographic location where the data store should reside. The value can
   * only be one of "global", "us" and "eu".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_discovery_engine_target_site#location GoogleDiscoveryEngineTargetSite#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_discovery_engine_target_site#location GoogleDiscoveryEngineTargetSite#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_discovery_engine_target_site#project GoogleDiscoveryEngineTargetSite#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_discovery_engine_target_site#project GoogleDiscoveryEngineTargetSite#project}
   */
   readonly project?: string;
   /**
   * The user provided URI pattern from which the 'generated_uri_pattern' is
   * generated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_discovery_engine_target_site#provided_uri_pattern GoogleDiscoveryEngineTargetSite#provided_uri_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_discovery_engine_target_site#provided_uri_pattern GoogleDiscoveryEngineTargetSite#provided_uri_pattern}
   */
   readonly providedUriPattern: string;
   /**
   * The possible target site types. Possible values: ["INCLUDE", "EXCLUDE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_discovery_engine_target_site#type GoogleDiscoveryEngineTargetSite#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_discovery_engine_target_site#type GoogleDiscoveryEngineTargetSite#type}
   */
   readonly type?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_discovery_engine_target_site#timeouts GoogleDiscoveryEngineTargetSite#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_discovery_engine_target_site#timeouts GoogleDiscoveryEngineTargetSite#timeouts}
   */
   readonly timeouts?: GoogleDiscoveryEngineTargetSiteTimeouts;
 }
@@ -300,11 +300,11 @@ export class GoogleDiscoveryEngineTargetSiteSiteVerificationInfoList extends cdk
 }
 export interface GoogleDiscoveryEngineTargetSiteTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_discovery_engine_target_site#create GoogleDiscoveryEngineTargetSite#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_discovery_engine_target_site#create GoogleDiscoveryEngineTargetSite#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_discovery_engine_target_site#delete GoogleDiscoveryEngineTargetSite#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_discovery_engine_target_site#delete GoogleDiscoveryEngineTargetSite#delete}
   */
   readonly delete?: string;
 }
@@ -427,7 +427,7 @@ export class GoogleDiscoveryEngineTargetSiteTimeoutsOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_discovery_engine_target_site google_discovery_engine_target_site}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_discovery_engine_target_site google_discovery_engine_target_site}
 */
 export class GoogleDiscoveryEngineTargetSite extends cdktf.TerraformResource {
 
@@ -443,7 +443,7 @@ export class GoogleDiscoveryEngineTargetSite extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleDiscoveryEngineTargetSite resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleDiscoveryEngineTargetSite to import
-  * @param importFromId The id of the existing GoogleDiscoveryEngineTargetSite that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_discovery_engine_target_site#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleDiscoveryEngineTargetSite that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_discovery_engine_target_site#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleDiscoveryEngineTargetSite to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -455,7 +455,7 @@ export class GoogleDiscoveryEngineTargetSite extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_discovery_engine_target_site google_discovery_engine_target_site} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_discovery_engine_target_site google_discovery_engine_target_site} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -466,7 +466,7 @@ export class GoogleDiscoveryEngineTargetSite extends cdktf.TerraformResource {
       terraformResourceType: 'google_discovery_engine_target_site',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.26.0',
+        providerVersion: '6.27.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

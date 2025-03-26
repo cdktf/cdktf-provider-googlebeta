@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/data-sources/google_firebase_hosting_channel
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/data-sources/google_firebase_hosting_channel
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataGoogleFirebaseHostingChannelConfig extends cdktf.TerraformM
   /**
   * Required. Immutable. A unique ID within the site that identifies the channel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/data-sources/google_firebase_hosting_channel#channel_id DataGoogleFirebaseHostingChannel#channel_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/data-sources/google_firebase_hosting_channel#channel_id DataGoogleFirebaseHostingChannel#channel_id}
   */
   readonly channelId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/data-sources/google_firebase_hosting_channel#id DataGoogleFirebaseHostingChannel#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/data-sources/google_firebase_hosting_channel#id DataGoogleFirebaseHostingChannel#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +28,13 @@ export interface DataGoogleFirebaseHostingChannelConfig extends cdktf.TerraformM
   /**
   * Required. The ID of the site in which to create this channel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/data-sources/google_firebase_hosting_channel#site_id DataGoogleFirebaseHostingChannel#site_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/data-sources/google_firebase_hosting_channel#site_id DataGoogleFirebaseHostingChannel#site_id}
   */
   readonly siteId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/data-sources/google_firebase_hosting_channel google_firebase_hosting_channel}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/data-sources/google_firebase_hosting_channel google_firebase_hosting_channel}
 */
 export class DataGoogleFirebaseHostingChannel extends cdktf.TerraformDataSource {
 
@@ -50,7 +50,7 @@ export class DataGoogleFirebaseHostingChannel extends cdktf.TerraformDataSource 
   * Generates CDKTF code for importing a DataGoogleFirebaseHostingChannel resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleFirebaseHostingChannel to import
-  * @param importFromId The id of the existing DataGoogleFirebaseHostingChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/data-sources/google_firebase_hosting_channel#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleFirebaseHostingChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/data-sources/google_firebase_hosting_channel#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleFirebaseHostingChannel to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +62,7 @@ export class DataGoogleFirebaseHostingChannel extends cdktf.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/data-sources/google_firebase_hosting_channel google_firebase_hosting_channel} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/data-sources/google_firebase_hosting_channel google_firebase_hosting_channel} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +73,7 @@ export class DataGoogleFirebaseHostingChannel extends cdktf.TerraformDataSource 
       terraformResourceType: 'google_firebase_hosting_channel',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.26.0',
+        providerVersion: '6.27.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
