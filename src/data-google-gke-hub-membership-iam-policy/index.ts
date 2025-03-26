@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/data-sources/google_gke_hub_membership_iam_policy
 // generated from terraform resource schema
 

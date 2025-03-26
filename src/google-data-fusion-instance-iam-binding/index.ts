@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_data_fusion_instance_iam_binding
 // generated from terraform resource schema
 
