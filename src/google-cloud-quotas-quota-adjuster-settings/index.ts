@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_cloud_quotas_quota_adjuster_settings
 // generated from terraform resource schema
 
