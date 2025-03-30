@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlenetworkmanagementconnectivitytest"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkmanagementconnectivitytest"
 
 googlenetworkmanagementconnectivitytest.NewGoogleNetworkManagementConnectivityTest(scope Construct, id *string, config GoogleNetworkManagementConnectivityTestConfig) GoogleNetworkManagementConnectivityTest
 ```
@@ -480,7 +480,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTest.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlenetworkmanagementconnectivitytest"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkmanagementconnectivitytest"
 
 googlenetworkmanagementconnectivitytest.GoogleNetworkManagementConnectivityTest_IsConstruct(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTest.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlenetworkmanagementconnectivitytest"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkmanagementconnectivitytest"
 
 googlenetworkmanagementconnectivitytest.GoogleNetworkManagementConnectivityTest_IsTerraformElement(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ googlenetworkmanagementconnectivitytest.GoogleNetworkManagementConnectivityTest_
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTest.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlenetworkmanagementconnectivitytest"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkmanagementconnectivitytest"
 
 googlenetworkmanagementconnectivitytest.GoogleNetworkManagementConnectivityTest_IsTerraformResource(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ googlenetworkmanagementconnectivitytest.GoogleNetworkManagementConnectivityTest_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTest.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlenetworkmanagementconnectivitytest"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkmanagementconnectivitytest"
 
 googlenetworkmanagementconnectivitytest.GoogleNetworkManagementConnectivityTest_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1055,7 +1055,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlenetworkmanagementconnectivitytest"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkmanagementconnectivitytest"
 
 &googlenetworkmanagementconnectivitytest.GoogleNetworkManagementConnectivityTestConfig {
 	Connection: interface{},
@@ -1065,9 +1065,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlenetwo
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Destination: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestDestination,
+	Destination: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestDestination,
 	Name: *string,
-	Source: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestSource,
+	Source: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestSource,
 	BypassFirewallChecks: interface{},
 	Description: *string,
 	Id: *string,
@@ -1076,7 +1076,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlenetwo
 	Protocol: *string,
 	RelatedProjects: *[]*string,
 	RoundTrip: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestTimeouts,
 }
 ```
 
@@ -1351,7 +1351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlenetworkmanagementconnectivitytest"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkmanagementconnectivitytest"
 
 &googlenetworkmanagementconnectivitytest.GoogleNetworkManagementConnectivityTestDestination {
 	CloudSqlInstance: *string,
@@ -1558,12 +1558,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlenetworkmanagementconnectivitytest"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkmanagementconnectivitytest"
 
 &googlenetworkmanagementconnectivitytest.GoogleNetworkManagementConnectivityTestSource {
-	AppEngineVersion: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestSourceAppEngineVersion,
-	CloudFunction: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestSourceCloudFunction,
-	CloudRunRevision: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestSourceCloudRunRevision,
+	AppEngineVersion: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestSourceAppEngineVersion,
+	CloudFunction: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestSourceCloudFunction,
+	CloudRunRevision: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestSourceCloudRunRevision,
 	CloudSqlInstance: *string,
 	GkeMasterCluster: *string,
 	Instance: *string,
@@ -1762,7 +1762,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestSourceAppEngineVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlenetworkmanagementconnectivitytest"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkmanagementconnectivitytest"
 
 &googlenetworkmanagementconnectivitytest.GoogleNetworkManagementConnectivityTestSourceAppEngineVersion {
 	Uri: *string,
@@ -1796,7 +1796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestSourceCloudFunction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlenetworkmanagementconnectivitytest"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkmanagementconnectivitytest"
 
 &googlenetworkmanagementconnectivitytest.GoogleNetworkManagementConnectivityTestSourceCloudFunction {
 	Uri: *string,
@@ -1830,7 +1830,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestSourceCloudRunRevision.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlenetworkmanagementconnectivitytest"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkmanagementconnectivitytest"
 
 &googlenetworkmanagementconnectivitytest.GoogleNetworkManagementConnectivityTestSourceCloudRunRevision {
 	Uri: *string,
@@ -1864,7 +1864,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlenetworkmanagementconnectivitytest"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkmanagementconnectivitytest"
 
 &googlenetworkmanagementconnectivitytest.GoogleNetworkManagementConnectivityTestTimeouts {
 	Create: *string,
@@ -1926,7 +1926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlenetworkmanagementconnectivitytest"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkmanagementconnectivitytest"
 
 googlenetworkmanagementconnectivitytest.NewGoogleNetworkManagementConnectivityTestDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkManagementConnectivityTestDestinationOutputReference
 ```
@@ -2494,7 +2494,7 @@ func InternalValue() GoogleNetworkManagementConnectivityTestDestination
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestSourceAppEngineVersionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlenetworkmanagementconnectivitytest"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkmanagementconnectivitytest"
 
 googlenetworkmanagementconnectivitytest.NewGoogleNetworkManagementConnectivityTestSourceAppEngineVersionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkManagementConnectivityTestSourceAppEngineVersionOutputReference
 ```
@@ -2772,7 +2772,7 @@ func InternalValue() GoogleNetworkManagementConnectivityTestSourceAppEngineVersi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestSourceCloudFunctionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlenetworkmanagementconnectivitytest"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkmanagementconnectivitytest"
 
 googlenetworkmanagementconnectivitytest.NewGoogleNetworkManagementConnectivityTestSourceCloudFunctionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkManagementConnectivityTestSourceCloudFunctionOutputReference
 ```
@@ -3050,7 +3050,7 @@ func InternalValue() GoogleNetworkManagementConnectivityTestSourceCloudFunction
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestSourceCloudRunRevisionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlenetworkmanagementconnectivitytest"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkmanagementconnectivitytest"
 
 googlenetworkmanagementconnectivitytest.NewGoogleNetworkManagementConnectivityTestSourceCloudRunRevisionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkManagementConnectivityTestSourceCloudRunRevisionOutputReference
 ```
@@ -3328,7 +3328,7 @@ func InternalValue() GoogleNetworkManagementConnectivityTestSourceCloudRunRevisi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlenetworkmanagementconnectivitytest"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkmanagementconnectivitytest"
 
 googlenetworkmanagementconnectivitytest.NewGoogleNetworkManagementConnectivityTestSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkManagementConnectivityTestSourceOutputReference
 ```
@@ -3935,7 +3935,7 @@ func InternalValue() GoogleNetworkManagementConnectivityTestSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlenetworkmanagementconnectivitytest"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkmanagementconnectivitytest"
 
 googlenetworkmanagementconnectivitytest.NewGoogleNetworkManagementConnectivityTestTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkManagementConnectivityTestTimeoutsOutputReference
 ```

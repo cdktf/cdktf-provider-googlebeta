@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleParameterManagerRegionalParameters.DataGoogleParameterManagerRegionalParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleparametermanagerregionalparameters"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleparametermanagerregionalparameters"
 
 datagoogleparametermanagerregionalparameters.NewDataGoogleParameterManagerRegionalParameters(scope Construct, id *string, config DataGoogleParameterManagerRegionalParametersConfig) DataGoogleParameterManagerRegionalParameters
 ```
@@ -297,7 +297,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleParameterManagerRegionalParameters.DataGoogleParameterManagerRegionalParameters.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleparametermanagerregionalparameters"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleparametermanagerregionalparameters"
 
 datagoogleparametermanagerregionalparameters.DataGoogleParameterManagerRegionalParameters_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleParameterManagerRegionalParameters.DataGoogleParameterManagerRegionalParameters.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleparametermanagerregionalparameters"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleparametermanagerregionalparameters"
 
 datagoogleparametermanagerregionalparameters.DataGoogleParameterManagerRegionalParameters_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagoogleparametermanagerregionalparameters.DataGoogleParameterManagerRegionalP
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleParameterManagerRegionalParameters.DataGoogleParameterManagerRegionalParameters.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleparametermanagerregionalparameters"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleparametermanagerregionalparameters"
 
 datagoogleparametermanagerregionalparameters.DataGoogleParameterManagerRegionalParameters_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datagoogleparametermanagerregionalparameters.DataGoogleParameterManagerRegionalP
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleParameterManagerRegionalParameters.DataGoogleParameterManagerRegionalParameters.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleparametermanagerregionalparameters"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleparametermanagerregionalparameters"
 
 datagoogleparametermanagerregionalparameters.DataGoogleParameterManagerRegionalParameters_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -663,7 +663,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleParameterManagerRegionalParameters.DataGoogleParameterManagerRegionalParametersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleparametermanagerregionalparameters"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleparametermanagerregionalparameters"
 
 &datagoogleparametermanagerregionalparameters.DataGoogleParameterManagerRegionalParametersConfig {
 	Connection: interface{},
@@ -829,7 +829,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleParameterManagerRegionalParameters.DataGoogleParameterManagerRegionalParametersParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleparametermanagerregionalparameters"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleparametermanagerregionalparameters"
 
 &datagoogleparametermanagerregionalparameters.DataGoogleParameterManagerRegionalParametersParameters {
 
@@ -842,7 +842,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglep
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleParameterManagerRegionalParameters.DataGoogleParameterManagerRegionalParametersParametersPolicyMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleparametermanagerregionalparameters"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleparametermanagerregionalparameters"
 
 &datagoogleparametermanagerregionalparameters.DataGoogleParameterManagerRegionalParametersParametersPolicyMember {
 
@@ -857,7 +857,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglep
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleParameterManagerRegionalParameters.DataGoogleParameterManagerRegionalParametersParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleparametermanagerregionalparameters"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleparametermanagerregionalparameters"
 
 datagoogleparametermanagerregionalparameters.NewDataGoogleParameterManagerRegionalParametersParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleParameterManagerRegionalParametersParametersList
 ```
@@ -1006,7 +1006,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleParameterManagerRegionalParameters.DataGoogleParameterManagerRegionalParametersParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleparametermanagerregionalparameters"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleparametermanagerregionalparameters"
 
 datagoogleparametermanagerregionalparameters.NewDataGoogleParameterManagerRegionalParametersParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleParameterManagerRegionalParametersParametersOutputReference
 ```
@@ -1394,7 +1394,7 @@ func InternalValue() DataGoogleParameterManagerRegionalParametersParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleParameterManagerRegionalParameters.DataGoogleParameterManagerRegionalParametersParametersPolicyMemberList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleparametermanagerregionalparameters"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleparametermanagerregionalparameters"
 
 datagoogleparametermanagerregionalparameters.NewDataGoogleParameterManagerRegionalParametersParametersPolicyMemberList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleParameterManagerRegionalParametersParametersPolicyMemberList
 ```
@@ -1543,7 +1543,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleParameterManagerRegionalParameters.DataGoogleParameterManagerRegionalParametersParametersPolicyMemberOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleparametermanagerregionalparameters"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleparametermanagerregionalparameters"
 
 datagoogleparametermanagerregionalparameters.NewDataGoogleParameterManagerRegionalParametersParametersPolicyMemberOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleParameterManagerRegionalParametersParametersPolicyMemberOutputReference
 ```
