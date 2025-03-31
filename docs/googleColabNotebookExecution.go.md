@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleColabNotebookExecution.GoogleColabNotebookExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecolabnotebookexecution"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecolabnotebookexecution"
 
 googlecolabnotebookexecution.NewGoogleColabNotebookExecution(scope Construct, id *string, config GoogleColabNotebookExecutionConfig) GoogleColabNotebookExecution
 ```
@@ -507,7 +507,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleColabNotebookExecution.GoogleColabNotebookExecution.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecolabnotebookexecution"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecolabnotebookexecution"
 
 googlecolabnotebookexecution.GoogleColabNotebookExecution_IsConstruct(x interface{}) *bool
 ```
@@ -539,7 +539,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleColabNotebookExecution.GoogleColabNotebookExecution.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecolabnotebookexecution"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecolabnotebookexecution"
 
 googlecolabnotebookexecution.GoogleColabNotebookExecution_IsTerraformElement(x interface{}) *bool
 ```
@@ -553,7 +553,7 @@ googlecolabnotebookexecution.GoogleColabNotebookExecution_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleColabNotebookExecution.GoogleColabNotebookExecution.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecolabnotebookexecution"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecolabnotebookexecution"
 
 googlecolabnotebookexecution.GoogleColabNotebookExecution_IsTerraformResource(x interface{}) *bool
 ```
@@ -567,7 +567,7 @@ googlecolabnotebookexecution.GoogleColabNotebookExecution_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleColabNotebookExecution.GoogleColabNotebookExecution.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecolabnotebookexecution"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecolabnotebookexecution"
 
 googlecolabnotebookexecution.GoogleColabNotebookExecution_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1104,7 +1104,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleColabNotebookExecution.GoogleColabNotebookExecutionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecolabnotebookexecution"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecolabnotebookexecution"
 
 &googlecolabnotebookexecution.GoogleColabNotebookExecutionConfig {
 	Connection: interface{},
@@ -1117,17 +1117,17 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecolab
 	DisplayName: *string,
 	GcsOutputUri: *string,
 	Location: *string,
-	DataformRepositorySource: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleColabNotebookExecution.GoogleColabNotebookExecutionDataformRepositorySource,
-	DirectNotebookSource: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleColabNotebookExecution.GoogleColabNotebookExecutionDirectNotebookSource,
+	DataformRepositorySource: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleColabNotebookExecution.GoogleColabNotebookExecutionDataformRepositorySource,
+	DirectNotebookSource: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleColabNotebookExecution.GoogleColabNotebookExecutionDirectNotebookSource,
 	ExecutionTimeout: *string,
 	ExecutionUser: *string,
-	GcsNotebookSource: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleColabNotebookExecution.GoogleColabNotebookExecutionGcsNotebookSource,
+	GcsNotebookSource: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleColabNotebookExecution.GoogleColabNotebookExecutionGcsNotebookSource,
 	Id: *string,
 	NotebookExecutionJobId: *string,
 	NotebookRuntimeTemplateResourceName: *string,
 	Project: *string,
 	ServiceAccount: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleColabNotebookExecution.GoogleColabNotebookExecutionTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleColabNotebookExecution.GoogleColabNotebookExecutionTimeouts,
 }
 ```
 
@@ -1429,7 +1429,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleColabNotebookExecution.GoogleColabNotebookExecutionDataformRepositorySource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecolabnotebookexecution"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecolabnotebookexecution"
 
 &googlecolabnotebookexecution.GoogleColabNotebookExecutionDataformRepositorySource {
 	DataformRepositoryResourceName: *string,
@@ -1479,7 +1479,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleColabNotebookExecution.GoogleColabNotebookExecutionDirectNotebookSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecolabnotebookexecution"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecolabnotebookexecution"
 
 &googlecolabnotebookexecution.GoogleColabNotebookExecutionDirectNotebookSource {
 	Content: *string,
@@ -1513,7 +1513,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleColabNotebookExecution.GoogleColabNotebookExecutionGcsNotebookSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecolabnotebookexecution"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecolabnotebookexecution"
 
 &googlecolabnotebookexecution.GoogleColabNotebookExecutionGcsNotebookSource {
 	Uri: *string,
@@ -1565,7 +1565,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleColabNotebookExecution.GoogleColabNotebookExecutionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecolabnotebookexecution"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecolabnotebookexecution"
 
 &googlecolabnotebookexecution.GoogleColabNotebookExecutionTimeouts {
 	Create: *string,
@@ -1613,7 +1613,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleColabNotebookExecution.GoogleColabNotebookExecutionDataformRepositorySourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecolabnotebookexecution"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecolabnotebookexecution"
 
 googlecolabnotebookexecution.NewGoogleColabNotebookExecutionDataformRepositorySourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleColabNotebookExecutionDataformRepositorySourceOutputReference
 ```
@@ -1913,7 +1913,7 @@ func InternalValue() GoogleColabNotebookExecutionDataformRepositorySource
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleColabNotebookExecution.GoogleColabNotebookExecutionDirectNotebookSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecolabnotebookexecution"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecolabnotebookexecution"
 
 googlecolabnotebookexecution.NewGoogleColabNotebookExecutionDirectNotebookSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleColabNotebookExecutionDirectNotebookSourceOutputReference
 ```
@@ -2184,7 +2184,7 @@ func InternalValue() GoogleColabNotebookExecutionDirectNotebookSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleColabNotebookExecution.GoogleColabNotebookExecutionGcsNotebookSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecolabnotebookexecution"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecolabnotebookexecution"
 
 googlecolabnotebookexecution.NewGoogleColabNotebookExecutionGcsNotebookSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleColabNotebookExecutionGcsNotebookSourceOutputReference
 ```
@@ -2484,7 +2484,7 @@ func InternalValue() GoogleColabNotebookExecutionGcsNotebookSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleColabNotebookExecution.GoogleColabNotebookExecutionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecolabnotebookexecution"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecolabnotebookexecution"
 
 googlecolabnotebookexecution.NewGoogleColabNotebookExecutionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleColabNotebookExecutionTimeoutsOutputReference
 ```
