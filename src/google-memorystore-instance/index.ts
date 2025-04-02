@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -17,29 +12,29 @@ export interface GoogleMemorystoreInstanceConfig extends cdktf.TerraformMetaArgu
   *  AUTH_DISABLED
   * IAM_AUTH
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#authorization_mode GoogleMemorystoreInstance#authorization_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#authorization_mode GoogleMemorystoreInstance#authorization_mode}
   */
   readonly authorizationMode?: string;
   /**
   * Optional. If set to true deletion of the instance will fail.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#deletion_protection_enabled GoogleMemorystoreInstance#deletion_protection_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#deletion_protection_enabled GoogleMemorystoreInstance#deletion_protection_enabled}
   */
   readonly deletionProtectionEnabled?: boolean | cdktf.IResolvable;
   /**
   * Optional. User-provided engine configurations for the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#engine_configs GoogleMemorystoreInstance#engine_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#engine_configs GoogleMemorystoreInstance#engine_configs}
   */
   readonly engineConfigs?: { [key: string]: string };
   /**
   * Optional. Engine version of the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#engine_version GoogleMemorystoreInstance#engine_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#engine_version GoogleMemorystoreInstance#engine_version}
   */
   readonly engineVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#id GoogleMemorystoreInstance#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#id GoogleMemorystoreInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -57,7 +52,7 @@ export interface GoogleMemorystoreInstanceConfig extends cdktf.TerraformMetaArgu
   * * Must not end with a hyphen
   * * Must be unique within a location
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#instance_id GoogleMemorystoreInstance#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#instance_id GoogleMemorystoreInstance#instance_id}
   */
   readonly instanceId: string;
   /**
@@ -66,13 +61,13 @@ export interface GoogleMemorystoreInstanceConfig extends cdktf.TerraformMetaArgu
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#labels GoogleMemorystoreInstance#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#labels GoogleMemorystoreInstance#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. See documentation for resource type 'memorystore.googleapis.com/CertificateAuthority'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#location GoogleMemorystoreInstance#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#location GoogleMemorystoreInstance#location}
   */
   readonly location: string;
   /**
@@ -81,7 +76,7 @@ export interface GoogleMemorystoreInstanceConfig extends cdktf.TerraformMetaArgu
   *  CLUSTER
   *  CLUSTER_DISABLED Possible values: ["CLUSTER", "CLUSTER_DISABLED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#mode GoogleMemorystoreInstance#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#mode GoogleMemorystoreInstance#mode}
   */
   readonly mode?: string;
   /**
@@ -92,23 +87,23 @@ export interface GoogleMemorystoreInstanceConfig extends cdktf.TerraformMetaArgu
   * HIGHMEM_XLARGE
   * STANDARD_SMALL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#node_type GoogleMemorystoreInstance#node_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#node_type GoogleMemorystoreInstance#node_type}
   */
   readonly nodeType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#project GoogleMemorystoreInstance#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#project GoogleMemorystoreInstance#project}
   */
   readonly project?: string;
   /**
   * Optional. Number of replica nodes per shard. If omitted the default is 0 replicas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#replica_count GoogleMemorystoreInstance#replica_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#replica_count GoogleMemorystoreInstance#replica_count}
   */
   readonly replicaCount?: number;
   /**
   * Required. Number of shards for the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#shard_count GoogleMemorystoreInstance#shard_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#shard_count GoogleMemorystoreInstance#shard_count}
   */
   readonly shardCount: number;
   /**
@@ -117,37 +112,43 @@ export interface GoogleMemorystoreInstanceConfig extends cdktf.TerraformMetaArgu
   *  TRANSIT_ENCRYPTION_DISABLED
   * SERVER_AUTHENTICATION
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#transit_encryption_mode GoogleMemorystoreInstance#transit_encryption_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#transit_encryption_mode GoogleMemorystoreInstance#transit_encryption_mode}
   */
   readonly transitEncryptionMode?: string;
   /**
+  * cross_instance_replication_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#cross_instance_replication_config GoogleMemorystoreInstance#cross_instance_replication_config}
+  */
+  readonly crossInstanceReplicationConfig?: GoogleMemorystoreInstanceCrossInstanceReplicationConfig;
+  /**
   * desired_psc_auto_connections block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#desired_psc_auto_connections GoogleMemorystoreInstance#desired_psc_auto_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#desired_psc_auto_connections GoogleMemorystoreInstance#desired_psc_auto_connections}
   */
-  readonly desiredPscAutoConnections: GoogleMemorystoreInstanceDesiredPscAutoConnections[] | cdktf.IResolvable;
+  readonly desiredPscAutoConnections?: GoogleMemorystoreInstanceDesiredPscAutoConnections[] | cdktf.IResolvable;
   /**
   * maintenance_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#maintenance_policy GoogleMemorystoreInstance#maintenance_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#maintenance_policy GoogleMemorystoreInstance#maintenance_policy}
   */
   readonly maintenancePolicy?: GoogleMemorystoreInstanceMaintenancePolicy;
   /**
   * persistence_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#persistence_config GoogleMemorystoreInstance#persistence_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#persistence_config GoogleMemorystoreInstance#persistence_config}
   */
   readonly persistenceConfig?: GoogleMemorystoreInstancePersistenceConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#timeouts GoogleMemorystoreInstance#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#timeouts GoogleMemorystoreInstance#timeouts}
   */
   readonly timeouts?: GoogleMemorystoreInstanceTimeouts;
   /**
   * zone_distribution_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#zone_distribution_config GoogleMemorystoreInstance#zone_distribution_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#zone_distribution_config GoogleMemorystoreInstance#zone_distribution_config}
   */
   readonly zoneDistributionConfig?: GoogleMemorystoreInstanceZoneDistributionConfig;
 }
@@ -658,6 +659,86 @@ export class GoogleMemorystoreInstanceNodeConfigList extends cdktf.ComplexList {
     return new GoogleMemorystoreInstanceNodeConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface GoogleMemorystoreInstancePscAttachmentDetails {
+}
+
+export function googleMemorystoreInstancePscAttachmentDetailsToTerraform(struct?: GoogleMemorystoreInstancePscAttachmentDetails): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function googleMemorystoreInstancePscAttachmentDetailsToHclTerraform(struct?: GoogleMemorystoreInstancePscAttachmentDetails): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class GoogleMemorystoreInstancePscAttachmentDetailsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleMemorystoreInstancePscAttachmentDetails | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleMemorystoreInstancePscAttachmentDetails | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // connection_type - computed: true, optional: false, required: false
+  public get connectionType() {
+    return this.getStringAttribute('connection_type');
+  }
+
+  // service_attachment - computed: true, optional: false, required: false
+  public get serviceAttachment() {
+    return this.getStringAttribute('service_attachment');
+  }
+}
+
+export class GoogleMemorystoreInstancePscAttachmentDetailsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleMemorystoreInstancePscAttachmentDetailsOutputReference {
+    return new GoogleMemorystoreInstancePscAttachmentDetailsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleMemorystoreInstancePscAutoConnections {
 }
 
@@ -824,6 +905,16 @@ export class GoogleMemorystoreInstanceStateInfoUpdateInfoOutputReference extends
     }
   }
 
+  // target_engine_version - computed: true, optional: false, required: false
+  public get targetEngineVersion() {
+    return this.getStringAttribute('target_engine_version');
+  }
+
+  // target_node_type - computed: true, optional: false, required: false
+  public get targetNodeType() {
+    return this.getStringAttribute('target_node_type');
+  }
+
   // target_replica_count - computed: true, optional: false, required: false
   public get targetReplicaCount() {
     return this.getNumberAttribute('target_replica_count');
@@ -929,18 +1020,645 @@ export class GoogleMemorystoreInstanceStateInfoList extends cdktf.ComplexList {
     return new GoogleMemorystoreInstanceStateInfoOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface GoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstance {
+}
+
+export function googleMemorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstanceToTerraform(struct?: GoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstance): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function googleMemorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstanceToHclTerraform(struct?: GoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstance): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class GoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstanceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstance | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstance | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // instance - computed: true, optional: false, required: false
+  public get instance() {
+    return this.getStringAttribute('instance');
+  }
+
+  // uid - computed: true, optional: false, required: false
+  public get uid() {
+    return this.getStringAttribute('uid');
+  }
+}
+
+export class GoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstanceList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstanceOutputReference {
+    return new GoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstanceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstance {
+}
+
+export function googleMemorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstanceToTerraform(struct?: GoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstance): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function googleMemorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstanceToHclTerraform(struct?: GoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstance): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class GoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstanceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstance | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstance | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // instance - computed: true, optional: false, required: false
+  public get instance() {
+    return this.getStringAttribute('instance');
+  }
+
+  // uid - computed: true, optional: false, required: false
+  public get uid() {
+    return this.getStringAttribute('uid');
+  }
+}
+
+export class GoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstanceList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstanceOutputReference {
+    return new GoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstanceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleMemorystoreInstanceCrossInstanceReplicationConfigMembership {
+}
+
+export function googleMemorystoreInstanceCrossInstanceReplicationConfigMembershipToTerraform(struct?: GoogleMemorystoreInstanceCrossInstanceReplicationConfigMembership): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function googleMemorystoreInstanceCrossInstanceReplicationConfigMembershipToHclTerraform(struct?: GoogleMemorystoreInstanceCrossInstanceReplicationConfigMembership): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class GoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleMemorystoreInstanceCrossInstanceReplicationConfigMembership | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleMemorystoreInstanceCrossInstanceReplicationConfigMembership | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // primary_instance - computed: true, optional: false, required: false
+  private _primaryInstance = new GoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstanceList(this, "primary_instance", false);
+  public get primaryInstance() {
+    return this._primaryInstance;
+  }
+
+  // secondary_instance - computed: true, optional: false, required: false
+  private _secondaryInstance = new GoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstanceList(this, "secondary_instance", false);
+  public get secondaryInstance() {
+    return this._secondaryInstance;
+  }
+}
+
+export class GoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipOutputReference {
+    return new GoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleMemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstance {
+  /**
+  * The full resource path of the primary instance in the format: projects/{project}/locations/{region}/instances/{instance-id}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#instance GoogleMemorystoreInstance#instance}
+  */
+  readonly instance?: string;
+}
+
+export function googleMemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstanceToTerraform(struct?: GoogleMemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstanceOutputReference | GoogleMemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstance): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    instance: cdktf.stringToTerraform(struct!.instance),
+  }
+}
+
+
+export function googleMemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstanceToHclTerraform(struct?: GoogleMemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstanceOutputReference | GoogleMemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstance): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    instance: {
+      value: cdktf.stringToHclTerraform(struct!.instance),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleMemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstanceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleMemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstance | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._instance !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.instance = this._instance;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleMemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstance | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._instance = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._instance = value.instance;
+    }
+  }
+
+  // instance - computed: false, optional: true, required: false
+  private _instance?: string; 
+  public get instance() {
+    return this.getStringAttribute('instance');
+  }
+  public set instance(value: string) {
+    this._instance = value;
+  }
+  public resetInstance() {
+    this._instance = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceInput() {
+    return this._instance;
+  }
+
+  // uid - computed: true, optional: false, required: false
+  public get uid() {
+    return this.getStringAttribute('uid');
+  }
+}
+export interface GoogleMemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstances {
+  /**
+  * The full resource path of the Nth instance in the format: projects/{project}/locations/{region}/instance/{instance-id}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#instance GoogleMemorystoreInstance#instance}
+  */
+  readonly instance?: string;
+}
+
+export function googleMemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstancesToTerraform(struct?: GoogleMemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstances | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    instance: cdktf.stringToTerraform(struct!.instance),
+  }
+}
+
+
+export function googleMemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstancesToHclTerraform(struct?: GoogleMemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstances | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    instance: {
+      value: cdktf.stringToHclTerraform(struct!.instance),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleMemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstancesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleMemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstances | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._instance !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.instance = this._instance;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleMemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstances | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._instance = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._instance = value.instance;
+    }
+  }
+
+  // instance - computed: false, optional: true, required: false
+  private _instance?: string; 
+  public get instance() {
+    return this.getStringAttribute('instance');
+  }
+  public set instance(value: string) {
+    this._instance = value;
+  }
+  public resetInstance() {
+    this._instance = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceInput() {
+    return this._instance;
+  }
+
+  // uid - computed: true, optional: false, required: false
+  public get uid() {
+    return this.getStringAttribute('uid');
+  }
+}
+
+export class GoogleMemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstancesList extends cdktf.ComplexList {
+  public internalValue? : GoogleMemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstances[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleMemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstancesOutputReference {
+    return new GoogleMemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstancesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleMemorystoreInstanceCrossInstanceReplicationConfig {
+  /**
+  * The instance role supports the following values:
+  * 1. 'INSTANCE_ROLE_UNSPECIFIED': This is an independent instance that has never participated in cross instance replication. It allows both reads and writes.
+  * 2. 'NONE': This is an independent instance that previously participated in cross instance replication(either as a 'PRIMARY' or 'SECONDARY' cluster). It allows both reads and writes.
+  * 3. 'PRIMARY': This instance serves as the replication source for secondary instance that are replicating from it. Any data written to it is automatically replicated to its secondary clusters. It allows both reads and writes.
+  * 4. 'SECONDARY': This instance replicates data from the primary instance. It allows only reads. Possible values: ["INSTANCE_ROLE_UNSPECIFIED", "NONE", "PRIMARY", "SECONDARY"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#instance_role GoogleMemorystoreInstance#instance_role}
+  */
+  readonly instanceRole?: string;
+  /**
+  * primary_instance block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#primary_instance GoogleMemorystoreInstance#primary_instance}
+  */
+  readonly primaryInstance?: GoogleMemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstance;
+  /**
+  * secondary_instances block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#secondary_instances GoogleMemorystoreInstance#secondary_instances}
+  */
+  readonly secondaryInstances?: GoogleMemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstances[] | cdktf.IResolvable;
+}
+
+export function googleMemorystoreInstanceCrossInstanceReplicationConfigToTerraform(struct?: GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference | GoogleMemorystoreInstanceCrossInstanceReplicationConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    instance_role: cdktf.stringToTerraform(struct!.instanceRole),
+    primary_instance: googleMemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstanceToTerraform(struct!.primaryInstance),
+    secondary_instances: cdktf.listMapper(googleMemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstancesToTerraform, true)(struct!.secondaryInstances),
+  }
+}
+
+
+export function googleMemorystoreInstanceCrossInstanceReplicationConfigToHclTerraform(struct?: GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference | GoogleMemorystoreInstanceCrossInstanceReplicationConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    instance_role: {
+      value: cdktf.stringToHclTerraform(struct!.instanceRole),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    primary_instance: {
+      value: googleMemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstanceToHclTerraform(struct!.primaryInstance),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleMemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstanceList",
+    },
+    secondary_instances: {
+      value: cdktf.listMapperHcl(googleMemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstancesToHclTerraform, true)(struct!.secondaryInstances),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleMemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstancesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleMemorystoreInstanceCrossInstanceReplicationConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._instanceRole !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.instanceRole = this._instanceRole;
+    }
+    if (this._primaryInstance?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.primaryInstance = this._primaryInstance?.internalValue;
+    }
+    if (this._secondaryInstances?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secondaryInstances = this._secondaryInstances?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleMemorystoreInstanceCrossInstanceReplicationConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._instanceRole = undefined;
+      this._primaryInstance.internalValue = undefined;
+      this._secondaryInstances.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._instanceRole = value.instanceRole;
+      this._primaryInstance.internalValue = value.primaryInstance;
+      this._secondaryInstances.internalValue = value.secondaryInstances;
+    }
+  }
+
+  // instance_role - computed: false, optional: true, required: false
+  private _instanceRole?: string; 
+  public get instanceRole() {
+    return this.getStringAttribute('instance_role');
+  }
+  public set instanceRole(value: string) {
+    this._instanceRole = value;
+  }
+  public resetInstanceRole() {
+    this._instanceRole = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceRoleInput() {
+    return this._instanceRole;
+  }
+
+  // membership - computed: true, optional: false, required: false
+  private _membership = new GoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipList(this, "membership", false);
+  public get membership() {
+    return this._membership;
+  }
+
+  // update_time - computed: true, optional: false, required: false
+  public get updateTime() {
+    return this.getStringAttribute('update_time');
+  }
+
+  // primary_instance - computed: false, optional: true, required: false
+  private _primaryInstance = new GoogleMemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstanceOutputReference(this, "primary_instance");
+  public get primaryInstance() {
+    return this._primaryInstance;
+  }
+  public putPrimaryInstance(value: GoogleMemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstance) {
+    this._primaryInstance.internalValue = value;
+  }
+  public resetPrimaryInstance() {
+    this._primaryInstance.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryInstanceInput() {
+    return this._primaryInstance.internalValue;
+  }
+
+  // secondary_instances - computed: false, optional: true, required: false
+  private _secondaryInstances = new GoogleMemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstancesList(this, "secondary_instances", false);
+  public get secondaryInstances() {
+    return this._secondaryInstances;
+  }
+  public putSecondaryInstances(value: GoogleMemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstances[] | cdktf.IResolvable) {
+    this._secondaryInstances.internalValue = value;
+  }
+  public resetSecondaryInstances() {
+    this._secondaryInstances.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secondaryInstancesInput() {
+    return this._secondaryInstances.internalValue;
+  }
+}
 export interface GoogleMemorystoreInstanceDesiredPscAutoConnections {
   /**
   * Required. The consumer network where the IP address resides, in the form of
   * projects/{project_id}/global/networks/{network_id}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#network GoogleMemorystoreInstance#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#network GoogleMemorystoreInstance#network}
   */
   readonly network: string;
   /**
   * Required. The consumer project_id where the forwarding rule is created from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#project_id GoogleMemorystoreInstance#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#project_id GoogleMemorystoreInstance#project_id}
   */
   readonly projectId: string;
 }
@@ -1082,26 +1800,26 @@ export interface GoogleMemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWind
   * Hours of day in 24 hour format. Should be from 0 to 23.
   * An API may choose to allow the value "24:00:00" for scenarios like business closing time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#hours GoogleMemorystoreInstance#hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#hours GoogleMemorystoreInstance#hours}
   */
   readonly hours?: number;
   /**
   * Minutes of hour of day. Must be from 0 to 59.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#minutes GoogleMemorystoreInstance#minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#minutes GoogleMemorystoreInstance#minutes}
   */
   readonly minutes?: number;
   /**
   * Fractions of seconds in nanoseconds. Must be from 0 to 999,999,999.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#nanos GoogleMemorystoreInstance#nanos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#nanos GoogleMemorystoreInstance#nanos}
   */
   readonly nanos?: number;
   /**
   * Seconds of minutes of the time. Must normally be from 0 to 59.
   * An API may allow the value 60 if it allows leap-seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#seconds GoogleMemorystoreInstance#seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#seconds GoogleMemorystoreInstance#seconds}
   */
   readonly seconds?: number;
 }
@@ -1283,13 +2001,13 @@ export interface GoogleMemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWind
   * - SATURDAY: Saturday
   * - SUNDAY: Sunday Possible values: ["DAY_OF_WEEK_UNSPECIFIED", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#day GoogleMemorystoreInstance#day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#day GoogleMemorystoreInstance#day}
   */
   readonly day: string;
   /**
   * start_time block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#start_time GoogleMemorystoreInstance#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#start_time GoogleMemorystoreInstance#start_time}
   */
   readonly startTime: GoogleMemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime;
 }
@@ -1435,7 +2153,7 @@ export interface GoogleMemorystoreInstanceMaintenancePolicy {
   /**
   * weekly_maintenance_window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#weekly_maintenance_window GoogleMemorystoreInstance#weekly_maintenance_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#weekly_maintenance_window GoogleMemorystoreInstance#weekly_maintenance_window}
   */
   readonly weeklyMaintenanceWindow?: GoogleMemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindow[] | cdktf.IResolvable;
 }
@@ -1535,7 +2253,7 @@ export interface GoogleMemorystoreInstancePersistenceConfigAofConfig {
   * EVERY_SEC
   * ALWAYS
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#append_fsync GoogleMemorystoreInstance#append_fsync}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#append_fsync GoogleMemorystoreInstance#append_fsync}
   */
   readonly appendFsync?: string;
 }
@@ -1626,7 +2344,7 @@ export interface GoogleMemorystoreInstancePersistenceConfigRdbConfig {
   * TWELVE_HOURS
   * TWENTY_FOUR_HOURS
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#rdb_snapshot_period GoogleMemorystoreInstance#rdb_snapshot_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#rdb_snapshot_period GoogleMemorystoreInstance#rdb_snapshot_period}
   */
   readonly rdbSnapshotPeriod?: string;
   /**
@@ -1634,7 +2352,7 @@ export interface GoogleMemorystoreInstancePersistenceConfigRdbConfig {
   * snapshots will be aligned. If not provided, the current time will be
   * used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#rdb_snapshot_start_time GoogleMemorystoreInstance#rdb_snapshot_start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#rdb_snapshot_start_time GoogleMemorystoreInstance#rdb_snapshot_start_time}
   */
   readonly rdbSnapshotStartTime?: string;
 }
@@ -1753,19 +2471,19 @@ export interface GoogleMemorystoreInstancePersistenceConfig {
   * RDB
   * AOF Possible values: ["DISABLED", "RDB", "AOF"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#mode GoogleMemorystoreInstance#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#mode GoogleMemorystoreInstance#mode}
   */
   readonly mode?: string;
   /**
   * aof_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#aof_config GoogleMemorystoreInstance#aof_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#aof_config GoogleMemorystoreInstance#aof_config}
   */
   readonly aofConfig?: GoogleMemorystoreInstancePersistenceConfigAofConfig;
   /**
   * rdb_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#rdb_config GoogleMemorystoreInstance#rdb_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#rdb_config GoogleMemorystoreInstance#rdb_config}
   */
   readonly rdbConfig?: GoogleMemorystoreInstancePersistenceConfigRdbConfig;
 }
@@ -1907,15 +2625,15 @@ export class GoogleMemorystoreInstancePersistenceConfigOutputReference extends c
 }
 export interface GoogleMemorystoreInstanceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#create GoogleMemorystoreInstance#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#create GoogleMemorystoreInstance#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#delete GoogleMemorystoreInstance#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#delete GoogleMemorystoreInstance#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#update GoogleMemorystoreInstance#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#update GoogleMemorystoreInstance#update}
   */
   readonly update?: string;
 }
@@ -2072,14 +2790,14 @@ export interface GoogleMemorystoreInstanceZoneDistributionConfig {
   *  MULTI_ZONE
   * SINGLE_ZONE Possible values: ["MULTI_ZONE", "SINGLE_ZONE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#mode GoogleMemorystoreInstance#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#mode GoogleMemorystoreInstance#mode}
   */
   readonly mode?: string;
   /**
   * Optional. Defines zone where all resources will be allocated with SINGLE_ZONE mode.
   * Ignored for MULTI_ZONE mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#zone GoogleMemorystoreInstance#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#zone GoogleMemorystoreInstance#zone}
   */
   readonly zone?: string;
 }
@@ -2192,7 +2910,7 @@ export class GoogleMemorystoreInstanceZoneDistributionConfigOutputReference exte
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance google_memorystore_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance google_memorystore_instance}
 */
 export class GoogleMemorystoreInstance extends cdktf.TerraformResource {
 
@@ -2208,7 +2926,7 @@ export class GoogleMemorystoreInstance extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleMemorystoreInstance resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleMemorystoreInstance to import
-  * @param importFromId The id of the existing GoogleMemorystoreInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleMemorystoreInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleMemorystoreInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -2220,7 +2938,7 @@ export class GoogleMemorystoreInstance extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance google_memorystore_instance} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance google_memorystore_instance} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2231,7 +2949,7 @@ export class GoogleMemorystoreInstance extends cdktf.TerraformResource {
       terraformResourceType: 'google_memorystore_instance',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.27.0',
+        providerVersion: '6.28.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -2256,6 +2974,7 @@ export class GoogleMemorystoreInstance extends cdktf.TerraformResource {
     this._replicaCount = config.replicaCount;
     this._shardCount = config.shardCount;
     this._transitEncryptionMode = config.transitEncryptionMode;
+    this._crossInstanceReplicationConfig.internalValue = config.crossInstanceReplicationConfig;
     this._desiredPscAutoConnections.internalValue = config.desiredPscAutoConnections;
     this._maintenancePolicy.internalValue = config.maintenancePolicy;
     this._persistenceConfig.internalValue = config.persistenceConfig;
@@ -2477,6 +3196,12 @@ export class GoogleMemorystoreInstance extends cdktf.TerraformResource {
     return this._project;
   }
 
+  // psc_attachment_details - computed: true, optional: false, required: false
+  private _pscAttachmentDetails = new GoogleMemorystoreInstancePscAttachmentDetailsList(this, "psc_attachment_details", false);
+  public get pscAttachmentDetails() {
+    return this._pscAttachmentDetails;
+  }
+
   // psc_auto_connections - computed: true, optional: false, required: false
   private _pscAutoConnections = new GoogleMemorystoreInstancePscAutoConnectionsList(this, "psc_auto_connections", false);
   public get pscAutoConnections() {
@@ -2555,13 +3280,32 @@ export class GoogleMemorystoreInstance extends cdktf.TerraformResource {
     return this.getStringAttribute('update_time');
   }
 
-  // desired_psc_auto_connections - computed: false, optional: false, required: true
+  // cross_instance_replication_config - computed: false, optional: true, required: false
+  private _crossInstanceReplicationConfig = new GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference(this, "cross_instance_replication_config");
+  public get crossInstanceReplicationConfig() {
+    return this._crossInstanceReplicationConfig;
+  }
+  public putCrossInstanceReplicationConfig(value: GoogleMemorystoreInstanceCrossInstanceReplicationConfig) {
+    this._crossInstanceReplicationConfig.internalValue = value;
+  }
+  public resetCrossInstanceReplicationConfig() {
+    this._crossInstanceReplicationConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get crossInstanceReplicationConfigInput() {
+    return this._crossInstanceReplicationConfig.internalValue;
+  }
+
+  // desired_psc_auto_connections - computed: false, optional: true, required: false
   private _desiredPscAutoConnections = new GoogleMemorystoreInstanceDesiredPscAutoConnectionsList(this, "desired_psc_auto_connections", false);
   public get desiredPscAutoConnections() {
     return this._desiredPscAutoConnections;
   }
   public putDesiredPscAutoConnections(value: GoogleMemorystoreInstanceDesiredPscAutoConnections[] | cdktf.IResolvable) {
     this._desiredPscAutoConnections.internalValue = value;
+  }
+  public resetDesiredPscAutoConnections() {
+    this._desiredPscAutoConnections.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get desiredPscAutoConnectionsInput() {
@@ -2652,6 +3396,7 @@ export class GoogleMemorystoreInstance extends cdktf.TerraformResource {
       replica_count: cdktf.numberToTerraform(this._replicaCount),
       shard_count: cdktf.numberToTerraform(this._shardCount),
       transit_encryption_mode: cdktf.stringToTerraform(this._transitEncryptionMode),
+      cross_instance_replication_config: googleMemorystoreInstanceCrossInstanceReplicationConfigToTerraform(this._crossInstanceReplicationConfig.internalValue),
       desired_psc_auto_connections: cdktf.listMapper(googleMemorystoreInstanceDesiredPscAutoConnectionsToTerraform, true)(this._desiredPscAutoConnections.internalValue),
       maintenance_policy: googleMemorystoreInstanceMaintenancePolicyToTerraform(this._maintenancePolicy.internalValue),
       persistence_config: googleMemorystoreInstancePersistenceConfigToTerraform(this._persistenceConfig.internalValue),
@@ -2745,6 +3490,12 @@ export class GoogleMemorystoreInstance extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      cross_instance_replication_config: {
+        value: googleMemorystoreInstanceCrossInstanceReplicationConfigToHclTerraform(this._crossInstanceReplicationConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleMemorystoreInstanceCrossInstanceReplicationConfigList",
       },
       desired_psc_auto_connections: {
         value: cdktf.listMapperHcl(googleMemorystoreInstanceDesiredPscAutoConnectionsToHclTerraform, true)(this._desiredPscAutoConnections.internalValue),
