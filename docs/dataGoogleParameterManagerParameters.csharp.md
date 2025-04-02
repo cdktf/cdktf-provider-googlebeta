@@ -4,7 +4,7 @@
 
 ### DataGoogleParameterManagerParameters <a name="DataGoogleParameterManagerParameters" id="@cdktf/provider-google-beta.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParameters"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/data-sources/google_parameter_manager_parameters google_parameter_manager_parameters}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/data-sources/google_parameter_manager_parameters google_parameter_manager_parameters}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParameters.Initializer"></a>
 
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataGoogleParameterManager
 
 The id of the existing DataGoogleParameterManagerParameters that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/data-sources/google_parameter_manager_parameters#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/data-sources/google_parameter_manager_parameters#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -669,8 +669,8 @@ new DataGoogleParameterManagerParametersConfig {
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParametersConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParametersConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParametersConfig.property.filter">Filter</a></code> | <code>string</code> | Filter string, adhering to the rules in List-operation filtering. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParametersConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/data-sources/google_parameter_manager_parameters#id DataGoogleParameterManagerParameters#id}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParametersConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/data-sources/google_parameter_manager_parameters#project DataGoogleParameterManagerParameters#project}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParametersConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/data-sources/google_parameter_manager_parameters#id DataGoogleParameterManagerParameters#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParametersConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/data-sources/google_parameter_manager_parameters#project DataGoogleParameterManagerParameters#project}. |
 
 ---
 
@@ -757,7 +757,7 @@ Filter string, adhering to the rules in List-operation filtering.
 List only parameters matching the filter.
 If filter is empty, all parameters are listed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/data-sources/google_parameter_manager_parameters#filter DataGoogleParameterManagerParameters#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/data-sources/google_parameter_manager_parameters#filter DataGoogleParameterManagerParameters#filter}
 
 ---
 
@@ -769,7 +769,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/data-sources/google_parameter_manager_parameters#id DataGoogleParameterManagerParameters#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/data-sources/google_parameter_manager_parameters#id DataGoogleParameterManagerParameters#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -784,7 +784,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/data-sources/google_parameter_manager_parameters#project DataGoogleParameterManagerParameters#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/data-sources/google_parameter_manager_parameters#project DataGoogleParameterManagerParameters#project}.
 
 ---
 
@@ -1196,6 +1196,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParametersParametersOutputReference.property.createTime">CreateTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParametersParametersOutputReference.property.effectiveLabels">EffectiveLabels</a></code> | <code>HashiCorp.Cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParametersParametersOutputReference.property.format">Format</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParametersParametersOutputReference.property.kmsKey">KmsKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParametersParametersOutputReference.property.labels">Labels</a></code> | <code>HashiCorp.Cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParametersParametersOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParametersParametersOutputReference.property.parameterId">ParameterId</a></code> | <code>string</code> | *No description.* |
@@ -1255,6 +1256,16 @@ public StringMap EffectiveLabels { get; }
 
 ```csharp
 public string Format { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `KmsKey`<sup>Required</sup> <a name="KmsKey" id="@cdktf/provider-google-beta.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParametersParametersOutputReference.property.kmsKey"></a>
+
+```csharp
+public string KmsKey { get; }
 ```
 
 - *Type:* string
