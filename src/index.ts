@@ -45,6 +45,7 @@ export * as googleApiGatewayGatewayIamPolicy from './google-api-gateway-gateway-
 export * as googleApigeeAddonsConfig from './google-apigee-addons-config';
 export * as googleApigeeApi from './google-apigee-api';
 export * as googleApigeeAppGroup from './google-apigee-app-group';
+export * as googleApigeeControlPlaneAccess from './google-apigee-control-plane-access';
 export * as googleApigeeDeveloper from './google-apigee-developer';
 export * as googleApigeeDnsZone from './google-apigee-dns-zone';
 export * as googleApigeeEndpointAttachment from './google-apigee-endpoint-attachment';
@@ -222,6 +223,7 @@ export * as googleClouddeployDeliveryPipeline from './google-clouddeploy-deliver
 export * as googleClouddeployDeliveryPipelineIamBinding from './google-clouddeploy-delivery-pipeline-iam-binding';
 export * as googleClouddeployDeliveryPipelineIamMember from './google-clouddeploy-delivery-pipeline-iam-member';
 export * as googleClouddeployDeliveryPipelineIamPolicy from './google-clouddeploy-delivery-pipeline-iam-policy';
+export * as googleClouddeployDeployPolicy from './google-clouddeploy-deploy-policy';
 export * as googleClouddeployTarget from './google-clouddeploy-target';
 export * as googleClouddeployTargetIamBinding from './google-clouddeploy-target-iam-binding';
 export * as googleClouddeployTargetIamMember from './google-clouddeploy-target-iam-member';
@@ -614,7 +616,10 @@ export * as googleFolderIamBinding from './google-folder-iam-binding';
 export * as googleFolderIamMember from './google-folder-iam-member';
 export * as googleFolderIamPolicy from './google-folder-iam-policy';
 export * as googleFolderOrganizationPolicy from './google-folder-organization-policy';
+export * as googleFolderServiceIdentity from './google-folder-service-identity';
 export * as googleGeminiCodeRepositoryIndex from './google-gemini-code-repository-index';
+export * as googleGeminiCodeToolsSetting from './google-gemini-code-tools-setting';
+export * as googleGeminiCodeToolsSettingBinding from './google-gemini-code-tools-setting-binding';
 export * as googleGeminiDataSharingWithGoogleSetting from './google-gemini-data-sharing-with-google-setting';
 export * as googleGeminiDataSharingWithGoogleSettingBinding from './google-gemini-data-sharing-with-google-setting-binding';
 export * as googleGeminiGeminiGcpEnablementSetting from './google-gemini-gemini-gcp-enablement-setting';
@@ -885,6 +890,7 @@ export * as googleOsConfigGuestPolicies from './google-os-config-guest-policies'
 export * as googleOsConfigOsPolicyAssignment from './google-os-config-os-policy-assignment';
 export * as googleOsConfigPatchDeployment from './google-os-config-patch-deployment';
 export * as googleOsConfigV2PolicyOrchestrator from './google-os-config-v2-policy-orchestrator';
+export * as googleOsConfigV2PolicyOrchestratorForOrganization from './google-os-config-v2-policy-orchestrator-for-organization';
 export * as googleOsLoginSshPublicKey from './google-os-login-ssh-public-key';
 export * as googleParallelstoreInstance from './google-parallelstore-instance';
 export * as googleParameterManagerParameter from './google-parameter-manager-parameter';

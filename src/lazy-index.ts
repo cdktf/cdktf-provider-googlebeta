@@ -45,6 +45,7 @@ Object.defineProperty(exports, 'googleApiGatewayGatewayIamPolicy', { get: functi
 Object.defineProperty(exports, 'googleApigeeAddonsConfig', { get: function () { return require('./google-apigee-addons-config'); } });
 Object.defineProperty(exports, 'googleApigeeApi', { get: function () { return require('./google-apigee-api'); } });
 Object.defineProperty(exports, 'googleApigeeAppGroup', { get: function () { return require('./google-apigee-app-group'); } });
+Object.defineProperty(exports, 'googleApigeeControlPlaneAccess', { get: function () { return require('./google-apigee-control-plane-access'); } });
 Object.defineProperty(exports, 'googleApigeeDeveloper', { get: function () { return require('./google-apigee-developer'); } });
 Object.defineProperty(exports, 'googleApigeeDnsZone', { get: function () { return require('./google-apigee-dns-zone'); } });
 Object.defineProperty(exports, 'googleApigeeEndpointAttachment', { get: function () { return require('./google-apigee-endpoint-attachment'); } });
@@ -222,6 +223,7 @@ Object.defineProperty(exports, 'googleClouddeployDeliveryPipeline', { get: funct
 Object.defineProperty(exports, 'googleClouddeployDeliveryPipelineIamBinding', { get: function () { return require('./google-clouddeploy-delivery-pipeline-iam-binding'); } });
 Object.defineProperty(exports, 'googleClouddeployDeliveryPipelineIamMember', { get: function () { return require('./google-clouddeploy-delivery-pipeline-iam-member'); } });
 Object.defineProperty(exports, 'googleClouddeployDeliveryPipelineIamPolicy', { get: function () { return require('./google-clouddeploy-delivery-pipeline-iam-policy'); } });
+Object.defineProperty(exports, 'googleClouddeployDeployPolicy', { get: function () { return require('./google-clouddeploy-deploy-policy'); } });
 Object.defineProperty(exports, 'googleClouddeployTarget', { get: function () { return require('./google-clouddeploy-target'); } });
 Object.defineProperty(exports, 'googleClouddeployTargetIamBinding', { get: function () { return require('./google-clouddeploy-target-iam-binding'); } });
 Object.defineProperty(exports, 'googleClouddeployTargetIamMember', { get: function () { return require('./google-clouddeploy-target-iam-member'); } });
@@ -614,7 +616,10 @@ Object.defineProperty(exports, 'googleFolderIamBinding', { get: function () { re
 Object.defineProperty(exports, 'googleFolderIamMember', { get: function () { return require('./google-folder-iam-member'); } });
 Object.defineProperty(exports, 'googleFolderIamPolicy', { get: function () { return require('./google-folder-iam-policy'); } });
 Object.defineProperty(exports, 'googleFolderOrganizationPolicy', { get: function () { return require('./google-folder-organization-policy'); } });
+Object.defineProperty(exports, 'googleFolderServiceIdentity', { get: function () { return require('./google-folder-service-identity'); } });
 Object.defineProperty(exports, 'googleGeminiCodeRepositoryIndex', { get: function () { return require('./google-gemini-code-repository-index'); } });
+Object.defineProperty(exports, 'googleGeminiCodeToolsSetting', { get: function () { return require('./google-gemini-code-tools-setting'); } });
+Object.defineProperty(exports, 'googleGeminiCodeToolsSettingBinding', { get: function () { return require('./google-gemini-code-tools-setting-binding'); } });
 Object.defineProperty(exports, 'googleGeminiDataSharingWithGoogleSetting', { get: function () { return require('./google-gemini-data-sharing-with-google-setting'); } });
 Object.defineProperty(exports, 'googleGeminiDataSharingWithGoogleSettingBinding', { get: function () { return require('./google-gemini-data-sharing-with-google-setting-binding'); } });
 Object.defineProperty(exports, 'googleGeminiGeminiGcpEnablementSetting', { get: function () { return require('./google-gemini-gemini-gcp-enablement-setting'); } });
@@ -885,6 +890,7 @@ Object.defineProperty(exports, 'googleOsConfigGuestPolicies', { get: function ()
 Object.defineProperty(exports, 'googleOsConfigOsPolicyAssignment', { get: function () { return require('./google-os-config-os-policy-assignment'); } });
 Object.defineProperty(exports, 'googleOsConfigPatchDeployment', { get: function () { return require('./google-os-config-patch-deployment'); } });
 Object.defineProperty(exports, 'googleOsConfigV2PolicyOrchestrator', { get: function () { return require('./google-os-config-v2-policy-orchestrator'); } });
+Object.defineProperty(exports, 'googleOsConfigV2PolicyOrchestratorForOrganization', { get: function () { return require('./google-os-config-v2-policy-orchestrator-for-organization'); } });
 Object.defineProperty(exports, 'googleOsLoginSshPublicKey', { get: function () { return require('./google-os-login-ssh-public-key'); } });
 Object.defineProperty(exports, 'googleParallelstoreInstance', { get: function () { return require('./google-parallelstore-instance'); } });
 Object.defineProperty(exports, 'googleParameterManagerParameter', { get: function () { return require('./google-parameter-manager-parameter'); } });
