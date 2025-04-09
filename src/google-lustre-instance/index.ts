@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_lustre_instance
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_lustre_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,13 +11,13 @@ export interface GoogleLustreInstanceConfig extends cdktf.TerraformMetaArguments
   * Required. The storage capacity of the instance in gibibytes (GiB). Allowed values
   * are from 18000 to 954000, in increments of 9000.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_lustre_instance#capacity_gib GoogleLustreInstance#capacity_gib}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_lustre_instance#capacity_gib GoogleLustreInstance#capacity_gib}
   */
   readonly capacityGib: string;
   /**
   * Optional. A user-readable description of the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_lustre_instance#description GoogleLustreInstance#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_lustre_instance#description GoogleLustreInstance#description}
   */
   readonly description?: string;
   /**
@@ -30,18 +25,18 @@ export interface GoogleLustreInstanceConfig extends cdktf.TerraformMetaArguments
   * tools, including when mounting the instance. Must be 8 characters or less
   * and may only contain letters and numbers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_lustre_instance#filesystem GoogleLustreInstance#filesystem}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_lustre_instance#filesystem GoogleLustreInstance#filesystem}
   */
   readonly filesystem: string;
   /**
   * Optional. Indicates whether you want to enable support for GKE clients. By default,
   * GKE clients are not supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_lustre_instance#gke_support_enabled GoogleLustreInstance#gke_support_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_lustre_instance#gke_support_enabled GoogleLustreInstance#gke_support_enabled}
   */
   readonly gkeSupportEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_lustre_instance#id GoogleLustreInstance#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_lustre_instance#id GoogleLustreInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -55,7 +50,7 @@ export interface GoogleLustreInstanceConfig extends cdktf.TerraformMetaArguments
   * * Must be between 1-63 characters.
   * * Must end with a number or a letter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_lustre_instance#instance_id GoogleLustreInstance#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_lustre_instance#instance_id GoogleLustreInstance#instance_id}
   */
   readonly instanceId: string;
   /**
@@ -64,13 +59,13 @@ export interface GoogleLustreInstanceConfig extends cdktf.TerraformMetaArguments
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_lustre_instance#labels GoogleLustreInstance#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_lustre_instance#labels GoogleLustreInstance#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_lustre_instance#location GoogleLustreInstance#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_lustre_instance#location GoogleLustreInstance#location}
   */
   readonly location: string;
   /**
@@ -78,31 +73,31 @@ export interface GoogleLustreInstanceConfig extends cdktf.TerraformMetaArguments
   * Must be in the format
   * 'projects/{project_id}/global/networks/{network_name}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_lustre_instance#network GoogleLustreInstance#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_lustre_instance#network GoogleLustreInstance#network}
   */
   readonly network: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_lustre_instance#project GoogleLustreInstance#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_lustre_instance#project GoogleLustreInstance#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_lustre_instance#timeouts GoogleLustreInstance#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_lustre_instance#timeouts GoogleLustreInstance#timeouts}
   */
   readonly timeouts?: GoogleLustreInstanceTimeouts;
 }
 export interface GoogleLustreInstanceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_lustre_instance#create GoogleLustreInstance#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_lustre_instance#create GoogleLustreInstance#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_lustre_instance#delete GoogleLustreInstance#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_lustre_instance#delete GoogleLustreInstance#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_lustre_instance#update GoogleLustreInstance#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_lustre_instance#update GoogleLustreInstance#update}
   */
   readonly update?: string;
 }
@@ -254,7 +249,7 @@ export class GoogleLustreInstanceTimeoutsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_lustre_instance google_lustre_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_lustre_instance google_lustre_instance}
 */
 export class GoogleLustreInstance extends cdktf.TerraformResource {
 
@@ -270,7 +265,7 @@ export class GoogleLustreInstance extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleLustreInstance resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleLustreInstance to import
-  * @param importFromId The id of the existing GoogleLustreInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_lustre_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleLustreInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_lustre_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleLustreInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -282,7 +277,7 @@ export class GoogleLustreInstance extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_lustre_instance google_lustre_instance} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_lustre_instance google_lustre_instance} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -293,7 +288,7 @@ export class GoogleLustreInstance extends cdktf.TerraformResource {
       terraformResourceType: 'google_lustre_instance',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.28.0',
+        providerVersion: '6.29.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
