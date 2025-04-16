@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -17,29 +17,29 @@ export interface GoogleMemorystoreInstanceConfig extends cdktf.TerraformMetaArgu
   *  AUTH_DISABLED
   * IAM_AUTH
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#authorization_mode GoogleMemorystoreInstance#authorization_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#authorization_mode GoogleMemorystoreInstance#authorization_mode}
   */
   readonly authorizationMode?: string;
   /**
   * Optional. If set to true deletion of the instance will fail.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#deletion_protection_enabled GoogleMemorystoreInstance#deletion_protection_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#deletion_protection_enabled GoogleMemorystoreInstance#deletion_protection_enabled}
   */
   readonly deletionProtectionEnabled?: boolean | cdktf.IResolvable;
   /**
   * Optional. User-provided engine configurations for the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#engine_configs GoogleMemorystoreInstance#engine_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#engine_configs GoogleMemorystoreInstance#engine_configs}
   */
   readonly engineConfigs?: { [key: string]: string };
   /**
   * Optional. Engine version of the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#engine_version GoogleMemorystoreInstance#engine_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#engine_version GoogleMemorystoreInstance#engine_version}
   */
   readonly engineVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#id GoogleMemorystoreInstance#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#id GoogleMemorystoreInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -57,7 +57,7 @@ export interface GoogleMemorystoreInstanceConfig extends cdktf.TerraformMetaArgu
   * * Must not end with a hyphen
   * * Must be unique within a location
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#instance_id GoogleMemorystoreInstance#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#instance_id GoogleMemorystoreInstance#instance_id}
   */
   readonly instanceId: string;
   /**
@@ -66,13 +66,13 @@ export interface GoogleMemorystoreInstanceConfig extends cdktf.TerraformMetaArgu
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#labels GoogleMemorystoreInstance#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#labels GoogleMemorystoreInstance#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. See documentation for resource type 'memorystore.googleapis.com/CertificateAuthority'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#location GoogleMemorystoreInstance#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#location GoogleMemorystoreInstance#location}
   */
   readonly location: string;
   /**
@@ -81,7 +81,7 @@ export interface GoogleMemorystoreInstanceConfig extends cdktf.TerraformMetaArgu
   *  CLUSTER
   *  CLUSTER_DISABLED Possible values: ["CLUSTER", "CLUSTER_DISABLED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#mode GoogleMemorystoreInstance#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#mode GoogleMemorystoreInstance#mode}
   */
   readonly mode?: string;
   /**
@@ -92,23 +92,23 @@ export interface GoogleMemorystoreInstanceConfig extends cdktf.TerraformMetaArgu
   * HIGHMEM_XLARGE
   * STANDARD_SMALL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#node_type GoogleMemorystoreInstance#node_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#node_type GoogleMemorystoreInstance#node_type}
   */
   readonly nodeType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#project GoogleMemorystoreInstance#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#project GoogleMemorystoreInstance#project}
   */
   readonly project?: string;
   /**
   * Optional. Number of replica nodes per shard. If omitted the default is 0 replicas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#replica_count GoogleMemorystoreInstance#replica_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#replica_count GoogleMemorystoreInstance#replica_count}
   */
   readonly replicaCount?: number;
   /**
   * Required. Number of shards for the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#shard_count GoogleMemorystoreInstance#shard_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#shard_count GoogleMemorystoreInstance#shard_count}
   */
   readonly shardCount: number;
   /**
@@ -117,49 +117,61 @@ export interface GoogleMemorystoreInstanceConfig extends cdktf.TerraformMetaArgu
   *  TRANSIT_ENCRYPTION_DISABLED
   * SERVER_AUTHENTICATION
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#transit_encryption_mode GoogleMemorystoreInstance#transit_encryption_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#transit_encryption_mode GoogleMemorystoreInstance#transit_encryption_mode}
   */
   readonly transitEncryptionMode?: string;
   /**
   * automated_backup_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#automated_backup_config GoogleMemorystoreInstance#automated_backup_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#automated_backup_config GoogleMemorystoreInstance#automated_backup_config}
   */
   readonly automatedBackupConfig?: GoogleMemorystoreInstanceAutomatedBackupConfig;
   /**
   * cross_instance_replication_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#cross_instance_replication_config GoogleMemorystoreInstance#cross_instance_replication_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#cross_instance_replication_config GoogleMemorystoreInstance#cross_instance_replication_config}
   */
   readonly crossInstanceReplicationConfig?: GoogleMemorystoreInstanceCrossInstanceReplicationConfig;
   /**
   * desired_psc_auto_connections block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#desired_psc_auto_connections GoogleMemorystoreInstance#desired_psc_auto_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#desired_psc_auto_connections GoogleMemorystoreInstance#desired_psc_auto_connections}
   */
   readonly desiredPscAutoConnections?: GoogleMemorystoreInstanceDesiredPscAutoConnections[] | cdktf.IResolvable;
   /**
+  * gcs_source block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#gcs_source GoogleMemorystoreInstance#gcs_source}
+  */
+  readonly gcsSource?: GoogleMemorystoreInstanceGcsSource;
+  /**
   * maintenance_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#maintenance_policy GoogleMemorystoreInstance#maintenance_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#maintenance_policy GoogleMemorystoreInstance#maintenance_policy}
   */
   readonly maintenancePolicy?: GoogleMemorystoreInstanceMaintenancePolicy;
   /**
+  * managed_backup_source block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#managed_backup_source GoogleMemorystoreInstance#managed_backup_source}
+  */
+  readonly managedBackupSource?: GoogleMemorystoreInstanceManagedBackupSource;
+  /**
   * persistence_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#persistence_config GoogleMemorystoreInstance#persistence_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#persistence_config GoogleMemorystoreInstance#persistence_config}
   */
   readonly persistenceConfig?: GoogleMemorystoreInstancePersistenceConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#timeouts GoogleMemorystoreInstance#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#timeouts GoogleMemorystoreInstance#timeouts}
   */
   readonly timeouts?: GoogleMemorystoreInstanceTimeouts;
   /**
   * zone_distribution_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#zone_distribution_config GoogleMemorystoreInstance#zone_distribution_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#zone_distribution_config GoogleMemorystoreInstance#zone_distribution_config}
   */
   readonly zoneDistributionConfig?: GoogleMemorystoreInstanceZoneDistributionConfig;
 }
@@ -1036,7 +1048,7 @@ export interface GoogleMemorystoreInstanceAutomatedBackupConfigFixedFrequencySch
   * Hours of a day in 24 hour format. Must be greater than or equal to 0 and typically must be less than or equal to 23.
   * An API may choose to allow the value "24:00:00" for scenarios like business closing time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#hours GoogleMemorystoreInstance#hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#hours GoogleMemorystoreInstance#hours}
   */
   readonly hours: number;
 }
@@ -1119,7 +1131,7 @@ export interface GoogleMemorystoreInstanceAutomatedBackupConfigFixedFrequencySch
   /**
   * start_time block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#start_time GoogleMemorystoreInstance#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#start_time GoogleMemorystoreInstance#start_time}
   */
   readonly startTime: GoogleMemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleStartTime;
 }
@@ -1204,13 +1216,13 @@ export interface GoogleMemorystoreInstanceAutomatedBackupConfig {
   * The value should be between 1 day and 365 days. If not specified, the default value is 35 days.
   * A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s". The default_value is "3024000s"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#retention GoogleMemorystoreInstance#retention}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#retention GoogleMemorystoreInstance#retention}
   */
   readonly retention: string;
   /**
   * fixed_frequency_schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#fixed_frequency_schedule GoogleMemorystoreInstance#fixed_frequency_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#fixed_frequency_schedule GoogleMemorystoreInstance#fixed_frequency_schedule}
   */
   readonly fixedFrequencySchedule: GoogleMemorystoreInstanceAutomatedBackupConfigFixedFrequencySchedule;
 }
@@ -1561,7 +1573,7 @@ export interface GoogleMemorystoreInstanceCrossInstanceReplicationConfigPrimaryI
   /**
   * The full resource path of the primary instance in the format: projects/{project}/locations/{region}/instances/{instance-id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#instance GoogleMemorystoreInstance#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#instance GoogleMemorystoreInstance#instance}
   */
   readonly instance?: string;
 }
@@ -1652,7 +1664,7 @@ export interface GoogleMemorystoreInstanceCrossInstanceReplicationConfigSecondar
   /**
   * The full resource path of the Nth instance in the format: projects/{project}/locations/{region}/instance/{instance-id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#instance GoogleMemorystoreInstance#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#instance GoogleMemorystoreInstance#instance}
   */
   readonly instance?: string;
 }
@@ -1779,19 +1791,19 @@ export interface GoogleMemorystoreInstanceCrossInstanceReplicationConfig {
   * 3. 'PRIMARY': This instance serves as the replication source for secondary instance that are replicating from it. Any data written to it is automatically replicated to its secondary clusters. It allows both reads and writes.
   * 4. 'SECONDARY': This instance replicates data from the primary instance. It allows only reads. Possible values: ["INSTANCE_ROLE_UNSPECIFIED", "NONE", "PRIMARY", "SECONDARY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#instance_role GoogleMemorystoreInstance#instance_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#instance_role GoogleMemorystoreInstance#instance_role}
   */
   readonly instanceRole?: string;
   /**
   * primary_instance block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#primary_instance GoogleMemorystoreInstance#primary_instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#primary_instance GoogleMemorystoreInstance#primary_instance}
   */
   readonly primaryInstance?: GoogleMemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstance;
   /**
   * secondary_instances block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#secondary_instances GoogleMemorystoreInstance#secondary_instances}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#secondary_instances GoogleMemorystoreInstance#secondary_instances}
   */
   readonly secondaryInstances?: GoogleMemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstances[] | cdktf.IResolvable;
 }
@@ -1947,13 +1959,13 @@ export interface GoogleMemorystoreInstanceDesiredPscAutoConnections {
   * Required. The consumer network where the IP address resides, in the form of
   * projects/{project_id}/global/networks/{network_id}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#network GoogleMemorystoreInstance#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#network GoogleMemorystoreInstance#network}
   */
   readonly network: string;
   /**
   * Required. The consumer project_id where the forwarding rule is created from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#project_id GoogleMemorystoreInstance#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#project_id GoogleMemorystoreInstance#project_id}
   */
   readonly projectId: string;
 }
@@ -2090,31 +2102,115 @@ export class GoogleMemorystoreInstanceDesiredPscAutoConnectionsList extends cdkt
     return new GoogleMemorystoreInstanceDesiredPscAutoConnectionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface GoogleMemorystoreInstanceGcsSource {
+  /**
+  * URIs of the GCS objects to import.
+  * Example: gs://bucket1/object1, gs//bucket2/folder2/object2
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#uris GoogleMemorystoreInstance#uris}
+  */
+  readonly uris: string[];
+}
+
+export function googleMemorystoreInstanceGcsSourceToTerraform(struct?: GoogleMemorystoreInstanceGcsSourceOutputReference | GoogleMemorystoreInstanceGcsSource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.uris),
+  }
+}
+
+
+export function googleMemorystoreInstanceGcsSourceToHclTerraform(struct?: GoogleMemorystoreInstanceGcsSourceOutputReference | GoogleMemorystoreInstanceGcsSource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    uris: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.uris),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleMemorystoreInstanceGcsSourceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleMemorystoreInstanceGcsSource | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._uris !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.uris = this._uris;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleMemorystoreInstanceGcsSource | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._uris = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._uris = value.uris;
+    }
+  }
+
+  // uris - computed: false, optional: false, required: true
+  private _uris?: string[]; 
+  public get uris() {
+    return cdktf.Fn.tolist(this.getListAttribute('uris'));
+  }
+  public set uris(value: string[]) {
+    this._uris = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get urisInput() {
+    return this._uris;
+  }
+}
 export interface GoogleMemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime {
   /**
   * Hours of day in 24 hour format. Should be from 0 to 23.
   * An API may choose to allow the value "24:00:00" for scenarios like business closing time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#hours GoogleMemorystoreInstance#hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#hours GoogleMemorystoreInstance#hours}
   */
   readonly hours?: number;
   /**
   * Minutes of hour of day. Must be from 0 to 59.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#minutes GoogleMemorystoreInstance#minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#minutes GoogleMemorystoreInstance#minutes}
   */
   readonly minutes?: number;
   /**
   * Fractions of seconds in nanoseconds. Must be from 0 to 999,999,999.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#nanos GoogleMemorystoreInstance#nanos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#nanos GoogleMemorystoreInstance#nanos}
   */
   readonly nanos?: number;
   /**
   * Seconds of minutes of the time. Must normally be from 0 to 59.
   * An API may allow the value 60 if it allows leap-seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#seconds GoogleMemorystoreInstance#seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#seconds GoogleMemorystoreInstance#seconds}
   */
   readonly seconds?: number;
 }
@@ -2296,13 +2392,13 @@ export interface GoogleMemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWind
   * - SATURDAY: Saturday
   * - SUNDAY: Sunday Possible values: ["DAY_OF_WEEK_UNSPECIFIED", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#day GoogleMemorystoreInstance#day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#day GoogleMemorystoreInstance#day}
   */
   readonly day: string;
   /**
   * start_time block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#start_time GoogleMemorystoreInstance#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#start_time GoogleMemorystoreInstance#start_time}
   */
   readonly startTime: GoogleMemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime;
 }
@@ -2448,7 +2544,7 @@ export interface GoogleMemorystoreInstanceMaintenancePolicy {
   /**
   * weekly_maintenance_window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#weekly_maintenance_window GoogleMemorystoreInstance#weekly_maintenance_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#weekly_maintenance_window GoogleMemorystoreInstance#weekly_maintenance_window}
   */
   readonly weeklyMaintenanceWindow?: GoogleMemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindow[] | cdktf.IResolvable;
 }
@@ -2540,6 +2636,89 @@ export class GoogleMemorystoreInstanceMaintenancePolicyOutputReference extends c
     return this._weeklyMaintenanceWindow.internalValue;
   }
 }
+export interface GoogleMemorystoreInstanceManagedBackupSource {
+  /**
+  * Example: //memorystore.googleapis.com/projects/{project}/locations/{location}/backups/{backupId}. In this case, it assumes the backup is under memorystore.googleapis.com.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#backup GoogleMemorystoreInstance#backup}
+  */
+  readonly backup: string;
+}
+
+export function googleMemorystoreInstanceManagedBackupSourceToTerraform(struct?: GoogleMemorystoreInstanceManagedBackupSourceOutputReference | GoogleMemorystoreInstanceManagedBackupSource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    backup: cdktf.stringToTerraform(struct!.backup),
+  }
+}
+
+
+export function googleMemorystoreInstanceManagedBackupSourceToHclTerraform(struct?: GoogleMemorystoreInstanceManagedBackupSourceOutputReference | GoogleMemorystoreInstanceManagedBackupSource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    backup: {
+      value: cdktf.stringToHclTerraform(struct!.backup),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleMemorystoreInstanceManagedBackupSourceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleMemorystoreInstanceManagedBackupSource | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._backup !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.backup = this._backup;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleMemorystoreInstanceManagedBackupSource | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._backup = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._backup = value.backup;
+    }
+  }
+
+  // backup - computed: false, optional: false, required: true
+  private _backup?: string; 
+  public get backup() {
+    return this.getStringAttribute('backup');
+  }
+  public set backup(value: string) {
+    this._backup = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get backupInput() {
+    return this._backup;
+  }
+}
 export interface GoogleMemorystoreInstancePersistenceConfigAofConfig {
   /**
   * Optional. The fsync mode. 
@@ -2548,7 +2727,7 @@ export interface GoogleMemorystoreInstancePersistenceConfigAofConfig {
   * EVERY_SEC
   * ALWAYS
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#append_fsync GoogleMemorystoreInstance#append_fsync}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#append_fsync GoogleMemorystoreInstance#append_fsync}
   */
   readonly appendFsync?: string;
 }
@@ -2639,7 +2818,7 @@ export interface GoogleMemorystoreInstancePersistenceConfigRdbConfig {
   * TWELVE_HOURS
   * TWENTY_FOUR_HOURS
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#rdb_snapshot_period GoogleMemorystoreInstance#rdb_snapshot_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#rdb_snapshot_period GoogleMemorystoreInstance#rdb_snapshot_period}
   */
   readonly rdbSnapshotPeriod?: string;
   /**
@@ -2647,7 +2826,7 @@ export interface GoogleMemorystoreInstancePersistenceConfigRdbConfig {
   * snapshots will be aligned. If not provided, the current time will be
   * used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#rdb_snapshot_start_time GoogleMemorystoreInstance#rdb_snapshot_start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#rdb_snapshot_start_time GoogleMemorystoreInstance#rdb_snapshot_start_time}
   */
   readonly rdbSnapshotStartTime?: string;
 }
@@ -2766,19 +2945,19 @@ export interface GoogleMemorystoreInstancePersistenceConfig {
   * RDB
   * AOF Possible values: ["DISABLED", "RDB", "AOF"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#mode GoogleMemorystoreInstance#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#mode GoogleMemorystoreInstance#mode}
   */
   readonly mode?: string;
   /**
   * aof_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#aof_config GoogleMemorystoreInstance#aof_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#aof_config GoogleMemorystoreInstance#aof_config}
   */
   readonly aofConfig?: GoogleMemorystoreInstancePersistenceConfigAofConfig;
   /**
   * rdb_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#rdb_config GoogleMemorystoreInstance#rdb_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#rdb_config GoogleMemorystoreInstance#rdb_config}
   */
   readonly rdbConfig?: GoogleMemorystoreInstancePersistenceConfigRdbConfig;
 }
@@ -2920,15 +3099,15 @@ export class GoogleMemorystoreInstancePersistenceConfigOutputReference extends c
 }
 export interface GoogleMemorystoreInstanceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#create GoogleMemorystoreInstance#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#create GoogleMemorystoreInstance#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#delete GoogleMemorystoreInstance#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#delete GoogleMemorystoreInstance#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#update GoogleMemorystoreInstance#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#update GoogleMemorystoreInstance#update}
   */
   readonly update?: string;
 }
@@ -3085,14 +3264,14 @@ export interface GoogleMemorystoreInstanceZoneDistributionConfig {
   *  MULTI_ZONE
   * SINGLE_ZONE Possible values: ["MULTI_ZONE", "SINGLE_ZONE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#mode GoogleMemorystoreInstance#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#mode GoogleMemorystoreInstance#mode}
   */
   readonly mode?: string;
   /**
   * Optional. Defines zone where all resources will be allocated with SINGLE_ZONE mode.
   * Ignored for MULTI_ZONE mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#zone GoogleMemorystoreInstance#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#zone GoogleMemorystoreInstance#zone}
   */
   readonly zone?: string;
 }
@@ -3205,7 +3384,7 @@ export class GoogleMemorystoreInstanceZoneDistributionConfigOutputReference exte
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance google_memorystore_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance google_memorystore_instance}
 */
 export class GoogleMemorystoreInstance extends cdktf.TerraformResource {
 
@@ -3221,7 +3400,7 @@ export class GoogleMemorystoreInstance extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleMemorystoreInstance resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleMemorystoreInstance to import
-  * @param importFromId The id of the existing GoogleMemorystoreInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleMemorystoreInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleMemorystoreInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -3233,7 +3412,7 @@ export class GoogleMemorystoreInstance extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance google_memorystore_instance} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance google_memorystore_instance} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3244,7 +3423,7 @@ export class GoogleMemorystoreInstance extends cdktf.TerraformResource {
       terraformResourceType: 'google_memorystore_instance',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.29.0',
+        providerVersion: '6.30.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -3272,7 +3451,9 @@ export class GoogleMemorystoreInstance extends cdktf.TerraformResource {
     this._automatedBackupConfig.internalValue = config.automatedBackupConfig;
     this._crossInstanceReplicationConfig.internalValue = config.crossInstanceReplicationConfig;
     this._desiredPscAutoConnections.internalValue = config.desiredPscAutoConnections;
+    this._gcsSource.internalValue = config.gcsSource;
     this._maintenancePolicy.internalValue = config.maintenancePolicy;
+    this._managedBackupSource.internalValue = config.managedBackupSource;
     this._persistenceConfig.internalValue = config.persistenceConfig;
     this._timeouts.internalValue = config.timeouts;
     this._zoneDistributionConfig.internalValue = config.zoneDistributionConfig;
@@ -3296,6 +3477,11 @@ export class GoogleMemorystoreInstance extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get authorizationModeInput() {
     return this._authorizationMode;
+  }
+
+  // backup_collection - computed: true, optional: false, required: false
+  public get backupCollection() {
+    return this.getStringAttribute('backup_collection');
   }
 
   // create_time - computed: true, optional: false, required: false
@@ -3624,6 +3810,22 @@ export class GoogleMemorystoreInstance extends cdktf.TerraformResource {
     return this._desiredPscAutoConnections.internalValue;
   }
 
+  // gcs_source - computed: false, optional: true, required: false
+  private _gcsSource = new GoogleMemorystoreInstanceGcsSourceOutputReference(this, "gcs_source");
+  public get gcsSource() {
+    return this._gcsSource;
+  }
+  public putGcsSource(value: GoogleMemorystoreInstanceGcsSource) {
+    this._gcsSource.internalValue = value;
+  }
+  public resetGcsSource() {
+    this._gcsSource.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gcsSourceInput() {
+    return this._gcsSource.internalValue;
+  }
+
   // maintenance_policy - computed: false, optional: true, required: false
   private _maintenancePolicy = new GoogleMemorystoreInstanceMaintenancePolicyOutputReference(this, "maintenance_policy");
   public get maintenancePolicy() {
@@ -3638,6 +3840,22 @@ export class GoogleMemorystoreInstance extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get maintenancePolicyInput() {
     return this._maintenancePolicy.internalValue;
+  }
+
+  // managed_backup_source - computed: false, optional: true, required: false
+  private _managedBackupSource = new GoogleMemorystoreInstanceManagedBackupSourceOutputReference(this, "managed_backup_source");
+  public get managedBackupSource() {
+    return this._managedBackupSource;
+  }
+  public putManagedBackupSource(value: GoogleMemorystoreInstanceManagedBackupSource) {
+    this._managedBackupSource.internalValue = value;
+  }
+  public resetManagedBackupSource() {
+    this._managedBackupSource.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get managedBackupSourceInput() {
+    return this._managedBackupSource.internalValue;
   }
 
   // persistence_config - computed: false, optional: true, required: false
@@ -3711,7 +3929,9 @@ export class GoogleMemorystoreInstance extends cdktf.TerraformResource {
       automated_backup_config: googleMemorystoreInstanceAutomatedBackupConfigToTerraform(this._automatedBackupConfig.internalValue),
       cross_instance_replication_config: googleMemorystoreInstanceCrossInstanceReplicationConfigToTerraform(this._crossInstanceReplicationConfig.internalValue),
       desired_psc_auto_connections: cdktf.listMapper(googleMemorystoreInstanceDesiredPscAutoConnectionsToTerraform, true)(this._desiredPscAutoConnections.internalValue),
+      gcs_source: googleMemorystoreInstanceGcsSourceToTerraform(this._gcsSource.internalValue),
       maintenance_policy: googleMemorystoreInstanceMaintenancePolicyToTerraform(this._maintenancePolicy.internalValue),
+      managed_backup_source: googleMemorystoreInstanceManagedBackupSourceToTerraform(this._managedBackupSource.internalValue),
       persistence_config: googleMemorystoreInstancePersistenceConfigToTerraform(this._persistenceConfig.internalValue),
       timeouts: googleMemorystoreInstanceTimeoutsToTerraform(this._timeouts.internalValue),
       zone_distribution_config: googleMemorystoreInstanceZoneDistributionConfigToTerraform(this._zoneDistributionConfig.internalValue),
@@ -3822,11 +4042,23 @@ export class GoogleMemorystoreInstance extends cdktf.TerraformResource {
         type: "list",
         storageClassType: "GoogleMemorystoreInstanceDesiredPscAutoConnectionsList",
       },
+      gcs_source: {
+        value: googleMemorystoreInstanceGcsSourceToHclTerraform(this._gcsSource.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleMemorystoreInstanceGcsSourceList",
+      },
       maintenance_policy: {
         value: googleMemorystoreInstanceMaintenancePolicyToHclTerraform(this._maintenancePolicy.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "GoogleMemorystoreInstanceMaintenancePolicyList",
+      },
+      managed_backup_source: {
+        value: googleMemorystoreInstanceManagedBackupSourceToHclTerraform(this._managedBackupSource.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleMemorystoreInstanceManagedBackupSourceList",
       },
       persistence_config: {
         value: googleMemorystoreInstancePersistenceConfigToHclTerraform(this._persistenceConfig.internalValue),

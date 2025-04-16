@@ -522,6 +522,7 @@ export * as googleDatastreamConnectionProfile from './google-datastream-connecti
 export * as googleDatastreamPrivateConnection from './google-datastream-private-connection';
 export * as googleDatastreamStream from './google-datastream-stream';
 export * as googleDeploymentManagerDeployment from './google-deployment-manager-deployment';
+export * as googleDeveloperConnectAccountConnector from './google-developer-connect-account-connector';
 export * as googleDeveloperConnectConnection from './google-developer-connect-connection';
 export * as googleDeveloperConnectGitRepositoryLink from './google-developer-connect-git-repository-link';
 export * as googleDialogflowAgent from './google-dialogflow-agent';
@@ -1090,8 +1091,17 @@ export * as googleVertexAiEndpointIamMember from './google-vertex-ai-endpoint-ia
 export * as googleVertexAiEndpointIamPolicy from './google-vertex-ai-endpoint-iam-policy';
 export * as googleVertexAiFeatureGroup from './google-vertex-ai-feature-group';
 export * as googleVertexAiFeatureGroupFeature from './google-vertex-ai-feature-group-feature';
+export * as googleVertexAiFeatureGroupIamBinding from './google-vertex-ai-feature-group-iam-binding';
+export * as googleVertexAiFeatureGroupIamMember from './google-vertex-ai-feature-group-iam-member';
+export * as googleVertexAiFeatureGroupIamPolicy from './google-vertex-ai-feature-group-iam-policy';
 export * as googleVertexAiFeatureOnlineStore from './google-vertex-ai-feature-online-store';
 export * as googleVertexAiFeatureOnlineStoreFeatureview from './google-vertex-ai-feature-online-store-featureview';
+export * as googleVertexAiFeatureOnlineStoreFeatureviewIamBinding from './google-vertex-ai-feature-online-store-featureview-iam-binding';
+export * as googleVertexAiFeatureOnlineStoreFeatureviewIamMember from './google-vertex-ai-feature-online-store-featureview-iam-member';
+export * as googleVertexAiFeatureOnlineStoreFeatureviewIamPolicy from './google-vertex-ai-feature-online-store-featureview-iam-policy';
+export * as googleVertexAiFeatureOnlineStoreIamBinding from './google-vertex-ai-feature-online-store-iam-binding';
+export * as googleVertexAiFeatureOnlineStoreIamMember from './google-vertex-ai-feature-online-store-iam-member';
+export * as googleVertexAiFeatureOnlineStoreIamPolicy from './google-vertex-ai-feature-online-store-iam-policy';
 export * as googleVertexAiFeaturestore from './google-vertex-ai-featurestore';
 export * as googleVertexAiFeaturestoreEntitytype from './google-vertex-ai-featurestore-entitytype';
 export * as googleVertexAiFeaturestoreEntitytypeFeature from './google-vertex-ai-featurestore-entitytype-feature';
@@ -1488,6 +1498,9 @@ export * as dataGoogleTpuTensorflowVersions from './data-google-tpu-tensorflow-v
 export * as dataGoogleTpuV2AcceleratorTypes from './data-google-tpu-v2-accelerator-types';
 export * as dataGoogleTpuV2RuntimeVersions from './data-google-tpu-v2-runtime-versions';
 export * as dataGoogleVertexAiEndpointIamPolicy from './data-google-vertex-ai-endpoint-iam-policy';
+export * as dataGoogleVertexAiFeatureGroupIamPolicy from './data-google-vertex-ai-feature-group-iam-policy';
+export * as dataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy from './data-google-vertex-ai-feature-online-store-featureview-iam-policy';
+export * as dataGoogleVertexAiFeatureOnlineStoreIamPolicy from './data-google-vertex-ai-feature-online-store-iam-policy';
 export * as dataGoogleVertexAiFeaturestoreEntitytypeIamPolicy from './data-google-vertex-ai-featurestore-entitytype-iam-policy';
 export * as dataGoogleVertexAiFeaturestoreIamPolicy from './data-google-vertex-ai-featurestore-iam-policy';
 export * as dataGoogleVertexAiIndex from './data-google-vertex-ai-index';
