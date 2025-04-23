@@ -4,7 +4,7 @@
 
 ### GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding <a name="GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding" id="@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding google_vertex_ai_feature_online_store_featureview_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.31.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding google_vertex_ai_feature_online_store_featureview_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding.Initializer"></a>
 
@@ -508,7 +508,7 @@ The construct id used in the generated config for the GoogleVertexAiFeatureOnlin
 
 The id of the existing GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.31.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -908,9 +908,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleverte
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#expression GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#title GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#description GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.31.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#expression GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.31.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#title GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.31.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#description GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#description}. |
 
 ---
 
@@ -922,7 +922,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#expression GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.31.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#expression GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#expression}.
 
 ---
 
@@ -934,7 +934,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#title GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.31.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#title GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#title}.
 
 ---
 
@@ -946,7 +946,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#description GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.31.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#description GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#description}.
 
 ---
 
@@ -987,14 +987,14 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleverte
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingConfig.property.featureOnlineStore">FeatureOnlineStore</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#feature_online_store GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#feature_online_store}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingConfig.property.featureView">FeatureView</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#feature_view GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#feature_view}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#members GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#role GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingConfig.property.featureOnlineStore">FeatureOnlineStore</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.31.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#feature_online_store GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#feature_online_store}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingConfig.property.featureView">FeatureView</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.31.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#feature_view GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#feature_view}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.31.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#members GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.31.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#role GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingCondition">GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#id GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#project GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#project}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#region GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#region}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.31.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#id GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.31.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#project GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.31.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#region GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#region}. |
 
 ---
 
@@ -1076,7 +1076,7 @@ FeatureOnlineStore *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#feature_online_store GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#feature_online_store}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.31.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#feature_online_store GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#feature_online_store}.
 
 ---
 
@@ -1088,7 +1088,7 @@ FeatureView *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#feature_view GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#feature_view}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.31.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#feature_view GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#feature_view}.
 
 ---
 
@@ -1100,7 +1100,7 @@ Members *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#members GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.31.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#members GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#members}.
 
 ---
 
@@ -1112,7 +1112,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#role GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.31.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#role GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#role}.
 
 ---
 
@@ -1126,7 +1126,7 @@ Condition GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#condition GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.31.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#condition GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#condition}
 
 ---
 
@@ -1138,7 +1138,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#id GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.31.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#id GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1153,7 +1153,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#project GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.31.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#project GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#project}.
 
 ---
 
@@ -1165,7 +1165,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#region GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.31.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#region GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#region}.
 
 ---
 
