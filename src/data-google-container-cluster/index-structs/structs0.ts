@@ -7548,6 +7548,11 @@ export class DataGoogleContainerClusterNodeConfigOutputReference extends cdktf.C
     return this._fastSocket;
   }
 
+  // flex_start - computed: true, optional: false, required: false
+  public get flexStart() {
+    return this.getBooleanAttribute('flex_start');
+  }
+
   // gcfs_config - computed: true, optional: false, required: false
   private _gcfsConfig = new DataGoogleContainerClusterNodeConfigGcfsConfigList(this, "gcfs_config", false);
   public get gcfsConfig() {
