@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 import * as cdktf from 'cdktf';
 export interface DataGoogleContainerClusterAddonsConfigCloudrunConfig {
 }
@@ -7546,6 +7541,11 @@ export class DataGoogleContainerClusterNodeConfigOutputReference extends cdktf.C
   private _fastSocket = new DataGoogleContainerClusterNodeConfigFastSocketList(this, "fast_socket", false);
   public get fastSocket() {
     return this._fastSocket;
+  }
+
+  // flex_start - computed: true, optional: false, required: false
+  public get flexStart() {
+    return this.getBooleanAttribute('flex_start');
   }
 
   // gcfs_config - computed: true, optional: false, required: false
