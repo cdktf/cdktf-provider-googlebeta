@@ -151,6 +151,8 @@ export * as googleBigtableInstance from './google-bigtable-instance';
 export * as googleBigtableInstanceIamBinding from './google-bigtable-instance-iam-binding';
 export * as googleBigtableInstanceIamMember from './google-bigtable-instance-iam-member';
 export * as googleBigtableInstanceIamPolicy from './google-bigtable-instance-iam-policy';
+export * as googleBigtableLogicalView from './google-bigtable-logical-view';
+export * as googleBigtableMaterializedView from './google-bigtable-materialized-view';
 export * as googleBigtableTable from './google-bigtable-table';
 export * as googleBigtableTableIamBinding from './google-bigtable-table-iam-binding';
 export * as googleBigtableTableIamMember from './google-bigtable-table-iam-member';
@@ -901,6 +903,7 @@ export * as googleOsConfigGuestPolicies from './google-os-config-guest-policies'
 export * as googleOsConfigOsPolicyAssignment from './google-os-config-os-policy-assignment';
 export * as googleOsConfigPatchDeployment from './google-os-config-patch-deployment';
 export * as googleOsConfigV2PolicyOrchestrator from './google-os-config-v2-policy-orchestrator';
+export * as googleOsConfigV2PolicyOrchestratorForFolder from './google-os-config-v2-policy-orchestrator-for-folder';
 export * as googleOsConfigV2PolicyOrchestratorForOrganization from './google-os-config-v2-policy-orchestrator-for-organization';
 export * as googleOsLoginSshPublicKey from './google-os-login-ssh-public-key';
 export * as googleParallelstoreInstance from './google-parallelstore-instance';
@@ -1397,6 +1400,7 @@ export * as dataGoogleLoggingOrganizationSettings from './data-google-logging-or
 export * as dataGoogleLoggingProjectCmekSettings from './data-google-logging-project-cmek-settings';
 export * as dataGoogleLoggingProjectSettings from './data-google-logging-project-settings';
 export * as dataGoogleLoggingSink from './data-google-logging-sink';
+export * as dataGoogleMemcacheInstance from './data-google-memcache-instance';
 export * as dataGoogleMemorystoreInstance from './data-google-memorystore-instance';
 export * as dataGoogleMonitoringAppEngineService from './data-google-monitoring-app-engine-service';
 export * as dataGoogleMonitoringClusterIstioService from './data-google-monitoring-cluster-istio-service';
