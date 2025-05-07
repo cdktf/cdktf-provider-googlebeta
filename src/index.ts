@@ -68,6 +68,7 @@ export * as googleApigeeKeystoresAliasesPkcs12 from './google-apigee-keystores-a
 export * as googleApigeeKeystoresAliasesSelfSignedCert from './google-apigee-keystores-aliases-self-signed-cert';
 export * as googleApigeeNatAddress from './google-apigee-nat-address';
 export * as googleApigeeOrganization from './google-apigee-organization';
+export * as googleApigeeSecurityProfileV2 from './google-apigee-security-profile-v2';
 export * as googleApigeeSharedflow from './google-apigee-sharedflow';
 export * as googleApigeeSharedflowDeployment from './google-apigee-sharedflow-deployment';
 export * as googleApigeeSyncAuthorization from './google-apigee-sync-authorization';
@@ -955,6 +956,7 @@ export * as googleRecaptchaEnterpriseKey from './google-recaptcha-enterprise-key
 export * as googleRedisCluster from './google-redis-cluster';
 export * as googleRedisClusterUserCreatedConnections from './google-redis-cluster-user-created-connections';
 export * as googleRedisInstance from './google-redis-instance';
+export * as googleResourceManagerCapability from './google-resource-manager-capability';
 export * as googleResourceManagerLien from './google-resource-manager-lien';
 export * as googleRuntimeconfigConfig from './google-runtimeconfig-config';
 export * as googleRuntimeconfigConfigIamBinding from './google-runtimeconfig-config-iam-binding';
