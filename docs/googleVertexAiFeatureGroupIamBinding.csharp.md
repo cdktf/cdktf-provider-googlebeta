@@ -4,7 +4,7 @@
 
 ### GoogleVertexAiFeatureGroupIamBinding <a name="GoogleVertexAiFeatureGroupIamBinding" id="@cdktf/provider-google-beta.googleVertexAiFeatureGroupIamBinding.GoogleVertexAiFeatureGroupIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_vertex_ai_feature_group_iam_binding google_vertex_ai_feature_group_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_vertex_ai_feature_group_iam_binding google_vertex_ai_feature_group_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiFeatureGroupIamBinding.GoogleVertexAiFeatureGroupIamBinding.Initializer"></a>
 
@@ -508,7 +508,7 @@ The construct id used in the generated config for the GoogleVertexAiFeatureGroup
 
 The id of the existing GoogleVertexAiFeatureGroupIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_vertex_ai_feature_group_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_vertex_ai_feature_group_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -886,9 +886,9 @@ new GoogleVertexAiFeatureGroupIamBindingCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureGroupIamBinding.GoogleVertexAiFeatureGroupIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_vertex_ai_feature_group_iam_binding#expression GoogleVertexAiFeatureGroupIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureGroupIamBinding.GoogleVertexAiFeatureGroupIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_vertex_ai_feature_group_iam_binding#title GoogleVertexAiFeatureGroupIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureGroupIamBinding.GoogleVertexAiFeatureGroupIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_vertex_ai_feature_group_iam_binding#description GoogleVertexAiFeatureGroupIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureGroupIamBinding.GoogleVertexAiFeatureGroupIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_vertex_ai_feature_group_iam_binding#expression GoogleVertexAiFeatureGroupIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureGroupIamBinding.GoogleVertexAiFeatureGroupIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_vertex_ai_feature_group_iam_binding#title GoogleVertexAiFeatureGroupIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureGroupIamBinding.GoogleVertexAiFeatureGroupIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_vertex_ai_feature_group_iam_binding#description GoogleVertexAiFeatureGroupIamBinding#description}. |
 
 ---
 
@@ -900,7 +900,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_vertex_ai_feature_group_iam_binding#expression GoogleVertexAiFeatureGroupIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_vertex_ai_feature_group_iam_binding#expression GoogleVertexAiFeatureGroupIamBinding#expression}.
 
 ---
 
@@ -912,7 +912,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_vertex_ai_feature_group_iam_binding#title GoogleVertexAiFeatureGroupIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_vertex_ai_feature_group_iam_binding#title GoogleVertexAiFeatureGroupIamBinding#title}.
 
 ---
 
@@ -924,7 +924,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_vertex_ai_feature_group_iam_binding#description GoogleVertexAiFeatureGroupIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_vertex_ai_feature_group_iam_binding#description GoogleVertexAiFeatureGroupIamBinding#description}.
 
 ---
 
@@ -964,13 +964,13 @@ new GoogleVertexAiFeatureGroupIamBindingConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureGroupIamBinding.GoogleVertexAiFeatureGroupIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureGroupIamBinding.GoogleVertexAiFeatureGroupIamBindingConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureGroupIamBinding.GoogleVertexAiFeatureGroupIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureGroupIamBinding.GoogleVertexAiFeatureGroupIamBindingConfig.property.featureGroup">FeatureGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_vertex_ai_feature_group_iam_binding#feature_group GoogleVertexAiFeatureGroupIamBinding#feature_group}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureGroupIamBinding.GoogleVertexAiFeatureGroupIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_vertex_ai_feature_group_iam_binding#members GoogleVertexAiFeatureGroupIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureGroupIamBinding.GoogleVertexAiFeatureGroupIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_vertex_ai_feature_group_iam_binding#role GoogleVertexAiFeatureGroupIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureGroupIamBinding.GoogleVertexAiFeatureGroupIamBindingConfig.property.featureGroup">FeatureGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_vertex_ai_feature_group_iam_binding#feature_group GoogleVertexAiFeatureGroupIamBinding#feature_group}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureGroupIamBinding.GoogleVertexAiFeatureGroupIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_vertex_ai_feature_group_iam_binding#members GoogleVertexAiFeatureGroupIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureGroupIamBinding.GoogleVertexAiFeatureGroupIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_vertex_ai_feature_group_iam_binding#role GoogleVertexAiFeatureGroupIamBinding#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureGroupIamBinding.GoogleVertexAiFeatureGroupIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureGroupIamBinding.GoogleVertexAiFeatureGroupIamBindingCondition">GoogleVertexAiFeatureGroupIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureGroupIamBinding.GoogleVertexAiFeatureGroupIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_vertex_ai_feature_group_iam_binding#id GoogleVertexAiFeatureGroupIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureGroupIamBinding.GoogleVertexAiFeatureGroupIamBindingConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_vertex_ai_feature_group_iam_binding#project GoogleVertexAiFeatureGroupIamBinding#project}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureGroupIamBinding.GoogleVertexAiFeatureGroupIamBindingConfig.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_vertex_ai_feature_group_iam_binding#region GoogleVertexAiFeatureGroupIamBinding#region}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureGroupIamBinding.GoogleVertexAiFeatureGroupIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_vertex_ai_feature_group_iam_binding#id GoogleVertexAiFeatureGroupIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureGroupIamBinding.GoogleVertexAiFeatureGroupIamBindingConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_vertex_ai_feature_group_iam_binding#project GoogleVertexAiFeatureGroupIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeatureGroupIamBinding.GoogleVertexAiFeatureGroupIamBindingConfig.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_vertex_ai_feature_group_iam_binding#region GoogleVertexAiFeatureGroupIamBinding#region}. |
 
 ---
 
@@ -1052,7 +1052,7 @@ public string FeatureGroup { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_vertex_ai_feature_group_iam_binding#feature_group GoogleVertexAiFeatureGroupIamBinding#feature_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_vertex_ai_feature_group_iam_binding#feature_group GoogleVertexAiFeatureGroupIamBinding#feature_group}.
 
 ---
 
@@ -1064,7 +1064,7 @@ public string[] Members { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_vertex_ai_feature_group_iam_binding#members GoogleVertexAiFeatureGroupIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_vertex_ai_feature_group_iam_binding#members GoogleVertexAiFeatureGroupIamBinding#members}.
 
 ---
 
@@ -1076,7 +1076,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_vertex_ai_feature_group_iam_binding#role GoogleVertexAiFeatureGroupIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_vertex_ai_feature_group_iam_binding#role GoogleVertexAiFeatureGroupIamBinding#role}.
 
 ---
 
@@ -1090,7 +1090,7 @@ public GoogleVertexAiFeatureGroupIamBindingCondition Condition { get; set; }
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_vertex_ai_feature_group_iam_binding#condition GoogleVertexAiFeatureGroupIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_vertex_ai_feature_group_iam_binding#condition GoogleVertexAiFeatureGroupIamBinding#condition}
 
 ---
 
@@ -1102,7 +1102,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_vertex_ai_feature_group_iam_binding#id GoogleVertexAiFeatureGroupIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_vertex_ai_feature_group_iam_binding#id GoogleVertexAiFeatureGroupIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1117,7 +1117,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_vertex_ai_feature_group_iam_binding#project GoogleVertexAiFeatureGroupIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_vertex_ai_feature_group_iam_binding#project GoogleVertexAiFeatureGroupIamBinding#project}.
 
 ---
 
@@ -1129,7 +1129,7 @@ public string Region { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_vertex_ai_feature_group_iam_binding#region GoogleVertexAiFeatureGroupIamBinding#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_vertex_ai_feature_group_iam_binding#region GoogleVertexAiFeatureGroupIamBinding#region}.
 
 ---
 
