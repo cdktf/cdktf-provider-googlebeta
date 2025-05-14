@@ -646,6 +646,7 @@ The following submodules are available:
 - [googleComputeBackendServiceIamMember](./googleComputeBackendServiceIamMember.csharp.md)
 - [googleComputeBackendServiceIamPolicy](./googleComputeBackendServiceIamPolicy.csharp.md)
 - [googleComputeBackendServiceSignedUrlKey](./googleComputeBackendServiceSignedUrlKey.csharp.md)
+- [googleComputeCrossSiteNetwork](./googleComputeCrossSiteNetwork.csharp.md)
 - [googleComputeDisk](./googleComputeDisk.csharp.md)
 - [googleComputeDiskAsyncReplication](./googleComputeDiskAsyncReplication.csharp.md)
 - [googleComputeDiskIamBinding](./googleComputeDiskIamBinding.csharp.md)

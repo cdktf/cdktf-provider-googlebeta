@@ -646,6 +646,7 @@ The following submodules are available:
 - [googleComputeBackendServiceIamMember](./googleComputeBackendServiceIamMember.java.md)
 - [googleComputeBackendServiceIamPolicy](./googleComputeBackendServiceIamPolicy.java.md)
 - [googleComputeBackendServiceSignedUrlKey](./googleComputeBackendServiceSignedUrlKey.java.md)
+- [googleComputeCrossSiteNetwork](./googleComputeCrossSiteNetwork.java.md)
 - [googleComputeDisk](./googleComputeDisk.java.md)
 - [googleComputeDiskAsyncReplication](./googleComputeDiskAsyncReplication.java.md)
 - [googleComputeDiskIamBinding](./googleComputeDiskIamBinding.java.md)
