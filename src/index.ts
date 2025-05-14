@@ -263,6 +263,7 @@ export * as googleComputeBackendServiceIamBinding from './google-compute-backend
 export * as googleComputeBackendServiceIamMember from './google-compute-backend-service-iam-member';
 export * as googleComputeBackendServiceIamPolicy from './google-compute-backend-service-iam-policy';
 export * as googleComputeBackendServiceSignedUrlKey from './google-compute-backend-service-signed-url-key';
+export * as googleComputeCrossSiteNetwork from './google-compute-cross-site-network';
 export * as googleComputeDisk from './google-compute-disk';
 export * as googleComputeDiskAsyncReplication from './google-compute-disk-async-replication';
 export * as googleComputeDiskIamBinding from './google-compute-disk-iam-binding';

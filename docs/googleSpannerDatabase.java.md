@@ -4,7 +4,7 @@
 
 ### GoogleSpannerDatabase <a name="GoogleSpannerDatabase" id="@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_spanner_database google_spanner_database}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database google_spanner_database}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.Initializer"></a>
 
@@ -27,6 +27,7 @@ GoogleSpannerDatabase.Builder.create(Construct scope, java.lang.String id)
     .name(java.lang.String)
 //  .databaseDialect(java.lang.String)
 //  .ddl(java.util.List<java.lang.String>)
+//  .defaultTimeZone(java.lang.String)
 //  .deletionProtection(java.lang.Boolean)
 //  .deletionProtection(IResolvable)
 //  .enableDropProtection(java.lang.Boolean)
@@ -54,11 +55,12 @@ GoogleSpannerDatabase.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | A unique identifier for the database, which cannot be changed after the instance is created. |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.Initializer.parameter.databaseDialect">databaseDialect</a></code> | <code>java.lang.String</code> | The dialect of the Cloud Spanner Database. If it is not provided, "GOOGLE_STANDARD_SQL" will be used. Possible values: ["GOOGLE_STANDARD_SQL", "POSTGRESQL"]. |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.Initializer.parameter.ddl">ddl</a></code> | <code>java.util.List<java.lang.String></code> | An optional list of DDL statements to run inside the database. Statements can create tables, indexes, etc. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.Initializer.parameter.defaultTimeZone">defaultTimeZone</a></code> | <code>java.lang.String</code> | The default time zone for the database. |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.Initializer.parameter.deletionProtection">deletionProtection</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether Terraform will be prevented from destroying the database. |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.Initializer.parameter.enableDropProtection">enableDropProtection</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether drop protection is enabled for this database. |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.Initializer.parameter.encryptionConfig">encryptionConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabaseEncryptionConfig">GoogleSpannerDatabaseEncryptionConfig</a></code> | encryption_config block. |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_spanner_database#id GoogleSpannerDatabase#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_spanner_database#project GoogleSpannerDatabase#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#id GoogleSpannerDatabase#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#project GoogleSpannerDatabase#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabaseTimeouts">GoogleSpannerDatabaseTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.Initializer.parameter.versionRetentionPeriod">versionRetentionPeriod</a></code> | <code>java.lang.String</code> | The retention period for the database. |
 
@@ -130,7 +132,7 @@ Must be unique amongst siblings in the same scope
 
 The instance to create the database on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_spanner_database#instance GoogleSpannerDatabase#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#instance GoogleSpannerDatabase#instance}
 
 ---
 
@@ -142,7 +144,7 @@ A unique identifier for the database, which cannot be changed after the instance
 
 Values are of the form '[a-z][-_a-z0-9]*[a-z0-9]'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_spanner_database#name GoogleSpannerDatabase#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#name GoogleSpannerDatabase#name}
 
 ---
 
@@ -152,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The dialect of the Cloud Spanner Database. If it is not provided, "GOOGLE_STANDARD_SQL" will be used. Possible values: ["GOOGLE_STANDARD_SQL", "POSTGRESQL"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_spanner_database#database_dialect GoogleSpannerDatabase#database_dialect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#database_dialect GoogleSpannerDatabase#database_dialect}
 
 ---
 
@@ -170,7 +172,20 @@ recorded in state are accurate. Limited updates to this field are supported, and
 newly appended DDL statements can be executed in an update. However, modifications
 to prior statements will create a plan that marks the resource for recreation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_spanner_database#ddl GoogleSpannerDatabase#ddl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#ddl GoogleSpannerDatabase#ddl}
+
+---
+
+##### `defaultTimeZone`<sup>Optional</sup> <a name="defaultTimeZone" id="@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.Initializer.parameter.defaultTimeZone"></a>
+
+- *Type:* java.lang.String
+
+The default time zone for the database.
+
+The default time zone must be a valid name
+from the tz database. Default value is "America/Los_angeles".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#default_time_zone GoogleSpannerDatabase#default_time_zone}
 
 ---
 
@@ -187,7 +202,7 @@ When the field is set to true or unset in Terraform state, a 'terraform apply'
 or 'terraform destroy' that would delete the database will fail.
 When the field is set to false, deleting the database is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_spanner_database#deletion_protection GoogleSpannerDatabase#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#deletion_protection GoogleSpannerDatabase#deletion_protection}
 
 ---
 
@@ -205,7 +220,7 @@ whereas setting “enableDropProtection” to true protects the database from de
 (2) Setting "enableDropProtection" to true also prevents the deletion of the parent instance containing the database.
 "deletion_protection" attribute does not provide protection against the deletion of the parent instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_spanner_database#enable_drop_protection GoogleSpannerDatabase#enable_drop_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#enable_drop_protection GoogleSpannerDatabase#enable_drop_protection}
 
 ---
 
@@ -215,7 +230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 encryption_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_spanner_database#encryption_config GoogleSpannerDatabase#encryption_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#encryption_config GoogleSpannerDatabase#encryption_config}
 
 ---
 
@@ -223,7 +238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_spanner_database#id GoogleSpannerDatabase#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#id GoogleSpannerDatabase#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -234,7 +249,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_spanner_database#project GoogleSpannerDatabase#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#project GoogleSpannerDatabase#project}.
 
 ---
 
@@ -244,7 +259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_spanner_database#timeouts GoogleSpannerDatabase#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#timeouts GoogleSpannerDatabase#timeouts}
 
 ---
 
@@ -260,7 +275,7 @@ the values 1d, 24h, 1440m, and 86400s are equivalent. Default value is 1h.
 If this property is used, you must avoid adding new DDL statements to 'ddl' that
 update the database's version_retention_period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_spanner_database#version_retention_period GoogleSpannerDatabase#version_retention_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#version_retention_period GoogleSpannerDatabase#version_retention_period}
 
 ---
 
@@ -295,6 +310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.resetDatabaseDialect">resetDatabaseDialect</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.resetDdl">resetDdl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.resetDefaultTimeZone">resetDefaultTimeZone</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.resetDeletionProtection">resetDeletionProtection</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.resetEnableDropProtection">resetEnableDropProtection</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.resetEncryptionConfig">resetEncryptionConfig</a></code> | *No description.* |
@@ -631,6 +647,12 @@ public void resetDatabaseDialect()
 public void resetDdl()
 ```
 
+##### `resetDefaultTimeZone` <a name="resetDefaultTimeZone" id="@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.resetDefaultTimeZone"></a>
+
+```java
+public void resetDefaultTimeZone()
+```
+
 ##### `resetDeletionProtection` <a name="resetDeletionProtection" id="@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.resetDeletionProtection"></a>
 
 ```java
@@ -776,7 +798,7 @@ The construct id used in the generated config for the GoogleSpannerDatabase to i
 
 The id of the existing GoogleSpannerDatabase that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_spanner_database#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -811,6 +833,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabaseTimeoutsOutputReference">GoogleSpannerDatabaseTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.property.databaseDialectInput">databaseDialectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.property.ddlInput">ddlInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.property.defaultTimeZoneInput">defaultTimeZoneInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.property.deletionProtectionInput">deletionProtectionInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.property.enableDropProtectionInput">enableDropProtectionInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.property.encryptionConfigInput">encryptionConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabaseEncryptionConfig">GoogleSpannerDatabaseEncryptionConfig</a></code> | *No description.* |
@@ -822,6 +845,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.property.versionRetentionPeriodInput">versionRetentionPeriodInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.property.databaseDialect">databaseDialect</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.property.ddl">ddl</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.property.defaultTimeZone">defaultTimeZone</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.property.deletionProtection">deletionProtection</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.property.enableDropProtection">enableDropProtection</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1024,6 +1048,16 @@ public java.util.List<java.lang.String> getDdlInput();
 
 ---
 
+##### `defaultTimeZoneInput`<sup>Optional</sup> <a name="defaultTimeZoneInput" id="@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.property.defaultTimeZoneInput"></a>
+
+```java
+public java.lang.String getDefaultTimeZoneInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `deletionProtectionInput`<sup>Optional</sup> <a name="deletionProtectionInput" id="@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.property.deletionProtectionInput"></a>
 
 ```java
@@ -1131,6 +1165,16 @@ public java.util.List<java.lang.String> getDdl();
 ```
 
 - *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `defaultTimeZone`<sup>Required</sup> <a name="defaultTimeZone" id="@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase.property.defaultTimeZone"></a>
+
+```java
+public java.lang.String getDefaultTimeZone();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -1247,6 +1291,7 @@ GoogleSpannerDatabaseConfig.builder()
     .name(java.lang.String)
 //  .databaseDialect(java.lang.String)
 //  .ddl(java.util.List<java.lang.String>)
+//  .defaultTimeZone(java.lang.String)
 //  .deletionProtection(java.lang.Boolean)
 //  .deletionProtection(IResolvable)
 //  .enableDropProtection(java.lang.Boolean)
@@ -1274,11 +1319,12 @@ GoogleSpannerDatabaseConfig.builder()
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabaseConfig.property.name">name</a></code> | <code>java.lang.String</code> | A unique identifier for the database, which cannot be changed after the instance is created. |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabaseConfig.property.databaseDialect">databaseDialect</a></code> | <code>java.lang.String</code> | The dialect of the Cloud Spanner Database. If it is not provided, "GOOGLE_STANDARD_SQL" will be used. Possible values: ["GOOGLE_STANDARD_SQL", "POSTGRESQL"]. |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabaseConfig.property.ddl">ddl</a></code> | <code>java.util.List<java.lang.String></code> | An optional list of DDL statements to run inside the database. Statements can create tables, indexes, etc. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabaseConfig.property.defaultTimeZone">defaultTimeZone</a></code> | <code>java.lang.String</code> | The default time zone for the database. |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabaseConfig.property.deletionProtection">deletionProtection</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether Terraform will be prevented from destroying the database. |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabaseConfig.property.enableDropProtection">enableDropProtection</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether drop protection is enabled for this database. |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabaseConfig.property.encryptionConfig">encryptionConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabaseEncryptionConfig">GoogleSpannerDatabaseEncryptionConfig</a></code> | encryption_config block. |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabaseConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_spanner_database#id GoogleSpannerDatabase#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabaseConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_spanner_database#project GoogleSpannerDatabase#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabaseConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#id GoogleSpannerDatabase#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabaseConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#project GoogleSpannerDatabase#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabaseConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabaseTimeouts">GoogleSpannerDatabaseTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabaseConfig.property.versionRetentionPeriod">versionRetentionPeriod</a></code> | <code>java.lang.String</code> | The retention period for the database. |
 
@@ -1364,7 +1410,7 @@ public java.lang.String getInstance();
 
 The instance to create the database on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_spanner_database#instance GoogleSpannerDatabase#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#instance GoogleSpannerDatabase#instance}
 
 ---
 
@@ -1380,7 +1426,7 @@ A unique identifier for the database, which cannot be changed after the instance
 
 Values are of the form '[a-z][-_a-z0-9]*[a-z0-9]'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_spanner_database#name GoogleSpannerDatabase#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#name GoogleSpannerDatabase#name}
 
 ---
 
@@ -1394,7 +1440,7 @@ public java.lang.String getDatabaseDialect();
 
 The dialect of the Cloud Spanner Database. If it is not provided, "GOOGLE_STANDARD_SQL" will be used. Possible values: ["GOOGLE_STANDARD_SQL", "POSTGRESQL"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_spanner_database#database_dialect GoogleSpannerDatabase#database_dialect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#database_dialect GoogleSpannerDatabase#database_dialect}
 
 ---
 
@@ -1416,7 +1462,24 @@ recorded in state are accurate. Limited updates to this field are supported, and
 newly appended DDL statements can be executed in an update. However, modifications
 to prior statements will create a plan that marks the resource for recreation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_spanner_database#ddl GoogleSpannerDatabase#ddl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#ddl GoogleSpannerDatabase#ddl}
+
+---
+
+##### `defaultTimeZone`<sup>Optional</sup> <a name="defaultTimeZone" id="@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabaseConfig.property.defaultTimeZone"></a>
+
+```java
+public java.lang.String getDefaultTimeZone();
+```
+
+- *Type:* java.lang.String
+
+The default time zone for the database.
+
+The default time zone must be a valid name
+from the tz database. Default value is "America/Los_angeles".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#default_time_zone GoogleSpannerDatabase#default_time_zone}
 
 ---
 
@@ -1437,7 +1500,7 @@ When the field is set to true or unset in Terraform state, a 'terraform apply'
 or 'terraform destroy' that would delete the database will fail.
 When the field is set to false, deleting the database is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_spanner_database#deletion_protection GoogleSpannerDatabase#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#deletion_protection GoogleSpannerDatabase#deletion_protection}
 
 ---
 
@@ -1459,7 +1522,7 @@ whereas setting “enableDropProtection” to true protects the database from de
 (2) Setting "enableDropProtection" to true also prevents the deletion of the parent instance containing the database.
 "deletion_protection" attribute does not provide protection against the deletion of the parent instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_spanner_database#enable_drop_protection GoogleSpannerDatabase#enable_drop_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#enable_drop_protection GoogleSpannerDatabase#enable_drop_protection}
 
 ---
 
@@ -1473,7 +1536,7 @@ public GoogleSpannerDatabaseEncryptionConfig getEncryptionConfig();
 
 encryption_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_spanner_database#encryption_config GoogleSpannerDatabase#encryption_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#encryption_config GoogleSpannerDatabase#encryption_config}
 
 ---
 
@@ -1485,7 +1548,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_spanner_database#id GoogleSpannerDatabase#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#id GoogleSpannerDatabase#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1500,7 +1563,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_spanner_database#project GoogleSpannerDatabase#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#project GoogleSpannerDatabase#project}.
 
 ---
 
@@ -1514,7 +1577,7 @@ public GoogleSpannerDatabaseTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_spanner_database#timeouts GoogleSpannerDatabase#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#timeouts GoogleSpannerDatabase#timeouts}
 
 ---
 
@@ -1534,7 +1597,7 @@ the values 1d, 24h, 1440m, and 86400s are equivalent. Default value is 1h.
 If this property is used, you must avoid adding new DDL statements to 'ddl' that
 update the database's version_retention_period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_spanner_database#version_retention_period GoogleSpannerDatabase#version_retention_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#version_retention_period GoogleSpannerDatabase#version_retention_period}
 
 ---
 
@@ -1573,7 +1636,7 @@ Fully qualified name of the KMS key to use to encrypt this database.
 This key must exist
 in the same location as the Spanner Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_spanner_database#kms_key_name GoogleSpannerDatabase#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#kms_key_name GoogleSpannerDatabase#kms_key_name}
 
 ---
 
@@ -1590,7 +1653,7 @@ Fully qualified name of the KMS keys to use to encrypt this database.
 The keys must exist
 in the same locations as the Spanner Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_spanner_database#kms_key_names GoogleSpannerDatabase#kms_key_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#kms_key_names GoogleSpannerDatabase#kms_key_names}
 
 ---
 
@@ -1612,9 +1675,9 @@ GoogleSpannerDatabaseTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabaseTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_spanner_database#create GoogleSpannerDatabase#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabaseTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_spanner_database#delete GoogleSpannerDatabase#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabaseTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_spanner_database#update GoogleSpannerDatabase#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabaseTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#create GoogleSpannerDatabase#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabaseTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#delete GoogleSpannerDatabase#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabaseTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#update GoogleSpannerDatabase#update}. |
 
 ---
 
@@ -1626,7 +1689,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_spanner_database#create GoogleSpannerDatabase#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#create GoogleSpannerDatabase#create}.
 
 ---
 
@@ -1638,7 +1701,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_spanner_database#delete GoogleSpannerDatabase#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#delete GoogleSpannerDatabase#delete}.
 
 ---
 
@@ -1650,7 +1713,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_spanner_database#update GoogleSpannerDatabase#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_spanner_database#update GoogleSpannerDatabase#update}.
 
 ---
 

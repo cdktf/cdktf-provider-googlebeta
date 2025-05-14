@@ -646,6 +646,7 @@ The following submodules are available:
 - [googleComputeBackendServiceIamMember](./googleComputeBackendServiceIamMember.typescript.md)
 - [googleComputeBackendServiceIamPolicy](./googleComputeBackendServiceIamPolicy.typescript.md)
 - [googleComputeBackendServiceSignedUrlKey](./googleComputeBackendServiceSignedUrlKey.typescript.md)
+- [googleComputeCrossSiteNetwork](./googleComputeCrossSiteNetwork.typescript.md)
 - [googleComputeDisk](./googleComputeDisk.typescript.md)
 - [googleComputeDiskAsyncReplication](./googleComputeDiskAsyncReplication.typescript.md)
 - [googleComputeDiskIamBinding](./googleComputeDiskIamBinding.typescript.md)

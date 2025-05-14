@@ -4,7 +4,7 @@
 
 ### GoogleApigeeTargetServer <a name="GoogleApigeeTargetServer" id="@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_apigee_target_server google_apigee_target_server}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_apigee_target_server google_apigee_target_server}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServer.Initializer"></a>
 
@@ -535,7 +535,7 @@ The construct id used in the generated config for the GoogleApigeeTargetServer t
 
 The id of the existing GoogleApigeeTargetServer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_apigee_target_server#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_apigee_target_server#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -994,7 +994,7 @@ new GoogleApigeeTargetServerConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerConfig.property.name">Name</a></code> | <code>string</code> | The resource id of this reference. Values must match the regular expression [\w\s-.]+. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerConfig.property.port">Port</a></code> | <code>double</code> | The port number this target connects to on the given host. Value must be between 1 and 65535, inclusive. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerConfig.property.description">Description</a></code> | <code>string</code> | A human-readable description of this TargetServer. |
-| <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_apigee_target_server#id GoogleApigeeTargetServer#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_apigee_target_server#id GoogleApigeeTargetServer#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerConfig.property.isEnabled">IsEnabled</a></code> | <code>object</code> | Enabling/disabling a TargetServer is useful when TargetServers are used in load balancing configurations, and one or more TargetServers need to taken out of rotation periodically. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerConfig.property.protocol">Protocol</a></code> | <code>string</code> | Immutable. The protocol used by this TargetServer. Possible values: ["HTTP", "HTTP2", "GRPC_TARGET", "GRPC", "EXTERNAL_CALLOUT"]. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerConfig.property.sSlInfo">SSlInfo</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfo">GoogleApigeeTargetServerSSlInfo</a></code> | s_sl_info block. |
@@ -1082,7 +1082,7 @@ public string EnvId { get; set; }
 
 The Apigee environment group associated with the Apigee environment, in the format 'organizations/{{org_name}}/environments/{{env_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_apigee_target_server#env_id GoogleApigeeTargetServer#env_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_apigee_target_server#env_id GoogleApigeeTargetServer#env_id}
 
 ---
 
@@ -1096,7 +1096,7 @@ public string Host { get; set; }
 
 The host name this target connects to. Value must be a valid hostname as described by RFC-1123.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_apigee_target_server#host GoogleApigeeTargetServer#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_apigee_target_server#host GoogleApigeeTargetServer#host}
 
 ---
 
@@ -1110,7 +1110,7 @@ public string Name { get; set; }
 
 The resource id of this reference. Values must match the regular expression [\w\s-.]+.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_apigee_target_server#name GoogleApigeeTargetServer#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_apigee_target_server#name GoogleApigeeTargetServer#name}
 
 ---
 
@@ -1124,7 +1124,7 @@ public double Port { get; set; }
 
 The port number this target connects to on the given host. Value must be between 1 and 65535, inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_apigee_target_server#port GoogleApigeeTargetServer#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_apigee_target_server#port GoogleApigeeTargetServer#port}
 
 ---
 
@@ -1138,7 +1138,7 @@ public string Description { get; set; }
 
 A human-readable description of this TargetServer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_apigee_target_server#description GoogleApigeeTargetServer#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_apigee_target_server#description GoogleApigeeTargetServer#description}
 
 ---
 
@@ -1150,7 +1150,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_apigee_target_server#id GoogleApigeeTargetServer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_apigee_target_server#id GoogleApigeeTargetServer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1169,7 +1169,7 @@ Enabling/disabling a TargetServer is useful when TargetServers are used in load 
 
 Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_apigee_target_server#is_enabled GoogleApigeeTargetServer#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_apigee_target_server#is_enabled GoogleApigeeTargetServer#is_enabled}
 
 ---
 
@@ -1183,7 +1183,7 @@ public string Protocol { get; set; }
 
 Immutable. The protocol used by this TargetServer. Possible values: ["HTTP", "HTTP2", "GRPC_TARGET", "GRPC", "EXTERNAL_CALLOUT"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_apigee_target_server#protocol GoogleApigeeTargetServer#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_apigee_target_server#protocol GoogleApigeeTargetServer#protocol}
 
 ---
 
@@ -1197,7 +1197,7 @@ public GoogleApigeeTargetServerSSlInfo SSlInfo { get; set; }
 
 s_sl_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_apigee_target_server#s_sl_info GoogleApigeeTargetServer#s_sl_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_apigee_target_server#s_sl_info GoogleApigeeTargetServer#s_sl_info}
 
 ---
 
@@ -1211,7 +1211,7 @@ public GoogleApigeeTargetServerTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_apigee_target_server#timeouts GoogleApigeeTargetServer#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_apigee_target_server#timeouts GoogleApigeeTargetServer#timeouts}
 
 ---
 
@@ -1227,6 +1227,7 @@ new GoogleApigeeTargetServerSSlInfo {
     string[] Ciphers = null,
     object ClientAuthEnabled = null,
     GoogleApigeeTargetServerSSlInfoCommonName CommonName = null,
+    object Enforce = null,
     object IgnoreValidationErrors = null,
     string KeyAlias = null,
     string KeyStore = null,
@@ -1243,6 +1244,7 @@ new GoogleApigeeTargetServerSSlInfo {
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfo.property.ciphers">Ciphers</a></code> | <code>string[]</code> | The SSL/TLS cipher suites to be used. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfo.property.clientAuthEnabled">ClientAuthEnabled</a></code> | <code>object</code> | Enables two-way TLS. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfo.property.commonName">CommonName</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfoCommonName">GoogleApigeeTargetServerSSlInfoCommonName</a></code> | common_name block. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfo.property.enforce">Enforce</a></code> | <code>object</code> | If true, TLS is strictly enforced. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfo.property.ignoreValidationErrors">IgnoreValidationErrors</a></code> | <code>object</code> | If true, Edge ignores TLS certificate errors. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfo.property.keyAlias">KeyAlias</a></code> | <code>string</code> | Required if clientAuthEnabled is true. The resource ID for the alias containing the private key and cert. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfo.property.keyStore">KeyStore</a></code> | <code>string</code> | Required if clientAuthEnabled is true. The resource ID of the keystore. |
@@ -1261,7 +1263,7 @@ public object Enabled { get; set; }
 
 Enables TLS. If false, neither one-way nor two-way TLS will be enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_apigee_target_server#enabled GoogleApigeeTargetServer#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_apigee_target_server#enabled GoogleApigeeTargetServer#enabled}
 
 ---
 
@@ -1277,7 +1279,7 @@ The SSL/TLS cipher suites to be used.
 
 For programmable proxies, it must be one of the cipher suite names listed in: http://docs.oracle.com/javase/8/docs/technotes/guides/security/StandardNames.html#ciphersuites. For configurable proxies, it must follow the configuration specified in: https://commondatastorage.googleapis.com/chromium-boringssl-docs/ssl.h.html#Cipher-suite-configuration. This setting has no effect for configurable proxies when negotiating TLS 1.3.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_apigee_target_server#ciphers GoogleApigeeTargetServer#ciphers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_apigee_target_server#ciphers GoogleApigeeTargetServer#ciphers}
 
 ---
 
@@ -1291,7 +1293,7 @@ public object ClientAuthEnabled { get; set; }
 
 Enables two-way TLS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_apigee_target_server#client_auth_enabled GoogleApigeeTargetServer#client_auth_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_apigee_target_server#client_auth_enabled GoogleApigeeTargetServer#client_auth_enabled}
 
 ---
 
@@ -1305,7 +1307,21 @@ public GoogleApigeeTargetServerSSlInfoCommonName CommonName { get; set; }
 
 common_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_apigee_target_server#common_name GoogleApigeeTargetServer#common_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_apigee_target_server#common_name GoogleApigeeTargetServer#common_name}
+
+---
+
+##### `Enforce`<sup>Optional</sup> <a name="Enforce" id="@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfo.property.enforce"></a>
+
+```csharp
+public object Enforce { get; set; }
+```
+
+- *Type:* object
+
+If true, TLS is strictly enforced.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_apigee_target_server#enforce GoogleApigeeTargetServer#enforce}
 
 ---
 
@@ -1321,7 +1337,7 @@ If true, Edge ignores TLS certificate errors.
 
 Valid when configuring TLS for target servers and target endpoints, and when configuring virtual hosts that use 2-way TLS. When used with a target endpoint/target server, if the backend system uses SNI and returns a cert with a subject Distinguished Name (DN) that does not match the hostname, there is no way to ignore the error and the connection fails.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_apigee_target_server#ignore_validation_errors GoogleApigeeTargetServer#ignore_validation_errors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_apigee_target_server#ignore_validation_errors GoogleApigeeTargetServer#ignore_validation_errors}
 
 ---
 
@@ -1335,7 +1351,7 @@ public string KeyAlias { get; set; }
 
 Required if clientAuthEnabled is true. The resource ID for the alias containing the private key and cert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_apigee_target_server#key_alias GoogleApigeeTargetServer#key_alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_apigee_target_server#key_alias GoogleApigeeTargetServer#key_alias}
 
 ---
 
@@ -1349,7 +1365,7 @@ public string KeyStore { get; set; }
 
 Required if clientAuthEnabled is true. The resource ID of the keystore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_apigee_target_server#key_store GoogleApigeeTargetServer#key_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_apigee_target_server#key_store GoogleApigeeTargetServer#key_store}
 
 ---
 
@@ -1363,7 +1379,7 @@ public string[] Protocols { get; set; }
 
 The TLS versioins to be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_apigee_target_server#protocols GoogleApigeeTargetServer#protocols}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_apigee_target_server#protocols GoogleApigeeTargetServer#protocols}
 
 ---
 
@@ -1377,7 +1393,7 @@ public string TrustStore { get; set; }
 
 The resource ID of the truststore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_apigee_target_server#trust_store GoogleApigeeTargetServer#trust_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_apigee_target_server#trust_store GoogleApigeeTargetServer#trust_store}
 
 ---
 
@@ -1413,7 +1429,7 @@ public string Value { get; set; }
 
 The TLS Common Name string of the certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_apigee_target_server#value GoogleApigeeTargetServer#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_apigee_target_server#value GoogleApigeeTargetServer#value}
 
 ---
 
@@ -1427,7 +1443,7 @@ public object WildcardMatch { get; set; }
 
 Indicates whether the cert should be matched against as a wildcard cert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_apigee_target_server#wildcard_match GoogleApigeeTargetServer#wildcard_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_apigee_target_server#wildcard_match GoogleApigeeTargetServer#wildcard_match}
 
 ---
 
@@ -1449,9 +1465,9 @@ new GoogleApigeeTargetServerTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_apigee_target_server#create GoogleApigeeTargetServer#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_apigee_target_server#delete GoogleApigeeTargetServer#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_apigee_target_server#update GoogleApigeeTargetServer#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_apigee_target_server#create GoogleApigeeTargetServer#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_apigee_target_server#delete GoogleApigeeTargetServer#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_apigee_target_server#update GoogleApigeeTargetServer#update}. |
 
 ---
 
@@ -1463,7 +1479,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_apigee_target_server#create GoogleApigeeTargetServer#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_apigee_target_server#create GoogleApigeeTargetServer#create}.
 
 ---
 
@@ -1475,7 +1491,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_apigee_target_server#delete GoogleApigeeTargetServer#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_apigee_target_server#delete GoogleApigeeTargetServer#delete}.
 
 ---
 
@@ -1487,7 +1503,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_apigee_target_server#update GoogleApigeeTargetServer#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_apigee_target_server#update GoogleApigeeTargetServer#update}.
 
 ---
 
@@ -1854,6 +1870,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfoOutputReference.resetCiphers">ResetCiphers</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfoOutputReference.resetClientAuthEnabled">ResetClientAuthEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfoOutputReference.resetCommonName">ResetCommonName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfoOutputReference.resetEnforce">ResetEnforce</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfoOutputReference.resetIgnoreValidationErrors">ResetIgnoreValidationErrors</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfoOutputReference.resetKeyAlias">ResetKeyAlias</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfoOutputReference.resetKeyStore">ResetKeyStore</a></code> | *No description.* |
@@ -2042,6 +2059,12 @@ private void ResetClientAuthEnabled()
 private void ResetCommonName()
 ```
 
+##### `ResetEnforce` <a name="ResetEnforce" id="@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfoOutputReference.resetEnforce"></a>
+
+```csharp
+private void ResetEnforce()
+```
+
 ##### `ResetIgnoreValidationErrors` <a name="ResetIgnoreValidationErrors" id="@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfoOutputReference.resetIgnoreValidationErrors"></a>
 
 ```csharp
@@ -2084,6 +2107,7 @@ private void ResetTrustStore()
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfoOutputReference.property.clientAuthEnabledInput">ClientAuthEnabledInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfoOutputReference.property.commonNameInput">CommonNameInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfoCommonName">GoogleApigeeTargetServerSSlInfoCommonName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfoOutputReference.property.enabledInput">EnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfoOutputReference.property.enforceInput">EnforceInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfoOutputReference.property.ignoreValidationErrorsInput">IgnoreValidationErrorsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfoOutputReference.property.keyAliasInput">KeyAliasInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfoOutputReference.property.keyStoreInput">KeyStoreInput</a></code> | <code>string</code> | *No description.* |
@@ -2092,6 +2116,7 @@ private void ResetTrustStore()
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfoOutputReference.property.ciphers">Ciphers</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfoOutputReference.property.clientAuthEnabled">ClientAuthEnabled</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfoOutputReference.property.enabled">Enabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfoOutputReference.property.enforce">Enforce</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfoOutputReference.property.ignoreValidationErrors">IgnoreValidationErrors</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfoOutputReference.property.keyAlias">KeyAlias</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfoOutputReference.property.keyStore">KeyStore</a></code> | <code>string</code> | *No description.* |
@@ -2175,6 +2200,16 @@ public object EnabledInput { get; }
 
 ---
 
+##### `EnforceInput`<sup>Optional</sup> <a name="EnforceInput" id="@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfoOutputReference.property.enforceInput"></a>
+
+```csharp
+public object EnforceInput { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `IgnoreValidationErrorsInput`<sup>Optional</sup> <a name="IgnoreValidationErrorsInput" id="@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfoOutputReference.property.ignoreValidationErrorsInput"></a>
 
 ```csharp
@@ -2249,6 +2284,16 @@ public object ClientAuthEnabled { get; }
 
 ```csharp
 public object Enabled { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `Enforce`<sup>Required</sup> <a name="Enforce" id="@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfoOutputReference.property.enforce"></a>
+
+```csharp
+public object Enforce { get; }
 ```
 
 - *Type:* object

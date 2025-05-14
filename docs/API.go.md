@@ -646,6 +646,7 @@ The following submodules are available:
 - [googleComputeBackendServiceIamMember](./googleComputeBackendServiceIamMember.go.md)
 - [googleComputeBackendServiceIamPolicy](./googleComputeBackendServiceIamPolicy.go.md)
 - [googleComputeBackendServiceSignedUrlKey](./googleComputeBackendServiceSignedUrlKey.go.md)
+- [googleComputeCrossSiteNetwork](./googleComputeCrossSiteNetwork.go.md)
 - [googleComputeDisk](./googleComputeDisk.go.md)
 - [googleComputeDiskAsyncReplication](./googleComputeDiskAsyncReplication.go.md)
 - [googleComputeDiskIamBinding](./googleComputeDiskIamBinding.go.md)

@@ -263,6 +263,7 @@ Object.defineProperty(exports, 'googleComputeBackendServiceIamBinding', { get: f
 Object.defineProperty(exports, 'googleComputeBackendServiceIamMember', { get: function () { return require('./google-compute-backend-service-iam-member'); } });
 Object.defineProperty(exports, 'googleComputeBackendServiceIamPolicy', { get: function () { return require('./google-compute-backend-service-iam-policy'); } });
 Object.defineProperty(exports, 'googleComputeBackendServiceSignedUrlKey', { get: function () { return require('./google-compute-backend-service-signed-url-key'); } });
+Object.defineProperty(exports, 'googleComputeCrossSiteNetwork', { get: function () { return require('./google-compute-cross-site-network'); } });
 Object.defineProperty(exports, 'googleComputeDisk', { get: function () { return require('./google-compute-disk'); } });
 Object.defineProperty(exports, 'googleComputeDiskAsyncReplication', { get: function () { return require('./google-compute-disk-async-replication'); } });
 Object.defineProperty(exports, 'googleComputeDiskIamBinding', { get: function () { return require('./google-compute-disk-iam-binding'); } });
