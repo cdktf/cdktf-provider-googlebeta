@@ -141,6 +141,7 @@ Object.defineProperty(exports, 'googleBigqueryJob', { get: function () { return 
 Object.defineProperty(exports, 'googleBigqueryReservation', { get: function () { return require('./google-bigquery-reservation'); } });
 Object.defineProperty(exports, 'googleBigqueryReservationAssignment', { get: function () { return require('./google-bigquery-reservation-assignment'); } });
 Object.defineProperty(exports, 'googleBigqueryRoutine', { get: function () { return require('./google-bigquery-routine'); } });
+Object.defineProperty(exports, 'googleBigqueryRowAccessPolicy', { get: function () { return require('./google-bigquery-row-access-policy'); } });
 Object.defineProperty(exports, 'googleBigqueryTable', { get: function () { return require('./google-bigquery-table'); } });
 Object.defineProperty(exports, 'googleBigqueryTableIamBinding', { get: function () { return require('./google-bigquery-table-iam-binding'); } });
 Object.defineProperty(exports, 'googleBigqueryTableIamMember', { get: function () { return require('./google-bigquery-table-iam-member'); } });
@@ -484,6 +485,10 @@ Object.defineProperty(exports, 'googleDataplexEntryType', { get: function () { r
 Object.defineProperty(exports, 'googleDataplexEntryTypeIamBinding', { get: function () { return require('./google-dataplex-entry-type-iam-binding'); } });
 Object.defineProperty(exports, 'googleDataplexEntryTypeIamMember', { get: function () { return require('./google-dataplex-entry-type-iam-member'); } });
 Object.defineProperty(exports, 'googleDataplexEntryTypeIamPolicy', { get: function () { return require('./google-dataplex-entry-type-iam-policy'); } });
+Object.defineProperty(exports, 'googleDataplexGlossary', { get: function () { return require('./google-dataplex-glossary'); } });
+Object.defineProperty(exports, 'googleDataplexGlossaryIamBinding', { get: function () { return require('./google-dataplex-glossary-iam-binding'); } });
+Object.defineProperty(exports, 'googleDataplexGlossaryIamMember', { get: function () { return require('./google-dataplex-glossary-iam-member'); } });
+Object.defineProperty(exports, 'googleDataplexGlossaryIamPolicy', { get: function () { return require('./google-dataplex-glossary-iam-policy'); } });
 Object.defineProperty(exports, 'googleDataplexLake', { get: function () { return require('./google-dataplex-lake'); } });
 Object.defineProperty(exports, 'googleDataplexLakeIamBinding', { get: function () { return require('./google-dataplex-lake-iam-binding'); } });
 Object.defineProperty(exports, 'googleDataplexLakeIamMember', { get: function () { return require('./google-dataplex-lake-iam-member'); } });
@@ -600,6 +605,9 @@ Object.defineProperty(exports, 'googleFirebaseAppCheckRecaptchaV3Config', { get:
 Object.defineProperty(exports, 'googleFirebaseAppCheckServiceConfig', { get: function () { return require('./google-firebase-app-check-service-config'); } });
 Object.defineProperty(exports, 'googleFirebaseAppHostingBackend', { get: function () { return require('./google-firebase-app-hosting-backend'); } });
 Object.defineProperty(exports, 'googleFirebaseAppHostingBuild', { get: function () { return require('./google-firebase-app-hosting-build'); } });
+Object.defineProperty(exports, 'googleFirebaseAppHostingDefaultDomain', { get: function () { return require('./google-firebase-app-hosting-default-domain'); } });
+Object.defineProperty(exports, 'googleFirebaseAppHostingDomain', { get: function () { return require('./google-firebase-app-hosting-domain'); } });
+Object.defineProperty(exports, 'googleFirebaseAppHostingTraffic', { get: function () { return require('./google-firebase-app-hosting-traffic'); } });
 Object.defineProperty(exports, 'googleFirebaseAppleApp', { get: function () { return require('./google-firebase-apple-app'); } });
 Object.defineProperty(exports, 'googleFirebaseDataConnectService', { get: function () { return require('./google-firebase-data-connect-service'); } });
 Object.defineProperty(exports, 'googleFirebaseDatabaseInstance', { get: function () { return require('./google-firebase-database-instance'); } });
@@ -709,6 +717,9 @@ Object.defineProperty(exports, 'googleIamProjectsPolicyBinding', { get: function
 Object.defineProperty(exports, 'googleIamWorkforcePool', { get: function () { return require('./google-iam-workforce-pool'); } });
 Object.defineProperty(exports, 'googleIamWorkforcePoolProvider', { get: function () { return require('./google-iam-workforce-pool-provider'); } });
 Object.defineProperty(exports, 'googleIamWorkloadIdentityPool', { get: function () { return require('./google-iam-workload-identity-pool'); } });
+Object.defineProperty(exports, 'googleIamWorkloadIdentityPoolIamBinding', { get: function () { return require('./google-iam-workload-identity-pool-iam-binding'); } });
+Object.defineProperty(exports, 'googleIamWorkloadIdentityPoolIamMember', { get: function () { return require('./google-iam-workload-identity-pool-iam-member'); } });
+Object.defineProperty(exports, 'googleIamWorkloadIdentityPoolIamPolicy', { get: function () { return require('./google-iam-workload-identity-pool-iam-policy'); } });
 Object.defineProperty(exports, 'googleIamWorkloadIdentityPoolProvider', { get: function () { return require('./google-iam-workload-identity-pool-provider'); } });
 Object.defineProperty(exports, 'googleIapAppEngineServiceIamBinding', { get: function () { return require('./google-iap-app-engine-service-iam-binding'); } });
 Object.defineProperty(exports, 'googleIapAppEngineServiceIamMember', { get: function () { return require('./google-iap-app-engine-service-iam-member'); } });
@@ -1188,6 +1199,7 @@ Object.defineProperty(exports, 'dataGoogleBeyondcorpAppConnection', { get: funct
 Object.defineProperty(exports, 'dataGoogleBeyondcorpAppConnector', { get: function () { return require('./data-google-beyondcorp-app-connector'); } });
 Object.defineProperty(exports, 'dataGoogleBeyondcorpAppGateway', { get: function () { return require('./data-google-beyondcorp-app-gateway'); } });
 Object.defineProperty(exports, 'dataGoogleBeyondcorpApplicationIamPolicy', { get: function () { return require('./data-google-beyondcorp-application-iam-policy'); } });
+Object.defineProperty(exports, 'dataGoogleBeyondcorpSecurityGateway', { get: function () { return require('./data-google-beyondcorp-security-gateway'); } });
 Object.defineProperty(exports, 'dataGoogleBeyondcorpSecurityGatewayIamPolicy', { get: function () { return require('./data-google-beyondcorp-security-gateway-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy', { get: function () { return require('./data-google-bigquery-analytics-hub-data-exchange-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleBigqueryAnalyticsHubListingIamPolicy', { get: function () { return require('./data-google-bigquery-analytics-hub-listing-iam-policy'); } });
@@ -1320,6 +1332,7 @@ Object.defineProperty(exports, 'dataGoogleDataplexAssetIamPolicy', { get: functi
 Object.defineProperty(exports, 'dataGoogleDataplexDatascanIamPolicy', { get: function () { return require('./data-google-dataplex-datascan-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleDataplexEntryGroupIamPolicy', { get: function () { return require('./data-google-dataplex-entry-group-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleDataplexEntryTypeIamPolicy', { get: function () { return require('./data-google-dataplex-entry-type-iam-policy'); } });
+Object.defineProperty(exports, 'dataGoogleDataplexGlossaryIamPolicy', { get: function () { return require('./data-google-dataplex-glossary-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleDataplexLakeIamPolicy', { get: function () { return require('./data-google-dataplex-lake-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleDataplexTaskIamPolicy', { get: function () { return require('./data-google-dataplex-task-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleDataplexZoneIamPolicy', { get: function () { return require('./data-google-dataplex-zone-iam-policy'); } });
@@ -1368,6 +1381,7 @@ Object.defineProperty(exports, 'dataGoogleIamPolicy', { get: function () { retur
 Object.defineProperty(exports, 'dataGoogleIamRole', { get: function () { return require('./data-google-iam-role'); } });
 Object.defineProperty(exports, 'dataGoogleIamTestablePermissions', { get: function () { return require('./data-google-iam-testable-permissions'); } });
 Object.defineProperty(exports, 'dataGoogleIamWorkloadIdentityPool', { get: function () { return require('./data-google-iam-workload-identity-pool'); } });
+Object.defineProperty(exports, 'dataGoogleIamWorkloadIdentityPoolIamPolicy', { get: function () { return require('./data-google-iam-workload-identity-pool-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleIamWorkloadIdentityPoolProvider', { get: function () { return require('./data-google-iam-workload-identity-pool-provider'); } });
 Object.defineProperty(exports, 'dataGoogleIapAppEngineServiceIamPolicy', { get: function () { return require('./data-google-iap-app-engine-service-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleIapAppEngineVersionIamPolicy', { get: function () { return require('./data-google-iap-app-engine-version-iam-policy'); } });
@@ -1403,6 +1417,7 @@ Object.defineProperty(exports, 'dataGoogleLoggingOrganizationSettings', { get: f
 Object.defineProperty(exports, 'dataGoogleLoggingProjectCmekSettings', { get: function () { return require('./data-google-logging-project-cmek-settings'); } });
 Object.defineProperty(exports, 'dataGoogleLoggingProjectSettings', { get: function () { return require('./data-google-logging-project-settings'); } });
 Object.defineProperty(exports, 'dataGoogleLoggingSink', { get: function () { return require('./data-google-logging-sink'); } });
+Object.defineProperty(exports, 'dataGoogleLustreInstance', { get: function () { return require('./data-google-lustre-instance'); } });
 Object.defineProperty(exports, 'dataGoogleMemcacheInstance', { get: function () { return require('./data-google-memcache-instance'); } });
 Object.defineProperty(exports, 'dataGoogleMemorystoreInstance', { get: function () { return require('./data-google-memorystore-instance'); } });
 Object.defineProperty(exports, 'dataGoogleMonitoringAppEngineService', { get: function () { return require('./data-google-monitoring-app-engine-service'); } });

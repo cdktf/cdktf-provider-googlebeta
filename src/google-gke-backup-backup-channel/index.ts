@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_gke_backup_backup_channel
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_gke_backup_backup_channel
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface GoogleGkeBackupBackupChannelConfig extends cdktf.TerraformMetaA
   /**
   * User specified descriptive string for this BackupChannel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_gke_backup_backup_channel#description GoogleGkeBackupBackupChannel#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_gke_backup_backup_channel#description GoogleGkeBackupBackupChannel#description}
   */
   readonly description?: string;
   /**
   * The project where Backups are allowed to be stored.
   * The format is 'projects/{project}'.
-  * {project} can only be a project number.
+  * {project} can be project number or project id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_gke_backup_backup_channel#destination_project GoogleGkeBackupBackupChannel#destination_project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_gke_backup_backup_channel#destination_project GoogleGkeBackupBackupChannel#destination_project}
   */
   readonly destinationProject: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_gke_backup_backup_channel#id GoogleGkeBackupBackupChannel#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_gke_backup_backup_channel#id GoogleGkeBackupBackupChannel#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -42,43 +42,43 @@ export interface GoogleGkeBackupBackupChannelConfig extends cdktf.TerraformMetaA
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_gke_backup_backup_channel#labels GoogleGkeBackupBackupChannel#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_gke_backup_backup_channel#labels GoogleGkeBackupBackupChannel#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The region of the Backup Channel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_gke_backup_backup_channel#location GoogleGkeBackupBackupChannel#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_gke_backup_backup_channel#location GoogleGkeBackupBackupChannel#location}
   */
   readonly location: string;
   /**
   * The full name of the BackupChannel Resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_gke_backup_backup_channel#name GoogleGkeBackupBackupChannel#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_gke_backup_backup_channel#name GoogleGkeBackupBackupChannel#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_gke_backup_backup_channel#project GoogleGkeBackupBackupChannel#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_gke_backup_backup_channel#project GoogleGkeBackupBackupChannel#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_gke_backup_backup_channel#timeouts GoogleGkeBackupBackupChannel#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_gke_backup_backup_channel#timeouts GoogleGkeBackupBackupChannel#timeouts}
   */
   readonly timeouts?: GoogleGkeBackupBackupChannelTimeouts;
 }
 export interface GoogleGkeBackupBackupChannelTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_gke_backup_backup_channel#create GoogleGkeBackupBackupChannel#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_gke_backup_backup_channel#create GoogleGkeBackupBackupChannel#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_gke_backup_backup_channel#delete GoogleGkeBackupBackupChannel#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_gke_backup_backup_channel#delete GoogleGkeBackupBackupChannel#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_gke_backup_backup_channel#update GoogleGkeBackupBackupChannel#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_gke_backup_backup_channel#update GoogleGkeBackupBackupChannel#update}
   */
   readonly update?: string;
 }
@@ -230,7 +230,7 @@ export class GoogleGkeBackupBackupChannelTimeoutsOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_gke_backup_backup_channel google_gke_backup_backup_channel}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_gke_backup_backup_channel google_gke_backup_backup_channel}
 */
 export class GoogleGkeBackupBackupChannel extends cdktf.TerraformResource {
 
@@ -246,7 +246,7 @@ export class GoogleGkeBackupBackupChannel extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleGkeBackupBackupChannel resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleGkeBackupBackupChannel to import
-  * @param importFromId The id of the existing GoogleGkeBackupBackupChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_gke_backup_backup_channel#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleGkeBackupBackupChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_gke_backup_backup_channel#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleGkeBackupBackupChannel to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -258,7 +258,7 @@ export class GoogleGkeBackupBackupChannel extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_gke_backup_backup_channel google_gke_backup_backup_channel} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_gke_backup_backup_channel google_gke_backup_backup_channel} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -269,7 +269,7 @@ export class GoogleGkeBackupBackupChannel extends cdktf.TerraformResource {
       terraformResourceType: 'google_gke_backup_backup_channel',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.35.0',
+        providerVersion: '6.36.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
