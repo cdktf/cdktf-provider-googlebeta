@@ -4,7 +4,7 @@
 
 ### GoogleDataprocMetastoreTableIamBinding <a name="GoogleDataprocMetastoreTableIamBinding" id="@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding google_dataproc_metastore_table_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding google_dataproc_metastore_table_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBinding.Initializer"></a>
 
@@ -46,15 +46,15 @@ GoogleDataprocMetastoreTableIamBinding.Builder.create(Construct scope, java.lang
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBinding.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBinding.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBinding.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBinding.Initializer.parameter.databaseId">databaseId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#database_id GoogleDataprocMetastoreTableIamBinding#database_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBinding.Initializer.parameter.members">members</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#members GoogleDataprocMetastoreTableIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBinding.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#role GoogleDataprocMetastoreTableIamBinding#role}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBinding.Initializer.parameter.serviceId">serviceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#service_id GoogleDataprocMetastoreTableIamBinding#service_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBinding.Initializer.parameter.table">table</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#table GoogleDataprocMetastoreTableIamBinding#table}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBinding.Initializer.parameter.databaseId">databaseId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#database_id GoogleDataprocMetastoreTableIamBinding#database_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBinding.Initializer.parameter.members">members</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#members GoogleDataprocMetastoreTableIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBinding.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#role GoogleDataprocMetastoreTableIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBinding.Initializer.parameter.serviceId">serviceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#service_id GoogleDataprocMetastoreTableIamBinding#service_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBinding.Initializer.parameter.table">table</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#table GoogleDataprocMetastoreTableIamBinding#table}. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBinding.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBindingCondition">GoogleDataprocMetastoreTableIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBinding.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#id GoogleDataprocMetastoreTableIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBinding.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#location GoogleDataprocMetastoreTableIamBinding#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBinding.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#project GoogleDataprocMetastoreTableIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBinding.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#id GoogleDataprocMetastoreTableIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBinding.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#location GoogleDataprocMetastoreTableIamBinding#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBinding.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#project GoogleDataprocMetastoreTableIamBinding#project}. |
 
 ---
 
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#database_id GoogleDataprocMetastoreTableIamBinding#database_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#database_id GoogleDataprocMetastoreTableIamBinding#database_id}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#members GoogleDataprocMetastoreTableIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#members GoogleDataprocMetastoreTableIamBinding#members}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#role GoogleDataprocMetastoreTableIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#role GoogleDataprocMetastoreTableIamBinding#role}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#service_id GoogleDataprocMetastoreTableIamBinding#service_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#service_id GoogleDataprocMetastoreTableIamBinding#service_id}.
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#table GoogleDataprocMetastoreTableIamBinding#table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#table GoogleDataprocMetastoreTableIamBinding#table}.
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#condition GoogleDataprocMetastoreTableIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#condition GoogleDataprocMetastoreTableIamBinding#condition}
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#id GoogleDataprocMetastoreTableIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#id GoogleDataprocMetastoreTableIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -183,7 +183,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#location GoogleDataprocMetastoreTableIamBinding#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#location GoogleDataprocMetastoreTableIamBinding#location}.
 
 ---
 
@@ -191,7 +191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#project GoogleDataprocMetastoreTableIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#project GoogleDataprocMetastoreTableIamBinding#project}.
 
 ---
 
@@ -659,7 +659,7 @@ The construct id used in the generated config for the GoogleDataprocMetastoreTab
 
 The id of the existing GoogleDataprocMetastoreTableIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1081,9 +1081,9 @@ GoogleDataprocMetastoreTableIamBindingCondition.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBindingCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#expression GoogleDataprocMetastoreTableIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBindingCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#title GoogleDataprocMetastoreTableIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBindingCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#description GoogleDataprocMetastoreTableIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBindingCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#expression GoogleDataprocMetastoreTableIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBindingCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#title GoogleDataprocMetastoreTableIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBindingCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#description GoogleDataprocMetastoreTableIamBinding#description}. |
 
 ---
 
@@ -1095,7 +1095,7 @@ public java.lang.String getExpression();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#expression GoogleDataprocMetastoreTableIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#expression GoogleDataprocMetastoreTableIamBinding#expression}.
 
 ---
 
@@ -1107,7 +1107,7 @@ public java.lang.String getTitle();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#title GoogleDataprocMetastoreTableIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#title GoogleDataprocMetastoreTableIamBinding#title}.
 
 ---
 
@@ -1119,7 +1119,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#description GoogleDataprocMetastoreTableIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#description GoogleDataprocMetastoreTableIamBinding#description}.
 
 ---
 
@@ -1165,15 +1165,15 @@ GoogleDataprocMetastoreTableIamBindingConfig.builder()
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBindingConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBindingConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBindingConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBindingConfig.property.databaseId">databaseId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#database_id GoogleDataprocMetastoreTableIamBinding#database_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBindingConfig.property.members">members</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#members GoogleDataprocMetastoreTableIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBindingConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#role GoogleDataprocMetastoreTableIamBinding#role}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBindingConfig.property.serviceId">serviceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#service_id GoogleDataprocMetastoreTableIamBinding#service_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBindingConfig.property.table">table</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#table GoogleDataprocMetastoreTableIamBinding#table}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBindingConfig.property.databaseId">databaseId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#database_id GoogleDataprocMetastoreTableIamBinding#database_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBindingConfig.property.members">members</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#members GoogleDataprocMetastoreTableIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBindingConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#role GoogleDataprocMetastoreTableIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBindingConfig.property.serviceId">serviceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#service_id GoogleDataprocMetastoreTableIamBinding#service_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBindingConfig.property.table">table</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#table GoogleDataprocMetastoreTableIamBinding#table}. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBindingConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBindingCondition">GoogleDataprocMetastoreTableIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBindingConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#id GoogleDataprocMetastoreTableIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBindingConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#location GoogleDataprocMetastoreTableIamBinding#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBindingConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#project GoogleDataprocMetastoreTableIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBindingConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#id GoogleDataprocMetastoreTableIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBindingConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#location GoogleDataprocMetastoreTableIamBinding#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBindingConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#project GoogleDataprocMetastoreTableIamBinding#project}. |
 
 ---
 
@@ -1255,7 +1255,7 @@ public java.lang.String getDatabaseId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#database_id GoogleDataprocMetastoreTableIamBinding#database_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#database_id GoogleDataprocMetastoreTableIamBinding#database_id}.
 
 ---
 
@@ -1267,7 +1267,7 @@ public java.util.List<java.lang.String> getMembers();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#members GoogleDataprocMetastoreTableIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#members GoogleDataprocMetastoreTableIamBinding#members}.
 
 ---
 
@@ -1279,7 +1279,7 @@ public java.lang.String getRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#role GoogleDataprocMetastoreTableIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#role GoogleDataprocMetastoreTableIamBinding#role}.
 
 ---
 
@@ -1291,7 +1291,7 @@ public java.lang.String getServiceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#service_id GoogleDataprocMetastoreTableIamBinding#service_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#service_id GoogleDataprocMetastoreTableIamBinding#service_id}.
 
 ---
 
@@ -1303,7 +1303,7 @@ public java.lang.String getTable();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#table GoogleDataprocMetastoreTableIamBinding#table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#table GoogleDataprocMetastoreTableIamBinding#table}.
 
 ---
 
@@ -1317,7 +1317,7 @@ public GoogleDataprocMetastoreTableIamBindingCondition getCondition();
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#condition GoogleDataprocMetastoreTableIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#condition GoogleDataprocMetastoreTableIamBinding#condition}
 
 ---
 
@@ -1329,7 +1329,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#id GoogleDataprocMetastoreTableIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#id GoogleDataprocMetastoreTableIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1344,7 +1344,7 @@ public java.lang.String getLocation();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#location GoogleDataprocMetastoreTableIamBinding#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#location GoogleDataprocMetastoreTableIamBinding#location}.
 
 ---
 
@@ -1356,7 +1356,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_dataproc_metastore_table_iam_binding#project GoogleDataprocMetastoreTableIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataproc_metastore_table_iam_binding#project GoogleDataprocMetastoreTableIamBinding#project}.
 
 ---
 
