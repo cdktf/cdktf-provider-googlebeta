@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeControlPlaneAccess.GoogleApigeeControlPlaneAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeecontrolplaneaccess"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleapigeecontrolplaneaccess"
 
 googleapigeecontrolplaneaccess.NewGoogleApigeeControlPlaneAccess(scope Construct, id *string, config GoogleApigeeControlPlaneAccessConfig) GoogleApigeeControlPlaneAccess
 ```
@@ -419,7 +419,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleApigeeControlPlaneAccess.GoogleApigeeControlPlaneAccess.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeecontrolplaneaccess"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleapigeecontrolplaneaccess"
 
 googleapigeecontrolplaneaccess.GoogleApigeeControlPlaneAccess_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleApigeeControlPlaneAccess.GoogleApigeeControlPlaneAccess.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeecontrolplaneaccess"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleapigeecontrolplaneaccess"
 
 googleapigeecontrolplaneaccess.GoogleApigeeControlPlaneAccess_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ googleapigeecontrolplaneaccess.GoogleApigeeControlPlaneAccess_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleApigeeControlPlaneAccess.GoogleApigeeControlPlaneAccess.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeecontrolplaneaccess"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleapigeecontrolplaneaccess"
 
 googleapigeecontrolplaneaccess.GoogleApigeeControlPlaneAccess_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ googleapigeecontrolplaneaccess.GoogleApigeeControlPlaneAccess_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleApigeeControlPlaneAccess.GoogleApigeeControlPlaneAccess.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeecontrolplaneaccess"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleapigeecontrolplaneaccess"
 
 googleapigeecontrolplaneaccess.GoogleApigeeControlPlaneAccess_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -818,7 +818,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeControlPlaneAccess.GoogleApigeeControlPlaneAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeecontrolplaneaccess"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleapigeecontrolplaneaccess"
 
 &googleapigeecontrolplaneaccess.GoogleApigeeControlPlaneAccessConfig {
 	Connection: interface{},
@@ -832,7 +832,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapige
 	AnalyticsPublisherIdentities: *[]*string,
 	Id: *string,
 	SynchronizerIdentities: *[]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleApigeeControlPlaneAccess.GoogleApigeeControlPlaneAccessTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15.googleApigeeControlPlaneAccess.GoogleApigeeControlPlaneAccessTimeouts,
 }
 ```
 
@@ -1011,7 +1011,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeControlPlaneAccess.GoogleApigeeControlPlaneAccessTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeecontrolplaneaccess"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleapigeecontrolplaneaccess"
 
 &googleapigeecontrolplaneaccess.GoogleApigeeControlPlaneAccessTimeouts {
 	Create: *string,
@@ -1073,7 +1073,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeControlPlaneAccess.GoogleApigeeControlPlaneAccessTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeecontrolplaneaccess"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleapigeecontrolplaneaccess"
 
 googleapigeecontrolplaneaccess.NewGoogleApigeeControlPlaneAccessTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApigeeControlPlaneAccessTimeoutsOutputReference
 ```
