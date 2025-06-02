@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeDnsZone.GoogleApigeeDnsZone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeednszone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleapigeednszone"
 
 googleapigeednszone.NewGoogleApigeeDnsZone(scope Construct, id *string, config GoogleApigeeDnsZoneConfig) GoogleApigeeDnsZone
 ```
@@ -418,7 +418,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleApigeeDnsZone.GoogleApigeeDnsZone.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeednszone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleapigeednszone"
 
 googleapigeednszone.GoogleApigeeDnsZone_IsConstruct(x interface{}) *bool
 ```
@@ -450,7 +450,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleApigeeDnsZone.GoogleApigeeDnsZone.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeednszone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleapigeednszone"
 
 googleapigeednszone.GoogleApigeeDnsZone_IsTerraformElement(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ googleapigeednszone.GoogleApigeeDnsZone_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleApigeeDnsZone.GoogleApigeeDnsZone.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeednszone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleapigeednszone"
 
 googleapigeednszone.GoogleApigeeDnsZone_IsTerraformResource(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ googleapigeednszone.GoogleApigeeDnsZone_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleApigeeDnsZone.GoogleApigeeDnsZone.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeednszone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleapigeednszone"
 
 googleapigeednszone.GoogleApigeeDnsZone_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -872,7 +872,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeDnsZone.GoogleApigeeDnsZoneConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeednszone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleapigeednszone"
 
 &googleapigeednszone.GoogleApigeeDnsZoneConfig {
 	Connection: interface{},
@@ -886,9 +886,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapige
 	DnsZoneId: *string,
 	Domain: *string,
 	OrgId: *string,
-	PeeringConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleApigeeDnsZone.GoogleApigeeDnsZonePeeringConfig,
+	PeeringConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15.googleApigeeDnsZone.GoogleApigeeDnsZonePeeringConfig,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleApigeeDnsZone.GoogleApigeeDnsZoneTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15.googleApigeeDnsZone.GoogleApigeeDnsZoneTimeouts,
 }
 ```
 
@@ -1087,7 +1087,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeDnsZone.GoogleApigeeDnsZonePeeringConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeednszone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleapigeednszone"
 
 &googleapigeednszone.GoogleApigeeDnsZonePeeringConfig {
 	TargetNetworkId: *string,
@@ -1137,7 +1137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeDnsZone.GoogleApigeeDnsZoneTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeednszone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleapigeednszone"
 
 &googleapigeednszone.GoogleApigeeDnsZoneTimeouts {
 	Create: *string,
@@ -1185,7 +1185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeDnsZone.GoogleApigeeDnsZonePeeringConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeednszone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleapigeednszone"
 
 googleapigeednszone.NewGoogleApigeeDnsZonePeeringConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApigeeDnsZonePeeringConfigOutputReference
 ```
@@ -1478,7 +1478,7 @@ func InternalValue() GoogleApigeeDnsZonePeeringConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeDnsZone.GoogleApigeeDnsZoneTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeednszone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleapigeednszone"
 
 googleapigeednszone.NewGoogleApigeeDnsZoneTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApigeeDnsZoneTimeoutsOutputReference
 ```
