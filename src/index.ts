@@ -487,6 +487,7 @@ export * as googleDataplexDatascan from './google-dataplex-datascan';
 export * as googleDataplexDatascanIamBinding from './google-dataplex-datascan-iam-binding';
 export * as googleDataplexDatascanIamMember from './google-dataplex-datascan-iam-member';
 export * as googleDataplexDatascanIamPolicy from './google-dataplex-datascan-iam-policy';
+export * as googleDataplexEntry from './google-dataplex-entry';
 export * as googleDataplexEntryGroup from './google-dataplex-entry-group';
 export * as googleDataplexEntryGroupIamBinding from './google-dataplex-entry-group-iam-binding';
 export * as googleDataplexEntryGroupIamMember from './google-dataplex-entry-group-iam-member';
@@ -1224,6 +1225,7 @@ export * as dataGoogleBigqueryConnectionIamPolicy from './data-google-bigquery-c
 export * as dataGoogleBigqueryDatapolicyDataPolicyIamPolicy from './data-google-bigquery-datapolicy-data-policy-iam-policy';
 export * as dataGoogleBigqueryDataset from './data-google-bigquery-dataset';
 export * as dataGoogleBigqueryDatasetIamPolicy from './data-google-bigquery-dataset-iam-policy';
+export * as dataGoogleBigqueryDatasets from './data-google-bigquery-datasets';
 export * as dataGoogleBigqueryDefaultServiceAccount from './data-google-bigquery-default-service-account';
 export * as dataGoogleBigqueryTable from './data-google-bigquery-table';
 export * as dataGoogleBigqueryTableIamPolicy from './data-google-bigquery-table-iam-policy';

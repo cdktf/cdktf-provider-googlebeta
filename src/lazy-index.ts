@@ -487,6 +487,7 @@ Object.defineProperty(exports, 'googleDataplexDatascan', { get: function () { re
 Object.defineProperty(exports, 'googleDataplexDatascanIamBinding', { get: function () { return require('./google-dataplex-datascan-iam-binding'); } });
 Object.defineProperty(exports, 'googleDataplexDatascanIamMember', { get: function () { return require('./google-dataplex-datascan-iam-member'); } });
 Object.defineProperty(exports, 'googleDataplexDatascanIamPolicy', { get: function () { return require('./google-dataplex-datascan-iam-policy'); } });
+Object.defineProperty(exports, 'googleDataplexEntry', { get: function () { return require('./google-dataplex-entry'); } });
 Object.defineProperty(exports, 'googleDataplexEntryGroup', { get: function () { return require('./google-dataplex-entry-group'); } });
 Object.defineProperty(exports, 'googleDataplexEntryGroupIamBinding', { get: function () { return require('./google-dataplex-entry-group-iam-binding'); } });
 Object.defineProperty(exports, 'googleDataplexEntryGroupIamMember', { get: function () { return require('./google-dataplex-entry-group-iam-member'); } });
@@ -1224,6 +1225,7 @@ Object.defineProperty(exports, 'dataGoogleBigqueryConnectionIamPolicy', { get: f
 Object.defineProperty(exports, 'dataGoogleBigqueryDatapolicyDataPolicyIamPolicy', { get: function () { return require('./data-google-bigquery-datapolicy-data-policy-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleBigqueryDataset', { get: function () { return require('./data-google-bigquery-dataset'); } });
 Object.defineProperty(exports, 'dataGoogleBigqueryDatasetIamPolicy', { get: function () { return require('./data-google-bigquery-dataset-iam-policy'); } });
+Object.defineProperty(exports, 'dataGoogleBigqueryDatasets', { get: function () { return require('./data-google-bigquery-datasets'); } });
 Object.defineProperty(exports, 'dataGoogleBigqueryDefaultServiceAccount', { get: function () { return require('./data-google-bigquery-default-service-account'); } });
 Object.defineProperty(exports, 'dataGoogleBigqueryTable', { get: function () { return require('./data-google-bigquery-table'); } });
 Object.defineProperty(exports, 'dataGoogleBigqueryTableIamPolicy', { get: function () { return require('./data-google-bigquery-table-iam-policy'); } });
