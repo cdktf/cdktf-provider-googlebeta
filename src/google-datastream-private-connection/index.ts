@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_datastream_private_connection
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_datastream_private_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface GoogleDatastreamPrivateConnectionConfig extends cdktf.Terraform
   /**
   * If set to true, will skip validations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_datastream_private_connection#create_without_validation GoogleDatastreamPrivateConnection#create_without_validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_datastream_private_connection#create_without_validation GoogleDatastreamPrivateConnection#create_without_validation}
   */
   readonly createWithoutValidation?: boolean | cdktf.IResolvable;
   /**
   * Display name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_datastream_private_connection#display_name GoogleDatastreamPrivateConnection#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_datastream_private_connection#display_name GoogleDatastreamPrivateConnection#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_datastream_private_connection#id GoogleDatastreamPrivateConnection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_datastream_private_connection#id GoogleDatastreamPrivateConnection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -37,37 +32,43 @@ export interface GoogleDatastreamPrivateConnectionConfig extends cdktf.Terraform
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_datastream_private_connection#labels GoogleDatastreamPrivateConnection#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_datastream_private_connection#labels GoogleDatastreamPrivateConnection#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The name of the location this private connection is located in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_datastream_private_connection#location GoogleDatastreamPrivateConnection#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_datastream_private_connection#location GoogleDatastreamPrivateConnection#location}
   */
   readonly location: string;
   /**
   * The private connectivity identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_datastream_private_connection#private_connection_id GoogleDatastreamPrivateConnection#private_connection_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_datastream_private_connection#private_connection_id GoogleDatastreamPrivateConnection#private_connection_id}
   */
   readonly privateConnectionId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_datastream_private_connection#project GoogleDatastreamPrivateConnection#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_datastream_private_connection#project GoogleDatastreamPrivateConnection#project}
   */
   readonly project?: string;
   /**
+  * psc_interface_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_datastream_private_connection#psc_interface_config GoogleDatastreamPrivateConnection#psc_interface_config}
+  */
+  readonly pscInterfaceConfig?: GoogleDatastreamPrivateConnectionPscInterfaceConfig;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_datastream_private_connection#timeouts GoogleDatastreamPrivateConnection#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_datastream_private_connection#timeouts GoogleDatastreamPrivateConnection#timeouts}
   */
   readonly timeouts?: GoogleDatastreamPrivateConnectionTimeouts;
   /**
   * vpc_peering_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_datastream_private_connection#vpc_peering_config GoogleDatastreamPrivateConnection#vpc_peering_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_datastream_private_connection#vpc_peering_config GoogleDatastreamPrivateConnection#vpc_peering_config}
   */
-  readonly vpcPeeringConfig: GoogleDatastreamPrivateConnectionVpcPeeringConfig;
+  readonly vpcPeeringConfig?: GoogleDatastreamPrivateConnectionVpcPeeringConfig;
 }
 export interface GoogleDatastreamPrivateConnectionError {
 }
@@ -150,17 +151,106 @@ export class GoogleDatastreamPrivateConnectionErrorList extends cdktf.ComplexLis
     return new GoogleDatastreamPrivateConnectionErrorOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface GoogleDatastreamPrivateConnectionPscInterfaceConfig {
+  /**
+  * Fully qualified name of the network attachment that Datastream will connect to.
+  * Format: projects/{project}/regions/{region}/networkAttachments/{name}
+  * 
+  * To get Datastream project for the accepted list:
+  * 'gcloud datastream private-connections create [PC ID] --location=[LOCATION] --network-attachment=[NA URI] --validate-only --display-name=[ANY STRING]'
+  * Add Datastream project to the attachment accepted list:
+  * 'gcloud compute network-attachments update [NA URI] --region=[NA region] --producer-accept-list=[TP from prev command]'
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_datastream_private_connection#network_attachment GoogleDatastreamPrivateConnection#network_attachment}
+  */
+  readonly networkAttachment: string;
+}
+
+export function googleDatastreamPrivateConnectionPscInterfaceConfigToTerraform(struct?: GoogleDatastreamPrivateConnectionPscInterfaceConfigOutputReference | GoogleDatastreamPrivateConnectionPscInterfaceConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    network_attachment: cdktf.stringToTerraform(struct!.networkAttachment),
+  }
+}
+
+
+export function googleDatastreamPrivateConnectionPscInterfaceConfigToHclTerraform(struct?: GoogleDatastreamPrivateConnectionPscInterfaceConfigOutputReference | GoogleDatastreamPrivateConnectionPscInterfaceConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    network_attachment: {
+      value: cdktf.stringToHclTerraform(struct!.networkAttachment),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDatastreamPrivateConnectionPscInterfaceConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDatastreamPrivateConnectionPscInterfaceConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._networkAttachment !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.networkAttachment = this._networkAttachment;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDatastreamPrivateConnectionPscInterfaceConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._networkAttachment = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._networkAttachment = value.networkAttachment;
+    }
+  }
+
+  // network_attachment - computed: false, optional: false, required: true
+  private _networkAttachment?: string; 
+  public get networkAttachment() {
+    return this.getStringAttribute('network_attachment');
+  }
+  public set networkAttachment(value: string) {
+    this._networkAttachment = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkAttachmentInput() {
+    return this._networkAttachment;
+  }
+}
 export interface GoogleDatastreamPrivateConnectionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_datastream_private_connection#create GoogleDatastreamPrivateConnection#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_datastream_private_connection#create GoogleDatastreamPrivateConnection#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_datastream_private_connection#delete GoogleDatastreamPrivateConnection#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_datastream_private_connection#delete GoogleDatastreamPrivateConnection#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_datastream_private_connection#update GoogleDatastreamPrivateConnection#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_datastream_private_connection#update GoogleDatastreamPrivateConnection#update}
   */
   readonly update?: string;
 }
@@ -314,14 +404,14 @@ export interface GoogleDatastreamPrivateConnectionVpcPeeringConfig {
   /**
   * A free subnet for peering. (CIDR of /29)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_datastream_private_connection#subnet GoogleDatastreamPrivateConnection#subnet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_datastream_private_connection#subnet GoogleDatastreamPrivateConnection#subnet}
   */
   readonly subnet: string;
   /**
   * Fully qualified name of the VPC that Datastream will peer to.
   * Format: projects/{project}/global/{networks}/{name}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_datastream_private_connection#vpc GoogleDatastreamPrivateConnection#vpc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_datastream_private_connection#vpc GoogleDatastreamPrivateConnection#vpc}
   */
   readonly vpc: string;
 }
@@ -428,7 +518,7 @@ export class GoogleDatastreamPrivateConnectionVpcPeeringConfigOutputReference ex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_datastream_private_connection google_datastream_private_connection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_datastream_private_connection google_datastream_private_connection}
 */
 export class GoogleDatastreamPrivateConnection extends cdktf.TerraformResource {
 
@@ -444,7 +534,7 @@ export class GoogleDatastreamPrivateConnection extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleDatastreamPrivateConnection resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleDatastreamPrivateConnection to import
-  * @param importFromId The id of the existing GoogleDatastreamPrivateConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_datastream_private_connection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleDatastreamPrivateConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_datastream_private_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleDatastreamPrivateConnection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -456,7 +546,7 @@ export class GoogleDatastreamPrivateConnection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_datastream_private_connection google_datastream_private_connection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_datastream_private_connection google_datastream_private_connection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -467,7 +557,7 @@ export class GoogleDatastreamPrivateConnection extends cdktf.TerraformResource {
       terraformResourceType: 'google_datastream_private_connection',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.37.0',
+        providerVersion: '6.38.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -485,6 +575,7 @@ export class GoogleDatastreamPrivateConnection extends cdktf.TerraformResource {
     this._location = config.location;
     this._privateConnectionId = config.privateConnectionId;
     this._project = config.project;
+    this._pscInterfaceConfig.internalValue = config.pscInterfaceConfig;
     this._timeouts.internalValue = config.timeouts;
     this._vpcPeeringConfig.internalValue = config.vpcPeeringConfig;
   }
@@ -624,6 +715,22 @@ export class GoogleDatastreamPrivateConnection extends cdktf.TerraformResource {
     return this._terraformLabels;
   }
 
+  // psc_interface_config - computed: false, optional: true, required: false
+  private _pscInterfaceConfig = new GoogleDatastreamPrivateConnectionPscInterfaceConfigOutputReference(this, "psc_interface_config");
+  public get pscInterfaceConfig() {
+    return this._pscInterfaceConfig;
+  }
+  public putPscInterfaceConfig(value: GoogleDatastreamPrivateConnectionPscInterfaceConfig) {
+    this._pscInterfaceConfig.internalValue = value;
+  }
+  public resetPscInterfaceConfig() {
+    this._pscInterfaceConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pscInterfaceConfigInput() {
+    return this._pscInterfaceConfig.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new GoogleDatastreamPrivateConnectionTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -640,13 +747,16 @@ export class GoogleDatastreamPrivateConnection extends cdktf.TerraformResource {
     return this._timeouts.internalValue;
   }
 
-  // vpc_peering_config - computed: false, optional: false, required: true
+  // vpc_peering_config - computed: false, optional: true, required: false
   private _vpcPeeringConfig = new GoogleDatastreamPrivateConnectionVpcPeeringConfigOutputReference(this, "vpc_peering_config");
   public get vpcPeeringConfig() {
     return this._vpcPeeringConfig;
   }
   public putVpcPeeringConfig(value: GoogleDatastreamPrivateConnectionVpcPeeringConfig) {
     this._vpcPeeringConfig.internalValue = value;
+  }
+  public resetVpcPeeringConfig() {
+    this._vpcPeeringConfig.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get vpcPeeringConfigInput() {
@@ -666,6 +776,7 @@ export class GoogleDatastreamPrivateConnection extends cdktf.TerraformResource {
       location: cdktf.stringToTerraform(this._location),
       private_connection_id: cdktf.stringToTerraform(this._privateConnectionId),
       project: cdktf.stringToTerraform(this._project),
+      psc_interface_config: googleDatastreamPrivateConnectionPscInterfaceConfigToTerraform(this._pscInterfaceConfig.internalValue),
       timeouts: googleDatastreamPrivateConnectionTimeoutsToTerraform(this._timeouts.internalValue),
       vpc_peering_config: googleDatastreamPrivateConnectionVpcPeeringConfigToTerraform(this._vpcPeeringConfig.internalValue),
     };
@@ -714,6 +825,12 @@ export class GoogleDatastreamPrivateConnection extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      psc_interface_config: {
+        value: googleDatastreamPrivateConnectionPscInterfaceConfigToHclTerraform(this._pscInterfaceConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDatastreamPrivateConnectionPscInterfaceConfigList",
       },
       timeouts: {
         value: googleDatastreamPrivateConnectionTimeoutsToHclTerraform(this._timeouts.internalValue),

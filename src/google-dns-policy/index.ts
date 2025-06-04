@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dns_policy
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dns_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +10,7 @@ export interface GoogleDnsPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * A textual description field. Defaults to 'Managed by Terraform'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dns_policy#description GoogleDnsPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dns_policy#description GoogleDnsPolicy#description}
   */
   readonly description?: string;
   /**
@@ -24,18 +19,18 @@ export interface GoogleDnsPolicyConfig extends cdktf.TerraformMetaArguments {
   * virtual IP address will be allocated from each of the sub-networks
   * that are bound to this policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dns_policy#enable_inbound_forwarding GoogleDnsPolicy#enable_inbound_forwarding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dns_policy#enable_inbound_forwarding GoogleDnsPolicy#enable_inbound_forwarding}
   */
   readonly enableInboundForwarding?: boolean | cdktf.IResolvable;
   /**
   * Controls whether logging is enabled for the networks bound to this policy.
   * Defaults to no logging if not set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dns_policy#enable_logging GoogleDnsPolicy#enable_logging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dns_policy#enable_logging GoogleDnsPolicy#enable_logging}
   */
   readonly enableLogging?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dns_policy#id GoogleDnsPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dns_policy#id GoogleDnsPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,29 +39,35 @@ export interface GoogleDnsPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * User assigned name for this policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dns_policy#name GoogleDnsPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dns_policy#name GoogleDnsPolicy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dns_policy#project GoogleDnsPolicy#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dns_policy#project GoogleDnsPolicy#project}
   */
   readonly project?: string;
   /**
   * alternative_name_server_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dns_policy#alternative_name_server_config GoogleDnsPolicy#alternative_name_server_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dns_policy#alternative_name_server_config GoogleDnsPolicy#alternative_name_server_config}
   */
   readonly alternativeNameServerConfig?: GoogleDnsPolicyAlternativeNameServerConfig;
   /**
+  * dns64_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dns_policy#dns64_config GoogleDnsPolicy#dns64_config}
+  */
+  readonly dns64Config?: GoogleDnsPolicyDns64Config;
+  /**
   * networks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dns_policy#networks GoogleDnsPolicy#networks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dns_policy#networks GoogleDnsPolicy#networks}
   */
   readonly networks?: GoogleDnsPolicyNetworks[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dns_policy#timeouts GoogleDnsPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dns_policy#timeouts GoogleDnsPolicy#timeouts}
   */
   readonly timeouts?: GoogleDnsPolicyTimeouts;
 }
@@ -76,13 +77,13 @@ export interface GoogleDnsPolicyAlternativeNameServerConfigTargetNameServers {
   * decision based on address ranges, i.e. RFC1918 addresses go to the VPC, Non-RFC1918 addresses go
   * to the Internet. When set to 'private', Cloud DNS will always send queries through VPC for this target Possible values: ["default", "private"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dns_policy#forwarding_path GoogleDnsPolicy#forwarding_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dns_policy#forwarding_path GoogleDnsPolicy#forwarding_path}
   */
   readonly forwardingPath?: string;
   /**
   * IPv4 address to forward to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dns_policy#ipv4_address GoogleDnsPolicy#ipv4_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dns_policy#ipv4_address GoogleDnsPolicy#ipv4_address}
   */
   readonly ipv4Address: string;
 }
@@ -226,7 +227,7 @@ export interface GoogleDnsPolicyAlternativeNameServerConfig {
   /**
   * target_name_servers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dns_policy#target_name_servers GoogleDnsPolicy#target_name_servers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dns_policy#target_name_servers GoogleDnsPolicy#target_name_servers}
   */
   readonly targetNameServers: GoogleDnsPolicyAlternativeNameServerConfigTargetNameServers[] | cdktf.IResolvable;
 }
@@ -305,13 +306,182 @@ export class GoogleDnsPolicyAlternativeNameServerConfigOutputReference extends c
     return this._targetNameServers.internalValue;
   }
 }
+export interface GoogleDnsPolicyDns64ConfigScope {
+  /**
+  * Controls whether DNS64 is enabled globally at the network level.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dns_policy#all_queries GoogleDnsPolicy#all_queries}
+  */
+  readonly allQueries?: boolean | cdktf.IResolvable;
+}
+
+export function googleDnsPolicyDns64ConfigScopeToTerraform(struct?: GoogleDnsPolicyDns64ConfigScopeOutputReference | GoogleDnsPolicyDns64ConfigScope): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    all_queries: cdktf.booleanToTerraform(struct!.allQueries),
+  }
+}
+
+
+export function googleDnsPolicyDns64ConfigScopeToHclTerraform(struct?: GoogleDnsPolicyDns64ConfigScopeOutputReference | GoogleDnsPolicyDns64ConfigScope): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    all_queries: {
+      value: cdktf.booleanToHclTerraform(struct!.allQueries),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDnsPolicyDns64ConfigScopeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDnsPolicyDns64ConfigScope | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allQueries !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allQueries = this._allQueries;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDnsPolicyDns64ConfigScope | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._allQueries = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._allQueries = value.allQueries;
+    }
+  }
+
+  // all_queries - computed: false, optional: true, required: false
+  private _allQueries?: boolean | cdktf.IResolvable; 
+  public get allQueries() {
+    return this.getBooleanAttribute('all_queries');
+  }
+  public set allQueries(value: boolean | cdktf.IResolvable) {
+    this._allQueries = value;
+  }
+  public resetAllQueries() {
+    this._allQueries = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allQueriesInput() {
+    return this._allQueries;
+  }
+}
+export interface GoogleDnsPolicyDns64Config {
+  /**
+  * scope block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dns_policy#scope GoogleDnsPolicy#scope}
+  */
+  readonly scope: GoogleDnsPolicyDns64ConfigScope;
+}
+
+export function googleDnsPolicyDns64ConfigToTerraform(struct?: GoogleDnsPolicyDns64ConfigOutputReference | GoogleDnsPolicyDns64Config): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    scope: googleDnsPolicyDns64ConfigScopeToTerraform(struct!.scope),
+  }
+}
+
+
+export function googleDnsPolicyDns64ConfigToHclTerraform(struct?: GoogleDnsPolicyDns64ConfigOutputReference | GoogleDnsPolicyDns64Config): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    scope: {
+      value: googleDnsPolicyDns64ConfigScopeToHclTerraform(struct!.scope),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDnsPolicyDns64ConfigScopeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDnsPolicyDns64ConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDnsPolicyDns64Config | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._scope?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scope = this._scope?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDnsPolicyDns64Config | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._scope.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._scope.internalValue = value.scope;
+    }
+  }
+
+  // scope - computed: false, optional: false, required: true
+  private _scope = new GoogleDnsPolicyDns64ConfigScopeOutputReference(this, "scope");
+  public get scope() {
+    return this._scope;
+  }
+  public putScope(value: GoogleDnsPolicyDns64ConfigScope) {
+    this._scope.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scopeInput() {
+    return this._scope.internalValue;
+  }
+}
 export interface GoogleDnsPolicyNetworks {
   /**
   * The id or fully qualified URL of the VPC network to forward queries to.
   * This should be formatted like 'projects/{project}/global/networks/{network}' or
   * 'https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{network}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dns_policy#network_url GoogleDnsPolicy#network_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dns_policy#network_url GoogleDnsPolicy#network_url}
   */
   readonly networkUrl: string;
 }
@@ -424,15 +594,15 @@ export class GoogleDnsPolicyNetworksList extends cdktf.ComplexList {
 }
 export interface GoogleDnsPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dns_policy#create GoogleDnsPolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dns_policy#create GoogleDnsPolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dns_policy#delete GoogleDnsPolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dns_policy#delete GoogleDnsPolicy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dns_policy#update GoogleDnsPolicy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dns_policy#update GoogleDnsPolicy#update}
   */
   readonly update?: string;
 }
@@ -584,7 +754,7 @@ export class GoogleDnsPolicyTimeoutsOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dns_policy google_dns_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dns_policy google_dns_policy}
 */
 export class GoogleDnsPolicy extends cdktf.TerraformResource {
 
@@ -600,7 +770,7 @@ export class GoogleDnsPolicy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleDnsPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleDnsPolicy to import
-  * @param importFromId The id of the existing GoogleDnsPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dns_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleDnsPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dns_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleDnsPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -612,7 +782,7 @@ export class GoogleDnsPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dns_policy google_dns_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dns_policy google_dns_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -623,7 +793,7 @@ export class GoogleDnsPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'google_dns_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.37.0',
+        providerVersion: '6.38.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -641,6 +811,7 @@ export class GoogleDnsPolicy extends cdktf.TerraformResource {
     this._name = config.name;
     this._project = config.project;
     this._alternativeNameServerConfig.internalValue = config.alternativeNameServerConfig;
+    this._dns64Config.internalValue = config.dns64Config;
     this._networks.internalValue = config.networks;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -758,6 +929,22 @@ export class GoogleDnsPolicy extends cdktf.TerraformResource {
     return this._alternativeNameServerConfig.internalValue;
   }
 
+  // dns64_config - computed: false, optional: true, required: false
+  private _dns64Config = new GoogleDnsPolicyDns64ConfigOutputReference(this, "dns64_config");
+  public get dns64Config() {
+    return this._dns64Config;
+  }
+  public putDns64Config(value: GoogleDnsPolicyDns64Config) {
+    this._dns64Config.internalValue = value;
+  }
+  public resetDns64Config() {
+    this._dns64Config.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dns64ConfigInput() {
+    return this._dns64Config.internalValue;
+  }
+
   // networks - computed: false, optional: true, required: false
   private _networks = new GoogleDnsPolicyNetworksList(this, "networks", true);
   public get networks() {
@@ -803,6 +990,7 @@ export class GoogleDnsPolicy extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),
       alternative_name_server_config: googleDnsPolicyAlternativeNameServerConfigToTerraform(this._alternativeNameServerConfig.internalValue),
+      dns64_config: googleDnsPolicyDns64ConfigToTerraform(this._dns64Config.internalValue),
       networks: cdktf.listMapper(googleDnsPolicyNetworksToTerraform, true)(this._networks.internalValue),
       timeouts: googleDnsPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -851,6 +1039,12 @@ export class GoogleDnsPolicy extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "GoogleDnsPolicyAlternativeNameServerConfigList",
+      },
+      dns64_config: {
+        value: googleDnsPolicyDns64ConfigToHclTerraform(this._dns64Config.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDnsPolicyDns64ConfigList",
       },
       networks: {
         value: cdktf.listMapperHcl(googleDnsPolicyNetworksToHclTerraform, true)(this._networks.internalValue),
