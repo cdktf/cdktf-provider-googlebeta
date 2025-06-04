@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigtableLogicalView.GoogleBigtableLogicalView.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlebigtablelogicalview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlebigtablelogicalview"
 
 googlebigtablelogicalview.NewGoogleBigtableLogicalView(scope Construct, id *string, config GoogleBigtableLogicalViewConfig) GoogleBigtableLogicalView
 ```
@@ -426,7 +426,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleBigtableLogicalView.GoogleBigtableLogicalView.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlebigtablelogicalview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlebigtablelogicalview"
 
 googlebigtablelogicalview.GoogleBigtableLogicalView_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleBigtableLogicalView.GoogleBigtableLogicalView.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlebigtablelogicalview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlebigtablelogicalview"
 
 googlebigtablelogicalview.GoogleBigtableLogicalView_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ googlebigtablelogicalview.GoogleBigtableLogicalView_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleBigtableLogicalView.GoogleBigtableLogicalView.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlebigtablelogicalview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlebigtablelogicalview"
 
 googlebigtablelogicalview.GoogleBigtableLogicalView_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ googlebigtablelogicalview.GoogleBigtableLogicalView_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleBigtableLogicalView.GoogleBigtableLogicalView.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlebigtablelogicalview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlebigtablelogicalview"
 
 googlebigtablelogicalview.GoogleBigtableLogicalView_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -880,7 +880,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigtableLogicalView.GoogleBigtableLogicalViewConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlebigtablelogicalview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlebigtablelogicalview"
 
 &googlebigtablelogicalview.GoogleBigtableLogicalViewConfig {
 	Connection: interface{},
@@ -896,7 +896,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlebigta
 	Id: *string,
 	Instance: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15.googleBigtableLogicalView.GoogleBigtableLogicalViewTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16.googleBigtableLogicalView.GoogleBigtableLogicalViewTimeouts,
 }
 ```
 
@@ -1093,7 +1093,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigtableLogicalView.GoogleBigtableLogicalViewTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlebigtablelogicalview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlebigtablelogicalview"
 
 &googlebigtablelogicalview.GoogleBigtableLogicalViewTimeouts {
 	Create: *string,
@@ -1155,7 +1155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigtableLogicalView.GoogleBigtableLogicalViewTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlebigtablelogicalview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlebigtablelogicalview"
 
 googlebigtablelogicalview.NewGoogleBigtableLogicalViewTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBigtableLogicalViewTimeoutsOutputReference
 ```

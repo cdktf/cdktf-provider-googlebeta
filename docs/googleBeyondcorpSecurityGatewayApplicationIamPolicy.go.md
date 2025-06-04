@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBeyondcorpSecurityGatewayApplicationIamPolicy.GoogleBeyondcorpSecurityGatewayApplicationIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlebeyondcorpsecuritygatewayapplicationiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlebeyondcorpsecuritygatewayapplicationiampolicy"
 
 googlebeyondcorpsecuritygatewayapplicationiampolicy.NewGoogleBeyondcorpSecurityGatewayApplicationIamPolicy(scope Construct, id *string, config GoogleBeyondcorpSecurityGatewayApplicationIamPolicyConfig) GoogleBeyondcorpSecurityGatewayApplicationIamPolicy
 ```
@@ -392,7 +392,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleBeyondcorpSecurityGatewayApplicationIamPolicy.GoogleBeyondcorpSecurityGatewayApplicationIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlebeyondcorpsecuritygatewayapplicationiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlebeyondcorpsecuritygatewayapplicationiampolicy"
 
 googlebeyondcorpsecuritygatewayapplicationiampolicy.GoogleBeyondcorpSecurityGatewayApplicationIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleBeyondcorpSecurityGatewayApplicationIamPolicy.GoogleBeyondcorpSecurityGatewayApplicationIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlebeyondcorpsecuritygatewayapplicationiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlebeyondcorpsecuritygatewayapplicationiampolicy"
 
 googlebeyondcorpsecuritygatewayapplicationiampolicy.GoogleBeyondcorpSecurityGatewayApplicationIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ googlebeyondcorpsecuritygatewayapplicationiampolicy.GoogleBeyondcorpSecurityGate
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleBeyondcorpSecurityGatewayApplicationIamPolicy.GoogleBeyondcorpSecurityGatewayApplicationIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlebeyondcorpsecuritygatewayapplicationiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlebeyondcorpsecuritygatewayapplicationiampolicy"
 
 googlebeyondcorpsecuritygatewayapplicationiampolicy.GoogleBeyondcorpSecurityGatewayApplicationIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ googlebeyondcorpsecuritygatewayapplicationiampolicy.GoogleBeyondcorpSecurityGate
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleBeyondcorpSecurityGatewayApplicationIamPolicy.GoogleBeyondcorpSecurityGatewayApplicationIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlebeyondcorpsecuritygatewayapplicationiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlebeyondcorpsecuritygatewayapplicationiampolicy"
 
 googlebeyondcorpsecuritygatewayapplicationiampolicy.GoogleBeyondcorpSecurityGatewayApplicationIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -802,7 +802,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBeyondcorpSecurityGatewayApplicationIamPolicy.GoogleBeyondcorpSecurityGatewayApplicationIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlebeyondcorpsecuritygatewayapplicationiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlebeyondcorpsecuritygatewayapplicationiampolicy"
 
 &googlebeyondcorpsecuritygatewayapplicationiampolicy.GoogleBeyondcorpSecurityGatewayApplicationIamPolicyConfig {
 	Connection: interface{},

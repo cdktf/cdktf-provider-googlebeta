@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIdentityPlatformTenant.GoogleIdentityPlatformTenant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleidentityplatformtenant"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googleidentityplatformtenant"
 
 googleidentityplatformtenant.NewGoogleIdentityPlatformTenant(scope Construct, id *string, config GoogleIdentityPlatformTenantConfig) GoogleIdentityPlatformTenant
 ```
@@ -453,7 +453,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleIdentityPlatformTenant.GoogleIdentityPlatformTenant.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleidentityplatformtenant"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googleidentityplatformtenant"
 
 googleidentityplatformtenant.GoogleIdentityPlatformTenant_IsConstruct(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleIdentityPlatformTenant.GoogleIdentityPlatformTenant.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleidentityplatformtenant"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googleidentityplatformtenant"
 
 googleidentityplatformtenant.GoogleIdentityPlatformTenant_IsTerraformElement(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ googleidentityplatformtenant.GoogleIdentityPlatformTenant_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleIdentityPlatformTenant.GoogleIdentityPlatformTenant.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleidentityplatformtenant"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googleidentityplatformtenant"
 
 googleidentityplatformtenant.GoogleIdentityPlatformTenant_IsTerraformResource(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ googleidentityplatformtenant.GoogleIdentityPlatformTenant_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleIdentityPlatformTenant.GoogleIdentityPlatformTenant.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleidentityplatformtenant"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googleidentityplatformtenant"
 
 googleidentityplatformtenant.GoogleIdentityPlatformTenant_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -929,10 +929,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIdentityPlatformTenant.GoogleIdentityPlatformTenantClient.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleidentityplatformtenant"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googleidentityplatformtenant"
 
 &googleidentityplatformtenant.GoogleIdentityPlatformTenantClient {
-	Permissions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15.googleIdentityPlatformTenant.GoogleIdentityPlatformTenantClientPermissions,
+	Permissions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16.googleIdentityPlatformTenant.GoogleIdentityPlatformTenantClientPermissions,
 }
 ```
 
@@ -963,7 +963,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIdentityPlatformTenant.GoogleIdentityPlatformTenantClientPermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleidentityplatformtenant"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googleidentityplatformtenant"
 
 &googleidentityplatformtenant.GoogleIdentityPlatformTenantClientPermissions {
 	DisabledUserDeletion: interface{},
@@ -1013,7 +1013,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIdentityPlatformTenant.GoogleIdentityPlatformTenantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleidentityplatformtenant"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googleidentityplatformtenant"
 
 &googleidentityplatformtenant.GoogleIdentityPlatformTenantConfig {
 	Connection: interface{},
@@ -1025,12 +1025,12 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleident
 	Provisioners: *[]interface{},
 	DisplayName: *string,
 	AllowPasswordSignup: interface{},
-	Client: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15.googleIdentityPlatformTenant.GoogleIdentityPlatformTenantClient,
+	Client: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16.googleIdentityPlatformTenant.GoogleIdentityPlatformTenantClient,
 	DisableAuth: interface{},
 	EnableEmailLinkSignin: interface{},
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15.googleIdentityPlatformTenant.GoogleIdentityPlatformTenantTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16.googleIdentityPlatformTenant.GoogleIdentityPlatformTenantTimeouts,
 }
 ```
 
@@ -1246,7 +1246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIdentityPlatformTenant.GoogleIdentityPlatformTenantTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleidentityplatformtenant"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googleidentityplatformtenant"
 
 &googleidentityplatformtenant.GoogleIdentityPlatformTenantTimeouts {
 	Create: *string,
@@ -1308,7 +1308,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIdentityPlatformTenant.GoogleIdentityPlatformTenantClientOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleidentityplatformtenant"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googleidentityplatformtenant"
 
 googleidentityplatformtenant.NewGoogleIdentityPlatformTenantClientOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIdentityPlatformTenantClientOutputReference
 ```
@@ -1599,7 +1599,7 @@ func InternalValue() GoogleIdentityPlatformTenantClient
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIdentityPlatformTenant.GoogleIdentityPlatformTenantClientPermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleidentityplatformtenant"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googleidentityplatformtenant"
 
 googleidentityplatformtenant.NewGoogleIdentityPlatformTenantClientPermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIdentityPlatformTenantClientPermissionsOutputReference
 ```
@@ -1906,7 +1906,7 @@ func InternalValue() GoogleIdentityPlatformTenantClientPermissions
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIdentityPlatformTenant.GoogleIdentityPlatformTenantTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleidentityplatformtenant"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googleidentityplatformtenant"
 
 googleidentityplatformtenant.NewGoogleIdentityPlatformTenantTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIdentityPlatformTenantTimeoutsOutputReference
 ```
