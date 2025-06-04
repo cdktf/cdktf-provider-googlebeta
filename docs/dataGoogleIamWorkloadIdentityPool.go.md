@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleIamWorkloadIdentityPool.DataGoogleIamWorkloadIdentityPool.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/datagoogleiamworkloadidentitypool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/datagoogleiamworkloadidentitypool"
 
 datagoogleiamworkloadidentitypool.NewDataGoogleIamWorkloadIdentityPool(scope Construct, id *string, config DataGoogleIamWorkloadIdentityPoolConfig) DataGoogleIamWorkloadIdentityPool
 ```
@@ -290,7 +290,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleIamWorkloadIdentityPool.DataGoogleIamWorkloadIdentityPool.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/datagoogleiamworkloadidentitypool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/datagoogleiamworkloadidentitypool"
 
 datagoogleiamworkloadidentitypool.DataGoogleIamWorkloadIdentityPool_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleIamWorkloadIdentityPool.DataGoogleIamWorkloadIdentityPool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/datagoogleiamworkloadidentitypool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/datagoogleiamworkloadidentitypool"
 
 datagoogleiamworkloadidentitypool.DataGoogleIamWorkloadIdentityPool_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datagoogleiamworkloadidentitypool.DataGoogleIamWorkloadIdentityPool_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleIamWorkloadIdentityPool.DataGoogleIamWorkloadIdentityPool.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/datagoogleiamworkloadidentitypool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/datagoogleiamworkloadidentitypool"
 
 datagoogleiamworkloadidentitypool.DataGoogleIamWorkloadIdentityPool_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datagoogleiamworkloadidentitypool.DataGoogleIamWorkloadIdentityPool_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleIamWorkloadIdentityPool.DataGoogleIamWorkloadIdentityPool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/datagoogleiamworkloadidentitypool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/datagoogleiamworkloadidentitypool"
 
 datagoogleiamworkloadidentitypool.DataGoogleIamWorkloadIdentityPool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -711,7 +711,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleIamWorkloadIdentityPool.DataGoogleIamWorkloadIdentityPoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/datagoogleiamworkloadidentitypool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/datagoogleiamworkloadidentitypool"
 
 &datagoogleiamworkloadidentitypool.DataGoogleIamWorkloadIdentityPoolConfig {
 	Connection: interface{},
@@ -864,7 +864,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleIamWorkloadIdentityPool.DataGoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/datagoogleiamworkloadidentitypool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/datagoogleiamworkloadidentitypool"
 
 &datagoogleiamworkloadidentitypool.DataGoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfig {
 
@@ -877,7 +877,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/datagooglei
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleIamWorkloadIdentityPool.DataGoogleIamWorkloadIdentityPoolInlineTrustConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/datagoogleiamworkloadidentitypool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/datagoogleiamworkloadidentitypool"
 
 &datagoogleiamworkloadidentitypool.DataGoogleIamWorkloadIdentityPoolInlineTrustConfig {
 
@@ -890,7 +890,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/datagooglei
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleIamWorkloadIdentityPool.DataGoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/datagoogleiamworkloadidentitypool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/datagoogleiamworkloadidentitypool"
 
 &datagoogleiamworkloadidentitypool.DataGoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundles {
 
@@ -903,7 +903,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/datagooglei
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleIamWorkloadIdentityPool.DataGoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesTrustAnchors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/datagoogleiamworkloadidentitypool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/datagoogleiamworkloadidentitypool"
 
 &datagoogleiamworkloadidentitypool.DataGoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesTrustAnchors {
 
@@ -918,7 +918,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/datagooglei
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleIamWorkloadIdentityPool.DataGoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/datagoogleiamworkloadidentitypool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/datagoogleiamworkloadidentitypool"
 
 datagoogleiamworkloadidentitypool.NewDataGoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfigList
 ```
@@ -1067,7 +1067,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleIamWorkloadIdentityPool.DataGoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/datagoogleiamworkloadidentitypool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/datagoogleiamworkloadidentitypool"
 
 datagoogleiamworkloadidentitypool.NewDataGoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference
 ```
@@ -1378,7 +1378,7 @@ func InternalValue() DataGoogleIamWorkloadIdentityPoolInlineCertificateIssuanceC
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleIamWorkloadIdentityPool.DataGoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/datagoogleiamworkloadidentitypool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/datagoogleiamworkloadidentitypool"
 
 datagoogleiamworkloadidentitypool.NewDataGoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesList
 ```
@@ -1527,7 +1527,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleIamWorkloadIdentityPool.DataGoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/datagoogleiamworkloadidentitypool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/datagoogleiamworkloadidentitypool"
 
 datagoogleiamworkloadidentitypool.NewDataGoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesOutputReference
 ```
@@ -1816,7 +1816,7 @@ func InternalValue() DataGoogleIamWorkloadIdentityPoolInlineTrustConfigAdditiona
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleIamWorkloadIdentityPool.DataGoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesTrustAnchorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/datagoogleiamworkloadidentitypool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/datagoogleiamworkloadidentitypool"
 
 datagoogleiamworkloadidentitypool.NewDataGoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesTrustAnchorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesTrustAnchorsList
 ```
@@ -1965,7 +1965,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleIamWorkloadIdentityPool.DataGoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesTrustAnchorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/datagoogleiamworkloadidentitypool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/datagoogleiamworkloadidentitypool"
 
 datagoogleiamworkloadidentitypool.NewDataGoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesTrustAnchorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesTrustAnchorsOutputReference
 ```
@@ -2243,7 +2243,7 @@ func InternalValue() DataGoogleIamWorkloadIdentityPoolInlineTrustConfigAdditiona
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleIamWorkloadIdentityPool.DataGoogleIamWorkloadIdentityPoolInlineTrustConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/datagoogleiamworkloadidentitypool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/datagoogleiamworkloadidentitypool"
 
 datagoogleiamworkloadidentitypool.NewDataGoogleIamWorkloadIdentityPoolInlineTrustConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleIamWorkloadIdentityPoolInlineTrustConfigList
 ```
@@ -2392,7 +2392,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleIamWorkloadIdentityPool.DataGoogleIamWorkloadIdentityPoolInlineTrustConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/datagoogleiamworkloadidentitypool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/datagoogleiamworkloadidentitypool"
 
 datagoogleiamworkloadidentitypool.NewDataGoogleIamWorkloadIdentityPoolInlineTrustConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleIamWorkloadIdentityPoolInlineTrustConfigOutputReference
 ```

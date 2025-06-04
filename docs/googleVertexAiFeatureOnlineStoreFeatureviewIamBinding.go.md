@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlevertexaifeatureonlinestorefeatureviewiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlevertexaifeatureonlinestorefeatureviewiambinding"
 
 googlevertexaifeatureonlinestorefeatureviewiambinding.NewGoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding(scope Construct, id *string, config GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingConfig) GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding
 ```
@@ -419,7 +419,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlevertexaifeatureonlinestorefeatureviewiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlevertexaifeatureonlinestorefeatureviewiambinding"
 
 googlevertexaifeatureonlinestorefeatureviewiambinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlevertexaifeatureonlinestorefeatureviewiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlevertexaifeatureonlinestorefeatureviewiambinding"
 
 googlevertexaifeatureonlinestorefeatureviewiambinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ googlevertexaifeatureonlinestorefeatureviewiambinding.GoogleVertexAiFeatureOnlin
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlevertexaifeatureonlinestorefeatureviewiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlevertexaifeatureonlinestorefeatureviewiambinding"
 
 googlevertexaifeatureonlinestorefeatureviewiambinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ googlevertexaifeatureonlinestorefeatureviewiambinding.GoogleVertexAiFeatureOnlin
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlevertexaifeatureonlinestorefeatureviewiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlevertexaifeatureonlinestorefeatureviewiambinding"
 
 googlevertexaifeatureonlinestorefeatureviewiambinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlevertexaifeatureonlinestorefeatureviewiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlevertexaifeatureonlinestorefeatureviewiambinding"
 
 &googlevertexaifeatureonlinestorefeatureviewiambinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingCondition {
 	Expression: *string,
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlevertexaifeatureonlinestorefeatureviewiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlevertexaifeatureonlinestorefeatureviewiambinding"
 
 &googlevertexaifeatureonlinestorefeatureviewiambinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingConfig {
 	Connection: interface{},
@@ -969,7 +969,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleverte
 	FeatureView: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingCondition,
 	Id: *string,
 	Project: *string,
 	Region: *string,
@@ -1176,7 +1176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureviewIamBinding.GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlevertexaifeatureonlinestorefeatureviewiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlevertexaifeatureonlinestorefeatureviewiambinding"
 
 googlevertexaifeatureonlinestorefeatureviewiambinding.NewGoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingConditionOutputReference
 ```

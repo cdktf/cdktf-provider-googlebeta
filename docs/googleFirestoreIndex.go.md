@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndex.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlefirestoreindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlefirestoreindex"
 
 googlefirestoreindex.NewGoogleFirestoreIndex(scope Construct, id *string, config GoogleFirestoreIndexConfig) GoogleFirestoreIndex
 ```
@@ -460,7 +460,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndex.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlefirestoreindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlefirestoreindex"
 
 googlefirestoreindex.GoogleFirestoreIndex_IsConstruct(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndex.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlefirestoreindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlefirestoreindex"
 
 googlefirestoreindex.GoogleFirestoreIndex_IsTerraformElement(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ googlefirestoreindex.GoogleFirestoreIndex_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndex.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlefirestoreindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlefirestoreindex"
 
 googlefirestoreindex.GoogleFirestoreIndex_IsTerraformResource(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ googlefirestoreindex.GoogleFirestoreIndex_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndex.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlefirestoreindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlefirestoreindex"
 
 googlefirestoreindex.GoogleFirestoreIndex_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -980,7 +980,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlefirestoreindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlefirestoreindex"
 
 &googlefirestoreindex.GoogleFirestoreIndexConfig {
 	Connection: interface{},
@@ -999,7 +999,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlefires
 	Multikey: interface{},
 	Project: *string,
 	QueryScope: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15.googleFirestoreIndex.GoogleFirestoreIndexTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16.googleFirestoreIndex.GoogleFirestoreIndexTimeouts,
 }
 ```
 
@@ -1243,13 +1243,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexFields.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlefirestoreindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlefirestoreindex"
 
 &googlefirestoreindex.GoogleFirestoreIndexFields {
 	ArrayConfig: *string,
 	FieldPath: *string,
 	Order: *string,
-	VectorConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15.googleFirestoreIndex.GoogleFirestoreIndexFieldsVectorConfig,
+	VectorConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16.googleFirestoreIndex.GoogleFirestoreIndexFieldsVectorConfig,
 }
 ```
 
@@ -1330,11 +1330,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexFieldsVectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlefirestoreindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlefirestoreindex"
 
 &googlefirestoreindex.GoogleFirestoreIndexFieldsVectorConfig {
 	Dimension: *f64,
-	Flat: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15.googleFirestoreIndex.GoogleFirestoreIndexFieldsVectorConfigFlat,
+	Flat: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16.googleFirestoreIndex.GoogleFirestoreIndexFieldsVectorConfigFlat,
 }
 ```
 
@@ -1380,7 +1380,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexFieldsVectorConfigFlat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlefirestoreindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlefirestoreindex"
 
 &googlefirestoreindex.GoogleFirestoreIndexFieldsVectorConfigFlat {
 
@@ -1393,7 +1393,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlefires
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlefirestoreindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlefirestoreindex"
 
 &googlefirestoreindex.GoogleFirestoreIndexTimeouts {
 	Create: *string,
@@ -1441,7 +1441,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlefirestoreindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlefirestoreindex"
 
 googlefirestoreindex.NewGoogleFirestoreIndexFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleFirestoreIndexFieldsList
 ```
@@ -1601,7 +1601,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlefirestoreindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlefirestoreindex"
 
 googlefirestoreindex.NewGoogleFirestoreIndexFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleFirestoreIndexFieldsOutputReference
 ```
@@ -1997,7 +1997,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexFieldsVectorConfigFlatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlefirestoreindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlefirestoreindex"
 
 googlefirestoreindex.NewGoogleFirestoreIndexFieldsVectorConfigFlatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleFirestoreIndexFieldsVectorConfigFlatOutputReference
 ```
@@ -2246,7 +2246,7 @@ func InternalValue() GoogleFirestoreIndexFieldsVectorConfigFlat
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexFieldsVectorConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlefirestoreindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlefirestoreindex"
 
 googlefirestoreindex.NewGoogleFirestoreIndexFieldsVectorConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleFirestoreIndexFieldsVectorConfigOutputReference
 ```
@@ -2566,7 +2566,7 @@ func InternalValue() GoogleFirestoreIndexFieldsVectorConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlefirestoreindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlefirestoreindex"
 
 googlefirestoreindex.NewGoogleFirestoreIndexTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleFirestoreIndexTimeoutsOutputReference
 ```

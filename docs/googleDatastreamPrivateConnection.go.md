@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googledatastreamprivateconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googledatastreamprivateconnection"
 
 googledatastreamprivateconnection.NewGoogleDatastreamPrivateConnection(scope Construct, id *string, config GoogleDatastreamPrivateConnectionConfig) GoogleDatastreamPrivateConnection
 ```
@@ -466,7 +466,7 @@ func ResetVpcPeeringConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googledatastreamprivateconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googledatastreamprivateconnection"
 
 googledatastreamprivateconnection.GoogleDatastreamPrivateConnection_IsConstruct(x interface{}) *bool
 ```
@@ -498,7 +498,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googledatastreamprivateconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googledatastreamprivateconnection"
 
 googledatastreamprivateconnection.GoogleDatastreamPrivateConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ googledatastreamprivateconnection.GoogleDatastreamPrivateConnection_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googledatastreamprivateconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googledatastreamprivateconnection"
 
 googledatastreamprivateconnection.GoogleDatastreamPrivateConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ googledatastreamprivateconnection.GoogleDatastreamPrivateConnection_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googledatastreamprivateconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googledatastreamprivateconnection"
 
 googledatastreamprivateconnection.GoogleDatastreamPrivateConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1030,7 +1030,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googledatastreamprivateconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googledatastreamprivateconnection"
 
 &googledatastreamprivateconnection.GoogleDatastreamPrivateConnectionConfig {
 	Connection: interface{},
@@ -1047,9 +1047,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googledatas
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	PscInterfaceConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnectionPscInterfaceConfig,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnectionTimeouts,
-	VpcPeeringConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnectionVpcPeeringConfig,
+	PscInterfaceConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnectionPscInterfaceConfig,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnectionTimeouts,
+	VpcPeeringConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnectionVpcPeeringConfig,
 }
 ```
 
@@ -1294,7 +1294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnectionError.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googledatastreamprivateconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googledatastreamprivateconnection"
 
 &googledatastreamprivateconnection.GoogleDatastreamPrivateConnectionError {
 
@@ -1307,7 +1307,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googledatas
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnectionPscInterfaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googledatastreamprivateconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googledatastreamprivateconnection"
 
 &googledatastreamprivateconnection.GoogleDatastreamPrivateConnectionPscInterfaceConfig {
 	NetworkAttachment: *string,
@@ -1346,7 +1346,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googledatastreamprivateconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googledatastreamprivateconnection"
 
 &googledatastreamprivateconnection.GoogleDatastreamPrivateConnectionTimeouts {
 	Create: *string,
@@ -1406,7 +1406,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnectionVpcPeeringConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googledatastreamprivateconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googledatastreamprivateconnection"
 
 &googledatastreamprivateconnection.GoogleDatastreamPrivateConnectionVpcPeeringConfig {
 	Subnet: *string,
@@ -1458,7 +1458,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnectionErrorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googledatastreamprivateconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googledatastreamprivateconnection"
 
 googledatastreamprivateconnection.NewGoogleDatastreamPrivateConnectionErrorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDatastreamPrivateConnectionErrorList
 ```
@@ -1607,7 +1607,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnectionErrorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googledatastreamprivateconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googledatastreamprivateconnection"
 
 googledatastreamprivateconnection.NewGoogleDatastreamPrivateConnectionErrorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDatastreamPrivateConnectionErrorOutputReference
 ```
@@ -1896,7 +1896,7 @@ func InternalValue() GoogleDatastreamPrivateConnectionError
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnectionPscInterfaceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googledatastreamprivateconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googledatastreamprivateconnection"
 
 googledatastreamprivateconnection.NewGoogleDatastreamPrivateConnectionPscInterfaceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDatastreamPrivateConnectionPscInterfaceConfigOutputReference
 ```
@@ -2167,7 +2167,7 @@ func InternalValue() GoogleDatastreamPrivateConnectionPscInterfaceConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googledatastreamprivateconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googledatastreamprivateconnection"
 
 googledatastreamprivateconnection.NewGoogleDatastreamPrivateConnectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDatastreamPrivateConnectionTimeoutsOutputReference
 ```
@@ -2503,7 +2503,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnectionVpcPeeringConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googledatastreamprivateconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googledatastreamprivateconnection"
 
 googledatastreamprivateconnection.NewGoogleDatastreamPrivateConnectionVpcPeeringConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDatastreamPrivateConnectionVpcPeeringConfigOutputReference
 ```

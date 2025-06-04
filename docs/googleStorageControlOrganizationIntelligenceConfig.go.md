@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlestoragecontrolorganizationintelligenceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlestoragecontrolorganizationintelligenceconfig"
 
 googlestoragecontrolorganizationintelligenceconfig.NewGoogleStorageControlOrganizationIntelligenceConfig(scope Construct, id *string, config GoogleStorageControlOrganizationIntelligenceConfigConfig) GoogleStorageControlOrganizationIntelligenceConfig
 ```
@@ -432,7 +432,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlestoragecontrolorganizationintelligenceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlestoragecontrolorganizationintelligenceconfig"
 
 googlestoragecontrolorganizationintelligenceconfig.GoogleStorageControlOrganizationIntelligenceConfig_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlestoragecontrolorganizationintelligenceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlestoragecontrolorganizationintelligenceconfig"
 
 googlestoragecontrolorganizationintelligenceconfig.GoogleStorageControlOrganizationIntelligenceConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ googlestoragecontrolorganizationintelligenceconfig.GoogleStorageControlOrganizat
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlestoragecontrolorganizationintelligenceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlestoragecontrolorganizationintelligenceconfig"
 
 googlestoragecontrolorganizationintelligenceconfig.GoogleStorageControlOrganizationIntelligenceConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ googlestoragecontrolorganizationintelligenceconfig.GoogleStorageControlOrganizat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlestoragecontrolorganizationintelligenceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlestoragecontrolorganizationintelligenceconfig"
 
 googlestoragecontrolorganizationintelligenceconfig.GoogleStorageControlOrganizationIntelligenceConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -864,7 +864,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlestoragecontrolorganizationintelligenceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlestoragecontrolorganizationintelligenceconfig"
 
 &googlestoragecontrolorganizationintelligenceconfig.GoogleStorageControlOrganizationIntelligenceConfigConfig {
 	Connection: interface{},
@@ -876,9 +876,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlestora
 	Provisioners: *[]interface{},
 	Name: *string,
 	EditionConfig: *string,
-	Filter: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigFilter,
+	Filter: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigFilter,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigTimeouts,
 }
 ```
 
@@ -1047,7 +1047,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlestoragecontrolorganizationintelligenceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlestoragecontrolorganizationintelligenceconfig"
 
 &googlestoragecontrolorganizationintelligenceconfig.GoogleStorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfig {
 
@@ -1060,13 +1060,13 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlestora
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlestoragecontrolorganizationintelligenceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlestoragecontrolorganizationintelligenceconfig"
 
 &googlestoragecontrolorganizationintelligenceconfig.GoogleStorageControlOrganizationIntelligenceConfigFilter {
-	ExcludedCloudStorageBuckets: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageBuckets,
-	ExcludedCloudStorageLocations: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageLocations,
-	IncludedCloudStorageBuckets: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageBuckets,
-	IncludedCloudStorageLocations: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageLocations,
+	ExcludedCloudStorageBuckets: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageBuckets,
+	ExcludedCloudStorageLocations: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageLocations,
+	IncludedCloudStorageBuckets: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageBuckets,
+	IncludedCloudStorageLocations: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageLocations,
 }
 ```
 
@@ -1142,7 +1142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageBuckets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlestoragecontrolorganizationintelligenceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlestoragecontrolorganizationintelligenceconfig"
 
 &googlestoragecontrolorganizationintelligenceconfig.GoogleStorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageBuckets {
 	BucketIdRegexes: *[]*string,
@@ -1176,7 +1176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageLocations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlestoragecontrolorganizationintelligenceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlestoragecontrolorganizationintelligenceconfig"
 
 &googlestoragecontrolorganizationintelligenceconfig.GoogleStorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageLocations {
 	Locations: *[]*string,
@@ -1210,7 +1210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageBuckets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlestoragecontrolorganizationintelligenceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlestoragecontrolorganizationintelligenceconfig"
 
 &googlestoragecontrolorganizationintelligenceconfig.GoogleStorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageBuckets {
 	BucketIdRegexes: *[]*string,
@@ -1244,7 +1244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageLocations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlestoragecontrolorganizationintelligenceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlestoragecontrolorganizationintelligenceconfig"
 
 &googlestoragecontrolorganizationintelligenceconfig.GoogleStorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageLocations {
 	Locations: *[]*string,
@@ -1278,7 +1278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlestoragecontrolorganizationintelligenceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlestoragecontrolorganizationintelligenceconfig"
 
 &googlestoragecontrolorganizationintelligenceconfig.GoogleStorageControlOrganizationIntelligenceConfigTimeouts {
 	Create: *string,
@@ -1338,7 +1338,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigTrialConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlestoragecontrolorganizationintelligenceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlestoragecontrolorganizationintelligenceconfig"
 
 &googlestoragecontrolorganizationintelligenceconfig.GoogleStorageControlOrganizationIntelligenceConfigTrialConfig {
 
@@ -1353,7 +1353,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlestora
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlestoragecontrolorganizationintelligenceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlestoragecontrolorganizationintelligenceconfig"
 
 googlestoragecontrolorganizationintelligenceconfig.NewGoogleStorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleStorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigList
 ```
@@ -1502,7 +1502,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlestoragecontrolorganizationintelligenceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlestoragecontrolorganizationintelligenceconfig"
 
 googlestoragecontrolorganizationintelligenceconfig.NewGoogleStorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleStorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigOutputReference
 ```
@@ -1791,7 +1791,7 @@ func InternalValue() GoogleStorageControlOrganizationIntelligenceConfigEffective
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageBucketsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlestoragecontrolorganizationintelligenceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlestoragecontrolorganizationintelligenceconfig"
 
 googlestoragecontrolorganizationintelligenceconfig.NewGoogleStorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageBucketsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleStorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageBucketsOutputReference
 ```
@@ -2062,7 +2062,7 @@ func InternalValue() GoogleStorageControlOrganizationIntelligenceConfigFilterExc
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageLocationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlestoragecontrolorganizationintelligenceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlestoragecontrolorganizationintelligenceconfig"
 
 googlestoragecontrolorganizationintelligenceconfig.NewGoogleStorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageLocationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleStorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageLocationsOutputReference
 ```
@@ -2333,7 +2333,7 @@ func InternalValue() GoogleStorageControlOrganizationIntelligenceConfigFilterExc
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageBucketsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlestoragecontrolorganizationintelligenceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlestoragecontrolorganizationintelligenceconfig"
 
 googlestoragecontrolorganizationintelligenceconfig.NewGoogleStorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageBucketsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleStorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageBucketsOutputReference
 ```
@@ -2604,7 +2604,7 @@ func InternalValue() GoogleStorageControlOrganizationIntelligenceConfigFilterInc
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageLocationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlestoragecontrolorganizationintelligenceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlestoragecontrolorganizationintelligenceconfig"
 
 googlestoragecontrolorganizationintelligenceconfig.NewGoogleStorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageLocationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleStorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageLocationsOutputReference
 ```
@@ -2875,7 +2875,7 @@ func InternalValue() GoogleStorageControlOrganizationIntelligenceConfigFilterInc
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlestoragecontrolorganizationintelligenceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlestoragecontrolorganizationintelligenceconfig"
 
 googlestoragecontrolorganizationintelligenceconfig.NewGoogleStorageControlOrganizationIntelligenceConfigFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleStorageControlOrganizationIntelligenceConfigFilterOutputReference
 ```
@@ -3292,7 +3292,7 @@ func InternalValue() GoogleStorageControlOrganizationIntelligenceConfigFilter
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlestoragecontrolorganizationintelligenceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlestoragecontrolorganizationintelligenceconfig"
 
 googlestoragecontrolorganizationintelligenceconfig.NewGoogleStorageControlOrganizationIntelligenceConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleStorageControlOrganizationIntelligenceConfigTimeoutsOutputReference
 ```
@@ -3628,7 +3628,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigTrialConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlestoragecontrolorganizationintelligenceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlestoragecontrolorganizationintelligenceconfig"
 
 googlestoragecontrolorganizationintelligenceconfig.NewGoogleStorageControlOrganizationIntelligenceConfigTrialConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleStorageControlOrganizationIntelligenceConfigTrialConfigList
 ```
@@ -3777,7 +3777,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigTrialConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlestoragecontrolorganizationintelligenceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/googlestoragecontrolorganizationintelligenceconfig"
 
 googlestoragecontrolorganizationintelligenceconfig.NewGoogleStorageControlOrganizationIntelligenceConfigTrialConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleStorageControlOrganizationIntelligenceConfigTrialConfigOutputReference
 ```
