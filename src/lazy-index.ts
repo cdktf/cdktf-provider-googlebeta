@@ -75,6 +75,7 @@ Object.defineProperty(exports, 'googleApigeeSharedflowDeployment', { get: functi
 Object.defineProperty(exports, 'googleApigeeSyncAuthorization', { get: function () { return require('./google-apigee-sync-authorization'); } });
 Object.defineProperty(exports, 'googleApigeeTargetServer', { get: function () { return require('./google-apigee-target-server'); } });
 Object.defineProperty(exports, 'googleApihubApiHubInstance', { get: function () { return require('./google-apihub-api-hub-instance'); } });
+Object.defineProperty(exports, 'googleApihubCuration', { get: function () { return require('./google-apihub-curation'); } });
 Object.defineProperty(exports, 'googleApihubHostProjectRegistration', { get: function () { return require('./google-apihub-host-project-registration'); } });
 Object.defineProperty(exports, 'googleApikeysKey', { get: function () { return require('./google-apikeys-key'); } });
 Object.defineProperty(exports, 'googleAppEngineApplication', { get: function () { return require('./google-app-engine-application'); } });
@@ -321,6 +322,8 @@ Object.defineProperty(exports, 'googleComputeInstantSnapshotIamMember', { get: f
 Object.defineProperty(exports, 'googleComputeInstantSnapshotIamPolicy', { get: function () { return require('./google-compute-instant-snapshot-iam-policy'); } });
 Object.defineProperty(exports, 'googleComputeInterconnect', { get: function () { return require('./google-compute-interconnect'); } });
 Object.defineProperty(exports, 'googleComputeInterconnectAttachment', { get: function () { return require('./google-compute-interconnect-attachment'); } });
+Object.defineProperty(exports, 'googleComputeInterconnectAttachmentGroup', { get: function () { return require('./google-compute-interconnect-attachment-group'); } });
+Object.defineProperty(exports, 'googleComputeInterconnectGroup', { get: function () { return require('./google-compute-interconnect-group'); } });
 Object.defineProperty(exports, 'googleComputeMachineImage', { get: function () { return require('./google-compute-machine-image'); } });
 Object.defineProperty(exports, 'googleComputeMachineImageIamBinding', { get: function () { return require('./google-compute-machine-image-iam-binding'); } });
 Object.defineProperty(exports, 'googleComputeMachineImageIamMember', { get: function () { return require('./google-compute-machine-image-iam-member'); } });
@@ -402,6 +405,7 @@ Object.defineProperty(exports, 'googleComputeSnapshot', { get: function () { ret
 Object.defineProperty(exports, 'googleComputeSnapshotIamBinding', { get: function () { return require('./google-compute-snapshot-iam-binding'); } });
 Object.defineProperty(exports, 'googleComputeSnapshotIamMember', { get: function () { return require('./google-compute-snapshot-iam-member'); } });
 Object.defineProperty(exports, 'googleComputeSnapshotIamPolicy', { get: function () { return require('./google-compute-snapshot-iam-policy'); } });
+Object.defineProperty(exports, 'googleComputeSnapshotSettings', { get: function () { return require('./google-compute-snapshot-settings'); } });
 Object.defineProperty(exports, 'googleComputeSslCertificate', { get: function () { return require('./google-compute-ssl-certificate'); } });
 Object.defineProperty(exports, 'googleComputeSslPolicy', { get: function () { return require('./google-compute-ssl-policy'); } });
 Object.defineProperty(exports, 'googleComputeStoragePool', { get: function () { return require('./google-compute-storage-pool'); } });

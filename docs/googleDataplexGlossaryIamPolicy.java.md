@@ -4,7 +4,7 @@
 
 ### GoogleDataplexGlossaryIamPolicy <a name="GoogleDataplexGlossaryIamPolicy" id="@cdktf/provider-google-beta.googleDataplexGlossaryIamPolicy.GoogleDataplexGlossaryIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dataplex_glossary_iam_policy google_dataplex_glossary_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_dataplex_glossary_iam_policy google_dataplex_glossary_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexGlossaryIamPolicy.GoogleDataplexGlossaryIamPolicy.Initializer"></a>
 
@@ -42,11 +42,11 @@ GoogleDataplexGlossaryIamPolicy.Builder.create(Construct scope, java.lang.String
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexGlossaryIamPolicy.GoogleDataplexGlossaryIamPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexGlossaryIamPolicy.GoogleDataplexGlossaryIamPolicy.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexGlossaryIamPolicy.GoogleDataplexGlossaryIamPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexGlossaryIamPolicy.GoogleDataplexGlossaryIamPolicy.Initializer.parameter.glossaryId">glossaryId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dataplex_glossary_iam_policy#glossary_id GoogleDataplexGlossaryIamPolicy#glossary_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexGlossaryIamPolicy.GoogleDataplexGlossaryIamPolicy.Initializer.parameter.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dataplex_glossary_iam_policy#policy_data GoogleDataplexGlossaryIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexGlossaryIamPolicy.GoogleDataplexGlossaryIamPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dataplex_glossary_iam_policy#id GoogleDataplexGlossaryIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexGlossaryIamPolicy.GoogleDataplexGlossaryIamPolicy.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dataplex_glossary_iam_policy#location GoogleDataplexGlossaryIamPolicy#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexGlossaryIamPolicy.GoogleDataplexGlossaryIamPolicy.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dataplex_glossary_iam_policy#project GoogleDataplexGlossaryIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexGlossaryIamPolicy.GoogleDataplexGlossaryIamPolicy.Initializer.parameter.glossaryId">glossaryId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_dataplex_glossary_iam_policy#glossary_id GoogleDataplexGlossaryIamPolicy#glossary_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexGlossaryIamPolicy.GoogleDataplexGlossaryIamPolicy.Initializer.parameter.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_dataplex_glossary_iam_policy#policy_data GoogleDataplexGlossaryIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexGlossaryIamPolicy.GoogleDataplexGlossaryIamPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_dataplex_glossary_iam_policy#id GoogleDataplexGlossaryIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexGlossaryIamPolicy.GoogleDataplexGlossaryIamPolicy.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_dataplex_glossary_iam_policy#location GoogleDataplexGlossaryIamPolicy#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexGlossaryIamPolicy.GoogleDataplexGlossaryIamPolicy.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_dataplex_glossary_iam_policy#project GoogleDataplexGlossaryIamPolicy#project}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dataplex_glossary_iam_policy#glossary_id GoogleDataplexGlossaryIamPolicy#glossary_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_dataplex_glossary_iam_policy#glossary_id GoogleDataplexGlossaryIamPolicy#glossary_id}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dataplex_glossary_iam_policy#policy_data GoogleDataplexGlossaryIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_dataplex_glossary_iam_policy#policy_data GoogleDataplexGlossaryIamPolicy#policy_data}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dataplex_glossary_iam_policy#id GoogleDataplexGlossaryIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_dataplex_glossary_iam_policy#id GoogleDataplexGlossaryIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -141,7 +141,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dataplex_glossary_iam_policy#location GoogleDataplexGlossaryIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_dataplex_glossary_iam_policy#location GoogleDataplexGlossaryIamPolicy#location}.
 
 ---
 
@@ -149,7 +149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dataplex_glossary_iam_policy#project GoogleDataplexGlossaryIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_dataplex_glossary_iam_policy#project GoogleDataplexGlossaryIamPolicy#project}.
 
 ---
 
@@ -597,7 +597,7 @@ The construct id used in the generated config for the GoogleDataplexGlossaryIamP
 
 The id of the existing GoogleDataplexGlossaryIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dataplex_glossary_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_dataplex_glossary_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -951,11 +951,11 @@ GoogleDataplexGlossaryIamPolicyConfig.builder()
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexGlossaryIamPolicy.GoogleDataplexGlossaryIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexGlossaryIamPolicy.GoogleDataplexGlossaryIamPolicyConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexGlossaryIamPolicy.GoogleDataplexGlossaryIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexGlossaryIamPolicy.GoogleDataplexGlossaryIamPolicyConfig.property.glossaryId">glossaryId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dataplex_glossary_iam_policy#glossary_id GoogleDataplexGlossaryIamPolicy#glossary_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexGlossaryIamPolicy.GoogleDataplexGlossaryIamPolicyConfig.property.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dataplex_glossary_iam_policy#policy_data GoogleDataplexGlossaryIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexGlossaryIamPolicy.GoogleDataplexGlossaryIamPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dataplex_glossary_iam_policy#id GoogleDataplexGlossaryIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexGlossaryIamPolicy.GoogleDataplexGlossaryIamPolicyConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dataplex_glossary_iam_policy#location GoogleDataplexGlossaryIamPolicy#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexGlossaryIamPolicy.GoogleDataplexGlossaryIamPolicyConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dataplex_glossary_iam_policy#project GoogleDataplexGlossaryIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexGlossaryIamPolicy.GoogleDataplexGlossaryIamPolicyConfig.property.glossaryId">glossaryId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_dataplex_glossary_iam_policy#glossary_id GoogleDataplexGlossaryIamPolicy#glossary_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexGlossaryIamPolicy.GoogleDataplexGlossaryIamPolicyConfig.property.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_dataplex_glossary_iam_policy#policy_data GoogleDataplexGlossaryIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexGlossaryIamPolicy.GoogleDataplexGlossaryIamPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_dataplex_glossary_iam_policy#id GoogleDataplexGlossaryIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexGlossaryIamPolicy.GoogleDataplexGlossaryIamPolicyConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_dataplex_glossary_iam_policy#location GoogleDataplexGlossaryIamPolicy#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexGlossaryIamPolicy.GoogleDataplexGlossaryIamPolicyConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_dataplex_glossary_iam_policy#project GoogleDataplexGlossaryIamPolicy#project}. |
 
 ---
 
@@ -1037,7 +1037,7 @@ public java.lang.String getGlossaryId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dataplex_glossary_iam_policy#glossary_id GoogleDataplexGlossaryIamPolicy#glossary_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_dataplex_glossary_iam_policy#glossary_id GoogleDataplexGlossaryIamPolicy#glossary_id}.
 
 ---
 
@@ -1049,7 +1049,7 @@ public java.lang.String getPolicyData();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dataplex_glossary_iam_policy#policy_data GoogleDataplexGlossaryIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_dataplex_glossary_iam_policy#policy_data GoogleDataplexGlossaryIamPolicy#policy_data}.
 
 ---
 
@@ -1061,7 +1061,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dataplex_glossary_iam_policy#id GoogleDataplexGlossaryIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_dataplex_glossary_iam_policy#id GoogleDataplexGlossaryIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1076,7 +1076,7 @@ public java.lang.String getLocation();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dataplex_glossary_iam_policy#location GoogleDataplexGlossaryIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_dataplex_glossary_iam_policy#location GoogleDataplexGlossaryIamPolicy#location}.
 
 ---
 
@@ -1088,7 +1088,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dataplex_glossary_iam_policy#project GoogleDataplexGlossaryIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_dataplex_glossary_iam_policy#project GoogleDataplexGlossaryIamPolicy#project}.
 
 ---
 
