@@ -75,6 +75,7 @@ export * as googleApigeeSharedflowDeployment from './google-apigee-sharedflow-de
 export * as googleApigeeSyncAuthorization from './google-apigee-sync-authorization';
 export * as googleApigeeTargetServer from './google-apigee-target-server';
 export * as googleApihubApiHubInstance from './google-apihub-api-hub-instance';
+export * as googleApihubCuration from './google-apihub-curation';
 export * as googleApihubHostProjectRegistration from './google-apihub-host-project-registration';
 export * as googleApikeysKey from './google-apikeys-key';
 export * as googleAppEngineApplication from './google-app-engine-application';
@@ -321,6 +322,8 @@ export * as googleComputeInstantSnapshotIamMember from './google-compute-instant
 export * as googleComputeInstantSnapshotIamPolicy from './google-compute-instant-snapshot-iam-policy';
 export * as googleComputeInterconnect from './google-compute-interconnect';
 export * as googleComputeInterconnectAttachment from './google-compute-interconnect-attachment';
+export * as googleComputeInterconnectAttachmentGroup from './google-compute-interconnect-attachment-group';
+export * as googleComputeInterconnectGroup from './google-compute-interconnect-group';
 export * as googleComputeMachineImage from './google-compute-machine-image';
 export * as googleComputeMachineImageIamBinding from './google-compute-machine-image-iam-binding';
 export * as googleComputeMachineImageIamMember from './google-compute-machine-image-iam-member';
@@ -402,6 +405,7 @@ export * as googleComputeSnapshot from './google-compute-snapshot';
 export * as googleComputeSnapshotIamBinding from './google-compute-snapshot-iam-binding';
 export * as googleComputeSnapshotIamMember from './google-compute-snapshot-iam-member';
 export * as googleComputeSnapshotIamPolicy from './google-compute-snapshot-iam-policy';
+export * as googleComputeSnapshotSettings from './google-compute-snapshot-settings';
 export * as googleComputeSslCertificate from './google-compute-ssl-certificate';
 export * as googleComputeSslPolicy from './google-compute-ssl-policy';
 export * as googleComputeStoragePool from './google-compute-storage-pool';
