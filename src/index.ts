@@ -565,6 +565,7 @@ export * as googleDialogflowCxIntent from './google-dialogflow-cx-intent';
 export * as googleDialogflowCxPage from './google-dialogflow-cx-page';
 export * as googleDialogflowCxSecuritySettings from './google-dialogflow-cx-security-settings';
 export * as googleDialogflowCxTestCase from './google-dialogflow-cx-test-case';
+export * as googleDialogflowCxTool from './google-dialogflow-cx-tool';
 export * as googleDialogflowCxVersion from './google-dialogflow-cx-version';
 export * as googleDialogflowCxWebhook from './google-dialogflow-cx-webhook';
 export * as googleDialogflowEntityType from './google-dialogflow-entity-type';
@@ -1355,6 +1356,7 @@ export * as dataGoogleDataFusionInstanceIamPolicy from './data-google-data-fusio
 export * as dataGoogleDataformRepositoryIamPolicy from './data-google-dataform-repository-iam-policy';
 export * as dataGoogleDataplexAspectTypeIamPolicy from './data-google-dataplex-aspect-type-iam-policy';
 export * as dataGoogleDataplexAssetIamPolicy from './data-google-dataplex-asset-iam-policy';
+export * as dataGoogleDataplexDataQualityRules from './data-google-dataplex-data-quality-rules';
 export * as dataGoogleDataplexDatascanIamPolicy from './data-google-dataplex-datascan-iam-policy';
 export * as dataGoogleDataplexEntryGroupIamPolicy from './data-google-dataplex-entry-group-iam-policy';
 export * as dataGoogleDataplexEntryTypeIamPolicy from './data-google-dataplex-entry-type-iam-policy';
