@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_compute_vpn_tunnel
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_vpn_tunnel
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface GoogleComputeVpnTunnelConfig extends cdktf.TerraformMetaArgumen
   /**
   * An optional description of this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_compute_vpn_tunnel#description GoogleComputeVpnTunnel#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_vpn_tunnel#description GoogleComputeVpnTunnel#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_compute_vpn_tunnel#id GoogleComputeVpnTunnel#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_vpn_tunnel#id GoogleComputeVpnTunnel#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,7 +30,7 @@ export interface GoogleComputeVpnTunnelConfig extends cdktf.TerraformMetaArgumen
   * peer VPN gateway.
   * Acceptable IKE versions are 1 or 2. Default version is 2.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_compute_vpn_tunnel#ike_version GoogleComputeVpnTunnel#ike_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_vpn_tunnel#ike_version GoogleComputeVpnTunnel#ike_version}
   */
   readonly ikeVersion?: number;
   /**
@@ -39,7 +39,7 @@ export interface GoogleComputeVpnTunnelConfig extends cdktf.TerraformMetaArgumen
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_compute_vpn_tunnel#labels GoogleComputeVpnTunnel#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_vpn_tunnel#labels GoogleComputeVpnTunnel#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
@@ -48,7 +48,7 @@ export interface GoogleComputeVpnTunnelConfig extends cdktf.TerraformMetaArgumen
   * for example '192.168.0.0/16'. The ranges should be disjoint.
   * Only IPv4 is supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_compute_vpn_tunnel#local_traffic_selector GoogleComputeVpnTunnel#local_traffic_selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_vpn_tunnel#local_traffic_selector GoogleComputeVpnTunnel#local_traffic_selector}
   */
   readonly localTrafficSelector?: string[];
   /**
@@ -60,19 +60,19 @@ export interface GoogleComputeVpnTunnelConfig extends cdktf.TerraformMetaArgumen
   * be a dash, lowercase letter, or digit,
   * except the last character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_compute_vpn_tunnel#name GoogleComputeVpnTunnel#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_vpn_tunnel#name GoogleComputeVpnTunnel#name}
   */
   readonly name: string;
   /**
   * URL of the peer side external VPN gateway to which this VPN tunnel is connected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_compute_vpn_tunnel#peer_external_gateway GoogleComputeVpnTunnel#peer_external_gateway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_vpn_tunnel#peer_external_gateway GoogleComputeVpnTunnel#peer_external_gateway}
   */
   readonly peerExternalGateway?: string;
   /**
   * The interface ID of the external VPN gateway to which this VPN tunnel is connected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_compute_vpn_tunnel#peer_external_gateway_interface GoogleComputeVpnTunnel#peer_external_gateway_interface}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_vpn_tunnel#peer_external_gateway_interface GoogleComputeVpnTunnel#peer_external_gateway_interface}
   */
   readonly peerExternalGatewayInterface?: number;
   /**
@@ -81,23 +81,23 @@ export interface GoogleComputeVpnTunnelConfig extends cdktf.TerraformMetaArgumen
   * ID in the peer GCP VPN gateway.
   * This field must reference a 'google_compute_ha_vpn_gateway' resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_compute_vpn_tunnel#peer_gcp_gateway GoogleComputeVpnTunnel#peer_gcp_gateway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_vpn_tunnel#peer_gcp_gateway GoogleComputeVpnTunnel#peer_gcp_gateway}
   */
   readonly peerGcpGateway?: string;
   /**
   * IP address of the peer VPN gateway. Only IPv4 is supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_compute_vpn_tunnel#peer_ip GoogleComputeVpnTunnel#peer_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_vpn_tunnel#peer_ip GoogleComputeVpnTunnel#peer_ip}
   */
   readonly peerIp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_compute_vpn_tunnel#project GoogleComputeVpnTunnel#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_vpn_tunnel#project GoogleComputeVpnTunnel#project}
   */
   readonly project?: string;
   /**
   * The region where the tunnel is located. If unset, is set to the region of 'target_vpn_gateway'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_compute_vpn_tunnel#region GoogleComputeVpnTunnel#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_vpn_tunnel#region GoogleComputeVpnTunnel#region}
   */
   readonly region?: string;
   /**
@@ -106,27 +106,27 @@ export interface GoogleComputeVpnTunnelConfig extends cdktf.TerraformMetaArgumen
   * for example '192.168.0.0/16'. The ranges should be disjoint.
   * Only IPv4 is supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_compute_vpn_tunnel#remote_traffic_selector GoogleComputeVpnTunnel#remote_traffic_selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_vpn_tunnel#remote_traffic_selector GoogleComputeVpnTunnel#remote_traffic_selector}
   */
   readonly remoteTrafficSelector?: string[];
   /**
   * URL of router resource to be used for dynamic routing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_compute_vpn_tunnel#router GoogleComputeVpnTunnel#router}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_vpn_tunnel#router GoogleComputeVpnTunnel#router}
   */
   readonly router?: string;
   /**
   * Shared secret used to set the secure session between the Cloud VPN
   * gateway and the peer VPN gateway.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_compute_vpn_tunnel#shared_secret GoogleComputeVpnTunnel#shared_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_vpn_tunnel#shared_secret GoogleComputeVpnTunnel#shared_secret}
   */
   readonly sharedSecret: string;
   /**
   * URL of the Target VPN gateway with which this VPN tunnel is
   * associated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_compute_vpn_tunnel#target_vpn_gateway GoogleComputeVpnTunnel#target_vpn_gateway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_vpn_tunnel#target_vpn_gateway GoogleComputeVpnTunnel#target_vpn_gateway}
   */
   readonly targetVpnGateway?: string;
   /**
@@ -134,33 +134,507 @@ export interface GoogleComputeVpnTunnelConfig extends cdktf.TerraformMetaArgumen
   * This must be used if a High Availability VPN gateway resource is created.
   * This field must reference a 'google_compute_ha_vpn_gateway' resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_compute_vpn_tunnel#vpn_gateway GoogleComputeVpnTunnel#vpn_gateway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_vpn_tunnel#vpn_gateway GoogleComputeVpnTunnel#vpn_gateway}
   */
   readonly vpnGateway?: string;
   /**
   * The interface ID of the VPN gateway with which this VPN tunnel is associated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_compute_vpn_tunnel#vpn_gateway_interface GoogleComputeVpnTunnel#vpn_gateway_interface}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_vpn_tunnel#vpn_gateway_interface GoogleComputeVpnTunnel#vpn_gateway_interface}
   */
   readonly vpnGatewayInterface?: number;
   /**
+  * cipher_suite block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_vpn_tunnel#cipher_suite GoogleComputeVpnTunnel#cipher_suite}
+  */
+  readonly cipherSuite?: GoogleComputeVpnTunnelCipherSuite;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_compute_vpn_tunnel#timeouts GoogleComputeVpnTunnel#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_vpn_tunnel#timeouts GoogleComputeVpnTunnel#timeouts}
   */
   readonly timeouts?: GoogleComputeVpnTunnelTimeouts;
 }
+export interface GoogleComputeVpnTunnelCipherSuitePhase1 {
+  /**
+  * Diffie-Hellman groups.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_vpn_tunnel#dh GoogleComputeVpnTunnel#dh}
+  */
+  readonly dh?: string[];
+  /**
+  * Encryption algorithms.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_vpn_tunnel#encryption GoogleComputeVpnTunnel#encryption}
+  */
+  readonly encryption?: string[];
+  /**
+  * Integrity algorithms.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_vpn_tunnel#integrity GoogleComputeVpnTunnel#integrity}
+  */
+  readonly integrity?: string[];
+  /**
+  * Pseudo-random functions.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_vpn_tunnel#prf GoogleComputeVpnTunnel#prf}
+  */
+  readonly prf?: string[];
+}
+
+export function googleComputeVpnTunnelCipherSuitePhase1ToTerraform(struct?: GoogleComputeVpnTunnelCipherSuitePhase1OutputReference | GoogleComputeVpnTunnelCipherSuitePhase1): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    dh: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.dh),
+    encryption: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.encryption),
+    integrity: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.integrity),
+    prf: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.prf),
+  }
+}
+
+
+export function googleComputeVpnTunnelCipherSuitePhase1ToHclTerraform(struct?: GoogleComputeVpnTunnelCipherSuitePhase1OutputReference | GoogleComputeVpnTunnelCipherSuitePhase1): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dh: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dh),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    encryption: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.encryption),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    integrity: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.integrity),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    prf: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.prf),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleComputeVpnTunnelCipherSuitePhase1OutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleComputeVpnTunnelCipherSuitePhase1 | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dh !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dh = this._dh;
+    }
+    if (this._encryption !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.encryption = this._encryption;
+    }
+    if (this._integrity !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.integrity = this._integrity;
+    }
+    if (this._prf !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.prf = this._prf;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeVpnTunnelCipherSuitePhase1 | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._dh = undefined;
+      this._encryption = undefined;
+      this._integrity = undefined;
+      this._prf = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._dh = value.dh;
+      this._encryption = value.encryption;
+      this._integrity = value.integrity;
+      this._prf = value.prf;
+    }
+  }
+
+  // dh - computed: false, optional: true, required: false
+  private _dh?: string[]; 
+  public get dh() {
+    return cdktf.Fn.tolist(this.getListAttribute('dh'));
+  }
+  public set dh(value: string[]) {
+    this._dh = value;
+  }
+  public resetDh() {
+    this._dh = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dhInput() {
+    return this._dh;
+  }
+
+  // encryption - computed: false, optional: true, required: false
+  private _encryption?: string[]; 
+  public get encryption() {
+    return cdktf.Fn.tolist(this.getListAttribute('encryption'));
+  }
+  public set encryption(value: string[]) {
+    this._encryption = value;
+  }
+  public resetEncryption() {
+    this._encryption = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encryptionInput() {
+    return this._encryption;
+  }
+
+  // integrity - computed: false, optional: true, required: false
+  private _integrity?: string[]; 
+  public get integrity() {
+    return cdktf.Fn.tolist(this.getListAttribute('integrity'));
+  }
+  public set integrity(value: string[]) {
+    this._integrity = value;
+  }
+  public resetIntegrity() {
+    this._integrity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get integrityInput() {
+    return this._integrity;
+  }
+
+  // prf - computed: false, optional: true, required: false
+  private _prf?: string[]; 
+  public get prf() {
+    return cdktf.Fn.tolist(this.getListAttribute('prf'));
+  }
+  public set prf(value: string[]) {
+    this._prf = value;
+  }
+  public resetPrf() {
+    this._prf = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get prfInput() {
+    return this._prf;
+  }
+}
+export interface GoogleComputeVpnTunnelCipherSuitePhase2 {
+  /**
+  * Encryption algorithms.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_vpn_tunnel#encryption GoogleComputeVpnTunnel#encryption}
+  */
+  readonly encryption?: string[];
+  /**
+  * Integrity algorithms.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_vpn_tunnel#integrity GoogleComputeVpnTunnel#integrity}
+  */
+  readonly integrity?: string[];
+  /**
+  * Perfect forward secrecy groups.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_vpn_tunnel#pfs GoogleComputeVpnTunnel#pfs}
+  */
+  readonly pfs?: string[];
+}
+
+export function googleComputeVpnTunnelCipherSuitePhase2ToTerraform(struct?: GoogleComputeVpnTunnelCipherSuitePhase2OutputReference | GoogleComputeVpnTunnelCipherSuitePhase2): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    encryption: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.encryption),
+    integrity: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.integrity),
+    pfs: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.pfs),
+  }
+}
+
+
+export function googleComputeVpnTunnelCipherSuitePhase2ToHclTerraform(struct?: GoogleComputeVpnTunnelCipherSuitePhase2OutputReference | GoogleComputeVpnTunnelCipherSuitePhase2): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    encryption: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.encryption),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    integrity: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.integrity),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    pfs: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.pfs),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleComputeVpnTunnelCipherSuitePhase2OutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleComputeVpnTunnelCipherSuitePhase2 | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._encryption !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.encryption = this._encryption;
+    }
+    if (this._integrity !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.integrity = this._integrity;
+    }
+    if (this._pfs !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pfs = this._pfs;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeVpnTunnelCipherSuitePhase2 | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._encryption = undefined;
+      this._integrity = undefined;
+      this._pfs = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._encryption = value.encryption;
+      this._integrity = value.integrity;
+      this._pfs = value.pfs;
+    }
+  }
+
+  // encryption - computed: false, optional: true, required: false
+  private _encryption?: string[]; 
+  public get encryption() {
+    return cdktf.Fn.tolist(this.getListAttribute('encryption'));
+  }
+  public set encryption(value: string[]) {
+    this._encryption = value;
+  }
+  public resetEncryption() {
+    this._encryption = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encryptionInput() {
+    return this._encryption;
+  }
+
+  // integrity - computed: false, optional: true, required: false
+  private _integrity?: string[]; 
+  public get integrity() {
+    return cdktf.Fn.tolist(this.getListAttribute('integrity'));
+  }
+  public set integrity(value: string[]) {
+    this._integrity = value;
+  }
+  public resetIntegrity() {
+    this._integrity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get integrityInput() {
+    return this._integrity;
+  }
+
+  // pfs - computed: false, optional: true, required: false
+  private _pfs?: string[]; 
+  public get pfs() {
+    return cdktf.Fn.tolist(this.getListAttribute('pfs'));
+  }
+  public set pfs(value: string[]) {
+    this._pfs = value;
+  }
+  public resetPfs() {
+    this._pfs = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pfsInput() {
+    return this._pfs;
+  }
+}
+export interface GoogleComputeVpnTunnelCipherSuite {
+  /**
+  * phase1 block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_vpn_tunnel#phase1 GoogleComputeVpnTunnel#phase1}
+  */
+  readonly phase1?: GoogleComputeVpnTunnelCipherSuitePhase1;
+  /**
+  * phase2 block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_vpn_tunnel#phase2 GoogleComputeVpnTunnel#phase2}
+  */
+  readonly phase2?: GoogleComputeVpnTunnelCipherSuitePhase2;
+}
+
+export function googleComputeVpnTunnelCipherSuiteToTerraform(struct?: GoogleComputeVpnTunnelCipherSuiteOutputReference | GoogleComputeVpnTunnelCipherSuite): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    phase1: googleComputeVpnTunnelCipherSuitePhase1ToTerraform(struct!.phase1),
+    phase2: googleComputeVpnTunnelCipherSuitePhase2ToTerraform(struct!.phase2),
+  }
+}
+
+
+export function googleComputeVpnTunnelCipherSuiteToHclTerraform(struct?: GoogleComputeVpnTunnelCipherSuiteOutputReference | GoogleComputeVpnTunnelCipherSuite): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    phase1: {
+      value: googleComputeVpnTunnelCipherSuitePhase1ToHclTerraform(struct!.phase1),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleComputeVpnTunnelCipherSuitePhase1List",
+    },
+    phase2: {
+      value: googleComputeVpnTunnelCipherSuitePhase2ToHclTerraform(struct!.phase2),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleComputeVpnTunnelCipherSuitePhase2List",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleComputeVpnTunnelCipherSuiteOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleComputeVpnTunnelCipherSuite | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._phase1?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.phase1 = this._phase1?.internalValue;
+    }
+    if (this._phase2?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.phase2 = this._phase2?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeVpnTunnelCipherSuite | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._phase1.internalValue = undefined;
+      this._phase2.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._phase1.internalValue = value.phase1;
+      this._phase2.internalValue = value.phase2;
+    }
+  }
+
+  // phase1 - computed: false, optional: true, required: false
+  private _phase1 = new GoogleComputeVpnTunnelCipherSuitePhase1OutputReference(this, "phase1");
+  public get phase1() {
+    return this._phase1;
+  }
+  public putPhase1(value: GoogleComputeVpnTunnelCipherSuitePhase1) {
+    this._phase1.internalValue = value;
+  }
+  public resetPhase1() {
+    this._phase1.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get phase1Input() {
+    return this._phase1.internalValue;
+  }
+
+  // phase2 - computed: false, optional: true, required: false
+  private _phase2 = new GoogleComputeVpnTunnelCipherSuitePhase2OutputReference(this, "phase2");
+  public get phase2() {
+    return this._phase2;
+  }
+  public putPhase2(value: GoogleComputeVpnTunnelCipherSuitePhase2) {
+    this._phase2.internalValue = value;
+  }
+  public resetPhase2() {
+    this._phase2.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get phase2Input() {
+    return this._phase2.internalValue;
+  }
+}
 export interface GoogleComputeVpnTunnelTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_compute_vpn_tunnel#create GoogleComputeVpnTunnel#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_vpn_tunnel#create GoogleComputeVpnTunnel#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_compute_vpn_tunnel#delete GoogleComputeVpnTunnel#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_vpn_tunnel#delete GoogleComputeVpnTunnel#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_compute_vpn_tunnel#update GoogleComputeVpnTunnel#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_vpn_tunnel#update GoogleComputeVpnTunnel#update}
   */
   readonly update?: string;
 }
@@ -312,7 +786,7 @@ export class GoogleComputeVpnTunnelTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_compute_vpn_tunnel google_compute_vpn_tunnel}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_vpn_tunnel google_compute_vpn_tunnel}
 */
 export class GoogleComputeVpnTunnel extends cdktf.TerraformResource {
 
@@ -328,7 +802,7 @@ export class GoogleComputeVpnTunnel extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleComputeVpnTunnel resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleComputeVpnTunnel to import
-  * @param importFromId The id of the existing GoogleComputeVpnTunnel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_compute_vpn_tunnel#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleComputeVpnTunnel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_vpn_tunnel#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleComputeVpnTunnel to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -340,7 +814,7 @@ export class GoogleComputeVpnTunnel extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_compute_vpn_tunnel google_compute_vpn_tunnel} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_vpn_tunnel google_compute_vpn_tunnel} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -351,7 +825,7 @@ export class GoogleComputeVpnTunnel extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_vpn_tunnel',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.39.0',
+        providerVersion: '6.40.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -380,6 +854,7 @@ export class GoogleComputeVpnTunnel extends cdktf.TerraformResource {
     this._targetVpnGateway = config.targetVpnGateway;
     this._vpnGateway = config.vpnGateway;
     this._vpnGatewayInterface = config.vpnGatewayInterface;
+    this._cipherSuite.internalValue = config.cipherSuite;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -711,6 +1186,22 @@ export class GoogleComputeVpnTunnel extends cdktf.TerraformResource {
     return this._vpnGatewayInterface;
   }
 
+  // cipher_suite - computed: false, optional: true, required: false
+  private _cipherSuite = new GoogleComputeVpnTunnelCipherSuiteOutputReference(this, "cipher_suite");
+  public get cipherSuite() {
+    return this._cipherSuite;
+  }
+  public putCipherSuite(value: GoogleComputeVpnTunnelCipherSuite) {
+    this._cipherSuite.internalValue = value;
+  }
+  public resetCipherSuite() {
+    this._cipherSuite.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cipherSuiteInput() {
+    return this._cipherSuite.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new GoogleComputeVpnTunnelTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -751,6 +1242,7 @@ export class GoogleComputeVpnTunnel extends cdktf.TerraformResource {
       target_vpn_gateway: cdktf.stringToTerraform(this._targetVpnGateway),
       vpn_gateway: cdktf.stringToTerraform(this._vpnGateway),
       vpn_gateway_interface: cdktf.numberToTerraform(this._vpnGatewayInterface),
+      cipher_suite: googleComputeVpnTunnelCipherSuiteToTerraform(this._cipherSuite.internalValue),
       timeouts: googleComputeVpnTunnelTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -864,6 +1356,12 @@ export class GoogleComputeVpnTunnel extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "number",
+      },
+      cipher_suite: {
+        value: googleComputeVpnTunnelCipherSuiteToHclTerraform(this._cipherSuite.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleComputeVpnTunnelCipherSuiteList",
       },
       timeouts: {
         value: googleComputeVpnTunnelTimeoutsToHclTerraform(this._timeouts.internalValue),

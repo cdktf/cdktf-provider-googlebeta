@@ -565,6 +565,7 @@ Object.defineProperty(exports, 'googleDialogflowCxIntent', { get: function () { 
 Object.defineProperty(exports, 'googleDialogflowCxPage', { get: function () { return require('./google-dialogflow-cx-page'); } });
 Object.defineProperty(exports, 'googleDialogflowCxSecuritySettings', { get: function () { return require('./google-dialogflow-cx-security-settings'); } });
 Object.defineProperty(exports, 'googleDialogflowCxTestCase', { get: function () { return require('./google-dialogflow-cx-test-case'); } });
+Object.defineProperty(exports, 'googleDialogflowCxTool', { get: function () { return require('./google-dialogflow-cx-tool'); } });
 Object.defineProperty(exports, 'googleDialogflowCxVersion', { get: function () { return require('./google-dialogflow-cx-version'); } });
 Object.defineProperty(exports, 'googleDialogflowCxWebhook', { get: function () { return require('./google-dialogflow-cx-webhook'); } });
 Object.defineProperty(exports, 'googleDialogflowEntityType', { get: function () { return require('./google-dialogflow-entity-type'); } });
@@ -1355,6 +1356,7 @@ Object.defineProperty(exports, 'dataGoogleDataFusionInstanceIamPolicy', { get: f
 Object.defineProperty(exports, 'dataGoogleDataformRepositoryIamPolicy', { get: function () { return require('./data-google-dataform-repository-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleDataplexAspectTypeIamPolicy', { get: function () { return require('./data-google-dataplex-aspect-type-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleDataplexAssetIamPolicy', { get: function () { return require('./data-google-dataplex-asset-iam-policy'); } });
+Object.defineProperty(exports, 'dataGoogleDataplexDataQualityRules', { get: function () { return require('./data-google-dataplex-data-quality-rules'); } });
 Object.defineProperty(exports, 'dataGoogleDataplexDatascanIamPolicy', { get: function () { return require('./data-google-dataplex-datascan-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleDataplexEntryGroupIamPolicy', { get: function () { return require('./data-google-dataplex-entry-group-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleDataplexEntryTypeIamPolicy', { get: function () { return require('./data-google-dataplex-entry-type-iam-policy'); } });

@@ -1,3 +1,3 @@
 # `google_migration_center_group`
 
-Refer to the Terraform Registry for docs: [`google_migration_center_group`](https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_migration_center_group).
+Refer to the Terraform Registry for docs: [`google_migration_center_group`](https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_migration_center_group).
