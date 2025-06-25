@@ -5223,6 +5223,11 @@ export class DataGoogleContainerClusterNodeConfigAdvancedMachineFeaturesOutputRe
     return this.getBooleanAttribute('enable_nested_virtualization');
   }
 
+  // performance_monitoring_unit - computed: true, optional: false, required: false
+  public get performanceMonitoringUnit() {
+    return this.getStringAttribute('performance_monitoring_unit');
+  }
+
   // threads_per_core - computed: true, optional: false, required: false
   public get threadsPerCore() {
     return this.getNumberAttribute('threads_per_core');

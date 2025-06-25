@@ -77,6 +77,7 @@ Object.defineProperty(exports, 'googleApigeeTargetServer', { get: function () { 
 Object.defineProperty(exports, 'googleApihubApiHubInstance', { get: function () { return require('./google-apihub-api-hub-instance'); } });
 Object.defineProperty(exports, 'googleApihubCuration', { get: function () { return require('./google-apihub-curation'); } });
 Object.defineProperty(exports, 'googleApihubHostProjectRegistration', { get: function () { return require('./google-apihub-host-project-registration'); } });
+Object.defineProperty(exports, 'googleApihubPluginInstance', { get: function () { return require('./google-apihub-plugin-instance'); } });
 Object.defineProperty(exports, 'googleApikeysKey', { get: function () { return require('./google-apikeys-key'); } });
 Object.defineProperty(exports, 'googleAppEngineApplication', { get: function () { return require('./google-app-engine-application'); } });
 Object.defineProperty(exports, 'googleAppEngineApplicationUrlDispatchRules', { get: function () { return require('./google-app-engine-application-url-dispatch-rules'); } });
@@ -426,6 +427,7 @@ Object.defineProperty(exports, 'googleComputeTargetTcpProxy', { get: function ()
 Object.defineProperty(exports, 'googleComputeUrlMap', { get: function () { return require('./google-compute-url-map'); } });
 Object.defineProperty(exports, 'googleComputeVpnGateway', { get: function () { return require('./google-compute-vpn-gateway'); } });
 Object.defineProperty(exports, 'googleComputeVpnTunnel', { get: function () { return require('./google-compute-vpn-tunnel'); } });
+Object.defineProperty(exports, 'googleContactCenterInsightsView', { get: function () { return require('./google-contact-center-insights-view'); } });
 Object.defineProperty(exports, 'googleContainerAnalysisNote', { get: function () { return require('./google-container-analysis-note'); } });
 Object.defineProperty(exports, 'googleContainerAnalysisNoteIamBinding', { get: function () { return require('./google-container-analysis-note-iam-binding'); } });
 Object.defineProperty(exports, 'googleContainerAnalysisNoteIamMember', { get: function () { return require('./google-container-analysis-note-iam-member'); } });
@@ -548,6 +550,7 @@ Object.defineProperty(exports, 'googleDataprocMetastoreServiceIamPolicy', { get:
 Object.defineProperty(exports, 'googleDataprocMetastoreTableIamBinding', { get: function () { return require('./google-dataproc-metastore-table-iam-binding'); } });
 Object.defineProperty(exports, 'googleDataprocMetastoreTableIamMember', { get: function () { return require('./google-dataproc-metastore-table-iam-member'); } });
 Object.defineProperty(exports, 'googleDataprocMetastoreTableIamPolicy', { get: function () { return require('./google-dataproc-metastore-table-iam-policy'); } });
+Object.defineProperty(exports, 'googleDataprocSessionTemplate', { get: function () { return require('./google-dataproc-session-template'); } });
 Object.defineProperty(exports, 'googleDataprocWorkflowTemplate', { get: function () { return require('./google-dataproc-workflow-template'); } });
 Object.defineProperty(exports, 'googleDatastreamConnectionProfile', { get: function () { return require('./google-datastream-connection-profile'); } });
 Object.defineProperty(exports, 'googleDatastreamPrivateConnection', { get: function () { return require('./google-datastream-private-connection'); } });
@@ -568,6 +571,7 @@ Object.defineProperty(exports, 'googleDialogflowCxTestCase', { get: function () 
 Object.defineProperty(exports, 'googleDialogflowCxTool', { get: function () { return require('./google-dialogflow-cx-tool'); } });
 Object.defineProperty(exports, 'googleDialogflowCxVersion', { get: function () { return require('./google-dialogflow-cx-version'); } });
 Object.defineProperty(exports, 'googleDialogflowCxWebhook', { get: function () { return require('./google-dialogflow-cx-webhook'); } });
+Object.defineProperty(exports, 'googleDialogflowEncryptionSpec', { get: function () { return require('./google-dialogflow-encryption-spec'); } });
 Object.defineProperty(exports, 'googleDialogflowEntityType', { get: function () { return require('./google-dialogflow-entity-type'); } });
 Object.defineProperty(exports, 'googleDialogflowFulfillment', { get: function () { return require('./google-dialogflow-fulfillment'); } });
 Object.defineProperty(exports, 'googleDialogflowIntent', { get: function () { return require('./google-dialogflow-intent'); } });

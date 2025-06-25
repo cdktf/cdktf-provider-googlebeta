@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface GoogleDataplexDatascanConfig extends cdktf.TerraformMetaArgumen
   /**
   * DataScan identifier. Must contain only lowercase letters, numbers and hyphens. Must start with a letter. Must end with a number or a letter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#data_scan_id GoogleDataplexDatascan#data_scan_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#data_scan_id GoogleDataplexDatascan#data_scan_id}
   */
   readonly dataScanId: string;
   /**
   * Description of the scan.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#description GoogleDataplexDatascan#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#description GoogleDataplexDatascan#description}
   */
   readonly description?: string;
   /**
   * User friendly display name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#display_name GoogleDataplexDatascan#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#display_name GoogleDataplexDatascan#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#id GoogleDataplexDatascan#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#id GoogleDataplexDatascan#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,47 +44,53 @@ export interface GoogleDataplexDatascanConfig extends cdktf.TerraformMetaArgumen
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#labels GoogleDataplexDatascan#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#labels GoogleDataplexDatascan#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location where the data scan should reside.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#location GoogleDataplexDatascan#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#location GoogleDataplexDatascan#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#project GoogleDataplexDatascan#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#project GoogleDataplexDatascan#project}
   */
   readonly project?: string;
   /**
   * data block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#data GoogleDataplexDatascan#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#data GoogleDataplexDatascan#data}
   */
   readonly data: GoogleDataplexDatascanData;
   /**
+  * data_discovery_spec block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#data_discovery_spec GoogleDataplexDatascan#data_discovery_spec}
+  */
+  readonly dataDiscoverySpec?: GoogleDataplexDatascanDataDiscoverySpec;
+  /**
   * data_profile_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#data_profile_spec GoogleDataplexDatascan#data_profile_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#data_profile_spec GoogleDataplexDatascan#data_profile_spec}
   */
   readonly dataProfileSpec?: GoogleDataplexDatascanDataProfileSpec;
   /**
   * data_quality_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#data_quality_spec GoogleDataplexDatascan#data_quality_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#data_quality_spec GoogleDataplexDatascan#data_quality_spec}
   */
   readonly dataQualitySpec?: GoogleDataplexDatascanDataQualitySpec;
   /**
   * execution_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#execution_spec GoogleDataplexDatascan#execution_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#execution_spec GoogleDataplexDatascan#execution_spec}
   */
   readonly executionSpec: GoogleDataplexDatascanExecutionSpec;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#timeouts GoogleDataplexDatascan#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#timeouts GoogleDataplexDatascan#timeouts}
   */
   readonly timeouts?: GoogleDataplexDatascanTimeouts;
 }
@@ -172,14 +178,14 @@ export interface GoogleDataplexDatascanData {
   /**
   * The Dataplex entity that represents the data source(e.g. BigQuery table) for Datascan.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#entity GoogleDataplexDatascan#entity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#entity GoogleDataplexDatascan#entity}
   */
   readonly entity?: string;
   /**
   * The service-qualified full resource name of the cloud resource for a DataScan job to scan against. The field could be:
-  * (Cloud Storage bucket for DataDiscoveryScan)BigQuery table of type "TABLE" for DataProfileScan/DataQualityScan.
+  * Cloud Storage bucket (//storage.googleapis.com/projects/PROJECT_ID/buckets/BUCKET_ID) for DataDiscoveryScan OR BigQuery table of type "TABLE" (/bigquery.googleapis.com/projects/PROJECT_ID/datasets/DATASET_ID/tables/TABLE_ID) for DataProfileScan/DataQualityScan.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#resource GoogleDataplexDatascan#resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#resource GoogleDataplexDatascan#resource}
   */
   readonly resource?: string;
 }
@@ -290,13 +296,863 @@ export class GoogleDataplexDatascanDataOutputReference extends cdktf.ComplexObje
     return this._resource;
   }
 }
+export interface GoogleDataplexDatascanDataDiscoverySpecBigqueryPublishingConfig {
+  /**
+  * The BigQuery connection used to create BigLake tables. Must be in the form 'projects/{projectId}/locations/{locationId}/connections/{connection_id}'.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#connection GoogleDataplexDatascan#connection}
+  */
+  readonly connection?: string;
+  /**
+  * The location of the BigQuery dataset to publish BigLake external or non-BigLake external tables to.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#location GoogleDataplexDatascan#location}
+  */
+  readonly location?: string;
+  /**
+  * The project of the BigQuery dataset to publish BigLake external or non-BigLake external tables to. If not specified, the project of the Cloud Storage bucket will be used. The format is "projects/{project_id_or_number}".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#project GoogleDataplexDatascan#project}
+  */
+  readonly project?: string;
+  /**
+  * Determines whether to publish discovered tables as BigLake external tables or non-BigLake external tables. Possible values: ["TABLE_TYPE_UNSPECIFIED", "EXTERNAL", "BIGLAKE"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#table_type GoogleDataplexDatascan#table_type}
+  */
+  readonly tableType?: string;
+}
+
+export function googleDataplexDatascanDataDiscoverySpecBigqueryPublishingConfigToTerraform(struct?: GoogleDataplexDatascanDataDiscoverySpecBigqueryPublishingConfigOutputReference | GoogleDataplexDatascanDataDiscoverySpecBigqueryPublishingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    connection: cdktf.stringToTerraform(struct!.connection),
+    location: cdktf.stringToTerraform(struct!.location),
+    project: cdktf.stringToTerraform(struct!.project),
+    table_type: cdktf.stringToTerraform(struct!.tableType),
+  }
+}
+
+
+export function googleDataplexDatascanDataDiscoverySpecBigqueryPublishingConfigToHclTerraform(struct?: GoogleDataplexDatascanDataDiscoverySpecBigqueryPublishingConfigOutputReference | GoogleDataplexDatascanDataDiscoverySpecBigqueryPublishingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    connection: {
+      value: cdktf.stringToHclTerraform(struct!.connection),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    location: {
+      value: cdktf.stringToHclTerraform(struct!.location),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    project: {
+      value: cdktf.stringToHclTerraform(struct!.project),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    table_type: {
+      value: cdktf.stringToHclTerraform(struct!.tableType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDataplexDatascanDataDiscoverySpecBigqueryPublishingConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataplexDatascanDataDiscoverySpecBigqueryPublishingConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._connection !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.connection = this._connection;
+    }
+    if (this._location !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.location = this._location;
+    }
+    if (this._project !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.project = this._project;
+    }
+    if (this._tableType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tableType = this._tableType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataplexDatascanDataDiscoverySpecBigqueryPublishingConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._connection = undefined;
+      this._location = undefined;
+      this._project = undefined;
+      this._tableType = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._connection = value.connection;
+      this._location = value.location;
+      this._project = value.project;
+      this._tableType = value.tableType;
+    }
+  }
+
+  // connection - computed: false, optional: true, required: false
+  private _connection?: string; 
+  public get connection() {
+    return this.getStringAttribute('connection');
+  }
+  public set connection(value: string) {
+    this._connection = value;
+  }
+  public resetConnection() {
+    this._connection = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectionInput() {
+    return this._connection;
+  }
+
+  // location - computed: false, optional: true, required: false
+  private _location?: string; 
+  public get location() {
+    return this.getStringAttribute('location');
+  }
+  public set location(value: string) {
+    this._location = value;
+  }
+  public resetLocation() {
+    this._location = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get locationInput() {
+    return this._location;
+  }
+
+  // project - computed: false, optional: true, required: false
+  private _project?: string; 
+  public get project() {
+    return this.getStringAttribute('project');
+  }
+  public set project(value: string) {
+    this._project = value;
+  }
+  public resetProject() {
+    this._project = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectInput() {
+    return this._project;
+  }
+
+  // table_type - computed: false, optional: true, required: false
+  private _tableType?: string; 
+  public get tableType() {
+    return this.getStringAttribute('table_type');
+  }
+  public set tableType(value: string) {
+    this._tableType = value;
+  }
+  public resetTableType() {
+    this._tableType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tableTypeInput() {
+    return this._tableType;
+  }
+}
+export interface GoogleDataplexDatascanDataDiscoverySpecStorageConfigCsvOptions {
+  /**
+  * The delimiter that is used to separate values. The default is ',' (comma).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#delimiter GoogleDataplexDatascan#delimiter}
+  */
+  readonly delimiter?: string;
+  /**
+  * The character encoding of the data. The default is UTF-8.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#encoding GoogleDataplexDatascan#encoding}
+  */
+  readonly encoding?: string;
+  /**
+  * The number of rows to interpret as header rows that should be skipped when reading data rows.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#header_rows GoogleDataplexDatascan#header_rows}
+  */
+  readonly headerRows?: number;
+  /**
+  * The character used to quote column values. Accepts '"' (double quotation mark) or ``` (single quotation mark). If unspecified, defaults to '"' (double quotation mark).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#quote GoogleDataplexDatascan#quote}
+  */
+  readonly quote?: string;
+  /**
+  * Whether to disable the inference of data types for CSV data. If true, all columns are registered as strings.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#type_inference_disabled GoogleDataplexDatascan#type_inference_disabled}
+  */
+  readonly typeInferenceDisabled?: boolean | cdktf.IResolvable;
+}
+
+export function googleDataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsToTerraform(struct?: GoogleDataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference | GoogleDataplexDatascanDataDiscoverySpecStorageConfigCsvOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    delimiter: cdktf.stringToTerraform(struct!.delimiter),
+    encoding: cdktf.stringToTerraform(struct!.encoding),
+    header_rows: cdktf.numberToTerraform(struct!.headerRows),
+    quote: cdktf.stringToTerraform(struct!.quote),
+    type_inference_disabled: cdktf.booleanToTerraform(struct!.typeInferenceDisabled),
+  }
+}
+
+
+export function googleDataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsToHclTerraform(struct?: GoogleDataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference | GoogleDataplexDatascanDataDiscoverySpecStorageConfigCsvOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    delimiter: {
+      value: cdktf.stringToHclTerraform(struct!.delimiter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    encoding: {
+      value: cdktf.stringToHclTerraform(struct!.encoding),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    header_rows: {
+      value: cdktf.numberToHclTerraform(struct!.headerRows),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    quote: {
+      value: cdktf.stringToHclTerraform(struct!.quote),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type_inference_disabled: {
+      value: cdktf.booleanToHclTerraform(struct!.typeInferenceDisabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataplexDatascanDataDiscoverySpecStorageConfigCsvOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._delimiter !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.delimiter = this._delimiter;
+    }
+    if (this._encoding !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.encoding = this._encoding;
+    }
+    if (this._headerRows !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerRows = this._headerRows;
+    }
+    if (this._quote !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.quote = this._quote;
+    }
+    if (this._typeInferenceDisabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.typeInferenceDisabled = this._typeInferenceDisabled;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataplexDatascanDataDiscoverySpecStorageConfigCsvOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._delimiter = undefined;
+      this._encoding = undefined;
+      this._headerRows = undefined;
+      this._quote = undefined;
+      this._typeInferenceDisabled = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._delimiter = value.delimiter;
+      this._encoding = value.encoding;
+      this._headerRows = value.headerRows;
+      this._quote = value.quote;
+      this._typeInferenceDisabled = value.typeInferenceDisabled;
+    }
+  }
+
+  // delimiter - computed: false, optional: true, required: false
+  private _delimiter?: string; 
+  public get delimiter() {
+    return this.getStringAttribute('delimiter');
+  }
+  public set delimiter(value: string) {
+    this._delimiter = value;
+  }
+  public resetDelimiter() {
+    this._delimiter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get delimiterInput() {
+    return this._delimiter;
+  }
+
+  // encoding - computed: false, optional: true, required: false
+  private _encoding?: string; 
+  public get encoding() {
+    return this.getStringAttribute('encoding');
+  }
+  public set encoding(value: string) {
+    this._encoding = value;
+  }
+  public resetEncoding() {
+    this._encoding = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encodingInput() {
+    return this._encoding;
+  }
+
+  // header_rows - computed: false, optional: true, required: false
+  private _headerRows?: number; 
+  public get headerRows() {
+    return this.getNumberAttribute('header_rows');
+  }
+  public set headerRows(value: number) {
+    this._headerRows = value;
+  }
+  public resetHeaderRows() {
+    this._headerRows = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerRowsInput() {
+    return this._headerRows;
+  }
+
+  // quote - computed: false, optional: true, required: false
+  private _quote?: string; 
+  public get quote() {
+    return this.getStringAttribute('quote');
+  }
+  public set quote(value: string) {
+    this._quote = value;
+  }
+  public resetQuote() {
+    this._quote = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get quoteInput() {
+    return this._quote;
+  }
+
+  // type_inference_disabled - computed: false, optional: true, required: false
+  private _typeInferenceDisabled?: boolean | cdktf.IResolvable; 
+  public get typeInferenceDisabled() {
+    return this.getBooleanAttribute('type_inference_disabled');
+  }
+  public set typeInferenceDisabled(value: boolean | cdktf.IResolvable) {
+    this._typeInferenceDisabled = value;
+  }
+  public resetTypeInferenceDisabled() {
+    this._typeInferenceDisabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInferenceDisabledInput() {
+    return this._typeInferenceDisabled;
+  }
+}
+export interface GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptions {
+  /**
+  * The character encoding of the data. The default is UTF-8.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#encoding GoogleDataplexDatascan#encoding}
+  */
+  readonly encoding?: string;
+  /**
+  * Whether to disable the inference of data types for JSON data. If true, all columns are registered as their primitive types (strings, number, or boolean).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#type_inference_disabled GoogleDataplexDatascan#type_inference_disabled}
+  */
+  readonly typeInferenceDisabled?: boolean | cdktf.IResolvable;
+}
+
+export function googleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsToTerraform(struct?: GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference | GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    encoding: cdktf.stringToTerraform(struct!.encoding),
+    type_inference_disabled: cdktf.booleanToTerraform(struct!.typeInferenceDisabled),
+  }
+}
+
+
+export function googleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsToHclTerraform(struct?: GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference | GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    encoding: {
+      value: cdktf.stringToHclTerraform(struct!.encoding),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type_inference_disabled: {
+      value: cdktf.booleanToHclTerraform(struct!.typeInferenceDisabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._encoding !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.encoding = this._encoding;
+    }
+    if (this._typeInferenceDisabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.typeInferenceDisabled = this._typeInferenceDisabled;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._encoding = undefined;
+      this._typeInferenceDisabled = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._encoding = value.encoding;
+      this._typeInferenceDisabled = value.typeInferenceDisabled;
+    }
+  }
+
+  // encoding - computed: false, optional: true, required: false
+  private _encoding?: string; 
+  public get encoding() {
+    return this.getStringAttribute('encoding');
+  }
+  public set encoding(value: string) {
+    this._encoding = value;
+  }
+  public resetEncoding() {
+    this._encoding = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encodingInput() {
+    return this._encoding;
+  }
+
+  // type_inference_disabled - computed: false, optional: true, required: false
+  private _typeInferenceDisabled?: boolean | cdktf.IResolvable; 
+  public get typeInferenceDisabled() {
+    return this.getBooleanAttribute('type_inference_disabled');
+  }
+  public set typeInferenceDisabled(value: boolean | cdktf.IResolvable) {
+    this._typeInferenceDisabled = value;
+  }
+  public resetTypeInferenceDisabled() {
+    this._typeInferenceDisabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInferenceDisabledInput() {
+    return this._typeInferenceDisabled;
+  }
+}
+export interface GoogleDataplexDatascanDataDiscoverySpecStorageConfig {
+  /**
+  * Defines the data to exclude during discovery. Provide a list of patterns that identify the data to exclude. For Cloud Storage bucket assets, these patterns are interpreted as glob patterns used to match object names. For BigQuery dataset assets, these patterns are interpreted as patterns to match table names.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#exclude_patterns GoogleDataplexDatascan#exclude_patterns}
+  */
+  readonly excludePatterns?: string[];
+  /**
+  * Defines the data to include during discovery when only a subset of the data should be considered. Provide a list of patterns that identify the data to include. For Cloud Storage bucket assets, these patterns are interpreted as glob patterns used to match object names. For BigQuery dataset assets, these patterns are interpreted as patterns to match table names.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#include_patterns GoogleDataplexDatascan#include_patterns}
+  */
+  readonly includePatterns?: string[];
+  /**
+  * csv_options block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#csv_options GoogleDataplexDatascan#csv_options}
+  */
+  readonly csvOptions?: GoogleDataplexDatascanDataDiscoverySpecStorageConfigCsvOptions;
+  /**
+  * json_options block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#json_options GoogleDataplexDatascan#json_options}
+  */
+  readonly jsonOptions?: GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptions;
+}
+
+export function googleDataplexDatascanDataDiscoverySpecStorageConfigToTerraform(struct?: GoogleDataplexDatascanDataDiscoverySpecStorageConfigOutputReference | GoogleDataplexDatascanDataDiscoverySpecStorageConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    exclude_patterns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludePatterns),
+    include_patterns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includePatterns),
+    csv_options: googleDataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsToTerraform(struct!.csvOptions),
+    json_options: googleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsToTerraform(struct!.jsonOptions),
+  }
+}
+
+
+export function googleDataplexDatascanDataDiscoverySpecStorageConfigToHclTerraform(struct?: GoogleDataplexDatascanDataDiscoverySpecStorageConfigOutputReference | GoogleDataplexDatascanDataDiscoverySpecStorageConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    exclude_patterns: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludePatterns),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    include_patterns: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includePatterns),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    csv_options: {
+      value: googleDataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsToHclTerraform(struct!.csvOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsList",
+    },
+    json_options: {
+      value: googleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsToHclTerraform(struct!.jsonOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDataplexDatascanDataDiscoverySpecStorageConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataplexDatascanDataDiscoverySpecStorageConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._excludePatterns !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.excludePatterns = this._excludePatterns;
+    }
+    if (this._includePatterns !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.includePatterns = this._includePatterns;
+    }
+    if (this._csvOptions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.csvOptions = this._csvOptions?.internalValue;
+    }
+    if (this._jsonOptions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.jsonOptions = this._jsonOptions?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataplexDatascanDataDiscoverySpecStorageConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._excludePatterns = undefined;
+      this._includePatterns = undefined;
+      this._csvOptions.internalValue = undefined;
+      this._jsonOptions.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._excludePatterns = value.excludePatterns;
+      this._includePatterns = value.includePatterns;
+      this._csvOptions.internalValue = value.csvOptions;
+      this._jsonOptions.internalValue = value.jsonOptions;
+    }
+  }
+
+  // exclude_patterns - computed: false, optional: true, required: false
+  private _excludePatterns?: string[]; 
+  public get excludePatterns() {
+    return this.getListAttribute('exclude_patterns');
+  }
+  public set excludePatterns(value: string[]) {
+    this._excludePatterns = value;
+  }
+  public resetExcludePatterns() {
+    this._excludePatterns = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get excludePatternsInput() {
+    return this._excludePatterns;
+  }
+
+  // include_patterns - computed: false, optional: true, required: false
+  private _includePatterns?: string[]; 
+  public get includePatterns() {
+    return this.getListAttribute('include_patterns');
+  }
+  public set includePatterns(value: string[]) {
+    this._includePatterns = value;
+  }
+  public resetIncludePatterns() {
+    this._includePatterns = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includePatternsInput() {
+    return this._includePatterns;
+  }
+
+  // csv_options - computed: false, optional: true, required: false
+  private _csvOptions = new GoogleDataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference(this, "csv_options");
+  public get csvOptions() {
+    return this._csvOptions;
+  }
+  public putCsvOptions(value: GoogleDataplexDatascanDataDiscoverySpecStorageConfigCsvOptions) {
+    this._csvOptions.internalValue = value;
+  }
+  public resetCsvOptions() {
+    this._csvOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get csvOptionsInput() {
+    return this._csvOptions.internalValue;
+  }
+
+  // json_options - computed: false, optional: true, required: false
+  private _jsonOptions = new GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference(this, "json_options");
+  public get jsonOptions() {
+    return this._jsonOptions;
+  }
+  public putJsonOptions(value: GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptions) {
+    this._jsonOptions.internalValue = value;
+  }
+  public resetJsonOptions() {
+    this._jsonOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jsonOptionsInput() {
+    return this._jsonOptions.internalValue;
+  }
+}
+export interface GoogleDataplexDatascanDataDiscoverySpec {
+  /**
+  * bigquery_publishing_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#bigquery_publishing_config GoogleDataplexDatascan#bigquery_publishing_config}
+  */
+  readonly bigqueryPublishingConfig?: GoogleDataplexDatascanDataDiscoverySpecBigqueryPublishingConfig;
+  /**
+  * storage_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#storage_config GoogleDataplexDatascan#storage_config}
+  */
+  readonly storageConfig?: GoogleDataplexDatascanDataDiscoverySpecStorageConfig;
+}
+
+export function googleDataplexDatascanDataDiscoverySpecToTerraform(struct?: GoogleDataplexDatascanDataDiscoverySpecOutputReference | GoogleDataplexDatascanDataDiscoverySpec): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    bigquery_publishing_config: googleDataplexDatascanDataDiscoverySpecBigqueryPublishingConfigToTerraform(struct!.bigqueryPublishingConfig),
+    storage_config: googleDataplexDatascanDataDiscoverySpecStorageConfigToTerraform(struct!.storageConfig),
+  }
+}
+
+
+export function googleDataplexDatascanDataDiscoverySpecToHclTerraform(struct?: GoogleDataplexDatascanDataDiscoverySpecOutputReference | GoogleDataplexDatascanDataDiscoverySpec): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bigquery_publishing_config: {
+      value: googleDataplexDatascanDataDiscoverySpecBigqueryPublishingConfigToHclTerraform(struct!.bigqueryPublishingConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataplexDatascanDataDiscoverySpecBigqueryPublishingConfigList",
+    },
+    storage_config: {
+      value: googleDataplexDatascanDataDiscoverySpecStorageConfigToHclTerraform(struct!.storageConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataplexDatascanDataDiscoverySpecStorageConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDataplexDatascanDataDiscoverySpecOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataplexDatascanDataDiscoverySpec | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._bigqueryPublishingConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bigqueryPublishingConfig = this._bigqueryPublishingConfig?.internalValue;
+    }
+    if (this._storageConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.storageConfig = this._storageConfig?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataplexDatascanDataDiscoverySpec | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._bigqueryPublishingConfig.internalValue = undefined;
+      this._storageConfig.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._bigqueryPublishingConfig.internalValue = value.bigqueryPublishingConfig;
+      this._storageConfig.internalValue = value.storageConfig;
+    }
+  }
+
+  // bigquery_publishing_config - computed: false, optional: true, required: false
+  private _bigqueryPublishingConfig = new GoogleDataplexDatascanDataDiscoverySpecBigqueryPublishingConfigOutputReference(this, "bigquery_publishing_config");
+  public get bigqueryPublishingConfig() {
+    return this._bigqueryPublishingConfig;
+  }
+  public putBigqueryPublishingConfig(value: GoogleDataplexDatascanDataDiscoverySpecBigqueryPublishingConfig) {
+    this._bigqueryPublishingConfig.internalValue = value;
+  }
+  public resetBigqueryPublishingConfig() {
+    this._bigqueryPublishingConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bigqueryPublishingConfigInput() {
+    return this._bigqueryPublishingConfig.internalValue;
+  }
+
+  // storage_config - computed: false, optional: true, required: false
+  private _storageConfig = new GoogleDataplexDatascanDataDiscoverySpecStorageConfigOutputReference(this, "storage_config");
+  public get storageConfig() {
+    return this._storageConfig;
+  }
+  public putStorageConfig(value: GoogleDataplexDatascanDataDiscoverySpecStorageConfig) {
+    this._storageConfig.internalValue = value;
+  }
+  public resetStorageConfig() {
+    this._storageConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageConfigInput() {
+    return this._storageConfig.internalValue;
+  }
+}
 export interface GoogleDataplexDatascanDataProfileSpecExcludeFields {
   /**
   * Expected input is a list of fully qualified names of fields as in the schema.
   * Only top-level field names for nested fields are supported.
   * For instance, if 'x' is of nested field type, listing 'x' is supported but 'x.y.z' is not supported. Here 'y' and 'y.z' are nested fields of 'x'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#field_names GoogleDataplexDatascan#field_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#field_names GoogleDataplexDatascan#field_names}
   */
   readonly fieldNames?: string[];
 }
@@ -384,7 +1240,7 @@ export interface GoogleDataplexDatascanDataProfileSpecIncludeFields {
   * Only top-level field names for nested fields are supported.
   * For instance, if 'x' is of nested field type, listing 'x' is supported but 'x.y.z' is not supported. Here 'y' and 'y.z' are nested fields of 'x'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#field_names GoogleDataplexDatascan#field_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#field_names GoogleDataplexDatascan#field_names}
   */
   readonly fieldNames?: string[];
 }
@@ -471,7 +1327,7 @@ export interface GoogleDataplexDatascanDataProfileSpecPostScanActionsBigqueryExp
   * The BigQuery table to export DataProfileScan results to.
   * Format://bigquery.googleapis.com/projects/PROJECT_ID/datasets/DATASET_ID/tables/TABLE_ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#results_table GoogleDataplexDatascan#results_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#results_table GoogleDataplexDatascan#results_table}
   */
   readonly resultsTable?: string;
 }
@@ -557,7 +1413,7 @@ export interface GoogleDataplexDatascanDataProfileSpecPostScanActions {
   /**
   * bigquery_export block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#bigquery_export GoogleDataplexDatascan#bigquery_export}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#bigquery_export GoogleDataplexDatascan#bigquery_export}
   */
   readonly bigqueryExport?: GoogleDataplexDatascanDataProfileSpecPostScanActionsBigqueryExport;
 }
@@ -643,7 +1499,7 @@ export interface GoogleDataplexDatascanDataProfileSpec {
   /**
   * A filter applied to all rows in a single DataScan job. The filter needs to be a valid SQL expression for a WHERE clause in BigQuery standard SQL syntax. Example: col1 >= 0 AND col2 < 10
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#row_filter GoogleDataplexDatascan#row_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#row_filter GoogleDataplexDatascan#row_filter}
   */
   readonly rowFilter?: string;
   /**
@@ -651,25 +1507,25 @@ export interface GoogleDataplexDatascanDataProfileSpec {
   * Value can range between 0.0 and 100.0 with up to 3 significant decimal digits.
   * Sampling is not applied if 'sampling_percent' is not specified, 0 or 100.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#sampling_percent GoogleDataplexDatascan#sampling_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#sampling_percent GoogleDataplexDatascan#sampling_percent}
   */
   readonly samplingPercent?: number;
   /**
   * exclude_fields block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#exclude_fields GoogleDataplexDatascan#exclude_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#exclude_fields GoogleDataplexDatascan#exclude_fields}
   */
   readonly excludeFields?: GoogleDataplexDatascanDataProfileSpecExcludeFields;
   /**
   * include_fields block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#include_fields GoogleDataplexDatascan#include_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#include_fields GoogleDataplexDatascan#include_fields}
   */
   readonly includeFields?: GoogleDataplexDatascanDataProfileSpecIncludeFields;
   /**
   * post_scan_actions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#post_scan_actions GoogleDataplexDatascan#post_scan_actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#post_scan_actions GoogleDataplexDatascan#post_scan_actions}
   */
   readonly postScanActions?: GoogleDataplexDatascanDataProfileSpecPostScanActions;
 }
@@ -872,7 +1728,7 @@ export interface GoogleDataplexDatascanDataQualitySpecPostScanActionsBigqueryExp
   * The BigQuery table to export DataQualityScan results to.
   * Format://bigquery.googleapis.com/projects/PROJECT_ID/datasets/DATASET_ID/tables/TABLE_ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#results_table GoogleDataplexDatascan#results_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#results_table GoogleDataplexDatascan#results_table}
   */
   readonly resultsTable?: string;
 }
@@ -1056,7 +1912,7 @@ export interface GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificatio
   /**
   * The email recipients who will receive the DataQualityScan results report.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#emails GoogleDataplexDatascan#emails}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#emails GoogleDataplexDatascan#emails}
   */
   readonly emails?: string[];
 }
@@ -1142,7 +1998,7 @@ export interface GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificatio
   /**
   * The score range is in [0,100].
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#score_threshold GoogleDataplexDatascan#score_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#score_threshold GoogleDataplexDatascan#score_threshold}
   */
   readonly scoreThreshold?: number;
 }
@@ -1228,25 +2084,25 @@ export interface GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificatio
   /**
   * job_end_trigger block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#job_end_trigger GoogleDataplexDatascan#job_end_trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#job_end_trigger GoogleDataplexDatascan#job_end_trigger}
   */
   readonly jobEndTrigger?: GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReportJobEndTrigger;
   /**
   * job_failure_trigger block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#job_failure_trigger GoogleDataplexDatascan#job_failure_trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#job_failure_trigger GoogleDataplexDatascan#job_failure_trigger}
   */
   readonly jobFailureTrigger?: GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReportJobFailureTrigger;
   /**
   * recipients block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#recipients GoogleDataplexDatascan#recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#recipients GoogleDataplexDatascan#recipients}
   */
   readonly recipients: GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReportRecipients;
   /**
   * score_threshold_trigger block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#score_threshold_trigger GoogleDataplexDatascan#score_threshold_trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#score_threshold_trigger GoogleDataplexDatascan#score_threshold_trigger}
   */
   readonly scoreThresholdTrigger?: GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReportScoreThresholdTrigger;
 }
@@ -1416,13 +2272,13 @@ export interface GoogleDataplexDatascanDataQualitySpecPostScanActions {
   /**
   * bigquery_export block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#bigquery_export GoogleDataplexDatascan#bigquery_export}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#bigquery_export GoogleDataplexDatascan#bigquery_export}
   */
   readonly bigqueryExport?: GoogleDataplexDatascanDataQualitySpecPostScanActionsBigqueryExport;
   /**
   * notification_report block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#notification_report GoogleDataplexDatascan#notification_report}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#notification_report GoogleDataplexDatascan#notification_report}
   */
   readonly notificationReport?: GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReport;
 }
@@ -1586,27 +2442,27 @@ export interface GoogleDataplexDatascanDataQualitySpecRulesRangeExpectation {
   /**
   * The maximum column value allowed for a row to pass this validation. At least one of minValue and maxValue need to be provided.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#max_value GoogleDataplexDatascan#max_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#max_value GoogleDataplexDatascan#max_value}
   */
   readonly maxValue?: string;
   /**
   * The minimum column value allowed for a row to pass this validation. At least one of minValue and maxValue need to be provided.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#min_value GoogleDataplexDatascan#min_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#min_value GoogleDataplexDatascan#min_value}
   */
   readonly minValue?: string;
   /**
   * Whether each value needs to be strictly lesser than ('<') the maximum, or if equality is allowed.
   * Only relevant if a maxValue has been defined. Default = false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#strict_max_enabled GoogleDataplexDatascan#strict_max_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#strict_max_enabled GoogleDataplexDatascan#strict_max_enabled}
   */
   readonly strictMaxEnabled?: boolean | cdktf.IResolvable;
   /**
   * Whether each value needs to be strictly greater than ('>') the minimum, or if equality is allowed.
   * Only relevant if a minValue has been defined. Default = false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#strict_min_enabled GoogleDataplexDatascan#strict_min_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#strict_min_enabled GoogleDataplexDatascan#strict_min_enabled}
   */
   readonly strictMinEnabled?: boolean | cdktf.IResolvable;
 }
@@ -1779,7 +2635,7 @@ export interface GoogleDataplexDatascanDataQualitySpecRulesRegexExpectation {
   /**
   * A regular expression the column value is expected to match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#regex GoogleDataplexDatascan#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#regex GoogleDataplexDatascan#regex}
   */
   readonly regex: string;
 }
@@ -1862,7 +2718,7 @@ export interface GoogleDataplexDatascanDataQualitySpecRulesRowConditionExpectati
   /**
   * The SQL expression.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#sql_expression GoogleDataplexDatascan#sql_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#sql_expression GoogleDataplexDatascan#sql_expression}
   */
   readonly sqlExpression: string;
 }
@@ -1945,7 +2801,7 @@ export interface GoogleDataplexDatascanDataQualitySpecRulesSetExpectation {
   /**
   * Expected values for the column value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#values GoogleDataplexDatascan#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#values GoogleDataplexDatascan#values}
   */
   readonly values: string[];
 }
@@ -2028,7 +2884,7 @@ export interface GoogleDataplexDatascanDataQualitySpecRulesSqlAssertion {
   /**
   * The SQL statement.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#sql_statement GoogleDataplexDatascan#sql_statement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#sql_statement GoogleDataplexDatascan#sql_statement}
   */
   readonly sqlStatement: string;
 }
@@ -2112,34 +2968,34 @@ export interface GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpecta
   * The maximum column statistic value allowed for a row to pass this validation.
   * At least one of minValue and maxValue need to be provided.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#max_value GoogleDataplexDatascan#max_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#max_value GoogleDataplexDatascan#max_value}
   */
   readonly maxValue?: string;
   /**
   * The minimum column statistic value allowed for a row to pass this validation.
   * At least one of minValue and maxValue need to be provided.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#min_value GoogleDataplexDatascan#min_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#min_value GoogleDataplexDatascan#min_value}
   */
   readonly minValue?: string;
   /**
   * column statistics. Possible values: ["STATISTIC_UNDEFINED", "MEAN", "MIN", "MAX"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#statistic GoogleDataplexDatascan#statistic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#statistic GoogleDataplexDatascan#statistic}
   */
   readonly statistic: string;
   /**
   * Whether column statistic needs to be strictly lesser than ('<') the maximum, or if equality is allowed.
   * Only relevant if a maxValue has been defined. Default = false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#strict_max_enabled GoogleDataplexDatascan#strict_max_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#strict_max_enabled GoogleDataplexDatascan#strict_max_enabled}
   */
   readonly strictMaxEnabled?: boolean | cdktf.IResolvable;
   /**
   * Whether column statistic needs to be strictly greater than ('>') the minimum, or if equality is allowed.
   * Only relevant if a minValue has been defined. Default = false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#strict_min_enabled GoogleDataplexDatascan#strict_min_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#strict_min_enabled GoogleDataplexDatascan#strict_min_enabled}
   */
   readonly strictMinEnabled?: boolean | cdktf.IResolvable;
 }
@@ -2338,7 +3194,7 @@ export interface GoogleDataplexDatascanDataQualitySpecRulesTableConditionExpecta
   /**
   * The SQL expression.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#sql_expression GoogleDataplexDatascan#sql_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#sql_expression GoogleDataplexDatascan#sql_expression}
   */
   readonly sqlExpression: string;
 }
@@ -2470,26 +3326,26 @@ export interface GoogleDataplexDatascanDataQualitySpecRules {
   /**
   * The unnested column which this rule is evaluated against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#column GoogleDataplexDatascan#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#column GoogleDataplexDatascan#column}
   */
   readonly column?: string;
   /**
   * Description of the rule.
   * The maximum length is 1,024 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#description GoogleDataplexDatascan#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#description GoogleDataplexDatascan#description}
   */
   readonly description?: string;
   /**
-  * The dimension a rule belongs to. Results are also aggregated at the dimension level. Supported dimensions are ["COMPLETENESS", "ACCURACY", "CONSISTENCY", "VALIDITY", "UNIQUENESS", "INTEGRITY"]
+  * The dimension name a rule belongs to. Custom dimension name is supported with all uppercase letters and maximum length of 30 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#dimension GoogleDataplexDatascan#dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#dimension GoogleDataplexDatascan#dimension}
   */
   readonly dimension: string;
   /**
   * Rows with null values will automatically fail a rule, unless ignoreNull is true. In that case, such null rows are trivially considered passing. Only applicable to ColumnMap rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#ignore_null GoogleDataplexDatascan#ignore_null}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#ignore_null GoogleDataplexDatascan#ignore_null}
   */
   readonly ignoreNull?: boolean | cdktf.IResolvable;
   /**
@@ -2499,67 +3355,67 @@ export interface GoogleDataplexDatascanDataQualitySpecRules {
   * Must start with a letter.
   * Must end with a number or a letter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#name GoogleDataplexDatascan#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#name GoogleDataplexDatascan#name}
   */
   readonly name?: string;
   /**
   * The minimum ratio of passing_rows / total_rows required to pass this rule, with a range of [0.0, 1.0]. 0 indicates default value (i.e. 1.0).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#threshold GoogleDataplexDatascan#threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#threshold GoogleDataplexDatascan#threshold}
   */
   readonly threshold?: number;
   /**
   * non_null_expectation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#non_null_expectation GoogleDataplexDatascan#non_null_expectation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#non_null_expectation GoogleDataplexDatascan#non_null_expectation}
   */
   readonly nonNullExpectation?: GoogleDataplexDatascanDataQualitySpecRulesNonNullExpectation;
   /**
   * range_expectation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#range_expectation GoogleDataplexDatascan#range_expectation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#range_expectation GoogleDataplexDatascan#range_expectation}
   */
   readonly rangeExpectation?: GoogleDataplexDatascanDataQualitySpecRulesRangeExpectation;
   /**
   * regex_expectation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#regex_expectation GoogleDataplexDatascan#regex_expectation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#regex_expectation GoogleDataplexDatascan#regex_expectation}
   */
   readonly regexExpectation?: GoogleDataplexDatascanDataQualitySpecRulesRegexExpectation;
   /**
   * row_condition_expectation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#row_condition_expectation GoogleDataplexDatascan#row_condition_expectation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#row_condition_expectation GoogleDataplexDatascan#row_condition_expectation}
   */
   readonly rowConditionExpectation?: GoogleDataplexDatascanDataQualitySpecRulesRowConditionExpectation;
   /**
   * set_expectation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#set_expectation GoogleDataplexDatascan#set_expectation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#set_expectation GoogleDataplexDatascan#set_expectation}
   */
   readonly setExpectation?: GoogleDataplexDatascanDataQualitySpecRulesSetExpectation;
   /**
   * sql_assertion block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#sql_assertion GoogleDataplexDatascan#sql_assertion}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#sql_assertion GoogleDataplexDatascan#sql_assertion}
   */
   readonly sqlAssertion?: GoogleDataplexDatascanDataQualitySpecRulesSqlAssertion;
   /**
   * statistic_range_expectation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#statistic_range_expectation GoogleDataplexDatascan#statistic_range_expectation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#statistic_range_expectation GoogleDataplexDatascan#statistic_range_expectation}
   */
   readonly statisticRangeExpectation?: GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectation;
   /**
   * table_condition_expectation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#table_condition_expectation GoogleDataplexDatascan#table_condition_expectation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#table_condition_expectation GoogleDataplexDatascan#table_condition_expectation}
   */
   readonly tableConditionExpectation?: GoogleDataplexDatascanDataQualitySpecRulesTableConditionExpectation;
   /**
   * uniqueness_expectation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#uniqueness_expectation GoogleDataplexDatascan#uniqueness_expectation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#uniqueness_expectation GoogleDataplexDatascan#uniqueness_expectation}
   */
   readonly uniquenessExpectation?: GoogleDataplexDatascanDataQualitySpecRulesUniquenessExpectation;
 }
@@ -3080,13 +3936,13 @@ export interface GoogleDataplexDatascanDataQualitySpec {
   /**
   * If set, the latest DataScan job result will be published to Dataplex Catalog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#catalog_publishing_enabled GoogleDataplexDatascan#catalog_publishing_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#catalog_publishing_enabled GoogleDataplexDatascan#catalog_publishing_enabled}
   */
   readonly catalogPublishingEnabled?: boolean | cdktf.IResolvable;
   /**
   * A filter applied to all rows in a single DataScan job. The filter needs to be a valid SQL expression for a WHERE clause in BigQuery standard SQL syntax. Example: col1 >= 0 AND col2 < 10
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#row_filter GoogleDataplexDatascan#row_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#row_filter GoogleDataplexDatascan#row_filter}
   */
   readonly rowFilter?: string;
   /**
@@ -3094,19 +3950,19 @@ export interface GoogleDataplexDatascanDataQualitySpec {
   * Value can range between 0.0 and 100.0 with up to 3 significant decimal digits.
   * Sampling is not applied if 'sampling_percent' is not specified, 0 or 100.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#sampling_percent GoogleDataplexDatascan#sampling_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#sampling_percent GoogleDataplexDatascan#sampling_percent}
   */
   readonly samplingPercent?: number;
   /**
   * post_scan_actions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#post_scan_actions GoogleDataplexDatascan#post_scan_actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#post_scan_actions GoogleDataplexDatascan#post_scan_actions}
   */
   readonly postScanActions?: GoogleDataplexDatascanDataQualitySpecPostScanActions;
   /**
   * rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#rules GoogleDataplexDatascan#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#rules GoogleDataplexDatascan#rules}
   */
   readonly rules?: GoogleDataplexDatascanDataQualitySpecRules[] | cdktf.IResolvable;
 }
@@ -3357,7 +4213,7 @@ export interface GoogleDataplexDatascanExecutionSpecTriggerSchedule {
   /**
   * Cron schedule for running scans periodically. This field is required for Schedule scans.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#cron GoogleDataplexDatascan#cron}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#cron GoogleDataplexDatascan#cron}
   */
   readonly cron: string;
 }
@@ -3440,13 +4296,13 @@ export interface GoogleDataplexDatascanExecutionSpecTrigger {
   /**
   * on_demand block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#on_demand GoogleDataplexDatascan#on_demand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#on_demand GoogleDataplexDatascan#on_demand}
   */
   readonly onDemand?: GoogleDataplexDatascanExecutionSpecTriggerOnDemand;
   /**
   * schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#schedule GoogleDataplexDatascan#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#schedule GoogleDataplexDatascan#schedule}
   */
   readonly schedule?: GoogleDataplexDatascanExecutionSpecTriggerSchedule;
 }
@@ -3561,13 +4417,13 @@ export interface GoogleDataplexDatascanExecutionSpec {
   /**
   * The unnested field (of type Date or Timestamp) that contains values which monotonically increase over time. If not specified, a data scan will run for all data in the table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#field GoogleDataplexDatascan#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#field GoogleDataplexDatascan#field}
   */
   readonly field?: string;
   /**
   * trigger block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#trigger GoogleDataplexDatascan#trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#trigger GoogleDataplexDatascan#trigger}
   */
   readonly trigger: GoogleDataplexDatascanExecutionSpecTrigger;
 }
@@ -3677,15 +4533,15 @@ export class GoogleDataplexDatascanExecutionSpecOutputReference extends cdktf.Co
 }
 export interface GoogleDataplexDatascanTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#create GoogleDataplexDatascan#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#create GoogleDataplexDatascan#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#delete GoogleDataplexDatascan#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#delete GoogleDataplexDatascan#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#update GoogleDataplexDatascan#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#update GoogleDataplexDatascan#update}
   */
   readonly update?: string;
 }
@@ -3837,7 +4693,7 @@ export class GoogleDataplexDatascanTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan google_dataplex_datascan}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan google_dataplex_datascan}
 */
 export class GoogleDataplexDatascan extends cdktf.TerraformResource {
 
@@ -3853,7 +4709,7 @@ export class GoogleDataplexDatascan extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleDataplexDatascan resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleDataplexDatascan to import
-  * @param importFromId The id of the existing GoogleDataplexDatascan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleDataplexDatascan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleDataplexDatascan to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -3865,7 +4721,7 @@ export class GoogleDataplexDatascan extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dataplex_datascan google_dataplex_datascan} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_dataplex_datascan google_dataplex_datascan} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3876,7 +4732,7 @@ export class GoogleDataplexDatascan extends cdktf.TerraformResource {
       terraformResourceType: 'google_dataplex_datascan',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.40.0',
+        providerVersion: '6.41.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -3895,6 +4751,7 @@ export class GoogleDataplexDatascan extends cdktf.TerraformResource {
     this._location = config.location;
     this._project = config.project;
     this._data.internalValue = config.data;
+    this._dataDiscoverySpec.internalValue = config.dataDiscoverySpec;
     this._dataProfileSpec.internalValue = config.dataProfileSpec;
     this._dataQualitySpec.internalValue = config.dataQualitySpec;
     this._executionSpec.internalValue = config.executionSpec;
@@ -4072,6 +4929,22 @@ export class GoogleDataplexDatascan extends cdktf.TerraformResource {
     return this._data.internalValue;
   }
 
+  // data_discovery_spec - computed: false, optional: true, required: false
+  private _dataDiscoverySpec = new GoogleDataplexDatascanDataDiscoverySpecOutputReference(this, "data_discovery_spec");
+  public get dataDiscoverySpec() {
+    return this._dataDiscoverySpec;
+  }
+  public putDataDiscoverySpec(value: GoogleDataplexDatascanDataDiscoverySpec) {
+    this._dataDiscoverySpec.internalValue = value;
+  }
+  public resetDataDiscoverySpec() {
+    this._dataDiscoverySpec.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataDiscoverySpecInput() {
+    return this._dataDiscoverySpec.internalValue;
+  }
+
   // data_profile_spec - computed: false, optional: true, required: false
   private _dataProfileSpec = new GoogleDataplexDatascanDataProfileSpecOutputReference(this, "data_profile_spec");
   public get dataProfileSpec() {
@@ -4147,6 +5020,7 @@ export class GoogleDataplexDatascan extends cdktf.TerraformResource {
       location: cdktf.stringToTerraform(this._location),
       project: cdktf.stringToTerraform(this._project),
       data: googleDataplexDatascanDataToTerraform(this._data.internalValue),
+      data_discovery_spec: googleDataplexDatascanDataDiscoverySpecToTerraform(this._dataDiscoverySpec.internalValue),
       data_profile_spec: googleDataplexDatascanDataProfileSpecToTerraform(this._dataProfileSpec.internalValue),
       data_quality_spec: googleDataplexDatascanDataQualitySpecToTerraform(this._dataQualitySpec.internalValue),
       execution_spec: googleDataplexDatascanExecutionSpecToTerraform(this._executionSpec.internalValue),
@@ -4203,6 +5077,12 @@ export class GoogleDataplexDatascan extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "GoogleDataplexDatascanDataList",
+      },
+      data_discovery_spec: {
+        value: googleDataplexDatascanDataDiscoverySpecToHclTerraform(this._dataDiscoverySpec.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDataplexDatascanDataDiscoverySpecList",
       },
       data_profile_spec: {
         value: googleDataplexDatascanDataProfileSpecToHclTerraform(this._dataProfileSpec.internalValue),
