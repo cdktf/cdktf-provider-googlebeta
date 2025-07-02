@@ -77,6 +77,7 @@ Object.defineProperty(exports, 'googleApigeeTargetServer', { get: function () { 
 Object.defineProperty(exports, 'googleApihubApiHubInstance', { get: function () { return require('./google-apihub-api-hub-instance'); } });
 Object.defineProperty(exports, 'googleApihubCuration', { get: function () { return require('./google-apihub-curation'); } });
 Object.defineProperty(exports, 'googleApihubHostProjectRegistration', { get: function () { return require('./google-apihub-host-project-registration'); } });
+Object.defineProperty(exports, 'googleApihubPlugin', { get: function () { return require('./google-apihub-plugin'); } });
 Object.defineProperty(exports, 'googleApihubPluginInstance', { get: function () { return require('./google-apihub-plugin-instance'); } });
 Object.defineProperty(exports, 'googleApikeysKey', { get: function () { return require('./google-apikeys-key'); } });
 Object.defineProperty(exports, 'googleAppEngineApplication', { get: function () { return require('./google-app-engine-application'); } });
@@ -427,6 +428,7 @@ Object.defineProperty(exports, 'googleComputeTargetTcpProxy', { get: function ()
 Object.defineProperty(exports, 'googleComputeUrlMap', { get: function () { return require('./google-compute-url-map'); } });
 Object.defineProperty(exports, 'googleComputeVpnGateway', { get: function () { return require('./google-compute-vpn-gateway'); } });
 Object.defineProperty(exports, 'googleComputeVpnTunnel', { get: function () { return require('./google-compute-vpn-tunnel'); } });
+Object.defineProperty(exports, 'googleComputeWireGroup', { get: function () { return require('./google-compute-wire-group'); } });
 Object.defineProperty(exports, 'googleContactCenterInsightsView', { get: function () { return require('./google-contact-center-insights-view'); } });
 Object.defineProperty(exports, 'googleContainerAnalysisNote', { get: function () { return require('./google-container-analysis-note'); } });
 Object.defineProperty(exports, 'googleContainerAnalysisNoteIamBinding', { get: function () { return require('./google-container-analysis-note-iam-binding'); } });
@@ -564,6 +566,7 @@ Object.defineProperty(exports, 'googleDialogflowCxAgent', { get: function () { r
 Object.defineProperty(exports, 'googleDialogflowCxEntityType', { get: function () { return require('./google-dialogflow-cx-entity-type'); } });
 Object.defineProperty(exports, 'googleDialogflowCxEnvironment', { get: function () { return require('./google-dialogflow-cx-environment'); } });
 Object.defineProperty(exports, 'googleDialogflowCxFlow', { get: function () { return require('./google-dialogflow-cx-flow'); } });
+Object.defineProperty(exports, 'googleDialogflowCxGenerativeSettings', { get: function () { return require('./google-dialogflow-cx-generative-settings'); } });
 Object.defineProperty(exports, 'googleDialogflowCxIntent', { get: function () { return require('./google-dialogflow-cx-intent'); } });
 Object.defineProperty(exports, 'googleDialogflowCxPage', { get: function () { return require('./google-dialogflow-cx-page'); } });
 Object.defineProperty(exports, 'googleDialogflowCxSecuritySettings', { get: function () { return require('./google-dialogflow-cx-security-settings'); } });
