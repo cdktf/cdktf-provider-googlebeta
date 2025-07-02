@@ -4,7 +4,7 @@
 
 ### GoogleComputeNetwork <a name="GoogleComputeNetwork" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network google_compute_network}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network google_compute_network}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.Initializer"></a>
 
@@ -34,6 +34,7 @@ googleComputeNetwork.GoogleComputeNetwork(
   mtu: typing.Union[int, float] = None,
   network_firewall_policy_enforcement_order: str = None,
   network_profile: str = None,
+  params: GoogleComputeNetworkParams = None,
   project: str = None,
   routing_mode: str = None,
   timeouts: GoogleComputeNetworkTimeouts = None
@@ -59,12 +60,13 @@ googleComputeNetwork.GoogleComputeNetwork(
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.Initializer.parameter.deleteDefaultRoutesOnCreate">delete_default_routes_on_create</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to 'true', default routes ('0.0.0.0/0') will be deleted immediately after network creation. Defaults to 'false'. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.Initializer.parameter.description">description</a></code> | <code>str</code> | An optional description of this resource. The resource must be recreated to modify this field. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.Initializer.parameter.enableUlaInternalIpv6">enable_ula_internal_ipv6</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable ULA internal ipv6 on this network. Enabling this feature will assign a /48 from google defined ULA prefix fd20::/20. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#id GoogleComputeNetwork#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#id GoogleComputeNetwork#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.Initializer.parameter.internalIpv6Range">internal_ipv6_range</a></code> | <code>str</code> | When enabling ula internal ipv6, caller optionally can specify the /48 range they want from the google defined ULA prefix fd20::/20. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.Initializer.parameter.mtu">mtu</a></code> | <code>typing.Union[int, float]</code> | Maximum Transmission Unit in bytes. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.Initializer.parameter.networkFirewallPolicyEnforcementOrder">network_firewall_policy_enforcement_order</a></code> | <code>str</code> | Set the order that Firewall Rules and Firewall Policies are evaluated. Default value: "AFTER_CLASSIC_FIREWALL" Possible values: ["BEFORE_CLASSIC_FIREWALL", "AFTER_CLASSIC_FIREWALL"]. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.Initializer.parameter.networkProfile">network_profile</a></code> | <code>str</code> | A full or partial URL of the network profile to apply to this network. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#project GoogleComputeNetwork#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.Initializer.parameter.params">params</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParams">GoogleComputeNetworkParams</a></code> | params block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#project GoogleComputeNetwork#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.Initializer.parameter.routingMode">routing_mode</a></code> | <code>str</code> | The network-wide routing mode to use. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkTimeouts">GoogleComputeNetworkTimeouts</a></code> | timeouts block. |
 
@@ -144,7 +146,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#name GoogleComputeNetwork#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#name GoogleComputeNetwork#name}
 
 ---
 
@@ -157,7 +159,7 @@ When set to 'true', the network is created in "auto subnet mode" and it will cre
 When set to 'false', the network is created in "custom subnet mode" so
 the user can explicitly connect subnetwork resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#auto_create_subnetworks GoogleComputeNetwork#auto_create_subnetworks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#auto_create_subnetworks GoogleComputeNetwork#auto_create_subnetworks}
 
 ---
 
@@ -169,7 +171,7 @@ Enables/disables the comparison of MED across routes with different Neighbor ASN
 
 This value can only be set if the --bgp-best-path-selection-mode is STANDARD
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#bgp_always_compare_med GoogleComputeNetwork#bgp_always_compare_med}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#bgp_always_compare_med GoogleComputeNetwork#bgp_always_compare_med}
 
 ---
 
@@ -179,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The BGP best selection algorithm to be employed. MODE can be LEGACY or STANDARD. Possible values: ["LEGACY", "STANDARD"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#bgp_best_path_selection_mode GoogleComputeNetwork#bgp_best_path_selection_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#bgp_best_path_selection_mode GoogleComputeNetwork#bgp_best_path_selection_mode}
 
 ---
 
@@ -189,7 +191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Choice of the behavior of inter-regional cost and MED in the BPS algorithm. Possible values: ["DEFAULT", "ADD_COST_TO_MED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#bgp_inter_region_cost GoogleComputeNetwork#bgp_inter_region_cost}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#bgp_inter_region_cost GoogleComputeNetwork#bgp_inter_region_cost}
 
 ---
 
@@ -199,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If set to 'true', default routes ('0.0.0.0/0') will be deleted immediately after network creation. Defaults to 'false'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#delete_default_routes_on_create GoogleComputeNetwork#delete_default_routes_on_create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#delete_default_routes_on_create GoogleComputeNetwork#delete_default_routes_on_create}
 
 ---
 
@@ -209,7 +211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 An optional description of this resource. The resource must be recreated to modify this field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#description GoogleComputeNetwork#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#description GoogleComputeNetwork#description}
 
 ---
 
@@ -219,7 +221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Enable ULA internal ipv6 on this network. Enabling this feature will assign a /48 from google defined ULA prefix fd20::/20.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#enable_ula_internal_ipv6 GoogleComputeNetwork#enable_ula_internal_ipv6}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#enable_ula_internal_ipv6 GoogleComputeNetwork#enable_ula_internal_ipv6}
 
 ---
 
@@ -227,7 +229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#id GoogleComputeNetwork#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#id GoogleComputeNetwork#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -245,7 +247,7 @@ valid /48 ULA IPv6 address and must be within the fd20::/20. Operation will
 fail if the speficied /48 is already in used by another resource.
 If the field is not speficied, then a /48 range will be randomly allocated from fd20::/20 and returned via this field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#internal_ipv6_range GoogleComputeNetwork#internal_ipv6_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#internal_ipv6_range GoogleComputeNetwork#internal_ipv6_range}
 
 ---
 
@@ -261,7 +263,7 @@ Note that packets larger than 1500 bytes (standard Ethernet) can be subject to T
 with an ICMP 'Fragmentation-Needed' message if the packets are routed to the Internet or other VPCs
 with varying MTUs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#mtu GoogleComputeNetwork#mtu}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#mtu GoogleComputeNetwork#mtu}
 
 ---
 
@@ -271,7 +273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Set the order that Firewall Rules and Firewall Policies are evaluated. Default value: "AFTER_CLASSIC_FIREWALL" Possible values: ["BEFORE_CLASSIC_FIREWALL", "AFTER_CLASSIC_FIREWALL"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#network_firewall_policy_enforcement_order GoogleComputeNetwork#network_firewall_policy_enforcement_order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#network_firewall_policy_enforcement_order GoogleComputeNetwork#network_firewall_policy_enforcement_order}
 
 ---
 
@@ -287,7 +289,17 @@ following are valid URLs:
 * https://www.googleapis.com/compute/v1/projects/{projectId}/global/networkProfiles/{network_profile_name}
 * projects/{projectId}/global/networkProfiles/{network_profile_name}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#network_profile GoogleComputeNetwork#network_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#network_profile GoogleComputeNetwork#network_profile}
+
+---
+
+##### `params`<sup>Optional</sup> <a name="params" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.Initializer.parameter.params"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParams">GoogleComputeNetworkParams</a>
+
+params block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#params GoogleComputeNetwork#params}
 
 ---
 
@@ -295,7 +307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#project GoogleComputeNetwork#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#project GoogleComputeNetwork#project}.
 
 ---
 
@@ -311,7 +323,7 @@ of this network in the same region as the router. If set to 'GLOBAL',
 this network's cloud routers will advertise routes with all
 subnetworks of this network, across regions. Possible values: ["REGIONAL", "GLOBAL"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#routing_mode GoogleComputeNetwork#routing_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#routing_mode GoogleComputeNetwork#routing_mode}
 
 ---
 
@@ -321,7 +333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#timeouts GoogleComputeNetwork#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#timeouts GoogleComputeNetwork#timeouts}
 
 ---
 
@@ -352,6 +364,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.putParams">put_params</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.resetAutoCreateSubnetworks">reset_auto_create_subnetworks</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.resetBgpAlwaysCompareMed">reset_bgp_always_compare_med</a></code> | *No description.* |
@@ -365,6 +378,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.resetMtu">reset_mtu</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.resetNetworkFirewallPolicyEnforcementOrder">reset_network_firewall_policy_enforcement_order</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.resetNetworkProfile">reset_network_profile</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.resetParams">reset_params</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.resetProject">reset_project</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.resetRoutingMode">reset_routing_mode</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.resetTimeouts">reset_timeouts</a></code> | *No description.* |
@@ -696,6 +710,28 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `put_params` <a name="put_params" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.putParams"></a>
+
+```python
+def put_params(
+  resource_manager_tags: typing.Mapping[str] = None
+) -> None
+```
+
+###### `resource_manager_tags`<sup>Optional</sup> <a name="resource_manager_tags" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.putParams.parameter.resourceManagerTags"></a>
+
+- *Type:* typing.Mapping[str]
+
+Resource manager tags to be bound to the network.
+
+Tag keys and values have the
+same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
+and values are in the format tagValues/456.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#resource_manager_tags GoogleComputeNetwork#resource_manager_tags}
+
+---
+
 ##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.putTimeouts"></a>
 
 ```python
@@ -710,7 +746,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#create GoogleComputeNetwork#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#create GoogleComputeNetwork#create}.
 
 ---
 
@@ -718,7 +754,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#delete GoogleComputeNetwork#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#delete GoogleComputeNetwork#delete}.
 
 ---
 
@@ -726,7 +762,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#update GoogleComputeNetwork#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#update GoogleComputeNetwork#update}.
 
 ---
 
@@ -800,6 +836,12 @@ def reset_network_firewall_policy_enforcement_order() -> None
 
 ```python
 def reset_network_profile() -> None
+```
+
+##### `reset_params` <a name="reset_params" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.resetParams"></a>
+
+```python
+def reset_params() -> None
 ```
 
 ##### `reset_project` <a name="reset_project" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.resetProject"></a>
@@ -934,7 +976,7 @@ The construct id used in the generated config for the GoogleComputeNetwork to im
 
 The id of the existing GoogleComputeNetwork that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -967,6 +1009,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.property.gatewayIpv4">gateway_ipv4</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.property.networkId">network_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.property.numericId">numeric_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.property.params">params</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference">GoogleComputeNetworkParamsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.property.selfLink">self_link</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkTimeoutsOutputReference">GoogleComputeNetworkTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.property.autoCreateSubnetworksInput">auto_create_subnetworks_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -982,6 +1025,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.property.networkFirewallPolicyEnforcementOrderInput">network_firewall_policy_enforcement_order_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.property.networkProfileInput">network_profile_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.property.paramsInput">params_input</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParams">GoogleComputeNetworkParams</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.property.routingModeInput">routing_mode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkTimeouts">GoogleComputeNetworkTimeouts</a>]</code> | *No description.* |
@@ -1175,6 +1219,16 @@ numeric_id: str
 
 ---
 
+##### `params`<sup>Required</sup> <a name="params" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.property.params"></a>
+
+```python
+params: GoogleComputeNetworkParamsOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference">GoogleComputeNetworkParamsOutputReference</a>
+
+---
+
 ##### `self_link`<sup>Required</sup> <a name="self_link" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.property.selfLink"></a>
 
 ```python
@@ -1322,6 +1376,16 @@ network_profile_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `params_input`<sup>Optional</sup> <a name="params_input" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.property.paramsInput"></a>
+
+```python
+params_input: GoogleComputeNetworkParams
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParams">GoogleComputeNetworkParams</a>
 
 ---
 
@@ -1553,6 +1617,7 @@ googleComputeNetwork.GoogleComputeNetworkConfig(
   mtu: typing.Union[int, float] = None,
   network_firewall_policy_enforcement_order: str = None,
   network_profile: str = None,
+  params: GoogleComputeNetworkParams = None,
   project: str = None,
   routing_mode: str = None,
   timeouts: GoogleComputeNetworkTimeouts = None
@@ -1578,12 +1643,13 @@ googleComputeNetwork.GoogleComputeNetworkConfig(
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkConfig.property.deleteDefaultRoutesOnCreate">delete_default_routes_on_create</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to 'true', default routes ('0.0.0.0/0') will be deleted immediately after network creation. Defaults to 'false'. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkConfig.property.description">description</a></code> | <code>str</code> | An optional description of this resource. The resource must be recreated to modify this field. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkConfig.property.enableUlaInternalIpv6">enable_ula_internal_ipv6</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable ULA internal ipv6 on this network. Enabling this feature will assign a /48 from google defined ULA prefix fd20::/20. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#id GoogleComputeNetwork#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#id GoogleComputeNetwork#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkConfig.property.internalIpv6Range">internal_ipv6_range</a></code> | <code>str</code> | When enabling ula internal ipv6, caller optionally can specify the /48 range they want from the google defined ULA prefix fd20::/20. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkConfig.property.mtu">mtu</a></code> | <code>typing.Union[int, float]</code> | Maximum Transmission Unit in bytes. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkConfig.property.networkFirewallPolicyEnforcementOrder">network_firewall_policy_enforcement_order</a></code> | <code>str</code> | Set the order that Firewall Rules and Firewall Policies are evaluated. Default value: "AFTER_CLASSIC_FIREWALL" Possible values: ["BEFORE_CLASSIC_FIREWALL", "AFTER_CLASSIC_FIREWALL"]. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkConfig.property.networkProfile">network_profile</a></code> | <code>str</code> | A full or partial URL of the network profile to apply to this network. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#project GoogleComputeNetwork#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkConfig.property.params">params</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParams">GoogleComputeNetworkParams</a></code> | params block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#project GoogleComputeNetwork#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkConfig.property.routingMode">routing_mode</a></code> | <code>str</code> | The network-wide routing mode to use. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkTimeouts">GoogleComputeNetworkTimeouts</a></code> | timeouts block. |
 
@@ -1677,7 +1743,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#name GoogleComputeNetwork#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#name GoogleComputeNetwork#name}
 
 ---
 
@@ -1694,7 +1760,7 @@ When set to 'true', the network is created in "auto subnet mode" and it will cre
 When set to 'false', the network is created in "custom subnet mode" so
 the user can explicitly connect subnetwork resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#auto_create_subnetworks GoogleComputeNetwork#auto_create_subnetworks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#auto_create_subnetworks GoogleComputeNetwork#auto_create_subnetworks}
 
 ---
 
@@ -1710,7 +1776,7 @@ Enables/disables the comparison of MED across routes with different Neighbor ASN
 
 This value can only be set if the --bgp-best-path-selection-mode is STANDARD
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#bgp_always_compare_med GoogleComputeNetwork#bgp_always_compare_med}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#bgp_always_compare_med GoogleComputeNetwork#bgp_always_compare_med}
 
 ---
 
@@ -1724,7 +1790,7 @@ bgp_best_path_selection_mode: str
 
 The BGP best selection algorithm to be employed. MODE can be LEGACY or STANDARD. Possible values: ["LEGACY", "STANDARD"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#bgp_best_path_selection_mode GoogleComputeNetwork#bgp_best_path_selection_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#bgp_best_path_selection_mode GoogleComputeNetwork#bgp_best_path_selection_mode}
 
 ---
 
@@ -1738,7 +1804,7 @@ bgp_inter_region_cost: str
 
 Choice of the behavior of inter-regional cost and MED in the BPS algorithm. Possible values: ["DEFAULT", "ADD_COST_TO_MED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#bgp_inter_region_cost GoogleComputeNetwork#bgp_inter_region_cost}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#bgp_inter_region_cost GoogleComputeNetwork#bgp_inter_region_cost}
 
 ---
 
@@ -1752,7 +1818,7 @@ delete_default_routes_on_create: typing.Union[bool, IResolvable]
 
 If set to 'true', default routes ('0.0.0.0/0') will be deleted immediately after network creation. Defaults to 'false'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#delete_default_routes_on_create GoogleComputeNetwork#delete_default_routes_on_create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#delete_default_routes_on_create GoogleComputeNetwork#delete_default_routes_on_create}
 
 ---
 
@@ -1766,7 +1832,7 @@ description: str
 
 An optional description of this resource. The resource must be recreated to modify this field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#description GoogleComputeNetwork#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#description GoogleComputeNetwork#description}
 
 ---
 
@@ -1780,7 +1846,7 @@ enable_ula_internal_ipv6: typing.Union[bool, IResolvable]
 
 Enable ULA internal ipv6 on this network. Enabling this feature will assign a /48 from google defined ULA prefix fd20::/20.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#enable_ula_internal_ipv6 GoogleComputeNetwork#enable_ula_internal_ipv6}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#enable_ula_internal_ipv6 GoogleComputeNetwork#enable_ula_internal_ipv6}
 
 ---
 
@@ -1792,7 +1858,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#id GoogleComputeNetwork#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#id GoogleComputeNetwork#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1814,7 +1880,7 @@ valid /48 ULA IPv6 address and must be within the fd20::/20. Operation will
 fail if the speficied /48 is already in used by another resource.
 If the field is not speficied, then a /48 range will be randomly allocated from fd20::/20 and returned via this field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#internal_ipv6_range GoogleComputeNetwork#internal_ipv6_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#internal_ipv6_range GoogleComputeNetwork#internal_ipv6_range}
 
 ---
 
@@ -1834,7 +1900,7 @@ Note that packets larger than 1500 bytes (standard Ethernet) can be subject to T
 with an ICMP 'Fragmentation-Needed' message if the packets are routed to the Internet or other VPCs
 with varying MTUs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#mtu GoogleComputeNetwork#mtu}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#mtu GoogleComputeNetwork#mtu}
 
 ---
 
@@ -1848,7 +1914,7 @@ network_firewall_policy_enforcement_order: str
 
 Set the order that Firewall Rules and Firewall Policies are evaluated. Default value: "AFTER_CLASSIC_FIREWALL" Possible values: ["BEFORE_CLASSIC_FIREWALL", "AFTER_CLASSIC_FIREWALL"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#network_firewall_policy_enforcement_order GoogleComputeNetwork#network_firewall_policy_enforcement_order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#network_firewall_policy_enforcement_order GoogleComputeNetwork#network_firewall_policy_enforcement_order}
 
 ---
 
@@ -1868,7 +1934,21 @@ following are valid URLs:
 * https://www.googleapis.com/compute/v1/projects/{projectId}/global/networkProfiles/{network_profile_name}
 * projects/{projectId}/global/networkProfiles/{network_profile_name}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#network_profile GoogleComputeNetwork#network_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#network_profile GoogleComputeNetwork#network_profile}
+
+---
+
+##### `params`<sup>Optional</sup> <a name="params" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkConfig.property.params"></a>
+
+```python
+params: GoogleComputeNetworkParams
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParams">GoogleComputeNetworkParams</a>
+
+params block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#params GoogleComputeNetwork#params}
 
 ---
 
@@ -1880,7 +1960,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#project GoogleComputeNetwork#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#project GoogleComputeNetwork#project}.
 
 ---
 
@@ -1900,7 +1980,7 @@ of this network in the same region as the router. If set to 'GLOBAL',
 this network's cloud routers will advertise routes with all
 subnetworks of this network, across regions. Possible values: ["REGIONAL", "GLOBAL"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#routing_mode GoogleComputeNetwork#routing_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#routing_mode GoogleComputeNetwork#routing_mode}
 
 ---
 
@@ -1914,7 +1994,45 @@ timeouts: GoogleComputeNetworkTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#timeouts GoogleComputeNetwork#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#timeouts GoogleComputeNetwork#timeouts}
+
+---
+
+### GoogleComputeNetworkParams <a name="GoogleComputeNetworkParams" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParams"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParams.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_google_beta import google_compute_network
+
+googleComputeNetwork.GoogleComputeNetworkParams(
+  resource_manager_tags: typing.Mapping[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParams.property.resourceManagerTags">resource_manager_tags</a></code> | <code>typing.Mapping[str]</code> | Resource manager tags to be bound to the network. |
+
+---
+
+##### `resource_manager_tags`<sup>Optional</sup> <a name="resource_manager_tags" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParams.property.resourceManagerTags"></a>
+
+```python
+resource_manager_tags: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+Resource manager tags to be bound to the network.
+
+Tag keys and values have the
+same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
+and values are in the format tagValues/456.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#resource_manager_tags GoogleComputeNetwork#resource_manager_tags}
 
 ---
 
@@ -1936,9 +2054,9 @@ googleComputeNetwork.GoogleComputeNetworkTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#create GoogleComputeNetwork#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#delete GoogleComputeNetwork#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#update GoogleComputeNetwork#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#create GoogleComputeNetwork#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#delete GoogleComputeNetwork#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#update GoogleComputeNetwork#update}. |
 
 ---
 
@@ -1950,7 +2068,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#create GoogleComputeNetwork#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#create GoogleComputeNetwork#create}.
 
 ---
 
@@ -1962,7 +2080,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#delete GoogleComputeNetwork#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#delete GoogleComputeNetwork#delete}.
 
 ---
 
@@ -1974,11 +2092,314 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_network#update GoogleComputeNetwork#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network#update GoogleComputeNetwork#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### GoogleComputeNetworkParamsOutputReference <a name="GoogleComputeNetworkParamsOutputReference" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_google_beta import google_compute_network
+
+googleComputeNetwork.GoogleComputeNetworkParamsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.resetResourceManagerTags">reset_resource_manager_tags</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_resource_manager_tags` <a name="reset_resource_manager_tags" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.resetResourceManagerTags"></a>
+
+```python
+def reset_resource_manager_tags() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.property.resourceManagerTagsInput">resource_manager_tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.property.resourceManagerTags">resource_manager_tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParams">GoogleComputeNetworkParams</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `resource_manager_tags_input`<sup>Optional</sup> <a name="resource_manager_tags_input" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.property.resourceManagerTagsInput"></a>
+
+```python
+resource_manager_tags_input: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
+##### `resource_manager_tags`<sup>Required</sup> <a name="resource_manager_tags" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.property.resourceManagerTags"></a>
+
+```python
+resource_manager_tags: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParamsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: GoogleComputeNetworkParams
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkParams">GoogleComputeNetworkParams</a>
+
+---
+
 
 ### GoogleComputeNetworkTimeoutsOutputReference <a name="GoogleComputeNetworkTimeoutsOutputReference" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkTimeoutsOutputReference"></a>
 

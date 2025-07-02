@@ -4,7 +4,7 @@
 
 ### GoogleComputeRegionDisk <a name="GoogleComputeRegionDisk" id="@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk google_compute_region_disk}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk google_compute_region_disk}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.Initializer"></a>
 
@@ -25,6 +25,7 @@ GoogleComputeRegionDisk.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(RemoteExecProvisioner>)
     .name(java.lang.String)
     .replicaZones(java.util.List<java.lang.String>)
+//  .accessMode(java.lang.String)
 //  .asyncPrimaryDisk(GoogleComputeRegionDiskAsyncPrimaryDisk)
 //  .createSnapshotBeforeDestroy(java.lang.Boolean)
 //  .createSnapshotBeforeDestroy(IResolvable)
@@ -62,18 +63,19 @@ GoogleComputeRegionDisk.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.Initializer.parameter.replicaZones">replicaZones</a></code> | <code>java.util.List<java.lang.String></code> | URLs of the zones where the disk should be replicated to. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.Initializer.parameter.accessMode">accessMode</a></code> | <code>java.lang.String</code> | The access mode of the disk. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.Initializer.parameter.asyncPrimaryDisk">asyncPrimaryDisk</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskAsyncPrimaryDisk">GoogleComputeRegionDiskAsyncPrimaryDisk</a></code> | async_primary_disk block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.Initializer.parameter.createSnapshotBeforeDestroy">createSnapshotBeforeDestroy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If set to true, a snapshot of the disk will be created before it is destroyed. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.Initializer.parameter.createSnapshotBeforeDestroyPrefix">createSnapshotBeforeDestroyPrefix</a></code> | <code>java.lang.String</code> | This will set a custom name prefix for the snapshot that's created when the disk is deleted. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | An optional description of this resource. Provide this property when you create the resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.Initializer.parameter.diskEncryptionKey">diskEncryptionKey</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskDiskEncryptionKey">GoogleComputeRegionDiskDiskEncryptionKey</a></code> | disk_encryption_key block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.Initializer.parameter.guestOsFeatures">guestOsFeatures</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskGuestOsFeatures">GoogleComputeRegionDiskGuestOsFeatures</a>></code> | guest_os_features block. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#id GoogleComputeRegionDisk#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#id GoogleComputeRegionDisk#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.Initializer.parameter.interface">interface</a></code> | <code>java.lang.String</code> | Specifies the disk interface to use for attaching this disk, which is either SCSI or NVME. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Labels to apply to this disk.  A list of key->value pairs. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.Initializer.parameter.licenses">licenses</a></code> | <code>java.util.List<java.lang.String></code> | Any applicable license URI. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.Initializer.parameter.physicalBlockSizeBytes">physicalBlockSizeBytes</a></code> | <code>java.lang.Number</code> | Physical block size of the persistent disk, in bytes. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#project GoogleComputeRegionDisk#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#project GoogleComputeRegionDisk#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | A reference to the region where the disk resides. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.Initializer.parameter.size">size</a></code> | <code>java.lang.Number</code> | Size of the persistent disk, specified in GB. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.Initializer.parameter.snapshot">snapshot</a></code> | <code>java.lang.String</code> | The source snapshot used to create this disk. |
@@ -158,7 +160,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#name GoogleComputeRegionDisk#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#name GoogleComputeRegionDisk#name}
 
 ---
 
@@ -168,7 +170,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 URLs of the zones where the disk should be replicated to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#replica_zones GoogleComputeRegionDisk#replica_zones}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#replica_zones GoogleComputeRegionDisk#replica_zones}
+
+---
+
+##### `accessMode`<sup>Optional</sup> <a name="accessMode" id="@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.Initializer.parameter.accessMode"></a>
+
+- *Type:* java.lang.String
+
+The access mode of the disk.
+
+For example:
+
+* READ_WRITE_SINGLE: The default AccessMode, means the disk can be attached to single instance in RW mode.
+* READ_WRITE_MANY: The AccessMode means the disk can be attached to multiple instances in RW mode.
+* READ_ONLY_SINGLE: The AccessMode means the disk can be attached to multiple instances in RO mode.
+  The AccessMode is only valid for Hyperdisk disk types.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#access_mode GoogleComputeRegionDisk#access_mode}
 
 ---
 
@@ -178,7 +197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 async_primary_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#async_primary_disk GoogleComputeRegionDisk#async_primary_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#async_primary_disk GoogleComputeRegionDisk#async_primary_disk}
 
 ---
 
@@ -191,7 +210,7 @@ If set to true, a snapshot of the disk will be created before it is destroyed.
 If your disk is encrypted with customer managed encryption keys these will be reused for the snapshot creation.
 The name of the snapshot by default will be '{{disk-name}}-YYYYMMDD-HHmm'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#create_snapshot_before_destroy GoogleComputeRegionDisk#create_snapshot_before_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#create_snapshot_before_destroy GoogleComputeRegionDisk#create_snapshot_before_destroy}
 
 ---
 
@@ -201,7 +220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 This will set a custom name prefix for the snapshot that's created when the disk is deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#create_snapshot_before_destroy_prefix GoogleComputeRegionDisk#create_snapshot_before_destroy_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#create_snapshot_before_destroy_prefix GoogleComputeRegionDisk#create_snapshot_before_destroy_prefix}
 
 ---
 
@@ -211,7 +230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#description GoogleComputeRegionDisk#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#description GoogleComputeRegionDisk#description}
 
 ---
 
@@ -221,7 +240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 disk_encryption_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#disk_encryption_key GoogleComputeRegionDisk#disk_encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#disk_encryption_key GoogleComputeRegionDisk#disk_encryption_key}
 
 ---
 
@@ -231,7 +250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 guest_os_features block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#guest_os_features GoogleComputeRegionDisk#guest_os_features}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#guest_os_features GoogleComputeRegionDisk#guest_os_features}
 
 ---
 
@@ -239,7 +258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#id GoogleComputeRegionDisk#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#id GoogleComputeRegionDisk#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -254,7 +273,7 @@ Specifies the disk interface to use for attaching this disk, which is either SCS
 
 The default is SCSI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#interface GoogleComputeRegionDisk#interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#interface GoogleComputeRegionDisk#interface}
 
 ---
 
@@ -267,7 +286,7 @@ Labels to apply to this disk.  A list of key->value pairs.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#labels GoogleComputeRegionDisk#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#labels GoogleComputeRegionDisk#labels}
 
 ---
 
@@ -277,7 +296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Any applicable license URI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#licenses GoogleComputeRegionDisk#licenses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#licenses GoogleComputeRegionDisk#licenses}
 
 ---
 
@@ -293,7 +312,7 @@ are 4096 and 16384, other sizes may be added in the future.
 If an unsupported value is requested, the error message will list
 the supported values for the caller's project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#physical_block_size_bytes GoogleComputeRegionDisk#physical_block_size_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#physical_block_size_bytes GoogleComputeRegionDisk#physical_block_size_bytes}
 
 ---
 
@@ -301,7 +320,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#project GoogleComputeRegionDisk#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#project GoogleComputeRegionDisk#project}.
 
 ---
 
@@ -311,7 +330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A reference to the region where the disk resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#region GoogleComputeRegionDisk#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#region GoogleComputeRegionDisk#region}
 
 ---
 
@@ -330,7 +349,7 @@ If you specify this field along with sourceImage or sourceSnapshot,
 the value of sizeGb must not be less than the size of the sourceImage
 or the size of the snapshot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#size GoogleComputeRegionDisk#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#size GoogleComputeRegionDisk#size}
 
 ---
 
@@ -349,7 +368,7 @@ valid values:
 * 'global/snapshots/snapshot'
 * 'snapshot'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#snapshot GoogleComputeRegionDisk#snapshot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#snapshot GoogleComputeRegionDisk#snapshot}
 
 ---
 
@@ -369,7 +388,7 @@ For example, the following are valid values:
 * zones/{zone}/disks/{disk}
 * regions/{region}/disks/{disk}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#source_disk GoogleComputeRegionDisk#source_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#source_disk GoogleComputeRegionDisk#source_disk}
 
 ---
 
@@ -379,7 +398,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 source_snapshot_encryption_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#source_snapshot_encryption_key GoogleComputeRegionDisk#source_snapshot_encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#source_snapshot_encryption_key GoogleComputeRegionDisk#source_snapshot_encryption_key}
 
 ---
 
@@ -389,7 +408,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#timeouts GoogleComputeRegionDisk#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#timeouts GoogleComputeRegionDisk#timeouts}
 
 ---
 
@@ -401,7 +420,7 @@ URL of the disk type resource describing which disk type to use to create the di
 
 Provide this when creating the disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#type GoogleComputeRegionDisk#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#type GoogleComputeRegionDisk#type}
 
 ---
 
@@ -437,6 +456,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.putGuestOsFeatures">putGuestOsFeatures</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.putSourceSnapshotEncryptionKey">putSourceSnapshotEncryptionKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.resetAccessMode">resetAccessMode</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.resetAsyncPrimaryDisk">resetAsyncPrimaryDisk</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.resetCreateSnapshotBeforeDestroy">resetCreateSnapshotBeforeDestroy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.resetCreateSnapshotBeforeDestroyPrefix">resetCreateSnapshotBeforeDestroyPrefix</a></code> | *No description.* |
@@ -809,6 +829,12 @@ public void putTimeouts(GoogleComputeRegionDiskTimeouts value)
 
 ---
 
+##### `resetAccessMode` <a name="resetAccessMode" id="@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.resetAccessMode"></a>
+
+```java
+public void resetAccessMode()
+```
+
 ##### `resetAsyncPrimaryDisk` <a name="resetAsyncPrimaryDisk" id="@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.resetAsyncPrimaryDisk"></a>
 
 ```java
@@ -1026,7 +1052,7 @@ The construct id used in the generated config for the GoogleComputeRegionDisk to
 
 The id of the existing GoogleComputeRegionDisk that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1072,6 +1098,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.property.terraformLabels">terraformLabels</a></code> | <code>com.hashicorp.cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskTimeoutsOutputReference">GoogleComputeRegionDiskTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.property.users">users</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.property.accessModeInput">accessModeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.property.asyncPrimaryDiskInput">asyncPrimaryDiskInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskAsyncPrimaryDisk">GoogleComputeRegionDiskAsyncPrimaryDisk</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.property.createSnapshotBeforeDestroyInput">createSnapshotBeforeDestroyInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.property.createSnapshotBeforeDestroyPrefixInput">createSnapshotBeforeDestroyPrefixInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1093,6 +1120,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.property.sourceSnapshotEncryptionKeyInput">sourceSnapshotEncryptionKeyInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskSourceSnapshotEncryptionKey">GoogleComputeRegionDiskSourceSnapshotEncryptionKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskTimeouts">GoogleComputeRegionDiskTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.property.accessMode">accessMode</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.property.createSnapshotBeforeDestroy">createSnapshotBeforeDestroy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.property.createSnapshotBeforeDestroyPrefix">createSnapshotBeforeDestroyPrefix</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1414,6 +1442,16 @@ public java.util.List<java.lang.String> getUsers();
 
 ---
 
+##### `accessModeInput`<sup>Optional</sup> <a name="accessModeInput" id="@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.property.accessModeInput"></a>
+
+```java
+public java.lang.String getAccessModeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `asyncPrimaryDiskInput`<sup>Optional</sup> <a name="asyncPrimaryDiskInput" id="@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.property.asyncPrimaryDiskInput"></a>
 
 ```java
@@ -1618,6 +1656,16 @@ public java.lang.Object getTimeoutsInput();
 
 ```java
 public java.lang.String getTypeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `accessMode`<sup>Required</sup> <a name="accessMode" id="@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.property.accessMode"></a>
+
+```java
+public java.lang.String getAccessMode();
 ```
 
 - *Type:* java.lang.String
@@ -1834,7 +1882,7 @@ public java.lang.String getDisk();
 
 Primary disk for asynchronous disk replication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#disk GoogleComputeRegionDisk#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#disk GoogleComputeRegionDisk#disk}
 
 ---
 
@@ -1859,6 +1907,7 @@ GoogleComputeRegionDiskConfig.builder()
 //  .provisioners(RemoteExecProvisioner>)
     .name(java.lang.String)
     .replicaZones(java.util.List<java.lang.String>)
+//  .accessMode(java.lang.String)
 //  .asyncPrimaryDisk(GoogleComputeRegionDiskAsyncPrimaryDisk)
 //  .createSnapshotBeforeDestroy(java.lang.Boolean)
 //  .createSnapshotBeforeDestroy(IResolvable)
@@ -1896,18 +1945,19 @@ GoogleComputeRegionDiskConfig.builder()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskConfig.property.replicaZones">replicaZones</a></code> | <code>java.util.List<java.lang.String></code> | URLs of the zones where the disk should be replicated to. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskConfig.property.accessMode">accessMode</a></code> | <code>java.lang.String</code> | The access mode of the disk. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskConfig.property.asyncPrimaryDisk">asyncPrimaryDisk</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskAsyncPrimaryDisk">GoogleComputeRegionDiskAsyncPrimaryDisk</a></code> | async_primary_disk block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskConfig.property.createSnapshotBeforeDestroy">createSnapshotBeforeDestroy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If set to true, a snapshot of the disk will be created before it is destroyed. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskConfig.property.createSnapshotBeforeDestroyPrefix">createSnapshotBeforeDestroyPrefix</a></code> | <code>java.lang.String</code> | This will set a custom name prefix for the snapshot that's created when the disk is deleted. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskConfig.property.description">description</a></code> | <code>java.lang.String</code> | An optional description of this resource. Provide this property when you create the resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskConfig.property.diskEncryptionKey">diskEncryptionKey</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskDiskEncryptionKey">GoogleComputeRegionDiskDiskEncryptionKey</a></code> | disk_encryption_key block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskConfig.property.guestOsFeatures">guestOsFeatures</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskGuestOsFeatures">GoogleComputeRegionDiskGuestOsFeatures</a>></code> | guest_os_features block. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#id GoogleComputeRegionDisk#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#id GoogleComputeRegionDisk#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskConfig.property.interface">interface</a></code> | <code>java.lang.String</code> | Specifies the disk interface to use for attaching this disk, which is either SCSI or NVME. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Labels to apply to this disk.  A list of key->value pairs. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskConfig.property.licenses">licenses</a></code> | <code>java.util.List<java.lang.String></code> | Any applicable license URI. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskConfig.property.physicalBlockSizeBytes">physicalBlockSizeBytes</a></code> | <code>java.lang.Number</code> | Physical block size of the persistent disk, in bytes. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#project GoogleComputeRegionDisk#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#project GoogleComputeRegionDisk#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskConfig.property.region">region</a></code> | <code>java.lang.String</code> | A reference to the region where the disk resides. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskConfig.property.size">size</a></code> | <code>java.lang.Number</code> | Size of the persistent disk, specified in GB. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskConfig.property.snapshot">snapshot</a></code> | <code>java.lang.String</code> | The source snapshot used to create this disk. |
@@ -2006,7 +2056,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#name GoogleComputeRegionDisk#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#name GoogleComputeRegionDisk#name}
 
 ---
 
@@ -2020,7 +2070,28 @@ public java.util.List<java.lang.String> getReplicaZones();
 
 URLs of the zones where the disk should be replicated to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#replica_zones GoogleComputeRegionDisk#replica_zones}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#replica_zones GoogleComputeRegionDisk#replica_zones}
+
+---
+
+##### `accessMode`<sup>Optional</sup> <a name="accessMode" id="@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskConfig.property.accessMode"></a>
+
+```java
+public java.lang.String getAccessMode();
+```
+
+- *Type:* java.lang.String
+
+The access mode of the disk.
+
+For example:
+
+* READ_WRITE_SINGLE: The default AccessMode, means the disk can be attached to single instance in RW mode.
+* READ_WRITE_MANY: The AccessMode means the disk can be attached to multiple instances in RW mode.
+* READ_ONLY_SINGLE: The AccessMode means the disk can be attached to multiple instances in RO mode.
+  The AccessMode is only valid for Hyperdisk disk types.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#access_mode GoogleComputeRegionDisk#access_mode}
 
 ---
 
@@ -2034,7 +2105,7 @@ public GoogleComputeRegionDiskAsyncPrimaryDisk getAsyncPrimaryDisk();
 
 async_primary_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#async_primary_disk GoogleComputeRegionDisk#async_primary_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#async_primary_disk GoogleComputeRegionDisk#async_primary_disk}
 
 ---
 
@@ -2051,7 +2122,7 @@ If set to true, a snapshot of the disk will be created before it is destroyed.
 If your disk is encrypted with customer managed encryption keys these will be reused for the snapshot creation.
 The name of the snapshot by default will be '{{disk-name}}-YYYYMMDD-HHmm'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#create_snapshot_before_destroy GoogleComputeRegionDisk#create_snapshot_before_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#create_snapshot_before_destroy GoogleComputeRegionDisk#create_snapshot_before_destroy}
 
 ---
 
@@ -2065,7 +2136,7 @@ public java.lang.String getCreateSnapshotBeforeDestroyPrefix();
 
 This will set a custom name prefix for the snapshot that's created when the disk is deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#create_snapshot_before_destroy_prefix GoogleComputeRegionDisk#create_snapshot_before_destroy_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#create_snapshot_before_destroy_prefix GoogleComputeRegionDisk#create_snapshot_before_destroy_prefix}
 
 ---
 
@@ -2079,7 +2150,7 @@ public java.lang.String getDescription();
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#description GoogleComputeRegionDisk#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#description GoogleComputeRegionDisk#description}
 
 ---
 
@@ -2093,7 +2164,7 @@ public GoogleComputeRegionDiskDiskEncryptionKey getDiskEncryptionKey();
 
 disk_encryption_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#disk_encryption_key GoogleComputeRegionDisk#disk_encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#disk_encryption_key GoogleComputeRegionDisk#disk_encryption_key}
 
 ---
 
@@ -2107,7 +2178,7 @@ public java.lang.Object getGuestOsFeatures();
 
 guest_os_features block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#guest_os_features GoogleComputeRegionDisk#guest_os_features}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#guest_os_features GoogleComputeRegionDisk#guest_os_features}
 
 ---
 
@@ -2119,7 +2190,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#id GoogleComputeRegionDisk#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#id GoogleComputeRegionDisk#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2138,7 +2209,7 @@ Specifies the disk interface to use for attaching this disk, which is either SCS
 
 The default is SCSI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#interface GoogleComputeRegionDisk#interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#interface GoogleComputeRegionDisk#interface}
 
 ---
 
@@ -2155,7 +2226,7 @@ Labels to apply to this disk.  A list of key->value pairs.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#labels GoogleComputeRegionDisk#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#labels GoogleComputeRegionDisk#labels}
 
 ---
 
@@ -2169,7 +2240,7 @@ public java.util.List<java.lang.String> getLicenses();
 
 Any applicable license URI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#licenses GoogleComputeRegionDisk#licenses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#licenses GoogleComputeRegionDisk#licenses}
 
 ---
 
@@ -2189,7 +2260,7 @@ are 4096 and 16384, other sizes may be added in the future.
 If an unsupported value is requested, the error message will list
 the supported values for the caller's project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#physical_block_size_bytes GoogleComputeRegionDisk#physical_block_size_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#physical_block_size_bytes GoogleComputeRegionDisk#physical_block_size_bytes}
 
 ---
 
@@ -2201,7 +2272,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#project GoogleComputeRegionDisk#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#project GoogleComputeRegionDisk#project}.
 
 ---
 
@@ -2215,7 +2286,7 @@ public java.lang.String getRegion();
 
 A reference to the region where the disk resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#region GoogleComputeRegionDisk#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#region GoogleComputeRegionDisk#region}
 
 ---
 
@@ -2238,7 +2309,7 @@ If you specify this field along with sourceImage or sourceSnapshot,
 the value of sizeGb must not be less than the size of the sourceImage
 or the size of the snapshot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#size GoogleComputeRegionDisk#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#size GoogleComputeRegionDisk#size}
 
 ---
 
@@ -2261,7 +2332,7 @@ valid values:
 * 'global/snapshots/snapshot'
 * 'snapshot'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#snapshot GoogleComputeRegionDisk#snapshot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#snapshot GoogleComputeRegionDisk#snapshot}
 
 ---
 
@@ -2285,7 +2356,7 @@ For example, the following are valid values:
 * zones/{zone}/disks/{disk}
 * regions/{region}/disks/{disk}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#source_disk GoogleComputeRegionDisk#source_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#source_disk GoogleComputeRegionDisk#source_disk}
 
 ---
 
@@ -2299,7 +2370,7 @@ public GoogleComputeRegionDiskSourceSnapshotEncryptionKey getSourceSnapshotEncry
 
 source_snapshot_encryption_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#source_snapshot_encryption_key GoogleComputeRegionDisk#source_snapshot_encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#source_snapshot_encryption_key GoogleComputeRegionDisk#source_snapshot_encryption_key}
 
 ---
 
@@ -2313,7 +2384,7 @@ public GoogleComputeRegionDiskTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#timeouts GoogleComputeRegionDisk#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#timeouts GoogleComputeRegionDisk#timeouts}
 
 ---
 
@@ -2329,7 +2400,7 @@ URL of the disk type resource describing which disk type to use to create the di
 
 Provide this when creating the disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#type GoogleComputeRegionDisk#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#type GoogleComputeRegionDisk#type}
 
 ---
 
@@ -2367,7 +2438,7 @@ public java.lang.String getKmsKeyName();
 
 The name of the encryption key that is stored in Google Cloud KMS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#kms_key_name GoogleComputeRegionDisk#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#kms_key_name GoogleComputeRegionDisk#kms_key_name}
 
 ---
 
@@ -2381,7 +2452,7 @@ public java.lang.String getRawKey();
 
 Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to either encrypt or decrypt this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#raw_key GoogleComputeRegionDisk#raw_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#raw_key GoogleComputeRegionDisk#raw_key}
 
 ---
 
@@ -2397,7 +2468,7 @@ Specifies an RFC 4648 base64 encoded, RSA-wrapped 2048-bit customer-supplied enc
 
 You can provide either the rawKey or the rsaEncryptedKey.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#rsa_encrypted_key GoogleComputeRegionDisk#rsa_encrypted_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#rsa_encrypted_key GoogleComputeRegionDisk#rsa_encrypted_key}
 
 ---
 
@@ -2433,7 +2504,7 @@ The type of supported feature.
 
 Read [Enabling guest operating system features](https://cloud.google.com/compute/docs/images/create-delete-deprecate-private-images#guest-os-features) to see a list of available options. Possible values: ["MULTI_IP_SUBNET", "SECURE_BOOT", "SEV_CAPABLE", "UEFI_COMPATIBLE", "VIRTIO_SCSI_MULTIQUEUE", "WINDOWS", "GVNIC", "SEV_LIVE_MIGRATABLE", "SEV_SNP_CAPABLE", "SUSPEND_RESUME_COMPATIBLE", "TDX_CAPABLE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#type GoogleComputeRegionDisk#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#type GoogleComputeRegionDisk#type}
 
 ---
 
@@ -2469,7 +2540,7 @@ public java.lang.String getKmsKeyName();
 
 The name of the encryption key that is stored in Google Cloud KMS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#kms_key_name GoogleComputeRegionDisk#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#kms_key_name GoogleComputeRegionDisk#kms_key_name}
 
 ---
 
@@ -2483,7 +2554,7 @@ public java.lang.String getRawKey();
 
 Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to either encrypt or decrypt this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#raw_key GoogleComputeRegionDisk#raw_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#raw_key GoogleComputeRegionDisk#raw_key}
 
 ---
 
@@ -2505,9 +2576,9 @@ GoogleComputeRegionDiskTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#create GoogleComputeRegionDisk#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#delete GoogleComputeRegionDisk#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#update GoogleComputeRegionDisk#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#create GoogleComputeRegionDisk#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#delete GoogleComputeRegionDisk#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#update GoogleComputeRegionDisk#update}. |
 
 ---
 
@@ -2519,7 +2590,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#create GoogleComputeRegionDisk#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#create GoogleComputeRegionDisk#create}.
 
 ---
 
@@ -2531,7 +2602,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#delete GoogleComputeRegionDisk#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#delete GoogleComputeRegionDisk#delete}.
 
 ---
 
@@ -2543,7 +2614,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_disk#update GoogleComputeRegionDisk#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_disk#update GoogleComputeRegionDisk#update}.
 
 ---
 

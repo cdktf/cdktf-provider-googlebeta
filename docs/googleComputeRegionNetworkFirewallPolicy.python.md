@@ -4,7 +4,7 @@
 
 ### GoogleComputeRegionNetworkFirewallPolicy <a name="GoogleComputeRegionNetworkFirewallPolicy" id="@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_network_firewall_policy google_compute_region_network_firewall_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_network_firewall_policy google_compute_region_network_firewall_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.Initializer"></a>
 
@@ -24,6 +24,7 @@ googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolic
   name: str,
   description: str = None,
   id: str = None,
+  policy_type: str = None,
   project: str = None,
   region: str = None,
   timeouts: GoogleComputeRegionNetworkFirewallPolicyTimeouts = None
@@ -43,8 +44,9 @@ googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolic
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.Initializer.parameter.name">name</a></code> | <code>str</code> | User-provided name of the Network firewall policy. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.Initializer.parameter.description">description</a></code> | <code>str</code> | An optional description of this resource. Provide this property when you create the resource. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_network_firewall_policy#id GoogleComputeRegionNetworkFirewallPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_network_firewall_policy#project GoogleComputeRegionNetworkFirewallPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_network_firewall_policy#id GoogleComputeRegionNetworkFirewallPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.Initializer.parameter.policyType">policy_type</a></code> | <code>str</code> | Policy type is used to determine which resources (networks) the policy can be associated with. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_network_firewall_policy#project GoogleComputeRegionNetworkFirewallPolicy#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.Initializer.parameter.region">region</a></code> | <code>str</code> | The region of this resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicyTimeouts">GoogleComputeRegionNetworkFirewallPolicyTimeouts</a></code> | timeouts block. |
 
@@ -118,7 +120,7 @@ User-provided name of the Network firewall policy.
 
 The name should be unique in the project in which the firewall policy is created. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression [a-z](%5B-a-z0-9%5D*%5Ba-z0-9%5D)? which means the first character must be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_network_firewall_policy#name GoogleComputeRegionNetworkFirewallPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_network_firewall_policy#name GoogleComputeRegionNetworkFirewallPolicy#name}
 
 ---
 
@@ -128,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_network_firewall_policy#description GoogleComputeRegionNetworkFirewallPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_network_firewall_policy#description GoogleComputeRegionNetworkFirewallPolicy#description}
 
 ---
 
@@ -136,10 +138,23 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_network_firewall_policy#id GoogleComputeRegionNetworkFirewallPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_network_firewall_policy#id GoogleComputeRegionNetworkFirewallPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `policy_type`<sup>Optional</sup> <a name="policy_type" id="@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.Initializer.parameter.policyType"></a>
+
+- *Type:* str
+
+Policy type is used to determine which resources (networks) the policy can be associated with.
+
+A policy can be associated with a network only if the network has the matching policyType in its network profile.
+Different policy types may support some of the Firewall Rules features. Possible values: ["VPC_POLICY", "RDMA_ROCE_POLICY"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_network_firewall_policy#policy_type GoogleComputeRegionNetworkFirewallPolicy#policy_type}
 
 ---
 
@@ -147,7 +162,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_network_firewall_policy#project GoogleComputeRegionNetworkFirewallPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_network_firewall_policy#project GoogleComputeRegionNetworkFirewallPolicy#project}.
 
 ---
 
@@ -157,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The region of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_network_firewall_policy#region GoogleComputeRegionNetworkFirewallPolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_network_firewall_policy#region GoogleComputeRegionNetworkFirewallPolicy#region}
 
 ---
 
@@ -167,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_network_firewall_policy#timeouts GoogleComputeRegionNetworkFirewallPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_network_firewall_policy#timeouts GoogleComputeRegionNetworkFirewallPolicy#timeouts}
 
 ---
 
@@ -201,6 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.resetPolicyType">reset_policy_type</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.resetProject">reset_project</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.resetRegion">reset_region</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.resetTimeouts">reset_timeouts</a></code> | *No description.* |
@@ -546,7 +562,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_network_firewall_policy#create GoogleComputeRegionNetworkFirewallPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_network_firewall_policy#create GoogleComputeRegionNetworkFirewallPolicy#create}.
 
 ---
 
@@ -554,7 +570,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_network_firewall_policy#delete GoogleComputeRegionNetworkFirewallPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_network_firewall_policy#delete GoogleComputeRegionNetworkFirewallPolicy#delete}.
 
 ---
 
@@ -562,7 +578,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_network_firewall_policy#update GoogleComputeRegionNetworkFirewallPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_network_firewall_policy#update GoogleComputeRegionNetworkFirewallPolicy#update}.
 
 ---
 
@@ -576,6 +592,12 @@ def reset_description() -> None
 
 ```python
 def reset_id() -> None
+```
+
+##### `reset_policy_type` <a name="reset_policy_type" id="@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.resetPolicyType"></a>
+
+```python
+def reset_policy_type() -> None
 ```
 
 ##### `reset_project` <a name="reset_project" id="@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.resetProject"></a>
@@ -710,7 +732,7 @@ The construct id used in the generated config for the GoogleComputeRegionNetwork
 
 The id of the existing GoogleComputeRegionNetworkFirewallPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_network_firewall_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_network_firewall_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -750,12 +772,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.property.policyTypeInput">policy_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicyTimeouts">GoogleComputeRegionNetworkFirewallPolicyTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.property.policyType">policy_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.property.project">project</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.property.region">region</a></code> | <code>str</code> | *No description.* |
 
@@ -1003,6 +1027,16 @@ name_input: str
 
 ---
 
+##### `policy_type_input`<sup>Optional</sup> <a name="policy_type_input" id="@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.property.policyTypeInput"></a>
+
+```python
+policy_type_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `project_input`<sup>Optional</sup> <a name="project_input" id="@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.property.projectInput"></a>
 
 ```python
@@ -1057,6 +1091,16 @@ id: str
 
 ```python
 name: str
+```
+
+- *Type:* str
+
+---
+
+##### `policy_type`<sup>Required</sup> <a name="policy_type" id="@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicy.property.policyType"></a>
+
+```python
+policy_type: str
 ```
 
 - *Type:* str
@@ -1121,6 +1165,7 @@ googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolic
   name: str,
   description: str = None,
   id: str = None,
+  policy_type: str = None,
   project: str = None,
   region: str = None,
   timeouts: GoogleComputeRegionNetworkFirewallPolicyTimeouts = None
@@ -1140,8 +1185,9 @@ googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolic
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicyConfig.property.name">name</a></code> | <code>str</code> | User-provided name of the Network firewall policy. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicyConfig.property.description">description</a></code> | <code>str</code> | An optional description of this resource. Provide this property when you create the resource. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_network_firewall_policy#id GoogleComputeRegionNetworkFirewallPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicyConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_network_firewall_policy#project GoogleComputeRegionNetworkFirewallPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_network_firewall_policy#id GoogleComputeRegionNetworkFirewallPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicyConfig.property.policyType">policy_type</a></code> | <code>str</code> | Policy type is used to determine which resources (networks) the policy can be associated with. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicyConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_network_firewall_policy#project GoogleComputeRegionNetworkFirewallPolicy#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicyConfig.property.region">region</a></code> | <code>str</code> | The region of this resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicyTimeouts">GoogleComputeRegionNetworkFirewallPolicyTimeouts</a></code> | timeouts block. |
 
@@ -1229,7 +1275,7 @@ User-provided name of the Network firewall policy.
 
 The name should be unique in the project in which the firewall policy is created. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression [a-z](%5B-a-z0-9%5D*%5Ba-z0-9%5D)? which means the first character must be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_network_firewall_policy#name GoogleComputeRegionNetworkFirewallPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_network_firewall_policy#name GoogleComputeRegionNetworkFirewallPolicy#name}
 
 ---
 
@@ -1243,7 +1289,7 @@ description: str
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_network_firewall_policy#description GoogleComputeRegionNetworkFirewallPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_network_firewall_policy#description GoogleComputeRegionNetworkFirewallPolicy#description}
 
 ---
 
@@ -1255,10 +1301,27 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_network_firewall_policy#id GoogleComputeRegionNetworkFirewallPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_network_firewall_policy#id GoogleComputeRegionNetworkFirewallPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `policy_type`<sup>Optional</sup> <a name="policy_type" id="@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicyConfig.property.policyType"></a>
+
+```python
+policy_type: str
+```
+
+- *Type:* str
+
+Policy type is used to determine which resources (networks) the policy can be associated with.
+
+A policy can be associated with a network only if the network has the matching policyType in its network profile.
+Different policy types may support some of the Firewall Rules features. Possible values: ["VPC_POLICY", "RDMA_ROCE_POLICY"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_network_firewall_policy#policy_type GoogleComputeRegionNetworkFirewallPolicy#policy_type}
 
 ---
 
@@ -1270,7 +1333,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_network_firewall_policy#project GoogleComputeRegionNetworkFirewallPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_network_firewall_policy#project GoogleComputeRegionNetworkFirewallPolicy#project}.
 
 ---
 
@@ -1284,7 +1347,7 @@ region: str
 
 The region of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_network_firewall_policy#region GoogleComputeRegionNetworkFirewallPolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_network_firewall_policy#region GoogleComputeRegionNetworkFirewallPolicy#region}
 
 ---
 
@@ -1298,7 +1361,7 @@ timeouts: GoogleComputeRegionNetworkFirewallPolicyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_network_firewall_policy#timeouts GoogleComputeRegionNetworkFirewallPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_network_firewall_policy#timeouts GoogleComputeRegionNetworkFirewallPolicy#timeouts}
 
 ---
 
@@ -1320,9 +1383,9 @@ googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolic
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicyTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_network_firewall_policy#create GoogleComputeRegionNetworkFirewallPolicy#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicyTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_network_firewall_policy#delete GoogleComputeRegionNetworkFirewallPolicy#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicyTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_network_firewall_policy#update GoogleComputeRegionNetworkFirewallPolicy#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicyTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_network_firewall_policy#create GoogleComputeRegionNetworkFirewallPolicy#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicyTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_network_firewall_policy#delete GoogleComputeRegionNetworkFirewallPolicy#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicy.GoogleComputeRegionNetworkFirewallPolicyTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_network_firewall_policy#update GoogleComputeRegionNetworkFirewallPolicy#update}. |
 
 ---
 
@@ -1334,7 +1397,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_network_firewall_policy#create GoogleComputeRegionNetworkFirewallPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_network_firewall_policy#create GoogleComputeRegionNetworkFirewallPolicy#create}.
 
 ---
 
@@ -1346,7 +1409,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_network_firewall_policy#delete GoogleComputeRegionNetworkFirewallPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_network_firewall_policy#delete GoogleComputeRegionNetworkFirewallPolicy#delete}.
 
 ---
 
@@ -1358,7 +1421,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_region_network_firewall_policy#update GoogleComputeRegionNetworkFirewallPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_region_network_firewall_policy#update GoogleComputeRegionNetworkFirewallPolicy#update}.
 
 ---
 
