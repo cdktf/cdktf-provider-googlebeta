@@ -429,6 +429,7 @@ export * as googleComputeUrlMap from './google-compute-url-map';
 export * as googleComputeVpnGateway from './google-compute-vpn-gateway';
 export * as googleComputeVpnTunnel from './google-compute-vpn-tunnel';
 export * as googleComputeWireGroup from './google-compute-wire-group';
+export * as googleContactCenterInsightsAnalysisRule from './google-contact-center-insights-analysis-rule';
 export * as googleContactCenterInsightsView from './google-contact-center-insights-view';
 export * as googleContainerAnalysisNote from './google-container-analysis-note';
 export * as googleContainerAnalysisNoteIamBinding from './google-container-analysis-note-iam-binding';
@@ -850,6 +851,7 @@ export * as googleMemorystoreInstanceDesiredUserCreatedEndpoints from './google-
 export * as googleMigrationCenterGroup from './google-migration-center-group';
 export * as googleMigrationCenterPreferenceSet from './google-migration-center-preference-set';
 export * as googleMlEngineModel from './google-ml-engine-model';
+export * as googleModelArmorTemplate from './google-model-armor-template';
 export * as googleMonitoringAlertPolicy from './google-monitoring-alert-policy';
 export * as googleMonitoringCustomService from './google-monitoring-custom-service';
 export * as googleMonitoringDashboard from './google-monitoring-dashboard';
@@ -1463,6 +1465,7 @@ export * as dataGoogleMonitoringMeshIstioService from './data-google-monitoring-
 export * as dataGoogleMonitoringNotificationChannel from './data-google-monitoring-notification-channel';
 export * as dataGoogleMonitoringUptimeCheckIps from './data-google-monitoring-uptime-check-ips';
 export * as dataGoogleNetblockIpRanges from './data-google-netblock-ip-ranges';
+export * as dataGoogleNetworkManagementConnectivityTestRun from './data-google-network-management-connectivity-test-run';
 export * as dataGoogleNetworkSecurityAddressGroupIamPolicy from './data-google-network-security-address-group-iam-policy';
 export * as dataGoogleNotebooksInstanceIamPolicy from './data-google-notebooks-instance-iam-policy';
 export * as dataGoogleNotebooksRuntimeIamPolicy from './data-google-notebooks-runtime-iam-policy';
@@ -1504,6 +1507,7 @@ export * as dataGooglePubsubSubscription from './data-google-pubsub-subscription
 export * as dataGooglePubsubSubscriptionIamPolicy from './data-google-pubsub-subscription-iam-policy';
 export * as dataGooglePubsubTopic from './data-google-pubsub-topic';
 export * as dataGooglePubsubTopicIamPolicy from './data-google-pubsub-topic-iam-policy';
+export * as dataGoogleRedisCluster from './data-google-redis-cluster';
 export * as dataGoogleRedisInstance from './data-google-redis-instance';
 export * as dataGoogleRuntimeconfigConfig from './data-google-runtimeconfig-config';
 export * as dataGoogleRuntimeconfigConfigIamPolicy from './data-google-runtimeconfig-config-iam-policy';

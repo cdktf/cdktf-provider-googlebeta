@@ -429,6 +429,7 @@ Object.defineProperty(exports, 'googleComputeUrlMap', { get: function () { retur
 Object.defineProperty(exports, 'googleComputeVpnGateway', { get: function () { return require('./google-compute-vpn-gateway'); } });
 Object.defineProperty(exports, 'googleComputeVpnTunnel', { get: function () { return require('./google-compute-vpn-tunnel'); } });
 Object.defineProperty(exports, 'googleComputeWireGroup', { get: function () { return require('./google-compute-wire-group'); } });
+Object.defineProperty(exports, 'googleContactCenterInsightsAnalysisRule', { get: function () { return require('./google-contact-center-insights-analysis-rule'); } });
 Object.defineProperty(exports, 'googleContactCenterInsightsView', { get: function () { return require('./google-contact-center-insights-view'); } });
 Object.defineProperty(exports, 'googleContainerAnalysisNote', { get: function () { return require('./google-container-analysis-note'); } });
 Object.defineProperty(exports, 'googleContainerAnalysisNoteIamBinding', { get: function () { return require('./google-container-analysis-note-iam-binding'); } });
@@ -850,6 +851,7 @@ Object.defineProperty(exports, 'googleMemorystoreInstanceDesiredUserCreatedEndpo
 Object.defineProperty(exports, 'googleMigrationCenterGroup', { get: function () { return require('./google-migration-center-group'); } });
 Object.defineProperty(exports, 'googleMigrationCenterPreferenceSet', { get: function () { return require('./google-migration-center-preference-set'); } });
 Object.defineProperty(exports, 'googleMlEngineModel', { get: function () { return require('./google-ml-engine-model'); } });
+Object.defineProperty(exports, 'googleModelArmorTemplate', { get: function () { return require('./google-model-armor-template'); } });
 Object.defineProperty(exports, 'googleMonitoringAlertPolicy', { get: function () { return require('./google-monitoring-alert-policy'); } });
 Object.defineProperty(exports, 'googleMonitoringCustomService', { get: function () { return require('./google-monitoring-custom-service'); } });
 Object.defineProperty(exports, 'googleMonitoringDashboard', { get: function () { return require('./google-monitoring-dashboard'); } });
@@ -1463,6 +1465,7 @@ Object.defineProperty(exports, 'dataGoogleMonitoringMeshIstioService', { get: fu
 Object.defineProperty(exports, 'dataGoogleMonitoringNotificationChannel', { get: function () { return require('./data-google-monitoring-notification-channel'); } });
 Object.defineProperty(exports, 'dataGoogleMonitoringUptimeCheckIps', { get: function () { return require('./data-google-monitoring-uptime-check-ips'); } });
 Object.defineProperty(exports, 'dataGoogleNetblockIpRanges', { get: function () { return require('./data-google-netblock-ip-ranges'); } });
+Object.defineProperty(exports, 'dataGoogleNetworkManagementConnectivityTestRun', { get: function () { return require('./data-google-network-management-connectivity-test-run'); } });
 Object.defineProperty(exports, 'dataGoogleNetworkSecurityAddressGroupIamPolicy', { get: function () { return require('./data-google-network-security-address-group-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleNotebooksInstanceIamPolicy', { get: function () { return require('./data-google-notebooks-instance-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleNotebooksRuntimeIamPolicy', { get: function () { return require('./data-google-notebooks-runtime-iam-policy'); } });
@@ -1504,6 +1507,7 @@ Object.defineProperty(exports, 'dataGooglePubsubSubscription', { get: function (
 Object.defineProperty(exports, 'dataGooglePubsubSubscriptionIamPolicy', { get: function () { return require('./data-google-pubsub-subscription-iam-policy'); } });
 Object.defineProperty(exports, 'dataGooglePubsubTopic', { get: function () { return require('./data-google-pubsub-topic'); } });
 Object.defineProperty(exports, 'dataGooglePubsubTopicIamPolicy', { get: function () { return require('./data-google-pubsub-topic-iam-policy'); } });
+Object.defineProperty(exports, 'dataGoogleRedisCluster', { get: function () { return require('./data-google-redis-cluster'); } });
 Object.defineProperty(exports, 'dataGoogleRedisInstance', { get: function () { return require('./data-google-redis-instance'); } });
 Object.defineProperty(exports, 'dataGoogleRuntimeconfigConfig', { get: function () { return require('./data-google-runtimeconfig-config'); } });
 Object.defineProperty(exports, 'dataGoogleRuntimeconfigConfigIamPolicy', { get: function () { return require('./data-google-runtimeconfig-config-iam-policy'); } });
