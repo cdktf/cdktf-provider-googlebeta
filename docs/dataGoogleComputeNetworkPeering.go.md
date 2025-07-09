@@ -4,7 +4,7 @@
 
 ### DataGoogleComputeNetworkPeering <a name="DataGoogleComputeNetworkPeering" id="@cdktf/provider-google-beta.dataGoogleComputeNetworkPeering.DataGoogleComputeNetworkPeering"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/data-sources/google_compute_network_peering google_compute_network_peering}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/data-sources/google_compute_network_peering google_compute_network_peering}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeNetworkPeering.DataGoogleComputeNetworkPeering.Initializer"></a>
 
@@ -392,7 +392,7 @@ The construct id used in the generated config for the DataGoogleComputeNetworkPe
 
 The id of the existing DataGoogleComputeNetworkPeering that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/data-sources/google_compute_network_peering#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/data-sources/google_compute_network_peering#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -429,6 +429,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetworkPeering.DataGoogleComputeNetworkPeering.property.state">State</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetworkPeering.DataGoogleComputeNetworkPeering.property.stateDetails">StateDetails</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetworkPeering.DataGoogleComputeNetworkPeering.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetworkPeering.DataGoogleComputeNetworkPeeringTimeoutsOutputReference">DataGoogleComputeNetworkPeeringTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetworkPeering.DataGoogleComputeNetworkPeering.property.updateStrategy">UpdateStrategy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetworkPeering.DataGoogleComputeNetworkPeering.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetworkPeering.DataGoogleComputeNetworkPeering.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetworkPeering.DataGoogleComputeNetworkPeering.property.networkInput">NetworkInput</a></code> | <code>*string</code> | *No description.* |
@@ -651,6 +652,16 @@ func Timeouts() DataGoogleComputeNetworkPeeringTimeoutsOutputReference
 
 ---
 
+##### `UpdateStrategy`<sup>Required</sup> <a name="UpdateStrategy" id="@cdktf/provider-google-beta.dataGoogleComputeNetworkPeering.DataGoogleComputeNetworkPeering.property.updateStrategy"></a>
+
+```go
+func UpdateStrategy() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-google-beta.dataGoogleComputeNetworkPeering.DataGoogleComputeNetworkPeering.property.idInput"></a>
 
 ```go
@@ -776,7 +787,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/datagooglec
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetworkPeering.DataGoogleComputeNetworkPeeringConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetworkPeering.DataGoogleComputeNetworkPeeringConfig.property.name">Name</a></code> | <code>*string</code> | Name of the peering. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetworkPeering.DataGoogleComputeNetworkPeeringConfig.property.network">Network</a></code> | <code>*string</code> | The primary network of the peering. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetworkPeering.DataGoogleComputeNetworkPeeringConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/data-sources/google_compute_network_peering#id DataGoogleComputeNetworkPeering#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetworkPeering.DataGoogleComputeNetworkPeeringConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/data-sources/google_compute_network_peering#id DataGoogleComputeNetworkPeering#id}. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetworkPeering.DataGoogleComputeNetworkPeeringConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetworkPeering.DataGoogleComputeNetworkPeeringTimeouts">DataGoogleComputeNetworkPeeringTimeouts</a></code> | timeouts block. |
 
 ---
@@ -861,7 +872,7 @@ Name *string
 
 Name of the peering.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/data-sources/google_compute_network_peering#name DataGoogleComputeNetworkPeering#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/data-sources/google_compute_network_peering#name DataGoogleComputeNetworkPeering#name}
 
 ---
 
@@ -875,7 +886,7 @@ Network *string
 
 The primary network of the peering.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/data-sources/google_compute_network_peering#network DataGoogleComputeNetworkPeering#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/data-sources/google_compute_network_peering#network DataGoogleComputeNetworkPeering#network}
 
 ---
 
@@ -887,7 +898,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/data-sources/google_compute_network_peering#id DataGoogleComputeNetworkPeering#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/data-sources/google_compute_network_peering#id DataGoogleComputeNetworkPeering#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -904,7 +915,7 @@ Timeouts DataGoogleComputeNetworkPeeringTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/data-sources/google_compute_network_peering#timeouts DataGoogleComputeNetworkPeering#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/data-sources/google_compute_network_peering#timeouts DataGoogleComputeNetworkPeering#timeouts}
 
 ---
 
@@ -924,7 +935,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/datagooglec
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetworkPeering.DataGoogleComputeNetworkPeeringTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/data-sources/google_compute_network_peering#read DataGoogleComputeNetworkPeering#read}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetworkPeering.DataGoogleComputeNetworkPeeringTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/data-sources/google_compute_network_peering#read DataGoogleComputeNetworkPeering#read}. |
 
 ---
 
@@ -936,7 +947,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/data-sources/google_compute_network_peering#read DataGoogleComputeNetworkPeering#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/data-sources/google_compute_network_peering#read DataGoogleComputeNetworkPeering#read}.
 
 ---
 
