@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_interconnect
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,17 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleComputeInterconnectConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Enable or disable the Application Aware Interconnect(AAI) feature on this interconnect.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#aai_enabled GoogleComputeInterconnect#aai_enabled}
+  */
+  readonly aaiEnabled?: boolean | cdktf.IResolvable;
+  /**
   * Administrative status of the interconnect. When this is set to true, the Interconnect is
   * functional and can carry traffic. When set to false, no packets can be carried over the
   * interconnect and no BGP routes are exchanged over it. By default, the status is set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_interconnect#admin_enabled GoogleComputeInterconnect#admin_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#admin_enabled GoogleComputeInterconnect#admin_enabled}
   */
   readonly adminEnabled?: boolean | cdktf.IResolvable;
   /**
@@ -25,17 +31,17 @@ export interface GoogleComputeInterconnectConfig extends cdktf.TerraformMetaArgu
   * crossconnect. This field is required for Dedicated and Partner Interconnect, should not be specified
   * for cross-cloud interconnect.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_interconnect#customer_name GoogleComputeInterconnect#customer_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#customer_name GoogleComputeInterconnect#customer_name}
   */
   readonly customerName?: string;
   /**
   * An optional description of this resource. Provide this property when you create the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_interconnect#description GoogleComputeInterconnect#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#description GoogleComputeInterconnect#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_interconnect#id GoogleComputeInterconnect#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#id GoogleComputeInterconnect#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -47,7 +53,7 @@ export interface GoogleComputeInterconnectConfig extends cdktf.TerraformMetaArgu
   *   - PARTNER: A partner-managed interconnection shared between customers though a partner.
   *   - DEDICATED: A dedicated physical interconnection with the customer. Possible values: ["DEDICATED", "PARTNER", "IT_PRIVATE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_interconnect#interconnect_type GoogleComputeInterconnect#interconnect_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#interconnect_type GoogleComputeInterconnect#interconnect_type}
   */
   readonly interconnectType: string;
   /**
@@ -58,7 +64,7 @@ export interface GoogleComputeInterconnectConfig extends cdktf.TerraformMetaArgu
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_interconnect#labels GoogleComputeInterconnect#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#labels GoogleComputeInterconnect#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
@@ -68,21 +74,21 @@ export interface GoogleComputeInterconnectConfig extends cdktf.TerraformMetaArgu
   *   - LINK_TYPE_ETHERNET_100G_LR: A 100G Ethernet with LR optics.
   *   - LINK_TYPE_ETHERNET_400G_LR4: A 400G Ethernet with LR4 optics Possible values: ["LINK_TYPE_ETHERNET_10G_LR", "LINK_TYPE_ETHERNET_100G_LR", "LINK_TYPE_ETHERNET_400G_LR4"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_interconnect#link_type GoogleComputeInterconnect#link_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#link_type GoogleComputeInterconnect#link_type}
   */
   readonly linkType: string;
   /**
   * URL of the InterconnectLocation object that represents where this connection is to be provisioned.
   * Specifies the location inside Google's Networks.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_interconnect#location GoogleComputeInterconnect#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#location GoogleComputeInterconnect#location}
   */
   readonly location: string;
   /**
   * Enable or disable MACsec on this Interconnect connection.
   * MACsec enablement fails if the MACsec object is not specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_interconnect#macsec_enabled GoogleComputeInterconnect#macsec_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#macsec_enabled GoogleComputeInterconnect#macsec_enabled}
   */
   readonly macsecEnabled?: boolean | cdktf.IResolvable;
   /**
@@ -92,7 +98,7 @@ export interface GoogleComputeInterconnectConfig extends cdktf.TerraformMetaArgu
   * character must be a lowercase letter, and all following characters must be a dash,
   * lowercase letter, or digit, except the last character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_interconnect#name GoogleComputeInterconnect#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#name GoogleComputeInterconnect#name}
   */
   readonly name: string;
   /**
@@ -102,18 +108,18 @@ export interface GoogleComputeInterconnectConfig extends cdktf.TerraformMetaArgu
   * This field is required for users who sign up for Cloud Interconnect using workforce identity
   * federation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_interconnect#noc_contact_email GoogleComputeInterconnect#noc_contact_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#noc_contact_email GoogleComputeInterconnect#noc_contact_email}
   */
   readonly nocContactEmail?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_interconnect#project GoogleComputeInterconnect#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#project GoogleComputeInterconnect#project}
   */
   readonly project?: string;
   /**
   * Indicates that this is a Cross-Cloud Interconnect. This field specifies the location outside
   * of Google's network that the interconnect is connected to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_interconnect#remote_location GoogleComputeInterconnect#remote_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#remote_location GoogleComputeInterconnect#remote_location}
   */
   readonly remoteLocation?: string;
   /**
@@ -123,25 +129,31 @@ export interface GoogleComputeInterconnectConfig extends cdktf.TerraformMetaArgu
   * available). Note that MACSEC is still technically allowed for compatibility reasons, but it
   * does not work with the API, and will be removed in an upcoming major version. Possible values: ["MACSEC", "CROSS_SITE_NETWORK", "IF_MACSEC"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_interconnect#requested_features GoogleComputeInterconnect#requested_features}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#requested_features GoogleComputeInterconnect#requested_features}
   */
   readonly requestedFeatures?: string[];
   /**
   * Target number of physical links in the link bundle, as requested by the customer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_interconnect#requested_link_count GoogleComputeInterconnect#requested_link_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#requested_link_count GoogleComputeInterconnect#requested_link_count}
   */
   readonly requestedLinkCount: number;
   /**
+  * application_aware_interconnect block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#application_aware_interconnect GoogleComputeInterconnect#application_aware_interconnect}
+  */
+  readonly applicationAwareInterconnect?: GoogleComputeInterconnectApplicationAwareInterconnect;
+  /**
   * macsec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_interconnect#macsec GoogleComputeInterconnect#macsec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#macsec GoogleComputeInterconnect#macsec}
   */
   readonly macsec?: GoogleComputeInterconnectMacsec;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_interconnect#timeouts GoogleComputeInterconnect#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#timeouts GoogleComputeInterconnect#timeouts}
   */
   readonly timeouts?: GoogleComputeInterconnectTimeouts;
 }
@@ -340,6 +352,638 @@ export class GoogleComputeInterconnectExpectedOutagesList extends cdktf.ComplexL
     return new GoogleComputeInterconnectExpectedOutagesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface GoogleComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage {
+  /**
+  * Bandwidth percentage for a specific traffic class.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#percentage GoogleComputeInterconnect#percentage}
+  */
+  readonly percentage?: number;
+  /**
+  * Enum representing the various traffic classes offered by AAI. Default value: "TC_UNSPECIFIED" Possible values: ["TC_UNSPECIFIED", "TC1", "TC2", "TC3", "TC4", "TC5", "TC6"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#traffic_class GoogleComputeInterconnect#traffic_class}
+  */
+  readonly trafficClass?: string;
+}
+
+export function googleComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageToTerraform(struct?: GoogleComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    percentage: cdktf.numberToTerraform(struct!.percentage),
+    traffic_class: cdktf.stringToTerraform(struct!.trafficClass),
+  }
+}
+
+
+export function googleComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageToHclTerraform(struct?: GoogleComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    percentage: {
+      value: cdktf.numberToHclTerraform(struct!.percentage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    traffic_class: {
+      value: cdktf.stringToHclTerraform(struct!.trafficClass),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._percentage !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.percentage = this._percentage;
+    }
+    if (this._trafficClass !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.trafficClass = this._trafficClass;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._percentage = undefined;
+      this._trafficClass = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._percentage = value.percentage;
+      this._trafficClass = value.trafficClass;
+    }
+  }
+
+  // percentage - computed: false, optional: true, required: false
+  private _percentage?: number; 
+  public get percentage() {
+    return this.getNumberAttribute('percentage');
+  }
+  public set percentage(value: number) {
+    this._percentage = value;
+  }
+  public resetPercentage() {
+    this._percentage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get percentageInput() {
+    return this._percentage;
+  }
+
+  // traffic_class - computed: false, optional: true, required: false
+  private _trafficClass?: string; 
+  public get trafficClass() {
+    return this.getStringAttribute('traffic_class');
+  }
+  public set trafficClass(value: string) {
+    this._trafficClass = value;
+  }
+  public resetTrafficClass() {
+    this._trafficClass = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get trafficClassInput() {
+    return this._trafficClass;
+  }
+}
+
+export class GoogleComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference {
+    return new GoogleComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy {
+  /**
+  * bandwidth_percentage block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#bandwidth_percentage GoogleComputeInterconnect#bandwidth_percentage}
+  */
+  readonly bandwidthPercentage?: GoogleComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage[] | cdktf.IResolvable;
+}
+
+export function googleComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyToTerraform(struct?: GoogleComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference | GoogleComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    bandwidth_percentage: cdktf.listMapper(googleComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageToTerraform, true)(struct!.bandwidthPercentage),
+  }
+}
+
+
+export function googleComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyToHclTerraform(struct?: GoogleComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference | GoogleComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bandwidth_percentage: {
+      value: cdktf.listMapperHcl(googleComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageToHclTerraform, true)(struct!.bandwidthPercentage),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._bandwidthPercentage?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bandwidthPercentage = this._bandwidthPercentage?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._bandwidthPercentage.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._bandwidthPercentage.internalValue = value.bandwidthPercentage;
+    }
+  }
+
+  // bandwidth_percentage - computed: false, optional: true, required: false
+  private _bandwidthPercentage = new GoogleComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList(this, "bandwidth_percentage", false);
+  public get bandwidthPercentage() {
+    return this._bandwidthPercentage;
+  }
+  public putBandwidthPercentage(value: GoogleComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage[] | cdktf.IResolvable) {
+    this._bandwidthPercentage.internalValue = value;
+  }
+  public resetBandwidthPercentage() {
+    this._bandwidthPercentage.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bandwidthPercentageInput() {
+    return this._bandwidthPercentage.internalValue;
+  }
+}
+export interface GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage {
+  /**
+  * Bandwidth percentage for a specific traffic class.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#percentage GoogleComputeInterconnect#percentage}
+  */
+  readonly percentage?: number;
+  /**
+  * Enum representing the various traffic classes offered by AAI. Default value: "TC_UNSPECIFIED" Possible values: ["TC_UNSPECIFIED", "TC1", "TC2", "TC3", "TC4", "TC5", "TC6"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#traffic_class GoogleComputeInterconnect#traffic_class}
+  */
+  readonly trafficClass?: string;
+}
+
+export function googleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageToTerraform(struct?: GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    percentage: cdktf.numberToTerraform(struct!.percentage),
+    traffic_class: cdktf.stringToTerraform(struct!.trafficClass),
+  }
+}
+
+
+export function googleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageToHclTerraform(struct?: GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    percentage: {
+      value: cdktf.numberToHclTerraform(struct!.percentage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    traffic_class: {
+      value: cdktf.stringToHclTerraform(struct!.trafficClass),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._percentage !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.percentage = this._percentage;
+    }
+    if (this._trafficClass !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.trafficClass = this._trafficClass;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._percentage = undefined;
+      this._trafficClass = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._percentage = value.percentage;
+      this._trafficClass = value.trafficClass;
+    }
+  }
+
+  // percentage - computed: false, optional: true, required: false
+  private _percentage?: number; 
+  public get percentage() {
+    return this.getNumberAttribute('percentage');
+  }
+  public set percentage(value: number) {
+    this._percentage = value;
+  }
+  public resetPercentage() {
+    this._percentage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get percentageInput() {
+    return this._percentage;
+  }
+
+  // traffic_class - computed: false, optional: true, required: false
+  private _trafficClass?: string; 
+  public get trafficClass() {
+    return this.getStringAttribute('traffic_class');
+  }
+  public set trafficClass(value: string) {
+    this._trafficClass = value;
+  }
+  public resetTrafficClass() {
+    this._trafficClass = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get trafficClassInput() {
+    return this._trafficClass;
+  }
+}
+
+export class GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference {
+    return new GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy {
+}
+
+export function googleComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyToTerraform(struct?: GoogleComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference | GoogleComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function googleComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyToHclTerraform(struct?: GoogleComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference | GoogleComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class GoogleComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+}
+export interface GoogleComputeInterconnectApplicationAwareInterconnect {
+  /**
+  * A description for the AAI profile on this interconnect.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#profile_description GoogleComputeInterconnect#profile_description}
+  */
+  readonly profileDescription?: string;
+  /**
+  * bandwidth_percentage_policy block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#bandwidth_percentage_policy GoogleComputeInterconnect#bandwidth_percentage_policy}
+  */
+  readonly bandwidthPercentagePolicy?: GoogleComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy;
+  /**
+  * shape_average_percentage block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#shape_average_percentage GoogleComputeInterconnect#shape_average_percentage}
+  */
+  readonly shapeAveragePercentage?: GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage[] | cdktf.IResolvable;
+  /**
+  * strict_priority_policy block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#strict_priority_policy GoogleComputeInterconnect#strict_priority_policy}
+  */
+  readonly strictPriorityPolicy?: GoogleComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy;
+}
+
+export function googleComputeInterconnectApplicationAwareInterconnectToTerraform(struct?: GoogleComputeInterconnectApplicationAwareInterconnectOutputReference | GoogleComputeInterconnectApplicationAwareInterconnect): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    profile_description: cdktf.stringToTerraform(struct!.profileDescription),
+    bandwidth_percentage_policy: googleComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyToTerraform(struct!.bandwidthPercentagePolicy),
+    shape_average_percentage: cdktf.listMapper(googleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageToTerraform, true)(struct!.shapeAveragePercentage),
+    strict_priority_policy: googleComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyToTerraform(struct!.strictPriorityPolicy),
+  }
+}
+
+
+export function googleComputeInterconnectApplicationAwareInterconnectToHclTerraform(struct?: GoogleComputeInterconnectApplicationAwareInterconnectOutputReference | GoogleComputeInterconnectApplicationAwareInterconnect): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    profile_description: {
+      value: cdktf.stringToHclTerraform(struct!.profileDescription),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    bandwidth_percentage_policy: {
+      value: googleComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyToHclTerraform(struct!.bandwidthPercentagePolicy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyList",
+    },
+    shape_average_percentage: {
+      value: cdktf.listMapperHcl(googleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageToHclTerraform, true)(struct!.shapeAveragePercentage),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList",
+    },
+    strict_priority_policy: {
+      value: googleComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyToHclTerraform(struct!.strictPriorityPolicy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleComputeInterconnectApplicationAwareInterconnectOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleComputeInterconnectApplicationAwareInterconnect | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._profileDescription !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.profileDescription = this._profileDescription;
+    }
+    if (this._bandwidthPercentagePolicy?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bandwidthPercentagePolicy = this._bandwidthPercentagePolicy?.internalValue;
+    }
+    if (this._shapeAveragePercentage?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.shapeAveragePercentage = this._shapeAveragePercentage?.internalValue;
+    }
+    if (this._strictPriorityPolicy?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.strictPriorityPolicy = this._strictPriorityPolicy?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeInterconnectApplicationAwareInterconnect | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._profileDescription = undefined;
+      this._bandwidthPercentagePolicy.internalValue = undefined;
+      this._shapeAveragePercentage.internalValue = undefined;
+      this._strictPriorityPolicy.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._profileDescription = value.profileDescription;
+      this._bandwidthPercentagePolicy.internalValue = value.bandwidthPercentagePolicy;
+      this._shapeAveragePercentage.internalValue = value.shapeAveragePercentage;
+      this._strictPriorityPolicy.internalValue = value.strictPriorityPolicy;
+    }
+  }
+
+  // profile_description - computed: false, optional: true, required: false
+  private _profileDescription?: string; 
+  public get profileDescription() {
+    return this.getStringAttribute('profile_description');
+  }
+  public set profileDescription(value: string) {
+    this._profileDescription = value;
+  }
+  public resetProfileDescription() {
+    this._profileDescription = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get profileDescriptionInput() {
+    return this._profileDescription;
+  }
+
+  // bandwidth_percentage_policy - computed: false, optional: true, required: false
+  private _bandwidthPercentagePolicy = new GoogleComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference(this, "bandwidth_percentage_policy");
+  public get bandwidthPercentagePolicy() {
+    return this._bandwidthPercentagePolicy;
+  }
+  public putBandwidthPercentagePolicy(value: GoogleComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy) {
+    this._bandwidthPercentagePolicy.internalValue = value;
+  }
+  public resetBandwidthPercentagePolicy() {
+    this._bandwidthPercentagePolicy.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bandwidthPercentagePolicyInput() {
+    return this._bandwidthPercentagePolicy.internalValue;
+  }
+
+  // shape_average_percentage - computed: false, optional: true, required: false
+  private _shapeAveragePercentage = new GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList(this, "shape_average_percentage", false);
+  public get shapeAveragePercentage() {
+    return this._shapeAveragePercentage;
+  }
+  public putShapeAveragePercentage(value: GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage[] | cdktf.IResolvable) {
+    this._shapeAveragePercentage.internalValue = value;
+  }
+  public resetShapeAveragePercentage() {
+    this._shapeAveragePercentage.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get shapeAveragePercentageInput() {
+    return this._shapeAveragePercentage.internalValue;
+  }
+
+  // strict_priority_policy - computed: false, optional: true, required: false
+  private _strictPriorityPolicy = new GoogleComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference(this, "strict_priority_policy");
+  public get strictPriorityPolicy() {
+    return this._strictPriorityPolicy;
+  }
+  public putStrictPriorityPolicy(value: GoogleComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy) {
+    this._strictPriorityPolicy.internalValue = value;
+  }
+  public resetStrictPriorityPolicy() {
+    this._strictPriorityPolicy.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get strictPriorityPolicyInput() {
+    return this._strictPriorityPolicy.internalValue;
+  }
+}
 export interface GoogleComputeInterconnectMacsecPreSharedKeys {
   /**
   * If set to true, the Interconnect connection is configured with a should-secure
@@ -348,7 +992,7 @@ export interface GoogleComputeInterconnectMacsecPreSharedKeys {
   * connection is configured with a must-secure security policy that drops all traffic
   * if the MKA session cannot be established with your router.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_interconnect#fail_open GoogleComputeInterconnect#fail_open}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#fail_open GoogleComputeInterconnect#fail_open}
   */
   readonly failOpen?: boolean | cdktf.IResolvable;
   /**
@@ -358,7 +1002,7 @@ export interface GoogleComputeInterconnectMacsecPreSharedKeys {
   *  must be a lowercase letter, and all following characters must be a dash, lowercase
   *  letter, or digit, except the last character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_interconnect#name GoogleComputeInterconnect#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#name GoogleComputeInterconnect#name}
   */
   readonly name: string;
   /**
@@ -368,7 +1012,7 @@ export interface GoogleComputeInterconnectMacsecPreSharedKeys {
   * be in increasing order. The start times of two consecutive keys must be at least 6
   * hours apart.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_interconnect#start_time GoogleComputeInterconnect#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#start_time GoogleComputeInterconnect#start_time}
   */
   readonly startTime?: string;
 }
@@ -545,13 +1189,13 @@ export interface GoogleComputeInterconnectMacsec {
   * connection is configured with a must-secure security policy that drops all traffic
   * if the MKA session cannot be established with your router.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_interconnect#fail_open GoogleComputeInterconnect#fail_open}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#fail_open GoogleComputeInterconnect#fail_open}
   */
   readonly failOpen?: boolean | cdktf.IResolvable;
   /**
   * pre_shared_keys block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_interconnect#pre_shared_keys GoogleComputeInterconnect#pre_shared_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#pre_shared_keys GoogleComputeInterconnect#pre_shared_keys}
   */
   readonly preSharedKeys: GoogleComputeInterconnectMacsecPreSharedKeys[] | cdktf.IResolvable;
 }
@@ -661,15 +1305,15 @@ export class GoogleComputeInterconnectMacsecOutputReference extends cdktf.Comple
 }
 export interface GoogleComputeInterconnectTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_interconnect#create GoogleComputeInterconnect#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#create GoogleComputeInterconnect#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_interconnect#delete GoogleComputeInterconnect#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#delete GoogleComputeInterconnect#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_interconnect#update GoogleComputeInterconnect#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#update GoogleComputeInterconnect#update}
   */
   readonly update?: string;
 }
@@ -821,7 +1465,7 @@ export class GoogleComputeInterconnectTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_interconnect google_compute_interconnect}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect google_compute_interconnect}
 */
 export class GoogleComputeInterconnect extends cdktf.TerraformResource {
 
@@ -837,7 +1481,7 @@ export class GoogleComputeInterconnect extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleComputeInterconnect resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleComputeInterconnect to import
-  * @param importFromId The id of the existing GoogleComputeInterconnect that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_interconnect#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleComputeInterconnect that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleComputeInterconnect to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -849,7 +1493,7 @@ export class GoogleComputeInterconnect extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_interconnect google_compute_interconnect} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_interconnect google_compute_interconnect} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -860,7 +1504,7 @@ export class GoogleComputeInterconnect extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_interconnect',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.43.0',
+        providerVersion: '6.44.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -871,6 +1515,7 @@ export class GoogleComputeInterconnect extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._aaiEnabled = config.aaiEnabled;
     this._adminEnabled = config.adminEnabled;
     this._customerName = config.customerName;
     this._description = config.description;
@@ -886,6 +1531,7 @@ export class GoogleComputeInterconnect extends cdktf.TerraformResource {
     this._remoteLocation = config.remoteLocation;
     this._requestedFeatures = config.requestedFeatures;
     this._requestedLinkCount = config.requestedLinkCount;
+    this._applicationAwareInterconnect.internalValue = config.applicationAwareInterconnect;
     this._macsec.internalValue = config.macsec;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -893,6 +1539,22 @@ export class GoogleComputeInterconnect extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // aai_enabled - computed: false, optional: true, required: false
+  private _aaiEnabled?: boolean | cdktf.IResolvable; 
+  public get aaiEnabled() {
+    return this.getBooleanAttribute('aai_enabled');
+  }
+  public set aaiEnabled(value: boolean | cdktf.IResolvable) {
+    this._aaiEnabled = value;
+  }
+  public resetAaiEnabled() {
+    this._aaiEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get aaiEnabledInput() {
+    return this._aaiEnabled;
+  }
 
   // admin_enabled - computed: false, optional: true, required: false
   private _adminEnabled?: boolean | cdktf.IResolvable; 
@@ -1208,6 +1870,22 @@ export class GoogleComputeInterconnect extends cdktf.TerraformResource {
     return this.getListAttribute('wire_groups');
   }
 
+  // application_aware_interconnect - computed: false, optional: true, required: false
+  private _applicationAwareInterconnect = new GoogleComputeInterconnectApplicationAwareInterconnectOutputReference(this, "application_aware_interconnect");
+  public get applicationAwareInterconnect() {
+    return this._applicationAwareInterconnect;
+  }
+  public putApplicationAwareInterconnect(value: GoogleComputeInterconnectApplicationAwareInterconnect) {
+    this._applicationAwareInterconnect.internalValue = value;
+  }
+  public resetApplicationAwareInterconnect() {
+    this._applicationAwareInterconnect.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get applicationAwareInterconnectInput() {
+    return this._applicationAwareInterconnect.internalValue;
+  }
+
   // macsec - computed: false, optional: true, required: false
   private _macsec = new GoogleComputeInterconnectMacsecOutputReference(this, "macsec");
   public get macsec() {
@@ -1246,6 +1924,7 @@ export class GoogleComputeInterconnect extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      aai_enabled: cdktf.booleanToTerraform(this._aaiEnabled),
       admin_enabled: cdktf.booleanToTerraform(this._adminEnabled),
       customer_name: cdktf.stringToTerraform(this._customerName),
       description: cdktf.stringToTerraform(this._description),
@@ -1261,6 +1940,7 @@ export class GoogleComputeInterconnect extends cdktf.TerraformResource {
       remote_location: cdktf.stringToTerraform(this._remoteLocation),
       requested_features: cdktf.listMapper(cdktf.stringToTerraform, false)(this._requestedFeatures),
       requested_link_count: cdktf.numberToTerraform(this._requestedLinkCount),
+      application_aware_interconnect: googleComputeInterconnectApplicationAwareInterconnectToTerraform(this._applicationAwareInterconnect.internalValue),
       macsec: googleComputeInterconnectMacsecToTerraform(this._macsec.internalValue),
       timeouts: googleComputeInterconnectTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1268,6 +1948,12 @@ export class GoogleComputeInterconnect extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      aai_enabled: {
+        value: cdktf.booleanToHclTerraform(this._aaiEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       admin_enabled: {
         value: cdktf.booleanToHclTerraform(this._adminEnabled),
         isBlock: false,
@@ -1357,6 +2043,12 @@ export class GoogleComputeInterconnect extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "number",
+      },
+      application_aware_interconnect: {
+        value: googleComputeInterconnectApplicationAwareInterconnectToHclTerraform(this._applicationAwareInterconnect.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleComputeInterconnectApplicationAwareInterconnectList",
       },
       macsec: {
         value: googleComputeInterconnectMacsecToHclTerraform(this._macsec.internalValue),
