@@ -4,7 +4,7 @@
 
 ### GoogleApigeeInstance <a name="GoogleApigeeInstance" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_instance google_apigee_instance}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance google_apigee_instance}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.Initializer"></a>
 
@@ -24,6 +24,7 @@ googleApigeeInstance.GoogleApigeeInstance(
   location: str,
   name: str,
   org_id: str,
+  access_logging_config: GoogleApigeeInstanceAccessLoggingConfig = None,
   consumer_accept_list: typing.List[str] = None,
   description: str = None,
   disk_encryption_key_name: str = None,
@@ -49,11 +50,12 @@ googleApigeeInstance.GoogleApigeeInstance(
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.Initializer.parameter.location">location</a></code> | <code>str</code> | Required. Compute Engine location where the instance resides. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.Initializer.parameter.name">name</a></code> | <code>str</code> | Resource ID of the instance. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.Initializer.parameter.orgId">org_id</a></code> | <code>str</code> | The Apigee Organization associated with the Apigee instance, in the format 'organizations/{{org_name}}'. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.Initializer.parameter.accessLoggingConfig">access_logging_config</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfig">GoogleApigeeInstanceAccessLoggingConfig</a></code> | access_logging_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.Initializer.parameter.consumerAcceptList">consumer_accept_list</a></code> | <code>typing.List[str]</code> | Optional. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.Initializer.parameter.description">description</a></code> | <code>str</code> | Description of the instance. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.Initializer.parameter.diskEncryptionKeyName">disk_encryption_key_name</a></code> | <code>str</code> | Customer Managed Encryption Key (CMEK) used for disk and volume encryption. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Display name of the instance. |
-| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_instance#id GoogleApigeeInstance#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#id GoogleApigeeInstance#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.Initializer.parameter.ipRange">ip_range</a></code> | <code>str</code> | IP range represents the customer-provided CIDR block of length 22 that will be used for the Apigee instance creation. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.Initializer.parameter.peeringCidrRange">peering_cidr_range</a></code> | <code>str</code> | The size of the CIDR block range that will be reserved by the instance. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceTimeouts">GoogleApigeeInstanceTimeouts</a></code> | timeouts block. |
@@ -126,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 Required. Compute Engine location where the instance resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_instance#location GoogleApigeeInstance#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#location GoogleApigeeInstance#location}
 
 ---
 
@@ -136,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Resource ID of the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_instance#name GoogleApigeeInstance#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#name GoogleApigeeInstance#name}
 
 ---
 
@@ -146,7 +148,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Apigee Organization associated with the Apigee instance, in the format 'organizations/{{org_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_instance#org_id GoogleApigeeInstance#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#org_id GoogleApigeeInstance#org_id}
+
+---
+
+##### `access_logging_config`<sup>Optional</sup> <a name="access_logging_config" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.Initializer.parameter.accessLoggingConfig"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfig">GoogleApigeeInstanceAccessLoggingConfig</a>
+
+access_logging_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#access_logging_config GoogleApigeeInstance#access_logging_config}
 
 ---
 
@@ -161,7 +173,7 @@ side that can privately connect to the service attachment. It is an optional fie
 which the customers can provide during the instance creation. By default, the customer
 project associated with the Apigee organization will be included to the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_instance#consumer_accept_list GoogleApigeeInstance#consumer_accept_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#consumer_accept_list GoogleApigeeInstance#consumer_accept_list}
 
 ---
 
@@ -171,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Description of the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_instance#description GoogleApigeeInstance#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#description GoogleApigeeInstance#description}
 
 ---
 
@@ -184,7 +196,7 @@ Customer Managed Encryption Key (CMEK) used for disk and volume encryption.
 Required for Apigee paid subscriptions only.
 Use the following format: 'projects/([^/]+)/locations/([^/]+)/keyRings/([^/]+)/cryptoKeys/([^/]+)'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_instance#disk_encryption_key_name GoogleApigeeInstance#disk_encryption_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#disk_encryption_key_name GoogleApigeeInstance#disk_encryption_key_name}
 
 ---
 
@@ -194,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Display name of the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_instance#display_name GoogleApigeeInstance#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#display_name GoogleApigeeInstance#display_name}
 
 ---
 
@@ -202,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_instance#id GoogleApigeeInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#id GoogleApigeeInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -222,7 +234,7 @@ available /22 CIDR block from Service Networking. The customer should use this C
 for configuring their firewall needs to allow traffic from Apigee.
 Input format: "a.b.c.d/22"
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_instance#ip_range GoogleApigeeInstance#ip_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#ip_range GoogleApigeeInstance#ip_range}
 
 ---
 
@@ -235,7 +247,7 @@ The size of the CIDR block range that will be reserved by the instance.
 For valid values,
 see [CidrRange](https://cloud.google.com/apigee/docs/reference/apis/apigee/rest/v1/organizations.instances#CidrRange) on the documentation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_instance#peering_cidr_range GoogleApigeeInstance#peering_cidr_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#peering_cidr_range GoogleApigeeInstance#peering_cidr_range}
 
 ---
 
@@ -245,7 +257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_instance#timeouts GoogleApigeeInstance#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#timeouts GoogleApigeeInstance#timeouts}
 
 ---
 
@@ -276,7 +288,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.putAccessLoggingConfig">put_access_logging_config</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.resetAccessLoggingConfig">reset_access_logging_config</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.resetConsumerAcceptList">reset_consumer_accept_list</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.resetDiskEncryptionKeyName">reset_disk_encryption_key_name</a></code> | *No description.* |
@@ -613,6 +627,39 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `put_access_logging_config` <a name="put_access_logging_config" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.putAccessLoggingConfig"></a>
+
+```python
+def put_access_logging_config(
+  enabled: typing.Union[bool, IResolvable],
+  filter: str = None
+) -> None
+```
+
+###### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.putAccessLoggingConfig.parameter.enabled"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Boolean flag that specifies whether the customer access log feature is enabled.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#enabled GoogleApigeeInstance#enabled}
+
+---
+
+###### `filter`<sup>Optional</sup> <a name="filter" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.putAccessLoggingConfig.parameter.filter"></a>
+
+- *Type:* str
+
+Ship the access log entries that match the statusCode defined in the filter.
+
+The statusCode is the only expected/supported filter field. (Ex: statusCode)
+The filter will parse it to the Common Expression Language semantics for expression
+evaluation to build the filter condition. (Ex: "filter": statusCode >= 200 && statusCode < 300 )
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#filter GoogleApigeeInstance#filter}
+
+---
+
 ##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.putTimeouts"></a>
 
 ```python
@@ -627,7 +674,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_instance#create GoogleApigeeInstance#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#create GoogleApigeeInstance#create}.
 
 ---
 
@@ -635,7 +682,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_instance#delete GoogleApigeeInstance#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#delete GoogleApigeeInstance#delete}.
 
 ---
 
@@ -643,9 +690,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_instance#update GoogleApigeeInstance#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#update GoogleApigeeInstance#update}.
 
 ---
+
+##### `reset_access_logging_config` <a name="reset_access_logging_config" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.resetAccessLoggingConfig"></a>
+
+```python
+def reset_access_logging_config() -> None
+```
 
 ##### `reset_consumer_accept_list` <a name="reset_consumer_accept_list" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.resetConsumerAcceptList"></a>
 
@@ -809,7 +862,7 @@ The construct id used in the generated config for the GoogleApigeeInstance to im
 
 The id of the existing GoogleApigeeInstance that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_instance#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -839,10 +892,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.property.accessLoggingConfig">access_logging_config</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference">GoogleApigeeInstanceAccessLoggingConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.property.host">host</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.property.port">port</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.property.serviceAttachment">service_attachment</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceTimeoutsOutputReference">GoogleApigeeInstanceTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.property.accessLoggingConfigInput">access_logging_config_input</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfig">GoogleApigeeInstanceAccessLoggingConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.property.consumerAcceptListInput">consumer_accept_list_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.property.diskEncryptionKeyNameInput">disk_encryption_key_name_input</a></code> | <code>str</code> | *No description.* |
@@ -1009,6 +1064,16 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
+##### `access_logging_config`<sup>Required</sup> <a name="access_logging_config" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.property.accessLoggingConfig"></a>
+
+```python
+access_logging_config: GoogleApigeeInstanceAccessLoggingConfigOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference">GoogleApigeeInstanceAccessLoggingConfigOutputReference</a>
+
+---
+
 ##### `host`<sup>Required</sup> <a name="host" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.property.host"></a>
 
 ```python
@@ -1046,6 +1111,16 @@ timeouts: GoogleApigeeInstanceTimeoutsOutputReference
 ```
 
 - *Type:* <a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceTimeoutsOutputReference">GoogleApigeeInstanceTimeoutsOutputReference</a>
+
+---
+
+##### `access_logging_config_input`<sup>Optional</sup> <a name="access_logging_config_input" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.property.accessLoggingConfigInput"></a>
+
+```python
+access_logging_config_input: GoogleApigeeInstanceAccessLoggingConfig
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfig">GoogleApigeeInstanceAccessLoggingConfig</a>
 
 ---
 
@@ -1279,6 +1354,60 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
+### GoogleApigeeInstanceAccessLoggingConfig <a name="GoogleApigeeInstanceAccessLoggingConfig" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfig.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_google_beta import google_apigee_instance
+
+googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfig(
+  enabled: typing.Union[bool, IResolvable],
+  filter: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfig.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean flag that specifies whether the customer access log feature is enabled. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfig.property.filter">filter</a></code> | <code>str</code> | Ship the access log entries that match the statusCode defined in the filter. |
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfig.property.enabled"></a>
+
+```python
+enabled: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Boolean flag that specifies whether the customer access log feature is enabled.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#enabled GoogleApigeeInstance#enabled}
+
+---
+
+##### `filter`<sup>Optional</sup> <a name="filter" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfig.property.filter"></a>
+
+```python
+filter: str
+```
+
+- *Type:* str
+
+Ship the access log entries that match the statusCode defined in the filter.
+
+The statusCode is the only expected/supported filter field. (Ex: statusCode)
+The filter will parse it to the Common Expression Language semantics for expression
+evaluation to build the filter condition. (Ex: "filter": statusCode >= 200 && statusCode < 300 )
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#filter GoogleApigeeInstance#filter}
+
+---
+
 ### GoogleApigeeInstanceConfig <a name="GoogleApigeeInstanceConfig" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceConfig"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceConfig.Initializer"></a>
@@ -1297,6 +1426,7 @@ googleApigeeInstance.GoogleApigeeInstanceConfig(
   location: str,
   name: str,
   org_id: str,
+  access_logging_config: GoogleApigeeInstanceAccessLoggingConfig = None,
   consumer_accept_list: typing.List[str] = None,
   description: str = None,
   disk_encryption_key_name: str = None,
@@ -1322,11 +1452,12 @@ googleApigeeInstance.GoogleApigeeInstanceConfig(
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceConfig.property.location">location</a></code> | <code>str</code> | Required. Compute Engine location where the instance resides. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceConfig.property.name">name</a></code> | <code>str</code> | Resource ID of the instance. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceConfig.property.orgId">org_id</a></code> | <code>str</code> | The Apigee Organization associated with the Apigee instance, in the format 'organizations/{{org_name}}'. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceConfig.property.accessLoggingConfig">access_logging_config</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfig">GoogleApigeeInstanceAccessLoggingConfig</a></code> | access_logging_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceConfig.property.consumerAcceptList">consumer_accept_list</a></code> | <code>typing.List[str]</code> | Optional. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceConfig.property.description">description</a></code> | <code>str</code> | Description of the instance. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceConfig.property.diskEncryptionKeyName">disk_encryption_key_name</a></code> | <code>str</code> | Customer Managed Encryption Key (CMEK) used for disk and volume encryption. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceConfig.property.displayName">display_name</a></code> | <code>str</code> | Display name of the instance. |
-| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_instance#id GoogleApigeeInstance#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#id GoogleApigeeInstance#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceConfig.property.ipRange">ip_range</a></code> | <code>str</code> | IP range represents the customer-provided CIDR block of length 22 that will be used for the Apigee instance creation. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceConfig.property.peeringCidrRange">peering_cidr_range</a></code> | <code>str</code> | The size of the CIDR block range that will be reserved by the instance. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceTimeouts">GoogleApigeeInstanceTimeouts</a></code> | timeouts block. |
@@ -1413,7 +1544,7 @@ location: str
 
 Required. Compute Engine location where the instance resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_instance#location GoogleApigeeInstance#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#location GoogleApigeeInstance#location}
 
 ---
 
@@ -1427,7 +1558,7 @@ name: str
 
 Resource ID of the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_instance#name GoogleApigeeInstance#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#name GoogleApigeeInstance#name}
 
 ---
 
@@ -1441,7 +1572,21 @@ org_id: str
 
 The Apigee Organization associated with the Apigee instance, in the format 'organizations/{{org_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_instance#org_id GoogleApigeeInstance#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#org_id GoogleApigeeInstance#org_id}
+
+---
+
+##### `access_logging_config`<sup>Optional</sup> <a name="access_logging_config" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceConfig.property.accessLoggingConfig"></a>
+
+```python
+access_logging_config: GoogleApigeeInstanceAccessLoggingConfig
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfig">GoogleApigeeInstanceAccessLoggingConfig</a>
+
+access_logging_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#access_logging_config GoogleApigeeInstance#access_logging_config}
 
 ---
 
@@ -1460,7 +1605,7 @@ side that can privately connect to the service attachment. It is an optional fie
 which the customers can provide during the instance creation. By default, the customer
 project associated with the Apigee organization will be included to the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_instance#consumer_accept_list GoogleApigeeInstance#consumer_accept_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#consumer_accept_list GoogleApigeeInstance#consumer_accept_list}
 
 ---
 
@@ -1474,7 +1619,7 @@ description: str
 
 Description of the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_instance#description GoogleApigeeInstance#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#description GoogleApigeeInstance#description}
 
 ---
 
@@ -1491,7 +1636,7 @@ Customer Managed Encryption Key (CMEK) used for disk and volume encryption.
 Required for Apigee paid subscriptions only.
 Use the following format: 'projects/([^/]+)/locations/([^/]+)/keyRings/([^/]+)/cryptoKeys/([^/]+)'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_instance#disk_encryption_key_name GoogleApigeeInstance#disk_encryption_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#disk_encryption_key_name GoogleApigeeInstance#disk_encryption_key_name}
 
 ---
 
@@ -1505,7 +1650,7 @@ display_name: str
 
 Display name of the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_instance#display_name GoogleApigeeInstance#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#display_name GoogleApigeeInstance#display_name}
 
 ---
 
@@ -1517,7 +1662,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_instance#id GoogleApigeeInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#id GoogleApigeeInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1541,7 +1686,7 @@ available /22 CIDR block from Service Networking. The customer should use this C
 for configuring their firewall needs to allow traffic from Apigee.
 Input format: "a.b.c.d/22"
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_instance#ip_range GoogleApigeeInstance#ip_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#ip_range GoogleApigeeInstance#ip_range}
 
 ---
 
@@ -1558,7 +1703,7 @@ The size of the CIDR block range that will be reserved by the instance.
 For valid values,
 see [CidrRange](https://cloud.google.com/apigee/docs/reference/apis/apigee/rest/v1/organizations.instances#CidrRange) on the documentation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_instance#peering_cidr_range GoogleApigeeInstance#peering_cidr_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#peering_cidr_range GoogleApigeeInstance#peering_cidr_range}
 
 ---
 
@@ -1572,7 +1717,7 @@ timeouts: GoogleApigeeInstanceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_instance#timeouts GoogleApigeeInstance#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#timeouts GoogleApigeeInstance#timeouts}
 
 ---
 
@@ -1594,9 +1739,9 @@ googleApigeeInstance.GoogleApigeeInstanceTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_instance#create GoogleApigeeInstance#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_instance#delete GoogleApigeeInstance#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_instance#update GoogleApigeeInstance#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#create GoogleApigeeInstance#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#delete GoogleApigeeInstance#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#update GoogleApigeeInstance#update}. |
 
 ---
 
@@ -1608,7 +1753,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_instance#create GoogleApigeeInstance#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#create GoogleApigeeInstance#create}.
 
 ---
 
@@ -1620,7 +1765,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_instance#delete GoogleApigeeInstance#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#delete GoogleApigeeInstance#delete}.
 
 ---
 
@@ -1632,11 +1777,336 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_instance#update GoogleApigeeInstance#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apigee_instance#update GoogleApigeeInstance#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### GoogleApigeeInstanceAccessLoggingConfigOutputReference <a name="GoogleApigeeInstanceAccessLoggingConfigOutputReference" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_google_beta import google_apigee_instance
+
+googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.resetFilter">reset_filter</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_filter` <a name="reset_filter" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.resetFilter"></a>
+
+```python
+def reset_filter() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.property.enabledInput">enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.property.filterInput">filter_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.property.filter">filter</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfig">GoogleApigeeInstanceAccessLoggingConfig</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.property.enabledInput"></a>
+
+```python
+enabled_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `filter_input`<sup>Optional</sup> <a name="filter_input" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.property.filterInput"></a>
+
+```python
+filter_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.property.enabled"></a>
+
+```python
+enabled: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `filter`<sup>Required</sup> <a name="filter" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.property.filter"></a>
+
+```python
+filter: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfigOutputReference.property.internalValue"></a>
+
+```python
+internal_value: GoogleApigeeInstanceAccessLoggingConfig
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceAccessLoggingConfig">GoogleApigeeInstanceAccessLoggingConfig</a>
+
+---
+
 
 ### GoogleApigeeInstanceTimeoutsOutputReference <a name="GoogleApigeeInstanceTimeoutsOutputReference" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceTimeoutsOutputReference"></a>
 
