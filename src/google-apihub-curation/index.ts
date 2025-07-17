@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apihub_curation
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apihub_curation
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -24,23 +24,23 @@ export interface GoogleApihubCurationConfig extends cdktf.TerraformMetaArguments
   * This value should be 4-500 characters, and valid characters
   * are /a-z[0-9]-_/.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apihub_curation#curation_id GoogleApihubCuration#curation_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apihub_curation#curation_id GoogleApihubCuration#curation_id}
   */
   readonly curationId: string;
   /**
   * The description of the curation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apihub_curation#description GoogleApihubCuration#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apihub_curation#description GoogleApihubCuration#description}
   */
   readonly description?: string;
   /**
   * The display name of the curation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apihub_curation#display_name GoogleApihubCuration#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apihub_curation#display_name GoogleApihubCuration#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apihub_curation#id GoogleApihubCuration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apihub_curation#id GoogleApihubCuration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -49,23 +49,23 @@ export interface GoogleApihubCurationConfig extends cdktf.TerraformMetaArguments
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apihub_curation#location GoogleApihubCuration#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apihub_curation#location GoogleApihubCuration#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apihub_curation#project GoogleApihubCuration#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apihub_curation#project GoogleApihubCuration#project}
   */
   readonly project?: string;
   /**
   * endpoint block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apihub_curation#endpoint GoogleApihubCuration#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apihub_curation#endpoint GoogleApihubCuration#endpoint}
   */
   readonly endpoint: GoogleApihubCurationEndpoint;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apihub_curation#timeouts GoogleApihubCuration#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apihub_curation#timeouts GoogleApihubCuration#timeouts}
   */
   readonly timeouts?: GoogleApihubCurationTimeouts;
 }
@@ -153,7 +153,7 @@ export interface GoogleApihubCurationEndpointApplicationIntegrationEndpointDetai
   /**
   * The API trigger ID of the Application Integration workflow.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apihub_curation#trigger_id GoogleApihubCuration#trigger_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apihub_curation#trigger_id GoogleApihubCuration#trigger_id}
   */
   readonly triggerId: string;
   /**
@@ -164,7 +164,7 @@ export interface GoogleApihubCurationEndpointApplicationIntegrationEndpointDetai
   * or
   * 'https://{location}-integrations.googleapis.com/v1/{name=projects/* /locations/* /integrations/*}:execute'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apihub_curation#uri GoogleApihubCuration#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apihub_curation#uri GoogleApihubCuration#uri}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -275,7 +275,7 @@ export interface GoogleApihubCurationEndpoint {
   /**
   * application_integration_endpoint_details block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apihub_curation#application_integration_endpoint_details GoogleApihubCuration#application_integration_endpoint_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apihub_curation#application_integration_endpoint_details GoogleApihubCuration#application_integration_endpoint_details}
   */
   readonly applicationIntegrationEndpointDetails: GoogleApihubCurationEndpointApplicationIntegrationEndpointDetails;
 }
@@ -356,15 +356,15 @@ export class GoogleApihubCurationEndpointOutputReference extends cdktf.ComplexOb
 }
 export interface GoogleApihubCurationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apihub_curation#create GoogleApihubCuration#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apihub_curation#create GoogleApihubCuration#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apihub_curation#delete GoogleApihubCuration#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apihub_curation#delete GoogleApihubCuration#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apihub_curation#update GoogleApihubCuration#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apihub_curation#update GoogleApihubCuration#update}
   */
   readonly update?: string;
 }
@@ -516,7 +516,7 @@ export class GoogleApihubCurationTimeoutsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apihub_curation google_apihub_curation}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apihub_curation google_apihub_curation}
 */
 export class GoogleApihubCuration extends cdktf.TerraformResource {
 
@@ -532,7 +532,7 @@ export class GoogleApihubCuration extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleApihubCuration resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleApihubCuration to import
-  * @param importFromId The id of the existing GoogleApihubCuration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apihub_curation#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleApihubCuration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apihub_curation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleApihubCuration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -544,7 +544,7 @@ export class GoogleApihubCuration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apihub_curation google_apihub_curation} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_apihub_curation google_apihub_curation} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -555,7 +555,7 @@ export class GoogleApihubCuration extends cdktf.TerraformResource {
       terraformResourceType: 'google_apihub_curation',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.43.0',
+        providerVersion: '6.44.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

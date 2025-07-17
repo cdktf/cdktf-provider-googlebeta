@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_secure_source_manager_repository
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_secure_source_manager_repository
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface GoogleSecureSourceManagerRepositoryConfig extends cdktf.Terrafo
   /**
   * Description of the repository, which cannot exceed 500 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_secure_source_manager_repository#description GoogleSecureSourceManagerRepository#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_secure_source_manager_repository#description GoogleSecureSourceManagerRepository#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_secure_source_manager_repository#id GoogleSecureSourceManagerRepository#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_secure_source_manager_repository#id GoogleSecureSourceManagerRepository#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,35 +28,35 @@ export interface GoogleSecureSourceManagerRepositoryConfig extends cdktf.Terrafo
   /**
   * The name of the instance in which the repository is hosted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_secure_source_manager_repository#instance GoogleSecureSourceManagerRepository#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_secure_source_manager_repository#instance GoogleSecureSourceManagerRepository#instance}
   */
   readonly instance: string;
   /**
   * The location for the Repository.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_secure_source_manager_repository#location GoogleSecureSourceManagerRepository#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_secure_source_manager_repository#location GoogleSecureSourceManagerRepository#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_secure_source_manager_repository#project GoogleSecureSourceManagerRepository#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_secure_source_manager_repository#project GoogleSecureSourceManagerRepository#project}
   */
   readonly project?: string;
   /**
   * The ID for the Repository.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_secure_source_manager_repository#repository_id GoogleSecureSourceManagerRepository#repository_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_secure_source_manager_repository#repository_id GoogleSecureSourceManagerRepository#repository_id}
   */
   readonly repositoryId: string;
   /**
   * initial_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_secure_source_manager_repository#initial_config GoogleSecureSourceManagerRepository#initial_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_secure_source_manager_repository#initial_config GoogleSecureSourceManagerRepository#initial_config}
   */
   readonly initialConfig?: GoogleSecureSourceManagerRepositoryInitialConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_secure_source_manager_repository#timeouts GoogleSecureSourceManagerRepository#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_secure_source_manager_repository#timeouts GoogleSecureSourceManagerRepository#timeouts}
   */
   readonly timeouts?: GoogleSecureSourceManagerRepositoryTimeouts;
 }
@@ -149,28 +149,28 @@ export interface GoogleSecureSourceManagerRepositoryInitialConfig {
   /**
   * Default branch name of the repository.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_secure_source_manager_repository#default_branch GoogleSecureSourceManagerRepository#default_branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_secure_source_manager_repository#default_branch GoogleSecureSourceManagerRepository#default_branch}
   */
   readonly defaultBranch?: string;
   /**
   * List of gitignore template names user can choose from.
   * Valid values can be viewed at https://cloud.google.com/secure-source-manager/docs/reference/rest/v1/projects.locations.repositories#initialconfig.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_secure_source_manager_repository#gitignores GoogleSecureSourceManagerRepository#gitignores}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_secure_source_manager_repository#gitignores GoogleSecureSourceManagerRepository#gitignores}
   */
   readonly gitignores?: string[];
   /**
   * License template name user can choose from.
   * Valid values can be viewed at https://cloud.google.com/secure-source-manager/docs/reference/rest/v1/projects.locations.repositories#initialconfig.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_secure_source_manager_repository#license GoogleSecureSourceManagerRepository#license}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_secure_source_manager_repository#license GoogleSecureSourceManagerRepository#license}
   */
   readonly license?: string;
   /**
   * README template name.
   * Valid values can be viewed at https://cloud.google.com/secure-source-manager/docs/reference/rest/v1/projects.locations.repositories#initialconfig.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_secure_source_manager_repository#readme GoogleSecureSourceManagerRepository#readme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_secure_source_manager_repository#readme GoogleSecureSourceManagerRepository#readme}
   */
   readonly readme?: string;
 }
@@ -341,13 +341,17 @@ export class GoogleSecureSourceManagerRepositoryInitialConfigOutputReference ext
 }
 export interface GoogleSecureSourceManagerRepositoryTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_secure_source_manager_repository#create GoogleSecureSourceManagerRepository#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_secure_source_manager_repository#create GoogleSecureSourceManagerRepository#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_secure_source_manager_repository#delete GoogleSecureSourceManagerRepository#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_secure_source_manager_repository#delete GoogleSecureSourceManagerRepository#delete}
   */
   readonly delete?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_secure_source_manager_repository#update GoogleSecureSourceManagerRepository#update}
+  */
+  readonly update?: string;
 }
 
 export function googleSecureSourceManagerRepositoryTimeoutsToTerraform(struct?: GoogleSecureSourceManagerRepositoryTimeouts | cdktf.IResolvable): any {
@@ -358,6 +362,7 @@ export function googleSecureSourceManagerRepositoryTimeoutsToTerraform(struct?: 
   return {
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
   }
 }
 
@@ -376,6 +381,12 @@ export function googleSecureSourceManagerRepositoryTimeoutsToHclTerraform(struct
     },
     delete: {
       value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -412,6 +423,10 @@ export class GoogleSecureSourceManagerRepositoryTimeoutsOutputReference extends 
       hasAnyValues = true;
       internalValueResult.delete = this._delete;
     }
+    if (this._update !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -421,6 +436,7 @@ export class GoogleSecureSourceManagerRepositoryTimeoutsOutputReference extends 
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
+      this._update = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -431,6 +447,7 @@ export class GoogleSecureSourceManagerRepositoryTimeoutsOutputReference extends 
       this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
+      this._update = value.update;
     }
   }
 
@@ -465,10 +482,26 @@ export class GoogleSecureSourceManagerRepositoryTimeoutsOutputReference extends 
   public get deleteInput() {
     return this._delete;
   }
+
+  // update - computed: false, optional: true, required: false
+  private _update?: string; 
+  public get update() {
+    return this.getStringAttribute('update');
+  }
+  public set update(value: string) {
+    this._update = value;
+  }
+  public resetUpdate() {
+    this._update = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateInput() {
+    return this._update;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_secure_source_manager_repository google_secure_source_manager_repository}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_secure_source_manager_repository google_secure_source_manager_repository}
 */
 export class GoogleSecureSourceManagerRepository extends cdktf.TerraformResource {
 
@@ -484,7 +517,7 @@ export class GoogleSecureSourceManagerRepository extends cdktf.TerraformResource
   * Generates CDKTF code for importing a GoogleSecureSourceManagerRepository resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleSecureSourceManagerRepository to import
-  * @param importFromId The id of the existing GoogleSecureSourceManagerRepository that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_secure_source_manager_repository#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleSecureSourceManagerRepository that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_secure_source_manager_repository#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleSecureSourceManagerRepository to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -496,7 +529,7 @@ export class GoogleSecureSourceManagerRepository extends cdktf.TerraformResource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_secure_source_manager_repository google_secure_source_manager_repository} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_secure_source_manager_repository google_secure_source_manager_repository} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -507,7 +540,7 @@ export class GoogleSecureSourceManagerRepository extends cdktf.TerraformResource
       terraformResourceType: 'google_secure_source_manager_repository',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.43.0',
+        providerVersion: '6.44.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

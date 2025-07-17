@@ -102,6 +102,7 @@ Object.defineProperty(exports, 'googleBackupDrBackupPlan', { get: function () { 
 Object.defineProperty(exports, 'googleBackupDrBackupPlanAssociation', { get: function () { return require('./google-backup-dr-backup-plan-association'); } });
 Object.defineProperty(exports, 'googleBackupDrBackupVault', { get: function () { return require('./google-backup-dr-backup-vault'); } });
 Object.defineProperty(exports, 'googleBackupDrManagementServer', { get: function () { return require('./google-backup-dr-management-server'); } });
+Object.defineProperty(exports, 'googleBackupDrServiceConfig', { get: function () { return require('./google-backup-dr-service-config'); } });
 Object.defineProperty(exports, 'googleBeyondcorpAppConnection', { get: function () { return require('./google-beyondcorp-app-connection'); } });
 Object.defineProperty(exports, 'googleBeyondcorpAppConnector', { get: function () { return require('./google-beyondcorp-app-connector'); } });
 Object.defineProperty(exports, 'googleBeyondcorpAppGateway', { get: function () { return require('./google-beyondcorp-app-gateway'); } });
@@ -124,6 +125,7 @@ Object.defineProperty(exports, 'googleBigqueryAnalyticsHubDataExchange', { get: 
 Object.defineProperty(exports, 'googleBigqueryAnalyticsHubDataExchangeIamBinding', { get: function () { return require('./google-bigquery-analytics-hub-data-exchange-iam-binding'); } });
 Object.defineProperty(exports, 'googleBigqueryAnalyticsHubDataExchangeIamMember', { get: function () { return require('./google-bigquery-analytics-hub-data-exchange-iam-member'); } });
 Object.defineProperty(exports, 'googleBigqueryAnalyticsHubDataExchangeIamPolicy', { get: function () { return require('./google-bigquery-analytics-hub-data-exchange-iam-policy'); } });
+Object.defineProperty(exports, 'googleBigqueryAnalyticsHubDataExchangeSubscription', { get: function () { return require('./google-bigquery-analytics-hub-data-exchange-subscription'); } });
 Object.defineProperty(exports, 'googleBigqueryAnalyticsHubListing', { get: function () { return require('./google-bigquery-analytics-hub-listing'); } });
 Object.defineProperty(exports, 'googleBigqueryAnalyticsHubListingIamBinding', { get: function () { return require('./google-bigquery-analytics-hub-listing-iam-binding'); } });
 Object.defineProperty(exports, 'googleBigqueryAnalyticsHubListingIamMember', { get: function () { return require('./google-bigquery-analytics-hub-listing-iam-member'); } });
@@ -1316,6 +1318,7 @@ Object.defineProperty(exports, 'dataGoogleComputeLbIpRanges', { get: function ()
 Object.defineProperty(exports, 'dataGoogleComputeMachineImageIamPolicy', { get: function () { return require('./data-google-compute-machine-image-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleComputeMachineTypes', { get: function () { return require('./data-google-compute-machine-types'); } });
 Object.defineProperty(exports, 'dataGoogleComputeNetwork', { get: function () { return require('./data-google-compute-network'); } });
+Object.defineProperty(exports, 'dataGoogleComputeNetworkAttachment', { get: function () { return require('./data-google-compute-network-attachment'); } });
 Object.defineProperty(exports, 'dataGoogleComputeNetworkEndpointGroup', { get: function () { return require('./data-google-compute-network-endpoint-group'); } });
 Object.defineProperty(exports, 'dataGoogleComputeNetworkPeering', { get: function () { return require('./data-google-compute-network-peering'); } });
 Object.defineProperty(exports, 'dataGoogleComputeNetworks', { get: function () { return require('./data-google-compute-networks'); } });
@@ -1397,6 +1400,7 @@ Object.defineProperty(exports, 'dataGoogleFirebaseAppleAppConfig', { get: functi
 Object.defineProperty(exports, 'dataGoogleFirebaseHostingChannel', { get: function () { return require('./data-google-firebase-hosting-channel'); } });
 Object.defineProperty(exports, 'dataGoogleFirebaseWebApp', { get: function () { return require('./data-google-firebase-web-app'); } });
 Object.defineProperty(exports, 'dataGoogleFirebaseWebAppConfig', { get: function () { return require('./data-google-firebase-web-app-config'); } });
+Object.defineProperty(exports, 'dataGoogleFirestoreDocument', { get: function () { return require('./data-google-firestore-document'); } });
 Object.defineProperty(exports, 'dataGoogleFolder', { get: function () { return require('./data-google-folder'); } });
 Object.defineProperty(exports, 'dataGoogleFolderIamPolicy', { get: function () { return require('./data-google-folder-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleFolderOrganizationPolicy', { get: function () { return require('./data-google-folder-organization-policy'); } });

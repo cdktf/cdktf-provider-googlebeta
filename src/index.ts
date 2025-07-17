@@ -102,6 +102,7 @@ export * as googleBackupDrBackupPlan from './google-backup-dr-backup-plan';
 export * as googleBackupDrBackupPlanAssociation from './google-backup-dr-backup-plan-association';
 export * as googleBackupDrBackupVault from './google-backup-dr-backup-vault';
 export * as googleBackupDrManagementServer from './google-backup-dr-management-server';
+export * as googleBackupDrServiceConfig from './google-backup-dr-service-config';
 export * as googleBeyondcorpAppConnection from './google-beyondcorp-app-connection';
 export * as googleBeyondcorpAppConnector from './google-beyondcorp-app-connector';
 export * as googleBeyondcorpAppGateway from './google-beyondcorp-app-gateway';
@@ -124,6 +125,7 @@ export * as googleBigqueryAnalyticsHubDataExchange from './google-bigquery-analy
 export * as googleBigqueryAnalyticsHubDataExchangeIamBinding from './google-bigquery-analytics-hub-data-exchange-iam-binding';
 export * as googleBigqueryAnalyticsHubDataExchangeIamMember from './google-bigquery-analytics-hub-data-exchange-iam-member';
 export * as googleBigqueryAnalyticsHubDataExchangeIamPolicy from './google-bigquery-analytics-hub-data-exchange-iam-policy';
+export * as googleBigqueryAnalyticsHubDataExchangeSubscription from './google-bigquery-analytics-hub-data-exchange-subscription';
 export * as googleBigqueryAnalyticsHubListing from './google-bigquery-analytics-hub-listing';
 export * as googleBigqueryAnalyticsHubListingIamBinding from './google-bigquery-analytics-hub-listing-iam-binding';
 export * as googleBigqueryAnalyticsHubListingIamMember from './google-bigquery-analytics-hub-listing-iam-member';
@@ -1316,6 +1318,7 @@ export * as dataGoogleComputeLbIpRanges from './data-google-compute-lb-ip-ranges
 export * as dataGoogleComputeMachineImageIamPolicy from './data-google-compute-machine-image-iam-policy';
 export * as dataGoogleComputeMachineTypes from './data-google-compute-machine-types';
 export * as dataGoogleComputeNetwork from './data-google-compute-network';
+export * as dataGoogleComputeNetworkAttachment from './data-google-compute-network-attachment';
 export * as dataGoogleComputeNetworkEndpointGroup from './data-google-compute-network-endpoint-group';
 export * as dataGoogleComputeNetworkPeering from './data-google-compute-network-peering';
 export * as dataGoogleComputeNetworks from './data-google-compute-networks';
@@ -1397,6 +1400,7 @@ export * as dataGoogleFirebaseAppleAppConfig from './data-google-firebase-apple-
 export * as dataGoogleFirebaseHostingChannel from './data-google-firebase-hosting-channel';
 export * as dataGoogleFirebaseWebApp from './data-google-firebase-web-app';
 export * as dataGoogleFirebaseWebAppConfig from './data-google-firebase-web-app-config';
+export * as dataGoogleFirestoreDocument from './data-google-firestore-document';
 export * as dataGoogleFolder from './data-google-folder';
 export * as dataGoogleFolderIamPolicy from './data-google-folder-iam-policy';
 export * as dataGoogleFolderOrganizationPolicy from './data-google-folder-organization-policy';

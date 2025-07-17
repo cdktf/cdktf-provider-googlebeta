@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_netapp_backup_vault
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_netapp_backup_vault
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface GoogleNetappBackupVaultConfig extends cdktf.TerraformMetaArgume
   /**
   * Region in which backup is stored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_netapp_backup_vault#backup_region GoogleNetappBackupVault#backup_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_netapp_backup_vault#backup_region GoogleNetappBackupVault#backup_region}
   */
   readonly backupRegion?: string;
   /**
   * Type of the backup vault to be created. Default is IN_REGION. Possible values: ["BACKUP_VAULT_TYPE_UNSPECIFIED", "IN_REGION", "CROSS_REGION"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_netapp_backup_vault#backup_vault_type GoogleNetappBackupVault#backup_vault_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_netapp_backup_vault#backup_vault_type GoogleNetappBackupVault#backup_vault_type}
   */
   readonly backupVaultType?: string;
   /**
   * An optional description of this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_netapp_backup_vault#description GoogleNetappBackupVault#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_netapp_backup_vault#description GoogleNetappBackupVault#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_netapp_backup_vault#id GoogleNetappBackupVault#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_netapp_backup_vault#id GoogleNetappBackupVault#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,35 +44,35 @@ export interface GoogleNetappBackupVaultConfig extends cdktf.TerraformMetaArgume
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_netapp_backup_vault#labels GoogleNetappBackupVault#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_netapp_backup_vault#labels GoogleNetappBackupVault#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Location (region) of the backup vault.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_netapp_backup_vault#location GoogleNetappBackupVault#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_netapp_backup_vault#location GoogleNetappBackupVault#location}
   */
   readonly location: string;
   /**
   * The resource name of the backup vault. Needs to be unique per location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_netapp_backup_vault#name GoogleNetappBackupVault#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_netapp_backup_vault#name GoogleNetappBackupVault#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_netapp_backup_vault#project GoogleNetappBackupVault#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_netapp_backup_vault#project GoogleNetappBackupVault#project}
   */
   readonly project?: string;
   /**
   * backup_retention_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_netapp_backup_vault#backup_retention_policy GoogleNetappBackupVault#backup_retention_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_netapp_backup_vault#backup_retention_policy GoogleNetappBackupVault#backup_retention_policy}
   */
   readonly backupRetentionPolicy?: GoogleNetappBackupVaultBackupRetentionPolicy;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_netapp_backup_vault#timeouts GoogleNetappBackupVault#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_netapp_backup_vault#timeouts GoogleNetappBackupVault#timeouts}
   */
   readonly timeouts?: GoogleNetappBackupVaultTimeouts;
 }
@@ -80,31 +80,31 @@ export interface GoogleNetappBackupVaultBackupRetentionPolicy {
   /**
   * Minimum retention duration in days for backups in the backup vault.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_netapp_backup_vault#backup_minimum_enforced_retention_days GoogleNetappBackupVault#backup_minimum_enforced_retention_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_netapp_backup_vault#backup_minimum_enforced_retention_days GoogleNetappBackupVault#backup_minimum_enforced_retention_days}
   */
   readonly backupMinimumEnforcedRetentionDays: number;
   /**
   * Indicates if the daily backups are immutable. At least one of daily_backup_immutable, weekly_backup_immutable, monthly_backup_immutable and manual_backup_immutable must be true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_netapp_backup_vault#daily_backup_immutable GoogleNetappBackupVault#daily_backup_immutable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_netapp_backup_vault#daily_backup_immutable GoogleNetappBackupVault#daily_backup_immutable}
   */
   readonly dailyBackupImmutable?: boolean | cdktf.IResolvable;
   /**
   * Indicates if the manual backups are immutable. At least one of daily_backup_immutable, weekly_backup_immutable, monthly_backup_immutable and manual_backup_immutable must be true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_netapp_backup_vault#manual_backup_immutable GoogleNetappBackupVault#manual_backup_immutable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_netapp_backup_vault#manual_backup_immutable GoogleNetappBackupVault#manual_backup_immutable}
   */
   readonly manualBackupImmutable?: boolean | cdktf.IResolvable;
   /**
   * Indicates if the monthly backups are immutable. At least one of daily_backup_immutable, weekly_backup_immutable, monthly_backup_immutable and manual_backup_immutable must be true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_netapp_backup_vault#monthly_backup_immutable GoogleNetappBackupVault#monthly_backup_immutable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_netapp_backup_vault#monthly_backup_immutable GoogleNetappBackupVault#monthly_backup_immutable}
   */
   readonly monthlyBackupImmutable?: boolean | cdktf.IResolvable;
   /**
   * Indicates if the weekly backups are immutable. At least one of daily_backup_immutable, weekly_backup_immutable, monthly_backup_immutable and manual_backup_immutable must be true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_netapp_backup_vault#weekly_backup_immutable GoogleNetappBackupVault#weekly_backup_immutable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_netapp_backup_vault#weekly_backup_immutable GoogleNetappBackupVault#weekly_backup_immutable}
   */
   readonly weeklyBackupImmutable?: boolean | cdktf.IResolvable;
 }
@@ -301,15 +301,15 @@ export class GoogleNetappBackupVaultBackupRetentionPolicyOutputReference extends
 }
 export interface GoogleNetappBackupVaultTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_netapp_backup_vault#create GoogleNetappBackupVault#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_netapp_backup_vault#create GoogleNetappBackupVault#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_netapp_backup_vault#delete GoogleNetappBackupVault#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_netapp_backup_vault#delete GoogleNetappBackupVault#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_netapp_backup_vault#update GoogleNetappBackupVault#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_netapp_backup_vault#update GoogleNetappBackupVault#update}
   */
   readonly update?: string;
 }
@@ -461,7 +461,7 @@ export class GoogleNetappBackupVaultTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_netapp_backup_vault google_netapp_backup_vault}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_netapp_backup_vault google_netapp_backup_vault}
 */
 export class GoogleNetappBackupVault extends cdktf.TerraformResource {
 
@@ -477,7 +477,7 @@ export class GoogleNetappBackupVault extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleNetappBackupVault resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleNetappBackupVault to import
-  * @param importFromId The id of the existing GoogleNetappBackupVault that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_netapp_backup_vault#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleNetappBackupVault that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_netapp_backup_vault#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleNetappBackupVault to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -489,7 +489,7 @@ export class GoogleNetappBackupVault extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_netapp_backup_vault google_netapp_backup_vault} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_netapp_backup_vault google_netapp_backup_vault} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -500,7 +500,7 @@ export class GoogleNetappBackupVault extends cdktf.TerraformResource {
       terraformResourceType: 'google_netapp_backup_vault',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.43.0',
+        providerVersion: '6.44.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
