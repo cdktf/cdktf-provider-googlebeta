@@ -4,7 +4,7 @@
 
 ### DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy <a name="DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy" id="@cdktf/provider-google-beta.dataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy google_vertex_ai_feature_online_store_featureview_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy google_vertex_ai_feature_online_store_featureview_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.Initializer"></a>
 
@@ -40,11 +40,11 @@ dataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.DataGoogleVertexAiFeatu
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.Initializer.parameter.featureOnlineStore">feature_online_store</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#feature_online_store DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#feature_online_store}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.Initializer.parameter.featureView">feature_view</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#feature_view DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#feature_view}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#id DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#project DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#project}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#region DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#region}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.Initializer.parameter.featureOnlineStore">feature_online_store</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#feature_online_store DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#feature_online_store}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.Initializer.parameter.featureView">feature_view</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#feature_view DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#feature_view}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#id DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#project DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#region DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#region}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#feature_online_store DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#feature_online_store}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#feature_online_store DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#feature_online_store}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#feature_view DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#feature_view}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#feature_view DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#feature_view}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#id DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#id DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -139,7 +139,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#project DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#project DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#project}.
 
 ---
 
@@ -147,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#region DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#region DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#region}.
 
 ---
 
@@ -527,7 +527,7 @@ The construct id used in the generated config for the DataGoogleVertexAiFeatureO
 
 The id of the existing DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -866,11 +866,11 @@ dataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.DataGoogleVertexAiFeatu
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicyConfig.property.featureOnlineStore">feature_online_store</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#feature_online_store DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#feature_online_store}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicyConfig.property.featureView">feature_view</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#feature_view DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#feature_view}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#id DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicyConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#project DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#project}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicyConfig.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#region DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#region}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicyConfig.property.featureOnlineStore">feature_online_store</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#feature_online_store DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#feature_online_store}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicyConfig.property.featureView">feature_view</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#feature_view DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#feature_view}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#id DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicyConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#project DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy.DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicyConfig.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#region DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#region}. |
 
 ---
 
@@ -952,7 +952,7 @@ feature_online_store: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#feature_online_store DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#feature_online_store}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#feature_online_store DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#feature_online_store}.
 
 ---
 
@@ -964,7 +964,7 @@ feature_view: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#feature_view DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#feature_view}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#feature_view DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#feature_view}.
 
 ---
 
@@ -976,7 +976,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#id DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#id DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -991,7 +991,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#project DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#project DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#project}.
 
 ---
 
@@ -1003,7 +1003,7 @@ region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#region DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_vertex_ai_feature_online_store_featureview_iam_policy#region DataGoogleVertexAiFeatureOnlineStoreFeatureviewIamPolicy#region}.
 
 ---
 

@@ -165,6 +165,7 @@ export * as googleBigtableInstanceIamMember from './google-bigtable-instance-iam
 export * as googleBigtableInstanceIamPolicy from './google-bigtable-instance-iam-policy';
 export * as googleBigtableLogicalView from './google-bigtable-logical-view';
 export * as googleBigtableMaterializedView from './google-bigtable-materialized-view';
+export * as googleBigtableSchemaBundle from './google-bigtable-schema-bundle';
 export * as googleBigtableTable from './google-bigtable-table';
 export * as googleBigtableTableIamBinding from './google-bigtable-table-iam-binding';
 export * as googleBigtableTableIamMember from './google-bigtable-table-iam-member';
@@ -353,6 +354,7 @@ export * as googleComputeOrganizationSecurityPolicyAssociation from './google-co
 export * as googleComputeOrganizationSecurityPolicyRule from './google-compute-organization-security-policy-rule';
 export * as googleComputePacketMirroring from './google-compute-packet-mirroring';
 export * as googleComputePerInstanceConfig from './google-compute-per-instance-config';
+export * as googleComputePreviewFeature from './google-compute-preview-feature';
 export * as googleComputeProjectCloudArmorTier from './google-compute-project-cloud-armor-tier';
 export * as googleComputeProjectDefaultNetworkTier from './google-compute-project-default-network-tier';
 export * as googleComputeProjectMetadata from './google-compute-project-metadata';
@@ -570,6 +572,7 @@ export * as googleDialogflowCxEntityType from './google-dialogflow-cx-entity-typ
 export * as googleDialogflowCxEnvironment from './google-dialogflow-cx-environment';
 export * as googleDialogflowCxFlow from './google-dialogflow-cx-flow';
 export * as googleDialogflowCxGenerativeSettings from './google-dialogflow-cx-generative-settings';
+export * as googleDialogflowCxGenerator from './google-dialogflow-cx-generator';
 export * as googleDialogflowCxIntent from './google-dialogflow-cx-intent';
 export * as googleDialogflowCxPage from './google-dialogflow-cx-page';
 export * as googleDialogflowCxSecuritySettings from './google-dialogflow-cx-security-settings';
@@ -853,6 +856,7 @@ export * as googleMemorystoreInstanceDesiredUserCreatedEndpoints from './google-
 export * as googleMigrationCenterGroup from './google-migration-center-group';
 export * as googleMigrationCenterPreferenceSet from './google-migration-center-preference-set';
 export * as googleMlEngineModel from './google-ml-engine-model';
+export * as googleModelArmorFloorsetting from './google-model-armor-floorsetting';
 export * as googleModelArmorTemplate from './google-model-armor-template';
 export * as googleMonitoringAlertPolicy from './google-monitoring-alert-policy';
 export * as googleMonitoringCustomService from './google-monitoring-custom-service';
@@ -1150,6 +1154,7 @@ export * as googleVertexAiEndpoint from './google-vertex-ai-endpoint';
 export * as googleVertexAiEndpointIamBinding from './google-vertex-ai-endpoint-iam-binding';
 export * as googleVertexAiEndpointIamMember from './google-vertex-ai-endpoint-iam-member';
 export * as googleVertexAiEndpointIamPolicy from './google-vertex-ai-endpoint-iam-policy';
+export * as googleVertexAiEndpointWithModelGardenDeployment from './google-vertex-ai-endpoint-with-model-garden-deployment';
 export * as googleVertexAiFeatureGroup from './google-vertex-ai-feature-group';
 export * as googleVertexAiFeatureGroupFeature from './google-vertex-ai-feature-group-feature';
 export * as googleVertexAiFeatureGroupIamBinding from './google-vertex-ai-feature-group-iam-binding';

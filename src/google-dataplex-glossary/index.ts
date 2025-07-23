@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dataplex_glossary
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_glossary
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface GoogleDataplexGlossaryConfig extends cdktf.TerraformMetaArgumen
   /**
   * The user-mutable description of the glossary.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dataplex_glossary#description GoogleDataplexGlossary#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_glossary#description GoogleDataplexGlossary#description}
   */
   readonly description?: string;
   /**
   * User friendly display name of the glossary. This is user-mutable. This will be same as the glossaryId, if not specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dataplex_glossary#display_name GoogleDataplexGlossary#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_glossary#display_name GoogleDataplexGlossary#display_name}
   */
   readonly displayName?: string;
   /**
   * The glossary id for creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dataplex_glossary#glossary_id GoogleDataplexGlossary#glossary_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_glossary#glossary_id GoogleDataplexGlossary#glossary_id}
   */
   readonly glossaryId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dataplex_glossary#id GoogleDataplexGlossary#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_glossary#id GoogleDataplexGlossary#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,37 +44,37 @@ export interface GoogleDataplexGlossaryConfig extends cdktf.TerraformMetaArgumen
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dataplex_glossary#labels GoogleDataplexGlossary#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_glossary#labels GoogleDataplexGlossary#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location where the glossary should reside.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dataplex_glossary#location GoogleDataplexGlossary#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_glossary#location GoogleDataplexGlossary#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dataplex_glossary#project GoogleDataplexGlossary#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_glossary#project GoogleDataplexGlossary#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dataplex_glossary#timeouts GoogleDataplexGlossary#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_glossary#timeouts GoogleDataplexGlossary#timeouts}
   */
   readonly timeouts?: GoogleDataplexGlossaryTimeouts;
 }
 export interface GoogleDataplexGlossaryTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dataplex_glossary#create GoogleDataplexGlossary#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_glossary#create GoogleDataplexGlossary#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dataplex_glossary#delete GoogleDataplexGlossary#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_glossary#delete GoogleDataplexGlossary#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dataplex_glossary#update GoogleDataplexGlossary#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_glossary#update GoogleDataplexGlossary#update}
   */
   readonly update?: string;
 }
@@ -226,7 +226,7 @@ export class GoogleDataplexGlossaryTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dataplex_glossary google_dataplex_glossary}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_glossary google_dataplex_glossary}
 */
 export class GoogleDataplexGlossary extends cdktf.TerraformResource {
 
@@ -242,7 +242,7 @@ export class GoogleDataplexGlossary extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleDataplexGlossary resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleDataplexGlossary to import
-  * @param importFromId The id of the existing GoogleDataplexGlossary that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dataplex_glossary#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleDataplexGlossary that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_glossary#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleDataplexGlossary to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -254,7 +254,7 @@ export class GoogleDataplexGlossary extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dataplex_glossary google_dataplex_glossary} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_glossary google_dataplex_glossary} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -265,7 +265,7 @@ export class GoogleDataplexGlossary extends cdktf.TerraformResource {
       terraformResourceType: 'google_dataplex_glossary',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.44.0',
+        providerVersion: '6.45.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
