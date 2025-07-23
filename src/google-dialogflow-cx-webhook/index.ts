@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dialogflow_cx_webhook
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +15,29 @@ export interface GoogleDialogflowCxWebhookConfig extends cdktf.TerraformMetaArgu
   /**
   * Indicates whether the webhook is disabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dialogflow_cx_webhook#disabled GoogleDialogflowCxWebhook#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#disabled GoogleDialogflowCxWebhook#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * The human-readable name of the webhook, unique within the agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dialogflow_cx_webhook#display_name GoogleDialogflowCxWebhook#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#display_name GoogleDialogflowCxWebhook#display_name}
   */
   readonly displayName: string;
   /**
-  * Indicates if automatic spell correction is enabled in detect intent requests.
+  * Deprecated. Indicates if automatic spell correction is enabled in detect intent requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dialogflow_cx_webhook#enable_spell_correction GoogleDialogflowCxWebhook#enable_spell_correction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#enable_spell_correction GoogleDialogflowCxWebhook#enable_spell_correction}
   */
   readonly enableSpellCorrection?: boolean | cdktf.IResolvable;
   /**
-  * Determines whether this agent should log conversation queries.
+  * Deprecated. Determines whether this agent should log conversation queries.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dialogflow_cx_webhook#enable_stackdriver_logging GoogleDialogflowCxWebhook#enable_stackdriver_logging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#enable_stackdriver_logging GoogleDialogflowCxWebhook#enable_stackdriver_logging}
   */
   readonly enableStackdriverLogging?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dialogflow_cx_webhook#id GoogleDialogflowCxWebhook#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#id GoogleDialogflowCxWebhook#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -47,59 +47,497 @@ export interface GoogleDialogflowCxWebhookConfig extends cdktf.TerraformMetaArgu
   * The agent to create a webhook for.
   * Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dialogflow_cx_webhook#parent GoogleDialogflowCxWebhook#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#parent GoogleDialogflowCxWebhook#parent}
   */
   readonly parent?: string;
   /**
-  * Name of the SecuritySettings reference for the agent. Format: projects/<Project ID>/locations/<Location ID>/securitySettings/<Security Settings ID>.
+  * Deprecated. Name of the SecuritySettings reference for the agent. Format: projects/<Project ID>/locations/<Location ID>/securitySettings/<Security Settings ID>.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dialogflow_cx_webhook#security_settings GoogleDialogflowCxWebhook#security_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#security_settings GoogleDialogflowCxWebhook#security_settings}
   */
   readonly securitySettings?: string;
   /**
   * Webhook execution timeout.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dialogflow_cx_webhook#timeout GoogleDialogflowCxWebhook#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#timeout GoogleDialogflowCxWebhook#timeout}
   */
   readonly timeout?: string;
   /**
   * generic_web_service block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dialogflow_cx_webhook#generic_web_service GoogleDialogflowCxWebhook#generic_web_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#generic_web_service GoogleDialogflowCxWebhook#generic_web_service}
   */
   readonly genericWebService?: GoogleDialogflowCxWebhookGenericWebService;
   /**
   * service_directory block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dialogflow_cx_webhook#service_directory GoogleDialogflowCxWebhook#service_directory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#service_directory GoogleDialogflowCxWebhook#service_directory}
   */
   readonly serviceDirectory?: GoogleDialogflowCxWebhookServiceDirectory;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dialogflow_cx_webhook#timeouts GoogleDialogflowCxWebhook#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#timeouts GoogleDialogflowCxWebhook#timeouts}
   */
   readonly timeouts?: GoogleDialogflowCxWebhookTimeouts;
 }
+export interface GoogleDialogflowCxWebhookGenericWebServiceOauthConfig {
+  /**
+  * The client ID provided by the 3rd party platform.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#client_id GoogleDialogflowCxWebhook#client_id}
+  */
+  readonly clientId: string;
+  /**
+  * The client secret provided by the 3rd party platform.  If the
+  * 'secret_version_for_client_secret' field is set, this field will be
+  * ignored.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#client_secret GoogleDialogflowCxWebhook#client_secret}
+  */
+  readonly clientSecret?: string;
+  /**
+  * The OAuth scopes to grant.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#scopes GoogleDialogflowCxWebhook#scopes}
+  */
+  readonly scopes?: string[];
+  /**
+  * The name of the SecretManager secret version resource storing the
+  * client secret. If this field is set, the 'client_secret' field will be
+  * ignored.
+  * Format: 'projects/{project}/secrets/{secret}/versions/{version}'
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#secret_version_for_client_secret GoogleDialogflowCxWebhook#secret_version_for_client_secret}
+  */
+  readonly secretVersionForClientSecret?: string;
+  /**
+  * The token endpoint provided by the 3rd party platform to exchange an
+  * access token.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#token_endpoint GoogleDialogflowCxWebhook#token_endpoint}
+  */
+  readonly tokenEndpoint: string;
+}
+
+export function googleDialogflowCxWebhookGenericWebServiceOauthConfigToTerraform(struct?: GoogleDialogflowCxWebhookGenericWebServiceOauthConfigOutputReference | GoogleDialogflowCxWebhookGenericWebServiceOauthConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    client_id: cdktf.stringToTerraform(struct!.clientId),
+    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
+    scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.scopes),
+    secret_version_for_client_secret: cdktf.stringToTerraform(struct!.secretVersionForClientSecret),
+    token_endpoint: cdktf.stringToTerraform(struct!.tokenEndpoint),
+  }
+}
+
+
+export function googleDialogflowCxWebhookGenericWebServiceOauthConfigToHclTerraform(struct?: GoogleDialogflowCxWebhookGenericWebServiceOauthConfigOutputReference | GoogleDialogflowCxWebhookGenericWebServiceOauthConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    client_id: {
+      value: cdktf.stringToHclTerraform(struct!.clientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_secret: {
+      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    scopes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.scopes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    secret_version_for_client_secret: {
+      value: cdktf.stringToHclTerraform(struct!.secretVersionForClientSecret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    token_endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.tokenEndpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDialogflowCxWebhookGenericWebServiceOauthConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDialogflowCxWebhookGenericWebServiceOauthConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._clientId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientId = this._clientId;
+    }
+    if (this._clientSecret !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientSecret = this._clientSecret;
+    }
+    if (this._scopes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scopes = this._scopes;
+    }
+    if (this._secretVersionForClientSecret !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secretVersionForClientSecret = this._secretVersionForClientSecret;
+    }
+    if (this._tokenEndpoint !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tokenEndpoint = this._tokenEndpoint;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDialogflowCxWebhookGenericWebServiceOauthConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._clientId = undefined;
+      this._clientSecret = undefined;
+      this._scopes = undefined;
+      this._secretVersionForClientSecret = undefined;
+      this._tokenEndpoint = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._clientId = value.clientId;
+      this._clientSecret = value.clientSecret;
+      this._scopes = value.scopes;
+      this._secretVersionForClientSecret = value.secretVersionForClientSecret;
+      this._tokenEndpoint = value.tokenEndpoint;
+    }
+  }
+
+  // client_id - computed: false, optional: false, required: true
+  private _clientId?: string; 
+  public get clientId() {
+    return this.getStringAttribute('client_id');
+  }
+  public set clientId(value: string) {
+    this._clientId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientIdInput() {
+    return this._clientId;
+  }
+
+  // client_secret - computed: false, optional: true, required: false
+  private _clientSecret?: string; 
+  public get clientSecret() {
+    return this.getStringAttribute('client_secret');
+  }
+  public set clientSecret(value: string) {
+    this._clientSecret = value;
+  }
+  public resetClientSecret() {
+    this._clientSecret = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientSecretInput() {
+    return this._clientSecret;
+  }
+
+  // scopes - computed: false, optional: true, required: false
+  private _scopes?: string[]; 
+  public get scopes() {
+    return this.getListAttribute('scopes');
+  }
+  public set scopes(value: string[]) {
+    this._scopes = value;
+  }
+  public resetScopes() {
+    this._scopes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scopesInput() {
+    return this._scopes;
+  }
+
+  // secret_version_for_client_secret - computed: false, optional: true, required: false
+  private _secretVersionForClientSecret?: string; 
+  public get secretVersionForClientSecret() {
+    return this.getStringAttribute('secret_version_for_client_secret');
+  }
+  public set secretVersionForClientSecret(value: string) {
+    this._secretVersionForClientSecret = value;
+  }
+  public resetSecretVersionForClientSecret() {
+    this._secretVersionForClientSecret = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretVersionForClientSecretInput() {
+    return this._secretVersionForClientSecret;
+  }
+
+  // token_endpoint - computed: false, optional: false, required: true
+  private _tokenEndpoint?: string; 
+  public get tokenEndpoint() {
+    return this.getStringAttribute('token_endpoint');
+  }
+  public set tokenEndpoint(value: string) {
+    this._tokenEndpoint = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tokenEndpointInput() {
+    return this._tokenEndpoint;
+  }
+}
+export interface GoogleDialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#key GoogleDialogflowCxWebhook#key}
+  */
+  readonly key: string;
+  /**
+  * The SecretManager secret version resource storing the header value.
+  * Format: 'projects/{project}/secrets/{secret}/versions/{version}'
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#secret_version GoogleDialogflowCxWebhook#secret_version}
+  */
+  readonly secretVersion: string;
+}
+
+export function googleDialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersToTerraform(struct?: GoogleDialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktf.stringToTerraform(struct!.key),
+    secret_version: cdktf.stringToTerraform(struct!.secretVersion),
+  }
+}
+
+
+export function googleDialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersToHclTerraform(struct?: GoogleDialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    secret_version: {
+      value: cdktf.stringToHclTerraform(struct!.secretVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._secretVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secretVersion = this._secretVersion;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._key = undefined;
+      this._secretVersion = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._key = value.key;
+      this._secretVersion = value.secretVersion;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // secret_version - computed: false, optional: false, required: true
+  private _secretVersion?: string; 
+  public get secretVersion() {
+    return this.getStringAttribute('secret_version');
+  }
+  public set secretVersion(value: string) {
+    this._secretVersion = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretVersionInput() {
+    return this._secretVersion;
+  }
+}
+
+export class GoogleDialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersList extends cdktf.ComplexList {
+  public internalValue? : GoogleDialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersOutputReference {
+    return new GoogleDialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleDialogflowCxWebhookGenericWebService {
   /**
-  * Specifies a list of allowed custom CA certificates (in DER format) for HTTPS verification.
+  * Specifies a list of allowed custom CA certificates (in DER format) for
+  * HTTPS verification. This overrides the default SSL trust store. If this
+  * is empty or unspecified, Dialogflow will use Google's default trust store
+  * to verify certificates.
+  * N.B. Make sure the HTTPS server certificates are signed with "subject alt
+  * name". For instance a certificate can be self-signed using the following
+  * command,
+  * openssl x509 -req -days 200 -in example.com.csr \
+  * -signkey example.com.key \
+  * -out example.com.crt \
+  * -extfile <(printf "\nsubjectAltName='DNS:www.example.com'")
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dialogflow_cx_webhook#allowed_ca_certs GoogleDialogflowCxWebhook#allowed_ca_certs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#allowed_ca_certs GoogleDialogflowCxWebhook#allowed_ca_certs}
   */
   readonly allowedCaCerts?: string[];
   /**
+  * HTTP method for the flexible webhook calls. Standard webhook always uses
+  * POST. Possible values: ["POST", "GET", "HEAD", "PUT", "DELETE", "PATCH", "OPTIONS"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#http_method GoogleDialogflowCxWebhook#http_method}
+  */
+  readonly httpMethod?: string;
+  /**
+  * Maps the values extracted from specific fields of the flexible webhook
+  * response into session parameters.
+  * - Key: session parameter name
+  * - Value: field path in the webhook response
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#parameter_mapping GoogleDialogflowCxWebhook#parameter_mapping}
+  */
+  readonly parameterMapping?: { [key: string]: string };
+  /**
+  * Defines a custom JSON object as request body to send to flexible webhook.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#request_body GoogleDialogflowCxWebhook#request_body}
+  */
+  readonly requestBody?: string;
+  /**
   * The HTTP request headers to send together with webhook requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dialogflow_cx_webhook#request_headers GoogleDialogflowCxWebhook#request_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#request_headers GoogleDialogflowCxWebhook#request_headers}
   */
   readonly requestHeaders?: { [key: string]: string };
   /**
-  * Whether to use speech adaptation for speech recognition.
+  * The SecretManager secret version resource storing the username:password
+  * pair for HTTP Basic authentication.
+  * Format: 'projects/{project}/secrets/{secret}/versions/{version}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dialogflow_cx_webhook#uri GoogleDialogflowCxWebhook#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#secret_version_for_username_password GoogleDialogflowCxWebhook#secret_version_for_username_password}
+  */
+  readonly secretVersionForUsernamePassword?: string;
+  /**
+  * Indicate the auth token type generated from the [Diglogflow service
+  * agent](https://cloud.google.com/iam/docs/service-agents#dialogflow-service-agent).
+  * The generated token is sent in the Authorization header. Possible values: ["NONE", "ID_TOKEN", "ACCESS_TOKEN"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#service_agent_auth GoogleDialogflowCxWebhook#service_agent_auth}
+  */
+  readonly serviceAgentAuth?: string;
+  /**
+  * The webhook URI for receiving POST requests. It must use https protocol.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#uri GoogleDialogflowCxWebhook#uri}
   */
   readonly uri: string;
+  /**
+  * Type of the webhook. Possible values: ["STANDARD", "FLEXIBLE"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#webhook_type GoogleDialogflowCxWebhook#webhook_type}
+  */
+  readonly webhookType?: string;
+  /**
+  * oauth_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#oauth_config GoogleDialogflowCxWebhook#oauth_config}
+  */
+  readonly oauthConfig?: GoogleDialogflowCxWebhookGenericWebServiceOauthConfig;
+  /**
+  * secret_versions_for_request_headers block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#secret_versions_for_request_headers GoogleDialogflowCxWebhook#secret_versions_for_request_headers}
+  */
+  readonly secretVersionsForRequestHeaders?: GoogleDialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders[] | cdktf.IResolvable;
 }
 
 export function googleDialogflowCxWebhookGenericWebServiceToTerraform(struct?: GoogleDialogflowCxWebhookGenericWebServiceOutputReference | GoogleDialogflowCxWebhookGenericWebService): any {
@@ -109,8 +547,16 @@ export function googleDialogflowCxWebhookGenericWebServiceToTerraform(struct?: G
   }
   return {
     allowed_ca_certs: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedCaCerts),
+    http_method: cdktf.stringToTerraform(struct!.httpMethod),
+    parameter_mapping: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.parameterMapping),
+    request_body: cdktf.stringToTerraform(struct!.requestBody),
     request_headers: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.requestHeaders),
+    secret_version_for_username_password: cdktf.stringToTerraform(struct!.secretVersionForUsernamePassword),
+    service_agent_auth: cdktf.stringToTerraform(struct!.serviceAgentAuth),
     uri: cdktf.stringToTerraform(struct!.uri),
+    webhook_type: cdktf.stringToTerraform(struct!.webhookType),
+    oauth_config: googleDialogflowCxWebhookGenericWebServiceOauthConfigToTerraform(struct!.oauthConfig),
+    secret_versions_for_request_headers: cdktf.listMapper(googleDialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersToTerraform, true)(struct!.secretVersionsForRequestHeaders),
   }
 }
 
@@ -127,17 +573,65 @@ export function googleDialogflowCxWebhookGenericWebServiceToHclTerraform(struct?
       type: "list",
       storageClassType: "stringList",
     },
+    http_method: {
+      value: cdktf.stringToHclTerraform(struct!.httpMethod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameter_mapping: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.parameterMapping),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    request_body: {
+      value: cdktf.stringToHclTerraform(struct!.requestBody),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     request_headers: {
       value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.requestHeaders),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
+    secret_version_for_username_password: {
+      value: cdktf.stringToHclTerraform(struct!.secretVersionForUsernamePassword),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service_agent_auth: {
+      value: cdktf.stringToHclTerraform(struct!.serviceAgentAuth),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     uri: {
       value: cdktf.stringToHclTerraform(struct!.uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    webhook_type: {
+      value: cdktf.stringToHclTerraform(struct!.webhookType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oauth_config: {
+      value: googleDialogflowCxWebhookGenericWebServiceOauthConfigToHclTerraform(struct!.oauthConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDialogflowCxWebhookGenericWebServiceOauthConfigList",
+    },
+    secret_versions_for_request_headers: {
+      value: cdktf.listMapperHcl(googleDialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersToHclTerraform, true)(struct!.secretVersionsForRequestHeaders),
+      isBlock: true,
+      type: "set",
+      storageClassType: "GoogleDialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersList",
     },
   };
 
@@ -163,13 +657,45 @@ export class GoogleDialogflowCxWebhookGenericWebServiceOutputReference extends c
       hasAnyValues = true;
       internalValueResult.allowedCaCerts = this._allowedCaCerts;
     }
+    if (this._httpMethod !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpMethod = this._httpMethod;
+    }
+    if (this._parameterMapping !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameterMapping = this._parameterMapping;
+    }
+    if (this._requestBody !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.requestBody = this._requestBody;
+    }
     if (this._requestHeaders !== undefined) {
       hasAnyValues = true;
       internalValueResult.requestHeaders = this._requestHeaders;
     }
+    if (this._secretVersionForUsernamePassword !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secretVersionForUsernamePassword = this._secretVersionForUsernamePassword;
+    }
+    if (this._serviceAgentAuth !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serviceAgentAuth = this._serviceAgentAuth;
+    }
     if (this._uri !== undefined) {
       hasAnyValues = true;
       internalValueResult.uri = this._uri;
+    }
+    if (this._webhookType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.webhookType = this._webhookType;
+    }
+    if (this._oauthConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.oauthConfig = this._oauthConfig?.internalValue;
+    }
+    if (this._secretVersionsForRequestHeaders?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secretVersionsForRequestHeaders = this._secretVersionsForRequestHeaders?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -178,14 +704,30 @@ export class GoogleDialogflowCxWebhookGenericWebServiceOutputReference extends c
     if (value === undefined) {
       this.isEmptyObject = false;
       this._allowedCaCerts = undefined;
+      this._httpMethod = undefined;
+      this._parameterMapping = undefined;
+      this._requestBody = undefined;
       this._requestHeaders = undefined;
+      this._secretVersionForUsernamePassword = undefined;
+      this._serviceAgentAuth = undefined;
       this._uri = undefined;
+      this._webhookType = undefined;
+      this._oauthConfig.internalValue = undefined;
+      this._secretVersionsForRequestHeaders.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._allowedCaCerts = value.allowedCaCerts;
+      this._httpMethod = value.httpMethod;
+      this._parameterMapping = value.parameterMapping;
+      this._requestBody = value.requestBody;
       this._requestHeaders = value.requestHeaders;
+      this._secretVersionForUsernamePassword = value.secretVersionForUsernamePassword;
+      this._serviceAgentAuth = value.serviceAgentAuth;
       this._uri = value.uri;
+      this._webhookType = value.webhookType;
+      this._oauthConfig.internalValue = value.oauthConfig;
+      this._secretVersionsForRequestHeaders.internalValue = value.secretVersionsForRequestHeaders;
     }
   }
 
@@ -205,6 +747,54 @@ export class GoogleDialogflowCxWebhookGenericWebServiceOutputReference extends c
     return this._allowedCaCerts;
   }
 
+  // http_method - computed: false, optional: true, required: false
+  private _httpMethod?: string; 
+  public get httpMethod() {
+    return this.getStringAttribute('http_method');
+  }
+  public set httpMethod(value: string) {
+    this._httpMethod = value;
+  }
+  public resetHttpMethod() {
+    this._httpMethod = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpMethodInput() {
+    return this._httpMethod;
+  }
+
+  // parameter_mapping - computed: false, optional: true, required: false
+  private _parameterMapping?: { [key: string]: string }; 
+  public get parameterMapping() {
+    return this.getStringMapAttribute('parameter_mapping');
+  }
+  public set parameterMapping(value: { [key: string]: string }) {
+    this._parameterMapping = value;
+  }
+  public resetParameterMapping() {
+    this._parameterMapping = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterMappingInput() {
+    return this._parameterMapping;
+  }
+
+  // request_body - computed: false, optional: true, required: false
+  private _requestBody?: string; 
+  public get requestBody() {
+    return this.getStringAttribute('request_body');
+  }
+  public set requestBody(value: string) {
+    this._requestBody = value;
+  }
+  public resetRequestBody() {
+    this._requestBody = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requestBodyInput() {
+    return this._requestBody;
+  }
+
   // request_headers - computed: false, optional: true, required: false
   private _requestHeaders?: { [key: string]: string }; 
   public get requestHeaders() {
@@ -221,6 +811,38 @@ export class GoogleDialogflowCxWebhookGenericWebServiceOutputReference extends c
     return this._requestHeaders;
   }
 
+  // secret_version_for_username_password - computed: false, optional: true, required: false
+  private _secretVersionForUsernamePassword?: string; 
+  public get secretVersionForUsernamePassword() {
+    return this.getStringAttribute('secret_version_for_username_password');
+  }
+  public set secretVersionForUsernamePassword(value: string) {
+    this._secretVersionForUsernamePassword = value;
+  }
+  public resetSecretVersionForUsernamePassword() {
+    this._secretVersionForUsernamePassword = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretVersionForUsernamePasswordInput() {
+    return this._secretVersionForUsernamePassword;
+  }
+
+  // service_agent_auth - computed: false, optional: true, required: false
+  private _serviceAgentAuth?: string; 
+  public get serviceAgentAuth() {
+    return this.getStringAttribute('service_agent_auth');
+  }
+  public set serviceAgentAuth(value: string) {
+    this._serviceAgentAuth = value;
+  }
+  public resetServiceAgentAuth() {
+    this._serviceAgentAuth = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceAgentAuthInput() {
+    return this._serviceAgentAuth;
+  }
+
   // uri - computed: false, optional: false, required: true
   private _uri?: string; 
   public get uri() {
@@ -233,26 +855,512 @@ export class GoogleDialogflowCxWebhookGenericWebServiceOutputReference extends c
   public get uriInput() {
     return this._uri;
   }
+
+  // webhook_type - computed: false, optional: true, required: false
+  private _webhookType?: string; 
+  public get webhookType() {
+    return this.getStringAttribute('webhook_type');
+  }
+  public set webhookType(value: string) {
+    this._webhookType = value;
+  }
+  public resetWebhookType() {
+    this._webhookType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get webhookTypeInput() {
+    return this._webhookType;
+  }
+
+  // oauth_config - computed: false, optional: true, required: false
+  private _oauthConfig = new GoogleDialogflowCxWebhookGenericWebServiceOauthConfigOutputReference(this, "oauth_config");
+  public get oauthConfig() {
+    return this._oauthConfig;
+  }
+  public putOauthConfig(value: GoogleDialogflowCxWebhookGenericWebServiceOauthConfig) {
+    this._oauthConfig.internalValue = value;
+  }
+  public resetOauthConfig() {
+    this._oauthConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oauthConfigInput() {
+    return this._oauthConfig.internalValue;
+  }
+
+  // secret_versions_for_request_headers - computed: false, optional: true, required: false
+  private _secretVersionsForRequestHeaders = new GoogleDialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersList(this, "secret_versions_for_request_headers", true);
+  public get secretVersionsForRequestHeaders() {
+    return this._secretVersionsForRequestHeaders;
+  }
+  public putSecretVersionsForRequestHeaders(value: GoogleDialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders[] | cdktf.IResolvable) {
+    this._secretVersionsForRequestHeaders.internalValue = value;
+  }
+  public resetSecretVersionsForRequestHeaders() {
+    this._secretVersionsForRequestHeaders.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretVersionsForRequestHeadersInput() {
+    return this._secretVersionsForRequestHeaders.internalValue;
+  }
+}
+export interface GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfig {
+  /**
+  * The client ID provided by the 3rd party platform.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#client_id GoogleDialogflowCxWebhook#client_id}
+  */
+  readonly clientId: string;
+  /**
+  * The client secret provided by the 3rd party platform.  If the
+  * 'secret_version_for_client_secret' field is set, this field will be
+  * ignored.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#client_secret GoogleDialogflowCxWebhook#client_secret}
+  */
+  readonly clientSecret?: string;
+  /**
+  * The OAuth scopes to grant.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#scopes GoogleDialogflowCxWebhook#scopes}
+  */
+  readonly scopes?: string[];
+  /**
+  * The name of the SecretManager secret version resource storing the
+  * client secret. If this field is set, the 'client_secret' field will be
+  * ignored.
+  * Format: 'projects/{project}/secrets/{secret}/versions/{version}'
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#secret_version_for_client_secret GoogleDialogflowCxWebhook#secret_version_for_client_secret}
+  */
+  readonly secretVersionForClientSecret?: string;
+  /**
+  * The token endpoint provided by the 3rd party platform to exchange an
+  * access token.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#token_endpoint GoogleDialogflowCxWebhook#token_endpoint}
+  */
+  readonly tokenEndpoint: string;
+}
+
+export function googleDialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfigToTerraform(struct?: GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfigOutputReference | GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    client_id: cdktf.stringToTerraform(struct!.clientId),
+    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
+    scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.scopes),
+    secret_version_for_client_secret: cdktf.stringToTerraform(struct!.secretVersionForClientSecret),
+    token_endpoint: cdktf.stringToTerraform(struct!.tokenEndpoint),
+  }
+}
+
+
+export function googleDialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfigToHclTerraform(struct?: GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfigOutputReference | GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    client_id: {
+      value: cdktf.stringToHclTerraform(struct!.clientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_secret: {
+      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    scopes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.scopes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    secret_version_for_client_secret: {
+      value: cdktf.stringToHclTerraform(struct!.secretVersionForClientSecret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    token_endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.tokenEndpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._clientId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientId = this._clientId;
+    }
+    if (this._clientSecret !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientSecret = this._clientSecret;
+    }
+    if (this._scopes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scopes = this._scopes;
+    }
+    if (this._secretVersionForClientSecret !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secretVersionForClientSecret = this._secretVersionForClientSecret;
+    }
+    if (this._tokenEndpoint !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tokenEndpoint = this._tokenEndpoint;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._clientId = undefined;
+      this._clientSecret = undefined;
+      this._scopes = undefined;
+      this._secretVersionForClientSecret = undefined;
+      this._tokenEndpoint = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._clientId = value.clientId;
+      this._clientSecret = value.clientSecret;
+      this._scopes = value.scopes;
+      this._secretVersionForClientSecret = value.secretVersionForClientSecret;
+      this._tokenEndpoint = value.tokenEndpoint;
+    }
+  }
+
+  // client_id - computed: false, optional: false, required: true
+  private _clientId?: string; 
+  public get clientId() {
+    return this.getStringAttribute('client_id');
+  }
+  public set clientId(value: string) {
+    this._clientId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientIdInput() {
+    return this._clientId;
+  }
+
+  // client_secret - computed: false, optional: true, required: false
+  private _clientSecret?: string; 
+  public get clientSecret() {
+    return this.getStringAttribute('client_secret');
+  }
+  public set clientSecret(value: string) {
+    this._clientSecret = value;
+  }
+  public resetClientSecret() {
+    this._clientSecret = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientSecretInput() {
+    return this._clientSecret;
+  }
+
+  // scopes - computed: false, optional: true, required: false
+  private _scopes?: string[]; 
+  public get scopes() {
+    return this.getListAttribute('scopes');
+  }
+  public set scopes(value: string[]) {
+    this._scopes = value;
+  }
+  public resetScopes() {
+    this._scopes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scopesInput() {
+    return this._scopes;
+  }
+
+  // secret_version_for_client_secret - computed: false, optional: true, required: false
+  private _secretVersionForClientSecret?: string; 
+  public get secretVersionForClientSecret() {
+    return this.getStringAttribute('secret_version_for_client_secret');
+  }
+  public set secretVersionForClientSecret(value: string) {
+    this._secretVersionForClientSecret = value;
+  }
+  public resetSecretVersionForClientSecret() {
+    this._secretVersionForClientSecret = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretVersionForClientSecretInput() {
+    return this._secretVersionForClientSecret;
+  }
+
+  // token_endpoint - computed: false, optional: false, required: true
+  private _tokenEndpoint?: string; 
+  public get tokenEndpoint() {
+    return this.getStringAttribute('token_endpoint');
+  }
+  public set tokenEndpoint(value: string) {
+    this._tokenEndpoint = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tokenEndpointInput() {
+    return this._tokenEndpoint;
+  }
+}
+export interface GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaders {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#key GoogleDialogflowCxWebhook#key}
+  */
+  readonly key: string;
+  /**
+  * The SecretManager secret version resource storing the header value.
+  * Format: 'projects/{project}/secrets/{secret}/versions/{version}'
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#secret_version GoogleDialogflowCxWebhook#secret_version}
+  */
+  readonly secretVersion: string;
+}
+
+export function googleDialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersToTerraform(struct?: GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaders | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktf.stringToTerraform(struct!.key),
+    secret_version: cdktf.stringToTerraform(struct!.secretVersion),
+  }
+}
+
+
+export function googleDialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersToHclTerraform(struct?: GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaders | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    secret_version: {
+      value: cdktf.stringToHclTerraform(struct!.secretVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaders | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._secretVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secretVersion = this._secretVersion;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaders | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._key = undefined;
+      this._secretVersion = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._key = value.key;
+      this._secretVersion = value.secretVersion;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // secret_version - computed: false, optional: false, required: true
+  private _secretVersion?: string; 
+  public get secretVersion() {
+    return this.getStringAttribute('secret_version');
+  }
+  public set secretVersion(value: string) {
+    this._secretVersion = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretVersionInput() {
+    return this._secretVersion;
+  }
+}
+
+export class GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersList extends cdktf.ComplexList {
+  public internalValue? : GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaders[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersOutputReference {
+    return new GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface GoogleDialogflowCxWebhookServiceDirectoryGenericWebService {
   /**
-  * Specifies a list of allowed custom CA certificates (in DER format) for HTTPS verification.
+  * Specifies a list of allowed custom CA certificates (in DER format) for
+  * HTTPS verification. This overrides the default SSL trust store. If this
+  * is empty or unspecified, Dialogflow will use Google's default trust store
+  * to verify certificates.
+  * N.B. Make sure the HTTPS server certificates are signed with "subject alt
+  * name". For instance a certificate can be self-signed using the following
+  * command,
+  * openssl x509 -req -days 200 -in example.com.csr \
+  * -signkey example.com.key \
+  * -out example.com.crt \
+  * -extfile <(printf "\nsubjectAltName='DNS:www.example.com'")
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dialogflow_cx_webhook#allowed_ca_certs GoogleDialogflowCxWebhook#allowed_ca_certs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#allowed_ca_certs GoogleDialogflowCxWebhook#allowed_ca_certs}
   */
   readonly allowedCaCerts?: string[];
   /**
+  * HTTP method for the flexible webhook calls. Standard webhook always uses
+  * POST. Possible values: ["POST", "GET", "HEAD", "PUT", "DELETE", "PATCH", "OPTIONS"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#http_method GoogleDialogflowCxWebhook#http_method}
+  */
+  readonly httpMethod?: string;
+  /**
+  * Maps the values extracted from specific fields of the flexible webhook
+  * response into session parameters.
+  * - Key: session parameter name
+  * - Value: field path in the webhook response
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#parameter_mapping GoogleDialogflowCxWebhook#parameter_mapping}
+  */
+  readonly parameterMapping?: { [key: string]: string };
+  /**
+  * Defines a custom JSON object as request body to send to flexible webhook.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#request_body GoogleDialogflowCxWebhook#request_body}
+  */
+  readonly requestBody?: string;
+  /**
   * The HTTP request headers to send together with webhook requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dialogflow_cx_webhook#request_headers GoogleDialogflowCxWebhook#request_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#request_headers GoogleDialogflowCxWebhook#request_headers}
   */
   readonly requestHeaders?: { [key: string]: string };
   /**
-  * Whether to use speech adaptation for speech recognition.
+  * The SecretManager secret version resource storing the username:password
+  * pair for HTTP Basic authentication.
+  * Format: 'projects/{project}/secrets/{secret}/versions/{version}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dialogflow_cx_webhook#uri GoogleDialogflowCxWebhook#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#secret_version_for_username_password GoogleDialogflowCxWebhook#secret_version_for_username_password}
+  */
+  readonly secretVersionForUsernamePassword?: string;
+  /**
+  * Indicate the auth token type generated from the [Diglogflow service
+  * agent](https://cloud.google.com/iam/docs/service-agents#dialogflow-service-agent).
+  * The generated token is sent in the Authorization header. Possible values: ["NONE", "ID_TOKEN", "ACCESS_TOKEN"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#service_agent_auth GoogleDialogflowCxWebhook#service_agent_auth}
+  */
+  readonly serviceAgentAuth?: string;
+  /**
+  * The webhook URI for receiving POST requests. It must use https protocol.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#uri GoogleDialogflowCxWebhook#uri}
   */
   readonly uri: string;
+  /**
+  * Type of the webhook. Possible values: ["STANDARD", "FLEXIBLE"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#webhook_type GoogleDialogflowCxWebhook#webhook_type}
+  */
+  readonly webhookType?: string;
+  /**
+  * oauth_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#oauth_config GoogleDialogflowCxWebhook#oauth_config}
+  */
+  readonly oauthConfig?: GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfig;
+  /**
+  * secret_versions_for_request_headers block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#secret_versions_for_request_headers GoogleDialogflowCxWebhook#secret_versions_for_request_headers}
+  */
+  readonly secretVersionsForRequestHeaders?: GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaders[] | cdktf.IResolvable;
 }
 
 export function googleDialogflowCxWebhookServiceDirectoryGenericWebServiceToTerraform(struct?: GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference | GoogleDialogflowCxWebhookServiceDirectoryGenericWebService): any {
@@ -262,8 +1370,16 @@ export function googleDialogflowCxWebhookServiceDirectoryGenericWebServiceToTerr
   }
   return {
     allowed_ca_certs: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedCaCerts),
+    http_method: cdktf.stringToTerraform(struct!.httpMethod),
+    parameter_mapping: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.parameterMapping),
+    request_body: cdktf.stringToTerraform(struct!.requestBody),
     request_headers: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.requestHeaders),
+    secret_version_for_username_password: cdktf.stringToTerraform(struct!.secretVersionForUsernamePassword),
+    service_agent_auth: cdktf.stringToTerraform(struct!.serviceAgentAuth),
     uri: cdktf.stringToTerraform(struct!.uri),
+    webhook_type: cdktf.stringToTerraform(struct!.webhookType),
+    oauth_config: googleDialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfigToTerraform(struct!.oauthConfig),
+    secret_versions_for_request_headers: cdktf.listMapper(googleDialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersToTerraform, true)(struct!.secretVersionsForRequestHeaders),
   }
 }
 
@@ -280,17 +1396,65 @@ export function googleDialogflowCxWebhookServiceDirectoryGenericWebServiceToHclT
       type: "list",
       storageClassType: "stringList",
     },
+    http_method: {
+      value: cdktf.stringToHclTerraform(struct!.httpMethod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameter_mapping: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.parameterMapping),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    request_body: {
+      value: cdktf.stringToHclTerraform(struct!.requestBody),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     request_headers: {
       value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.requestHeaders),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
+    secret_version_for_username_password: {
+      value: cdktf.stringToHclTerraform(struct!.secretVersionForUsernamePassword),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service_agent_auth: {
+      value: cdktf.stringToHclTerraform(struct!.serviceAgentAuth),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     uri: {
       value: cdktf.stringToHclTerraform(struct!.uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    webhook_type: {
+      value: cdktf.stringToHclTerraform(struct!.webhookType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oauth_config: {
+      value: googleDialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfigToHclTerraform(struct!.oauthConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfigList",
+    },
+    secret_versions_for_request_headers: {
+      value: cdktf.listMapperHcl(googleDialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersToHclTerraform, true)(struct!.secretVersionsForRequestHeaders),
+      isBlock: true,
+      type: "set",
+      storageClassType: "GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersList",
     },
   };
 
@@ -316,13 +1480,45 @@ export class GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputRef
       hasAnyValues = true;
       internalValueResult.allowedCaCerts = this._allowedCaCerts;
     }
+    if (this._httpMethod !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpMethod = this._httpMethod;
+    }
+    if (this._parameterMapping !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameterMapping = this._parameterMapping;
+    }
+    if (this._requestBody !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.requestBody = this._requestBody;
+    }
     if (this._requestHeaders !== undefined) {
       hasAnyValues = true;
       internalValueResult.requestHeaders = this._requestHeaders;
     }
+    if (this._secretVersionForUsernamePassword !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secretVersionForUsernamePassword = this._secretVersionForUsernamePassword;
+    }
+    if (this._serviceAgentAuth !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serviceAgentAuth = this._serviceAgentAuth;
+    }
     if (this._uri !== undefined) {
       hasAnyValues = true;
       internalValueResult.uri = this._uri;
+    }
+    if (this._webhookType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.webhookType = this._webhookType;
+    }
+    if (this._oauthConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.oauthConfig = this._oauthConfig?.internalValue;
+    }
+    if (this._secretVersionsForRequestHeaders?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secretVersionsForRequestHeaders = this._secretVersionsForRequestHeaders?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -331,14 +1527,30 @@ export class GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputRef
     if (value === undefined) {
       this.isEmptyObject = false;
       this._allowedCaCerts = undefined;
+      this._httpMethod = undefined;
+      this._parameterMapping = undefined;
+      this._requestBody = undefined;
       this._requestHeaders = undefined;
+      this._secretVersionForUsernamePassword = undefined;
+      this._serviceAgentAuth = undefined;
       this._uri = undefined;
+      this._webhookType = undefined;
+      this._oauthConfig.internalValue = undefined;
+      this._secretVersionsForRequestHeaders.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._allowedCaCerts = value.allowedCaCerts;
+      this._httpMethod = value.httpMethod;
+      this._parameterMapping = value.parameterMapping;
+      this._requestBody = value.requestBody;
       this._requestHeaders = value.requestHeaders;
+      this._secretVersionForUsernamePassword = value.secretVersionForUsernamePassword;
+      this._serviceAgentAuth = value.serviceAgentAuth;
       this._uri = value.uri;
+      this._webhookType = value.webhookType;
+      this._oauthConfig.internalValue = value.oauthConfig;
+      this._secretVersionsForRequestHeaders.internalValue = value.secretVersionsForRequestHeaders;
     }
   }
 
@@ -358,6 +1570,54 @@ export class GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputRef
     return this._allowedCaCerts;
   }
 
+  // http_method - computed: false, optional: true, required: false
+  private _httpMethod?: string; 
+  public get httpMethod() {
+    return this.getStringAttribute('http_method');
+  }
+  public set httpMethod(value: string) {
+    this._httpMethod = value;
+  }
+  public resetHttpMethod() {
+    this._httpMethod = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpMethodInput() {
+    return this._httpMethod;
+  }
+
+  // parameter_mapping - computed: false, optional: true, required: false
+  private _parameterMapping?: { [key: string]: string }; 
+  public get parameterMapping() {
+    return this.getStringMapAttribute('parameter_mapping');
+  }
+  public set parameterMapping(value: { [key: string]: string }) {
+    this._parameterMapping = value;
+  }
+  public resetParameterMapping() {
+    this._parameterMapping = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterMappingInput() {
+    return this._parameterMapping;
+  }
+
+  // request_body - computed: false, optional: true, required: false
+  private _requestBody?: string; 
+  public get requestBody() {
+    return this.getStringAttribute('request_body');
+  }
+  public set requestBody(value: string) {
+    this._requestBody = value;
+  }
+  public resetRequestBody() {
+    this._requestBody = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requestBodyInput() {
+    return this._requestBody;
+  }
+
   // request_headers - computed: false, optional: true, required: false
   private _requestHeaders?: { [key: string]: string }; 
   public get requestHeaders() {
@@ -374,6 +1634,38 @@ export class GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputRef
     return this._requestHeaders;
   }
 
+  // secret_version_for_username_password - computed: false, optional: true, required: false
+  private _secretVersionForUsernamePassword?: string; 
+  public get secretVersionForUsernamePassword() {
+    return this.getStringAttribute('secret_version_for_username_password');
+  }
+  public set secretVersionForUsernamePassword(value: string) {
+    this._secretVersionForUsernamePassword = value;
+  }
+  public resetSecretVersionForUsernamePassword() {
+    this._secretVersionForUsernamePassword = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretVersionForUsernamePasswordInput() {
+    return this._secretVersionForUsernamePassword;
+  }
+
+  // service_agent_auth - computed: false, optional: true, required: false
+  private _serviceAgentAuth?: string; 
+  public get serviceAgentAuth() {
+    return this.getStringAttribute('service_agent_auth');
+  }
+  public set serviceAgentAuth(value: string) {
+    this._serviceAgentAuth = value;
+  }
+  public resetServiceAgentAuth() {
+    this._serviceAgentAuth = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceAgentAuthInput() {
+    return this._serviceAgentAuth;
+  }
+
   // uri - computed: false, optional: false, required: true
   private _uri?: string; 
   public get uri() {
@@ -386,20 +1678,68 @@ export class GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputRef
   public get uriInput() {
     return this._uri;
   }
+
+  // webhook_type - computed: false, optional: true, required: false
+  private _webhookType?: string; 
+  public get webhookType() {
+    return this.getStringAttribute('webhook_type');
+  }
+  public set webhookType(value: string) {
+    this._webhookType = value;
+  }
+  public resetWebhookType() {
+    this._webhookType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get webhookTypeInput() {
+    return this._webhookType;
+  }
+
+  // oauth_config - computed: false, optional: true, required: false
+  private _oauthConfig = new GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfigOutputReference(this, "oauth_config");
+  public get oauthConfig() {
+    return this._oauthConfig;
+  }
+  public putOauthConfig(value: GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfig) {
+    this._oauthConfig.internalValue = value;
+  }
+  public resetOauthConfig() {
+    this._oauthConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oauthConfigInput() {
+    return this._oauthConfig.internalValue;
+  }
+
+  // secret_versions_for_request_headers - computed: false, optional: true, required: false
+  private _secretVersionsForRequestHeaders = new GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersList(this, "secret_versions_for_request_headers", true);
+  public get secretVersionsForRequestHeaders() {
+    return this._secretVersionsForRequestHeaders;
+  }
+  public putSecretVersionsForRequestHeaders(value: GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaders[] | cdktf.IResolvable) {
+    this._secretVersionsForRequestHeaders.internalValue = value;
+  }
+  public resetSecretVersionsForRequestHeaders() {
+    this._secretVersionsForRequestHeaders.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretVersionsForRequestHeadersInput() {
+    return this._secretVersionsForRequestHeaders.internalValue;
+  }
 }
 export interface GoogleDialogflowCxWebhookServiceDirectory {
   /**
   * The name of Service Directory service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dialogflow_cx_webhook#service GoogleDialogflowCxWebhook#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#service GoogleDialogflowCxWebhook#service}
   */
   readonly service: string;
   /**
   * generic_web_service block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dialogflow_cx_webhook#generic_web_service GoogleDialogflowCxWebhook#generic_web_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#generic_web_service GoogleDialogflowCxWebhook#generic_web_service}
   */
-  readonly genericWebService: GoogleDialogflowCxWebhookServiceDirectoryGenericWebService;
+  readonly genericWebService?: GoogleDialogflowCxWebhookServiceDirectoryGenericWebService;
 }
 
 export function googleDialogflowCxWebhookServiceDirectoryToTerraform(struct?: GoogleDialogflowCxWebhookServiceDirectoryOutputReference | GoogleDialogflowCxWebhookServiceDirectory): any {
@@ -489,13 +1829,16 @@ export class GoogleDialogflowCxWebhookServiceDirectoryOutputReference extends cd
     return this._service;
   }
 
-  // generic_web_service - computed: false, optional: false, required: true
+  // generic_web_service - computed: false, optional: true, required: false
   private _genericWebService = new GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference(this, "generic_web_service");
   public get genericWebService() {
     return this._genericWebService;
   }
   public putGenericWebService(value: GoogleDialogflowCxWebhookServiceDirectoryGenericWebService) {
     this._genericWebService.internalValue = value;
+  }
+  public resetGenericWebService() {
+    this._genericWebService.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get genericWebServiceInput() {
@@ -504,15 +1847,15 @@ export class GoogleDialogflowCxWebhookServiceDirectoryOutputReference extends cd
 }
 export interface GoogleDialogflowCxWebhookTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dialogflow_cx_webhook#create GoogleDialogflowCxWebhook#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#create GoogleDialogflowCxWebhook#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dialogflow_cx_webhook#delete GoogleDialogflowCxWebhook#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#delete GoogleDialogflowCxWebhook#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dialogflow_cx_webhook#update GoogleDialogflowCxWebhook#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#update GoogleDialogflowCxWebhook#update}
   */
   readonly update?: string;
 }
@@ -664,7 +2007,7 @@ export class GoogleDialogflowCxWebhookTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dialogflow_cx_webhook google_dialogflow_cx_webhook}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook google_dialogflow_cx_webhook}
 */
 export class GoogleDialogflowCxWebhook extends cdktf.TerraformResource {
 
@@ -680,7 +2023,7 @@ export class GoogleDialogflowCxWebhook extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleDialogflowCxWebhook resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleDialogflowCxWebhook to import
-  * @param importFromId The id of the existing GoogleDialogflowCxWebhook that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dialogflow_cx_webhook#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleDialogflowCxWebhook that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleDialogflowCxWebhook to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -692,7 +2035,7 @@ export class GoogleDialogflowCxWebhook extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dialogflow_cx_webhook google_dialogflow_cx_webhook} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook google_dialogflow_cx_webhook} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -703,7 +2046,7 @@ export class GoogleDialogflowCxWebhook extends cdktf.TerraformResource {
       terraformResourceType: 'google_dialogflow_cx_webhook',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.44.0',
+        providerVersion: '6.45.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

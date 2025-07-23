@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_wire_group
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_wire_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface GoogleComputeWireGroupConfig extends cdktf.TerraformMetaArgumen
   /**
   * Indicates whether the wire group is administratively enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_wire_group#admin_enabled GoogleComputeWireGroup#admin_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_wire_group#admin_enabled GoogleComputeWireGroup#admin_enabled}
   */
   readonly adminEnabled?: boolean | cdktf.IResolvable;
   /**
   * Required cross site network to which wire group belongs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_wire_group#cross_site_network GoogleComputeWireGroup#cross_site_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_wire_group#cross_site_network GoogleComputeWireGroup#cross_site_network}
   */
   readonly crossSiteNetwork: string;
   /**
   * An optional description of this resource. Provide this property when you create the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_wire_group#description GoogleComputeWireGroup#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_wire_group#description GoogleComputeWireGroup#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_wire_group#id GoogleComputeWireGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_wire_group#id GoogleComputeWireGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,35 +44,35 @@ export interface GoogleComputeWireGroupConfig extends cdktf.TerraformMetaArgumen
   * character must be a lowercase letter, and all following characters must be a dash,
   * lowercase letter, or digit, except the last character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_wire_group#name GoogleComputeWireGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_wire_group#name GoogleComputeWireGroup#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_wire_group#project GoogleComputeWireGroup#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_wire_group#project GoogleComputeWireGroup#project}
   */
   readonly project?: string;
   /**
   * endpoints block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_wire_group#endpoints GoogleComputeWireGroup#endpoints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_wire_group#endpoints GoogleComputeWireGroup#endpoints}
   */
   readonly endpoints?: GoogleComputeWireGroupEndpoints[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_wire_group#timeouts GoogleComputeWireGroup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_wire_group#timeouts GoogleComputeWireGroup#timeouts}
   */
   readonly timeouts?: GoogleComputeWireGroupTimeouts;
   /**
   * wire_group_properties block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_wire_group#wire_group_properties GoogleComputeWireGroup#wire_group_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_wire_group#wire_group_properties GoogleComputeWireGroup#wire_group_properties}
   */
   readonly wireGroupProperties?: GoogleComputeWireGroupWireGroupProperties;
   /**
   * wire_properties block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_wire_group#wire_properties GoogleComputeWireGroup#wire_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_wire_group#wire_properties GoogleComputeWireGroup#wire_properties}
   */
   readonly wireProperties?: GoogleComputeWireGroupWireProperties;
 }
@@ -486,17 +486,17 @@ export class GoogleComputeWireGroupWiresList extends cdktf.ComplexList {
 }
 export interface GoogleComputeWireGroupEndpointsInterconnects {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_wire_group#interconnect GoogleComputeWireGroup#interconnect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_wire_group#interconnect GoogleComputeWireGroup#interconnect}
   */
   readonly interconnect?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_wire_group#interconnect_name GoogleComputeWireGroup#interconnect_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_wire_group#interconnect_name GoogleComputeWireGroup#interconnect_name}
   */
   readonly interconnectName: string;
   /**
   * VLAN tags for the interconnect.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_wire_group#vlan_tags GoogleComputeWireGroup#vlan_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_wire_group#vlan_tags GoogleComputeWireGroup#vlan_tags}
   */
   readonly vlanTags?: number[];
 }
@@ -667,13 +667,13 @@ export class GoogleComputeWireGroupEndpointsInterconnectsList extends cdktf.Comp
 }
 export interface GoogleComputeWireGroupEndpoints {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_wire_group#endpoint GoogleComputeWireGroup#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_wire_group#endpoint GoogleComputeWireGroup#endpoint}
   */
   readonly endpoint: string;
   /**
   * interconnects block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_wire_group#interconnects GoogleComputeWireGroup#interconnects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_wire_group#interconnects GoogleComputeWireGroup#interconnects}
   */
   readonly interconnects?: GoogleComputeWireGroupEndpointsInterconnects[] | cdktf.IResolvable;
 }
@@ -815,15 +815,15 @@ export class GoogleComputeWireGroupEndpointsList extends cdktf.ComplexList {
 }
 export interface GoogleComputeWireGroupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_wire_group#create GoogleComputeWireGroup#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_wire_group#create GoogleComputeWireGroup#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_wire_group#delete GoogleComputeWireGroup#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_wire_group#delete GoogleComputeWireGroup#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_wire_group#update GoogleComputeWireGroup#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_wire_group#update GoogleComputeWireGroup#update}
   */
   readonly update?: string;
 }
@@ -980,7 +980,7 @@ export interface GoogleComputeWireGroupWireGroupProperties {
   * REDUNDANT: two pseudowires over four Interconnect connections, with two connections in one metro and two connections in another metro.
   * BOX_AND_CROSS: four pseudowires over four Interconnect connections, with two connections in one metro and two connections in another metro.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_wire_group#type GoogleComputeWireGroup#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_wire_group#type GoogleComputeWireGroup#type}
   */
   readonly type?: string;
 }
@@ -1066,7 +1066,7 @@ export interface GoogleComputeWireGroupWireProperties {
   /**
   * The unmetered bandwidth setting.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_wire_group#bandwidth_unmetered GoogleComputeWireGroup#bandwidth_unmetered}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_wire_group#bandwidth_unmetered GoogleComputeWireGroup#bandwidth_unmetered}
   */
   readonly bandwidthUnmetered?: number;
   /**
@@ -1074,7 +1074,7 @@ export interface GoogleComputeWireGroupWireProperties {
   * NONE: default.
   * DISABLE_PORT: set the port line protocol down when inline probes detect a fault. This setting is only permitted on port mode pseudowires.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_wire_group#fault_response GoogleComputeWireGroup#fault_response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_wire_group#fault_response GoogleComputeWireGroup#fault_response}
   */
   readonly faultResponse?: string;
 }
@@ -1187,7 +1187,7 @@ export class GoogleComputeWireGroupWirePropertiesOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_wire_group google_compute_wire_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_wire_group google_compute_wire_group}
 */
 export class GoogleComputeWireGroup extends cdktf.TerraformResource {
 
@@ -1203,7 +1203,7 @@ export class GoogleComputeWireGroup extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleComputeWireGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleComputeWireGroup to import
-  * @param importFromId The id of the existing GoogleComputeWireGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_wire_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleComputeWireGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_wire_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleComputeWireGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1215,7 +1215,7 @@ export class GoogleComputeWireGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_wire_group google_compute_wire_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_wire_group google_compute_wire_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1226,7 +1226,7 @@ export class GoogleComputeWireGroup extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_wire_group',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.44.0',
+        providerVersion: '6.45.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
