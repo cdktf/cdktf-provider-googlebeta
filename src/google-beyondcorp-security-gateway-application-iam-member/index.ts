@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_beyondcorp_security_gateway_application_iam_member
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_beyondcorp_security_gateway_application_iam_member
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +13,50 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleBeyondcorpSecurityGatewayApplicationIamMemberConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_beyondcorp_security_gateway_application_iam_member#application_id GoogleBeyondcorpSecurityGatewayApplicationIamMember#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_beyondcorp_security_gateway_application_iam_member#application_id GoogleBeyondcorpSecurityGatewayApplicationIamMember#application_id}
   */
   readonly applicationId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_beyondcorp_security_gateway_application_iam_member#id GoogleBeyondcorpSecurityGatewayApplicationIamMember#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_beyondcorp_security_gateway_application_iam_member#id GoogleBeyondcorpSecurityGatewayApplicationIamMember#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_beyondcorp_security_gateway_application_iam_member#member GoogleBeyondcorpSecurityGatewayApplicationIamMember#member}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_beyondcorp_security_gateway_application_iam_member#member GoogleBeyondcorpSecurityGatewayApplicationIamMember#member}
   */
   readonly member: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_beyondcorp_security_gateway_application_iam_member#project GoogleBeyondcorpSecurityGatewayApplicationIamMember#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_beyondcorp_security_gateway_application_iam_member#project GoogleBeyondcorpSecurityGatewayApplicationIamMember#project}
   */
   readonly project?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_beyondcorp_security_gateway_application_iam_member#role GoogleBeyondcorpSecurityGatewayApplicationIamMember#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_beyondcorp_security_gateway_application_iam_member#role GoogleBeyondcorpSecurityGatewayApplicationIamMember#role}
   */
   readonly role: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_beyondcorp_security_gateway_application_iam_member#security_gateway_id GoogleBeyondcorpSecurityGatewayApplicationIamMember#security_gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_beyondcorp_security_gateway_application_iam_member#security_gateway_id GoogleBeyondcorpSecurityGatewayApplicationIamMember#security_gateway_id}
   */
   readonly securityGatewayId: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_beyondcorp_security_gateway_application_iam_member#condition GoogleBeyondcorpSecurityGatewayApplicationIamMember#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_beyondcorp_security_gateway_application_iam_member#condition GoogleBeyondcorpSecurityGatewayApplicationIamMember#condition}
   */
   readonly condition?: GoogleBeyondcorpSecurityGatewayApplicationIamMemberCondition;
 }
 export interface GoogleBeyondcorpSecurityGatewayApplicationIamMemberCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_beyondcorp_security_gateway_application_iam_member#description GoogleBeyondcorpSecurityGatewayApplicationIamMember#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_beyondcorp_security_gateway_application_iam_member#description GoogleBeyondcorpSecurityGatewayApplicationIamMember#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_beyondcorp_security_gateway_application_iam_member#expression GoogleBeyondcorpSecurityGatewayApplicationIamMember#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_beyondcorp_security_gateway_application_iam_member#expression GoogleBeyondcorpSecurityGatewayApplicationIamMember#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_beyondcorp_security_gateway_application_iam_member#title GoogleBeyondcorpSecurityGatewayApplicationIamMember#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_beyondcorp_security_gateway_application_iam_member#title GoogleBeyondcorpSecurityGatewayApplicationIamMember#title}
   */
   readonly title: string;
 }
@@ -192,7 +192,7 @@ export class GoogleBeyondcorpSecurityGatewayApplicationIamMemberConditionOutputR
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_beyondcorp_security_gateway_application_iam_member google_beyondcorp_security_gateway_application_iam_member}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_beyondcorp_security_gateway_application_iam_member google_beyondcorp_security_gateway_application_iam_member}
 */
 export class GoogleBeyondcorpSecurityGatewayApplicationIamMember extends cdktf.TerraformResource {
 
@@ -208,7 +208,7 @@ export class GoogleBeyondcorpSecurityGatewayApplicationIamMember extends cdktf.T
   * Generates CDKTF code for importing a GoogleBeyondcorpSecurityGatewayApplicationIamMember resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleBeyondcorpSecurityGatewayApplicationIamMember to import
-  * @param importFromId The id of the existing GoogleBeyondcorpSecurityGatewayApplicationIamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_beyondcorp_security_gateway_application_iam_member#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleBeyondcorpSecurityGatewayApplicationIamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_beyondcorp_security_gateway_application_iam_member#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleBeyondcorpSecurityGatewayApplicationIamMember to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -220,7 +220,7 @@ export class GoogleBeyondcorpSecurityGatewayApplicationIamMember extends cdktf.T
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_beyondcorp_security_gateway_application_iam_member google_beyondcorp_security_gateway_application_iam_member} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_beyondcorp_security_gateway_application_iam_member google_beyondcorp_security_gateway_application_iam_member} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -231,7 +231,7 @@ export class GoogleBeyondcorpSecurityGatewayApplicationIamMember extends cdktf.T
       terraformResourceType: 'google_beyondcorp_security_gateway_application_iam_member',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.46.0',
+        providerVersion: '6.47.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -1,3 +1,3 @@
 # `google_dialogflow_cx_generative_settings`
 
-Refer to the Terraform Registry for docs: [`google_dialogflow_cx_generative_settings`](https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_dialogflow_cx_generative_settings).
+Refer to the Terraform Registry for docs: [`google_dialogflow_cx_generative_settings`](https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_dialogflow_cx_generative_settings).
