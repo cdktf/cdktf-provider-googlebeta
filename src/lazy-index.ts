@@ -69,6 +69,7 @@ Object.defineProperty(exports, 'googleApigeeKeystoresAliasesPkcs12', { get: func
 Object.defineProperty(exports, 'googleApigeeKeystoresAliasesSelfSignedCert', { get: function () { return require('./google-apigee-keystores-aliases-self-signed-cert'); } });
 Object.defineProperty(exports, 'googleApigeeNatAddress', { get: function () { return require('./google-apigee-nat-address'); } });
 Object.defineProperty(exports, 'googleApigeeOrganization', { get: function () { return require('./google-apigee-organization'); } });
+Object.defineProperty(exports, 'googleApigeeSecurityAction', { get: function () { return require('./google-apigee-security-action'); } });
 Object.defineProperty(exports, 'googleApigeeSecurityMonitoringCondition', { get: function () { return require('./google-apigee-security-monitoring-condition'); } });
 Object.defineProperty(exports, 'googleApigeeSecurityProfileV2', { get: function () { return require('./google-apigee-security-profile-v2'); } });
 Object.defineProperty(exports, 'googleApigeeSharedflow', { get: function () { return require('./google-apigee-sharedflow'); } });
@@ -567,6 +568,7 @@ Object.defineProperty(exports, 'googleDeploymentManagerDeployment', { get: funct
 Object.defineProperty(exports, 'googleDeveloperConnectAccountConnector', { get: function () { return require('./google-developer-connect-account-connector'); } });
 Object.defineProperty(exports, 'googleDeveloperConnectConnection', { get: function () { return require('./google-developer-connect-connection'); } });
 Object.defineProperty(exports, 'googleDeveloperConnectGitRepositoryLink', { get: function () { return require('./google-developer-connect-git-repository-link'); } });
+Object.defineProperty(exports, 'googleDeveloperConnectInsightsConfig', { get: function () { return require('./google-developer-connect-insights-config'); } });
 Object.defineProperty(exports, 'googleDialogflowAgent', { get: function () { return require('./google-dialogflow-agent'); } });
 Object.defineProperty(exports, 'googleDialogflowCxAgent', { get: function () { return require('./google-dialogflow-cx-agent'); } });
 Object.defineProperty(exports, 'googleDialogflowCxEntityType', { get: function () { return require('./google-dialogflow-cx-entity-type'); } });
@@ -586,6 +588,7 @@ Object.defineProperty(exports, 'googleDialogflowEntityType', { get: function () 
 Object.defineProperty(exports, 'googleDialogflowFulfillment', { get: function () { return require('./google-dialogflow-fulfillment'); } });
 Object.defineProperty(exports, 'googleDialogflowIntent', { get: function () { return require('./google-dialogflow-intent'); } });
 Object.defineProperty(exports, 'googleDiscoveryEngineChatEngine', { get: function () { return require('./google-discovery-engine-chat-engine'); } });
+Object.defineProperty(exports, 'googleDiscoveryEngineCmekConfig', { get: function () { return require('./google-discovery-engine-cmek-config'); } });
 Object.defineProperty(exports, 'googleDiscoveryEngineDataStore', { get: function () { return require('./google-discovery-engine-data-store'); } });
 Object.defineProperty(exports, 'googleDiscoveryEngineRecommendationEngine', { get: function () { return require('./google-discovery-engine-recommendation-engine'); } });
 Object.defineProperty(exports, 'googleDiscoveryEngineSchema', { get: function () { return require('./google-discovery-engine-schema'); } });
@@ -748,6 +751,9 @@ Object.defineProperty(exports, 'googleIamOrganizationsPolicyBinding', { get: fun
 Object.defineProperty(exports, 'googleIamPrincipalAccessBoundaryPolicy', { get: function () { return require('./google-iam-principal-access-boundary-policy'); } });
 Object.defineProperty(exports, 'googleIamProjectsPolicyBinding', { get: function () { return require('./google-iam-projects-policy-binding'); } });
 Object.defineProperty(exports, 'googleIamWorkforcePool', { get: function () { return require('./google-iam-workforce-pool'); } });
+Object.defineProperty(exports, 'googleIamWorkforcePoolIamBinding', { get: function () { return require('./google-iam-workforce-pool-iam-binding'); } });
+Object.defineProperty(exports, 'googleIamWorkforcePoolIamMember', { get: function () { return require('./google-iam-workforce-pool-iam-member'); } });
+Object.defineProperty(exports, 'googleIamWorkforcePoolIamPolicy', { get: function () { return require('./google-iam-workforce-pool-iam-policy'); } });
 Object.defineProperty(exports, 'googleIamWorkforcePoolProvider', { get: function () { return require('./google-iam-workforce-pool-provider'); } });
 Object.defineProperty(exports, 'googleIamWorkforcePoolProviderKey', { get: function () { return require('./google-iam-workforce-pool-provider-key'); } });
 Object.defineProperty(exports, 'googleIamWorkloadIdentityPool', { get: function () { return require('./google-iam-workload-identity-pool'); } });
@@ -1229,6 +1235,7 @@ Object.defineProperty(exports, 'dataGoogleApphubApplication', { get: function ()
 Object.defineProperty(exports, 'dataGoogleApphubDiscoveredService', { get: function () { return require('./data-google-apphub-discovered-service'); } });
 Object.defineProperty(exports, 'dataGoogleApphubDiscoveredWorkload', { get: function () { return require('./data-google-apphub-discovered-workload'); } });
 Object.defineProperty(exports, 'dataGoogleArtifactRegistryDockerImage', { get: function () { return require('./data-google-artifact-registry-docker-image'); } });
+Object.defineProperty(exports, 'dataGoogleArtifactRegistryDockerImages', { get: function () { return require('./data-google-artifact-registry-docker-images'); } });
 Object.defineProperty(exports, 'dataGoogleArtifactRegistryLocations', { get: function () { return require('./data-google-artifact-registry-locations'); } });
 Object.defineProperty(exports, 'dataGoogleArtifactRegistryRepository', { get: function () { return require('./data-google-artifact-registry-repository'); } });
 Object.defineProperty(exports, 'dataGoogleArtifactRegistryRepositoryIamPolicy', { get: function () { return require('./data-google-artifact-registry-repository-iam-policy'); } });
@@ -1432,6 +1439,7 @@ Object.defineProperty(exports, 'dataGoogleHealthcareHl7V2StoreIamPolicy', { get:
 Object.defineProperty(exports, 'dataGoogleIamPolicy', { get: function () { return require('./data-google-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleIamRole', { get: function () { return require('./data-google-iam-role'); } });
 Object.defineProperty(exports, 'dataGoogleIamTestablePermissions', { get: function () { return require('./data-google-iam-testable-permissions'); } });
+Object.defineProperty(exports, 'dataGoogleIamWorkforcePoolIamPolicy', { get: function () { return require('./data-google-iam-workforce-pool-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleIamWorkloadIdentityPool', { get: function () { return require('./data-google-iam-workload-identity-pool'); } });
 Object.defineProperty(exports, 'dataGoogleIamWorkloadIdentityPoolIamPolicy', { get: function () { return require('./data-google-iam-workload-identity-pool-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleIamWorkloadIdentityPoolProvider', { get: function () { return require('./data-google-iam-workload-identity-pool-provider'); } });
