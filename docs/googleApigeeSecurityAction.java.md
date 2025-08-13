@@ -4,7 +4,7 @@
 
 ### GoogleApigeeSecurityAction <a name="GoogleApigeeSecurityAction" id="@cdktf/provider-google-beta.googleApigeeSecurityAction.GoogleApigeeSecurityAction"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action google_apigee_security_action}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action google_apigee_security_action}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeSecurityAction.GoogleApigeeSecurityAction.Initializer"></a>
 
@@ -62,7 +62,7 @@ GoogleApigeeSecurityAction.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeSecurityAction.GoogleApigeeSecurityAction.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | An optional user provided description of the SecurityAction. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeSecurityAction.GoogleApigeeSecurityAction.Initializer.parameter.expireTime">expireTime</a></code> | <code>java.lang.String</code> | The expiration for this SecurityAction. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeSecurityAction.GoogleApigeeSecurityAction.Initializer.parameter.flag">flag</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApigeeSecurityAction.GoogleApigeeSecurityActionFlag">GoogleApigeeSecurityActionFlag</a></code> | flag block. |
-| <code><a href="#@cdktf/provider-google-beta.googleApigeeSecurityAction.GoogleApigeeSecurityAction.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#id GoogleApigeeSecurityAction#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeSecurityAction.GoogleApigeeSecurityAction.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#id GoogleApigeeSecurityAction#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeSecurityAction.GoogleApigeeSecurityAction.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApigeeSecurityAction.GoogleApigeeSecurityActionTimeouts">GoogleApigeeSecurityActionTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeSecurityAction.GoogleApigeeSecurityAction.Initializer.parameter.ttl">ttl</a></code> | <code>java.lang.String</code> | The TTL for this SecurityAction. A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s". |
 
@@ -134,7 +134,7 @@ Must be unique amongst siblings in the same scope
 
 condition_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#condition_config GoogleApigeeSecurityAction#condition_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#condition_config GoogleApigeeSecurityAction#condition_config}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Apigee environment that this security action applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#env_id GoogleApigeeSecurityAction#env_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#env_id GoogleApigeeSecurityAction#env_id}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The organization that this security action applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#org_id GoogleApigeeSecurityAction#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#org_id GoogleApigeeSecurityAction#org_id}
 
 ---
 
@@ -166,7 +166,7 @@ The ID to use for the SecurityAction, which will become the final component of t
 
 This value should be 0-61 characters, and valid format is (^a-z?$).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#security_action_id GoogleApigeeSecurityAction#security_action_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#security_action_id GoogleApigeeSecurityAction#security_action_id}
 
 ---
 
@@ -178,7 +178,7 @@ Only an ENABLED SecurityAction is enforced.
 
 An ENABLED SecurityAction past its expiration time will not be enforced. Possible values: ["ENABLED", "DISABLED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#state GoogleApigeeSecurityAction#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#state GoogleApigeeSecurityAction#state}
 
 ---
 
@@ -188,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 allow block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#allow GoogleApigeeSecurityAction#allow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#allow GoogleApigeeSecurityAction#allow}
 
 ---
 
@@ -203,7 +203,7 @@ list is deployed at the time of enforcement. If set, several restrictions are en
 There can be at most 100 enabled actions with proxies set in an env.
 Several other restrictions apply on conditions and are detailed later.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#api_proxies GoogleApigeeSecurityAction#api_proxies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#api_proxies GoogleApigeeSecurityAction#api_proxies}
 
 ---
 
@@ -213,7 +213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 deny block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#deny GoogleApigeeSecurityAction#deny}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#deny GoogleApigeeSecurityAction#deny}
 
 ---
 
@@ -223,7 +223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 An optional user provided description of the SecurityAction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#description GoogleApigeeSecurityAction#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#description GoogleApigeeSecurityAction#description}
 
 ---
 
@@ -237,7 +237,7 @@ Uses RFC 3339, where generated output will always be Z-normalized and uses 0, 3,
 fractional digits. Offsets other than "Z" are also accepted.
 Examples: "2014-10-02T15:01:23Z", "2014-10-02T15:01:23.045123456Z" or "2014-10-02T15:01:23+05:30".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#expire_time GoogleApigeeSecurityAction#expire_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#expire_time GoogleApigeeSecurityAction#expire_time}
 
 ---
 
@@ -247,7 +247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 flag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#flag GoogleApigeeSecurityAction#flag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#flag GoogleApigeeSecurityAction#flag}
 
 ---
 
@@ -255,7 +255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#id GoogleApigeeSecurityAction#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#id GoogleApigeeSecurityAction#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -268,7 +268,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#timeouts GoogleApigeeSecurityAction#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#timeouts GoogleApigeeSecurityAction#timeouts}
 
 ---
 
@@ -278,7 +278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The TTL for this SecurityAction. A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#ttl GoogleApigeeSecurityAction#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#ttl GoogleApigeeSecurityAction#ttl}
 
 ---
 
@@ -833,7 +833,7 @@ The construct id used in the generated config for the GoogleApigeeSecurityAction
 
 The id of the existing GoogleApigeeSecurityAction that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1420,7 +1420,7 @@ public java.util.List<java.lang.String> getAccessTokens();
 
 A list of accessTokens. Limit 1000 per action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#access_tokens GoogleApigeeSecurityAction#access_tokens}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#access_tokens GoogleApigeeSecurityAction#access_tokens}
 
 ---
 
@@ -1434,7 +1434,7 @@ public java.util.List<java.lang.String> getApiKeys();
 
 A list of API keys. Limit 1000 per action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#api_keys GoogleApigeeSecurityAction#api_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#api_keys GoogleApigeeSecurityAction#api_keys}
 
 ---
 
@@ -1448,7 +1448,7 @@ public java.util.List<java.lang.String> getApiProducts();
 
 A list of API Products. Limit 1000 per action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#api_products GoogleApigeeSecurityAction#api_products}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#api_products GoogleApigeeSecurityAction#api_products}
 
 ---
 
@@ -1462,7 +1462,7 @@ public java.util.List<java.lang.String> getAsns();
 
 A list of ASN numbers to act on, e.g. 23. https://en.wikipedia.org/wiki/Autonomous_system_(Internet) This uses int64 instead of uint32 because of https://linter.aip.dev/141/forbidden-types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#asns GoogleApigeeSecurityAction#asns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#asns GoogleApigeeSecurityAction#asns}
 
 ---
 
@@ -1480,7 +1480,7 @@ Current options: Flooder, Brute Guessor, Static Content Scraper,
 OAuth Abuser, Robot Abuser, TorListRule, Advanced Anomaly Detection, Advanced API Scraper,
 Search Engine Crawlers, Public Clouds, Public Cloud AWS, Public Cloud Azure, and Public Cloud Google.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#bot_reasons GoogleApigeeSecurityAction#bot_reasons}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#bot_reasons GoogleApigeeSecurityAction#bot_reasons}
 
 ---
 
@@ -1494,7 +1494,7 @@ public java.util.List<java.lang.String> getDeveloperApps();
 
 A list of developer apps. Limit 1000 per action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#developer_apps GoogleApigeeSecurityAction#developer_apps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#developer_apps GoogleApigeeSecurityAction#developer_apps}
 
 ---
 
@@ -1508,7 +1508,7 @@ public java.util.List<java.lang.String> getDevelopers();
 
 A list of developers. Limit 1000 per action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#developers GoogleApigeeSecurityAction#developers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#developers GoogleApigeeSecurityAction#developers}
 
 ---
 
@@ -1525,7 +1525,7 @@ Act only on particular HTTP methods.
 E.g. A read-only API can block POST/PUT/DELETE methods.
 Accepted values are: GET, HEAD, POST, PUT, DELETE, CONNECT, OPTIONS, TRACE and PATCH.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#http_methods GoogleApigeeSecurityAction#http_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#http_methods GoogleApigeeSecurityAction#http_methods}
 
 ---
 
@@ -1539,7 +1539,7 @@ public java.util.List<java.lang.String> getIpAddressRanges();
 
 A list of IP addresses. This could be either IPv4 or IPv6. Limited to 100 per action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#ip_address_ranges GoogleApigeeSecurityAction#ip_address_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#ip_address_ranges GoogleApigeeSecurityAction#ip_address_ranges}
 
 ---
 
@@ -1553,7 +1553,7 @@ public java.util.List<java.lang.String> getRegionCodes();
 
 A list of countries/region codes to act on, e.g. US. This follows https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#region_codes GoogleApigeeSecurityAction#region_codes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#region_codes GoogleApigeeSecurityAction#region_codes}
 
 ---
 
@@ -1567,7 +1567,7 @@ public java.util.List<java.lang.String> getUserAgents();
 
 A list of user agents to deny. We look for exact matches. Limit 50 per action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#user_agents GoogleApigeeSecurityAction#user_agents}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#user_agents GoogleApigeeSecurityAction#user_agents}
 
 ---
 
@@ -1629,7 +1629,7 @@ GoogleApigeeSecurityActionConfig.builder()
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeSecurityAction.GoogleApigeeSecurityActionConfig.property.description">description</a></code> | <code>java.lang.String</code> | An optional user provided description of the SecurityAction. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeSecurityAction.GoogleApigeeSecurityActionConfig.property.expireTime">expireTime</a></code> | <code>java.lang.String</code> | The expiration for this SecurityAction. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeSecurityAction.GoogleApigeeSecurityActionConfig.property.flag">flag</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApigeeSecurityAction.GoogleApigeeSecurityActionFlag">GoogleApigeeSecurityActionFlag</a></code> | flag block. |
-| <code><a href="#@cdktf/provider-google-beta.googleApigeeSecurityAction.GoogleApigeeSecurityActionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#id GoogleApigeeSecurityAction#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeSecurityAction.GoogleApigeeSecurityActionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#id GoogleApigeeSecurityAction#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeSecurityAction.GoogleApigeeSecurityActionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApigeeSecurityAction.GoogleApigeeSecurityActionTimeouts">GoogleApigeeSecurityActionTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeSecurityAction.GoogleApigeeSecurityActionConfig.property.ttl">ttl</a></code> | <code>java.lang.String</code> | The TTL for this SecurityAction. A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s". |
 
@@ -1715,7 +1715,7 @@ public GoogleApigeeSecurityActionConditionConfig getConditionConfig();
 
 condition_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#condition_config GoogleApigeeSecurityAction#condition_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#condition_config GoogleApigeeSecurityAction#condition_config}
 
 ---
 
@@ -1729,7 +1729,7 @@ public java.lang.String getEnvId();
 
 The Apigee environment that this security action applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#env_id GoogleApigeeSecurityAction#env_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#env_id GoogleApigeeSecurityAction#env_id}
 
 ---
 
@@ -1743,7 +1743,7 @@ public java.lang.String getOrgId();
 
 The organization that this security action applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#org_id GoogleApigeeSecurityAction#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#org_id GoogleApigeeSecurityAction#org_id}
 
 ---
 
@@ -1759,7 +1759,7 @@ The ID to use for the SecurityAction, which will become the final component of t
 
 This value should be 0-61 characters, and valid format is (^a-z?$).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#security_action_id GoogleApigeeSecurityAction#security_action_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#security_action_id GoogleApigeeSecurityAction#security_action_id}
 
 ---
 
@@ -1775,7 +1775,7 @@ Only an ENABLED SecurityAction is enforced.
 
 An ENABLED SecurityAction past its expiration time will not be enforced. Possible values: ["ENABLED", "DISABLED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#state GoogleApigeeSecurityAction#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#state GoogleApigeeSecurityAction#state}
 
 ---
 
@@ -1789,7 +1789,7 @@ public GoogleApigeeSecurityActionAllow getAllow();
 
 allow block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#allow GoogleApigeeSecurityAction#allow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#allow GoogleApigeeSecurityAction#allow}
 
 ---
 
@@ -1808,7 +1808,7 @@ list is deployed at the time of enforcement. If set, several restrictions are en
 There can be at most 100 enabled actions with proxies set in an env.
 Several other restrictions apply on conditions and are detailed later.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#api_proxies GoogleApigeeSecurityAction#api_proxies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#api_proxies GoogleApigeeSecurityAction#api_proxies}
 
 ---
 
@@ -1822,7 +1822,7 @@ public GoogleApigeeSecurityActionDeny getDeny();
 
 deny block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#deny GoogleApigeeSecurityAction#deny}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#deny GoogleApigeeSecurityAction#deny}
 
 ---
 
@@ -1836,7 +1836,7 @@ public java.lang.String getDescription();
 
 An optional user provided description of the SecurityAction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#description GoogleApigeeSecurityAction#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#description GoogleApigeeSecurityAction#description}
 
 ---
 
@@ -1854,7 +1854,7 @@ Uses RFC 3339, where generated output will always be Z-normalized and uses 0, 3,
 fractional digits. Offsets other than "Z" are also accepted.
 Examples: "2014-10-02T15:01:23Z", "2014-10-02T15:01:23.045123456Z" or "2014-10-02T15:01:23+05:30".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#expire_time GoogleApigeeSecurityAction#expire_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#expire_time GoogleApigeeSecurityAction#expire_time}
 
 ---
 
@@ -1868,7 +1868,7 @@ public GoogleApigeeSecurityActionFlag getFlag();
 
 flag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#flag GoogleApigeeSecurityAction#flag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#flag GoogleApigeeSecurityAction#flag}
 
 ---
 
@@ -1880,7 +1880,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#id GoogleApigeeSecurityAction#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#id GoogleApigeeSecurityAction#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1897,7 +1897,7 @@ public GoogleApigeeSecurityActionTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#timeouts GoogleApigeeSecurityAction#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#timeouts GoogleApigeeSecurityAction#timeouts}
 
 ---
 
@@ -1911,7 +1911,7 @@ public java.lang.String getTtl();
 
 The TTL for this SecurityAction. A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#ttl GoogleApigeeSecurityAction#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#ttl GoogleApigeeSecurityAction#ttl}
 
 ---
 
@@ -1945,7 +1945,7 @@ public java.lang.Number getResponseCode();
 
 The HTTP response code if the Action = DENY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#response_code GoogleApigeeSecurityAction#response_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#response_code GoogleApigeeSecurityAction#response_code}
 
 ---
 
@@ -1980,7 +1980,7 @@ public java.lang.Object getHeaders();
 
 headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#headers GoogleApigeeSecurityAction#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#headers GoogleApigeeSecurityAction#headers}
 
 ---
 
@@ -2016,7 +2016,7 @@ public java.lang.String getName();
 
 The header name to be sent to the target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#name GoogleApigeeSecurityAction#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#name GoogleApigeeSecurityAction#name}
 
 ---
 
@@ -2030,7 +2030,7 @@ public java.lang.String getValue();
 
 The header value to be sent to the target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#value GoogleApigeeSecurityAction#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#value GoogleApigeeSecurityAction#value}
 
 ---
 
@@ -2051,8 +2051,8 @@ GoogleApigeeSecurityActionTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleApigeeSecurityAction.GoogleApigeeSecurityActionTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#create GoogleApigeeSecurityAction#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleApigeeSecurityAction.GoogleApigeeSecurityActionTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#delete GoogleApigeeSecurityAction#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeSecurityAction.GoogleApigeeSecurityActionTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#create GoogleApigeeSecurityAction#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeSecurityAction.GoogleApigeeSecurityActionTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#delete GoogleApigeeSecurityAction#delete}. |
 
 ---
 
@@ -2064,7 +2064,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#create GoogleApigeeSecurityAction#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#create GoogleApigeeSecurityAction#create}.
 
 ---
 
@@ -2076,7 +2076,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_apigee_security_action#delete GoogleApigeeSecurityAction#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action#delete GoogleApigeeSecurityAction#delete}.
 
 ---
 
