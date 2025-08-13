@@ -578,6 +578,7 @@ Object.defineProperty(exports, 'googleDialogflowCxGenerativeSettings', { get: fu
 Object.defineProperty(exports, 'googleDialogflowCxGenerator', { get: function () { return require('./google-dialogflow-cx-generator'); } });
 Object.defineProperty(exports, 'googleDialogflowCxIntent', { get: function () { return require('./google-dialogflow-cx-intent'); } });
 Object.defineProperty(exports, 'googleDialogflowCxPage', { get: function () { return require('./google-dialogflow-cx-page'); } });
+Object.defineProperty(exports, 'googleDialogflowCxPlaybook', { get: function () { return require('./google-dialogflow-cx-playbook'); } });
 Object.defineProperty(exports, 'googleDialogflowCxSecuritySettings', { get: function () { return require('./google-dialogflow-cx-security-settings'); } });
 Object.defineProperty(exports, 'googleDialogflowCxTestCase', { get: function () { return require('./google-dialogflow-cx-test-case'); } });
 Object.defineProperty(exports, 'googleDialogflowCxTool', { get: function () { return require('./google-dialogflow-cx-tool'); } });
@@ -1192,6 +1193,7 @@ Object.defineProperty(exports, 'googleVertexAiIndex', { get: function () { retur
 Object.defineProperty(exports, 'googleVertexAiIndexEndpoint', { get: function () { return require('./google-vertex-ai-index-endpoint'); } });
 Object.defineProperty(exports, 'googleVertexAiIndexEndpointDeployedIndex', { get: function () { return require('./google-vertex-ai-index-endpoint-deployed-index'); } });
 Object.defineProperty(exports, 'googleVertexAiMetadataStore', { get: function () { return require('./google-vertex-ai-metadata-store'); } });
+Object.defineProperty(exports, 'googleVertexAiRagEngineConfig', { get: function () { return require('./google-vertex-ai-rag-engine-config'); } });
 Object.defineProperty(exports, 'googleVertexAiTensorboard', { get: function () { return require('./google-vertex-ai-tensorboard'); } });
 Object.defineProperty(exports, 'googleVmwareengineCluster', { get: function () { return require('./google-vmwareengine-cluster'); } });
 Object.defineProperty(exports, 'googleVmwareengineExternalAccessRule', { get: function () { return require('./google-vmwareengine-external-access-rule'); } });
@@ -1237,8 +1239,11 @@ Object.defineProperty(exports, 'dataGoogleApphubDiscoveredWorkload', { get: func
 Object.defineProperty(exports, 'dataGoogleArtifactRegistryDockerImage', { get: function () { return require('./data-google-artifact-registry-docker-image'); } });
 Object.defineProperty(exports, 'dataGoogleArtifactRegistryDockerImages', { get: function () { return require('./data-google-artifact-registry-docker-images'); } });
 Object.defineProperty(exports, 'dataGoogleArtifactRegistryLocations', { get: function () { return require('./data-google-artifact-registry-locations'); } });
+Object.defineProperty(exports, 'dataGoogleArtifactRegistryPackage', { get: function () { return require('./data-google-artifact-registry-package'); } });
+Object.defineProperty(exports, 'dataGoogleArtifactRegistryRepositories', { get: function () { return require('./data-google-artifact-registry-repositories'); } });
 Object.defineProperty(exports, 'dataGoogleArtifactRegistryRepository', { get: function () { return require('./data-google-artifact-registry-repository'); } });
 Object.defineProperty(exports, 'dataGoogleArtifactRegistryRepositoryIamPolicy', { get: function () { return require('./data-google-artifact-registry-repository-iam-policy'); } });
+Object.defineProperty(exports, 'dataGoogleArtifactRegistryVersion', { get: function () { return require('./data-google-artifact-registry-version'); } });
 Object.defineProperty(exports, 'dataGoogleBackupDrBackup', { get: function () { return require('./data-google-backup-dr-backup'); } });
 Object.defineProperty(exports, 'dataGoogleBackupDrBackupPlan', { get: function () { return require('./data-google-backup-dr-backup-plan'); } });
 Object.defineProperty(exports, 'dataGoogleBackupDrBackupPlanAssociation', { get: function () { return require('./data-google-backup-dr-backup-plan-association'); } });
