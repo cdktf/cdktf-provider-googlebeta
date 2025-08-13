@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_cloud_identity_group_membership
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_cloud_identity_group_membership
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface GoogleCloudIdentityGroupMembershipConfig extends cdktf.Terrafor
   /**
   * If set to true, skip group member creation if a membership with the same name already exists. Defaults to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_cloud_identity_group_membership#create_ignore_already_exists GoogleCloudIdentityGroupMembership#create_ignore_already_exists}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_cloud_identity_group_membership#create_ignore_already_exists GoogleCloudIdentityGroupMembership#create_ignore_already_exists}
   */
   readonly createIgnoreAlreadyExists?: boolean | cdktf.IResolvable;
   /**
   * The name of the Group to create this membership in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_cloud_identity_group_membership#group GoogleCloudIdentityGroupMembership#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_cloud_identity_group_membership#group GoogleCloudIdentityGroupMembership#group}
   */
   readonly group: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_cloud_identity_group_membership#id GoogleCloudIdentityGroupMembership#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_cloud_identity_group_membership#id GoogleCloudIdentityGroupMembership#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,25 +34,25 @@ export interface GoogleCloudIdentityGroupMembershipConfig extends cdktf.Terrafor
   /**
   * member_key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_cloud_identity_group_membership#member_key GoogleCloudIdentityGroupMembership#member_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_cloud_identity_group_membership#member_key GoogleCloudIdentityGroupMembership#member_key}
   */
   readonly memberKey?: GoogleCloudIdentityGroupMembershipMemberKey;
   /**
   * preferred_member_key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_cloud_identity_group_membership#preferred_member_key GoogleCloudIdentityGroupMembership#preferred_member_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_cloud_identity_group_membership#preferred_member_key GoogleCloudIdentityGroupMembership#preferred_member_key}
   */
   readonly preferredMemberKey?: GoogleCloudIdentityGroupMembershipPreferredMemberKey;
   /**
   * roles block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_cloud_identity_group_membership#roles GoogleCloudIdentityGroupMembership#roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_cloud_identity_group_membership#roles GoogleCloudIdentityGroupMembership#roles}
   */
   readonly roles: GoogleCloudIdentityGroupMembershipRoles[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_cloud_identity_group_membership#timeouts GoogleCloudIdentityGroupMembership#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_cloud_identity_group_membership#timeouts GoogleCloudIdentityGroupMembership#timeouts}
   */
   readonly timeouts?: GoogleCloudIdentityGroupMembershipTimeouts;
 }
@@ -68,7 +68,7 @@ export interface GoogleCloudIdentityGroupMembershipMemberKey {
   * 
   * Must be unique within a namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_cloud_identity_group_membership#id GoogleCloudIdentityGroupMembership#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_cloud_identity_group_membership#id GoogleCloudIdentityGroupMembership#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -84,7 +84,7 @@ export interface GoogleCloudIdentityGroupMembershipMemberKey {
   * The namespace must correspond to an identity source created in Admin Console
   * and must be in the form of 'identitysources/{identity_source_id}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_cloud_identity_group_membership#namespace GoogleCloudIdentityGroupMembership#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_cloud_identity_group_membership#namespace GoogleCloudIdentityGroupMembership#namespace}
   */
   readonly namespace?: string;
 }
@@ -204,7 +204,7 @@ export interface GoogleCloudIdentityGroupMembershipPreferredMemberKey {
   * 
   * Must be unique within a namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_cloud_identity_group_membership#id GoogleCloudIdentityGroupMembership#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_cloud_identity_group_membership#id GoogleCloudIdentityGroupMembership#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -220,7 +220,7 @@ export interface GoogleCloudIdentityGroupMembershipPreferredMemberKey {
   * The namespace must correspond to an identity source created in Admin Console
   * and must be in the form of 'identitysources/{identity_source_id}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_cloud_identity_group_membership#namespace GoogleCloudIdentityGroupMembership#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_cloud_identity_group_membership#namespace GoogleCloudIdentityGroupMembership#namespace}
   */
   readonly namespace?: string;
 }
@@ -337,7 +337,7 @@ export interface GoogleCloudIdentityGroupMembershipRolesExpiryDetail {
   * 
   * Examples: "2014-10-02T15:01:23Z" and "2014-10-02T15:01:23.045123456Z".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_cloud_identity_group_membership#expire_time GoogleCloudIdentityGroupMembership#expire_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_cloud_identity_group_membership#expire_time GoogleCloudIdentityGroupMembership#expire_time}
   */
   readonly expireTime: string;
 }
@@ -420,13 +420,13 @@ export interface GoogleCloudIdentityGroupMembershipRoles {
   /**
   * The name of the MembershipRole. Must be one of OWNER, MANAGER, MEMBER. Possible values: ["OWNER", "MANAGER", "MEMBER"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_cloud_identity_group_membership#name GoogleCloudIdentityGroupMembership#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_cloud_identity_group_membership#name GoogleCloudIdentityGroupMembership#name}
   */
   readonly name: string;
   /**
   * expiry_detail block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_cloud_identity_group_membership#expiry_detail GoogleCloudIdentityGroupMembership#expiry_detail}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_cloud_identity_group_membership#expiry_detail GoogleCloudIdentityGroupMembership#expiry_detail}
   */
   readonly expiryDetail?: GoogleCloudIdentityGroupMembershipRolesExpiryDetail;
 }
@@ -568,15 +568,15 @@ export class GoogleCloudIdentityGroupMembershipRolesList extends cdktf.ComplexLi
 }
 export interface GoogleCloudIdentityGroupMembershipTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_cloud_identity_group_membership#create GoogleCloudIdentityGroupMembership#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_cloud_identity_group_membership#create GoogleCloudIdentityGroupMembership#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_cloud_identity_group_membership#delete GoogleCloudIdentityGroupMembership#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_cloud_identity_group_membership#delete GoogleCloudIdentityGroupMembership#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_cloud_identity_group_membership#update GoogleCloudIdentityGroupMembership#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_cloud_identity_group_membership#update GoogleCloudIdentityGroupMembership#update}
   */
   readonly update?: string;
 }
@@ -728,7 +728,7 @@ export class GoogleCloudIdentityGroupMembershipTimeoutsOutputReference extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_cloud_identity_group_membership google_cloud_identity_group_membership}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_cloud_identity_group_membership google_cloud_identity_group_membership}
 */
 export class GoogleCloudIdentityGroupMembership extends cdktf.TerraformResource {
 
@@ -744,7 +744,7 @@ export class GoogleCloudIdentityGroupMembership extends cdktf.TerraformResource 
   * Generates CDKTF code for importing a GoogleCloudIdentityGroupMembership resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleCloudIdentityGroupMembership to import
-  * @param importFromId The id of the existing GoogleCloudIdentityGroupMembership that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_cloud_identity_group_membership#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleCloudIdentityGroupMembership that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_cloud_identity_group_membership#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleCloudIdentityGroupMembership to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -756,7 +756,7 @@ export class GoogleCloudIdentityGroupMembership extends cdktf.TerraformResource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_cloud_identity_group_membership google_cloud_identity_group_membership} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_cloud_identity_group_membership google_cloud_identity_group_membership} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -767,7 +767,7 @@ export class GoogleCloudIdentityGroupMembership extends cdktf.TerraformResource 
       terraformResourceType: 'google_cloud_identity_group_membership',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.47.0',
+        providerVersion: '6.48.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

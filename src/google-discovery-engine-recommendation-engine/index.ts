@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_discovery_engine_recommendation_engine
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_discovery_engine_recommendation_engine
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface GoogleDiscoveryEngineRecommendationEngineConfig extends cdktf.T
   /**
   * The data stores associated with this engine. For SOLUTION_TYPE_RECOMMENDATION type of engines, they can only associate with at most one data store.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_discovery_engine_recommendation_engine#data_store_ids GoogleDiscoveryEngineRecommendationEngine#data_store_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_discovery_engine_recommendation_engine#data_store_ids GoogleDiscoveryEngineRecommendationEngine#data_store_ids}
   */
   readonly dataStoreIds: string[];
   /**
   * Required. The display name of the engine. Should be human readable. UTF-8 encoded string with limit of 1024 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_discovery_engine_recommendation_engine#display_name GoogleDiscoveryEngineRecommendationEngine#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_discovery_engine_recommendation_engine#display_name GoogleDiscoveryEngineRecommendationEngine#display_name}
   */
   readonly displayName: string;
   /**
   * Unique ID to use for Recommendation Engine.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_discovery_engine_recommendation_engine#engine_id GoogleDiscoveryEngineRecommendationEngine#engine_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_discovery_engine_recommendation_engine#engine_id GoogleDiscoveryEngineRecommendationEngine#engine_id}
   */
   readonly engineId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_discovery_engine_recommendation_engine#id GoogleDiscoveryEngineRecommendationEngine#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_discovery_engine_recommendation_engine#id GoogleDiscoveryEngineRecommendationEngine#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,36 +40,36 @@ export interface GoogleDiscoveryEngineRecommendationEngineConfig extends cdktf.T
   /**
   * The industry vertical that the engine registers. The restriction of the Engine industry vertical is based on DataStore: If unspecified, default to GENERIC. Vertical on Engine has to match vertical of the DataStore liniked to the engine. Default value: "GENERIC" Possible values: ["GENERIC", "MEDIA"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_discovery_engine_recommendation_engine#industry_vertical GoogleDiscoveryEngineRecommendationEngine#industry_vertical}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_discovery_engine_recommendation_engine#industry_vertical GoogleDiscoveryEngineRecommendationEngine#industry_vertical}
   */
   readonly industryVertical?: string;
   /**
   * The geographic location where the data store should reside. The value can
   * only be one of "global", "us" and "eu".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_discovery_engine_recommendation_engine#location GoogleDiscoveryEngineRecommendationEngine#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_discovery_engine_recommendation_engine#location GoogleDiscoveryEngineRecommendationEngine#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_discovery_engine_recommendation_engine#project GoogleDiscoveryEngineRecommendationEngine#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_discovery_engine_recommendation_engine#project GoogleDiscoveryEngineRecommendationEngine#project}
   */
   readonly project?: string;
   /**
   * common_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_discovery_engine_recommendation_engine#common_config GoogleDiscoveryEngineRecommendationEngine#common_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_discovery_engine_recommendation_engine#common_config GoogleDiscoveryEngineRecommendationEngine#common_config}
   */
   readonly commonConfig?: GoogleDiscoveryEngineRecommendationEngineCommonConfig;
   /**
   * media_recommendation_engine_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_discovery_engine_recommendation_engine#media_recommendation_engine_config GoogleDiscoveryEngineRecommendationEngine#media_recommendation_engine_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_discovery_engine_recommendation_engine#media_recommendation_engine_config GoogleDiscoveryEngineRecommendationEngine#media_recommendation_engine_config}
   */
   readonly mediaRecommendationEngineConfig?: GoogleDiscoveryEngineRecommendationEngineMediaRecommendationEngineConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_discovery_engine_recommendation_engine#timeouts GoogleDiscoveryEngineRecommendationEngine#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_discovery_engine_recommendation_engine#timeouts GoogleDiscoveryEngineRecommendationEngine#timeouts}
   */
   readonly timeouts?: GoogleDiscoveryEngineRecommendationEngineTimeouts;
 }
@@ -77,7 +77,7 @@ export interface GoogleDiscoveryEngineRecommendationEngineCommonConfig {
   /**
   * The name of the company, business or entity that is associated with the engine. Setting this may help improve LLM related features.cd
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_discovery_engine_recommendation_engine#company_name GoogleDiscoveryEngineRecommendationEngine#company_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_discovery_engine_recommendation_engine#company_name GoogleDiscoveryEngineRecommendationEngine#company_name}
   */
   readonly companyName?: string;
 }
@@ -166,7 +166,7 @@ export interface GoogleDiscoveryEngineRecommendationEngineMediaRecommendationEng
   * last X days of events. Currently required for the 'most-popular-items'
   * engine.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_discovery_engine_recommendation_engine#time_window_days GoogleDiscoveryEngineRecommendationEngine#time_window_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_discovery_engine_recommendation_engine#time_window_days GoogleDiscoveryEngineRecommendationEngine#time_window_days}
   */
   readonly timeWindowDays?: number;
 }
@@ -258,7 +258,7 @@ export interface GoogleDiscoveryEngineRecommendationEngineMediaRecommendationEng
   * 'media-complete'. Currently supported for the 'recommended-for-you'
   * engine. Currently supported values: 'view-home-page', 'generic'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_discovery_engine_recommendation_engine#context_event_type GoogleDiscoveryEngineRecommendationEngine#context_event_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_discovery_engine_recommendation_engine#context_event_type GoogleDiscoveryEngineRecommendationEngine#context_event_type}
   */
   readonly contextEventType?: string;
 }
@@ -344,13 +344,13 @@ export interface GoogleDiscoveryEngineRecommendationEngineMediaRecommendationEng
   /**
   * most_popular_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_discovery_engine_recommendation_engine#most_popular_config GoogleDiscoveryEngineRecommendationEngine#most_popular_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_discovery_engine_recommendation_engine#most_popular_config GoogleDiscoveryEngineRecommendationEngine#most_popular_config}
   */
   readonly mostPopularConfig?: GoogleDiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigMostPopularConfig;
   /**
   * recommended_for_you_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_discovery_engine_recommendation_engine#recommended_for_you_config GoogleDiscoveryEngineRecommendationEngine#recommended_for_you_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_discovery_engine_recommendation_engine#recommended_for_you_config GoogleDiscoveryEngineRecommendationEngine#recommended_for_you_config}
   */
   readonly recommendedForYouConfig?: GoogleDiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigRecommendedForYouConfig;
 }
@@ -465,13 +465,13 @@ export interface GoogleDiscoveryEngineRecommendationEngineMediaRecommendationEng
   /**
   * The name of the field to target. Currently supported values: 'watch-percentage', 'watch-time'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_discovery_engine_recommendation_engine#target_field GoogleDiscoveryEngineRecommendationEngine#target_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_discovery_engine_recommendation_engine#target_field GoogleDiscoveryEngineRecommendationEngine#target_field}
   */
   readonly targetField?: string;
   /**
   * The threshold to be applied to the target (e.g., 0.5).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_discovery_engine_recommendation_engine#target_field_value_float GoogleDiscoveryEngineRecommendationEngine#target_field_value_float}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_discovery_engine_recommendation_engine#target_field_value_float GoogleDiscoveryEngineRecommendationEngine#target_field_value_float}
   */
   readonly targetFieldValueFloat?: number;
 }
@@ -592,7 +592,7 @@ export interface GoogleDiscoveryEngineRecommendationEngineMediaRecommendationEng
   * 'recommended-for-you' => 'ctr'
   * 'others-you-may-like' => 'ctr'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_discovery_engine_recommendation_engine#optimization_objective GoogleDiscoveryEngineRecommendationEngine#optimization_objective}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_discovery_engine_recommendation_engine#optimization_objective GoogleDiscoveryEngineRecommendationEngine#optimization_objective}
   */
   readonly optimizationObjective?: string;
   /**
@@ -603,7 +603,7 @@ export interface GoogleDiscoveryEngineRecommendationEngineMediaRecommendationEng
   * 'CreateEngine' method is 'TRAINING'. The default value for
   * 'UpdateEngine' method is to keep the state the same as before. Possible values: ["PAUSED", "TRAINING"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_discovery_engine_recommendation_engine#training_state GoogleDiscoveryEngineRecommendationEngine#training_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_discovery_engine_recommendation_engine#training_state GoogleDiscoveryEngineRecommendationEngine#training_state}
   */
   readonly trainingState?: string;
   /**
@@ -613,19 +613,19 @@ export interface GoogleDiscoveryEngineRecommendationEngineMediaRecommendationEng
   * Currently supported values: 'recommended-for-you', 'others-you-may-like',
   * 'more-like-this', 'most-popular-items'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_discovery_engine_recommendation_engine#type GoogleDiscoveryEngineRecommendationEngine#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_discovery_engine_recommendation_engine#type GoogleDiscoveryEngineRecommendationEngine#type}
   */
   readonly type?: string;
   /**
   * engine_features_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_discovery_engine_recommendation_engine#engine_features_config GoogleDiscoveryEngineRecommendationEngine#engine_features_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_discovery_engine_recommendation_engine#engine_features_config GoogleDiscoveryEngineRecommendationEngine#engine_features_config}
   */
   readonly engineFeaturesConfig?: GoogleDiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfig;
   /**
   * optimization_objective_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_discovery_engine_recommendation_engine#optimization_objective_config GoogleDiscoveryEngineRecommendationEngine#optimization_objective_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_discovery_engine_recommendation_engine#optimization_objective_config GoogleDiscoveryEngineRecommendationEngine#optimization_objective_config}
   */
   readonly optimizationObjectiveConfig?: GoogleDiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigOptimizationObjectiveConfig;
 }
@@ -825,15 +825,15 @@ export class GoogleDiscoveryEngineRecommendationEngineMediaRecommendationEngineC
 }
 export interface GoogleDiscoveryEngineRecommendationEngineTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_discovery_engine_recommendation_engine#create GoogleDiscoveryEngineRecommendationEngine#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_discovery_engine_recommendation_engine#create GoogleDiscoveryEngineRecommendationEngine#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_discovery_engine_recommendation_engine#delete GoogleDiscoveryEngineRecommendationEngine#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_discovery_engine_recommendation_engine#delete GoogleDiscoveryEngineRecommendationEngine#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_discovery_engine_recommendation_engine#update GoogleDiscoveryEngineRecommendationEngine#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_discovery_engine_recommendation_engine#update GoogleDiscoveryEngineRecommendationEngine#update}
   */
   readonly update?: string;
 }
@@ -985,7 +985,7 @@ export class GoogleDiscoveryEngineRecommendationEngineTimeoutsOutputReference ex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_discovery_engine_recommendation_engine google_discovery_engine_recommendation_engine}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_discovery_engine_recommendation_engine google_discovery_engine_recommendation_engine}
 */
 export class GoogleDiscoveryEngineRecommendationEngine extends cdktf.TerraformResource {
 
@@ -1001,7 +1001,7 @@ export class GoogleDiscoveryEngineRecommendationEngine extends cdktf.TerraformRe
   * Generates CDKTF code for importing a GoogleDiscoveryEngineRecommendationEngine resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleDiscoveryEngineRecommendationEngine to import
-  * @param importFromId The id of the existing GoogleDiscoveryEngineRecommendationEngine that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_discovery_engine_recommendation_engine#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleDiscoveryEngineRecommendationEngine that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_discovery_engine_recommendation_engine#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleDiscoveryEngineRecommendationEngine to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1013,7 +1013,7 @@ export class GoogleDiscoveryEngineRecommendationEngine extends cdktf.TerraformRe
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_discovery_engine_recommendation_engine google_discovery_engine_recommendation_engine} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_discovery_engine_recommendation_engine google_discovery_engine_recommendation_engine} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1024,7 +1024,7 @@ export class GoogleDiscoveryEngineRecommendationEngine extends cdktf.TerraformRe
       terraformResourceType: 'google_discovery_engine_recommendation_engine',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.47.0',
+        providerVersion: '6.48.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
