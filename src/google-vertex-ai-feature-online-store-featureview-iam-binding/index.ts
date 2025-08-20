@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,54 +13,54 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#feature_online_store GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#feature_online_store}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#feature_online_store GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#feature_online_store}
   */
   readonly featureOnlineStore: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#feature_view GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#feature_view}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#feature_view GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#feature_view}
   */
   readonly featureView: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#id GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#id GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#members GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#members}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#members GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#members}
   */
   readonly members: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#project GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#project GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#project}
   */
   readonly project?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#region GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#region GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#role GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#role GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#role}
   */
   readonly role: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#condition GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#condition GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#condition}
   */
   readonly condition?: GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingCondition;
 }
 export interface GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#description GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#description GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#expression GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#expression GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#title GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#title GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#title}
   */
   readonly title: string;
 }
@@ -196,7 +196,7 @@ export class GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingConditionOutpu
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding google_vertex_ai_feature_online_store_featureview_iam_binding}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding google_vertex_ai_feature_online_store_featureview_iam_binding}
 */
 export class GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding extends cdktf.TerraformResource {
 
@@ -212,7 +212,7 @@ export class GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding extends cdktf
   * Generates CDKTF code for importing a GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding to import
-  * @param importFromId The id of the existing GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -224,7 +224,7 @@ export class GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding extends cdktf
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding google_vertex_ai_feature_online_store_featureview_iam_binding} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding google_vertex_ai_feature_online_store_featureview_iam_binding} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -235,7 +235,7 @@ export class GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding extends cdktf
       terraformResourceType: 'google_vertex_ai_feature_online_store_featureview_iam_binding',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.48.0',
+        providerVersion: '6.49.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

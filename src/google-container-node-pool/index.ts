@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface GoogleContainerNodePoolConfig extends cdktf.TerraformMetaArgume
   /**
   * The cluster to create the node pool for. Cluster must be present in location provided for zonal clusters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#cluster GoogleContainerNodePool#cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#cluster GoogleContainerNodePool#cluster}
   */
   readonly cluster: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#id GoogleContainerNodePool#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#id GoogleContainerNodePool#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,103 +28,103 @@ export interface GoogleContainerNodePoolConfig extends cdktf.TerraformMetaArgume
   /**
   * The initial number of nodes for the pool. In regional or multi-zonal clusters, this is the number of nodes per zone. Changing this will force recreation of the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#initial_node_count GoogleContainerNodePool#initial_node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#initial_node_count GoogleContainerNodePool#initial_node_count}
   */
   readonly initialNodeCount?: number;
   /**
   * The location (region or zone) of the cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#location GoogleContainerNodePool#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#location GoogleContainerNodePool#location}
   */
   readonly location?: string;
   /**
   * The maximum number of pods per node in this node pool. Note that this does not work on node pools which are "route-based" - that is, node pools belonging to clusters that do not have IP Aliasing enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#max_pods_per_node GoogleContainerNodePool#max_pods_per_node}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#max_pods_per_node GoogleContainerNodePool#max_pods_per_node}
   */
   readonly maxPodsPerNode?: number;
   /**
   * The name of the node pool. If left blank, Terraform will auto-generate a unique name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#name GoogleContainerNodePool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#name GoogleContainerNodePool#name}
   */
   readonly name?: string;
   /**
   * Creates a unique name for the node pool beginning with the specified prefix. Conflicts with name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#name_prefix GoogleContainerNodePool#name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#name_prefix GoogleContainerNodePool#name_prefix}
   */
   readonly namePrefix?: string;
   /**
   * The number of nodes per instance group. This field can be used to update the number of nodes per instance group but should not be used alongside autoscaling.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#node_count GoogleContainerNodePool#node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#node_count GoogleContainerNodePool#node_count}
   */
   readonly nodeCount?: number;
   /**
   * The list of zones in which the node pool's nodes should be located. Nodes must be in the region of their regional cluster or in the same region as their cluster's zone for zonal clusters. If unspecified, the cluster-level node_locations will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#node_locations GoogleContainerNodePool#node_locations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#node_locations GoogleContainerNodePool#node_locations}
   */
   readonly nodeLocations?: string[];
   /**
   * The ID of the project in which to create the node pool. If blank, the provider-configured project will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#project GoogleContainerNodePool#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#project GoogleContainerNodePool#project}
   */
   readonly project?: string;
   /**
   * The Kubernetes version for the nodes in this pool. Note that if this field and auto_upgrade are both specified, they will fight each other for what the node version should be, so setting both is highly discouraged. While a fuzzy version can be specified, it's recommended that you specify explicit versions as Terraform will see spurious diffs when fuzzy versions are used. See the google_container_engine_versions data source's version_prefix field to approximate fuzzy versions in a Terraform-compatible way.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#version GoogleContainerNodePool#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#version GoogleContainerNodePool#version}
   */
   readonly version?: string;
   /**
   * autoscaling block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#autoscaling GoogleContainerNodePool#autoscaling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#autoscaling GoogleContainerNodePool#autoscaling}
   */
   readonly autoscaling?: GoogleContainerNodePoolAutoscaling;
   /**
   * management block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#management GoogleContainerNodePool#management}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#management GoogleContainerNodePool#management}
   */
   readonly management?: GoogleContainerNodePoolManagement;
   /**
   * network_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#network_config GoogleContainerNodePool#network_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#network_config GoogleContainerNodePool#network_config}
   */
   readonly networkConfig?: GoogleContainerNodePoolNetworkConfig;
   /**
   * node_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#node_config GoogleContainerNodePool#node_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#node_config GoogleContainerNodePool#node_config}
   */
   readonly nodeConfig?: GoogleContainerNodePoolNodeConfig;
   /**
   * placement_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#placement_policy GoogleContainerNodePool#placement_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#placement_policy GoogleContainerNodePool#placement_policy}
   */
   readonly placementPolicy?: GoogleContainerNodePoolPlacementPolicy;
   /**
   * queued_provisioning block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#queued_provisioning GoogleContainerNodePool#queued_provisioning}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#queued_provisioning GoogleContainerNodePool#queued_provisioning}
   */
   readonly queuedProvisioning?: GoogleContainerNodePoolQueuedProvisioning;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#timeouts GoogleContainerNodePool#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#timeouts GoogleContainerNodePool#timeouts}
   */
   readonly timeouts?: GoogleContainerNodePoolTimeouts;
   /**
   * upgrade_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#upgrade_settings GoogleContainerNodePool#upgrade_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#upgrade_settings GoogleContainerNodePool#upgrade_settings}
   */
   readonly upgradeSettings?: GoogleContainerNodePoolUpgradeSettings;
 }
@@ -132,31 +132,31 @@ export interface GoogleContainerNodePoolAutoscaling {
   /**
   * Location policy specifies the algorithm used when scaling-up the node pool. "BALANCED" - Is a best effort policy that aims to balance the sizes of available zones. "ANY" - Instructs the cluster autoscaler to prioritize utilization of unused reservations, and reduces preemption risk for Spot VMs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#location_policy GoogleContainerNodePool#location_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#location_policy GoogleContainerNodePool#location_policy}
   */
   readonly locationPolicy?: string;
   /**
   * Maximum number of nodes per zone in the node pool. Must be >= min_node_count. Cannot be used with total limits.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#max_node_count GoogleContainerNodePool#max_node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#max_node_count GoogleContainerNodePool#max_node_count}
   */
   readonly maxNodeCount?: number;
   /**
   * Minimum number of nodes per zone in the node pool. Must be >=0 and <= max_node_count. Cannot be used with total limits.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#min_node_count GoogleContainerNodePool#min_node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#min_node_count GoogleContainerNodePool#min_node_count}
   */
   readonly minNodeCount?: number;
   /**
   * Maximum number of all nodes in the node pool. Must be >= total_min_node_count. Cannot be used with per zone limits.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#total_max_node_count GoogleContainerNodePool#total_max_node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#total_max_node_count GoogleContainerNodePool#total_max_node_count}
   */
   readonly totalMaxNodeCount?: number;
   /**
   * Minimum number of all nodes in the node pool. Must be >=0 and <= total_max_node_count. Cannot be used with per zone limits.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#total_min_node_count GoogleContainerNodePool#total_min_node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#total_min_node_count GoogleContainerNodePool#total_min_node_count}
   */
   readonly totalMinNodeCount?: number;
 }
@@ -358,13 +358,13 @@ export interface GoogleContainerNodePoolManagement {
   /**
   * Whether the nodes will be automatically repaired. Enabled by default.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#auto_repair GoogleContainerNodePool#auto_repair}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#auto_repair GoogleContainerNodePool#auto_repair}
   */
   readonly autoRepair?: boolean | cdktf.IResolvable;
   /**
   * Whether the nodes will be automatically upgraded. Enabled by default.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#auto_upgrade GoogleContainerNodePool#auto_upgrade}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#auto_upgrade GoogleContainerNodePool#auto_upgrade}
   */
   readonly autoUpgrade?: boolean | cdktf.IResolvable;
 }
@@ -479,13 +479,13 @@ export interface GoogleContainerNodePoolNetworkConfigAdditionalNodeNetworkConfig
   /**
   * Name of the VPC where the additional interface belongs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#network GoogleContainerNodePool#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#network GoogleContainerNodePool#network}
   */
   readonly network?: string;
   /**
   * Name of the subnetwork where the additional interface belongs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#subnetwork GoogleContainerNodePool#subnetwork}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#subnetwork GoogleContainerNodePool#subnetwork}
   */
   readonly subnetwork?: string;
 }
@@ -632,19 +632,19 @@ export interface GoogleContainerNodePoolNetworkConfigAdditionalPodNetworkConfigs
   /**
   * The maximum number of pods per node which use this pod network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#max_pods_per_node GoogleContainerNodePool#max_pods_per_node}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#max_pods_per_node GoogleContainerNodePool#max_pods_per_node}
   */
   readonly maxPodsPerNode?: number;
   /**
   * The name of the secondary range on the subnet which provides IP address for this pod range.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#secondary_pod_range GoogleContainerNodePool#secondary_pod_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#secondary_pod_range GoogleContainerNodePool#secondary_pod_range}
   */
   readonly secondaryPodRange?: string;
   /**
   * Name of the subnetwork where the additional pod network belongs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#subnetwork GoogleContainerNodePool#subnetwork}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#subnetwork GoogleContainerNodePool#subnetwork}
   */
   readonly subnetwork?: string;
 }
@@ -820,7 +820,7 @@ export interface GoogleContainerNodePoolNetworkConfigNetworkPerformanceConfig {
   /**
   * Specifies the total network bandwidth tier for the NodePool. [Valid values](https://cloud.google.com/kubernetes-engine/docs/reference/rest/v1/projects.locations.clusters.nodePools#NodePool.Tier) include: "TIER_1" and "TIER_UNSPECIFIED".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#total_egress_bandwidth_tier GoogleContainerNodePool#total_egress_bandwidth_tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#total_egress_bandwidth_tier GoogleContainerNodePool#total_egress_bandwidth_tier}
   */
   readonly totalEgressBandwidthTier: string;
 }
@@ -901,7 +901,7 @@ export class GoogleContainerNodePoolNetworkConfigNetworkPerformanceConfigOutputR
 }
 export interface GoogleContainerNodePoolNetworkConfigPodCidrOverprovisionConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#disabled GoogleContainerNodePool#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#disabled GoogleContainerNodePool#disabled}
   */
   readonly disabled: boolean | cdktf.IResolvable;
 }
@@ -984,49 +984,49 @@ export interface GoogleContainerNodePoolNetworkConfig {
   /**
   * Whether to create a new range for pod IPs in this node pool. Defaults are provided for pod_range and pod_ipv4_cidr_block if they are not specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#create_pod_range GoogleContainerNodePool#create_pod_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#create_pod_range GoogleContainerNodePool#create_pod_range}
   */
   readonly createPodRange?: boolean | cdktf.IResolvable;
   /**
   * Whether nodes have internal IP addresses only.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#enable_private_nodes GoogleContainerNodePool#enable_private_nodes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#enable_private_nodes GoogleContainerNodePool#enable_private_nodes}
   */
   readonly enablePrivateNodes?: boolean | cdktf.IResolvable;
   /**
   * The IP address range for pod IPs in this node pool. Only applicable if create_pod_range is true. Set to blank to have a range chosen with the default size. Set to /netmask (e.g. /14) to have a range chosen with a specific netmask. Set to a CIDR notation (e.g. 10.96.0.0/14) to pick a specific range to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#pod_ipv4_cidr_block GoogleContainerNodePool#pod_ipv4_cidr_block}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#pod_ipv4_cidr_block GoogleContainerNodePool#pod_ipv4_cidr_block}
   */
   readonly podIpv4CidrBlock?: string;
   /**
   * The ID of the secondary range for pod IPs. If create_pod_range is true, this ID is used for the new range. If create_pod_range is false, uses an existing secondary range with this ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#pod_range GoogleContainerNodePool#pod_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#pod_range GoogleContainerNodePool#pod_range}
   */
   readonly podRange?: string;
   /**
   * additional_node_network_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#additional_node_network_configs GoogleContainerNodePool#additional_node_network_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#additional_node_network_configs GoogleContainerNodePool#additional_node_network_configs}
   */
   readonly additionalNodeNetworkConfigs?: GoogleContainerNodePoolNetworkConfigAdditionalNodeNetworkConfigs[] | cdktf.IResolvable;
   /**
   * additional_pod_network_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#additional_pod_network_configs GoogleContainerNodePool#additional_pod_network_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#additional_pod_network_configs GoogleContainerNodePool#additional_pod_network_configs}
   */
   readonly additionalPodNetworkConfigs?: GoogleContainerNodePoolNetworkConfigAdditionalPodNetworkConfigs[] | cdktf.IResolvable;
   /**
   * network_performance_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#network_performance_config GoogleContainerNodePool#network_performance_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#network_performance_config GoogleContainerNodePool#network_performance_config}
   */
   readonly networkPerformanceConfig?: GoogleContainerNodePoolNetworkConfigNetworkPerformanceConfig;
   /**
   * pod_cidr_overprovision_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#pod_cidr_overprovision_config GoogleContainerNodePool#pod_cidr_overprovision_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#pod_cidr_overprovision_config GoogleContainerNodePool#pod_cidr_overprovision_config}
   */
   readonly podCidrOverprovisionConfig?: GoogleContainerNodePoolNetworkConfigPodCidrOverprovisionConfig;
 }
@@ -1405,19 +1405,19 @@ export interface GoogleContainerNodePoolNodeConfigAdvancedMachineFeatures {
   /**
   * Whether the node should have nested virtualization enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#enable_nested_virtualization GoogleContainerNodePool#enable_nested_virtualization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#enable_nested_virtualization GoogleContainerNodePool#enable_nested_virtualization}
   */
   readonly enableNestedVirtualization?: boolean | cdktf.IResolvable;
   /**
   * Level of Performance Monitoring Unit (PMU) requested. If unset, no access to the PMU is assumed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#performance_monitoring_unit GoogleContainerNodePool#performance_monitoring_unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#performance_monitoring_unit GoogleContainerNodePool#performance_monitoring_unit}
   */
   readonly performanceMonitoringUnit?: string;
   /**
   * The number of threads per physical core. To disable simultaneous multithreading (SMT) set this to 1. If unset, the maximum number of threads supported per core by the underlying processor is assumed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#threads_per_core GoogleContainerNodePool#threads_per_core}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#threads_per_core GoogleContainerNodePool#threads_per_core}
   */
   readonly threadsPerCore: number;
 }
@@ -1558,25 +1558,25 @@ export interface GoogleContainerNodePoolNodeConfigBootDisk {
   /**
   * Type of the disk attached to each node. Such as pd-standard, pd-balanced or pd-ssd
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#disk_type GoogleContainerNodePool#disk_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#disk_type GoogleContainerNodePool#disk_type}
   */
   readonly diskType?: string;
   /**
   * Configured IOPs provisioning. Only valid with disk type hyperdisk-balanced.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#provisioned_iops GoogleContainerNodePool#provisioned_iops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#provisioned_iops GoogleContainerNodePool#provisioned_iops}
   */
   readonly provisionedIops?: number;
   /**
   * Configured throughput provisioning. Only valid with disk type hyperdisk-balanced.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#provisioned_throughput GoogleContainerNodePool#provisioned_throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#provisioned_throughput GoogleContainerNodePool#provisioned_throughput}
   */
   readonly provisionedThroughput?: number;
   /**
   * Size of the disk attached to each node, specified in GB. The smallest allowed disk size is 10GB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#size_gb GoogleContainerNodePool#size_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#size_gb GoogleContainerNodePool#size_gb}
   */
   readonly sizeGb?: number;
 }
@@ -1749,13 +1749,13 @@ export interface GoogleContainerNodePoolNodeConfigConfidentialNodes {
   /**
   * Defines the type of technology used by the confidential node.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#confidential_instance_type GoogleContainerNodePool#confidential_instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#confidential_instance_type GoogleContainerNodePool#confidential_instance_type}
   */
   readonly confidentialInstanceType?: string;
   /**
   * Whether Confidential Nodes feature is enabled for all nodes in this pool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#enabled GoogleContainerNodePool#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#enabled GoogleContainerNodePool#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
 }
@@ -1867,7 +1867,7 @@ export interface GoogleContainerNodePoolNodeConfigContainerdConfigPrivateRegistr
   /**
   * URI for the secret that hosts a certificate. Must be in the format 'projects/PROJECT_NUM/secrets/SECRET_NAME/versions/VERSION_OR_LATEST'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#secret_uri GoogleContainerNodePool#secret_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#secret_uri GoogleContainerNodePool#secret_uri}
   */
   readonly secretUri: string;
 }
@@ -1950,13 +1950,13 @@ export interface GoogleContainerNodePoolNodeConfigContainerdConfigPrivateRegistr
   /**
   * List of fully-qualified-domain-names. IPv4s and port specification are supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#fqdns GoogleContainerNodePool#fqdns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#fqdns GoogleContainerNodePool#fqdns}
   */
   readonly fqdns: string[];
   /**
   * gcp_secret_manager_certificate_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#gcp_secret_manager_certificate_config GoogleContainerNodePool#gcp_secret_manager_certificate_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#gcp_secret_manager_certificate_config GoogleContainerNodePool#gcp_secret_manager_certificate_config}
   */
   readonly gcpSecretManagerCertificateConfig: GoogleContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfig;
 }
@@ -2097,13 +2097,13 @@ export interface GoogleContainerNodePoolNodeConfigContainerdConfigPrivateRegistr
   /**
   * Whether or not private registries are configured.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#enabled GoogleContainerNodePool#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#enabled GoogleContainerNodePool#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
   * certificate_authority_domain_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#certificate_authority_domain_config GoogleContainerNodePool#certificate_authority_domain_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#certificate_authority_domain_config GoogleContainerNodePool#certificate_authority_domain_config}
   */
   readonly certificateAuthorityDomainConfig?: GoogleContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig[] | cdktf.IResolvable;
 }
@@ -2215,7 +2215,7 @@ export interface GoogleContainerNodePoolNodeConfigContainerdConfig {
   /**
   * private_registry_access_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#private_registry_access_config GoogleContainerNodePool#private_registry_access_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#private_registry_access_config GoogleContainerNodePool#private_registry_access_config}
   */
   readonly privateRegistryAccessConfig?: GoogleContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfig;
 }
@@ -2301,7 +2301,7 @@ export interface GoogleContainerNodePoolNodeConfigEphemeralStorageConfig {
   /**
   * Number of local SSDs to use to back ephemeral storage. Uses NVMe interfaces. Each local SSD must be 375 or 3000 GB in size, and all local SSDs must share the same size.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#local_ssd_count GoogleContainerNodePool#local_ssd_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#local_ssd_count GoogleContainerNodePool#local_ssd_count}
   */
   readonly localSsdCount: number;
 }
@@ -2384,13 +2384,13 @@ export interface GoogleContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig
   /**
   * Number of local SSDs to be utilized for GKE Data Cache. Uses NVMe interfaces.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#data_cache_count GoogleContainerNodePool#data_cache_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#data_cache_count GoogleContainerNodePool#data_cache_count}
   */
   readonly dataCacheCount?: number;
   /**
   * Number of local SSDs to use to back ephemeral storage. Uses NVMe interfaces. Each local SSD must be 375 or 3000 GB in size, and all local SSDs must share the same size.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#local_ssd_count GoogleContainerNodePool#local_ssd_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#local_ssd_count GoogleContainerNodePool#local_ssd_count}
   */
   readonly localSsdCount: number;
 }
@@ -2502,7 +2502,7 @@ export interface GoogleContainerNodePoolNodeConfigFastSocket {
   /**
   * Whether or not NCCL Fast Socket is enabled
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#enabled GoogleContainerNodePool#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#enabled GoogleContainerNodePool#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
 }
@@ -2585,7 +2585,7 @@ export interface GoogleContainerNodePoolNodeConfigGcfsConfig {
   /**
   * Whether or not GCFS is enabled
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#enabled GoogleContainerNodePool#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#enabled GoogleContainerNodePool#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
 }
@@ -2668,7 +2668,7 @@ export interface GoogleContainerNodePoolNodeConfigGuestAcceleratorGpuDriverInsta
   /**
   * Mode for how the GPU driver is installed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#gpu_driver_version GoogleContainerNodePool#gpu_driver_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#gpu_driver_version GoogleContainerNodePool#gpu_driver_version}
   */
   readonly gpuDriverVersion: string;
 }
@@ -2751,13 +2751,13 @@ export interface GoogleContainerNodePoolNodeConfigGuestAcceleratorGpuSharingConf
   /**
   * The type of GPU sharing strategy to enable on the GPU node. Possible values are described in the API package (https://pkg.go.dev/google.golang.org/api/container/v1#GPUSharingConfig)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#gpu_sharing_strategy GoogleContainerNodePool#gpu_sharing_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#gpu_sharing_strategy GoogleContainerNodePool#gpu_sharing_strategy}
   */
   readonly gpuSharingStrategy: string;
   /**
   * The maximum number of containers that can share a GPU.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#max_shared_clients_per_gpu GoogleContainerNodePool#max_shared_clients_per_gpu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#max_shared_clients_per_gpu GoogleContainerNodePool#max_shared_clients_per_gpu}
   */
   readonly maxSharedClientsPerGpu: number;
 }
@@ -2866,31 +2866,31 @@ export interface GoogleContainerNodePoolNodeConfigGuestAccelerator {
   /**
   * The number of the accelerator cards exposed to an instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#count GoogleContainerNodePool#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#count GoogleContainerNodePool#count}
   */
   readonly count: number;
   /**
   * Size of partitions to create on the GPU. Valid values are described in the NVIDIA mig user guide (https://docs.nvidia.com/datacenter/tesla/mig-user-guide/#partitioning)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#gpu_partition_size GoogleContainerNodePool#gpu_partition_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#gpu_partition_size GoogleContainerNodePool#gpu_partition_size}
   */
   readonly gpuPartitionSize?: string;
   /**
   * The accelerator type resource name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#type GoogleContainerNodePool#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#type GoogleContainerNodePool#type}
   */
   readonly type: string;
   /**
   * gpu_driver_installation_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#gpu_driver_installation_config GoogleContainerNodePool#gpu_driver_installation_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#gpu_driver_installation_config GoogleContainerNodePool#gpu_driver_installation_config}
   */
   readonly gpuDriverInstallationConfig?: GoogleContainerNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfig;
   /**
   * gpu_sharing_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#gpu_sharing_config GoogleContainerNodePool#gpu_sharing_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#gpu_sharing_config GoogleContainerNodePool#gpu_sharing_config}
   */
   readonly gpuSharingConfig?: GoogleContainerNodePoolNodeConfigGuestAcceleratorGpuSharingConfig;
 }
@@ -3118,7 +3118,7 @@ export interface GoogleContainerNodePoolNodeConfigGvnic {
   /**
   * Whether or not gvnic is enabled
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#enabled GoogleContainerNodePool#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#enabled GoogleContainerNodePool#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
 }
@@ -3201,7 +3201,7 @@ export interface GoogleContainerNodePoolNodeConfigHostMaintenancePolicy {
   /**
   * .
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#maintenance_interval GoogleContainerNodePool#maintenance_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#maintenance_interval GoogleContainerNodePool#maintenance_interval}
   */
   readonly maintenanceInterval: string;
 }
@@ -3280,85 +3280,898 @@ export class GoogleContainerNodePoolNodeConfigHostMaintenancePolicyOutputReferen
     return this._maintenanceInterval;
   }
 }
+export interface GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaim {
+  /**
+  * Defines percentage of minimum reclaim for imagefs.available.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#imagefs_available GoogleContainerNodePool#imagefs_available}
+  */
+  readonly imagefsAvailable?: string;
+  /**
+  * Defines percentage of minimum reclaim for imagefs.inodesFree.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#imagefs_inodes_free GoogleContainerNodePool#imagefs_inodes_free}
+  */
+  readonly imagefsInodesFree?: string;
+  /**
+  * Defines percentage of minimum reclaim for memory.available.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#memory_available GoogleContainerNodePool#memory_available}
+  */
+  readonly memoryAvailable?: string;
+  /**
+  * Defines percentage of minimum reclaim for nodefs.available.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#nodefs_available GoogleContainerNodePool#nodefs_available}
+  */
+  readonly nodefsAvailable?: string;
+  /**
+  * Defines percentage of minimum reclaim for nodefs.inodesFree.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#nodefs_inodes_free GoogleContainerNodePool#nodefs_inodes_free}
+  */
+  readonly nodefsInodesFree?: string;
+  /**
+  * Defines percentage of minimum reclaim for pid.available.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#pid_available GoogleContainerNodePool#pid_available}
+  */
+  readonly pidAvailable?: string;
+}
+
+export function googleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimToTerraform(struct?: GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference | GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaim): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    imagefs_available: cdktf.stringToTerraform(struct!.imagefsAvailable),
+    imagefs_inodes_free: cdktf.stringToTerraform(struct!.imagefsInodesFree),
+    memory_available: cdktf.stringToTerraform(struct!.memoryAvailable),
+    nodefs_available: cdktf.stringToTerraform(struct!.nodefsAvailable),
+    nodefs_inodes_free: cdktf.stringToTerraform(struct!.nodefsInodesFree),
+    pid_available: cdktf.stringToTerraform(struct!.pidAvailable),
+  }
+}
+
+
+export function googleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimToHclTerraform(struct?: GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference | GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaim): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    imagefs_available: {
+      value: cdktf.stringToHclTerraform(struct!.imagefsAvailable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    imagefs_inodes_free: {
+      value: cdktf.stringToHclTerraform(struct!.imagefsInodesFree),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    memory_available: {
+      value: cdktf.stringToHclTerraform(struct!.memoryAvailable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    nodefs_available: {
+      value: cdktf.stringToHclTerraform(struct!.nodefsAvailable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    nodefs_inodes_free: {
+      value: cdktf.stringToHclTerraform(struct!.nodefsInodesFree),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pid_available: {
+      value: cdktf.stringToHclTerraform(struct!.pidAvailable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaim | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._imagefsAvailable !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.imagefsAvailable = this._imagefsAvailable;
+    }
+    if (this._imagefsInodesFree !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.imagefsInodesFree = this._imagefsInodesFree;
+    }
+    if (this._memoryAvailable !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.memoryAvailable = this._memoryAvailable;
+    }
+    if (this._nodefsAvailable !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nodefsAvailable = this._nodefsAvailable;
+    }
+    if (this._nodefsInodesFree !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nodefsInodesFree = this._nodefsInodesFree;
+    }
+    if (this._pidAvailable !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pidAvailable = this._pidAvailable;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaim | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._imagefsAvailable = undefined;
+      this._imagefsInodesFree = undefined;
+      this._memoryAvailable = undefined;
+      this._nodefsAvailable = undefined;
+      this._nodefsInodesFree = undefined;
+      this._pidAvailable = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._imagefsAvailable = value.imagefsAvailable;
+      this._imagefsInodesFree = value.imagefsInodesFree;
+      this._memoryAvailable = value.memoryAvailable;
+      this._nodefsAvailable = value.nodefsAvailable;
+      this._nodefsInodesFree = value.nodefsInodesFree;
+      this._pidAvailable = value.pidAvailable;
+    }
+  }
+
+  // imagefs_available - computed: false, optional: true, required: false
+  private _imagefsAvailable?: string; 
+  public get imagefsAvailable() {
+    return this.getStringAttribute('imagefs_available');
+  }
+  public set imagefsAvailable(value: string) {
+    this._imagefsAvailable = value;
+  }
+  public resetImagefsAvailable() {
+    this._imagefsAvailable = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get imagefsAvailableInput() {
+    return this._imagefsAvailable;
+  }
+
+  // imagefs_inodes_free - computed: false, optional: true, required: false
+  private _imagefsInodesFree?: string; 
+  public get imagefsInodesFree() {
+    return this.getStringAttribute('imagefs_inodes_free');
+  }
+  public set imagefsInodesFree(value: string) {
+    this._imagefsInodesFree = value;
+  }
+  public resetImagefsInodesFree() {
+    this._imagefsInodesFree = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get imagefsInodesFreeInput() {
+    return this._imagefsInodesFree;
+  }
+
+  // memory_available - computed: false, optional: true, required: false
+  private _memoryAvailable?: string; 
+  public get memoryAvailable() {
+    return this.getStringAttribute('memory_available');
+  }
+  public set memoryAvailable(value: string) {
+    this._memoryAvailable = value;
+  }
+  public resetMemoryAvailable() {
+    this._memoryAvailable = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get memoryAvailableInput() {
+    return this._memoryAvailable;
+  }
+
+  // nodefs_available - computed: false, optional: true, required: false
+  private _nodefsAvailable?: string; 
+  public get nodefsAvailable() {
+    return this.getStringAttribute('nodefs_available');
+  }
+  public set nodefsAvailable(value: string) {
+    this._nodefsAvailable = value;
+  }
+  public resetNodefsAvailable() {
+    this._nodefsAvailable = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodefsAvailableInput() {
+    return this._nodefsAvailable;
+  }
+
+  // nodefs_inodes_free - computed: false, optional: true, required: false
+  private _nodefsInodesFree?: string; 
+  public get nodefsInodesFree() {
+    return this.getStringAttribute('nodefs_inodes_free');
+  }
+  public set nodefsInodesFree(value: string) {
+    this._nodefsInodesFree = value;
+  }
+  public resetNodefsInodesFree() {
+    this._nodefsInodesFree = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodefsInodesFreeInput() {
+    return this._nodefsInodesFree;
+  }
+
+  // pid_available - computed: false, optional: true, required: false
+  private _pidAvailable?: string; 
+  public get pidAvailable() {
+    return this.getStringAttribute('pid_available');
+  }
+  public set pidAvailable(value: string) {
+    this._pidAvailable = value;
+  }
+  public resetPidAvailable() {
+    this._pidAvailable = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pidAvailableInput() {
+    return this._pidAvailable;
+  }
+}
+export interface GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoft {
+  /**
+  * Defines percentage of soft eviction threshold for imagefs.available.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#imagefs_available GoogleContainerNodePool#imagefs_available}
+  */
+  readonly imagefsAvailable?: string;
+  /**
+  * Defines percentage of soft eviction threshold for imagefs.inodesFree.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#imagefs_inodes_free GoogleContainerNodePool#imagefs_inodes_free}
+  */
+  readonly imagefsInodesFree?: string;
+  /**
+  * Defines quantity of soft eviction threshold for memory.available.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#memory_available GoogleContainerNodePool#memory_available}
+  */
+  readonly memoryAvailable?: string;
+  /**
+  * Defines percentage of soft eviction threshold for nodefs.available.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#nodefs_available GoogleContainerNodePool#nodefs_available}
+  */
+  readonly nodefsAvailable?: string;
+  /**
+  * Defines percentage of soft eviction threshold for nodefs.inodesFree.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#nodefs_inodes_free GoogleContainerNodePool#nodefs_inodes_free}
+  */
+  readonly nodefsInodesFree?: string;
+  /**
+  * Defines percentage of soft eviction threshold for pid.available.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#pid_available GoogleContainerNodePool#pid_available}
+  */
+  readonly pidAvailable?: string;
+}
+
+export function googleContainerNodePoolNodeConfigKubeletConfigEvictionSoftToTerraform(struct?: GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoftOutputReference | GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoft): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    imagefs_available: cdktf.stringToTerraform(struct!.imagefsAvailable),
+    imagefs_inodes_free: cdktf.stringToTerraform(struct!.imagefsInodesFree),
+    memory_available: cdktf.stringToTerraform(struct!.memoryAvailable),
+    nodefs_available: cdktf.stringToTerraform(struct!.nodefsAvailable),
+    nodefs_inodes_free: cdktf.stringToTerraform(struct!.nodefsInodesFree),
+    pid_available: cdktf.stringToTerraform(struct!.pidAvailable),
+  }
+}
+
+
+export function googleContainerNodePoolNodeConfigKubeletConfigEvictionSoftToHclTerraform(struct?: GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoftOutputReference | GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoft): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    imagefs_available: {
+      value: cdktf.stringToHclTerraform(struct!.imagefsAvailable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    imagefs_inodes_free: {
+      value: cdktf.stringToHclTerraform(struct!.imagefsInodesFree),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    memory_available: {
+      value: cdktf.stringToHclTerraform(struct!.memoryAvailable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    nodefs_available: {
+      value: cdktf.stringToHclTerraform(struct!.nodefsAvailable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    nodefs_inodes_free: {
+      value: cdktf.stringToHclTerraform(struct!.nodefsInodesFree),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pid_available: {
+      value: cdktf.stringToHclTerraform(struct!.pidAvailable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoftOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoft | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._imagefsAvailable !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.imagefsAvailable = this._imagefsAvailable;
+    }
+    if (this._imagefsInodesFree !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.imagefsInodesFree = this._imagefsInodesFree;
+    }
+    if (this._memoryAvailable !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.memoryAvailable = this._memoryAvailable;
+    }
+    if (this._nodefsAvailable !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nodefsAvailable = this._nodefsAvailable;
+    }
+    if (this._nodefsInodesFree !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nodefsInodesFree = this._nodefsInodesFree;
+    }
+    if (this._pidAvailable !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pidAvailable = this._pidAvailable;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoft | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._imagefsAvailable = undefined;
+      this._imagefsInodesFree = undefined;
+      this._memoryAvailable = undefined;
+      this._nodefsAvailable = undefined;
+      this._nodefsInodesFree = undefined;
+      this._pidAvailable = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._imagefsAvailable = value.imagefsAvailable;
+      this._imagefsInodesFree = value.imagefsInodesFree;
+      this._memoryAvailable = value.memoryAvailable;
+      this._nodefsAvailable = value.nodefsAvailable;
+      this._nodefsInodesFree = value.nodefsInodesFree;
+      this._pidAvailable = value.pidAvailable;
+    }
+  }
+
+  // imagefs_available - computed: false, optional: true, required: false
+  private _imagefsAvailable?: string; 
+  public get imagefsAvailable() {
+    return this.getStringAttribute('imagefs_available');
+  }
+  public set imagefsAvailable(value: string) {
+    this._imagefsAvailable = value;
+  }
+  public resetImagefsAvailable() {
+    this._imagefsAvailable = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get imagefsAvailableInput() {
+    return this._imagefsAvailable;
+  }
+
+  // imagefs_inodes_free - computed: false, optional: true, required: false
+  private _imagefsInodesFree?: string; 
+  public get imagefsInodesFree() {
+    return this.getStringAttribute('imagefs_inodes_free');
+  }
+  public set imagefsInodesFree(value: string) {
+    this._imagefsInodesFree = value;
+  }
+  public resetImagefsInodesFree() {
+    this._imagefsInodesFree = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get imagefsInodesFreeInput() {
+    return this._imagefsInodesFree;
+  }
+
+  // memory_available - computed: false, optional: true, required: false
+  private _memoryAvailable?: string; 
+  public get memoryAvailable() {
+    return this.getStringAttribute('memory_available');
+  }
+  public set memoryAvailable(value: string) {
+    this._memoryAvailable = value;
+  }
+  public resetMemoryAvailable() {
+    this._memoryAvailable = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get memoryAvailableInput() {
+    return this._memoryAvailable;
+  }
+
+  // nodefs_available - computed: false, optional: true, required: false
+  private _nodefsAvailable?: string; 
+  public get nodefsAvailable() {
+    return this.getStringAttribute('nodefs_available');
+  }
+  public set nodefsAvailable(value: string) {
+    this._nodefsAvailable = value;
+  }
+  public resetNodefsAvailable() {
+    this._nodefsAvailable = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodefsAvailableInput() {
+    return this._nodefsAvailable;
+  }
+
+  // nodefs_inodes_free - computed: false, optional: true, required: false
+  private _nodefsInodesFree?: string; 
+  public get nodefsInodesFree() {
+    return this.getStringAttribute('nodefs_inodes_free');
+  }
+  public set nodefsInodesFree(value: string) {
+    this._nodefsInodesFree = value;
+  }
+  public resetNodefsInodesFree() {
+    this._nodefsInodesFree = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodefsInodesFreeInput() {
+    return this._nodefsInodesFree;
+  }
+
+  // pid_available - computed: false, optional: true, required: false
+  private _pidAvailable?: string; 
+  public get pidAvailable() {
+    return this.getStringAttribute('pid_available');
+  }
+  public set pidAvailable(value: string) {
+    this._pidAvailable = value;
+  }
+  public resetPidAvailable() {
+    this._pidAvailable = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pidAvailableInput() {
+    return this._pidAvailable;
+  }
+}
+export interface GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriod {
+  /**
+  * Defines grace period for the imagefs.available soft eviction threshold
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#imagefs_available GoogleContainerNodePool#imagefs_available}
+  */
+  readonly imagefsAvailable?: string;
+  /**
+  * Defines grace period for the imagefs.inodesFree soft eviction threshold.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#imagefs_inodes_free GoogleContainerNodePool#imagefs_inodes_free}
+  */
+  readonly imagefsInodesFree?: string;
+  /**
+  * Defines grace period for the memory.available soft eviction threshold.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#memory_available GoogleContainerNodePool#memory_available}
+  */
+  readonly memoryAvailable?: string;
+  /**
+  * Defines grace period for the nodefs.available soft eviction threshold.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#nodefs_available GoogleContainerNodePool#nodefs_available}
+  */
+  readonly nodefsAvailable?: string;
+  /**
+  * Defines grace period for the nodefs.inodesFree soft eviction threshold.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#nodefs_inodes_free GoogleContainerNodePool#nodefs_inodes_free}
+  */
+  readonly nodefsInodesFree?: string;
+  /**
+  * Defines grace period for the pid.available soft eviction threshold.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#pid_available GoogleContainerNodePool#pid_available}
+  */
+  readonly pidAvailable?: string;
+}
+
+export function googleContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodToTerraform(struct?: GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference | GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriod): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    imagefs_available: cdktf.stringToTerraform(struct!.imagefsAvailable),
+    imagefs_inodes_free: cdktf.stringToTerraform(struct!.imagefsInodesFree),
+    memory_available: cdktf.stringToTerraform(struct!.memoryAvailable),
+    nodefs_available: cdktf.stringToTerraform(struct!.nodefsAvailable),
+    nodefs_inodes_free: cdktf.stringToTerraform(struct!.nodefsInodesFree),
+    pid_available: cdktf.stringToTerraform(struct!.pidAvailable),
+  }
+}
+
+
+export function googleContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodToHclTerraform(struct?: GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference | GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriod): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    imagefs_available: {
+      value: cdktf.stringToHclTerraform(struct!.imagefsAvailable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    imagefs_inodes_free: {
+      value: cdktf.stringToHclTerraform(struct!.imagefsInodesFree),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    memory_available: {
+      value: cdktf.stringToHclTerraform(struct!.memoryAvailable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    nodefs_available: {
+      value: cdktf.stringToHclTerraform(struct!.nodefsAvailable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    nodefs_inodes_free: {
+      value: cdktf.stringToHclTerraform(struct!.nodefsInodesFree),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pid_available: {
+      value: cdktf.stringToHclTerraform(struct!.pidAvailable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriod | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._imagefsAvailable !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.imagefsAvailable = this._imagefsAvailable;
+    }
+    if (this._imagefsInodesFree !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.imagefsInodesFree = this._imagefsInodesFree;
+    }
+    if (this._memoryAvailable !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.memoryAvailable = this._memoryAvailable;
+    }
+    if (this._nodefsAvailable !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nodefsAvailable = this._nodefsAvailable;
+    }
+    if (this._nodefsInodesFree !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nodefsInodesFree = this._nodefsInodesFree;
+    }
+    if (this._pidAvailable !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pidAvailable = this._pidAvailable;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriod | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._imagefsAvailable = undefined;
+      this._imagefsInodesFree = undefined;
+      this._memoryAvailable = undefined;
+      this._nodefsAvailable = undefined;
+      this._nodefsInodesFree = undefined;
+      this._pidAvailable = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._imagefsAvailable = value.imagefsAvailable;
+      this._imagefsInodesFree = value.imagefsInodesFree;
+      this._memoryAvailable = value.memoryAvailable;
+      this._nodefsAvailable = value.nodefsAvailable;
+      this._nodefsInodesFree = value.nodefsInodesFree;
+      this._pidAvailable = value.pidAvailable;
+    }
+  }
+
+  // imagefs_available - computed: false, optional: true, required: false
+  private _imagefsAvailable?: string; 
+  public get imagefsAvailable() {
+    return this.getStringAttribute('imagefs_available');
+  }
+  public set imagefsAvailable(value: string) {
+    this._imagefsAvailable = value;
+  }
+  public resetImagefsAvailable() {
+    this._imagefsAvailable = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get imagefsAvailableInput() {
+    return this._imagefsAvailable;
+  }
+
+  // imagefs_inodes_free - computed: false, optional: true, required: false
+  private _imagefsInodesFree?: string; 
+  public get imagefsInodesFree() {
+    return this.getStringAttribute('imagefs_inodes_free');
+  }
+  public set imagefsInodesFree(value: string) {
+    this._imagefsInodesFree = value;
+  }
+  public resetImagefsInodesFree() {
+    this._imagefsInodesFree = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get imagefsInodesFreeInput() {
+    return this._imagefsInodesFree;
+  }
+
+  // memory_available - computed: false, optional: true, required: false
+  private _memoryAvailable?: string; 
+  public get memoryAvailable() {
+    return this.getStringAttribute('memory_available');
+  }
+  public set memoryAvailable(value: string) {
+    this._memoryAvailable = value;
+  }
+  public resetMemoryAvailable() {
+    this._memoryAvailable = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get memoryAvailableInput() {
+    return this._memoryAvailable;
+  }
+
+  // nodefs_available - computed: false, optional: true, required: false
+  private _nodefsAvailable?: string; 
+  public get nodefsAvailable() {
+    return this.getStringAttribute('nodefs_available');
+  }
+  public set nodefsAvailable(value: string) {
+    this._nodefsAvailable = value;
+  }
+  public resetNodefsAvailable() {
+    this._nodefsAvailable = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodefsAvailableInput() {
+    return this._nodefsAvailable;
+  }
+
+  // nodefs_inodes_free - computed: false, optional: true, required: false
+  private _nodefsInodesFree?: string; 
+  public get nodefsInodesFree() {
+    return this.getStringAttribute('nodefs_inodes_free');
+  }
+  public set nodefsInodesFree(value: string) {
+    this._nodefsInodesFree = value;
+  }
+  public resetNodefsInodesFree() {
+    this._nodefsInodesFree = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodefsInodesFreeInput() {
+    return this._nodefsInodesFree;
+  }
+
+  // pid_available - computed: false, optional: true, required: false
+  private _pidAvailable?: string; 
+  public get pidAvailable() {
+    return this.getStringAttribute('pid_available');
+  }
+  public set pidAvailable(value: string) {
+    this._pidAvailable = value;
+  }
+  public resetPidAvailable() {
+    this._pidAvailable = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pidAvailableInput() {
+    return this._pidAvailable;
+  }
+}
 export interface GoogleContainerNodePoolNodeConfigKubeletConfig {
   /**
   * Defines a comma-separated allowlist of unsafe sysctls or sysctl patterns which can be set on the Pods.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#allowed_unsafe_sysctls GoogleContainerNodePool#allowed_unsafe_sysctls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#allowed_unsafe_sysctls GoogleContainerNodePool#allowed_unsafe_sysctls}
   */
   readonly allowedUnsafeSysctls?: string[];
   /**
   * Defines the maximum number of container log files that can be present for a container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#container_log_max_files GoogleContainerNodePool#container_log_max_files}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#container_log_max_files GoogleContainerNodePool#container_log_max_files}
   */
   readonly containerLogMaxFiles?: number;
   /**
   * Defines the maximum size of the container log file before it is rotated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#container_log_max_size GoogleContainerNodePool#container_log_max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#container_log_max_size GoogleContainerNodePool#container_log_max_size}
   */
   readonly containerLogMaxSize?: string;
   /**
   * Enable CPU CFS quota enforcement for containers that specify CPU limits.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#cpu_cfs_quota GoogleContainerNodePool#cpu_cfs_quota}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#cpu_cfs_quota GoogleContainerNodePool#cpu_cfs_quota}
   */
   readonly cpuCfsQuota?: boolean | cdktf.IResolvable;
   /**
   * Set the CPU CFS quota period value 'cpu.cfs_period_us'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#cpu_cfs_quota_period GoogleContainerNodePool#cpu_cfs_quota_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#cpu_cfs_quota_period GoogleContainerNodePool#cpu_cfs_quota_period}
   */
   readonly cpuCfsQuotaPeriod?: string;
   /**
   * Control the CPU management policy on the node.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#cpu_manager_policy GoogleContainerNodePool#cpu_manager_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#cpu_manager_policy GoogleContainerNodePool#cpu_manager_policy}
   */
   readonly cpuManagerPolicy?: string;
   /**
+  * Defines the maximum allowed grace period (in seconds) to use when terminating pods in response to a soft eviction threshold being met.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#eviction_max_pod_grace_period_seconds GoogleContainerNodePool#eviction_max_pod_grace_period_seconds}
+  */
+  readonly evictionMaxPodGracePeriodSeconds?: number;
+  /**
   * Defines the percent of disk usage after which image garbage collection is always run.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#image_gc_high_threshold_percent GoogleContainerNodePool#image_gc_high_threshold_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#image_gc_high_threshold_percent GoogleContainerNodePool#image_gc_high_threshold_percent}
   */
   readonly imageGcHighThresholdPercent?: number;
   /**
   * Defines the percent of disk usage before which image garbage collection is never run. Lowest disk usage to garbage collect to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#image_gc_low_threshold_percent GoogleContainerNodePool#image_gc_low_threshold_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#image_gc_low_threshold_percent GoogleContainerNodePool#image_gc_low_threshold_percent}
   */
   readonly imageGcLowThresholdPercent?: number;
   /**
   * Defines the maximum age an image can be unused before it is garbage collected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#image_maximum_gc_age GoogleContainerNodePool#image_maximum_gc_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#image_maximum_gc_age GoogleContainerNodePool#image_maximum_gc_age}
   */
   readonly imageMaximumGcAge?: string;
   /**
   * Defines the minimum age for an unused image before it is garbage collected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#image_minimum_gc_age GoogleContainerNodePool#image_minimum_gc_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#image_minimum_gc_age GoogleContainerNodePool#image_minimum_gc_age}
   */
   readonly imageMinimumGcAge?: string;
   /**
   * Controls whether the kubelet read-only port is enabled. It is strongly recommended to set this to `FALSE`. Possible values: `TRUE`, `FALSE`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#insecure_kubelet_readonly_port_enabled GoogleContainerNodePool#insecure_kubelet_readonly_port_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#insecure_kubelet_readonly_port_enabled GoogleContainerNodePool#insecure_kubelet_readonly_port_enabled}
   */
   readonly insecureKubeletReadonlyPortEnabled?: string;
   /**
+  * Set the maximum number of image pulls in parallel.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#max_parallel_image_pulls GoogleContainerNodePool#max_parallel_image_pulls}
+  */
+  readonly maxParallelImagePulls?: number;
+  /**
   * Controls the maximum number of processes allowed to run in a pod.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#pod_pids_limit GoogleContainerNodePool#pod_pids_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#pod_pids_limit GoogleContainerNodePool#pod_pids_limit}
   */
   readonly podPidsLimit?: number;
   /**
   * Defines whether to enable single process OOM killer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#single_process_oom_kill GoogleContainerNodePool#single_process_oom_kill}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#single_process_oom_kill GoogleContainerNodePool#single_process_oom_kill}
   */
   readonly singleProcessOomKill?: boolean | cdktf.IResolvable;
+  /**
+  * eviction_minimum_reclaim block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#eviction_minimum_reclaim GoogleContainerNodePool#eviction_minimum_reclaim}
+  */
+  readonly evictionMinimumReclaim?: GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaim;
+  /**
+  * eviction_soft block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#eviction_soft GoogleContainerNodePool#eviction_soft}
+  */
+  readonly evictionSoft?: GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoft;
+  /**
+  * eviction_soft_grace_period block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#eviction_soft_grace_period GoogleContainerNodePool#eviction_soft_grace_period}
+  */
+  readonly evictionSoftGracePeriod?: GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriod;
 }
 
 export function googleContainerNodePoolNodeConfigKubeletConfigToTerraform(struct?: GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference | GoogleContainerNodePoolNodeConfigKubeletConfig): any {
@@ -3373,13 +4186,18 @@ export function googleContainerNodePoolNodeConfigKubeletConfigToTerraform(struct
     cpu_cfs_quota: cdktf.booleanToTerraform(struct!.cpuCfsQuota),
     cpu_cfs_quota_period: cdktf.stringToTerraform(struct!.cpuCfsQuotaPeriod),
     cpu_manager_policy: cdktf.stringToTerraform(struct!.cpuManagerPolicy),
+    eviction_max_pod_grace_period_seconds: cdktf.numberToTerraform(struct!.evictionMaxPodGracePeriodSeconds),
     image_gc_high_threshold_percent: cdktf.numberToTerraform(struct!.imageGcHighThresholdPercent),
     image_gc_low_threshold_percent: cdktf.numberToTerraform(struct!.imageGcLowThresholdPercent),
     image_maximum_gc_age: cdktf.stringToTerraform(struct!.imageMaximumGcAge),
     image_minimum_gc_age: cdktf.stringToTerraform(struct!.imageMinimumGcAge),
     insecure_kubelet_readonly_port_enabled: cdktf.stringToTerraform(struct!.insecureKubeletReadonlyPortEnabled),
+    max_parallel_image_pulls: cdktf.numberToTerraform(struct!.maxParallelImagePulls),
     pod_pids_limit: cdktf.numberToTerraform(struct!.podPidsLimit),
     single_process_oom_kill: cdktf.booleanToTerraform(struct!.singleProcessOomKill),
+    eviction_minimum_reclaim: googleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimToTerraform(struct!.evictionMinimumReclaim),
+    eviction_soft: googleContainerNodePoolNodeConfigKubeletConfigEvictionSoftToTerraform(struct!.evictionSoft),
+    eviction_soft_grace_period: googleContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodToTerraform(struct!.evictionSoftGracePeriod),
   }
 }
 
@@ -3426,6 +4244,12 @@ export function googleContainerNodePoolNodeConfigKubeletConfigToHclTerraform(str
       type: "simple",
       storageClassType: "string",
     },
+    eviction_max_pod_grace_period_seconds: {
+      value: cdktf.numberToHclTerraform(struct!.evictionMaxPodGracePeriodSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
     image_gc_high_threshold_percent: {
       value: cdktf.numberToHclTerraform(struct!.imageGcHighThresholdPercent),
       isBlock: false,
@@ -3456,6 +4280,12 @@ export function googleContainerNodePoolNodeConfigKubeletConfigToHclTerraform(str
       type: "simple",
       storageClassType: "string",
     },
+    max_parallel_image_pulls: {
+      value: cdktf.numberToHclTerraform(struct!.maxParallelImagePulls),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
     pod_pids_limit: {
       value: cdktf.numberToHclTerraform(struct!.podPidsLimit),
       isBlock: false,
@@ -3467,6 +4297,24 @@ export function googleContainerNodePoolNodeConfigKubeletConfigToHclTerraform(str
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
+    },
+    eviction_minimum_reclaim: {
+      value: googleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimToHclTerraform(struct!.evictionMinimumReclaim),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimList",
+    },
+    eviction_soft: {
+      value: googleContainerNodePoolNodeConfigKubeletConfigEvictionSoftToHclTerraform(struct!.evictionSoft),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoftList",
+    },
+    eviction_soft_grace_period: {
+      value: googleContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodToHclTerraform(struct!.evictionSoftGracePeriod),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodList",
     },
   };
 
@@ -3512,6 +4360,10 @@ export class GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference exten
       hasAnyValues = true;
       internalValueResult.cpuManagerPolicy = this._cpuManagerPolicy;
     }
+    if (this._evictionMaxPodGracePeriodSeconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.evictionMaxPodGracePeriodSeconds = this._evictionMaxPodGracePeriodSeconds;
+    }
     if (this._imageGcHighThresholdPercent !== undefined) {
       hasAnyValues = true;
       internalValueResult.imageGcHighThresholdPercent = this._imageGcHighThresholdPercent;
@@ -3532,6 +4384,10 @@ export class GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference exten
       hasAnyValues = true;
       internalValueResult.insecureKubeletReadonlyPortEnabled = this._insecureKubeletReadonlyPortEnabled;
     }
+    if (this._maxParallelImagePulls !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxParallelImagePulls = this._maxParallelImagePulls;
+    }
     if (this._podPidsLimit !== undefined) {
       hasAnyValues = true;
       internalValueResult.podPidsLimit = this._podPidsLimit;
@@ -3539,6 +4395,18 @@ export class GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference exten
     if (this._singleProcessOomKill !== undefined) {
       hasAnyValues = true;
       internalValueResult.singleProcessOomKill = this._singleProcessOomKill;
+    }
+    if (this._evictionMinimumReclaim?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.evictionMinimumReclaim = this._evictionMinimumReclaim?.internalValue;
+    }
+    if (this._evictionSoft?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.evictionSoft = this._evictionSoft?.internalValue;
+    }
+    if (this._evictionSoftGracePeriod?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.evictionSoftGracePeriod = this._evictionSoftGracePeriod?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -3552,13 +4420,18 @@ export class GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference exten
       this._cpuCfsQuota = undefined;
       this._cpuCfsQuotaPeriod = undefined;
       this._cpuManagerPolicy = undefined;
+      this._evictionMaxPodGracePeriodSeconds = undefined;
       this._imageGcHighThresholdPercent = undefined;
       this._imageGcLowThresholdPercent = undefined;
       this._imageMaximumGcAge = undefined;
       this._imageMinimumGcAge = undefined;
       this._insecureKubeletReadonlyPortEnabled = undefined;
+      this._maxParallelImagePulls = undefined;
       this._podPidsLimit = undefined;
       this._singleProcessOomKill = undefined;
+      this._evictionMinimumReclaim.internalValue = undefined;
+      this._evictionSoft.internalValue = undefined;
+      this._evictionSoftGracePeriod.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -3568,13 +4441,18 @@ export class GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference exten
       this._cpuCfsQuota = value.cpuCfsQuota;
       this._cpuCfsQuotaPeriod = value.cpuCfsQuotaPeriod;
       this._cpuManagerPolicy = value.cpuManagerPolicy;
+      this._evictionMaxPodGracePeriodSeconds = value.evictionMaxPodGracePeriodSeconds;
       this._imageGcHighThresholdPercent = value.imageGcHighThresholdPercent;
       this._imageGcLowThresholdPercent = value.imageGcLowThresholdPercent;
       this._imageMaximumGcAge = value.imageMaximumGcAge;
       this._imageMinimumGcAge = value.imageMinimumGcAge;
       this._insecureKubeletReadonlyPortEnabled = value.insecureKubeletReadonlyPortEnabled;
+      this._maxParallelImagePulls = value.maxParallelImagePulls;
       this._podPidsLimit = value.podPidsLimit;
       this._singleProcessOomKill = value.singleProcessOomKill;
+      this._evictionMinimumReclaim.internalValue = value.evictionMinimumReclaim;
+      this._evictionSoft.internalValue = value.evictionSoft;
+      this._evictionSoftGracePeriod.internalValue = value.evictionSoftGracePeriod;
     }
   }
 
@@ -3674,6 +4552,22 @@ export class GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference exten
     return this._cpuManagerPolicy;
   }
 
+  // eviction_max_pod_grace_period_seconds - computed: false, optional: true, required: false
+  private _evictionMaxPodGracePeriodSeconds?: number; 
+  public get evictionMaxPodGracePeriodSeconds() {
+    return this.getNumberAttribute('eviction_max_pod_grace_period_seconds');
+  }
+  public set evictionMaxPodGracePeriodSeconds(value: number) {
+    this._evictionMaxPodGracePeriodSeconds = value;
+  }
+  public resetEvictionMaxPodGracePeriodSeconds() {
+    this._evictionMaxPodGracePeriodSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get evictionMaxPodGracePeriodSecondsInput() {
+    return this._evictionMaxPodGracePeriodSeconds;
+  }
+
   // image_gc_high_threshold_percent - computed: false, optional: true, required: false
   private _imageGcHighThresholdPercent?: number; 
   public get imageGcHighThresholdPercent() {
@@ -3754,6 +4648,22 @@ export class GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference exten
     return this._insecureKubeletReadonlyPortEnabled;
   }
 
+  // max_parallel_image_pulls - computed: true, optional: true, required: false
+  private _maxParallelImagePulls?: number; 
+  public get maxParallelImagePulls() {
+    return this.getNumberAttribute('max_parallel_image_pulls');
+  }
+  public set maxParallelImagePulls(value: number) {
+    this._maxParallelImagePulls = value;
+  }
+  public resetMaxParallelImagePulls() {
+    this._maxParallelImagePulls = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxParallelImagePullsInput() {
+    return this._maxParallelImagePulls;
+  }
+
   // pod_pids_limit - computed: false, optional: true, required: false
   private _podPidsLimit?: number; 
   public get podPidsLimit() {
@@ -3785,18 +4695,66 @@ export class GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference exten
   public get singleProcessOomKillInput() {
     return this._singleProcessOomKill;
   }
+
+  // eviction_minimum_reclaim - computed: false, optional: true, required: false
+  private _evictionMinimumReclaim = new GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference(this, "eviction_minimum_reclaim");
+  public get evictionMinimumReclaim() {
+    return this._evictionMinimumReclaim;
+  }
+  public putEvictionMinimumReclaim(value: GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaim) {
+    this._evictionMinimumReclaim.internalValue = value;
+  }
+  public resetEvictionMinimumReclaim() {
+    this._evictionMinimumReclaim.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get evictionMinimumReclaimInput() {
+    return this._evictionMinimumReclaim.internalValue;
+  }
+
+  // eviction_soft - computed: false, optional: true, required: false
+  private _evictionSoft = new GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoftOutputReference(this, "eviction_soft");
+  public get evictionSoft() {
+    return this._evictionSoft;
+  }
+  public putEvictionSoft(value: GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoft) {
+    this._evictionSoft.internalValue = value;
+  }
+  public resetEvictionSoft() {
+    this._evictionSoft.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get evictionSoftInput() {
+    return this._evictionSoft.internalValue;
+  }
+
+  // eviction_soft_grace_period - computed: false, optional: true, required: false
+  private _evictionSoftGracePeriod = new GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference(this, "eviction_soft_grace_period");
+  public get evictionSoftGracePeriod() {
+    return this._evictionSoftGracePeriod;
+  }
+  public putEvictionSoftGracePeriod(value: GoogleContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriod) {
+    this._evictionSoftGracePeriod.internalValue = value;
+  }
+  public resetEvictionSoftGracePeriod() {
+    this._evictionSoftGracePeriod.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get evictionSoftGracePeriodInput() {
+    return this._evictionSoftGracePeriod.internalValue;
+  }
 }
 export interface GoogleContainerNodePoolNodeConfigLinuxNodeConfigHugepagesConfig {
   /**
   * Amount of 1G hugepages.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#hugepage_size_1g GoogleContainerNodePool#hugepage_size_1g}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#hugepage_size_1g GoogleContainerNodePool#hugepage_size_1g}
   */
   readonly hugepageSize1G?: number;
   /**
   * Amount of 2M hugepages.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#hugepage_size_2m GoogleContainerNodePool#hugepage_size_2m}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#hugepage_size_2m GoogleContainerNodePool#hugepage_size_2m}
   */
   readonly hugepageSize2M?: number;
 }
@@ -3911,19 +4869,31 @@ export interface GoogleContainerNodePoolNodeConfigLinuxNodeConfig {
   /**
   * cgroupMode specifies the cgroup mode to be used on the node.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#cgroup_mode GoogleContainerNodePool#cgroup_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#cgroup_mode GoogleContainerNodePool#cgroup_mode}
   */
   readonly cgroupMode?: string;
   /**
   * The Linux kernel parameters to be applied to the nodes and all pods running on the nodes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#sysctls GoogleContainerNodePool#sysctls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#sysctls GoogleContainerNodePool#sysctls}
   */
   readonly sysctls?: { [key: string]: string };
   /**
+  * The Linux kernel transparent hugepage defrag setting.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#transparent_hugepage_defrag GoogleContainerNodePool#transparent_hugepage_defrag}
+  */
+  readonly transparentHugepageDefrag?: string;
+  /**
+  * The Linux kernel transparent hugepage setting.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#transparent_hugepage_enabled GoogleContainerNodePool#transparent_hugepage_enabled}
+  */
+  readonly transparentHugepageEnabled?: string;
+  /**
   * hugepages_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#hugepages_config GoogleContainerNodePool#hugepages_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#hugepages_config GoogleContainerNodePool#hugepages_config}
   */
   readonly hugepagesConfig?: GoogleContainerNodePoolNodeConfigLinuxNodeConfigHugepagesConfig;
 }
@@ -3936,6 +4906,8 @@ export function googleContainerNodePoolNodeConfigLinuxNodeConfigToTerraform(stru
   return {
     cgroup_mode: cdktf.stringToTerraform(struct!.cgroupMode),
     sysctls: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.sysctls),
+    transparent_hugepage_defrag: cdktf.stringToTerraform(struct!.transparentHugepageDefrag),
+    transparent_hugepage_enabled: cdktf.stringToTerraform(struct!.transparentHugepageEnabled),
     hugepages_config: googleContainerNodePoolNodeConfigLinuxNodeConfigHugepagesConfigToTerraform(struct!.hugepagesConfig),
   }
 }
@@ -3958,6 +4930,18 @@ export function googleContainerNodePoolNodeConfigLinuxNodeConfigToHclTerraform(s
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
+    },
+    transparent_hugepage_defrag: {
+      value: cdktf.stringToHclTerraform(struct!.transparentHugepageDefrag),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    transparent_hugepage_enabled: {
+      value: cdktf.stringToHclTerraform(struct!.transparentHugepageEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
     },
     hugepages_config: {
       value: googleContainerNodePoolNodeConfigLinuxNodeConfigHugepagesConfigToHclTerraform(struct!.hugepagesConfig),
@@ -3993,6 +4977,14 @@ export class GoogleContainerNodePoolNodeConfigLinuxNodeConfigOutputReference ext
       hasAnyValues = true;
       internalValueResult.sysctls = this._sysctls;
     }
+    if (this._transparentHugepageDefrag !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.transparentHugepageDefrag = this._transparentHugepageDefrag;
+    }
+    if (this._transparentHugepageEnabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.transparentHugepageEnabled = this._transparentHugepageEnabled;
+    }
     if (this._hugepagesConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.hugepagesConfig = this._hugepagesConfig?.internalValue;
@@ -4005,12 +4997,16 @@ export class GoogleContainerNodePoolNodeConfigLinuxNodeConfigOutputReference ext
       this.isEmptyObject = false;
       this._cgroupMode = undefined;
       this._sysctls = undefined;
+      this._transparentHugepageDefrag = undefined;
+      this._transparentHugepageEnabled = undefined;
       this._hugepagesConfig.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._cgroupMode = value.cgroupMode;
       this._sysctls = value.sysctls;
+      this._transparentHugepageDefrag = value.transparentHugepageDefrag;
+      this._transparentHugepageEnabled = value.transparentHugepageEnabled;
       this._hugepagesConfig.internalValue = value.hugepagesConfig;
     }
   }
@@ -4047,6 +5043,38 @@ export class GoogleContainerNodePoolNodeConfigLinuxNodeConfigOutputReference ext
     return this._sysctls;
   }
 
+  // transparent_hugepage_defrag - computed: false, optional: true, required: false
+  private _transparentHugepageDefrag?: string; 
+  public get transparentHugepageDefrag() {
+    return this.getStringAttribute('transparent_hugepage_defrag');
+  }
+  public set transparentHugepageDefrag(value: string) {
+    this._transparentHugepageDefrag = value;
+  }
+  public resetTransparentHugepageDefrag() {
+    this._transparentHugepageDefrag = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transparentHugepageDefragInput() {
+    return this._transparentHugepageDefrag;
+  }
+
+  // transparent_hugepage_enabled - computed: true, optional: true, required: false
+  private _transparentHugepageEnabled?: string; 
+  public get transparentHugepageEnabled() {
+    return this.getStringAttribute('transparent_hugepage_enabled');
+  }
+  public set transparentHugepageEnabled(value: string) {
+    this._transparentHugepageEnabled = value;
+  }
+  public resetTransparentHugepageEnabled() {
+    this._transparentHugepageEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transparentHugepageEnabledInput() {
+    return this._transparentHugepageEnabled;
+  }
+
   // hugepages_config - computed: false, optional: true, required: false
   private _hugepagesConfig = new GoogleContainerNodePoolNodeConfigLinuxNodeConfigHugepagesConfigOutputReference(this, "hugepages_config");
   public get hugepagesConfig() {
@@ -4067,7 +5095,7 @@ export interface GoogleContainerNodePoolNodeConfigLocalNvmeSsdBlockConfig {
   /**
   * Number of raw-block local NVMe SSD disks to be attached to the node. Each local SSD is 375 GB in size.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#local_ssd_count GoogleContainerNodePool#local_ssd_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#local_ssd_count GoogleContainerNodePool#local_ssd_count}
   */
   readonly localSsdCount: number;
 }
@@ -4150,19 +5178,19 @@ export interface GoogleContainerNodePoolNodeConfigReservationAffinity {
   /**
   * Corresponds to the type of reservation consumption.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#consume_reservation_type GoogleContainerNodePool#consume_reservation_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#consume_reservation_type GoogleContainerNodePool#consume_reservation_type}
   */
   readonly consumeReservationType: string;
   /**
   * The label key of a reservation resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#key GoogleContainerNodePool#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#key GoogleContainerNodePool#key}
   */
   readonly key?: string;
   /**
   * The label values of the reservation resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#values GoogleContainerNodePool#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#values GoogleContainerNodePool#values}
   */
   readonly values?: string[];
 }
@@ -4303,7 +5331,7 @@ export interface GoogleContainerNodePoolNodeConfigSandboxConfig {
   /**
   * Type of the sandbox to use for the node (e.g. 'gvisor')
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#sandbox_type GoogleContainerNodePool#sandbox_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#sandbox_type GoogleContainerNodePool#sandbox_type}
   */
   readonly sandboxType: string;
 }
@@ -4386,13 +5414,13 @@ export interface GoogleContainerNodePoolNodeConfigSecondaryBootDisks {
   /**
   * Disk image to create the secondary boot disk from
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#disk_image GoogleContainerNodePool#disk_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#disk_image GoogleContainerNodePool#disk_image}
   */
   readonly diskImage: string;
   /**
   * Mode for how the secondary boot disk is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#mode GoogleContainerNodePool#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#mode GoogleContainerNodePool#mode}
   */
   readonly mode?: string;
 }
@@ -4536,13 +5564,13 @@ export interface GoogleContainerNodePoolNodeConfigShieldedInstanceConfig {
   /**
   * Defines whether the instance has integrity monitoring enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#enable_integrity_monitoring GoogleContainerNodePool#enable_integrity_monitoring}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#enable_integrity_monitoring GoogleContainerNodePool#enable_integrity_monitoring}
   */
   readonly enableIntegrityMonitoring?: boolean | cdktf.IResolvable;
   /**
   * Defines whether the instance has Secure Boot enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#enable_secure_boot GoogleContainerNodePool#enable_secure_boot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#enable_secure_boot GoogleContainerNodePool#enable_secure_boot}
   */
   readonly enableSecureBoot?: boolean | cdktf.IResolvable;
 }
@@ -4657,19 +5685,19 @@ export interface GoogleContainerNodePoolNodeConfigSoleTenantConfigNodeAffinity {
   /**
   * .
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#key GoogleContainerNodePool#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#key GoogleContainerNodePool#key}
   */
   readonly key: string;
   /**
   * .
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#operator GoogleContainerNodePool#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#operator GoogleContainerNodePool#operator}
   */
   readonly operator: string;
   /**
   * .
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#values GoogleContainerNodePool#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#values GoogleContainerNodePool#values}
   */
   readonly values: string[];
 }
@@ -4834,9 +5862,15 @@ export class GoogleContainerNodePoolNodeConfigSoleTenantConfigNodeAffinityList e
 }
 export interface GoogleContainerNodePoolNodeConfigSoleTenantConfig {
   /**
+  * Specifies the minimum number of vCPUs that each sole tenant node must have to use CPU overcommit. If not specified, the CPU overcommit feature is disabled.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#min_node_cpus GoogleContainerNodePool#min_node_cpus}
+  */
+  readonly minNodeCpus?: number;
+  /**
   * node_affinity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#node_affinity GoogleContainerNodePool#node_affinity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#node_affinity GoogleContainerNodePool#node_affinity}
   */
   readonly nodeAffinity: GoogleContainerNodePoolNodeConfigSoleTenantConfigNodeAffinity[] | cdktf.IResolvable;
 }
@@ -4847,6 +5881,7 @@ export function googleContainerNodePoolNodeConfigSoleTenantConfigToTerraform(str
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    min_node_cpus: cdktf.numberToTerraform(struct!.minNodeCpus),
     node_affinity: cdktf.listMapper(googleContainerNodePoolNodeConfigSoleTenantConfigNodeAffinityToTerraform, true)(struct!.nodeAffinity),
   }
 }
@@ -4858,6 +5893,12 @@ export function googleContainerNodePoolNodeConfigSoleTenantConfigToHclTerraform(
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    min_node_cpus: {
+      value: cdktf.numberToHclTerraform(struct!.minNodeCpus),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
     node_affinity: {
       value: cdktf.listMapperHcl(googleContainerNodePoolNodeConfigSoleTenantConfigNodeAffinityToHclTerraform, true)(struct!.nodeAffinity),
       isBlock: true,
@@ -4884,6 +5925,10 @@ export class GoogleContainerNodePoolNodeConfigSoleTenantConfigOutputReference ex
   public get internalValue(): GoogleContainerNodePoolNodeConfigSoleTenantConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._minNodeCpus !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minNodeCpus = this._minNodeCpus;
+    }
     if (this._nodeAffinity?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.nodeAffinity = this._nodeAffinity?.internalValue;
@@ -4894,12 +5939,30 @@ export class GoogleContainerNodePoolNodeConfigSoleTenantConfigOutputReference ex
   public set internalValue(value: GoogleContainerNodePoolNodeConfigSoleTenantConfig | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._minNodeCpus = undefined;
       this._nodeAffinity.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._minNodeCpus = value.minNodeCpus;
       this._nodeAffinity.internalValue = value.nodeAffinity;
     }
+  }
+
+  // min_node_cpus - computed: false, optional: true, required: false
+  private _minNodeCpus?: number; 
+  public get minNodeCpus() {
+    return this.getNumberAttribute('min_node_cpus');
+  }
+  public set minNodeCpus(value: number) {
+    this._minNodeCpus = value;
+  }
+  public resetMinNodeCpus() {
+    this._minNodeCpus = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minNodeCpusInput() {
+    return this._minNodeCpus;
   }
 
   // node_affinity - computed: false, optional: false, required: true
@@ -4919,19 +5982,19 @@ export interface GoogleContainerNodePoolNodeConfigTaint {
   /**
   * Effect for taint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#effect GoogleContainerNodePool#effect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#effect GoogleContainerNodePool#effect}
   */
   readonly effect: string;
   /**
   * Key for taint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#key GoogleContainerNodePool#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#key GoogleContainerNodePool#key}
   */
   readonly key: string;
   /**
   * Value for taint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#value GoogleContainerNodePool#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#value GoogleContainerNodePool#value}
   */
   readonly value: string;
 }
@@ -5098,7 +6161,7 @@ export interface GoogleContainerNodePoolNodeConfigWindowsNodeConfig {
   /**
   * The OS Version of the windows nodepool.Values are OS_VERSION_UNSPECIFIED,OS_VERSION_LTSC2019 and OS_VERSION_LTSC2022
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#osversion GoogleContainerNodePool#osversion}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#osversion GoogleContainerNodePool#osversion}
   */
   readonly osversion?: string;
 }
@@ -5184,7 +6247,7 @@ export interface GoogleContainerNodePoolNodeConfigWorkloadMetadataConfig {
   /**
   * Mode is the configuration for how to expose metadata to workloads running on the node.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#mode GoogleContainerNodePool#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#mode GoogleContainerNodePool#mode}
   */
   readonly mode: string;
 }
@@ -5267,271 +6330,271 @@ export interface GoogleContainerNodePoolNodeConfig {
   /**
   * The Customer Managed Encryption Key used to encrypt the boot disk attached to each node in the node pool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#boot_disk_kms_key GoogleContainerNodePool#boot_disk_kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#boot_disk_kms_key GoogleContainerNodePool#boot_disk_kms_key}
   */
   readonly bootDiskKmsKey?: string;
   /**
   * Size of the disk attached to each node, specified in GB. The smallest allowed disk size is 10GB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#disk_size_gb GoogleContainerNodePool#disk_size_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#disk_size_gb GoogleContainerNodePool#disk_size_gb}
   */
   readonly diskSizeGb?: number;
   /**
   * Type of the disk attached to each node. Such as pd-standard, pd-balanced or pd-ssd
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#disk_type GoogleContainerNodePool#disk_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#disk_type GoogleContainerNodePool#disk_type}
   */
   readonly diskType?: string;
   /**
   * If enabled boot disks are configured with confidential mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#enable_confidential_storage GoogleContainerNodePool#enable_confidential_storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#enable_confidential_storage GoogleContainerNodePool#enable_confidential_storage}
   */
   readonly enableConfidentialStorage?: boolean | cdktf.IResolvable;
   /**
   * Enables Flex Start provisioning model for the node pool
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#flex_start GoogleContainerNodePool#flex_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#flex_start GoogleContainerNodePool#flex_start}
   */
   readonly flexStart?: boolean | cdktf.IResolvable;
   /**
   * The image type to use for this node. Note that for a given image type, the latest version of it will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#image_type GoogleContainerNodePool#image_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#image_type GoogleContainerNodePool#image_type}
   */
   readonly imageType?: string;
   /**
   * The map of Kubernetes labels (key/value pairs) to be applied to each node. These will added in addition to any default label(s) that Kubernetes may apply to the node.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#labels GoogleContainerNodePool#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#labels GoogleContainerNodePool#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The number of local SSD disks to be attached to the node.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#local_ssd_count GoogleContainerNodePool#local_ssd_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#local_ssd_count GoogleContainerNodePool#local_ssd_count}
   */
   readonly localSsdCount?: number;
   /**
   * LocalSsdEncryptionMode specified the method used for encrypting the local SSDs attached to the node.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#local_ssd_encryption_mode GoogleContainerNodePool#local_ssd_encryption_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#local_ssd_encryption_mode GoogleContainerNodePool#local_ssd_encryption_mode}
   */
   readonly localSsdEncryptionMode?: string;
   /**
   * Type of logging agent that is used as the default value for node pools in the cluster. Valid values include DEFAULT and MAX_THROUGHPUT.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#logging_variant GoogleContainerNodePool#logging_variant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#logging_variant GoogleContainerNodePool#logging_variant}
   */
   readonly loggingVariant?: string;
   /**
   * The name of a Google Compute Engine machine type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#machine_type GoogleContainerNodePool#machine_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#machine_type GoogleContainerNodePool#machine_type}
   */
   readonly machineType?: string;
   /**
   * The runtime of each node in the node pool in seconds, terminated by 's'. Example: "3600s".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#max_run_duration GoogleContainerNodePool#max_run_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#max_run_duration GoogleContainerNodePool#max_run_duration}
   */
   readonly maxRunDuration?: string;
   /**
   * The metadata key/value pairs assigned to instances in the cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#metadata GoogleContainerNodePool#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#metadata GoogleContainerNodePool#metadata}
   */
   readonly metadata?: { [key: string]: string };
   /**
   * Minimum CPU platform to be used by this instance. The instance may be scheduled on the specified or newer CPU platform.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#min_cpu_platform GoogleContainerNodePool#min_cpu_platform}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#min_cpu_platform GoogleContainerNodePool#min_cpu_platform}
   */
   readonly minCpuPlatform?: string;
   /**
   * Setting this field will assign instances of this pool to run on the specified node group. This is useful for running workloads on sole tenant nodes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#node_group GoogleContainerNodePool#node_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#node_group GoogleContainerNodePool#node_group}
   */
   readonly nodeGroup?: string;
   /**
   * The set of Google API scopes to be made available on all of the node VMs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#oauth_scopes GoogleContainerNodePool#oauth_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#oauth_scopes GoogleContainerNodePool#oauth_scopes}
   */
   readonly oauthScopes?: string[];
   /**
   * Whether the nodes are created as preemptible VM instances.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#preemptible GoogleContainerNodePool#preemptible}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#preemptible GoogleContainerNodePool#preemptible}
   */
   readonly preemptible?: boolean | cdktf.IResolvable;
   /**
   * The GCE resource labels (a map of key/value pairs) to be applied to the node pool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#resource_labels GoogleContainerNodePool#resource_labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#resource_labels GoogleContainerNodePool#resource_labels}
   */
   readonly resourceLabels?: { [key: string]: string };
   /**
   * A map of resource manager tags. Resource manager tag keys and values have the same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/456. The field is ignored (both PUT & PATCH) when empty.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#resource_manager_tags GoogleContainerNodePool#resource_manager_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#resource_manager_tags GoogleContainerNodePool#resource_manager_tags}
   */
   readonly resourceManagerTags?: { [key: string]: string };
   /**
   * The Google Cloud Platform Service Account to be used by the node VMs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#service_account GoogleContainerNodePool#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#service_account GoogleContainerNodePool#service_account}
   */
   readonly serviceAccount?: string;
   /**
   * Whether the nodes are created as spot VM instances.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#spot GoogleContainerNodePool#spot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#spot GoogleContainerNodePool#spot}
   */
   readonly spot?: boolean | cdktf.IResolvable;
   /**
   * The list of Storage Pools where boot disks are provisioned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#storage_pools GoogleContainerNodePool#storage_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#storage_pools GoogleContainerNodePool#storage_pools}
   */
   readonly storagePools?: string[];
   /**
   * The list of instance tags applied to all nodes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#tags GoogleContainerNodePool#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#tags GoogleContainerNodePool#tags}
   */
   readonly tags?: string[];
   /**
   * advanced_machine_features block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#advanced_machine_features GoogleContainerNodePool#advanced_machine_features}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#advanced_machine_features GoogleContainerNodePool#advanced_machine_features}
   */
   readonly advancedMachineFeatures?: GoogleContainerNodePoolNodeConfigAdvancedMachineFeatures;
   /**
   * boot_disk block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#boot_disk GoogleContainerNodePool#boot_disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#boot_disk GoogleContainerNodePool#boot_disk}
   */
   readonly bootDisk?: GoogleContainerNodePoolNodeConfigBootDisk;
   /**
   * confidential_nodes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#confidential_nodes GoogleContainerNodePool#confidential_nodes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#confidential_nodes GoogleContainerNodePool#confidential_nodes}
   */
   readonly confidentialNodes?: GoogleContainerNodePoolNodeConfigConfidentialNodes;
   /**
   * containerd_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#containerd_config GoogleContainerNodePool#containerd_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#containerd_config GoogleContainerNodePool#containerd_config}
   */
   readonly containerdConfig?: GoogleContainerNodePoolNodeConfigContainerdConfig;
   /**
   * ephemeral_storage_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#ephemeral_storage_config GoogleContainerNodePool#ephemeral_storage_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#ephemeral_storage_config GoogleContainerNodePool#ephemeral_storage_config}
   */
   readonly ephemeralStorageConfig?: GoogleContainerNodePoolNodeConfigEphemeralStorageConfig;
   /**
   * ephemeral_storage_local_ssd_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#ephemeral_storage_local_ssd_config GoogleContainerNodePool#ephemeral_storage_local_ssd_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#ephemeral_storage_local_ssd_config GoogleContainerNodePool#ephemeral_storage_local_ssd_config}
   */
   readonly ephemeralStorageLocalSsdConfig?: GoogleContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig;
   /**
   * fast_socket block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#fast_socket GoogleContainerNodePool#fast_socket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#fast_socket GoogleContainerNodePool#fast_socket}
   */
   readonly fastSocket?: GoogleContainerNodePoolNodeConfigFastSocket;
   /**
   * gcfs_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#gcfs_config GoogleContainerNodePool#gcfs_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#gcfs_config GoogleContainerNodePool#gcfs_config}
   */
   readonly gcfsConfig?: GoogleContainerNodePoolNodeConfigGcfsConfig;
   /**
   * guest_accelerator block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#guest_accelerator GoogleContainerNodePool#guest_accelerator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#guest_accelerator GoogleContainerNodePool#guest_accelerator}
   */
   readonly guestAccelerator?: GoogleContainerNodePoolNodeConfigGuestAccelerator[] | cdktf.IResolvable;
   /**
   * gvnic block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#gvnic GoogleContainerNodePool#gvnic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#gvnic GoogleContainerNodePool#gvnic}
   */
   readonly gvnic?: GoogleContainerNodePoolNodeConfigGvnic;
   /**
   * host_maintenance_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#host_maintenance_policy GoogleContainerNodePool#host_maintenance_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#host_maintenance_policy GoogleContainerNodePool#host_maintenance_policy}
   */
   readonly hostMaintenancePolicy?: GoogleContainerNodePoolNodeConfigHostMaintenancePolicy;
   /**
   * kubelet_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#kubelet_config GoogleContainerNodePool#kubelet_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#kubelet_config GoogleContainerNodePool#kubelet_config}
   */
   readonly kubeletConfig?: GoogleContainerNodePoolNodeConfigKubeletConfig;
   /**
   * linux_node_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#linux_node_config GoogleContainerNodePool#linux_node_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#linux_node_config GoogleContainerNodePool#linux_node_config}
   */
   readonly linuxNodeConfig?: GoogleContainerNodePoolNodeConfigLinuxNodeConfig;
   /**
   * local_nvme_ssd_block_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#local_nvme_ssd_block_config GoogleContainerNodePool#local_nvme_ssd_block_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#local_nvme_ssd_block_config GoogleContainerNodePool#local_nvme_ssd_block_config}
   */
   readonly localNvmeSsdBlockConfig?: GoogleContainerNodePoolNodeConfigLocalNvmeSsdBlockConfig;
   /**
   * reservation_affinity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#reservation_affinity GoogleContainerNodePool#reservation_affinity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#reservation_affinity GoogleContainerNodePool#reservation_affinity}
   */
   readonly reservationAffinity?: GoogleContainerNodePoolNodeConfigReservationAffinity;
   /**
   * sandbox_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#sandbox_config GoogleContainerNodePool#sandbox_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#sandbox_config GoogleContainerNodePool#sandbox_config}
   */
   readonly sandboxConfig?: GoogleContainerNodePoolNodeConfigSandboxConfig;
   /**
   * secondary_boot_disks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#secondary_boot_disks GoogleContainerNodePool#secondary_boot_disks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#secondary_boot_disks GoogleContainerNodePool#secondary_boot_disks}
   */
   readonly secondaryBootDisks?: GoogleContainerNodePoolNodeConfigSecondaryBootDisks[] | cdktf.IResolvable;
   /**
   * shielded_instance_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#shielded_instance_config GoogleContainerNodePool#shielded_instance_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#shielded_instance_config GoogleContainerNodePool#shielded_instance_config}
   */
   readonly shieldedInstanceConfig?: GoogleContainerNodePoolNodeConfigShieldedInstanceConfig;
   /**
   * sole_tenant_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#sole_tenant_config GoogleContainerNodePool#sole_tenant_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#sole_tenant_config GoogleContainerNodePool#sole_tenant_config}
   */
   readonly soleTenantConfig?: GoogleContainerNodePoolNodeConfigSoleTenantConfig;
   /**
   * taint block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#taint GoogleContainerNodePool#taint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#taint GoogleContainerNodePool#taint}
   */
   readonly taint?: GoogleContainerNodePoolNodeConfigTaint[] | cdktf.IResolvable;
   /**
   * windows_node_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#windows_node_config GoogleContainerNodePool#windows_node_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#windows_node_config GoogleContainerNodePool#windows_node_config}
   */
   readonly windowsNodeConfig?: GoogleContainerNodePoolNodeConfigWindowsNodeConfig;
   /**
   * workload_metadata_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#workload_metadata_config GoogleContainerNodePool#workload_metadata_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#workload_metadata_config GoogleContainerNodePool#workload_metadata_config}
   */
   readonly workloadMetadataConfig?: GoogleContainerNodePoolNodeConfigWorkloadMetadataConfig;
 }
@@ -6899,19 +7962,19 @@ export interface GoogleContainerNodePoolPlacementPolicy {
   /**
   * If set, refers to the name of a custom resource policy supplied by the user. The resource policy must be in the same project and region as the node pool. If not found, InvalidArgument error is returned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#policy_name GoogleContainerNodePool#policy_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#policy_name GoogleContainerNodePool#policy_name}
   */
   readonly policyName?: string;
   /**
   * The TPU topology like "2x4" or "2x2x2". https://cloud.google.com/kubernetes-engine/docs/concepts/plan-tpus#topology
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#tpu_topology GoogleContainerNodePool#tpu_topology}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#tpu_topology GoogleContainerNodePool#tpu_topology}
   */
   readonly tpuTopology?: string;
   /**
   * Type defines the type of placement policy
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#type GoogleContainerNodePool#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#type GoogleContainerNodePool#type}
   */
   readonly type: string;
 }
@@ -7052,7 +8115,7 @@ export interface GoogleContainerNodePoolQueuedProvisioning {
   /**
   * Whether nodes in this node pool are obtainable solely through the ProvisioningRequest API
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#enabled GoogleContainerNodePool#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#enabled GoogleContainerNodePool#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
 }
@@ -7133,15 +8196,15 @@ export class GoogleContainerNodePoolQueuedProvisioningOutputReference extends cd
 }
 export interface GoogleContainerNodePoolTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#create GoogleContainerNodePool#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#create GoogleContainerNodePool#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#delete GoogleContainerNodePool#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#delete GoogleContainerNodePool#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#update GoogleContainerNodePool#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#update GoogleContainerNodePool#update}
   */
   readonly update?: string;
 }
@@ -7295,19 +8358,19 @@ export interface GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsStandard
   /**
   * Number of blue nodes to drain in a batch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#batch_node_count GoogleContainerNodePool#batch_node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#batch_node_count GoogleContainerNodePool#batch_node_count}
   */
   readonly batchNodeCount?: number;
   /**
   * Percentage of the blue pool nodes to drain in a batch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#batch_percentage GoogleContainerNodePool#batch_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#batch_percentage GoogleContainerNodePool#batch_percentage}
   */
   readonly batchPercentage?: number;
   /**
   * Soak time after each batch gets drained.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#batch_soak_duration GoogleContainerNodePool#batch_soak_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#batch_soak_duration GoogleContainerNodePool#batch_soak_duration}
   */
   readonly batchSoakDuration?: string;
 }
@@ -7451,13 +8514,13 @@ export interface GoogleContainerNodePoolUpgradeSettingsBlueGreenSettings {
   /**
   * Time needed after draining entire blue pool. After this period, blue pool will be cleaned up.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#node_pool_soak_duration GoogleContainerNodePool#node_pool_soak_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#node_pool_soak_duration GoogleContainerNodePool#node_pool_soak_duration}
   */
   readonly nodePoolSoakDuration?: string;
   /**
   * standard_rollout_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#standard_rollout_policy GoogleContainerNodePool#standard_rollout_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#standard_rollout_policy GoogleContainerNodePool#standard_rollout_policy}
   */
   readonly standardRolloutPolicy: GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicy;
 }
@@ -7569,25 +8632,25 @@ export interface GoogleContainerNodePoolUpgradeSettings {
   /**
   * The number of additional nodes that can be added to the node pool during an upgrade. Increasing max_surge raises the number of nodes that can be upgraded simultaneously. Can be set to 0 or greater.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#max_surge GoogleContainerNodePool#max_surge}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#max_surge GoogleContainerNodePool#max_surge}
   */
   readonly maxSurge?: number;
   /**
   * The number of nodes that can be simultaneously unavailable during an upgrade. Increasing max_unavailable raises the number of nodes that can be upgraded in parallel. Can be set to 0 or greater.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#max_unavailable GoogleContainerNodePool#max_unavailable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#max_unavailable GoogleContainerNodePool#max_unavailable}
   */
   readonly maxUnavailable?: number;
   /**
   * Update strategy for the given nodepool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#strategy GoogleContainerNodePool#strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#strategy GoogleContainerNodePool#strategy}
   */
   readonly strategy?: string;
   /**
   * blue_green_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#blue_green_settings GoogleContainerNodePool#blue_green_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#blue_green_settings GoogleContainerNodePool#blue_green_settings}
   */
   readonly blueGreenSettings?: GoogleContainerNodePoolUpgradeSettingsBlueGreenSettings;
 }
@@ -7758,7 +8821,7 @@ export class GoogleContainerNodePoolUpgradeSettingsOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool google_container_node_pool}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool google_container_node_pool}
 */
 export class GoogleContainerNodePool extends cdktf.TerraformResource {
 
@@ -7774,7 +8837,7 @@ export class GoogleContainerNodePool extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleContainerNodePool resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleContainerNodePool to import
-  * @param importFromId The id of the existing GoogleContainerNodePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleContainerNodePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleContainerNodePool to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -7786,7 +8849,7 @@ export class GoogleContainerNodePool extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_container_node_pool google_container_node_pool} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_container_node_pool google_container_node_pool} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -7797,7 +8860,7 @@ export class GoogleContainerNodePool extends cdktf.TerraformResource {
       terraformResourceType: 'google_container_node_pool',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.48.0',
+        providerVersion: '6.49.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

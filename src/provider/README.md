@@ -1,3 +1,3 @@
 # `provider`
 
-Refer to the Terraform Registry for docs: [`google-beta`](https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs).
+Refer to the Terraform Registry for docs: [`google-beta`](https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs).

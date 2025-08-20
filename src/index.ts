@@ -570,6 +570,7 @@ export * as googleDeveloperConnectConnection from './google-developer-connect-co
 export * as googleDeveloperConnectGitRepositoryLink from './google-developer-connect-git-repository-link';
 export * as googleDeveloperConnectInsightsConfig from './google-developer-connect-insights-config';
 export * as googleDialogflowAgent from './google-dialogflow-agent';
+export * as googleDialogflowConversationProfile from './google-dialogflow-conversation-profile';
 export * as googleDialogflowCxAgent from './google-dialogflow-cx-agent';
 export * as googleDialogflowCxEntityType from './google-dialogflow-cx-entity-type';
 export * as googleDialogflowCxEnvironment from './google-dialogflow-cx-environment';
@@ -1243,6 +1244,8 @@ export * as dataGoogleArtifactRegistryPackage from './data-google-artifact-regis
 export * as dataGoogleArtifactRegistryRepositories from './data-google-artifact-registry-repositories';
 export * as dataGoogleArtifactRegistryRepository from './data-google-artifact-registry-repository';
 export * as dataGoogleArtifactRegistryRepositoryIamPolicy from './data-google-artifact-registry-repository-iam-policy';
+export * as dataGoogleArtifactRegistryTag from './data-google-artifact-registry-tag';
+export * as dataGoogleArtifactRegistryTags from './data-google-artifact-registry-tags';
 export * as dataGoogleArtifactRegistryVersion from './data-google-artifact-registry-version';
 export * as dataGoogleBackupDrBackup from './data-google-backup-dr-backup';
 export * as dataGoogleBackupDrBackupPlan from './data-google-backup-dr-backup-plan';
