@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_dataplex_entry
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_dataplex_entry
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,30 +15,30 @@ export interface GoogleDataplexEntryConfig extends cdktf.TerraformMetaArguments 
   /**
   * The entry group id of the entry group the entry will be created in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_dataplex_entry#entry_group_id GoogleDataplexEntry#entry_group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_dataplex_entry#entry_group_id GoogleDataplexEntry#entry_group_id}
   */
   readonly entryGroupId?: string;
   /**
   * The entry id of the entry.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_dataplex_entry#entry_id GoogleDataplexEntry#entry_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_dataplex_entry#entry_id GoogleDataplexEntry#entry_id}
   */
   readonly entryId?: string;
   /**
   * The relative resource name of the entry type that was used to create this entry, in the format projects/{project_number}/locations/{locationId}/entryTypes/{entryTypeId}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_dataplex_entry#entry_type GoogleDataplexEntry#entry_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_dataplex_entry#entry_type GoogleDataplexEntry#entry_type}
   */
   readonly entryType: string;
   /**
   * A name for the entry that can be referenced by an external system. For more information, see https://cloud.google.com/dataplex/docs/fully-qualified-names.
   * The maximum size of the field is 4000 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_dataplex_entry#fully_qualified_name GoogleDataplexEntry#fully_qualified_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_dataplex_entry#fully_qualified_name GoogleDataplexEntry#fully_qualified_name}
   */
   readonly fullyQualifiedName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_dataplex_entry#id GoogleDataplexEntry#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_dataplex_entry#id GoogleDataplexEntry#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -47,35 +47,35 @@ export interface GoogleDataplexEntryConfig extends cdktf.TerraformMetaArguments 
   /**
   * The location where entry will be created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_dataplex_entry#location GoogleDataplexEntry#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_dataplex_entry#location GoogleDataplexEntry#location}
   */
   readonly location?: string;
   /**
   * The resource name of the parent entry, in the format projects/{project_number}/locations/{locationId}/entryGroups/{entryGroupId}/entries/{entryId}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_dataplex_entry#parent_entry GoogleDataplexEntry#parent_entry}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_dataplex_entry#parent_entry GoogleDataplexEntry#parent_entry}
   */
   readonly parentEntry?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_dataplex_entry#project GoogleDataplexEntry#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_dataplex_entry#project GoogleDataplexEntry#project}
   */
   readonly project?: string;
   /**
   * aspects block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_dataplex_entry#aspects GoogleDataplexEntry#aspects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_dataplex_entry#aspects GoogleDataplexEntry#aspects}
   */
   readonly aspects?: GoogleDataplexEntryAspects[] | cdktf.IResolvable;
   /**
   * entry_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_dataplex_entry#entry_source GoogleDataplexEntry#entry_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_dataplex_entry#entry_source GoogleDataplexEntry#entry_source}
   */
   readonly entrySource?: GoogleDataplexEntryEntrySource;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_dataplex_entry#timeouts GoogleDataplexEntry#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_dataplex_entry#timeouts GoogleDataplexEntry#timeouts}
   */
   readonly timeouts?: GoogleDataplexEntryTimeouts;
 }
@@ -83,7 +83,7 @@ export interface GoogleDataplexEntryAspectsAspect {
   /**
   * The content of the aspect in JSON form, according to its aspect type schema. The maximum size of the field is 120KB (encoded as UTF-8).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_dataplex_entry#data GoogleDataplexEntry#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_dataplex_entry#data GoogleDataplexEntry#data}
   */
   readonly data: string;
 }
@@ -189,13 +189,13 @@ export interface GoogleDataplexEntryAspects {
   * If the aspect is attached directly to the entry: {project_number}.{locationId}.{aspectTypeId}
   * If the aspect is attached to an entry's path: {project_number}.{locationId}.{aspectTypeId}@{path}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_dataplex_entry#aspect_key GoogleDataplexEntry#aspect_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_dataplex_entry#aspect_key GoogleDataplexEntry#aspect_key}
   */
   readonly aspectKey: string;
   /**
   * aspect block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_dataplex_entry#aspect GoogleDataplexEntry#aspect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_dataplex_entry#aspect GoogleDataplexEntry#aspect}
   */
   readonly aspect: GoogleDataplexEntryAspectsAspect;
 }
@@ -336,13 +336,13 @@ export interface GoogleDataplexEntryEntrySourceAncestors {
   /**
   * The name of the ancestor resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_dataplex_entry#name GoogleDataplexEntry#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_dataplex_entry#name GoogleDataplexEntry#name}
   */
   readonly name?: string;
   /**
   * The type of the ancestor resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_dataplex_entry#type GoogleDataplexEntry#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_dataplex_entry#type GoogleDataplexEntry#type}
   */
   readonly type?: string;
 }
@@ -489,44 +489,44 @@ export interface GoogleDataplexEntryEntrySource {
   /**
   * The time when the resource was created in the source system.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_dataplex_entry#create_time GoogleDataplexEntry#create_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_dataplex_entry#create_time GoogleDataplexEntry#create_time}
   */
   readonly createTime?: string;
   /**
   * A description of the data resource. Maximum length is 2,000 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_dataplex_entry#description GoogleDataplexEntry#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_dataplex_entry#description GoogleDataplexEntry#description}
   */
   readonly description?: string;
   /**
   * A user-friendly display name. Maximum length is 500 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_dataplex_entry#display_name GoogleDataplexEntry#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_dataplex_entry#display_name GoogleDataplexEntry#display_name}
   */
   readonly displayName?: string;
   /**
   * User-defined labels. The maximum size of keys and values is 128 characters each.
   * An object containing a list of "key": value pairs. Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_dataplex_entry#labels GoogleDataplexEntry#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_dataplex_entry#labels GoogleDataplexEntry#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The platform containing the source system. Maximum length is 64 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_dataplex_entry#platform GoogleDataplexEntry#platform}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_dataplex_entry#platform GoogleDataplexEntry#platform}
   */
   readonly platform?: string;
   /**
   * The name of the resource in the source system. Maximum length is 4,000 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_dataplex_entry#resource GoogleDataplexEntry#resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_dataplex_entry#resource GoogleDataplexEntry#resource}
   */
   readonly resource?: string;
   /**
   * The name of the source system. Maximum length is 64 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_dataplex_entry#system GoogleDataplexEntry#system}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_dataplex_entry#system GoogleDataplexEntry#system}
   */
   readonly systemAttribute?: string;
   /**
@@ -534,13 +534,13 @@ export interface GoogleDataplexEntryEntrySource {
   * If the entry exists in the system and its EntrySource has updateTime populated,
   * further updates to the EntrySource of the entry must provide incremental updates to its updateTime.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_dataplex_entry#update_time GoogleDataplexEntry#update_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_dataplex_entry#update_time GoogleDataplexEntry#update_time}
   */
   readonly updateTime?: string;
   /**
   * ancestors block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_dataplex_entry#ancestors GoogleDataplexEntry#ancestors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_dataplex_entry#ancestors GoogleDataplexEntry#ancestors}
   */
   readonly ancestors?: GoogleDataplexEntryEntrySourceAncestors[] | cdktf.IResolvable;
 }
@@ -861,15 +861,15 @@ export class GoogleDataplexEntryEntrySourceOutputReference extends cdktf.Complex
 }
 export interface GoogleDataplexEntryTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_dataplex_entry#create GoogleDataplexEntry#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_dataplex_entry#create GoogleDataplexEntry#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_dataplex_entry#delete GoogleDataplexEntry#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_dataplex_entry#delete GoogleDataplexEntry#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_dataplex_entry#update GoogleDataplexEntry#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_dataplex_entry#update GoogleDataplexEntry#update}
   */
   readonly update?: string;
 }
@@ -1021,7 +1021,7 @@ export class GoogleDataplexEntryTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_dataplex_entry google_dataplex_entry}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_dataplex_entry google_dataplex_entry}
 */
 export class GoogleDataplexEntry extends cdktf.TerraformResource {
 
@@ -1037,7 +1037,7 @@ export class GoogleDataplexEntry extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleDataplexEntry resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleDataplexEntry to import
-  * @param importFromId The id of the existing GoogleDataplexEntry that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_dataplex_entry#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleDataplexEntry that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_dataplex_entry#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleDataplexEntry to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1049,7 +1049,7 @@ export class GoogleDataplexEntry extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_dataplex_entry google_dataplex_entry} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_dataplex_entry google_dataplex_entry} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1060,7 +1060,7 @@ export class GoogleDataplexEntry extends cdktf.TerraformResource {
       terraformResourceType: 'google_dataplex_entry',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.49.0',
+        providerVersion: '6.49.1',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
