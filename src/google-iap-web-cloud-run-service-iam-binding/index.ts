@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_iap_web_cloud_run_service_iam_binding
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_iap_web_cloud_run_service_iam_binding
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +13,50 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleIapWebCloudRunServiceIamBindingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_iap_web_cloud_run_service_iam_binding#cloud_run_service_name GoogleIapWebCloudRunServiceIamBinding#cloud_run_service_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_iap_web_cloud_run_service_iam_binding#cloud_run_service_name GoogleIapWebCloudRunServiceIamBinding#cloud_run_service_name}
   */
   readonly cloudRunServiceName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_iap_web_cloud_run_service_iam_binding#id GoogleIapWebCloudRunServiceIamBinding#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_iap_web_cloud_run_service_iam_binding#id GoogleIapWebCloudRunServiceIamBinding#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_iap_web_cloud_run_service_iam_binding#location GoogleIapWebCloudRunServiceIamBinding#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_iap_web_cloud_run_service_iam_binding#location GoogleIapWebCloudRunServiceIamBinding#location}
   */
   readonly location?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_iap_web_cloud_run_service_iam_binding#members GoogleIapWebCloudRunServiceIamBinding#members}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_iap_web_cloud_run_service_iam_binding#members GoogleIapWebCloudRunServiceIamBinding#members}
   */
   readonly members: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_iap_web_cloud_run_service_iam_binding#project GoogleIapWebCloudRunServiceIamBinding#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_iap_web_cloud_run_service_iam_binding#project GoogleIapWebCloudRunServiceIamBinding#project}
   */
   readonly project?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_iap_web_cloud_run_service_iam_binding#role GoogleIapWebCloudRunServiceIamBinding#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_iap_web_cloud_run_service_iam_binding#role GoogleIapWebCloudRunServiceIamBinding#role}
   */
   readonly role: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_iap_web_cloud_run_service_iam_binding#condition GoogleIapWebCloudRunServiceIamBinding#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_iap_web_cloud_run_service_iam_binding#condition GoogleIapWebCloudRunServiceIamBinding#condition}
   */
   readonly condition?: GoogleIapWebCloudRunServiceIamBindingCondition;
 }
 export interface GoogleIapWebCloudRunServiceIamBindingCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_iap_web_cloud_run_service_iam_binding#description GoogleIapWebCloudRunServiceIamBinding#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_iap_web_cloud_run_service_iam_binding#description GoogleIapWebCloudRunServiceIamBinding#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_iap_web_cloud_run_service_iam_binding#expression GoogleIapWebCloudRunServiceIamBinding#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_iap_web_cloud_run_service_iam_binding#expression GoogleIapWebCloudRunServiceIamBinding#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_iap_web_cloud_run_service_iam_binding#title GoogleIapWebCloudRunServiceIamBinding#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_iap_web_cloud_run_service_iam_binding#title GoogleIapWebCloudRunServiceIamBinding#title}
   */
   readonly title: string;
 }
@@ -192,7 +192,7 @@ export class GoogleIapWebCloudRunServiceIamBindingConditionOutputReference exten
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_iap_web_cloud_run_service_iam_binding google_iap_web_cloud_run_service_iam_binding}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_iap_web_cloud_run_service_iam_binding google_iap_web_cloud_run_service_iam_binding}
 */
 export class GoogleIapWebCloudRunServiceIamBinding extends cdktf.TerraformResource {
 
@@ -208,7 +208,7 @@ export class GoogleIapWebCloudRunServiceIamBinding extends cdktf.TerraformResour
   * Generates CDKTF code for importing a GoogleIapWebCloudRunServiceIamBinding resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleIapWebCloudRunServiceIamBinding to import
-  * @param importFromId The id of the existing GoogleIapWebCloudRunServiceIamBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_iap_web_cloud_run_service_iam_binding#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleIapWebCloudRunServiceIamBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_iap_web_cloud_run_service_iam_binding#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleIapWebCloudRunServiceIamBinding to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -220,7 +220,7 @@ export class GoogleIapWebCloudRunServiceIamBinding extends cdktf.TerraformResour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_iap_web_cloud_run_service_iam_binding google_iap_web_cloud_run_service_iam_binding} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_iap_web_cloud_run_service_iam_binding google_iap_web_cloud_run_service_iam_binding} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -231,7 +231,7 @@ export class GoogleIapWebCloudRunServiceIamBinding extends cdktf.TerraformResour
       terraformResourceType: 'google_iap_web_cloud_run_service_iam_binding',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.49.0',
+        providerVersion: '6.49.1',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
