@@ -1,3 +1,3 @@
 # `google_clouddeploy_deploy_policy`
 
-Refer to the Terraform Registry for docs: [`google_clouddeploy_deploy_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_clouddeploy_deploy_policy).
+Refer to the Terraform Registry for docs: [`google_clouddeploy_deploy_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_clouddeploy_deploy_policy).
