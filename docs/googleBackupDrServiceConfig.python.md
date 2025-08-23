@@ -4,7 +4,7 @@
 
 ### GoogleBackupDrServiceConfig <a name="GoogleBackupDrServiceConfig" id="@cdktf/provider-google-beta.googleBackupDrServiceConfig.GoogleBackupDrServiceConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_backup_dr_service_config google_backup_dr_service_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_backup_dr_service_config google_backup_dr_service_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBackupDrServiceConfig.GoogleBackupDrServiceConfig.Initializer"></a>
 
@@ -42,8 +42,8 @@ googleBackupDrServiceConfig.GoogleBackupDrServiceConfig(
 | <code><a href="#@cdktf/provider-google-beta.googleBackupDrServiceConfig.GoogleBackupDrServiceConfig.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBackupDrServiceConfig.GoogleBackupDrServiceConfig.Initializer.parameter.location">location</a></code> | <code>str</code> | The location in which the Service config is to be initialized. |
 | <code><a href="#@cdktf/provider-google-beta.googleBackupDrServiceConfig.GoogleBackupDrServiceConfig.Initializer.parameter.resourceType">resource_type</a></code> | <code>str</code> | The resource type to which the default service config will be applied. |
-| <code><a href="#@cdktf/provider-google-beta.googleBackupDrServiceConfig.GoogleBackupDrServiceConfig.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_backup_dr_service_config#id GoogleBackupDrServiceConfig#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBackupDrServiceConfig.GoogleBackupDrServiceConfig.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_backup_dr_service_config#project GoogleBackupDrServiceConfig#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBackupDrServiceConfig.GoogleBackupDrServiceConfig.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_backup_dr_service_config#id GoogleBackupDrServiceConfig#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBackupDrServiceConfig.GoogleBackupDrServiceConfig.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_backup_dr_service_config#project GoogleBackupDrServiceConfig#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleBackupDrServiceConfig.GoogleBackupDrServiceConfig.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleBackupDrServiceConfig.GoogleBackupDrServiceConfigTimeouts">GoogleBackupDrServiceConfigTimeouts</a></code> | timeouts block. |
 
 ---
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The location in which the Service config is to be initialized.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_backup_dr_service_config#location GoogleBackupDrServiceConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_backup_dr_service_config#location GoogleBackupDrServiceConfig#location}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The resource type to which the default service config will be applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_backup_dr_service_config#resource_type GoogleBackupDrServiceConfig#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_backup_dr_service_config#resource_type GoogleBackupDrServiceConfig#resource_type}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_backup_dr_service_config#id GoogleBackupDrServiceConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_backup_dr_service_config#id GoogleBackupDrServiceConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -143,7 +143,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_backup_dr_service_config#project GoogleBackupDrServiceConfig#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_backup_dr_service_config#project GoogleBackupDrServiceConfig#project}.
 
 ---
 
@@ -153,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_backup_dr_service_config#timeouts GoogleBackupDrServiceConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_backup_dr_service_config#timeouts GoogleBackupDrServiceConfig#timeouts}
 
 ---
 
@@ -529,7 +529,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_backup_dr_service_config#create GoogleBackupDrServiceConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_backup_dr_service_config#create GoogleBackupDrServiceConfig#create}.
 
 ---
 
@@ -537,7 +537,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_backup_dr_service_config#delete GoogleBackupDrServiceConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_backup_dr_service_config#delete GoogleBackupDrServiceConfig#delete}.
 
 ---
 
@@ -673,7 +673,7 @@ The construct id used in the generated config for the GoogleBackupDrServiceConfi
 
 The id of the existing GoogleBackupDrServiceConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_backup_dr_service_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_backup_dr_service_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1014,8 +1014,8 @@ googleBackupDrServiceConfig.GoogleBackupDrServiceConfigConfig(
 | <code><a href="#@cdktf/provider-google-beta.googleBackupDrServiceConfig.GoogleBackupDrServiceConfigConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBackupDrServiceConfig.GoogleBackupDrServiceConfigConfig.property.location">location</a></code> | <code>str</code> | The location in which the Service config is to be initialized. |
 | <code><a href="#@cdktf/provider-google-beta.googleBackupDrServiceConfig.GoogleBackupDrServiceConfigConfig.property.resourceType">resource_type</a></code> | <code>str</code> | The resource type to which the default service config will be applied. |
-| <code><a href="#@cdktf/provider-google-beta.googleBackupDrServiceConfig.GoogleBackupDrServiceConfigConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_backup_dr_service_config#id GoogleBackupDrServiceConfig#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBackupDrServiceConfig.GoogleBackupDrServiceConfigConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_backup_dr_service_config#project GoogleBackupDrServiceConfig#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBackupDrServiceConfig.GoogleBackupDrServiceConfigConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_backup_dr_service_config#id GoogleBackupDrServiceConfig#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBackupDrServiceConfig.GoogleBackupDrServiceConfigConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_backup_dr_service_config#project GoogleBackupDrServiceConfig#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleBackupDrServiceConfig.GoogleBackupDrServiceConfigConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleBackupDrServiceConfig.GoogleBackupDrServiceConfigTimeouts">GoogleBackupDrServiceConfigTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1100,7 +1100,7 @@ location: str
 
 The location in which the Service config is to be initialized.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_backup_dr_service_config#location GoogleBackupDrServiceConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_backup_dr_service_config#location GoogleBackupDrServiceConfig#location}
 
 ---
 
@@ -1114,7 +1114,7 @@ resource_type: str
 
 The resource type to which the default service config will be applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_backup_dr_service_config#resource_type GoogleBackupDrServiceConfig#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_backup_dr_service_config#resource_type GoogleBackupDrServiceConfig#resource_type}
 
 ---
 
@@ -1126,7 +1126,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_backup_dr_service_config#id GoogleBackupDrServiceConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_backup_dr_service_config#id GoogleBackupDrServiceConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1141,7 +1141,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_backup_dr_service_config#project GoogleBackupDrServiceConfig#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_backup_dr_service_config#project GoogleBackupDrServiceConfig#project}.
 
 ---
 
@@ -1155,7 +1155,7 @@ timeouts: GoogleBackupDrServiceConfigTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_backup_dr_service_config#timeouts GoogleBackupDrServiceConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_backup_dr_service_config#timeouts GoogleBackupDrServiceConfig#timeouts}
 
 ---
 
@@ -1176,8 +1176,8 @@ googleBackupDrServiceConfig.GoogleBackupDrServiceConfigTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleBackupDrServiceConfig.GoogleBackupDrServiceConfigTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_backup_dr_service_config#create GoogleBackupDrServiceConfig#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBackupDrServiceConfig.GoogleBackupDrServiceConfigTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_backup_dr_service_config#delete GoogleBackupDrServiceConfig#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBackupDrServiceConfig.GoogleBackupDrServiceConfigTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_backup_dr_service_config#create GoogleBackupDrServiceConfig#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBackupDrServiceConfig.GoogleBackupDrServiceConfigTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_backup_dr_service_config#delete GoogleBackupDrServiceConfig#delete}. |
 
 ---
 
@@ -1189,7 +1189,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_backup_dr_service_config#create GoogleBackupDrServiceConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_backup_dr_service_config#create GoogleBackupDrServiceConfig#create}.
 
 ---
 
@@ -1201,7 +1201,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_backup_dr_service_config#delete GoogleBackupDrServiceConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_backup_dr_service_config#delete GoogleBackupDrServiceConfig#delete}.
 
 ---
 
