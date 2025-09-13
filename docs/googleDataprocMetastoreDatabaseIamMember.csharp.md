@@ -4,7 +4,7 @@
 
 ### GoogleDataprocMetastoreDatabaseIamMember <a name="GoogleDataprocMetastoreDatabaseIamMember" id="@cdktf/provider-google-beta.googleDataprocMetastoreDatabaseIamMember.GoogleDataprocMetastoreDatabaseIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_dataproc_metastore_database_iam_member google_dataproc_metastore_database_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_dataproc_metastore_database_iam_member google_dataproc_metastore_database_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocMetastoreDatabaseIamMember.GoogleDataprocMetastoreDatabaseIamMember.Initializer"></a>
 
@@ -508,7 +508,7 @@ The construct id used in the generated config for the GoogleDataprocMetastoreDat
 
 The id of the existing GoogleDataprocMetastoreDatabaseIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_dataproc_metastore_database_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_dataproc_metastore_database_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -908,9 +908,9 @@ new GoogleDataprocMetastoreDatabaseIamMemberCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreDatabaseIamMember.GoogleDataprocMetastoreDatabaseIamMemberCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_dataproc_metastore_database_iam_member#expression GoogleDataprocMetastoreDatabaseIamMember#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreDatabaseIamMember.GoogleDataprocMetastoreDatabaseIamMemberCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_dataproc_metastore_database_iam_member#title GoogleDataprocMetastoreDatabaseIamMember#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreDatabaseIamMember.GoogleDataprocMetastoreDatabaseIamMemberCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_dataproc_metastore_database_iam_member#description GoogleDataprocMetastoreDatabaseIamMember#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreDatabaseIamMember.GoogleDataprocMetastoreDatabaseIamMemberCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_dataproc_metastore_database_iam_member#expression GoogleDataprocMetastoreDatabaseIamMember#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreDatabaseIamMember.GoogleDataprocMetastoreDatabaseIamMemberCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_dataproc_metastore_database_iam_member#title GoogleDataprocMetastoreDatabaseIamMember#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreDatabaseIamMember.GoogleDataprocMetastoreDatabaseIamMemberCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_dataproc_metastore_database_iam_member#description GoogleDataprocMetastoreDatabaseIamMember#description}. |
 
 ---
 
@@ -922,7 +922,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_dataproc_metastore_database_iam_member#expression GoogleDataprocMetastoreDatabaseIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_dataproc_metastore_database_iam_member#expression GoogleDataprocMetastoreDatabaseIamMember#expression}.
 
 ---
 
@@ -934,7 +934,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_dataproc_metastore_database_iam_member#title GoogleDataprocMetastoreDatabaseIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_dataproc_metastore_database_iam_member#title GoogleDataprocMetastoreDatabaseIamMember#title}.
 
 ---
 
@@ -946,7 +946,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_dataproc_metastore_database_iam_member#description GoogleDataprocMetastoreDatabaseIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_dataproc_metastore_database_iam_member#description GoogleDataprocMetastoreDatabaseIamMember#description}.
 
 ---
 
@@ -987,14 +987,14 @@ new GoogleDataprocMetastoreDatabaseIamMemberConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreDatabaseIamMember.GoogleDataprocMetastoreDatabaseIamMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreDatabaseIamMember.GoogleDataprocMetastoreDatabaseIamMemberConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreDatabaseIamMember.GoogleDataprocMetastoreDatabaseIamMemberConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreDatabaseIamMember.GoogleDataprocMetastoreDatabaseIamMemberConfig.property.database">Database</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_dataproc_metastore_database_iam_member#database GoogleDataprocMetastoreDatabaseIamMember#database}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreDatabaseIamMember.GoogleDataprocMetastoreDatabaseIamMemberConfig.property.member">Member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_dataproc_metastore_database_iam_member#member GoogleDataprocMetastoreDatabaseIamMember#member}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreDatabaseIamMember.GoogleDataprocMetastoreDatabaseIamMemberConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_dataproc_metastore_database_iam_member#role GoogleDataprocMetastoreDatabaseIamMember#role}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreDatabaseIamMember.GoogleDataprocMetastoreDatabaseIamMemberConfig.property.serviceId">ServiceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_dataproc_metastore_database_iam_member#service_id GoogleDataprocMetastoreDatabaseIamMember#service_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreDatabaseIamMember.GoogleDataprocMetastoreDatabaseIamMemberConfig.property.database">Database</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_dataproc_metastore_database_iam_member#database GoogleDataprocMetastoreDatabaseIamMember#database}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreDatabaseIamMember.GoogleDataprocMetastoreDatabaseIamMemberConfig.property.member">Member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_dataproc_metastore_database_iam_member#member GoogleDataprocMetastoreDatabaseIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreDatabaseIamMember.GoogleDataprocMetastoreDatabaseIamMemberConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_dataproc_metastore_database_iam_member#role GoogleDataprocMetastoreDatabaseIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreDatabaseIamMember.GoogleDataprocMetastoreDatabaseIamMemberConfig.property.serviceId">ServiceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_dataproc_metastore_database_iam_member#service_id GoogleDataprocMetastoreDatabaseIamMember#service_id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreDatabaseIamMember.GoogleDataprocMetastoreDatabaseIamMemberConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreDatabaseIamMember.GoogleDataprocMetastoreDatabaseIamMemberCondition">GoogleDataprocMetastoreDatabaseIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreDatabaseIamMember.GoogleDataprocMetastoreDatabaseIamMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_dataproc_metastore_database_iam_member#id GoogleDataprocMetastoreDatabaseIamMember#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreDatabaseIamMember.GoogleDataprocMetastoreDatabaseIamMemberConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_dataproc_metastore_database_iam_member#location GoogleDataprocMetastoreDatabaseIamMember#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreDatabaseIamMember.GoogleDataprocMetastoreDatabaseIamMemberConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_dataproc_metastore_database_iam_member#project GoogleDataprocMetastoreDatabaseIamMember#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreDatabaseIamMember.GoogleDataprocMetastoreDatabaseIamMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_dataproc_metastore_database_iam_member#id GoogleDataprocMetastoreDatabaseIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreDatabaseIamMember.GoogleDataprocMetastoreDatabaseIamMemberConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_dataproc_metastore_database_iam_member#location GoogleDataprocMetastoreDatabaseIamMember#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreDatabaseIamMember.GoogleDataprocMetastoreDatabaseIamMemberConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_dataproc_metastore_database_iam_member#project GoogleDataprocMetastoreDatabaseIamMember#project}. |
 
 ---
 
@@ -1076,7 +1076,7 @@ public string Database { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_dataproc_metastore_database_iam_member#database GoogleDataprocMetastoreDatabaseIamMember#database}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_dataproc_metastore_database_iam_member#database GoogleDataprocMetastoreDatabaseIamMember#database}.
 
 ---
 
@@ -1088,7 +1088,7 @@ public string Member { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_dataproc_metastore_database_iam_member#member GoogleDataprocMetastoreDatabaseIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_dataproc_metastore_database_iam_member#member GoogleDataprocMetastoreDatabaseIamMember#member}.
 
 ---
 
@@ -1100,7 +1100,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_dataproc_metastore_database_iam_member#role GoogleDataprocMetastoreDatabaseIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_dataproc_metastore_database_iam_member#role GoogleDataprocMetastoreDatabaseIamMember#role}.
 
 ---
 
@@ -1112,7 +1112,7 @@ public string ServiceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_dataproc_metastore_database_iam_member#service_id GoogleDataprocMetastoreDatabaseIamMember#service_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_dataproc_metastore_database_iam_member#service_id GoogleDataprocMetastoreDatabaseIamMember#service_id}.
 
 ---
 
@@ -1126,7 +1126,7 @@ public GoogleDataprocMetastoreDatabaseIamMemberCondition Condition { get; set; }
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_dataproc_metastore_database_iam_member#condition GoogleDataprocMetastoreDatabaseIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_dataproc_metastore_database_iam_member#condition GoogleDataprocMetastoreDatabaseIamMember#condition}
 
 ---
 
@@ -1138,7 +1138,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_dataproc_metastore_database_iam_member#id GoogleDataprocMetastoreDatabaseIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_dataproc_metastore_database_iam_member#id GoogleDataprocMetastoreDatabaseIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1153,7 +1153,7 @@ public string Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_dataproc_metastore_database_iam_member#location GoogleDataprocMetastoreDatabaseIamMember#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_dataproc_metastore_database_iam_member#location GoogleDataprocMetastoreDatabaseIamMember#location}.
 
 ---
 
@@ -1165,7 +1165,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_dataproc_metastore_database_iam_member#project GoogleDataprocMetastoreDatabaseIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_dataproc_metastore_database_iam_member#project GoogleDataprocMetastoreDatabaseIamMember#project}.
 
 ---
 
