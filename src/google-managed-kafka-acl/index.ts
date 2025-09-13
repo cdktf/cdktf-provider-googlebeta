@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_managed_kafka_acl
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_managed_kafka_acl
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -19,17 +19,17 @@ export interface GoogleManagedKafkaAclConfig extends cdktf.TerraformMetaArgument
   * For acls on all resources that match a prefix: 'topicPrefixed/{resource_name}' 'consumerGroupPrefixed/{resource_name}' 'transactionalIdPrefixed/{resource_name}'
   * For acls on all resources of a given type (i.e. the wildcard literal '*''): 'allTopics' (represents 'topic/*') 'allConsumerGroups' (represents 'consumerGroup/*') 'allTransactionalIds' (represents 'transactionalId/*').
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_managed_kafka_acl#acl_id GoogleManagedKafkaAcl#acl_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_managed_kafka_acl#acl_id GoogleManagedKafkaAcl#acl_id}
   */
   readonly aclId: string;
   /**
   * The cluster name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_managed_kafka_acl#cluster GoogleManagedKafkaAcl#cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_managed_kafka_acl#cluster GoogleManagedKafkaAcl#cluster}
   */
   readonly cluster: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_managed_kafka_acl#id GoogleManagedKafkaAcl#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_managed_kafka_acl#id GoogleManagedKafkaAcl#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -38,23 +38,23 @@ export interface GoogleManagedKafkaAclConfig extends cdktf.TerraformMetaArgument
   /**
   * ID of the location of the Kafka resource. See https://cloud.google.com/managed-kafka/docs/locations for a list of supported locations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_managed_kafka_acl#location GoogleManagedKafkaAcl#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_managed_kafka_acl#location GoogleManagedKafkaAcl#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_managed_kafka_acl#project GoogleManagedKafkaAcl#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_managed_kafka_acl#project GoogleManagedKafkaAcl#project}
   */
   readonly project?: string;
   /**
   * acl_entries block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_managed_kafka_acl#acl_entries GoogleManagedKafkaAcl#acl_entries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_managed_kafka_acl#acl_entries GoogleManagedKafkaAcl#acl_entries}
   */
   readonly aclEntries: GoogleManagedKafkaAclAclEntries[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_managed_kafka_acl#timeouts GoogleManagedKafkaAcl#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_managed_kafka_acl#timeouts GoogleManagedKafkaAcl#timeouts}
   */
   readonly timeouts?: GoogleManagedKafkaAclTimeouts;
 }
@@ -62,7 +62,7 @@ export interface GoogleManagedKafkaAclAclEntries {
   /**
   * The host. Must be set to "*" for Managed Service for Apache Kafka.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_managed_kafka_acl#host GoogleManagedKafkaAcl#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_managed_kafka_acl#host GoogleManagedKafkaAcl#host}
   */
   readonly host?: string;
   /**
@@ -71,19 +71,19 @@ export interface GoogleManagedKafkaAclAclEntries {
   * ALTER_CONFIGS, and IDEMPOTENT_WRITE. See https://kafka.apache.org/documentation/#operations_resources_and_protocols
   * for valid combinations of resource_type and operation for different Kafka API requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_managed_kafka_acl#operation GoogleManagedKafkaAcl#operation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_managed_kafka_acl#operation GoogleManagedKafkaAcl#operation}
   */
   readonly operation: string;
   /**
   * The permission type. Accepted values are (case insensitive): ALLOW, DENY.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_managed_kafka_acl#permission_type GoogleManagedKafkaAcl#permission_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_managed_kafka_acl#permission_type GoogleManagedKafkaAcl#permission_type}
   */
   readonly permissionType?: string;
   /**
   * The principal. Specified as Google Cloud account, with the Kafka StandardAuthorizer prefix User:". For example: "User:test-kafka-client@test-project.iam.gserviceaccount.com". Can be the wildcard "User:*" to refer to all users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_managed_kafka_acl#principal GoogleManagedKafkaAcl#principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_managed_kafka_acl#principal GoogleManagedKafkaAcl#principal}
   */
   readonly principal: string;
 }
@@ -280,15 +280,15 @@ export class GoogleManagedKafkaAclAclEntriesList extends cdktf.ComplexList {
 }
 export interface GoogleManagedKafkaAclTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_managed_kafka_acl#create GoogleManagedKafkaAcl#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_managed_kafka_acl#create GoogleManagedKafkaAcl#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_managed_kafka_acl#delete GoogleManagedKafkaAcl#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_managed_kafka_acl#delete GoogleManagedKafkaAcl#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_managed_kafka_acl#update GoogleManagedKafkaAcl#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_managed_kafka_acl#update GoogleManagedKafkaAcl#update}
   */
   readonly update?: string;
 }
@@ -440,7 +440,7 @@ export class GoogleManagedKafkaAclTimeoutsOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_managed_kafka_acl google_managed_kafka_acl}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_managed_kafka_acl google_managed_kafka_acl}
 */
 export class GoogleManagedKafkaAcl extends cdktf.TerraformResource {
 
@@ -456,7 +456,7 @@ export class GoogleManagedKafkaAcl extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleManagedKafkaAcl resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleManagedKafkaAcl to import
-  * @param importFromId The id of the existing GoogleManagedKafkaAcl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_managed_kafka_acl#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleManagedKafkaAcl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_managed_kafka_acl#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleManagedKafkaAcl to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -468,7 +468,7 @@ export class GoogleManagedKafkaAcl extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_managed_kafka_acl google_managed_kafka_acl} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_managed_kafka_acl google_managed_kafka_acl} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -479,7 +479,7 @@ export class GoogleManagedKafkaAcl extends cdktf.TerraformResource {
       terraformResourceType: 'google_managed_kafka_acl',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.49.2',
+        providerVersion: '6.49.3',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
