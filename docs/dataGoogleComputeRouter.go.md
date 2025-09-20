@@ -4,7 +4,7 @@
 
 ### DataGoogleComputeRouter <a name="DataGoogleComputeRouter" id="@cdktf/provider-google-beta.dataGoogleComputeRouter.DataGoogleComputeRouter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/data-sources/google_compute_router google_compute_router}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_compute_router google_compute_router}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeRouter.DataGoogleComputeRouter.Initializer"></a>
 
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataGoogleComputeRouter to
 
 The id of the existing DataGoogleComputeRouter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/data-sources/google_compute_router#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_compute_router#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -808,8 +808,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v16/datagooglec
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeRouter.DataGoogleComputeRouterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeRouter.DataGoogleComputeRouterConfig.property.name">Name</a></code> | <code>*string</code> | Name of the resource. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeRouter.DataGoogleComputeRouterConfig.property.network">Network</a></code> | <code>*string</code> | A reference to the network to which this router belongs. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeRouter.DataGoogleComputeRouterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/data-sources/google_compute_router#id DataGoogleComputeRouter#id}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeRouter.DataGoogleComputeRouterConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/data-sources/google_compute_router#project DataGoogleComputeRouter#project}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeRouter.DataGoogleComputeRouterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_compute_router#id DataGoogleComputeRouter#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeRouter.DataGoogleComputeRouterConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_compute_router#project DataGoogleComputeRouter#project}. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeRouter.DataGoogleComputeRouterConfig.property.region">Region</a></code> | <code>*string</code> | Region where the router resides. |
 
 ---
@@ -901,7 +901,7 @@ which means the first character must be a lowercase letter, and all
 following characters must be a dash, lowercase letter, or digit,
 except the last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/data-sources/google_compute_router#name DataGoogleComputeRouter#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_compute_router#name DataGoogleComputeRouter#name}
 
 ---
 
@@ -915,7 +915,7 @@ Network *string
 
 A reference to the network to which this router belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/data-sources/google_compute_router#network DataGoogleComputeRouter#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_compute_router#network DataGoogleComputeRouter#network}
 
 ---
 
@@ -927,7 +927,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/data-sources/google_compute_router#id DataGoogleComputeRouter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_compute_router#id DataGoogleComputeRouter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -942,7 +942,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/data-sources/google_compute_router#project DataGoogleComputeRouter#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_compute_router#project DataGoogleComputeRouter#project}.
 
 ---
 
@@ -956,7 +956,7 @@ Region *string
 
 Region where the router resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/data-sources/google_compute_router#region DataGoogleComputeRouter#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_compute_router#region DataGoogleComputeRouter#region}
 
 ---
 
