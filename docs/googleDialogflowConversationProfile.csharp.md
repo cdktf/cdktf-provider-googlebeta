@@ -296,7 +296,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfile.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfile.importFrom"></a>
@@ -350,7 +350,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfile.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -365,7 +365,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfile.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -705,13 +705,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfile.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfile.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfile.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfile.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfile.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfile.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfile.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfile.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfile.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfile.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfile.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfile.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfile.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfile.property.automatedAgentConfig">AutomatedAgentConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileAutomatedAgentConfigOutputReference">GoogleDialogflowConversationProfileAutomatedAgentConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfile.property.humanAgentAssistantConfig">HumanAgentAssistantConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigOutputReference">GoogleDialogflowConversationProfileHumanAgentAssistantConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfile.property.humanAgentHandoffConfig">HumanAgentHandoffConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentHandoffConfigOutputReference">GoogleDialogflowConversationProfileHumanAgentHandoffConfigOutputReference</a></code> | *No description.* |
@@ -735,7 +735,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfile.property.projectInput">ProjectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfile.property.securitySettingsInput">SecuritySettingsInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfile.property.sttConfigInput">SttConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfig">GoogleDialogflowConversationProfileSttConfig</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfile.property.timeoutsInput">TimeoutsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfile.property.timeoutsInput">TimeoutsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileTimeouts">GoogleDialogflowConversationProfileTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfile.property.timeZoneInput">TimeZoneInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfile.property.ttsConfigInput">TtsConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileTtsConfig">GoogleDialogflowConversationProfileTtsConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfile.property.displayName">DisplayName</a></code> | <code>string</code> | *No description.* |
@@ -823,20 +823,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfile.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfile.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -883,10 +883,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfile.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1123,10 +1123,10 @@ public GoogleDialogflowConversationProfileSttConfig SttConfigInput { get; }
 ##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfile.property.timeoutsInput"></a>
 
 ```csharp
-public object TimeoutsInput { get; }
+public IResolvable|GoogleDialogflowConversationProfileTimeouts TimeoutsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileTimeouts">GoogleDialogflowConversationProfileTimeouts</a>
 
 ---
 
@@ -1298,13 +1298,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.GoogleBeta;
 
 new GoogleDialogflowConversationProfileConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string DisplayName,
     string Location,
     GoogleDialogflowConversationProfileAutomatedAgentConfig AutomatedAgentConfig = null,
@@ -1328,13 +1328,13 @@ new GoogleDialogflowConversationProfileConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileConfig.property.displayName">DisplayName</a></code> | <code>string</code> | Required. Human readable name for this profile. Max length 1024 bytes. |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileConfig.property.location">Location</a></code> | <code>string</code> | desc. |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileConfig.property.automatedAgentConfig">AutomatedAgentConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileAutomatedAgentConfig">GoogleDialogflowConversationProfileAutomatedAgentConfig</a></code> | automated_agent_config block. |
@@ -1357,20 +1357,20 @@ new GoogleDialogflowConversationProfileConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1417,10 +1417,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1737,10 +1737,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.GoogleBeta;
 
 new GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfig {
-    object DisableHighLatencyFeaturesSyncDelivery = null,
-    object FeatureConfigs = null,
+    bool|IResolvable DisableHighLatencyFeaturesSyncDelivery = null,
+    IResolvable|GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs[] FeatureConfigs = null,
     string[] Generators = null,
-    object GroupSuggestionResponses = null
+    bool|IResolvable GroupSuggestionResponses = null
 };
 ```
 
@@ -1748,20 +1748,20 @@ new GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfig.property.disableHighLatencyFeaturesSyncDelivery">DisableHighLatencyFeaturesSyncDelivery</a></code> | <code>object</code> | When disableHighLatencyFeaturesSyncDelivery is true and using the AnalyzeContent API, we will not deliver the responses from high latency features in the API response. |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfig.property.featureConfigs">FeatureConfigs</a></code> | <code>object</code> | feature_configs block. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfig.property.disableHighLatencyFeaturesSyncDelivery">DisableHighLatencyFeaturesSyncDelivery</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | When disableHighLatencyFeaturesSyncDelivery is true and using the AnalyzeContent API, we will not deliver the responses from high latency features in the API response. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfig.property.featureConfigs">FeatureConfigs</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs">GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs</a>[]</code> | feature_configs block. |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfig.property.generators">Generators</a></code> | <code>string[]</code> | List of various generator resource names used in the conversation profile. |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfig.property.groupSuggestionResponses">GroupSuggestionResponses</a></code> | <code>object</code> | If groupSuggestionResponses is false, and there are multiple featureConfigs in event based suggestion or StreamingAnalyzeContent, we will try to deliver suggestions to customers as soon as we get new suggestion. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfig.property.groupSuggestionResponses">GroupSuggestionResponses</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If groupSuggestionResponses is false, and there are multiple featureConfigs in event based suggestion or StreamingAnalyzeContent, we will try to deliver suggestions to customers as soon as we get new suggestion. |
 
 ---
 
 ##### `DisableHighLatencyFeaturesSyncDelivery`<sup>Optional</sup> <a name="DisableHighLatencyFeaturesSyncDelivery" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfig.property.disableHighLatencyFeaturesSyncDelivery"></a>
 
 ```csharp
-public object DisableHighLatencyFeaturesSyncDelivery { get; set; }
+public bool|IResolvable DisableHighLatencyFeaturesSyncDelivery { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 When disableHighLatencyFeaturesSyncDelivery is true and using the AnalyzeContent API, we will not deliver the responses from high latency features in the API response.
 
@@ -1774,10 +1774,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `FeatureConfigs`<sup>Optional</sup> <a name="FeatureConfigs" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfig.property.featureConfigs"></a>
 
 ```csharp
-public object FeatureConfigs { get; set; }
+public IResolvable|GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs[] FeatureConfigs { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs">GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs</a>[]
 
 feature_configs block.
 
@@ -1802,10 +1802,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `GroupSuggestionResponses`<sup>Optional</sup> <a name="GroupSuggestionResponses" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfig.property.groupSuggestionResponses"></a>
 
 ```csharp
-public object GroupSuggestionResponses { get; set; }
+public bool|IResolvable GroupSuggestionResponses { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If groupSuggestionResponses is false, and there are multiple featureConfigs in event based suggestion or StreamingAnalyzeContent, we will try to deliver suggestions to customers as soon as we get new suggestion.
 
@@ -1827,11 +1827,11 @@ using HashiCorp.Cdktf.Providers.GoogleBeta;
 new GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs {
     GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationModelConfig ConversationModelConfig = null,
     GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationProcessConfig ConversationProcessConfig = null,
-    object DisableAgentQueryLogging = null,
-    object EnableConversationAugmentedQuery = null,
-    object EnableEventBasedSuggestion = null,
-    object EnableQuerySuggestionOnly = null,
-    object EnableQuerySuggestionWhenNoAnswer = null,
+    bool|IResolvable DisableAgentQueryLogging = null,
+    bool|IResolvable EnableConversationAugmentedQuery = null,
+    bool|IResolvable EnableEventBasedSuggestion = null,
+    bool|IResolvable EnableQuerySuggestionOnly = null,
+    bool|IResolvable EnableQuerySuggestionWhenNoAnswer = null,
     GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfig QueryConfig = null,
     GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionFeature SuggestionFeature = null,
     GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettings SuggestionTriggerSettings = null
@@ -1844,11 +1844,11 @@ new GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestio
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs.property.conversationModelConfig">ConversationModelConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationModelConfig">GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationModelConfig</a></code> | conversation_model_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs.property.conversationProcessConfig">ConversationProcessConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationProcessConfig">GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationProcessConfig</a></code> | conversation_process_config block. |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs.property.disableAgentQueryLogging">DisableAgentQueryLogging</a></code> | <code>object</code> | Disable the logging of search queries sent by human agents. |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs.property.enableConversationAugmentedQuery">EnableConversationAugmentedQuery</a></code> | <code>object</code> | Enable including conversation context during query answer generation. This feature is only supported for types: KNOWLEDGE_SEARCH. |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs.property.enableEventBasedSuggestion">EnableEventBasedSuggestion</a></code> | <code>object</code> | Automatically iterates all participants and tries to compile suggestions. This feature is only supported for types: ARTICLE_SUGGESTION, FAQ, DIALOGFLOW_ASSIST, KNOWLEDGE_ASSIST. |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs.property.enableQuerySuggestionOnly">EnableQuerySuggestionOnly</a></code> | <code>object</code> | Enable query suggestion only. This feature is only supported for types: KNOWLEDGE_ASSIST. |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs.property.enableQuerySuggestionWhenNoAnswer">EnableQuerySuggestionWhenNoAnswer</a></code> | <code>object</code> | Enable query suggestion even if we can't find its answer. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs.property.disableAgentQueryLogging">DisableAgentQueryLogging</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Disable the logging of search queries sent by human agents. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs.property.enableConversationAugmentedQuery">EnableConversationAugmentedQuery</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable including conversation context during query answer generation. This feature is only supported for types: KNOWLEDGE_SEARCH. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs.property.enableEventBasedSuggestion">EnableEventBasedSuggestion</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Automatically iterates all participants and tries to compile suggestions. This feature is only supported for types: ARTICLE_SUGGESTION, FAQ, DIALOGFLOW_ASSIST, KNOWLEDGE_ASSIST. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs.property.enableQuerySuggestionOnly">EnableQuerySuggestionOnly</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable query suggestion only. This feature is only supported for types: KNOWLEDGE_ASSIST. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs.property.enableQuerySuggestionWhenNoAnswer">EnableQuerySuggestionWhenNoAnswer</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable query suggestion even if we can't find its answer. |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs.property.queryConfig">QueryConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfig">GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfig</a></code> | query_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs.property.suggestionFeature">SuggestionFeature</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionFeature">GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionFeature</a></code> | suggestion_feature block. |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs.property.suggestionTriggerSettings">SuggestionTriggerSettings</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettings">GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettings</a></code> | suggestion_trigger_settings block. |
@@ -1886,10 +1886,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DisableAgentQueryLogging`<sup>Optional</sup> <a name="DisableAgentQueryLogging" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs.property.disableAgentQueryLogging"></a>
 
 ```csharp
-public object DisableAgentQueryLogging { get; set; }
+public bool|IResolvable DisableAgentQueryLogging { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Disable the logging of search queries sent by human agents.
 
@@ -1903,10 +1903,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `EnableConversationAugmentedQuery`<sup>Optional</sup> <a name="EnableConversationAugmentedQuery" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs.property.enableConversationAugmentedQuery"></a>
 
 ```csharp
-public object EnableConversationAugmentedQuery { get; set; }
+public bool|IResolvable EnableConversationAugmentedQuery { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable including conversation context during query answer generation. This feature is only supported for types: KNOWLEDGE_SEARCH.
 
@@ -1917,10 +1917,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `EnableEventBasedSuggestion`<sup>Optional</sup> <a name="EnableEventBasedSuggestion" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs.property.enableEventBasedSuggestion"></a>
 
 ```csharp
-public object EnableEventBasedSuggestion { get; set; }
+public bool|IResolvable EnableEventBasedSuggestion { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Automatically iterates all participants and tries to compile suggestions. This feature is only supported for types: ARTICLE_SUGGESTION, FAQ, DIALOGFLOW_ASSIST, KNOWLEDGE_ASSIST.
 
@@ -1931,10 +1931,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `EnableQuerySuggestionOnly`<sup>Optional</sup> <a name="EnableQuerySuggestionOnly" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs.property.enableQuerySuggestionOnly"></a>
 
 ```csharp
-public object EnableQuerySuggestionOnly { get; set; }
+public bool|IResolvable EnableQuerySuggestionOnly { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable query suggestion only. This feature is only supported for types: KNOWLEDGE_ASSIST.
 
@@ -1945,10 +1945,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `EnableQuerySuggestionWhenNoAnswer`<sup>Optional</sup> <a name="EnableQuerySuggestionWhenNoAnswer" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs.property.enableQuerySuggestionWhenNoAnswer"></a>
 
 ```csharp
-public object EnableQuerySuggestionWhenNoAnswer { get; set; }
+public bool|IResolvable EnableQuerySuggestionWhenNoAnswer { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable query suggestion even if we can't find its answer.
 
@@ -2225,9 +2225,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.GoogleBeta;
 
 new GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettings {
-    object DropHandoffMessages = null,
-    object DropIvrMessages = null,
-    object DropVirtualAgentMessages = null
+    bool|IResolvable DropHandoffMessages = null,
+    bool|IResolvable DropIvrMessages = null,
+    bool|IResolvable DropVirtualAgentMessages = null
 };
 ```
 
@@ -2235,19 +2235,19 @@ new GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettings.property.dropHandoffMessages">DropHandoffMessages</a></code> | <code>object</code> | If set to true, the last message from virtual agent (hand off message) and the message before it (trigger message of hand off) are dropped. |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettings.property.dropIvrMessages">DropIvrMessages</a></code> | <code>object</code> | If set to true, all messages from ivr stage are dropped. |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettings.property.dropVirtualAgentMessages">DropVirtualAgentMessages</a></code> | <code>object</code> | If set to true, all messages from virtual agent are dropped. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettings.property.dropHandoffMessages">DropHandoffMessages</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If set to true, the last message from virtual agent (hand off message) and the message before it (trigger message of hand off) are dropped. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettings.property.dropIvrMessages">DropIvrMessages</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If set to true, all messages from ivr stage are dropped. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettings.property.dropVirtualAgentMessages">DropVirtualAgentMessages</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If set to true, all messages from virtual agent are dropped. |
 
 ---
 
 ##### `DropHandoffMessages`<sup>Optional</sup> <a name="DropHandoffMessages" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettings.property.dropHandoffMessages"></a>
 
 ```csharp
-public object DropHandoffMessages { get; set; }
+public bool|IResolvable DropHandoffMessages { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If set to true, the last message from virtual agent (hand off message) and the message before it (trigger message of hand off) are dropped.
 
@@ -2258,10 +2258,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DropIvrMessages`<sup>Optional</sup> <a name="DropIvrMessages" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettings.property.dropIvrMessages"></a>
 
 ```csharp
-public object DropIvrMessages { get; set; }
+public bool|IResolvable DropIvrMessages { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If set to true, all messages from ivr stage are dropped.
 
@@ -2272,10 +2272,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DropVirtualAgentMessages`<sup>Optional</sup> <a name="DropVirtualAgentMessages" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettings.property.dropVirtualAgentMessages"></a>
 
 ```csharp
-public object DropVirtualAgentMessages { get; set; }
+public bool|IResolvable DropVirtualAgentMessages { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If set to true, all messages from virtual agent are dropped.
 
@@ -2517,8 +2517,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.GoogleBeta;
 
 new GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettings {
-    object NoSmallTalk = null,
-    object OnlyEndUser = null
+    bool|IResolvable NoSmallTalk = null,
+    bool|IResolvable OnlyEndUser = null
 };
 ```
 
@@ -2526,18 +2526,18 @@ new GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettings.property.noSmallTalk">NoSmallTalk</a></code> | <code>object</code> | Do not trigger if last utterance is small talk. |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettings.property.onlyEndUser">OnlyEndUser</a></code> | <code>object</code> | Only trigger suggestion if participant role of last utterance is END_USER. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettings.property.noSmallTalk">NoSmallTalk</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Do not trigger if last utterance is small talk. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettings.property.onlyEndUser">OnlyEndUser</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Only trigger suggestion if participant role of last utterance is END_USER. |
 
 ---
 
 ##### `NoSmallTalk`<sup>Optional</sup> <a name="NoSmallTalk" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettings.property.noSmallTalk"></a>
 
 ```csharp
-public object NoSmallTalk { get; set; }
+public bool|IResolvable NoSmallTalk { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Do not trigger if last utterance is small talk.
 
@@ -2548,10 +2548,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `OnlyEndUser`<sup>Optional</sup> <a name="OnlyEndUser" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettings.property.onlyEndUser"></a>
 
 ```csharp
-public object OnlyEndUser { get; set; }
+public bool|IResolvable OnlyEndUser { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Only trigger suggestion if participant role of last utterance is END_USER.
 
@@ -2567,10 +2567,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.GoogleBeta;
 
 new GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfig {
-    object DisableHighLatencyFeaturesSyncDelivery = null,
-    object FeatureConfigs = null,
+    bool|IResolvable DisableHighLatencyFeaturesSyncDelivery = null,
+    IResolvable|GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs[] FeatureConfigs = null,
     string[] Generators = null,
-    object GroupSuggestionResponses = null
+    bool|IResolvable GroupSuggestionResponses = null
 };
 ```
 
@@ -2578,20 +2578,20 @@ new GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSugges
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfig.property.disableHighLatencyFeaturesSyncDelivery">DisableHighLatencyFeaturesSyncDelivery</a></code> | <code>object</code> | When disableHighLatencyFeaturesSyncDelivery is true and using the AnalyzeContent API, we will not deliver the responses from high latency features in the API response. |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfig.property.featureConfigs">FeatureConfigs</a></code> | <code>object</code> | feature_configs block. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfig.property.disableHighLatencyFeaturesSyncDelivery">DisableHighLatencyFeaturesSyncDelivery</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | When disableHighLatencyFeaturesSyncDelivery is true and using the AnalyzeContent API, we will not deliver the responses from high latency features in the API response. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfig.property.featureConfigs">FeatureConfigs</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs">GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs</a>[]</code> | feature_configs block. |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfig.property.generators">Generators</a></code> | <code>string[]</code> | List of various generator resource names used in the conversation profile. |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfig.property.groupSuggestionResponses">GroupSuggestionResponses</a></code> | <code>object</code> | If groupSuggestionResponses is false, and there are multiple featureConfigs in event based suggestion or StreamingAnalyzeContent, we will try to deliver suggestions to customers as soon as we get new suggestion. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfig.property.groupSuggestionResponses">GroupSuggestionResponses</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If groupSuggestionResponses is false, and there are multiple featureConfigs in event based suggestion or StreamingAnalyzeContent, we will try to deliver suggestions to customers as soon as we get new suggestion. |
 
 ---
 
 ##### `DisableHighLatencyFeaturesSyncDelivery`<sup>Optional</sup> <a name="DisableHighLatencyFeaturesSyncDelivery" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfig.property.disableHighLatencyFeaturesSyncDelivery"></a>
 
 ```csharp
-public object DisableHighLatencyFeaturesSyncDelivery { get; set; }
+public bool|IResolvable DisableHighLatencyFeaturesSyncDelivery { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 When disableHighLatencyFeaturesSyncDelivery is true and using the AnalyzeContent API, we will not deliver the responses from high latency features in the API response.
 
@@ -2604,10 +2604,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `FeatureConfigs`<sup>Optional</sup> <a name="FeatureConfigs" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfig.property.featureConfigs"></a>
 
 ```csharp
-public object FeatureConfigs { get; set; }
+public IResolvable|GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs[] FeatureConfigs { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs">GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs</a>[]
 
 feature_configs block.
 
@@ -2632,10 +2632,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `GroupSuggestionResponses`<sup>Optional</sup> <a name="GroupSuggestionResponses" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfig.property.groupSuggestionResponses"></a>
 
 ```csharp
-public object GroupSuggestionResponses { get; set; }
+public bool|IResolvable GroupSuggestionResponses { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If groupSuggestionResponses is false, and there are multiple featureConfigs in event based suggestion or StreamingAnalyzeContent, we will try to deliver suggestions to customers as soon as we get new suggestion.
 
@@ -2657,11 +2657,11 @@ using HashiCorp.Cdktf.Providers.GoogleBeta;
 new GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs {
     GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationModelConfig ConversationModelConfig = null,
     GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationProcessConfig ConversationProcessConfig = null,
-    object DisableAgentQueryLogging = null,
-    object EnableConversationAugmentedQuery = null,
-    object EnableEventBasedSuggestion = null,
-    object EnableQuerySuggestionOnly = null,
-    object EnableQuerySuggestionWhenNoAnswer = null,
+    bool|IResolvable DisableAgentQueryLogging = null,
+    bool|IResolvable EnableConversationAugmentedQuery = null,
+    bool|IResolvable EnableEventBasedSuggestion = null,
+    bool|IResolvable EnableQuerySuggestionOnly = null,
+    bool|IResolvable EnableQuerySuggestionWhenNoAnswer = null,
     GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfig QueryConfig = null,
     GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionFeature SuggestionFeature = null,
     GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettings SuggestionTriggerSettings = null
@@ -2674,11 +2674,11 @@ new GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSugges
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs.property.conversationModelConfig">ConversationModelConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationModelConfig">GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationModelConfig</a></code> | conversation_model_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs.property.conversationProcessConfig">ConversationProcessConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationProcessConfig">GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationProcessConfig</a></code> | conversation_process_config block. |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs.property.disableAgentQueryLogging">DisableAgentQueryLogging</a></code> | <code>object</code> | Disable the logging of search queries sent by human agents. |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs.property.enableConversationAugmentedQuery">EnableConversationAugmentedQuery</a></code> | <code>object</code> | Enable including conversation context during query answer generation. This feature is only supported for types: KNOWLEDGE_SEARCH. |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs.property.enableEventBasedSuggestion">EnableEventBasedSuggestion</a></code> | <code>object</code> | Automatically iterates all participants and tries to compile suggestions. This feature is only supported for types: ARTICLE_SUGGESTION, FAQ, DIALOGFLOW_ASSIST, KNOWLEDGE_ASSIST. |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs.property.enableQuerySuggestionOnly">EnableQuerySuggestionOnly</a></code> | <code>object</code> | Enable query suggestion only. This feature is only supported for types: KNOWLEDGE_ASSIST. |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs.property.enableQuerySuggestionWhenNoAnswer">EnableQuerySuggestionWhenNoAnswer</a></code> | <code>object</code> | Enable query suggestion even if we can't find its answer. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs.property.disableAgentQueryLogging">DisableAgentQueryLogging</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Disable the logging of search queries sent by human agents. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs.property.enableConversationAugmentedQuery">EnableConversationAugmentedQuery</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable including conversation context during query answer generation. This feature is only supported for types: KNOWLEDGE_SEARCH. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs.property.enableEventBasedSuggestion">EnableEventBasedSuggestion</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Automatically iterates all participants and tries to compile suggestions. This feature is only supported for types: ARTICLE_SUGGESTION, FAQ, DIALOGFLOW_ASSIST, KNOWLEDGE_ASSIST. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs.property.enableQuerySuggestionOnly">EnableQuerySuggestionOnly</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable query suggestion only. This feature is only supported for types: KNOWLEDGE_ASSIST. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs.property.enableQuerySuggestionWhenNoAnswer">EnableQuerySuggestionWhenNoAnswer</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable query suggestion even if we can't find its answer. |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs.property.queryConfig">QueryConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfig">GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfig</a></code> | query_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs.property.suggestionFeature">SuggestionFeature</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionFeature">GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionFeature</a></code> | suggestion_feature block. |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs.property.suggestionTriggerSettings">SuggestionTriggerSettings</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettings">GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettings</a></code> | suggestion_trigger_settings block. |
@@ -2716,10 +2716,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DisableAgentQueryLogging`<sup>Optional</sup> <a name="DisableAgentQueryLogging" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs.property.disableAgentQueryLogging"></a>
 
 ```csharp
-public object DisableAgentQueryLogging { get; set; }
+public bool|IResolvable DisableAgentQueryLogging { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Disable the logging of search queries sent by human agents.
 
@@ -2733,10 +2733,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `EnableConversationAugmentedQuery`<sup>Optional</sup> <a name="EnableConversationAugmentedQuery" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs.property.enableConversationAugmentedQuery"></a>
 
 ```csharp
-public object EnableConversationAugmentedQuery { get; set; }
+public bool|IResolvable EnableConversationAugmentedQuery { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable including conversation context during query answer generation. This feature is only supported for types: KNOWLEDGE_SEARCH.
 
@@ -2747,10 +2747,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `EnableEventBasedSuggestion`<sup>Optional</sup> <a name="EnableEventBasedSuggestion" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs.property.enableEventBasedSuggestion"></a>
 
 ```csharp
-public object EnableEventBasedSuggestion { get; set; }
+public bool|IResolvable EnableEventBasedSuggestion { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Automatically iterates all participants and tries to compile suggestions. This feature is only supported for types: ARTICLE_SUGGESTION, FAQ, DIALOGFLOW_ASSIST, KNOWLEDGE_ASSIST.
 
@@ -2761,10 +2761,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `EnableQuerySuggestionOnly`<sup>Optional</sup> <a name="EnableQuerySuggestionOnly" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs.property.enableQuerySuggestionOnly"></a>
 
 ```csharp
-public object EnableQuerySuggestionOnly { get; set; }
+public bool|IResolvable EnableQuerySuggestionOnly { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable query suggestion only. This feature is only supported for types: KNOWLEDGE_ASSIST.
 
@@ -2775,10 +2775,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `EnableQuerySuggestionWhenNoAnswer`<sup>Optional</sup> <a name="EnableQuerySuggestionWhenNoAnswer" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs.property.enableQuerySuggestionWhenNoAnswer"></a>
 
 ```csharp
-public object EnableQuerySuggestionWhenNoAnswer { get; set; }
+public bool|IResolvable EnableQuerySuggestionWhenNoAnswer { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable query suggestion even if we can't find its answer.
 
@@ -3023,9 +3023,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.GoogleBeta;
 
 new GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettings {
-    object DropHandoffMessages = null,
-    object DropIvrMessages = null,
-    object DropVirtualAgentMessages = null
+    bool|IResolvable DropHandoffMessages = null,
+    bool|IResolvable DropIvrMessages = null,
+    bool|IResolvable DropVirtualAgentMessages = null
 };
 ```
 
@@ -3033,19 +3033,19 @@ new GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSugges
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettings.property.dropHandoffMessages">DropHandoffMessages</a></code> | <code>object</code> | If set to true, the last message from virtual agent (hand off message) and the message before it (trigger message of hand off) are dropped. |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettings.property.dropIvrMessages">DropIvrMessages</a></code> | <code>object</code> | If set to true, all messages from ivr stage are dropped. |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettings.property.dropVirtualAgentMessages">DropVirtualAgentMessages</a></code> | <code>object</code> | If set to true, all messages from virtual agent are dropped. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettings.property.dropHandoffMessages">DropHandoffMessages</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If set to true, the last message from virtual agent (hand off message) and the message before it (trigger message of hand off) are dropped. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettings.property.dropIvrMessages">DropIvrMessages</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If set to true, all messages from ivr stage are dropped. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettings.property.dropVirtualAgentMessages">DropVirtualAgentMessages</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If set to true, all messages from virtual agent are dropped. |
 
 ---
 
 ##### `DropHandoffMessages`<sup>Optional</sup> <a name="DropHandoffMessages" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettings.property.dropHandoffMessages"></a>
 
 ```csharp
-public object DropHandoffMessages { get; set; }
+public bool|IResolvable DropHandoffMessages { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If set to true, the last message from virtual agent (hand off message) and the message before it (trigger message of hand off) are dropped.
 
@@ -3056,10 +3056,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DropIvrMessages`<sup>Optional</sup> <a name="DropIvrMessages" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettings.property.dropIvrMessages"></a>
 
 ```csharp
-public object DropIvrMessages { get; set; }
+public bool|IResolvable DropIvrMessages { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If set to true, all messages from ivr stage are dropped.
 
@@ -3070,10 +3070,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DropVirtualAgentMessages`<sup>Optional</sup> <a name="DropVirtualAgentMessages" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettings.property.dropVirtualAgentMessages"></a>
 
 ```csharp
-public object DropVirtualAgentMessages { get; set; }
+public bool|IResolvable DropVirtualAgentMessages { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If set to true, all messages from virtual agent are dropped.
 
@@ -3247,8 +3247,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.GoogleBeta;
 
 new GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettings {
-    object NoSmallTalk = null,
-    object OnlyEndUser = null
+    bool|IResolvable NoSmallTalk = null,
+    bool|IResolvable OnlyEndUser = null
 };
 ```
 
@@ -3256,18 +3256,18 @@ new GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSugges
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettings.property.noSmallTalk">NoSmallTalk</a></code> | <code>object</code> | Do not trigger if last utterance is small talk. |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettings.property.onlyEndUser">OnlyEndUser</a></code> | <code>object</code> | Only trigger suggestion if participant role of last utterance is END_USER. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettings.property.noSmallTalk">NoSmallTalk</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Do not trigger if last utterance is small talk. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettings.property.onlyEndUser">OnlyEndUser</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Only trigger suggestion if participant role of last utterance is END_USER. |
 
 ---
 
 ##### `NoSmallTalk`<sup>Optional</sup> <a name="NoSmallTalk" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettings.property.noSmallTalk"></a>
 
 ```csharp
-public object NoSmallTalk { get; set; }
+public bool|IResolvable NoSmallTalk { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Do not trigger if last utterance is small talk.
 
@@ -3278,10 +3278,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `OnlyEndUser`<sup>Optional</sup> <a name="OnlyEndUser" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettings.property.onlyEndUser"></a>
 
 ```csharp
-public object OnlyEndUser { get; set; }
+public bool|IResolvable OnlyEndUser { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Only trigger suggestion if participant role of last utterance is END_USER.
 
@@ -3297,8 +3297,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.GoogleBeta;
 
 new GoogleDialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfig {
-    object EnableEntityExtraction = null,
-    object EnableSentimentAnalysis = null
+    bool|IResolvable EnableEntityExtraction = null,
+    bool|IResolvable EnableSentimentAnalysis = null
 };
 ```
 
@@ -3306,18 +3306,18 @@ new GoogleDialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisC
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfig.property.enableEntityExtraction">EnableEntityExtraction</a></code> | <code>object</code> | Enable entity extraction in conversation messages on agent assist stage. |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfig.property.enableSentimentAnalysis">EnableSentimentAnalysis</a></code> | <code>object</code> | Enable sentiment analysis in conversation messages on agent assist stage. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfig.property.enableEntityExtraction">EnableEntityExtraction</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable entity extraction in conversation messages on agent assist stage. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfig.property.enableSentimentAnalysis">EnableSentimentAnalysis</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable sentiment analysis in conversation messages on agent assist stage. |
 
 ---
 
 ##### `EnableEntityExtraction`<sup>Optional</sup> <a name="EnableEntityExtraction" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfig.property.enableEntityExtraction"></a>
 
 ```csharp
-public object EnableEntityExtraction { get; set; }
+public bool|IResolvable EnableEntityExtraction { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable entity extraction in conversation messages on agent assist stage.
 
@@ -3328,10 +3328,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `EnableSentimentAnalysis`<sup>Optional</sup> <a name="EnableSentimentAnalysis" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfig.property.enableSentimentAnalysis"></a>
 
 ```csharp
-public object EnableSentimentAnalysis { get; set; }
+public bool|IResolvable EnableSentimentAnalysis { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable sentiment analysis in conversation messages on agent assist stage.
 
@@ -3467,7 +3467,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.GoogleBeta;
 
 new GoogleDialogflowConversationProfileLoggingConfig {
-    object EnableStackdriverLogging = null
+    bool|IResolvable EnableStackdriverLogging = null
 };
 ```
 
@@ -3475,17 +3475,17 @@ new GoogleDialogflowConversationProfileLoggingConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileLoggingConfig.property.enableStackdriverLogging">EnableStackdriverLogging</a></code> | <code>object</code> | Whether to log conversation events. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileLoggingConfig.property.enableStackdriverLogging">EnableStackdriverLogging</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to log conversation events. |
 
 ---
 
 ##### `EnableStackdriverLogging`<sup>Optional</sup> <a name="EnableStackdriverLogging" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileLoggingConfig.property.enableStackdriverLogging"></a>
 
 ```csharp
-public object EnableStackdriverLogging { get; set; }
+public bool|IResolvable EnableStackdriverLogging { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to log conversation events.
 
@@ -3602,12 +3602,12 @@ using HashiCorp.Cdktf.Providers.GoogleBeta;
 
 new GoogleDialogflowConversationProfileSttConfig {
     string AudioEncoding = null,
-    object EnableWordInfo = null,
+    bool|IResolvable EnableWordInfo = null,
     string LanguageCode = null,
     string Model = null,
     double SampleRateHertz = null,
     string SpeechModelVariant = null,
-    object UseTimeoutBasedEndpointing = null
+    bool|IResolvable UseTimeoutBasedEndpointing = null
 };
 ```
 
@@ -3616,12 +3616,12 @@ new GoogleDialogflowConversationProfileSttConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfig.property.audioEncoding">AudioEncoding</a></code> | <code>string</code> | Audio encoding of the audio content to process. Possible values: ["AUDIO_ENCODING_UNSPECIFIED", "AUDIO_ENCODING_LINEAR_16", "AUDIO_ENCODING_FLAC", "AUDIO_ENCODING_MULAW", "AUDIO_ENCODING_AMR", "AUDIO_ENCODING_AMR_WB", "AUDIO_ENCODING_OGG_OPUS", "AUDIOENCODING_SPEEX_WITH_HEADER_BYTE"]. |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfig.property.enableWordInfo">EnableWordInfo</a></code> | <code>object</code> | If true, Dialogflow returns SpeechWordInfo in StreamingRecognitionResult with information about the recognized speech words. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfig.property.enableWordInfo">EnableWordInfo</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If true, Dialogflow returns SpeechWordInfo in StreamingRecognitionResult with information about the recognized speech words. |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfig.property.languageCode">LanguageCode</a></code> | <code>string</code> | The language of the supplied audio. |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfig.property.model">Model</a></code> | <code>string</code> | Which Speech model to select. Leave this field unspecified to use Agent Speech settings for model selection. |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfig.property.sampleRateHertz">SampleRateHertz</a></code> | <code>double</code> | Sample rate (in Hertz) of the audio content sent in the query. |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfig.property.speechModelVariant">SpeechModelVariant</a></code> | <code>string</code> | The speech model used in speech to text. Possible values: ["SPEECH_MODEL_VARIANT_UNSPECIFIED", "USE_BEST_AVAILABLE", "USE_STANDARD", "USE_ENHANCED"]. |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfig.property.useTimeoutBasedEndpointing">UseTimeoutBasedEndpointing</a></code> | <code>object</code> | Use timeout based endpointing, interpreting endpointer sensitivy as seconds of timeout value. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfig.property.useTimeoutBasedEndpointing">UseTimeoutBasedEndpointing</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Use timeout based endpointing, interpreting endpointer sensitivy as seconds of timeout value. |
 
 ---
 
@@ -3642,10 +3642,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `EnableWordInfo`<sup>Optional</sup> <a name="EnableWordInfo" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfig.property.enableWordInfo"></a>
 
 ```csharp
-public object EnableWordInfo { get; set; }
+public bool|IResolvable EnableWordInfo { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If true, Dialogflow returns SpeechWordInfo in StreamingRecognitionResult with information about the recognized speech words.
 
@@ -3712,10 +3712,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `UseTimeoutBasedEndpointing`<sup>Optional</sup> <a name="UseTimeoutBasedEndpointing" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfig.property.useTimeoutBasedEndpointing"></a>
 
 ```csharp
-public object UseTimeoutBasedEndpointing { get; set; }
+public bool|IResolvable UseTimeoutBasedEndpointing { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Use timeout based endpointing, interpreting endpointer sensitivy as seconds of timeout value.
 
@@ -4941,7 +4941,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs">GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs</a>[]</code> | *No description.* |
 
 ---
 
@@ -4972,10 +4972,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs">GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs</a>[]
 
 ---
 
@@ -5350,20 +5350,20 @@ private void ResetSuggestionTriggerSettings()
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.suggestionTriggerSettings">SuggestionTriggerSettings</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference">GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.conversationModelConfigInput">ConversationModelConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationModelConfig">GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationModelConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.conversationProcessConfigInput">ConversationProcessConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationProcessConfig">GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationProcessConfig</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.disableAgentQueryLoggingInput">DisableAgentQueryLoggingInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.enableConversationAugmentedQueryInput">EnableConversationAugmentedQueryInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.enableEventBasedSuggestionInput">EnableEventBasedSuggestionInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.enableQuerySuggestionOnlyInput">EnableQuerySuggestionOnlyInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.enableQuerySuggestionWhenNoAnswerInput">EnableQuerySuggestionWhenNoAnswerInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.disableAgentQueryLoggingInput">DisableAgentQueryLoggingInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.enableConversationAugmentedQueryInput">EnableConversationAugmentedQueryInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.enableEventBasedSuggestionInput">EnableEventBasedSuggestionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.enableQuerySuggestionOnlyInput">EnableQuerySuggestionOnlyInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.enableQuerySuggestionWhenNoAnswerInput">EnableQuerySuggestionWhenNoAnswerInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.queryConfigInput">QueryConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfig">GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.suggestionFeatureInput">SuggestionFeatureInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionFeature">GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionFeature</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.suggestionTriggerSettingsInput">SuggestionTriggerSettingsInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettings">GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettings</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.disableAgentQueryLogging">DisableAgentQueryLogging</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.enableConversationAugmentedQuery">EnableConversationAugmentedQuery</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.enableEventBasedSuggestion">EnableEventBasedSuggestion</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.enableQuerySuggestionOnly">EnableQuerySuggestionOnly</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.enableQuerySuggestionWhenNoAnswer">EnableQuerySuggestionWhenNoAnswer</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.disableAgentQueryLogging">DisableAgentQueryLogging</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.enableConversationAugmentedQuery">EnableConversationAugmentedQuery</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.enableEventBasedSuggestion">EnableEventBasedSuggestion</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.enableQuerySuggestionOnly">EnableQuerySuggestionOnly</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.enableQuerySuggestionWhenNoAnswer">EnableQuerySuggestionWhenNoAnswer</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs">GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs</a></code> | *No description.* |
 
 ---
 
@@ -5464,50 +5464,50 @@ public GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSugges
 ##### `DisableAgentQueryLoggingInput`<sup>Optional</sup> <a name="DisableAgentQueryLoggingInput" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.disableAgentQueryLoggingInput"></a>
 
 ```csharp
-public object DisableAgentQueryLoggingInput { get; }
+public bool|IResolvable DisableAgentQueryLoggingInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableConversationAugmentedQueryInput`<sup>Optional</sup> <a name="EnableConversationAugmentedQueryInput" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.enableConversationAugmentedQueryInput"></a>
 
 ```csharp
-public object EnableConversationAugmentedQueryInput { get; }
+public bool|IResolvable EnableConversationAugmentedQueryInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableEventBasedSuggestionInput`<sup>Optional</sup> <a name="EnableEventBasedSuggestionInput" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.enableEventBasedSuggestionInput"></a>
 
 ```csharp
-public object EnableEventBasedSuggestionInput { get; }
+public bool|IResolvable EnableEventBasedSuggestionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableQuerySuggestionOnlyInput`<sup>Optional</sup> <a name="EnableQuerySuggestionOnlyInput" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.enableQuerySuggestionOnlyInput"></a>
 
 ```csharp
-public object EnableQuerySuggestionOnlyInput { get; }
+public bool|IResolvable EnableQuerySuggestionOnlyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableQuerySuggestionWhenNoAnswerInput`<sup>Optional</sup> <a name="EnableQuerySuggestionWhenNoAnswerInput" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.enableQuerySuggestionWhenNoAnswerInput"></a>
 
 ```csharp
-public object EnableQuerySuggestionWhenNoAnswerInput { get; }
+public bool|IResolvable EnableQuerySuggestionWhenNoAnswerInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -5544,60 +5544,60 @@ public GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSugges
 ##### `DisableAgentQueryLogging`<sup>Required</sup> <a name="DisableAgentQueryLogging" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.disableAgentQueryLogging"></a>
 
 ```csharp
-public object DisableAgentQueryLogging { get; }
+public bool|IResolvable DisableAgentQueryLogging { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableConversationAugmentedQuery`<sup>Required</sup> <a name="EnableConversationAugmentedQuery" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.enableConversationAugmentedQuery"></a>
 
 ```csharp
-public object EnableConversationAugmentedQuery { get; }
+public bool|IResolvable EnableConversationAugmentedQuery { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableEventBasedSuggestion`<sup>Required</sup> <a name="EnableEventBasedSuggestion" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.enableEventBasedSuggestion"></a>
 
 ```csharp
-public object EnableEventBasedSuggestion { get; }
+public bool|IResolvable EnableEventBasedSuggestion { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableQuerySuggestionOnly`<sup>Required</sup> <a name="EnableQuerySuggestionOnly" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.enableQuerySuggestionOnly"></a>
 
 ```csharp
-public object EnableQuerySuggestionOnly { get; }
+public bool|IResolvable EnableQuerySuggestionOnly { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableQuerySuggestionWhenNoAnswer`<sup>Required</sup> <a name="EnableQuerySuggestionWhenNoAnswer" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.enableQuerySuggestionWhenNoAnswer"></a>
 
 ```csharp
-public object EnableQuerySuggestionWhenNoAnswer { get; }
+public bool|IResolvable EnableQuerySuggestionWhenNoAnswer { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs">GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs</a>
 
 ---
 
@@ -5833,12 +5833,12 @@ private void ResetDropVirtualAgentMessages()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.dropHandoffMessagesInput">DropHandoffMessagesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.dropIvrMessagesInput">DropIvrMessagesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.dropVirtualAgentMessagesInput">DropVirtualAgentMessagesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.dropHandoffMessages">DropHandoffMessages</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.dropIvrMessages">DropIvrMessages</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.dropVirtualAgentMessages">DropVirtualAgentMessages</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.dropHandoffMessagesInput">DropHandoffMessagesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.dropIvrMessagesInput">DropIvrMessagesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.dropVirtualAgentMessagesInput">DropVirtualAgentMessagesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.dropHandoffMessages">DropHandoffMessages</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.dropIvrMessages">DropIvrMessages</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.dropVirtualAgentMessages">DropVirtualAgentMessages</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettings">GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettings</a></code> | *No description.* |
 
 ---
@@ -5870,60 +5870,60 @@ public string Fqn { get; }
 ##### `DropHandoffMessagesInput`<sup>Optional</sup> <a name="DropHandoffMessagesInput" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.dropHandoffMessagesInput"></a>
 
 ```csharp
-public object DropHandoffMessagesInput { get; }
+public bool|IResolvable DropHandoffMessagesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DropIvrMessagesInput`<sup>Optional</sup> <a name="DropIvrMessagesInput" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.dropIvrMessagesInput"></a>
 
 ```csharp
-public object DropIvrMessagesInput { get; }
+public bool|IResolvable DropIvrMessagesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DropVirtualAgentMessagesInput`<sup>Optional</sup> <a name="DropVirtualAgentMessagesInput" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.dropVirtualAgentMessagesInput"></a>
 
 ```csharp
-public object DropVirtualAgentMessagesInput { get; }
+public bool|IResolvable DropVirtualAgentMessagesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DropHandoffMessages`<sup>Required</sup> <a name="DropHandoffMessages" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.dropHandoffMessages"></a>
 
 ```csharp
-public object DropHandoffMessages { get; }
+public bool|IResolvable DropHandoffMessages { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DropIvrMessages`<sup>Required</sup> <a name="DropIvrMessages" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.dropIvrMessages"></a>
 
 ```csharp
-public object DropIvrMessages { get; }
+public bool|IResolvable DropIvrMessages { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DropVirtualAgentMessages`<sup>Required</sup> <a name="DropVirtualAgentMessages" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.dropVirtualAgentMessages"></a>
 
 ```csharp
-public object DropVirtualAgentMessages { get; }
+public bool|IResolvable DropVirtualAgentMessages { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -8368,10 +8368,10 @@ private void ResetOnlyEndUser()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference.property.noSmallTalkInput">NoSmallTalkInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference.property.onlyEndUserInput">OnlyEndUserInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference.property.noSmallTalk">NoSmallTalk</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference.property.onlyEndUser">OnlyEndUser</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference.property.noSmallTalkInput">NoSmallTalkInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference.property.onlyEndUserInput">OnlyEndUserInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference.property.noSmallTalk">NoSmallTalk</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference.property.onlyEndUser">OnlyEndUser</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettings">GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettings</a></code> | *No description.* |
 
 ---
@@ -8403,40 +8403,40 @@ public string Fqn { get; }
 ##### `NoSmallTalkInput`<sup>Optional</sup> <a name="NoSmallTalkInput" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference.property.noSmallTalkInput"></a>
 
 ```csharp
-public object NoSmallTalkInput { get; }
+public bool|IResolvable NoSmallTalkInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OnlyEndUserInput`<sup>Optional</sup> <a name="OnlyEndUserInput" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference.property.onlyEndUserInput"></a>
 
 ```csharp
-public object OnlyEndUserInput { get; }
+public bool|IResolvable OnlyEndUserInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `NoSmallTalk`<sup>Required</sup> <a name="NoSmallTalk" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference.property.noSmallTalk"></a>
 
 ```csharp
-public object NoSmallTalk { get; }
+public bool|IResolvable NoSmallTalk { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OnlyEndUser`<sup>Required</sup> <a name="OnlyEndUser" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference.property.onlyEndUser"></a>
 
 ```csharp
-public object OnlyEndUser { get; }
+public bool|IResolvable OnlyEndUser { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -8662,12 +8662,12 @@ Returns a reversible string representation.
 ##### `PutFeatureConfigs` <a name="PutFeatureConfigs" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference.putFeatureConfigs"></a>
 
 ```csharp
-private void PutFeatureConfigs(object Value)
+private void PutFeatureConfigs(IResolvable|GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference.putFeatureConfigs.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs">GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs</a>[]
 
 ---
 
@@ -8703,13 +8703,13 @@ private void ResetGroupSuggestionResponses()
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference.property.featureConfigs">FeatureConfigs</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsList">GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference.property.disableHighLatencyFeaturesSyncDeliveryInput">DisableHighLatencyFeaturesSyncDeliveryInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference.property.featureConfigsInput">FeatureConfigsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference.property.disableHighLatencyFeaturesSyncDeliveryInput">DisableHighLatencyFeaturesSyncDeliveryInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference.property.featureConfigsInput">FeatureConfigsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs">GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference.property.generatorsInput">GeneratorsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference.property.groupSuggestionResponsesInput">GroupSuggestionResponsesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference.property.disableHighLatencyFeaturesSyncDelivery">DisableHighLatencyFeaturesSyncDelivery</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference.property.groupSuggestionResponsesInput">GroupSuggestionResponsesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference.property.disableHighLatencyFeaturesSyncDelivery">DisableHighLatencyFeaturesSyncDelivery</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference.property.generators">Generators</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference.property.groupSuggestionResponses">GroupSuggestionResponses</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference.property.groupSuggestionResponses">GroupSuggestionResponses</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfig">GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfig</a></code> | *No description.* |
 
 ---
@@ -8751,20 +8751,20 @@ public GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSugges
 ##### `DisableHighLatencyFeaturesSyncDeliveryInput`<sup>Optional</sup> <a name="DisableHighLatencyFeaturesSyncDeliveryInput" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference.property.disableHighLatencyFeaturesSyncDeliveryInput"></a>
 
 ```csharp
-public object DisableHighLatencyFeaturesSyncDeliveryInput { get; }
+public bool|IResolvable DisableHighLatencyFeaturesSyncDeliveryInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `FeatureConfigsInput`<sup>Optional</sup> <a name="FeatureConfigsInput" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference.property.featureConfigsInput"></a>
 
 ```csharp
-public object FeatureConfigsInput { get; }
+public IResolvable|GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs[] FeatureConfigsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs">GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs</a>[]
 
 ---
 
@@ -8781,20 +8781,20 @@ public string[] GeneratorsInput { get; }
 ##### `GroupSuggestionResponsesInput`<sup>Optional</sup> <a name="GroupSuggestionResponsesInput" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference.property.groupSuggestionResponsesInput"></a>
 
 ```csharp
-public object GroupSuggestionResponsesInput { get; }
+public bool|IResolvable GroupSuggestionResponsesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DisableHighLatencyFeaturesSyncDelivery`<sup>Required</sup> <a name="DisableHighLatencyFeaturesSyncDelivery" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference.property.disableHighLatencyFeaturesSyncDelivery"></a>
 
 ```csharp
-public object DisableHighLatencyFeaturesSyncDelivery { get; }
+public bool|IResolvable DisableHighLatencyFeaturesSyncDelivery { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -8811,10 +8811,10 @@ public string[] Generators { get; }
 ##### `GroupSuggestionResponses`<sup>Required</sup> <a name="GroupSuggestionResponses" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference.property.groupSuggestionResponses"></a>
 
 ```csharp
-public object GroupSuggestionResponses { get; }
+public bool|IResolvable GroupSuggestionResponses { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -9535,7 +9535,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs">GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs</a>[]</code> | *No description.* |
 
 ---
 
@@ -9566,10 +9566,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs">GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs</a>[]
 
 ---
 
@@ -9944,20 +9944,20 @@ private void ResetSuggestionTriggerSettings()
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.suggestionTriggerSettings">SuggestionTriggerSettings</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference">GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.conversationModelConfigInput">ConversationModelConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationModelConfig">GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationModelConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.conversationProcessConfigInput">ConversationProcessConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationProcessConfig">GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationProcessConfig</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.disableAgentQueryLoggingInput">DisableAgentQueryLoggingInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.enableConversationAugmentedQueryInput">EnableConversationAugmentedQueryInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.enableEventBasedSuggestionInput">EnableEventBasedSuggestionInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.enableQuerySuggestionOnlyInput">EnableQuerySuggestionOnlyInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.enableQuerySuggestionWhenNoAnswerInput">EnableQuerySuggestionWhenNoAnswerInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.disableAgentQueryLoggingInput">DisableAgentQueryLoggingInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.enableConversationAugmentedQueryInput">EnableConversationAugmentedQueryInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.enableEventBasedSuggestionInput">EnableEventBasedSuggestionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.enableQuerySuggestionOnlyInput">EnableQuerySuggestionOnlyInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.enableQuerySuggestionWhenNoAnswerInput">EnableQuerySuggestionWhenNoAnswerInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.queryConfigInput">QueryConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfig">GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.suggestionFeatureInput">SuggestionFeatureInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionFeature">GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionFeature</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.suggestionTriggerSettingsInput">SuggestionTriggerSettingsInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettings">GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettings</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.disableAgentQueryLogging">DisableAgentQueryLogging</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.enableConversationAugmentedQuery">EnableConversationAugmentedQuery</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.enableEventBasedSuggestion">EnableEventBasedSuggestion</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.enableQuerySuggestionOnly">EnableQuerySuggestionOnly</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.enableQuerySuggestionWhenNoAnswer">EnableQuerySuggestionWhenNoAnswer</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.disableAgentQueryLogging">DisableAgentQueryLogging</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.enableConversationAugmentedQuery">EnableConversationAugmentedQuery</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.enableEventBasedSuggestion">EnableEventBasedSuggestion</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.enableQuerySuggestionOnly">EnableQuerySuggestionOnly</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.enableQuerySuggestionWhenNoAnswer">EnableQuerySuggestionWhenNoAnswer</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs">GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs</a></code> | *No description.* |
 
 ---
 
@@ -10058,50 +10058,50 @@ public GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSug
 ##### `DisableAgentQueryLoggingInput`<sup>Optional</sup> <a name="DisableAgentQueryLoggingInput" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.disableAgentQueryLoggingInput"></a>
 
 ```csharp
-public object DisableAgentQueryLoggingInput { get; }
+public bool|IResolvable DisableAgentQueryLoggingInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableConversationAugmentedQueryInput`<sup>Optional</sup> <a name="EnableConversationAugmentedQueryInput" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.enableConversationAugmentedQueryInput"></a>
 
 ```csharp
-public object EnableConversationAugmentedQueryInput { get; }
+public bool|IResolvable EnableConversationAugmentedQueryInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableEventBasedSuggestionInput`<sup>Optional</sup> <a name="EnableEventBasedSuggestionInput" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.enableEventBasedSuggestionInput"></a>
 
 ```csharp
-public object EnableEventBasedSuggestionInput { get; }
+public bool|IResolvable EnableEventBasedSuggestionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableQuerySuggestionOnlyInput`<sup>Optional</sup> <a name="EnableQuerySuggestionOnlyInput" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.enableQuerySuggestionOnlyInput"></a>
 
 ```csharp
-public object EnableQuerySuggestionOnlyInput { get; }
+public bool|IResolvable EnableQuerySuggestionOnlyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableQuerySuggestionWhenNoAnswerInput`<sup>Optional</sup> <a name="EnableQuerySuggestionWhenNoAnswerInput" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.enableQuerySuggestionWhenNoAnswerInput"></a>
 
 ```csharp
-public object EnableQuerySuggestionWhenNoAnswerInput { get; }
+public bool|IResolvable EnableQuerySuggestionWhenNoAnswerInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -10138,60 +10138,60 @@ public GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSug
 ##### `DisableAgentQueryLogging`<sup>Required</sup> <a name="DisableAgentQueryLogging" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.disableAgentQueryLogging"></a>
 
 ```csharp
-public object DisableAgentQueryLogging { get; }
+public bool|IResolvable DisableAgentQueryLogging { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableConversationAugmentedQuery`<sup>Required</sup> <a name="EnableConversationAugmentedQuery" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.enableConversationAugmentedQuery"></a>
 
 ```csharp
-public object EnableConversationAugmentedQuery { get; }
+public bool|IResolvable EnableConversationAugmentedQuery { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableEventBasedSuggestion`<sup>Required</sup> <a name="EnableEventBasedSuggestion" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.enableEventBasedSuggestion"></a>
 
 ```csharp
-public object EnableEventBasedSuggestion { get; }
+public bool|IResolvable EnableEventBasedSuggestion { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableQuerySuggestionOnly`<sup>Required</sup> <a name="EnableQuerySuggestionOnly" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.enableQuerySuggestionOnly"></a>
 
 ```csharp
-public object EnableQuerySuggestionOnly { get; }
+public bool|IResolvable EnableQuerySuggestionOnly { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableQuerySuggestionWhenNoAnswer`<sup>Required</sup> <a name="EnableQuerySuggestionWhenNoAnswer" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.enableQuerySuggestionWhenNoAnswer"></a>
 
 ```csharp
-public object EnableQuerySuggestionWhenNoAnswer { get; }
+public bool|IResolvable EnableQuerySuggestionWhenNoAnswer { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs">GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs</a>
 
 ---
 
@@ -10427,12 +10427,12 @@ private void ResetDropVirtualAgentMessages()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.dropHandoffMessagesInput">DropHandoffMessagesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.dropIvrMessagesInput">DropIvrMessagesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.dropVirtualAgentMessagesInput">DropVirtualAgentMessagesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.dropHandoffMessages">DropHandoffMessages</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.dropIvrMessages">DropIvrMessages</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.dropVirtualAgentMessages">DropVirtualAgentMessages</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.dropHandoffMessagesInput">DropHandoffMessagesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.dropIvrMessagesInput">DropIvrMessagesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.dropVirtualAgentMessagesInput">DropVirtualAgentMessagesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.dropHandoffMessages">DropHandoffMessages</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.dropIvrMessages">DropIvrMessages</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.dropVirtualAgentMessages">DropVirtualAgentMessages</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettings">GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettings</a></code> | *No description.* |
 
 ---
@@ -10464,60 +10464,60 @@ public string Fqn { get; }
 ##### `DropHandoffMessagesInput`<sup>Optional</sup> <a name="DropHandoffMessagesInput" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.dropHandoffMessagesInput"></a>
 
 ```csharp
-public object DropHandoffMessagesInput { get; }
+public bool|IResolvable DropHandoffMessagesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DropIvrMessagesInput`<sup>Optional</sup> <a name="DropIvrMessagesInput" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.dropIvrMessagesInput"></a>
 
 ```csharp
-public object DropIvrMessagesInput { get; }
+public bool|IResolvable DropIvrMessagesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DropVirtualAgentMessagesInput`<sup>Optional</sup> <a name="DropVirtualAgentMessagesInput" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.dropVirtualAgentMessagesInput"></a>
 
 ```csharp
-public object DropVirtualAgentMessagesInput { get; }
+public bool|IResolvable DropVirtualAgentMessagesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DropHandoffMessages`<sup>Required</sup> <a name="DropHandoffMessages" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.dropHandoffMessages"></a>
 
 ```csharp
-public object DropHandoffMessages { get; }
+public bool|IResolvable DropHandoffMessages { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DropIvrMessages`<sup>Required</sup> <a name="DropIvrMessages" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.dropIvrMessages"></a>
 
 ```csharp
-public object DropIvrMessages { get; }
+public bool|IResolvable DropIvrMessages { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DropVirtualAgentMessages`<sup>Required</sup> <a name="DropVirtualAgentMessages" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.property.dropVirtualAgentMessages"></a>
 
 ```csharp
-public object DropVirtualAgentMessages { get; }
+public bool|IResolvable DropVirtualAgentMessages { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -12336,10 +12336,10 @@ private void ResetOnlyEndUser()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference.property.noSmallTalkInput">NoSmallTalkInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference.property.onlyEndUserInput">OnlyEndUserInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference.property.noSmallTalk">NoSmallTalk</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference.property.onlyEndUser">OnlyEndUser</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference.property.noSmallTalkInput">NoSmallTalkInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference.property.onlyEndUserInput">OnlyEndUserInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference.property.noSmallTalk">NoSmallTalk</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference.property.onlyEndUser">OnlyEndUser</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettings">GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettings</a></code> | *No description.* |
 
 ---
@@ -12371,40 +12371,40 @@ public string Fqn { get; }
 ##### `NoSmallTalkInput`<sup>Optional</sup> <a name="NoSmallTalkInput" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference.property.noSmallTalkInput"></a>
 
 ```csharp
-public object NoSmallTalkInput { get; }
+public bool|IResolvable NoSmallTalkInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OnlyEndUserInput`<sup>Optional</sup> <a name="OnlyEndUserInput" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference.property.onlyEndUserInput"></a>
 
 ```csharp
-public object OnlyEndUserInput { get; }
+public bool|IResolvable OnlyEndUserInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `NoSmallTalk`<sup>Required</sup> <a name="NoSmallTalk" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference.property.noSmallTalk"></a>
 
 ```csharp
-public object NoSmallTalk { get; }
+public bool|IResolvable NoSmallTalk { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OnlyEndUser`<sup>Required</sup> <a name="OnlyEndUser" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference.property.onlyEndUser"></a>
 
 ```csharp
-public object OnlyEndUser { get; }
+public bool|IResolvable OnlyEndUser { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -12630,12 +12630,12 @@ Returns a reversible string representation.
 ##### `PutFeatureConfigs` <a name="PutFeatureConfigs" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigOutputReference.putFeatureConfigs"></a>
 
 ```csharp
-private void PutFeatureConfigs(object Value)
+private void PutFeatureConfigs(IResolvable|GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigOutputReference.putFeatureConfigs.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs">GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs</a>[]
 
 ---
 
@@ -12671,13 +12671,13 @@ private void ResetGroupSuggestionResponses()
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigOutputReference.property.featureConfigs">FeatureConfigs</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsList">GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigOutputReference.property.disableHighLatencyFeaturesSyncDeliveryInput">DisableHighLatencyFeaturesSyncDeliveryInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigOutputReference.property.featureConfigsInput">FeatureConfigsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigOutputReference.property.disableHighLatencyFeaturesSyncDeliveryInput">DisableHighLatencyFeaturesSyncDeliveryInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigOutputReference.property.featureConfigsInput">FeatureConfigsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs">GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigOutputReference.property.generatorsInput">GeneratorsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigOutputReference.property.groupSuggestionResponsesInput">GroupSuggestionResponsesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigOutputReference.property.disableHighLatencyFeaturesSyncDelivery">DisableHighLatencyFeaturesSyncDelivery</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigOutputReference.property.groupSuggestionResponsesInput">GroupSuggestionResponsesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigOutputReference.property.disableHighLatencyFeaturesSyncDelivery">DisableHighLatencyFeaturesSyncDelivery</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigOutputReference.property.generators">Generators</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigOutputReference.property.groupSuggestionResponses">GroupSuggestionResponses</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigOutputReference.property.groupSuggestionResponses">GroupSuggestionResponses</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfig">GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfig</a></code> | *No description.* |
 
 ---
@@ -12719,20 +12719,20 @@ public GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSug
 ##### `DisableHighLatencyFeaturesSyncDeliveryInput`<sup>Optional</sup> <a name="DisableHighLatencyFeaturesSyncDeliveryInput" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigOutputReference.property.disableHighLatencyFeaturesSyncDeliveryInput"></a>
 
 ```csharp
-public object DisableHighLatencyFeaturesSyncDeliveryInput { get; }
+public bool|IResolvable DisableHighLatencyFeaturesSyncDeliveryInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `FeatureConfigsInput`<sup>Optional</sup> <a name="FeatureConfigsInput" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigOutputReference.property.featureConfigsInput"></a>
 
 ```csharp
-public object FeatureConfigsInput { get; }
+public IResolvable|GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs[] FeatureConfigsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs">GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs</a>[]
 
 ---
 
@@ -12749,20 +12749,20 @@ public string[] GeneratorsInput { get; }
 ##### `GroupSuggestionResponsesInput`<sup>Optional</sup> <a name="GroupSuggestionResponsesInput" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigOutputReference.property.groupSuggestionResponsesInput"></a>
 
 ```csharp
-public object GroupSuggestionResponsesInput { get; }
+public bool|IResolvable GroupSuggestionResponsesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DisableHighLatencyFeaturesSyncDelivery`<sup>Required</sup> <a name="DisableHighLatencyFeaturesSyncDelivery" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigOutputReference.property.disableHighLatencyFeaturesSyncDelivery"></a>
 
 ```csharp
-public object DisableHighLatencyFeaturesSyncDelivery { get; }
+public bool|IResolvable DisableHighLatencyFeaturesSyncDelivery { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -12779,10 +12779,10 @@ public string[] Generators { get; }
 ##### `GroupSuggestionResponses`<sup>Required</sup> <a name="GroupSuggestionResponses" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigOutputReference.property.groupSuggestionResponses"></a>
 
 ```csharp
-public object GroupSuggestionResponses { get; }
+public bool|IResolvable GroupSuggestionResponses { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -13021,10 +13021,10 @@ private void ResetEnableSentimentAnalysis()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfigOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfigOutputReference.property.enableEntityExtractionInput">EnableEntityExtractionInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfigOutputReference.property.enableSentimentAnalysisInput">EnableSentimentAnalysisInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfigOutputReference.property.enableEntityExtraction">EnableEntityExtraction</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfigOutputReference.property.enableSentimentAnalysis">EnableSentimentAnalysis</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfigOutputReference.property.enableEntityExtractionInput">EnableEntityExtractionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfigOutputReference.property.enableSentimentAnalysisInput">EnableSentimentAnalysisInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfigOutputReference.property.enableEntityExtraction">EnableEntityExtraction</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfigOutputReference.property.enableSentimentAnalysis">EnableSentimentAnalysis</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfig">GoogleDialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfig</a></code> | *No description.* |
 
 ---
@@ -13056,40 +13056,40 @@ public string Fqn { get; }
 ##### `EnableEntityExtractionInput`<sup>Optional</sup> <a name="EnableEntityExtractionInput" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfigOutputReference.property.enableEntityExtractionInput"></a>
 
 ```csharp
-public object EnableEntityExtractionInput { get; }
+public bool|IResolvable EnableEntityExtractionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableSentimentAnalysisInput`<sup>Optional</sup> <a name="EnableSentimentAnalysisInput" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfigOutputReference.property.enableSentimentAnalysisInput"></a>
 
 ```csharp
-public object EnableSentimentAnalysisInput { get; }
+public bool|IResolvable EnableSentimentAnalysisInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableEntityExtraction`<sup>Required</sup> <a name="EnableEntityExtraction" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfigOutputReference.property.enableEntityExtraction"></a>
 
 ```csharp
-public object EnableEntityExtraction { get; }
+public bool|IResolvable EnableEntityExtraction { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableSentimentAnalysis`<sup>Required</sup> <a name="EnableSentimentAnalysis" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfigOutputReference.property.enableSentimentAnalysis"></a>
 
 ```csharp
-public object EnableSentimentAnalysis { get; }
+public bool|IResolvable EnableSentimentAnalysis { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -14607,8 +14607,8 @@ private void ResetEnableStackdriverLogging()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileLoggingConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileLoggingConfigOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileLoggingConfigOutputReference.property.enableStackdriverLoggingInput">EnableStackdriverLoggingInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileLoggingConfigOutputReference.property.enableStackdriverLogging">EnableStackdriverLogging</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileLoggingConfigOutputReference.property.enableStackdriverLoggingInput">EnableStackdriverLoggingInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileLoggingConfigOutputReference.property.enableStackdriverLogging">EnableStackdriverLogging</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileLoggingConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileLoggingConfig">GoogleDialogflowConversationProfileLoggingConfig</a></code> | *No description.* |
 
 ---
@@ -14640,20 +14640,20 @@ public string Fqn { get; }
 ##### `EnableStackdriverLoggingInput`<sup>Optional</sup> <a name="EnableStackdriverLoggingInput" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileLoggingConfigOutputReference.property.enableStackdriverLoggingInput"></a>
 
 ```csharp
-public object EnableStackdriverLoggingInput { get; }
+public bool|IResolvable EnableStackdriverLoggingInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableStackdriverLogging`<sup>Required</sup> <a name="EnableStackdriverLogging" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileLoggingConfigOutputReference.property.enableStackdriverLogging"></a>
 
 ```csharp
-public object EnableStackdriverLogging { get; }
+public bool|IResolvable EnableStackdriverLogging { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -15542,19 +15542,19 @@ private void ResetUseTimeoutBasedEndpointing()
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfigOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfigOutputReference.property.audioEncodingInput">AudioEncodingInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfigOutputReference.property.enableWordInfoInput">EnableWordInfoInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfigOutputReference.property.enableWordInfoInput">EnableWordInfoInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfigOutputReference.property.languageCodeInput">LanguageCodeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfigOutputReference.property.modelInput">ModelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfigOutputReference.property.sampleRateHertzInput">SampleRateHertzInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfigOutputReference.property.speechModelVariantInput">SpeechModelVariantInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfigOutputReference.property.useTimeoutBasedEndpointingInput">UseTimeoutBasedEndpointingInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfigOutputReference.property.useTimeoutBasedEndpointingInput">UseTimeoutBasedEndpointingInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfigOutputReference.property.audioEncoding">AudioEncoding</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfigOutputReference.property.enableWordInfo">EnableWordInfo</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfigOutputReference.property.enableWordInfo">EnableWordInfo</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfigOutputReference.property.languageCode">LanguageCode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfigOutputReference.property.model">Model</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfigOutputReference.property.sampleRateHertz">SampleRateHertz</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfigOutputReference.property.speechModelVariant">SpeechModelVariant</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfigOutputReference.property.useTimeoutBasedEndpointing">UseTimeoutBasedEndpointing</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfigOutputReference.property.useTimeoutBasedEndpointing">UseTimeoutBasedEndpointing</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfig">GoogleDialogflowConversationProfileSttConfig</a></code> | *No description.* |
 
 ---
@@ -15596,10 +15596,10 @@ public string AudioEncodingInput { get; }
 ##### `EnableWordInfoInput`<sup>Optional</sup> <a name="EnableWordInfoInput" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfigOutputReference.property.enableWordInfoInput"></a>
 
 ```csharp
-public object EnableWordInfoInput { get; }
+public bool|IResolvable EnableWordInfoInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -15646,10 +15646,10 @@ public string SpeechModelVariantInput { get; }
 ##### `UseTimeoutBasedEndpointingInput`<sup>Optional</sup> <a name="UseTimeoutBasedEndpointingInput" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfigOutputReference.property.useTimeoutBasedEndpointingInput"></a>
 
 ```csharp
-public object UseTimeoutBasedEndpointingInput { get; }
+public bool|IResolvable UseTimeoutBasedEndpointingInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -15666,10 +15666,10 @@ public string AudioEncoding { get; }
 ##### `EnableWordInfo`<sup>Required</sup> <a name="EnableWordInfo" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfigOutputReference.property.enableWordInfo"></a>
 
 ```csharp
-public object EnableWordInfo { get; }
+public bool|IResolvable EnableWordInfo { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -15716,10 +15716,10 @@ public string SpeechModelVariant { get; }
 ##### `UseTimeoutBasedEndpointing`<sup>Required</sup> <a name="UseTimeoutBasedEndpointing" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileSttConfigOutputReference.property.useTimeoutBasedEndpointing"></a>
 
 ```csharp
-public object UseTimeoutBasedEndpointing { get; }
+public bool|IResolvable UseTimeoutBasedEndpointing { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -15971,7 +15971,7 @@ private void ResetUpdate()
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileTimeoutsOutputReference.property.create">Create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileTimeoutsOutputReference.property.delete">Delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileTimeoutsOutputReference.property.update">Update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileTimeouts">GoogleDialogflowConversationProfileTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -16062,10 +16062,10 @@ public string Update { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileTimeoutsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleDialogflowConversationProfileTimeouts InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileTimeouts">GoogleDialogflowConversationProfileTimeouts</a>
 
 ---
 
