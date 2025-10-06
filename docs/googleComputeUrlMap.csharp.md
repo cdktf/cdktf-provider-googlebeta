@@ -293,7 +293,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.importFrom"></a>
@@ -347,7 +347,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -362,7 +362,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -435,36 +435,36 @@ private void PutHeaderAction(GoogleComputeUrlMapHeaderAction Value)
 ##### `PutHostRule` <a name="PutHostRule" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.putHostRule"></a>
 
 ```csharp
-private void PutHostRule(object Value)
+private void PutHostRule(IResolvable|GoogleComputeUrlMapHostRule[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.putHostRule.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHostRule">GoogleComputeUrlMapHostRule</a>[]
 
 ---
 
 ##### `PutPathMatcher` <a name="PutPathMatcher" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.putPathMatcher"></a>
 
 ```csharp
-private void PutPathMatcher(object Value)
+private void PutPathMatcher(IResolvable|GoogleComputeUrlMapPathMatcher[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.putPathMatcher.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcher">GoogleComputeUrlMapPathMatcher</a>[]
 
 ---
 
 ##### `PutTest` <a name="PutTest" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.putTest"></a>
 
 ```csharp
-private void PutTest(object Value)
+private void PutTest(IResolvable|GoogleComputeUrlMapTest[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.putTest.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTest">GoogleComputeUrlMapTest</a>[]
 
 ---
 
@@ -678,13 +678,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.creationTimestamp">CreationTimestamp</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.defaultCustomErrorResponsePolicy">DefaultCustomErrorResponsePolicy</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicyOutputReference">GoogleComputeUrlMapDefaultCustomErrorResponsePolicyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.defaultRouteAction">DefaultRouteAction</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionOutputReference">GoogleComputeUrlMapDefaultRouteActionOutputReference</a></code> | *No description.* |
@@ -703,13 +703,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.defaultUrlRedirectInput">DefaultUrlRedirectInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultUrlRedirect">GoogleComputeUrlMapDefaultUrlRedirect</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.headerActionInput">HeaderActionInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderAction">GoogleComputeUrlMapHeaderAction</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.hostRuleInput">HostRuleInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.hostRuleInput">HostRuleInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHostRule">GoogleComputeUrlMapHostRule</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.pathMatcherInput">PathMatcherInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.pathMatcherInput">PathMatcherInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcher">GoogleComputeUrlMapPathMatcher</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.projectInput">ProjectInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.testInput">TestInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.timeoutsInput">TimeoutsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.testInput">TestInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTest">GoogleComputeUrlMapTest</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.timeoutsInput">TimeoutsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTimeouts">GoogleComputeUrlMapTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.defaultService">DefaultService</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.id">Id</a></code> | <code>string</code> | *No description.* |
@@ -793,20 +793,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -853,10 +853,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1043,10 +1043,10 @@ public GoogleComputeUrlMapHeaderAction HeaderActionInput { get; }
 ##### `HostRuleInput`<sup>Optional</sup> <a name="HostRuleInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.hostRuleInput"></a>
 
 ```csharp
-public object HostRuleInput { get; }
+public IResolvable|GoogleComputeUrlMapHostRule[] HostRuleInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHostRule">GoogleComputeUrlMapHostRule</a>[]
 
 ---
 
@@ -1073,10 +1073,10 @@ public string NameInput { get; }
 ##### `PathMatcherInput`<sup>Optional</sup> <a name="PathMatcherInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.pathMatcherInput"></a>
 
 ```csharp
-public object PathMatcherInput { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcher[] PathMatcherInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcher">GoogleComputeUrlMapPathMatcher</a>[]
 
 ---
 
@@ -1093,20 +1093,20 @@ public string ProjectInput { get; }
 ##### `TestInput`<sup>Optional</sup> <a name="TestInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.testInput"></a>
 
 ```csharp
-public object TestInput { get; }
+public IResolvable|GoogleComputeUrlMapTest[] TestInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTest">GoogleComputeUrlMapTest</a>[]
 
 ---
 
 ##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap.property.timeoutsInput"></a>
 
 ```csharp
-public object TimeoutsInput { get; }
+public IResolvable|GoogleComputeUrlMapTimeouts TimeoutsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTimeouts">GoogleComputeUrlMapTimeouts</a>
 
 ---
 
@@ -1188,13 +1188,13 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.GoogleBeta;
 
 new GoogleComputeUrlMapConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Name,
     GoogleComputeUrlMapDefaultCustomErrorResponsePolicy DefaultCustomErrorResponsePolicy = null,
     GoogleComputeUrlMapDefaultRouteAction DefaultRouteAction = null,
@@ -1202,11 +1202,11 @@ new GoogleComputeUrlMapConfig {
     GoogleComputeUrlMapDefaultUrlRedirect DefaultUrlRedirect = null,
     string Description = null,
     GoogleComputeUrlMapHeaderAction HeaderAction = null,
-    object HostRule = null,
+    IResolvable|GoogleComputeUrlMapHostRule[] HostRule = null,
     string Id = null,
-    object PathMatcher = null,
+    IResolvable|GoogleComputeUrlMapPathMatcher[] PathMatcher = null,
     string Project = null,
-    object Test = null,
+    IResolvable|GoogleComputeUrlMapTest[] Test = null,
     GoogleComputeUrlMapTimeouts Timeouts = null
 };
 ```
@@ -1215,13 +1215,13 @@ new GoogleComputeUrlMapConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapConfig.property.name">Name</a></code> | <code>string</code> | Name of the resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapConfig.property.defaultCustomErrorResponsePolicy">DefaultCustomErrorResponsePolicy</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicy">GoogleComputeUrlMapDefaultCustomErrorResponsePolicy</a></code> | default_custom_error_response_policy block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapConfig.property.defaultRouteAction">DefaultRouteAction</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteAction">GoogleComputeUrlMapDefaultRouteAction</a></code> | default_route_action block. |
@@ -1229,11 +1229,11 @@ new GoogleComputeUrlMapConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapConfig.property.defaultUrlRedirect">DefaultUrlRedirect</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultUrlRedirect">GoogleComputeUrlMapDefaultUrlRedirect</a></code> | default_url_redirect block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapConfig.property.description">Description</a></code> | <code>string</code> | An optional description of this resource. Provide this property when you create the resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapConfig.property.headerAction">HeaderAction</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderAction">GoogleComputeUrlMapHeaderAction</a></code> | header_action block. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapConfig.property.hostRule">HostRule</a></code> | <code>object</code> | host_rule block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapConfig.property.hostRule">HostRule</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHostRule">GoogleComputeUrlMapHostRule</a>[]</code> | host_rule block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_compute_url_map#id GoogleComputeUrlMap#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapConfig.property.pathMatcher">PathMatcher</a></code> | <code>object</code> | path_matcher block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapConfig.property.pathMatcher">PathMatcher</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcher">GoogleComputeUrlMapPathMatcher</a>[]</code> | path_matcher block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_compute_url_map#project GoogleComputeUrlMap#project}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapConfig.property.test">Test</a></code> | <code>object</code> | test block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapConfig.property.test">Test</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTest">GoogleComputeUrlMapTest</a>[]</code> | test block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTimeouts">GoogleComputeUrlMapTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1241,20 +1241,20 @@ new GoogleComputeUrlMapConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1301,10 +1301,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1416,10 +1416,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `HostRule`<sup>Optional</sup> <a name="HostRule" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapConfig.property.hostRule"></a>
 
 ```csharp
-public object HostRule { get; set; }
+public IResolvable|GoogleComputeUrlMapHostRule[] HostRule { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHostRule">GoogleComputeUrlMapHostRule</a>[]
 
 host_rule block.
 
@@ -1445,10 +1445,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `PathMatcher`<sup>Optional</sup> <a name="PathMatcher" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapConfig.property.pathMatcher"></a>
 
 ```csharp
-public object PathMatcher { get; set; }
+public IResolvable|GoogleComputeUrlMapPathMatcher[] PathMatcher { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcher">GoogleComputeUrlMapPathMatcher</a>[]
 
 path_matcher block.
 
@@ -1471,10 +1471,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Test`<sup>Optional</sup> <a name="Test" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapConfig.property.test"></a>
 
 ```csharp
-public object Test { get; set; }
+public IResolvable|GoogleComputeUrlMapTest[] Test { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTest">GoogleComputeUrlMapTest</a>[]
 
 test block.
 
@@ -1504,7 +1504,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.GoogleBeta;
 
 new GoogleComputeUrlMapDefaultCustomErrorResponsePolicy {
-    object ErrorResponseRule = null,
+    IResolvable|GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRule[] ErrorResponseRule = null,
     string ErrorService = null
 };
 ```
@@ -1513,7 +1513,7 @@ new GoogleComputeUrlMapDefaultCustomErrorResponsePolicy {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicy.property.errorResponseRule">ErrorResponseRule</a></code> | <code>object</code> | error_response_rule block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicy.property.errorResponseRule">ErrorResponseRule</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRule">GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRule</a>[]</code> | error_response_rule block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicy.property.errorService">ErrorService</a></code> | <code>string</code> | The full or partial URL to the BackendBucket resource that contains the custom error content. Examples are:. |
 
 ---
@@ -1521,10 +1521,10 @@ new GoogleComputeUrlMapDefaultCustomErrorResponsePolicy {
 ##### `ErrorResponseRule`<sup>Optional</sup> <a name="ErrorResponseRule" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicy.property.errorResponseRule"></a>
 
 ```csharp
-public object ErrorResponseRule { get; set; }
+public IResolvable|GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRule[] ErrorResponseRule { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRule">GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRule</a>[]
 
 error_response_rule block.
 
@@ -1645,7 +1645,7 @@ new GoogleComputeUrlMapDefaultRouteAction {
     GoogleComputeUrlMapDefaultRouteActionRetryPolicy RetryPolicy = null,
     GoogleComputeUrlMapDefaultRouteActionTimeout Timeout = null,
     GoogleComputeUrlMapDefaultRouteActionUrlRewrite UrlRewrite = null,
-    object WeightedBackendServices = null
+    IResolvable|GoogleComputeUrlMapDefaultRouteActionWeightedBackendServices[] WeightedBackendServices = null
 };
 ```
 
@@ -1660,7 +1660,7 @@ new GoogleComputeUrlMapDefaultRouteAction {
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteAction.property.retryPolicy">RetryPolicy</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionRetryPolicy">GoogleComputeUrlMapDefaultRouteActionRetryPolicy</a></code> | retry_policy block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteAction.property.timeout">Timeout</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionTimeout">GoogleComputeUrlMapDefaultRouteActionTimeout</a></code> | timeout block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteAction.property.urlRewrite">UrlRewrite</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionUrlRewrite">GoogleComputeUrlMapDefaultRouteActionUrlRewrite</a></code> | url_rewrite block. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteAction.property.weightedBackendServices">WeightedBackendServices</a></code> | <code>object</code> | weighted_backend_services block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteAction.property.weightedBackendServices">WeightedBackendServices</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServices">GoogleComputeUrlMapDefaultRouteActionWeightedBackendServices</a>[]</code> | weighted_backend_services block. |
 
 ---
 
@@ -1765,10 +1765,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `WeightedBackendServices`<sup>Optional</sup> <a name="WeightedBackendServices" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteAction.property.weightedBackendServices"></a>
 
 ```csharp
-public object WeightedBackendServices { get; set; }
+public IResolvable|GoogleComputeUrlMapDefaultRouteActionWeightedBackendServices[] WeightedBackendServices { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServices">GoogleComputeUrlMapDefaultRouteActionWeightedBackendServices</a>[]
 
 weighted_backend_services block.
 
@@ -1784,12 +1784,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.GoogleBeta;
 
 new GoogleComputeUrlMapDefaultRouteActionCorsPolicy {
-    object AllowCredentials = null,
+    bool|IResolvable AllowCredentials = null,
     string[] AllowHeaders = null,
     string[] AllowMethods = null,
     string[] AllowOriginRegexes = null,
     string[] AllowOrigins = null,
-    object Disabled = null,
+    bool|IResolvable Disabled = null,
     string[] ExposeHeaders = null,
     double MaxAge = null
 };
@@ -1799,12 +1799,12 @@ new GoogleComputeUrlMapDefaultRouteActionCorsPolicy {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicy.property.allowCredentials">AllowCredentials</a></code> | <code>object</code> | In response to a preflight request, setting this to true indicates that the actual request can include user credentials. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicy.property.allowCredentials">AllowCredentials</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | In response to a preflight request, setting this to true indicates that the actual request can include user credentials. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicy.property.allowHeaders">AllowHeaders</a></code> | <code>string[]</code> | Specifies the content for the Access-Control-Allow-Headers header. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicy.property.allowMethods">AllowMethods</a></code> | <code>string[]</code> | Specifies the content for the Access-Control-Allow-Methods header. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicy.property.allowOriginRegexes">AllowOriginRegexes</a></code> | <code>string[]</code> | Specifies the regular expression patterns that match allowed origins. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicy.property.allowOrigins">AllowOrigins</a></code> | <code>string[]</code> | Specifies the list of origins that will be allowed to do CORS requests. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicy.property.disabled">Disabled</a></code> | <code>object</code> | If true, specifies the CORS policy is disabled. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicy.property.disabled">Disabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If true, specifies the CORS policy is disabled. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicy.property.exposeHeaders">ExposeHeaders</a></code> | <code>string[]</code> | Specifies the content for the Access-Control-Expose-Headers header. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicy.property.maxAge">MaxAge</a></code> | <code>double</code> | Specifies how long results of a preflight request can be cached in seconds. This translates to the Access-Control-Max-Age header. |
 
@@ -1813,10 +1813,10 @@ new GoogleComputeUrlMapDefaultRouteActionCorsPolicy {
 ##### `AllowCredentials`<sup>Optional</sup> <a name="AllowCredentials" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicy.property.allowCredentials"></a>
 
 ```csharp
-public object AllowCredentials { get; set; }
+public bool|IResolvable AllowCredentials { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 In response to a preflight request, setting this to true indicates that the actual request can include user credentials.
 
@@ -1891,10 +1891,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Disabled`<sup>Optional</sup> <a name="Disabled" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicy.property.disabled"></a>
 
 ```csharp
-public object Disabled { get; set; }
+public bool|IResolvable Disabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If true, specifies the CORS policy is disabled.
 
@@ -2579,9 +2579,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.GoogleBeta;
 
 new GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction {
-    object RequestHeadersToAdd = null,
+    IResolvable|GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] RequestHeadersToAdd = null,
     string[] RequestHeadersToRemove = null,
-    object ResponseHeadersToAdd = null,
+    IResolvable|GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] ResponseHeadersToAdd = null,
     string[] ResponseHeadersToRemove = null
 };
 ```
@@ -2590,9 +2590,9 @@ new GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction.property.requestHeadersToAdd">RequestHeadersToAdd</a></code> | <code>object</code> | request_headers_to_add block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction.property.requestHeadersToAdd">RequestHeadersToAdd</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]</code> | request_headers_to_add block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction.property.requestHeadersToRemove">RequestHeadersToRemove</a></code> | <code>string[]</code> | A list of header names for headers that need to be removed from the request prior to forwarding the request to the backendService. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction.property.responseHeadersToAdd">ResponseHeadersToAdd</a></code> | <code>object</code> | response_headers_to_add block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction.property.responseHeadersToAdd">ResponseHeadersToAdd</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]</code> | response_headers_to_add block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction.property.responseHeadersToRemove">ResponseHeadersToRemove</a></code> | <code>string[]</code> | A list of header names for headers that need to be removed from the response prior to sending the response back to the client. |
 
 ---
@@ -2600,10 +2600,10 @@ new GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction {
 ##### `RequestHeadersToAdd`<sup>Optional</sup> <a name="RequestHeadersToAdd" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction.property.requestHeadersToAdd"></a>
 
 ```csharp
-public object RequestHeadersToAdd { get; set; }
+public IResolvable|GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] RequestHeadersToAdd { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
 
 request_headers_to_add block.
 
@@ -2628,10 +2628,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ResponseHeadersToAdd`<sup>Optional</sup> <a name="ResponseHeadersToAdd" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction.property.responseHeadersToAdd"></a>
 
 ```csharp
-public object ResponseHeadersToAdd { get; set; }
+public IResolvable|GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] ResponseHeadersToAdd { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
 
 response_headers_to_add block.
 
@@ -2663,7 +2663,7 @@ using HashiCorp.Cdktf.Providers.GoogleBeta;
 new GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd {
     string HeaderName = null,
     string HeaderValue = null,
-    object Replace = null
+    bool|IResolvable Replace = null
 };
 ```
 
@@ -2673,7 +2673,7 @@ new GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequ
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.property.headerName">HeaderName</a></code> | <code>string</code> | The name of the header to add. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.property.headerValue">HeaderValue</a></code> | <code>string</code> | The value of the header to add. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.property.replace">Replace</a></code> | <code>object</code> | If false, headerValue is appended to any values that already exist for the header. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.property.replace">Replace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If false, headerValue is appended to any values that already exist for the header. |
 
 ---
 
@@ -2708,10 +2708,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Replace`<sup>Optional</sup> <a name="Replace" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.property.replace"></a>
 
 ```csharp
-public object Replace { get; set; }
+public bool|IResolvable Replace { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If false, headerValue is appended to any values that already exist for the header.
 
@@ -2731,7 +2731,7 @@ using HashiCorp.Cdktf.Providers.GoogleBeta;
 new GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd {
     string HeaderName = null,
     string HeaderValue = null,
-    object Replace = null
+    bool|IResolvable Replace = null
 };
 ```
 
@@ -2741,7 +2741,7 @@ new GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResp
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.property.headerName">HeaderName</a></code> | <code>string</code> | The name of the header to add. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.property.headerValue">HeaderValue</a></code> | <code>string</code> | The value of the header to add. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.property.replace">Replace</a></code> | <code>object</code> | If false, headerValue is appended to any values that already exist for the header. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.property.replace">Replace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If false, headerValue is appended to any values that already exist for the header. |
 
 ---
 
@@ -2776,10 +2776,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Replace`<sup>Optional</sup> <a name="Replace" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.property.replace"></a>
 
 ```csharp
-public object Replace { get; set; }
+public bool|IResolvable Replace { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If false, headerValue is appended to any values that already exist for the header.
 
@@ -2797,9 +2797,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.GoogleBeta;
 
 new GoogleComputeUrlMapDefaultUrlRedirect {
-    object StripQuery,
+    bool|IResolvable StripQuery,
     string HostRedirect = null,
-    object HttpsRedirect = null,
+    bool|IResolvable HttpsRedirect = null,
     string PathRedirect = null,
     string PrefixRedirect = null,
     string RedirectResponseCode = null
@@ -2810,9 +2810,9 @@ new GoogleComputeUrlMapDefaultUrlRedirect {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultUrlRedirect.property.stripQuery">StripQuery</a></code> | <code>object</code> | If set to true, any accompanying query portion of the original URL is removed prior to redirecting the request. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultUrlRedirect.property.stripQuery">StripQuery</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If set to true, any accompanying query portion of the original URL is removed prior to redirecting the request. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultUrlRedirect.property.hostRedirect">HostRedirect</a></code> | <code>string</code> | The host that will be used in the redirect response instead of the one that was supplied in the request. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultUrlRedirect.property.httpsRedirect">HttpsRedirect</a></code> | <code>object</code> | If set to true, the URL scheme in the redirected request is set to https. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultUrlRedirect.property.httpsRedirect">HttpsRedirect</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If set to true, the URL scheme in the redirected request is set to https. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultUrlRedirect.property.pathRedirect">PathRedirect</a></code> | <code>string</code> | The path that will be used in the redirect response instead of the one that was supplied in the request. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultUrlRedirect.property.prefixRedirect">PrefixRedirect</a></code> | <code>string</code> | The prefix that replaces the prefixMatch specified in the HttpRouteRuleMatch, retaining the remaining portion of the URL before redirecting the request. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultUrlRedirect.property.redirectResponseCode">RedirectResponseCode</a></code> | <code>string</code> | The HTTP Status code to use for this RedirectAction. Supported values are:. |
@@ -2822,10 +2822,10 @@ new GoogleComputeUrlMapDefaultUrlRedirect {
 ##### `StripQuery`<sup>Required</sup> <a name="StripQuery" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultUrlRedirect.property.stripQuery"></a>
 
 ```csharp
-public object StripQuery { get; set; }
+public bool|IResolvable StripQuery { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If set to true, any accompanying query portion of the original URL is removed prior to redirecting the request.
 
@@ -2856,10 +2856,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `HttpsRedirect`<sup>Optional</sup> <a name="HttpsRedirect" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultUrlRedirect.property.httpsRedirect"></a>
 
 ```csharp
-public object HttpsRedirect { get; set; }
+public bool|IResolvable HttpsRedirect { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If set to true, the URL scheme in the redirected request is set to https.
 
@@ -2939,9 +2939,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.GoogleBeta;
 
 new GoogleComputeUrlMapHeaderAction {
-    object RequestHeadersToAdd = null,
+    IResolvable|GoogleComputeUrlMapHeaderActionRequestHeadersToAdd[] RequestHeadersToAdd = null,
     string[] RequestHeadersToRemove = null,
-    object ResponseHeadersToAdd = null,
+    IResolvable|GoogleComputeUrlMapHeaderActionResponseHeadersToAdd[] ResponseHeadersToAdd = null,
     string[] ResponseHeadersToRemove = null
 };
 ```
@@ -2950,9 +2950,9 @@ new GoogleComputeUrlMapHeaderAction {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderAction.property.requestHeadersToAdd">RequestHeadersToAdd</a></code> | <code>object</code> | request_headers_to_add block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderAction.property.requestHeadersToAdd">RequestHeadersToAdd</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapHeaderActionRequestHeadersToAdd</a>[]</code> | request_headers_to_add block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderAction.property.requestHeadersToRemove">RequestHeadersToRemove</a></code> | <code>string[]</code> | A list of header names for headers that need to be removed from the request prior to forwarding the request to the backendService. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderAction.property.responseHeadersToAdd">ResponseHeadersToAdd</a></code> | <code>object</code> | response_headers_to_add block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderAction.property.responseHeadersToAdd">ResponseHeadersToAdd</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapHeaderActionResponseHeadersToAdd</a>[]</code> | response_headers_to_add block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderAction.property.responseHeadersToRemove">ResponseHeadersToRemove</a></code> | <code>string[]</code> | A list of header names for headers that need to be removed from the response prior to sending the response back to the client. |
 
 ---
@@ -2960,10 +2960,10 @@ new GoogleComputeUrlMapHeaderAction {
 ##### `RequestHeadersToAdd`<sup>Optional</sup> <a name="RequestHeadersToAdd" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderAction.property.requestHeadersToAdd"></a>
 
 ```csharp
-public object RequestHeadersToAdd { get; set; }
+public IResolvable|GoogleComputeUrlMapHeaderActionRequestHeadersToAdd[] RequestHeadersToAdd { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapHeaderActionRequestHeadersToAdd</a>[]
 
 request_headers_to_add block.
 
@@ -2988,10 +2988,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ResponseHeadersToAdd`<sup>Optional</sup> <a name="ResponseHeadersToAdd" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderAction.property.responseHeadersToAdd"></a>
 
 ```csharp
-public object ResponseHeadersToAdd { get; set; }
+public IResolvable|GoogleComputeUrlMapHeaderActionResponseHeadersToAdd[] ResponseHeadersToAdd { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapHeaderActionResponseHeadersToAdd</a>[]
 
 response_headers_to_add block.
 
@@ -3023,7 +3023,7 @@ using HashiCorp.Cdktf.Providers.GoogleBeta;
 new GoogleComputeUrlMapHeaderActionRequestHeadersToAdd {
     string HeaderName,
     string HeaderValue,
-    object Replace
+    bool|IResolvable Replace
 };
 ```
 
@@ -3033,7 +3033,7 @@ new GoogleComputeUrlMapHeaderActionRequestHeadersToAdd {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAdd.property.headerName">HeaderName</a></code> | <code>string</code> | The name of the header. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAdd.property.headerValue">HeaderValue</a></code> | <code>string</code> | The value of the header to add. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAdd.property.replace">Replace</a></code> | <code>object</code> | If false, headerValue is appended to any values that already exist for the header. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAdd.property.replace">Replace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If false, headerValue is appended to any values that already exist for the header. |
 
 ---
 
@@ -3068,10 +3068,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Replace`<sup>Required</sup> <a name="Replace" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAdd.property.replace"></a>
 
 ```csharp
-public object Replace { get; set; }
+public bool|IResolvable Replace { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If false, headerValue is appended to any values that already exist for the header.
 
@@ -3092,7 +3092,7 @@ using HashiCorp.Cdktf.Providers.GoogleBeta;
 new GoogleComputeUrlMapHeaderActionResponseHeadersToAdd {
     string HeaderName,
     string HeaderValue,
-    object Replace
+    bool|IResolvable Replace
 };
 ```
 
@@ -3102,7 +3102,7 @@ new GoogleComputeUrlMapHeaderActionResponseHeadersToAdd {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAdd.property.headerName">HeaderName</a></code> | <code>string</code> | The name of the header. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAdd.property.headerValue">HeaderValue</a></code> | <code>string</code> | The value of the header to add. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAdd.property.replace">Replace</a></code> | <code>object</code> | If false, headerValue is appended to any values that already exist for the header. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAdd.property.replace">Replace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If false, headerValue is appended to any values that already exist for the header. |
 
 ---
 
@@ -3137,10 +3137,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Replace`<sup>Required</sup> <a name="Replace" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAdd.property.replace"></a>
 
 ```csharp
-public object Replace { get; set; }
+public bool|IResolvable Replace { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If false, headerValue is appended to any values that already exist for the header.
 
@@ -3236,8 +3236,8 @@ new GoogleComputeUrlMapPathMatcher {
     GoogleComputeUrlMapPathMatcherDefaultUrlRedirect DefaultUrlRedirect = null,
     string Description = null,
     GoogleComputeUrlMapPathMatcherHeaderAction HeaderAction = null,
-    object PathRule = null,
-    object RouteRules = null
+    IResolvable|GoogleComputeUrlMapPathMatcherPathRule[] PathRule = null,
+    IResolvable|GoogleComputeUrlMapPathMatcherRouteRules[] RouteRules = null
 };
 ```
 
@@ -3252,8 +3252,8 @@ new GoogleComputeUrlMapPathMatcher {
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcher.property.defaultUrlRedirect">DefaultUrlRedirect</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirect">GoogleComputeUrlMapPathMatcherDefaultUrlRedirect</a></code> | default_url_redirect block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcher.property.description">Description</a></code> | <code>string</code> | An optional description of this resource. Provide this property when you create the resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcher.property.headerAction">HeaderAction</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderAction">GoogleComputeUrlMapPathMatcherHeaderAction</a></code> | header_action block. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcher.property.pathRule">PathRule</a></code> | <code>object</code> | path_rule block. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcher.property.routeRules">RouteRules</a></code> | <code>object</code> | route_rules block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcher.property.pathRule">PathRule</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRule">GoogleComputeUrlMapPathMatcherPathRule</a>[]</code> | path_rule block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcher.property.routeRules">RouteRules</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRules">GoogleComputeUrlMapPathMatcherRouteRules</a>[]</code> | route_rules block. |
 
 ---
 
@@ -3358,10 +3358,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `PathRule`<sup>Optional</sup> <a name="PathRule" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcher.property.pathRule"></a>
 
 ```csharp
-public object PathRule { get; set; }
+public IResolvable|GoogleComputeUrlMapPathMatcherPathRule[] PathRule { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRule">GoogleComputeUrlMapPathMatcherPathRule</a>[]
 
 path_rule block.
 
@@ -3372,10 +3372,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `RouteRules`<sup>Optional</sup> <a name="RouteRules" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcher.property.routeRules"></a>
 
 ```csharp
-public object RouteRules { get; set; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRules[] RouteRules { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRules">GoogleComputeUrlMapPathMatcherRouteRules</a>[]
 
 route_rules block.
 
@@ -3391,7 +3391,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.GoogleBeta;
 
 new GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicy {
-    object ErrorResponseRule = null,
+    IResolvable|GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRule[] ErrorResponseRule = null,
     string ErrorService = null
 };
 ```
@@ -3400,7 +3400,7 @@ new GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicy {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicy.property.errorResponseRule">ErrorResponseRule</a></code> | <code>object</code> | error_response_rule block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicy.property.errorResponseRule">ErrorResponseRule</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRule">GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRule</a>[]</code> | error_response_rule block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicy.property.errorService">ErrorService</a></code> | <code>string</code> | The full or partial URL to the BackendBucket resource that contains the custom error content. |
 
 ---
@@ -3408,10 +3408,10 @@ new GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicy {
 ##### `ErrorResponseRule`<sup>Optional</sup> <a name="ErrorResponseRule" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicy.property.errorResponseRule"></a>
 
 ```csharp
-public object ErrorResponseRule { get; set; }
+public IResolvable|GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRule[] ErrorResponseRule { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRule">GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRule</a>[]
 
 error_response_rule block.
 
@@ -3532,7 +3532,7 @@ new GoogleComputeUrlMapPathMatcherDefaultRouteAction {
     GoogleComputeUrlMapPathMatcherDefaultRouteActionRetryPolicy RetryPolicy = null,
     GoogleComputeUrlMapPathMatcherDefaultRouteActionTimeout Timeout = null,
     GoogleComputeUrlMapPathMatcherDefaultRouteActionUrlRewrite UrlRewrite = null,
-    object WeightedBackendServices = null
+    IResolvable|GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServices[] WeightedBackendServices = null
 };
 ```
 
@@ -3547,7 +3547,7 @@ new GoogleComputeUrlMapPathMatcherDefaultRouteAction {
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteAction.property.retryPolicy">RetryPolicy</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionRetryPolicy">GoogleComputeUrlMapPathMatcherDefaultRouteActionRetryPolicy</a></code> | retry_policy block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteAction.property.timeout">Timeout</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionTimeout">GoogleComputeUrlMapPathMatcherDefaultRouteActionTimeout</a></code> | timeout block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteAction.property.urlRewrite">UrlRewrite</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionUrlRewrite">GoogleComputeUrlMapPathMatcherDefaultRouteActionUrlRewrite</a></code> | url_rewrite block. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteAction.property.weightedBackendServices">WeightedBackendServices</a></code> | <code>object</code> | weighted_backend_services block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteAction.property.weightedBackendServices">WeightedBackendServices</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServices">GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServices</a>[]</code> | weighted_backend_services block. |
 
 ---
 
@@ -3652,10 +3652,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `WeightedBackendServices`<sup>Optional</sup> <a name="WeightedBackendServices" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteAction.property.weightedBackendServices"></a>
 
 ```csharp
-public object WeightedBackendServices { get; set; }
+public IResolvable|GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServices[] WeightedBackendServices { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServices">GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServices</a>[]
 
 weighted_backend_services block.
 
@@ -3671,12 +3671,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.GoogleBeta;
 
 new GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicy {
-    object AllowCredentials = null,
+    bool|IResolvable AllowCredentials = null,
     string[] AllowHeaders = null,
     string[] AllowMethods = null,
     string[] AllowOriginRegexes = null,
     string[] AllowOrigins = null,
-    object Disabled = null,
+    bool|IResolvable Disabled = null,
     string[] ExposeHeaders = null,
     double MaxAge = null
 };
@@ -3686,12 +3686,12 @@ new GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicy {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicy.property.allowCredentials">AllowCredentials</a></code> | <code>object</code> | In response to a preflight request, setting this to true indicates that the actual request can include user credentials. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicy.property.allowCredentials">AllowCredentials</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | In response to a preflight request, setting this to true indicates that the actual request can include user credentials. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicy.property.allowHeaders">AllowHeaders</a></code> | <code>string[]</code> | Specifies the content for the Access-Control-Allow-Headers header. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicy.property.allowMethods">AllowMethods</a></code> | <code>string[]</code> | Specifies the content for the Access-Control-Allow-Methods header. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicy.property.allowOriginRegexes">AllowOriginRegexes</a></code> | <code>string[]</code> | Specifies the regular expression patterns that match allowed origins. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicy.property.allowOrigins">AllowOrigins</a></code> | <code>string[]</code> | Specifies the list of origins that will be allowed to do CORS requests. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicy.property.disabled">Disabled</a></code> | <code>object</code> | If true, specifies the CORS policy is disabled. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicy.property.disabled">Disabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If true, specifies the CORS policy is disabled. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicy.property.exposeHeaders">ExposeHeaders</a></code> | <code>string[]</code> | Specifies the content for the Access-Control-Expose-Headers header. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicy.property.maxAge">MaxAge</a></code> | <code>double</code> | Specifies how long results of a preflight request can be cached in seconds. This translates to the Access-Control-Max-Age header. |
 
@@ -3700,10 +3700,10 @@ new GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicy {
 ##### `AllowCredentials`<sup>Optional</sup> <a name="AllowCredentials" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicy.property.allowCredentials"></a>
 
 ```csharp
-public object AllowCredentials { get; set; }
+public bool|IResolvable AllowCredentials { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 In response to a preflight request, setting this to true indicates that the actual request can include user credentials.
 
@@ -3778,10 +3778,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Disabled`<sup>Optional</sup> <a name="Disabled" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicy.property.disabled"></a>
 
 ```csharp
-public object Disabled { get; set; }
+public bool|IResolvable Disabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If true, specifies the CORS policy is disabled.
 
@@ -4466,9 +4466,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.GoogleBeta;
 
 new GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderAction {
-    object RequestHeadersToAdd = null,
+    IResolvable|GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] RequestHeadersToAdd = null,
     string[] RequestHeadersToRemove = null,
-    object ResponseHeadersToAdd = null,
+    IResolvable|GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] ResponseHeadersToAdd = null,
     string[] ResponseHeadersToRemove = null
 };
 ```
@@ -4477,9 +4477,9 @@ new GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeade
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderAction.property.requestHeadersToAdd">RequestHeadersToAdd</a></code> | <code>object</code> | request_headers_to_add block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderAction.property.requestHeadersToAdd">RequestHeadersToAdd</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]</code> | request_headers_to_add block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderAction.property.requestHeadersToRemove">RequestHeadersToRemove</a></code> | <code>string[]</code> | A list of header names for headers that need to be removed from the request prior to forwarding the request to the backendService. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderAction.property.responseHeadersToAdd">ResponseHeadersToAdd</a></code> | <code>object</code> | response_headers_to_add block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderAction.property.responseHeadersToAdd">ResponseHeadersToAdd</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]</code> | response_headers_to_add block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderAction.property.responseHeadersToRemove">ResponseHeadersToRemove</a></code> | <code>string[]</code> | A list of header names for headers that need to be removed from the response prior to sending the response back to the client. |
 
 ---
@@ -4487,10 +4487,10 @@ new GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeade
 ##### `RequestHeadersToAdd`<sup>Optional</sup> <a name="RequestHeadersToAdd" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderAction.property.requestHeadersToAdd"></a>
 
 ```csharp
-public object RequestHeadersToAdd { get; set; }
+public IResolvable|GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] RequestHeadersToAdd { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
 
 request_headers_to_add block.
 
@@ -4515,10 +4515,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ResponseHeadersToAdd`<sup>Optional</sup> <a name="ResponseHeadersToAdd" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderAction.property.responseHeadersToAdd"></a>
 
 ```csharp
-public object ResponseHeadersToAdd { get; set; }
+public IResolvable|GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] ResponseHeadersToAdd { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
 
 response_headers_to_add block.
 
@@ -4550,7 +4550,7 @@ using HashiCorp.Cdktf.Providers.GoogleBeta;
 new GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd {
     string HeaderName = null,
     string HeaderValue = null,
-    object Replace = null
+    bool|IResolvable Replace = null
 };
 ```
 
@@ -4560,7 +4560,7 @@ new GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeade
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.property.headerName">HeaderName</a></code> | <code>string</code> | The name of the header to add. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.property.headerValue">HeaderValue</a></code> | <code>string</code> | The value of the header to add. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.property.replace">Replace</a></code> | <code>object</code> | If false, headerValue is appended to any values that already exist for the header. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.property.replace">Replace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If false, headerValue is appended to any values that already exist for the header. |
 
 ---
 
@@ -4595,10 +4595,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Replace`<sup>Optional</sup> <a name="Replace" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.property.replace"></a>
 
 ```csharp
-public object Replace { get; set; }
+public bool|IResolvable Replace { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If false, headerValue is appended to any values that already exist for the header.
 
@@ -4618,7 +4618,7 @@ using HashiCorp.Cdktf.Providers.GoogleBeta;
 new GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd {
     string HeaderName = null,
     string HeaderValue = null,
-    object Replace = null
+    bool|IResolvable Replace = null
 };
 ```
 
@@ -4628,7 +4628,7 @@ new GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeade
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.property.headerName">HeaderName</a></code> | <code>string</code> | The name of the header to add. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.property.headerValue">HeaderValue</a></code> | <code>string</code> | The value of the header to add. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.property.replace">Replace</a></code> | <code>object</code> | If false, headerValue is appended to any values that already exist for the header. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.property.replace">Replace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If false, headerValue is appended to any values that already exist for the header. |
 
 ---
 
@@ -4663,10 +4663,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Replace`<sup>Optional</sup> <a name="Replace" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.property.replace"></a>
 
 ```csharp
-public object Replace { get; set; }
+public bool|IResolvable Replace { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If false, headerValue is appended to any values that already exist for the header.
 
@@ -4684,9 +4684,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.GoogleBeta;
 
 new GoogleComputeUrlMapPathMatcherDefaultUrlRedirect {
-    object StripQuery,
+    bool|IResolvable StripQuery,
     string HostRedirect = null,
-    object HttpsRedirect = null,
+    bool|IResolvable HttpsRedirect = null,
     string PathRedirect = null,
     string PrefixRedirect = null,
     string RedirectResponseCode = null
@@ -4697,9 +4697,9 @@ new GoogleComputeUrlMapPathMatcherDefaultUrlRedirect {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirect.property.stripQuery">StripQuery</a></code> | <code>object</code> | If set to true, any accompanying query portion of the original URL is removed prior to redirecting the request. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirect.property.stripQuery">StripQuery</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If set to true, any accompanying query portion of the original URL is removed prior to redirecting the request. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirect.property.hostRedirect">HostRedirect</a></code> | <code>string</code> | The host that will be used in the redirect response instead of the one that was supplied in the request. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirect.property.httpsRedirect">HttpsRedirect</a></code> | <code>object</code> | If set to true, the URL scheme in the redirected request is set to https. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirect.property.httpsRedirect">HttpsRedirect</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If set to true, the URL scheme in the redirected request is set to https. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirect.property.pathRedirect">PathRedirect</a></code> | <code>string</code> | The path that will be used in the redirect response instead of the one that was supplied in the request. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirect.property.prefixRedirect">PrefixRedirect</a></code> | <code>string</code> | The prefix that replaces the prefixMatch specified in the HttpRouteRuleMatch, retaining the remaining portion of the URL before redirecting the request. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirect.property.redirectResponseCode">RedirectResponseCode</a></code> | <code>string</code> | The HTTP Status code to use for this RedirectAction. Supported values are:. |
@@ -4709,10 +4709,10 @@ new GoogleComputeUrlMapPathMatcherDefaultUrlRedirect {
 ##### `StripQuery`<sup>Required</sup> <a name="StripQuery" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirect.property.stripQuery"></a>
 
 ```csharp
-public object StripQuery { get; set; }
+public bool|IResolvable StripQuery { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If set to true, any accompanying query portion of the original URL is removed prior to redirecting the request.
 
@@ -4743,10 +4743,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `HttpsRedirect`<sup>Optional</sup> <a name="HttpsRedirect" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirect.property.httpsRedirect"></a>
 
 ```csharp
-public object HttpsRedirect { get; set; }
+public bool|IResolvable HttpsRedirect { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If set to true, the URL scheme in the redirected request is set to https.
 
@@ -4826,9 +4826,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.GoogleBeta;
 
 new GoogleComputeUrlMapPathMatcherHeaderAction {
-    object RequestHeadersToAdd = null,
+    IResolvable|GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd[] RequestHeadersToAdd = null,
     string[] RequestHeadersToRemove = null,
-    object ResponseHeadersToAdd = null,
+    IResolvable|GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd[] ResponseHeadersToAdd = null,
     string[] ResponseHeadersToRemove = null
 };
 ```
@@ -4837,9 +4837,9 @@ new GoogleComputeUrlMapPathMatcherHeaderAction {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderAction.property.requestHeadersToAdd">RequestHeadersToAdd</a></code> | <code>object</code> | request_headers_to_add block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderAction.property.requestHeadersToAdd">RequestHeadersToAdd</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd</a>[]</code> | request_headers_to_add block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderAction.property.requestHeadersToRemove">RequestHeadersToRemove</a></code> | <code>string[]</code> | A list of header names for headers that need to be removed from the request prior to forwarding the request to the backendService. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderAction.property.responseHeadersToAdd">ResponseHeadersToAdd</a></code> | <code>object</code> | response_headers_to_add block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderAction.property.responseHeadersToAdd">ResponseHeadersToAdd</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd</a>[]</code> | response_headers_to_add block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderAction.property.responseHeadersToRemove">ResponseHeadersToRemove</a></code> | <code>string[]</code> | A list of header names for headers that need to be removed from the response prior to sending the response back to the client. |
 
 ---
@@ -4847,10 +4847,10 @@ new GoogleComputeUrlMapPathMatcherHeaderAction {
 ##### `RequestHeadersToAdd`<sup>Optional</sup> <a name="RequestHeadersToAdd" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderAction.property.requestHeadersToAdd"></a>
 
 ```csharp
-public object RequestHeadersToAdd { get; set; }
+public IResolvable|GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd[] RequestHeadersToAdd { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd</a>[]
 
 request_headers_to_add block.
 
@@ -4875,10 +4875,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ResponseHeadersToAdd`<sup>Optional</sup> <a name="ResponseHeadersToAdd" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderAction.property.responseHeadersToAdd"></a>
 
 ```csharp
-public object ResponseHeadersToAdd { get; set; }
+public IResolvable|GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd[] ResponseHeadersToAdd { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd</a>[]
 
 response_headers_to_add block.
 
@@ -4910,7 +4910,7 @@ using HashiCorp.Cdktf.Providers.GoogleBeta;
 new GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd {
     string HeaderName,
     string HeaderValue,
-    object Replace
+    bool|IResolvable Replace
 };
 ```
 
@@ -4920,7 +4920,7 @@ new GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd.property.headerName">HeaderName</a></code> | <code>string</code> | The name of the header. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd.property.headerValue">HeaderValue</a></code> | <code>string</code> | The value of the header to add. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd.property.replace">Replace</a></code> | <code>object</code> | If false, headerValue is appended to any values that already exist for the header. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd.property.replace">Replace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If false, headerValue is appended to any values that already exist for the header. |
 
 ---
 
@@ -4955,10 +4955,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Replace`<sup>Required</sup> <a name="Replace" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd.property.replace"></a>
 
 ```csharp
-public object Replace { get; set; }
+public bool|IResolvable Replace { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If false, headerValue is appended to any values that already exist for the header.
 
@@ -4979,7 +4979,7 @@ using HashiCorp.Cdktf.Providers.GoogleBeta;
 new GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd {
     string HeaderName,
     string HeaderValue,
-    object Replace
+    bool|IResolvable Replace
 };
 ```
 
@@ -4989,7 +4989,7 @@ new GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd.property.headerName">HeaderName</a></code> | <code>string</code> | The name of the header. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd.property.headerValue">HeaderValue</a></code> | <code>string</code> | The value of the header to add. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd.property.replace">Replace</a></code> | <code>object</code> | If false, headerValue is appended to any values that already exist for the header. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd.property.replace">Replace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If false, headerValue is appended to any values that already exist for the header. |
 
 ---
 
@@ -5024,10 +5024,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Replace`<sup>Required</sup> <a name="Replace" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd.property.replace"></a>
 
 ```csharp
-public object Replace { get; set; }
+public bool|IResolvable Replace { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If false, headerValue is appended to any values that already exist for the header.
 
@@ -5149,7 +5149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.GoogleBeta;
 
 new GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicy {
-    object ErrorResponseRule = null,
+    IResolvable|GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRule[] ErrorResponseRule = null,
     string ErrorService = null
 };
 ```
@@ -5158,7 +5158,7 @@ new GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicy {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicy.property.errorResponseRule">ErrorResponseRule</a></code> | <code>object</code> | error_response_rule block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicy.property.errorResponseRule">ErrorResponseRule</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRule">GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRule</a>[]</code> | error_response_rule block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicy.property.errorService">ErrorService</a></code> | <code>string</code> | The full or partial URL to the BackendBucket resource that contains the custom error content. Examples are:. |
 
 ---
@@ -5166,10 +5166,10 @@ new GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicy {
 ##### `ErrorResponseRule`<sup>Optional</sup> <a name="ErrorResponseRule" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicy.property.errorResponseRule"></a>
 
 ```csharp
-public object ErrorResponseRule { get; set; }
+public IResolvable|GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRule[] ErrorResponseRule { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRule">GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRule</a>[]
 
 error_response_rule block.
 
@@ -5292,7 +5292,7 @@ new GoogleComputeUrlMapPathMatcherPathRuleRouteAction {
     GoogleComputeUrlMapPathMatcherPathRuleRouteActionRetryPolicy RetryPolicy = null,
     GoogleComputeUrlMapPathMatcherPathRuleRouteActionTimeout Timeout = null,
     GoogleComputeUrlMapPathMatcherPathRuleRouteActionUrlRewrite UrlRewrite = null,
-    object WeightedBackendServices = null
+    IResolvable|GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices[] WeightedBackendServices = null
 };
 ```
 
@@ -5307,7 +5307,7 @@ new GoogleComputeUrlMapPathMatcherPathRuleRouteAction {
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteAction.property.retryPolicy">RetryPolicy</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionRetryPolicy">GoogleComputeUrlMapPathMatcherPathRuleRouteActionRetryPolicy</a></code> | retry_policy block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteAction.property.timeout">Timeout</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionTimeout">GoogleComputeUrlMapPathMatcherPathRuleRouteActionTimeout</a></code> | timeout block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteAction.property.urlRewrite">UrlRewrite</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionUrlRewrite">GoogleComputeUrlMapPathMatcherPathRuleRouteActionUrlRewrite</a></code> | url_rewrite block. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteAction.property.weightedBackendServices">WeightedBackendServices</a></code> | <code>object</code> | weighted_backend_services block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteAction.property.weightedBackendServices">WeightedBackendServices</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices">GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices</a>[]</code> | weighted_backend_services block. |
 
 ---
 
@@ -5412,10 +5412,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `WeightedBackendServices`<sup>Optional</sup> <a name="WeightedBackendServices" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteAction.property.weightedBackendServices"></a>
 
 ```csharp
-public object WeightedBackendServices { get; set; }
+public IResolvable|GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices[] WeightedBackendServices { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices">GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices</a>[]
 
 weighted_backend_services block.
 
@@ -5431,8 +5431,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.GoogleBeta;
 
 new GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicy {
-    object Disabled,
-    object AllowCredentials = null,
+    bool|IResolvable Disabled,
+    bool|IResolvable AllowCredentials = null,
     string[] AllowHeaders = null,
     string[] AllowMethods = null,
     string[] AllowOriginRegexes = null,
@@ -5446,8 +5446,8 @@ new GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicy {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicy.property.disabled">Disabled</a></code> | <code>object</code> | If true, specifies the CORS policy is disabled. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicy.property.allowCredentials">AllowCredentials</a></code> | <code>object</code> | In response to a preflight request, setting this to true indicates that the actual request can include user credentials. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicy.property.disabled">Disabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If true, specifies the CORS policy is disabled. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicy.property.allowCredentials">AllowCredentials</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | In response to a preflight request, setting this to true indicates that the actual request can include user credentials. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicy.property.allowHeaders">AllowHeaders</a></code> | <code>string[]</code> | Specifies the content for the Access-Control-Allow-Headers header. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicy.property.allowMethods">AllowMethods</a></code> | <code>string[]</code> | Specifies the content for the Access-Control-Allow-Methods header. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicy.property.allowOriginRegexes">AllowOriginRegexes</a></code> | <code>string[]</code> | Specifies the regular expression patterns that match allowed origins. |
@@ -5460,10 +5460,10 @@ new GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicy {
 ##### `Disabled`<sup>Required</sup> <a name="Disabled" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicy.property.disabled"></a>
 
 ```csharp
-public object Disabled { get; set; }
+public bool|IResolvable Disabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If true, specifies the CORS policy is disabled.
 
@@ -5474,10 +5474,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AllowCredentials`<sup>Optional</sup> <a name="AllowCredentials" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicy.property.allowCredentials"></a>
 
 ```csharp
-public object AllowCredentials { get; set; }
+public bool|IResolvable AllowCredentials { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 In response to a preflight request, setting this to true indicates that the actual request can include user credentials.
 
@@ -6231,9 +6231,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.GoogleBeta;
 
 new GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction {
-    object RequestHeadersToAdd = null,
+    IResolvable|GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] RequestHeadersToAdd = null,
     string[] RequestHeadersToRemove = null,
-    object ResponseHeadersToAdd = null,
+    IResolvable|GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] ResponseHeadersToAdd = null,
     string[] ResponseHeadersToRemove = null
 };
 ```
@@ -6242,9 +6242,9 @@ new GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHead
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction.property.requestHeadersToAdd">RequestHeadersToAdd</a></code> | <code>object</code> | request_headers_to_add block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction.property.requestHeadersToAdd">RequestHeadersToAdd</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]</code> | request_headers_to_add block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction.property.requestHeadersToRemove">RequestHeadersToRemove</a></code> | <code>string[]</code> | A list of header names for headers that need to be removed from the request prior to forwarding the request to the backendService. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction.property.responseHeadersToAdd">ResponseHeadersToAdd</a></code> | <code>object</code> | response_headers_to_add block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction.property.responseHeadersToAdd">ResponseHeadersToAdd</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]</code> | response_headers_to_add block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction.property.responseHeadersToRemove">ResponseHeadersToRemove</a></code> | <code>string[]</code> | A list of header names for headers that need to be removed from the response prior to sending the response back to the client. |
 
 ---
@@ -6252,10 +6252,10 @@ new GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHead
 ##### `RequestHeadersToAdd`<sup>Optional</sup> <a name="RequestHeadersToAdd" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction.property.requestHeadersToAdd"></a>
 
 ```csharp
-public object RequestHeadersToAdd { get; set; }
+public IResolvable|GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] RequestHeadersToAdd { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
 
 request_headers_to_add block.
 
@@ -6280,10 +6280,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ResponseHeadersToAdd`<sup>Optional</sup> <a name="ResponseHeadersToAdd" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction.property.responseHeadersToAdd"></a>
 
 ```csharp
-public object ResponseHeadersToAdd { get; set; }
+public IResolvable|GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] ResponseHeadersToAdd { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
 
 response_headers_to_add block.
 
@@ -6315,7 +6315,7 @@ using HashiCorp.Cdktf.Providers.GoogleBeta;
 new GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd {
     string HeaderName,
     string HeaderValue,
-    object Replace
+    bool|IResolvable Replace
 };
 ```
 
@@ -6325,7 +6325,7 @@ new GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHead
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.property.headerName">HeaderName</a></code> | <code>string</code> | The name of the header. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.property.headerValue">HeaderValue</a></code> | <code>string</code> | The value of the header to add. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.property.replace">Replace</a></code> | <code>object</code> | If false, headerValue is appended to any values that already exist for the header. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.property.replace">Replace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If false, headerValue is appended to any values that already exist for the header. |
 
 ---
 
@@ -6360,10 +6360,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Replace`<sup>Required</sup> <a name="Replace" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.property.replace"></a>
 
 ```csharp
-public object Replace { get; set; }
+public bool|IResolvable Replace { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If false, headerValue is appended to any values that already exist for the header.
 
@@ -6384,7 +6384,7 @@ using HashiCorp.Cdktf.Providers.GoogleBeta;
 new GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd {
     string HeaderName,
     string HeaderValue,
-    object Replace
+    bool|IResolvable Replace
 };
 ```
 
@@ -6394,7 +6394,7 @@ new GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHead
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.property.headerName">HeaderName</a></code> | <code>string</code> | The name of the header. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.property.headerValue">HeaderValue</a></code> | <code>string</code> | The value of the header to add. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.property.replace">Replace</a></code> | <code>object</code> | If false, headerValue is appended to any values that already exist for the header. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.property.replace">Replace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If false, headerValue is appended to any values that already exist for the header. |
 
 ---
 
@@ -6429,10 +6429,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Replace`<sup>Required</sup> <a name="Replace" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.property.replace"></a>
 
 ```csharp
-public object Replace { get; set; }
+public bool|IResolvable Replace { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If false, headerValue is appended to any values that already exist for the header.
 
@@ -6451,9 +6451,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.GoogleBeta;
 
 new GoogleComputeUrlMapPathMatcherPathRuleUrlRedirect {
-    object StripQuery,
+    bool|IResolvable StripQuery,
     string HostRedirect = null,
-    object HttpsRedirect = null,
+    bool|IResolvable HttpsRedirect = null,
     string PathRedirect = null,
     string PrefixRedirect = null,
     string RedirectResponseCode = null
@@ -6464,9 +6464,9 @@ new GoogleComputeUrlMapPathMatcherPathRuleUrlRedirect {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleUrlRedirect.property.stripQuery">StripQuery</a></code> | <code>object</code> | If set to true, any accompanying query portion of the original URL is removed prior to redirecting the request. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleUrlRedirect.property.stripQuery">StripQuery</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If set to true, any accompanying query portion of the original URL is removed prior to redirecting the request. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleUrlRedirect.property.hostRedirect">HostRedirect</a></code> | <code>string</code> | The host that will be used in the redirect response instead of the one that was supplied in the request. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleUrlRedirect.property.httpsRedirect">HttpsRedirect</a></code> | <code>object</code> | If set to true, the URL scheme in the redirected request is set to https. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleUrlRedirect.property.httpsRedirect">HttpsRedirect</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If set to true, the URL scheme in the redirected request is set to https. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleUrlRedirect.property.pathRedirect">PathRedirect</a></code> | <code>string</code> | The path that will be used in the redirect response instead of the one that was supplied in the request. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleUrlRedirect.property.prefixRedirect">PrefixRedirect</a></code> | <code>string</code> | The prefix that replaces the prefixMatch specified in the HttpRouteRuleMatch, retaining the remaining portion of the URL before redirecting the request. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleUrlRedirect.property.redirectResponseCode">RedirectResponseCode</a></code> | <code>string</code> | The HTTP Status code to use for this RedirectAction. Supported values are:. |
@@ -6476,10 +6476,10 @@ new GoogleComputeUrlMapPathMatcherPathRuleUrlRedirect {
 ##### `StripQuery`<sup>Required</sup> <a name="StripQuery" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleUrlRedirect.property.stripQuery"></a>
 
 ```csharp
-public object StripQuery { get; set; }
+public bool|IResolvable StripQuery { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If set to true, any accompanying query portion of the original URL is removed prior to redirecting the request.
 
@@ -6511,10 +6511,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `HttpsRedirect`<sup>Optional</sup> <a name="HttpsRedirect" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleUrlRedirect.property.httpsRedirect"></a>
 
 ```csharp
-public object HttpsRedirect { get; set; }
+public bool|IResolvable HttpsRedirect { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If set to true, the URL scheme in the redirected request is set to https.
 
@@ -6598,9 +6598,9 @@ new GoogleComputeUrlMapPathMatcherRouteRules {
     double Priority,
     GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicy CustomErrorResponsePolicy = null,
     GoogleComputeUrlMapPathMatcherRouteRulesHeaderAction HeaderAction = null,
-    object HttpFilterConfigs = null,
-    object HttpFilterMetadata = null,
-    object MatchRules = null,
+    IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigs[] HttpFilterConfigs = null,
+    IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadata[] HttpFilterMetadata = null,
+    IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesMatchRules[] MatchRules = null,
     GoogleComputeUrlMapPathMatcherRouteRulesRouteAction RouteAction = null,
     string Service = null,
     GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirect UrlRedirect = null
@@ -6614,9 +6614,9 @@ new GoogleComputeUrlMapPathMatcherRouteRules {
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRules.property.priority">Priority</a></code> | <code>double</code> | For routeRules within a given pathMatcher, priority determines the order in which load balancer will interpret routeRules. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRules.property.customErrorResponsePolicy">CustomErrorResponsePolicy</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicy">GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicy</a></code> | custom_error_response_policy block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRules.property.headerAction">HeaderAction</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderAction">GoogleComputeUrlMapPathMatcherRouteRulesHeaderAction</a></code> | header_action block. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRules.property.httpFilterConfigs">HttpFilterConfigs</a></code> | <code>object</code> | http_filter_configs block. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRules.property.httpFilterMetadata">HttpFilterMetadata</a></code> | <code>object</code> | http_filter_metadata block. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRules.property.matchRules">MatchRules</a></code> | <code>object</code> | match_rules block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRules.property.httpFilterConfigs">HttpFilterConfigs</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigs">GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigs</a>[]</code> | http_filter_configs block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRules.property.httpFilterMetadata">HttpFilterMetadata</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadata">GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadata</a>[]</code> | http_filter_metadata block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRules.property.matchRules">MatchRules</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRules">GoogleComputeUrlMapPathMatcherRouteRulesMatchRules</a>[]</code> | match_rules block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRules.property.routeAction">RouteAction</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteAction">GoogleComputeUrlMapPathMatcherRouteRulesRouteAction</a></code> | route_action block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRules.property.service">Service</a></code> | <code>string</code> | The backend service resource to which traffic is directed if this rule is matched. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRules.property.urlRedirect">UrlRedirect</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirect">GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirect</a></code> | url_redirect block. |
@@ -6683,10 +6683,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `HttpFilterConfigs`<sup>Optional</sup> <a name="HttpFilterConfigs" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRules.property.httpFilterConfigs"></a>
 
 ```csharp
-public object HttpFilterConfigs { get; set; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigs[] HttpFilterConfigs { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigs">GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigs</a>[]
 
 http_filter_configs block.
 
@@ -6697,10 +6697,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `HttpFilterMetadata`<sup>Optional</sup> <a name="HttpFilterMetadata" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRules.property.httpFilterMetadata"></a>
 
 ```csharp
-public object HttpFilterMetadata { get; set; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadata[] HttpFilterMetadata { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadata">GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadata</a>[]
 
 http_filter_metadata block.
 
@@ -6711,10 +6711,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `MatchRules`<sup>Optional</sup> <a name="MatchRules" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRules.property.matchRules"></a>
 
 ```csharp
-public object MatchRules { get; set; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesMatchRules[] MatchRules { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRules">GoogleComputeUrlMapPathMatcherRouteRulesMatchRules</a>[]
 
 match_rules block.
 
@@ -6779,7 +6779,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.GoogleBeta;
 
 new GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicy {
-    object ErrorResponseRule = null,
+    IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRule[] ErrorResponseRule = null,
     string ErrorService = null
 };
 ```
@@ -6788,7 +6788,7 @@ new GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicy {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicy.property.errorResponseRule">ErrorResponseRule</a></code> | <code>object</code> | error_response_rule block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicy.property.errorResponseRule">ErrorResponseRule</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRule">GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRule</a>[]</code> | error_response_rule block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicy.property.errorService">ErrorService</a></code> | <code>string</code> | The full or partial URL to the BackendBucket resource that contains the custom error content. Examples are:. |
 
 ---
@@ -6796,10 +6796,10 @@ new GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicy {
 ##### `ErrorResponseRule`<sup>Optional</sup> <a name="ErrorResponseRule" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicy.property.errorResponseRule"></a>
 
 ```csharp
-public object ErrorResponseRule { get; set; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRule[] ErrorResponseRule { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRule">GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRule</a>[]
 
 error_response_rule block.
 
@@ -6915,9 +6915,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.GoogleBeta;
 
 new GoogleComputeUrlMapPathMatcherRouteRulesHeaderAction {
-    object RequestHeadersToAdd = null,
+    IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd[] RequestHeadersToAdd = null,
     string[] RequestHeadersToRemove = null,
-    object ResponseHeadersToAdd = null,
+    IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd[] ResponseHeadersToAdd = null,
     string[] ResponseHeadersToRemove = null
 };
 ```
@@ -6926,9 +6926,9 @@ new GoogleComputeUrlMapPathMatcherRouteRulesHeaderAction {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderAction.property.requestHeadersToAdd">RequestHeadersToAdd</a></code> | <code>object</code> | request_headers_to_add block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderAction.property.requestHeadersToAdd">RequestHeadersToAdd</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd</a>[]</code> | request_headers_to_add block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderAction.property.requestHeadersToRemove">RequestHeadersToRemove</a></code> | <code>string[]</code> | A list of header names for headers that need to be removed from the request prior to forwarding the request to the backendService. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderAction.property.responseHeadersToAdd">ResponseHeadersToAdd</a></code> | <code>object</code> | response_headers_to_add block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderAction.property.responseHeadersToAdd">ResponseHeadersToAdd</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd</a>[]</code> | response_headers_to_add block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderAction.property.responseHeadersToRemove">ResponseHeadersToRemove</a></code> | <code>string[]</code> | A list of header names for headers that need to be removed from the response prior to sending the response back to the client. |
 
 ---
@@ -6936,10 +6936,10 @@ new GoogleComputeUrlMapPathMatcherRouteRulesHeaderAction {
 ##### `RequestHeadersToAdd`<sup>Optional</sup> <a name="RequestHeadersToAdd" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderAction.property.requestHeadersToAdd"></a>
 
 ```csharp
-public object RequestHeadersToAdd { get; set; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd[] RequestHeadersToAdd { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd</a>[]
 
 request_headers_to_add block.
 
@@ -6964,10 +6964,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ResponseHeadersToAdd`<sup>Optional</sup> <a name="ResponseHeadersToAdd" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderAction.property.responseHeadersToAdd"></a>
 
 ```csharp
-public object ResponseHeadersToAdd { get; set; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd[] ResponseHeadersToAdd { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd</a>[]
 
 response_headers_to_add block.
 
@@ -6999,7 +6999,7 @@ using HashiCorp.Cdktf.Providers.GoogleBeta;
 new GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd {
     string HeaderName,
     string HeaderValue,
-    object Replace
+    bool|IResolvable Replace
 };
 ```
 
@@ -7009,7 +7009,7 @@ new GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd.property.headerName">HeaderName</a></code> | <code>string</code> | The name of the header. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd.property.headerValue">HeaderValue</a></code> | <code>string</code> | The value of the header to add. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd.property.replace">Replace</a></code> | <code>object</code> | If false, headerValue is appended to any values that already exist for the header. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd.property.replace">Replace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If false, headerValue is appended to any values that already exist for the header. |
 
 ---
 
@@ -7044,10 +7044,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Replace`<sup>Required</sup> <a name="Replace" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd.property.replace"></a>
 
 ```csharp
-public object Replace { get; set; }
+public bool|IResolvable Replace { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If false, headerValue is appended to any values that already exist for the header.
 
@@ -7068,7 +7068,7 @@ using HashiCorp.Cdktf.Providers.GoogleBeta;
 new GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd {
     string HeaderName,
     string HeaderValue,
-    object Replace
+    bool|IResolvable Replace
 };
 ```
 
@@ -7078,7 +7078,7 @@ new GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd.property.headerName">HeaderName</a></code> | <code>string</code> | The name of the header. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd.property.headerValue">HeaderValue</a></code> | <code>string</code> | The value of the header to add. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd.property.replace">Replace</a></code> | <code>object</code> | If false, headerValue is appended to any values that already exist for the header. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd.property.replace">Replace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If false, headerValue is appended to any values that already exist for the header. |
 
 ---
 
@@ -7113,10 +7113,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Replace`<sup>Required</sup> <a name="Replace" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd.property.replace"></a>
 
 ```csharp
-public object Replace { get; set; }
+public bool|IResolvable Replace { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If false, headerValue is appended to any values that already exist for the header.
 
@@ -7268,12 +7268,12 @@ using HashiCorp.Cdktf.Providers.GoogleBeta;
 
 new GoogleComputeUrlMapPathMatcherRouteRulesMatchRules {
     string FullPathMatch = null,
-    object HeaderMatches = null,
-    object IgnoreCase = null,
-    object MetadataFilters = null,
+    IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches[] HeaderMatches = null,
+    bool|IResolvable IgnoreCase = null,
+    IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters[] MetadataFilters = null,
     string PathTemplateMatch = null,
     string PrefixMatch = null,
-    object QueryParameterMatches = null,
+    IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches[] QueryParameterMatches = null,
     string RegexMatch = null
 };
 ```
@@ -7283,12 +7283,12 @@ new GoogleComputeUrlMapPathMatcherRouteRulesMatchRules {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRules.property.fullPathMatch">FullPathMatch</a></code> | <code>string</code> | For satisfying the matchRule condition, the path of the request must exactly match the value specified in fullPathMatch after removing any query parameters and anchor that may be part of the original URL. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRules.property.headerMatches">HeaderMatches</a></code> | <code>object</code> | header_matches block. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRules.property.ignoreCase">IgnoreCase</a></code> | <code>object</code> | Specifies that prefixMatch and fullPathMatch matches are case sensitive. Defaults to false. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRules.property.metadataFilters">MetadataFilters</a></code> | <code>object</code> | metadata_filters block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRules.property.headerMatches">HeaderMatches</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches</a>[]</code> | header_matches block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRules.property.ignoreCase">IgnoreCase</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies that prefixMatch and fullPathMatch matches are case sensitive. Defaults to false. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRules.property.metadataFilters">MetadataFilters</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters</a>[]</code> | metadata_filters block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRules.property.pathTemplateMatch">PathTemplateMatch</a></code> | <code>string</code> | For satisfying the matchRule condition, the path of the request must match the wildcard pattern specified in pathTemplateMatch after removing any query parameters and anchor that may be part of the original URL. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRules.property.prefixMatch">PrefixMatch</a></code> | <code>string</code> | For satisfying the matchRule condition, the request's path must begin with the specified prefixMatch. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRules.property.queryParameterMatches">QueryParameterMatches</a></code> | <code>object</code> | query_parameter_matches block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRules.property.queryParameterMatches">QueryParameterMatches</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches</a>[]</code> | query_parameter_matches block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRules.property.regexMatch">RegexMatch</a></code> | <code>string</code> | For satisfying the matchRule condition, the path of the request must satisfy the regular expression specified in regexMatch after removing any query parameters and anchor supplied with the original URL. |
 
 ---
@@ -7314,10 +7314,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `HeaderMatches`<sup>Optional</sup> <a name="HeaderMatches" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRules.property.headerMatches"></a>
 
 ```csharp
-public object HeaderMatches { get; set; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches[] HeaderMatches { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches</a>[]
 
 header_matches block.
 
@@ -7328,10 +7328,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `IgnoreCase`<sup>Optional</sup> <a name="IgnoreCase" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRules.property.ignoreCase"></a>
 
 ```csharp
-public object IgnoreCase { get; set; }
+public bool|IResolvable IgnoreCase { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies that prefixMatch and fullPathMatch matches are case sensitive. Defaults to false.
 
@@ -7342,10 +7342,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `MetadataFilters`<sup>Optional</sup> <a name="MetadataFilters" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRules.property.metadataFilters"></a>
 
 ```csharp
-public object MetadataFilters { get; set; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters[] MetadataFilters { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters</a>[]
 
 metadata_filters block.
 
@@ -7393,10 +7393,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `QueryParameterMatches`<sup>Optional</sup> <a name="QueryParameterMatches" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRules.property.queryParameterMatches"></a>
 
 ```csharp
-public object QueryParameterMatches { get; set; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches[] QueryParameterMatches { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches</a>[]
 
 query_parameter_matches block.
 
@@ -7432,9 +7432,9 @@ using HashiCorp.Cdktf.Providers.GoogleBeta;
 new GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches {
     string HeaderName,
     string ExactMatch = null,
-    object InvertMatch = null,
+    bool|IResolvable InvertMatch = null,
     string PrefixMatch = null,
-    object PresentMatch = null,
+    bool|IResolvable PresentMatch = null,
     GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatch RangeMatch = null,
     string RegexMatch = null,
     string SuffixMatch = null
@@ -7447,9 +7447,9 @@ new GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches.property.headerName">HeaderName</a></code> | <code>string</code> | The name of the HTTP header to match. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches.property.exactMatch">ExactMatch</a></code> | <code>string</code> | The value should exactly match contents of exactMatch. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches.property.invertMatch">InvertMatch</a></code> | <code>object</code> | If set to false, the headerMatch is considered a match if the match criteria above are met. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches.property.invertMatch">InvertMatch</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If set to false, the headerMatch is considered a match if the match criteria above are met. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches.property.prefixMatch">PrefixMatch</a></code> | <code>string</code> | The value of the header must start with the contents of prefixMatch. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches.property.presentMatch">PresentMatch</a></code> | <code>object</code> | A header with the contents of headerName must exist. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches.property.presentMatch">PresentMatch</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | A header with the contents of headerName must exist. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches.property.rangeMatch">RangeMatch</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatch">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatch</a></code> | range_match block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches.property.regexMatch">RegexMatch</a></code> | <code>string</code> | The value of the header must match the regular expression specified in regexMatch. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches.property.suffixMatch">SuffixMatch</a></code> | <code>string</code> | The value of the header must end with the contents of suffixMatch. |
@@ -7494,10 +7494,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `InvertMatch`<sup>Optional</sup> <a name="InvertMatch" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches.property.invertMatch"></a>
 
 ```csharp
-public object InvertMatch { get; set; }
+public bool|IResolvable InvertMatch { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If set to false, the headerMatch is considered a match if the match criteria above are met.
 
@@ -7529,10 +7529,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `PresentMatch`<sup>Optional</sup> <a name="PresentMatch" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches.property.presentMatch"></a>
 
 ```csharp
-public object PresentMatch { get; set; }
+public bool|IResolvable PresentMatch { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 A header with the contents of headerName must exist.
 
@@ -7655,7 +7655,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.GoogleBeta;
 
 new GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters {
-    object FilterLabels,
+    IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels[] FilterLabels,
     string FilterMatchCriteria
 };
 ```
@@ -7664,7 +7664,7 @@ new GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters.property.filterLabels">FilterLabels</a></code> | <code>object</code> | filter_labels block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters.property.filterLabels">FilterLabels</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels</a>[]</code> | filter_labels block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters.property.filterMatchCriteria">FilterMatchCriteria</a></code> | <code>string</code> | Specifies how individual filterLabel matches within the list of filterLabels contribute towards the overall metadataFilter match. |
 
 ---
@@ -7672,10 +7672,10 @@ new GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters {
 ##### `FilterLabels`<sup>Required</sup> <a name="FilterLabels" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters.property.filterLabels"></a>
 
 ```csharp
-public object FilterLabels { get; set; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels[] FilterLabels { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels</a>[]
 
 filter_labels block.
 
@@ -7767,7 +7767,7 @@ using HashiCorp.Cdktf.Providers.GoogleBeta;
 new GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches {
     string Name,
     string ExactMatch = null,
-    object PresentMatch = null,
+    bool|IResolvable PresentMatch = null,
     string RegexMatch = null
 };
 ```
@@ -7778,7 +7778,7 @@ new GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches.property.name">Name</a></code> | <code>string</code> | The name of the query parameter to match. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches.property.exactMatch">ExactMatch</a></code> | <code>string</code> | The queryParameterMatch matches if the value of the parameter exactly matches the contents of exactMatch. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches.property.presentMatch">PresentMatch</a></code> | <code>object</code> | Specifies that the queryParameterMatch matches if the request contains the query parameter, irrespective of whether the parameter has a value or not. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches.property.presentMatch">PresentMatch</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies that the queryParameterMatch matches if the request contains the query parameter, irrespective of whether the parameter has a value or not. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches.property.regexMatch">RegexMatch</a></code> | <code>string</code> | The queryParameterMatch matches if the value of the parameter matches the regular expression specified by regexMatch. |
 
 ---
@@ -7820,10 +7820,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `PresentMatch`<sup>Optional</sup> <a name="PresentMatch" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches.property.presentMatch"></a>
 
 ```csharp
-public object PresentMatch { get; set; }
+public bool|IResolvable PresentMatch { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies that the queryParameterMatch matches if the request contains the query parameter, irrespective of whether the parameter has a value or not.
 
@@ -7867,7 +7867,7 @@ new GoogleComputeUrlMapPathMatcherRouteRulesRouteAction {
     GoogleComputeUrlMapPathMatcherRouteRulesRouteActionRetryPolicy RetryPolicy = null,
     GoogleComputeUrlMapPathMatcherRouteRulesRouteActionTimeout Timeout = null,
     GoogleComputeUrlMapPathMatcherRouteRulesRouteActionUrlRewrite UrlRewrite = null,
-    object WeightedBackendServices = null
+    IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices[] WeightedBackendServices = null
 };
 ```
 
@@ -7882,7 +7882,7 @@ new GoogleComputeUrlMapPathMatcherRouteRulesRouteAction {
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteAction.property.retryPolicy">RetryPolicy</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionRetryPolicy">GoogleComputeUrlMapPathMatcherRouteRulesRouteActionRetryPolicy</a></code> | retry_policy block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteAction.property.timeout">Timeout</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionTimeout">GoogleComputeUrlMapPathMatcherRouteRulesRouteActionTimeout</a></code> | timeout block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteAction.property.urlRewrite">UrlRewrite</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionUrlRewrite">GoogleComputeUrlMapPathMatcherRouteRulesRouteActionUrlRewrite</a></code> | url_rewrite block. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteAction.property.weightedBackendServices">WeightedBackendServices</a></code> | <code>object</code> | weighted_backend_services block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteAction.property.weightedBackendServices">WeightedBackendServices</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices">GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices</a>[]</code> | weighted_backend_services block. |
 
 ---
 
@@ -7987,10 +7987,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `WeightedBackendServices`<sup>Optional</sup> <a name="WeightedBackendServices" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteAction.property.weightedBackendServices"></a>
 
 ```csharp
-public object WeightedBackendServices { get; set; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices[] WeightedBackendServices { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices">GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices</a>[]
 
 weighted_backend_services block.
 
@@ -8006,12 +8006,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.GoogleBeta;
 
 new GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicy {
-    object AllowCredentials = null,
+    bool|IResolvable AllowCredentials = null,
     string[] AllowHeaders = null,
     string[] AllowMethods = null,
     string[] AllowOriginRegexes = null,
     string[] AllowOrigins = null,
-    object Disabled = null,
+    bool|IResolvable Disabled = null,
     string[] ExposeHeaders = null,
     double MaxAge = null
 };
@@ -8021,12 +8021,12 @@ new GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicy {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicy.property.allowCredentials">AllowCredentials</a></code> | <code>object</code> | In response to a preflight request, setting this to true indicates that the actual request can include user credentials. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicy.property.allowCredentials">AllowCredentials</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | In response to a preflight request, setting this to true indicates that the actual request can include user credentials. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicy.property.allowHeaders">AllowHeaders</a></code> | <code>string[]</code> | Specifies the content for the Access-Control-Allow-Headers header. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicy.property.allowMethods">AllowMethods</a></code> | <code>string[]</code> | Specifies the content for the Access-Control-Allow-Methods header. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicy.property.allowOriginRegexes">AllowOriginRegexes</a></code> | <code>string[]</code> | Specifies the regular expression patterns that match allowed origins. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicy.property.allowOrigins">AllowOrigins</a></code> | <code>string[]</code> | Specifies the list of origins that will be allowed to do CORS requests. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicy.property.disabled">Disabled</a></code> | <code>object</code> | If true, specifies the CORS policy is disabled. which indicates that the CORS policy is in effect. Defaults to false. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicy.property.disabled">Disabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If true, specifies the CORS policy is disabled. which indicates that the CORS policy is in effect. Defaults to false. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicy.property.exposeHeaders">ExposeHeaders</a></code> | <code>string[]</code> | Specifies the content for the Access-Control-Expose-Headers header. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicy.property.maxAge">MaxAge</a></code> | <code>double</code> | Specifies how long the results of a preflight request can be cached. |
 
@@ -8035,10 +8035,10 @@ new GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicy {
 ##### `AllowCredentials`<sup>Optional</sup> <a name="AllowCredentials" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicy.property.allowCredentials"></a>
 
 ```csharp
-public object AllowCredentials { get; set; }
+public bool|IResolvable AllowCredentials { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 In response to a preflight request, setting this to true indicates that the actual request can include user credentials.
 
@@ -8115,10 +8115,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Disabled`<sup>Optional</sup> <a name="Disabled" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicy.property.disabled"></a>
 
 ```csharp
-public object Disabled { get; set; }
+public bool|IResolvable Disabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If true, specifies the CORS policy is disabled. which indicates that the CORS policy is in effect. Defaults to false.
 
@@ -8832,9 +8832,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.GoogleBeta;
 
 new GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction {
-    object RequestHeadersToAdd = null,
+    IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] RequestHeadersToAdd = null,
     string[] RequestHeadersToRemove = null,
-    object ResponseHeadersToAdd = null,
+    IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] ResponseHeadersToAdd = null,
     string[] ResponseHeadersToRemove = null
 };
 ```
@@ -8843,9 +8843,9 @@ new GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction.property.requestHeadersToAdd">RequestHeadersToAdd</a></code> | <code>object</code> | request_headers_to_add block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction.property.requestHeadersToAdd">RequestHeadersToAdd</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]</code> | request_headers_to_add block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction.property.requestHeadersToRemove">RequestHeadersToRemove</a></code> | <code>string[]</code> | A list of header names for headers that need to be removed from the request prior to forwarding the request to the backendService. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction.property.responseHeadersToAdd">ResponseHeadersToAdd</a></code> | <code>object</code> | response_headers_to_add block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction.property.responseHeadersToAdd">ResponseHeadersToAdd</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]</code> | response_headers_to_add block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction.property.responseHeadersToRemove">ResponseHeadersToRemove</a></code> | <code>string[]</code> | A list of header names for headers that need to be removed from the response prior to sending the response back to the client. |
 
 ---
@@ -8853,10 +8853,10 @@ new GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHe
 ##### `RequestHeadersToAdd`<sup>Optional</sup> <a name="RequestHeadersToAdd" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction.property.requestHeadersToAdd"></a>
 
 ```csharp
-public object RequestHeadersToAdd { get; set; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] RequestHeadersToAdd { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
 
 request_headers_to_add block.
 
@@ -8881,10 +8881,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ResponseHeadersToAdd`<sup>Optional</sup> <a name="ResponseHeadersToAdd" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction.property.responseHeadersToAdd"></a>
 
 ```csharp
-public object ResponseHeadersToAdd { get; set; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] ResponseHeadersToAdd { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
 
 response_headers_to_add block.
 
@@ -8916,7 +8916,7 @@ using HashiCorp.Cdktf.Providers.GoogleBeta;
 new GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd {
     string HeaderName,
     string HeaderValue,
-    object Replace
+    bool|IResolvable Replace
 };
 ```
 
@@ -8926,7 +8926,7 @@ new GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHe
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.property.headerName">HeaderName</a></code> | <code>string</code> | The name of the header. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.property.headerValue">HeaderValue</a></code> | <code>string</code> | The value of the header to add. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.property.replace">Replace</a></code> | <code>object</code> | If false, headerValue is appended to any values that already exist for the header. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.property.replace">Replace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If false, headerValue is appended to any values that already exist for the header. |
 
 ---
 
@@ -8961,10 +8961,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Replace`<sup>Required</sup> <a name="Replace" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.property.replace"></a>
 
 ```csharp
-public object Replace { get; set; }
+public bool|IResolvable Replace { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If false, headerValue is appended to any values that already exist for the header.
 
@@ -8985,7 +8985,7 @@ using HashiCorp.Cdktf.Providers.GoogleBeta;
 new GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd {
     string HeaderName,
     string HeaderValue,
-    object Replace
+    bool|IResolvable Replace
 };
 ```
 
@@ -8995,7 +8995,7 @@ new GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHe
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.property.headerName">HeaderName</a></code> | <code>string</code> | The name of the header. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.property.headerValue">HeaderValue</a></code> | <code>string</code> | The value of the header to add. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.property.replace">Replace</a></code> | <code>object</code> | If false, headerValue is appended to any values that already exist for the header. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.property.replace">Replace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If false, headerValue is appended to any values that already exist for the header. |
 
 ---
 
@@ -9030,10 +9030,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Replace`<sup>Required</sup> <a name="Replace" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.property.replace"></a>
 
 ```csharp
-public object Replace { get; set; }
+public bool|IResolvable Replace { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If false, headerValue is appended to any values that already exist for the header.
 
@@ -9053,11 +9053,11 @@ using HashiCorp.Cdktf.Providers.GoogleBeta;
 
 new GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirect {
     string HostRedirect = null,
-    object HttpsRedirect = null,
+    bool|IResolvable HttpsRedirect = null,
     string PathRedirect = null,
     string PrefixRedirect = null,
     string RedirectResponseCode = null,
-    object StripQuery = null
+    bool|IResolvable StripQuery = null
 };
 ```
 
@@ -9066,11 +9066,11 @@ new GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirect {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirect.property.hostRedirect">HostRedirect</a></code> | <code>string</code> | The host that will be used in the redirect response instead of the one that was supplied in the request. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirect.property.httpsRedirect">HttpsRedirect</a></code> | <code>object</code> | If set to true, the URL scheme in the redirected request is set to https. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirect.property.httpsRedirect">HttpsRedirect</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If set to true, the URL scheme in the redirected request is set to https. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirect.property.pathRedirect">PathRedirect</a></code> | <code>string</code> | The path that will be used in the redirect response instead of the one that was supplied in the request. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirect.property.prefixRedirect">PrefixRedirect</a></code> | <code>string</code> | The prefix that replaces the prefixMatch specified in the HttpRouteRuleMatch, retaining the remaining portion of the URL before redirecting the request. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirect.property.redirectResponseCode">RedirectResponseCode</a></code> | <code>string</code> | The HTTP Status code to use for this RedirectAction. Supported values are:. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirect.property.stripQuery">StripQuery</a></code> | <code>object</code> | If set to true, any accompanying query portion of the original URL is removed prior to redirecting the request. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirect.property.stripQuery">StripQuery</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If set to true, any accompanying query portion of the original URL is removed prior to redirecting the request. |
 
 ---
 
@@ -9093,10 +9093,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `HttpsRedirect`<sup>Optional</sup> <a name="HttpsRedirect" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirect.property.httpsRedirect"></a>
 
 ```csharp
-public object HttpsRedirect { get; set; }
+public bool|IResolvable HttpsRedirect { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If set to true, the URL scheme in the redirected request is set to https.
 
@@ -9163,10 +9163,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `StripQuery`<sup>Optional</sup> <a name="StripQuery" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirect.property.stripQuery"></a>
 
 ```csharp
-public object StripQuery { get; set; }
+public bool|IResolvable StripQuery { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If set to true, any accompanying query portion of the original URL is removed prior to redirecting the request.
 
@@ -9190,7 +9190,7 @@ new GoogleComputeUrlMapTest {
     string Description = null,
     string ExpectedOutputUrl = null,
     double ExpectedRedirectResponseCode = null,
-    object Headers = null,
+    IResolvable|GoogleComputeUrlMapTestHeaders[] Headers = null,
     string Service = null
 };
 ```
@@ -9204,7 +9204,7 @@ new GoogleComputeUrlMapTest {
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTest.property.description">Description</a></code> | <code>string</code> | Description of this test case. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTest.property.expectedOutputUrl">ExpectedOutputUrl</a></code> | <code>string</code> | The expected output URL evaluated by the load balancer containing the scheme, host, path and query parameters. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTest.property.expectedRedirectResponseCode">ExpectedRedirectResponseCode</a></code> | <code>double</code> | For rules with urlRedirect, the test passes only if expectedRedirectResponseCode matches the HTTP status code in load balancer's redirect response. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTest.property.headers">Headers</a></code> | <code>object</code> | headers block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTest.property.headers">Headers</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestHeaders">GoogleComputeUrlMapTestHeaders</a>[]</code> | headers block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTest.property.service">Service</a></code> | <code>string</code> | The backend service or backend bucket link that should be matched by this test. |
 
 ---
@@ -9290,10 +9290,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Headers`<sup>Optional</sup> <a name="Headers" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTest.property.headers"></a>
 
 ```csharp
-public object Headers { get; set; }
+public IResolvable|GoogleComputeUrlMapTestHeaders[] Headers { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestHeaders">GoogleComputeUrlMapTestHeaders</a>[]
 
 headers block.
 
@@ -9548,7 +9548,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRule">GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRule</a>[]</code> | *No description.* |
 
 ---
 
@@ -9579,10 +9579,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRule[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRule">GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRule</a>[]
 
 ---
 
@@ -9842,7 +9842,7 @@ private void ResetPath()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference.property.matchResponseCodes">MatchResponseCodes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference.property.overrideResponseCode">OverrideResponseCode</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference.property.path">Path</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRule">GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRule</a></code> | *No description.* |
 
 ---
 
@@ -9933,10 +9933,10 @@ public string Path { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRule InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRule">GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRule</a>
 
 ---
 
@@ -10150,12 +10150,12 @@ Returns a reversible string representation.
 ##### `PutErrorResponseRule` <a name="PutErrorResponseRule" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicyOutputReference.putErrorResponseRule"></a>
 
 ```csharp
-private void PutErrorResponseRule(object Value)
+private void PutErrorResponseRule(IResolvable|GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRule[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicyOutputReference.putErrorResponseRule.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRule">GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRule</a>[]
 
 ---
 
@@ -10179,7 +10179,7 @@ private void ResetErrorService()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicyOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicyOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicyOutputReference.property.errorResponseRule">ErrorResponseRule</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleList">GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicyOutputReference.property.errorResponseRuleInput">ErrorResponseRuleInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicyOutputReference.property.errorResponseRuleInput">ErrorResponseRuleInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRule">GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRule</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicyOutputReference.property.errorServiceInput">ErrorServiceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicyOutputReference.property.errorService">ErrorService</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicyOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicy">GoogleComputeUrlMapDefaultCustomErrorResponsePolicy</a></code> | *No description.* |
@@ -10223,10 +10223,10 @@ public GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleList 
 ##### `ErrorResponseRuleInput`<sup>Optional</sup> <a name="ErrorResponseRuleInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicyOutputReference.property.errorResponseRuleInput"></a>
 
 ```csharp
-public object ErrorResponseRuleInput { get; }
+public IResolvable|GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRule[] ErrorResponseRuleInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRule">GoogleComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRule</a>[]
 
 ---
 
@@ -10527,20 +10527,20 @@ private void ResetMaxAge()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReference.property.allowCredentialsInput">AllowCredentialsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReference.property.allowCredentialsInput">AllowCredentialsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReference.property.allowHeadersInput">AllowHeadersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReference.property.allowMethodsInput">AllowMethodsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReference.property.allowOriginRegexesInput">AllowOriginRegexesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReference.property.allowOriginsInput">AllowOriginsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReference.property.disabledInput">DisabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReference.property.disabledInput">DisabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReference.property.exposeHeadersInput">ExposeHeadersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReference.property.maxAgeInput">MaxAgeInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReference.property.allowCredentials">AllowCredentials</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReference.property.allowCredentials">AllowCredentials</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReference.property.allowHeaders">AllowHeaders</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReference.property.allowMethods">AllowMethods</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReference.property.allowOriginRegexes">AllowOriginRegexes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReference.property.allowOrigins">AllowOrigins</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReference.property.disabled">Disabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReference.property.disabled">Disabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReference.property.exposeHeaders">ExposeHeaders</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReference.property.maxAge">MaxAge</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicy">GoogleComputeUrlMapDefaultRouteActionCorsPolicy</a></code> | *No description.* |
@@ -10574,10 +10574,10 @@ public string Fqn { get; }
 ##### `AllowCredentialsInput`<sup>Optional</sup> <a name="AllowCredentialsInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReference.property.allowCredentialsInput"></a>
 
 ```csharp
-public object AllowCredentialsInput { get; }
+public bool|IResolvable AllowCredentialsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -10624,10 +10624,10 @@ public string[] AllowOriginsInput { get; }
 ##### `DisabledInput`<sup>Optional</sup> <a name="DisabledInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReference.property.disabledInput"></a>
 
 ```csharp
-public object DisabledInput { get; }
+public bool|IResolvable DisabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -10654,10 +10654,10 @@ public double MaxAgeInput { get; }
 ##### `AllowCredentials`<sup>Required</sup> <a name="AllowCredentials" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReference.property.allowCredentials"></a>
 
 ```csharp
-public object AllowCredentials { get; }
+public bool|IResolvable AllowCredentials { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -10704,10 +10704,10 @@ public string[] AllowOrigins { get; }
 ##### `Disabled`<sup>Required</sup> <a name="Disabled" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReference.property.disabled"></a>
 
 ```csharp
-public object Disabled { get; }
+public bool|IResolvable Disabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -12615,12 +12615,12 @@ private void PutUrlRewrite(GoogleComputeUrlMapDefaultRouteActionUrlRewrite Value
 ##### `PutWeightedBackendServices` <a name="PutWeightedBackendServices" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionOutputReference.putWeightedBackendServices"></a>
 
 ```csharp
-private void PutWeightedBackendServices(object Value)
+private void PutWeightedBackendServices(IResolvable|GoogleComputeUrlMapDefaultRouteActionWeightedBackendServices[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionOutputReference.putWeightedBackendServices.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServices">GoogleComputeUrlMapDefaultRouteActionWeightedBackendServices</a>[]
 
 ---
 
@@ -12694,7 +12694,7 @@ private void ResetWeightedBackendServices()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionOutputReference.property.retryPolicyInput">RetryPolicyInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionRetryPolicy">GoogleComputeUrlMapDefaultRouteActionRetryPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionOutputReference.property.timeoutInput">TimeoutInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionTimeout">GoogleComputeUrlMapDefaultRouteActionTimeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionOutputReference.property.urlRewriteInput">UrlRewriteInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionUrlRewrite">GoogleComputeUrlMapDefaultRouteActionUrlRewrite</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionOutputReference.property.weightedBackendServicesInput">WeightedBackendServicesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionOutputReference.property.weightedBackendServicesInput">WeightedBackendServicesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServices">GoogleComputeUrlMapDefaultRouteActionWeightedBackendServices</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteAction">GoogleComputeUrlMapDefaultRouteAction</a></code> | *No description.* |
 
 ---
@@ -12876,10 +12876,10 @@ public GoogleComputeUrlMapDefaultRouteActionUrlRewrite UrlRewriteInput { get; }
 ##### `WeightedBackendServicesInput`<sup>Optional</sup> <a name="WeightedBackendServicesInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionOutputReference.property.weightedBackendServicesInput"></a>
 
 ```csharp
-public object WeightedBackendServicesInput { get; }
+public IResolvable|GoogleComputeUrlMapDefaultRouteActionWeightedBackendServices[] WeightedBackendServicesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServices">GoogleComputeUrlMapDefaultRouteActionWeightedBackendServices</a>[]
 
 ---
 
@@ -14676,24 +14676,24 @@ Returns a reversible string representation.
 ##### `PutRequestHeadersToAdd` <a name="PutRequestHeadersToAdd" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.putRequestHeadersToAdd"></a>
 
 ```csharp
-private void PutRequestHeadersToAdd(object Value)
+private void PutRequestHeadersToAdd(IResolvable|GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.putRequestHeadersToAdd.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
 
 ---
 
 ##### `PutResponseHeadersToAdd` <a name="PutResponseHeadersToAdd" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.putResponseHeadersToAdd"></a>
 
 ```csharp
-private void PutResponseHeadersToAdd(object Value)
+private void PutResponseHeadersToAdd(IResolvable|GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.putResponseHeadersToAdd.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
 
 ---
 
@@ -14730,9 +14730,9 @@ private void ResetResponseHeadersToRemove()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToAdd">RequestHeadersToAdd</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList">GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToAdd">ResponseHeadersToAdd</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList">GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToAddInput">RequestHeadersToAddInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToAddInput">RequestHeadersToAddInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToRemoveInput">RequestHeadersToRemoveInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToAddInput">ResponseHeadersToAddInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToAddInput">ResponseHeadersToAddInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToRemoveInput">ResponseHeadersToRemoveInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToRemove">RequestHeadersToRemove</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToRemove">ResponseHeadersToRemove</a></code> | <code>string[]</code> | *No description.* |
@@ -14787,10 +14787,10 @@ public GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionR
 ##### `RequestHeadersToAddInput`<sup>Optional</sup> <a name="RequestHeadersToAddInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToAddInput"></a>
 
 ```csharp
-public object RequestHeadersToAddInput { get; }
+public IResolvable|GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] RequestHeadersToAddInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
 
 ---
 
@@ -14807,10 +14807,10 @@ public string[] RequestHeadersToRemoveInput { get; }
 ##### `ResponseHeadersToAddInput`<sup>Optional</sup> <a name="ResponseHeadersToAddInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToAddInput"></a>
 
 ```csharp
-public object ResponseHeadersToAddInput { get; }
+public IResolvable|GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] ResponseHeadersToAddInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
 
 ---
 
@@ -14976,7 +14976,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]</code> | *No description.* |
 
 ---
 
@@ -15007,10 +15007,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
 
 ---
 
@@ -15266,11 +15266,11 @@ private void ResetReplace()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.headerNameInput">HeaderNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.headerValueInput">HeaderValueInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replaceInput">ReplaceInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replaceInput">ReplaceInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.headerName">HeaderName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.headerValue">HeaderValue</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replace">Replace</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replace">Replace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a></code> | *No description.* |
 
 ---
 
@@ -15321,10 +15321,10 @@ public string HeaderValueInput { get; }
 ##### `ReplaceInput`<sup>Optional</sup> <a name="ReplaceInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replaceInput"></a>
 
 ```csharp
-public object ReplaceInput { get; }
+public bool|IResolvable ReplaceInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -15351,20 +15351,20 @@ public string HeaderValue { get; }
 ##### `Replace`<sup>Required</sup> <a name="Replace" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replace"></a>
 
 ```csharp
-public object Replace { get; }
+public bool|IResolvable Replace { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>
 
 ---
 
@@ -15490,7 +15490,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]</code> | *No description.* |
 
 ---
 
@@ -15521,10 +15521,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
 
 ---
 
@@ -15780,11 +15780,11 @@ private void ResetReplace()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.headerNameInput">HeaderNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.headerValueInput">HeaderValueInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replaceInput">ReplaceInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replaceInput">ReplaceInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.headerName">HeaderName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.headerValue">HeaderValue</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replace">Replace</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replace">Replace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a></code> | *No description.* |
 
 ---
 
@@ -15835,10 +15835,10 @@ public string HeaderValueInput { get; }
 ##### `ReplaceInput`<sup>Optional</sup> <a name="ReplaceInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replaceInput"></a>
 
 ```csharp
-public object ReplaceInput { get; }
+public bool|IResolvable ReplaceInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -15865,20 +15865,20 @@ public string HeaderValue { get; }
 ##### `Replace`<sup>Required</sup> <a name="Replace" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replace"></a>
 
 ```csharp
-public object Replace { get; }
+public bool|IResolvable Replace { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>
 
 ---
 
@@ -16004,7 +16004,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServices">GoogleComputeUrlMapDefaultRouteActionWeightedBackendServices</a>[]</code> | *No description.* |
 
 ---
 
@@ -16035,10 +16035,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapDefaultRouteActionWeightedBackendServices[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServices">GoogleComputeUrlMapDefaultRouteActionWeightedBackendServices</a>[]
 
 ---
 
@@ -16311,7 +16311,7 @@ private void ResetWeight()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesOutputReference.property.weightInput">WeightInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesOutputReference.property.backendService">BackendService</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesOutputReference.property.weight">Weight</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServices">GoogleComputeUrlMapDefaultRouteActionWeightedBackendServices</a></code> | *No description.* |
 
 ---
 
@@ -16402,10 +16402,10 @@ public double Weight { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapDefaultRouteActionWeightedBackendServices InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionWeightedBackendServices">GoogleComputeUrlMapDefaultRouteActionWeightedBackendServices</a>
 
 ---
 
@@ -16656,17 +16656,17 @@ private void ResetRedirectResponseCode()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultUrlRedirectOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultUrlRedirectOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultUrlRedirectOutputReference.property.hostRedirectInput">HostRedirectInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultUrlRedirectOutputReference.property.httpsRedirectInput">HttpsRedirectInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultUrlRedirectOutputReference.property.httpsRedirectInput">HttpsRedirectInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultUrlRedirectOutputReference.property.pathRedirectInput">PathRedirectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultUrlRedirectOutputReference.property.prefixRedirectInput">PrefixRedirectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultUrlRedirectOutputReference.property.redirectResponseCodeInput">RedirectResponseCodeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultUrlRedirectOutputReference.property.stripQueryInput">StripQueryInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultUrlRedirectOutputReference.property.stripQueryInput">StripQueryInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultUrlRedirectOutputReference.property.hostRedirect">HostRedirect</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultUrlRedirectOutputReference.property.httpsRedirect">HttpsRedirect</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultUrlRedirectOutputReference.property.httpsRedirect">HttpsRedirect</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultUrlRedirectOutputReference.property.pathRedirect">PathRedirect</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultUrlRedirectOutputReference.property.prefixRedirect">PrefixRedirect</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultUrlRedirectOutputReference.property.redirectResponseCode">RedirectResponseCode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultUrlRedirectOutputReference.property.stripQuery">StripQuery</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultUrlRedirectOutputReference.property.stripQuery">StripQuery</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultUrlRedirectOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultUrlRedirect">GoogleComputeUrlMapDefaultUrlRedirect</a></code> | *No description.* |
 
 ---
@@ -16708,10 +16708,10 @@ public string HostRedirectInput { get; }
 ##### `HttpsRedirectInput`<sup>Optional</sup> <a name="HttpsRedirectInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultUrlRedirectOutputReference.property.httpsRedirectInput"></a>
 
 ```csharp
-public object HttpsRedirectInput { get; }
+public bool|IResolvable HttpsRedirectInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -16748,10 +16748,10 @@ public string RedirectResponseCodeInput { get; }
 ##### `StripQueryInput`<sup>Optional</sup> <a name="StripQueryInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultUrlRedirectOutputReference.property.stripQueryInput"></a>
 
 ```csharp
-public object StripQueryInput { get; }
+public bool|IResolvable StripQueryInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -16768,10 +16768,10 @@ public string HostRedirect { get; }
 ##### `HttpsRedirect`<sup>Required</sup> <a name="HttpsRedirect" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultUrlRedirectOutputReference.property.httpsRedirect"></a>
 
 ```csharp
-public object HttpsRedirect { get; }
+public bool|IResolvable HttpsRedirect { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -16808,10 +16808,10 @@ public string RedirectResponseCode { get; }
 ##### `StripQuery`<sup>Required</sup> <a name="StripQuery" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultUrlRedirectOutputReference.property.stripQuery"></a>
 
 ```csharp
-public object StripQuery { get; }
+public bool|IResolvable StripQuery { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -17038,24 +17038,24 @@ Returns a reversible string representation.
 ##### `PutRequestHeadersToAdd` <a name="PutRequestHeadersToAdd" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionOutputReference.putRequestHeadersToAdd"></a>
 
 ```csharp
-private void PutRequestHeadersToAdd(object Value)
+private void PutRequestHeadersToAdd(IResolvable|GoogleComputeUrlMapHeaderActionRequestHeadersToAdd[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionOutputReference.putRequestHeadersToAdd.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapHeaderActionRequestHeadersToAdd</a>[]
 
 ---
 
 ##### `PutResponseHeadersToAdd` <a name="PutResponseHeadersToAdd" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionOutputReference.putResponseHeadersToAdd"></a>
 
 ```csharp
-private void PutResponseHeadersToAdd(object Value)
+private void PutResponseHeadersToAdd(IResolvable|GoogleComputeUrlMapHeaderActionResponseHeadersToAdd[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionOutputReference.putResponseHeadersToAdd.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapHeaderActionResponseHeadersToAdd</a>[]
 
 ---
 
@@ -17092,9 +17092,9 @@ private void ResetResponseHeadersToRemove()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionOutputReference.property.requestHeadersToAdd">RequestHeadersToAdd</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAddList">GoogleComputeUrlMapHeaderActionRequestHeadersToAddList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionOutputReference.property.responseHeadersToAdd">ResponseHeadersToAdd</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAddList">GoogleComputeUrlMapHeaderActionResponseHeadersToAddList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionOutputReference.property.requestHeadersToAddInput">RequestHeadersToAddInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionOutputReference.property.requestHeadersToAddInput">RequestHeadersToAddInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapHeaderActionRequestHeadersToAdd</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionOutputReference.property.requestHeadersToRemoveInput">RequestHeadersToRemoveInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionOutputReference.property.responseHeadersToAddInput">ResponseHeadersToAddInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionOutputReference.property.responseHeadersToAddInput">ResponseHeadersToAddInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapHeaderActionResponseHeadersToAdd</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionOutputReference.property.responseHeadersToRemoveInput">ResponseHeadersToRemoveInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionOutputReference.property.requestHeadersToRemove">RequestHeadersToRemove</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionOutputReference.property.responseHeadersToRemove">ResponseHeadersToRemove</a></code> | <code>string[]</code> | *No description.* |
@@ -17149,10 +17149,10 @@ public GoogleComputeUrlMapHeaderActionResponseHeadersToAddList ResponseHeadersTo
 ##### `RequestHeadersToAddInput`<sup>Optional</sup> <a name="RequestHeadersToAddInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionOutputReference.property.requestHeadersToAddInput"></a>
 
 ```csharp
-public object RequestHeadersToAddInput { get; }
+public IResolvable|GoogleComputeUrlMapHeaderActionRequestHeadersToAdd[] RequestHeadersToAddInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapHeaderActionRequestHeadersToAdd</a>[]
 
 ---
 
@@ -17169,10 +17169,10 @@ public string[] RequestHeadersToRemoveInput { get; }
 ##### `ResponseHeadersToAddInput`<sup>Optional</sup> <a name="ResponseHeadersToAddInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionOutputReference.property.responseHeadersToAddInput"></a>
 
 ```csharp
-public object ResponseHeadersToAddInput { get; }
+public IResolvable|GoogleComputeUrlMapHeaderActionResponseHeadersToAdd[] ResponseHeadersToAddInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapHeaderActionResponseHeadersToAdd</a>[]
 
 ---
 
@@ -17338,7 +17338,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAddList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAddList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAddList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAddList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapHeaderActionRequestHeadersToAdd</a>[]</code> | *No description.* |
 
 ---
 
@@ -17369,10 +17369,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAddList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapHeaderActionRequestHeadersToAdd[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapHeaderActionRequestHeadersToAdd</a>[]
 
 ---
 
@@ -17607,11 +17607,11 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAddOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAddOutputReference.property.headerNameInput">HeaderNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAddOutputReference.property.headerValueInput">HeaderValueInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAddOutputReference.property.replaceInput">ReplaceInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAddOutputReference.property.replaceInput">ReplaceInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAddOutputReference.property.headerName">HeaderName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAddOutputReference.property.headerValue">HeaderValue</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAddOutputReference.property.replace">Replace</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAddOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAddOutputReference.property.replace">Replace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAddOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapHeaderActionRequestHeadersToAdd</a></code> | *No description.* |
 
 ---
 
@@ -17662,10 +17662,10 @@ public string HeaderValueInput { get; }
 ##### `ReplaceInput`<sup>Optional</sup> <a name="ReplaceInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAddOutputReference.property.replaceInput"></a>
 
 ```csharp
-public object ReplaceInput { get; }
+public bool|IResolvable ReplaceInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -17692,20 +17692,20 @@ public string HeaderValue { get; }
 ##### `Replace`<sup>Required</sup> <a name="Replace" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAddOutputReference.property.replace"></a>
 
 ```csharp
-public object Replace { get; }
+public bool|IResolvable Replace { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAddOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapHeaderActionRequestHeadersToAdd InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapHeaderActionRequestHeadersToAdd</a>
 
 ---
 
@@ -17831,7 +17831,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAddList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAddList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAddList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAddList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapHeaderActionResponseHeadersToAdd</a>[]</code> | *No description.* |
 
 ---
 
@@ -17862,10 +17862,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAddList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapHeaderActionResponseHeadersToAdd[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapHeaderActionResponseHeadersToAdd</a>[]
 
 ---
 
@@ -18100,11 +18100,11 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAddOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAddOutputReference.property.headerNameInput">HeaderNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAddOutputReference.property.headerValueInput">HeaderValueInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAddOutputReference.property.replaceInput">ReplaceInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAddOutputReference.property.replaceInput">ReplaceInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAddOutputReference.property.headerName">HeaderName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAddOutputReference.property.headerValue">HeaderValue</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAddOutputReference.property.replace">Replace</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAddOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAddOutputReference.property.replace">Replace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAddOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapHeaderActionResponseHeadersToAdd</a></code> | *No description.* |
 
 ---
 
@@ -18155,10 +18155,10 @@ public string HeaderValueInput { get; }
 ##### `ReplaceInput`<sup>Optional</sup> <a name="ReplaceInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAddOutputReference.property.replaceInput"></a>
 
 ```csharp
-public object ReplaceInput { get; }
+public bool|IResolvable ReplaceInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -18185,20 +18185,20 @@ public string HeaderValue { get; }
 ##### `Replace`<sup>Required</sup> <a name="Replace" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAddOutputReference.property.replace"></a>
 
 ```csharp
-public object Replace { get; }
+public bool|IResolvable Replace { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAddOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapHeaderActionResponseHeadersToAdd InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapHeaderActionResponseHeadersToAdd</a>
 
 ---
 
@@ -18324,7 +18324,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHostRuleList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHostRuleList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHostRuleList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHostRuleList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHostRule">GoogleComputeUrlMapHostRule</a>[]</code> | *No description.* |
 
 ---
 
@@ -18355,10 +18355,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHostRuleList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapHostRule[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHostRule">GoogleComputeUrlMapHostRule</a>[]
 
 ---
 
@@ -18604,7 +18604,7 @@ private void ResetDescription()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHostRuleOutputReference.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHostRuleOutputReference.property.hosts">Hosts</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHostRuleOutputReference.property.pathMatcher">PathMatcher</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHostRuleOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHostRuleOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHostRule">GoogleComputeUrlMapHostRule</a></code> | *No description.* |
 
 ---
 
@@ -18695,10 +18695,10 @@ public string PathMatcher { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHostRuleOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapHostRule InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHostRule">GoogleComputeUrlMapHostRule</a>
 
 ---
 
@@ -18824,7 +18824,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRuleList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRuleList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRuleList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRuleList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRule">GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRule</a>[]</code> | *No description.* |
 
 ---
 
@@ -18855,10 +18855,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRuleList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRule[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRule">GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRule</a>[]
 
 ---
 
@@ -19118,7 +19118,7 @@ private void ResetPath()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference.property.matchResponseCodes">MatchResponseCodes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference.property.overrideResponseCode">OverrideResponseCode</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference.property.path">Path</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRule">GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRule</a></code> | *No description.* |
 
 ---
 
@@ -19209,10 +19209,10 @@ public string Path { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRule InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRule">GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRule</a>
 
 ---
 
@@ -19426,12 +19426,12 @@ Returns a reversible string representation.
 ##### `PutErrorResponseRule` <a name="PutErrorResponseRule" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyOutputReference.putErrorResponseRule"></a>
 
 ```csharp
-private void PutErrorResponseRule(object Value)
+private void PutErrorResponseRule(IResolvable|GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRule[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyOutputReference.putErrorResponseRule.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRule">GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRule</a>[]
 
 ---
 
@@ -19455,7 +19455,7 @@ private void ResetErrorService()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyOutputReference.property.errorResponseRule">ErrorResponseRule</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRuleList">GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRuleList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyOutputReference.property.errorResponseRuleInput">ErrorResponseRuleInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyOutputReference.property.errorResponseRuleInput">ErrorResponseRuleInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRule">GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRule</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyOutputReference.property.errorServiceInput">ErrorServiceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyOutputReference.property.errorService">ErrorService</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicy">GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicy</a></code> | *No description.* |
@@ -19499,10 +19499,10 @@ public GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorRespon
 ##### `ErrorResponseRuleInput`<sup>Optional</sup> <a name="ErrorResponseRuleInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyOutputReference.property.errorResponseRuleInput"></a>
 
 ```csharp
-public object ErrorResponseRuleInput { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRule[] ErrorResponseRuleInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRule">GoogleComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRule</a>[]
 
 ---
 
@@ -19803,20 +19803,20 @@ private void ResetMaxAge()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.allowCredentialsInput">AllowCredentialsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.allowCredentialsInput">AllowCredentialsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.allowHeadersInput">AllowHeadersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.allowMethodsInput">AllowMethodsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.allowOriginRegexesInput">AllowOriginRegexesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.allowOriginsInput">AllowOriginsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.disabledInput">DisabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.disabledInput">DisabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.exposeHeadersInput">ExposeHeadersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.maxAgeInput">MaxAgeInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.allowCredentials">AllowCredentials</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.allowCredentials">AllowCredentials</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.allowHeaders">AllowHeaders</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.allowMethods">AllowMethods</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.allowOriginRegexes">AllowOriginRegexes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.allowOrigins">AllowOrigins</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.disabled">Disabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.disabled">Disabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.exposeHeaders">ExposeHeaders</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.maxAge">MaxAge</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicy">GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicy</a></code> | *No description.* |
@@ -19850,10 +19850,10 @@ public string Fqn { get; }
 ##### `AllowCredentialsInput`<sup>Optional</sup> <a name="AllowCredentialsInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.allowCredentialsInput"></a>
 
 ```csharp
-public object AllowCredentialsInput { get; }
+public bool|IResolvable AllowCredentialsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -19900,10 +19900,10 @@ public string[] AllowOriginsInput { get; }
 ##### `DisabledInput`<sup>Optional</sup> <a name="DisabledInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.disabledInput"></a>
 
 ```csharp
-public object DisabledInput { get; }
+public bool|IResolvable DisabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -19930,10 +19930,10 @@ public double MaxAgeInput { get; }
 ##### `AllowCredentials`<sup>Required</sup> <a name="AllowCredentials" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.allowCredentials"></a>
 
 ```csharp
-public object AllowCredentials { get; }
+public bool|IResolvable AllowCredentials { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -19980,10 +19980,10 @@ public string[] AllowOrigins { get; }
 ##### `Disabled`<sup>Required</sup> <a name="Disabled" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.disabled"></a>
 
 ```csharp
-public object Disabled { get; }
+public bool|IResolvable Disabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -21891,12 +21891,12 @@ private void PutUrlRewrite(GoogleComputeUrlMapPathMatcherDefaultRouteActionUrlRe
 ##### `PutWeightedBackendServices` <a name="PutWeightedBackendServices" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionOutputReference.putWeightedBackendServices"></a>
 
 ```csharp
-private void PutWeightedBackendServices(object Value)
+private void PutWeightedBackendServices(IResolvable|GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServices[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionOutputReference.putWeightedBackendServices.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServices">GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServices</a>[]
 
 ---
 
@@ -21970,7 +21970,7 @@ private void ResetWeightedBackendServices()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionOutputReference.property.retryPolicyInput">RetryPolicyInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionRetryPolicy">GoogleComputeUrlMapPathMatcherDefaultRouteActionRetryPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionOutputReference.property.timeoutInput">TimeoutInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionTimeout">GoogleComputeUrlMapPathMatcherDefaultRouteActionTimeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionOutputReference.property.urlRewriteInput">UrlRewriteInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionUrlRewrite">GoogleComputeUrlMapPathMatcherDefaultRouteActionUrlRewrite</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionOutputReference.property.weightedBackendServicesInput">WeightedBackendServicesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionOutputReference.property.weightedBackendServicesInput">WeightedBackendServicesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServices">GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServices</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteAction">GoogleComputeUrlMapPathMatcherDefaultRouteAction</a></code> | *No description.* |
 
 ---
@@ -22152,10 +22152,10 @@ public GoogleComputeUrlMapPathMatcherDefaultRouteActionUrlRewrite UrlRewriteInpu
 ##### `WeightedBackendServicesInput`<sup>Optional</sup> <a name="WeightedBackendServicesInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionOutputReference.property.weightedBackendServicesInput"></a>
 
 ```csharp
-public object WeightedBackendServicesInput { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServices[] WeightedBackendServicesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServices">GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServices</a>[]
 
 ---
 
@@ -23952,24 +23952,24 @@ Returns a reversible string representation.
 ##### `PutRequestHeadersToAdd` <a name="PutRequestHeadersToAdd" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.putRequestHeadersToAdd"></a>
 
 ```csharp
-private void PutRequestHeadersToAdd(object Value)
+private void PutRequestHeadersToAdd(IResolvable|GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.putRequestHeadersToAdd.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
 
 ---
 
 ##### `PutResponseHeadersToAdd` <a name="PutResponseHeadersToAdd" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.putResponseHeadersToAdd"></a>
 
 ```csharp
-private void PutResponseHeadersToAdd(object Value)
+private void PutResponseHeadersToAdd(IResolvable|GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.putResponseHeadersToAdd.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
 
 ---
 
@@ -24006,9 +24006,9 @@ private void ResetResponseHeadersToRemove()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToAdd">RequestHeadersToAdd</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList">GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToAdd">ResponseHeadersToAdd</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList">GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToAddInput">RequestHeadersToAddInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToAddInput">RequestHeadersToAddInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToRemoveInput">RequestHeadersToRemoveInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToAddInput">ResponseHeadersToAddInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToAddInput">ResponseHeadersToAddInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToRemoveInput">ResponseHeadersToRemoveInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToRemove">RequestHeadersToRemove</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToRemove">ResponseHeadersToRemove</a></code> | <code>string[]</code> | *No description.* |
@@ -24063,10 +24063,10 @@ public GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHe
 ##### `RequestHeadersToAddInput`<sup>Optional</sup> <a name="RequestHeadersToAddInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToAddInput"></a>
 
 ```csharp
-public object RequestHeadersToAddInput { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] RequestHeadersToAddInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
 
 ---
 
@@ -24083,10 +24083,10 @@ public string[] RequestHeadersToRemoveInput { get; }
 ##### `ResponseHeadersToAddInput`<sup>Optional</sup> <a name="ResponseHeadersToAddInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToAddInput"></a>
 
 ```csharp
-public object ResponseHeadersToAddInput { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] ResponseHeadersToAddInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
 
 ---
 
@@ -24252,7 +24252,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]</code> | *No description.* |
 
 ---
 
@@ -24283,10 +24283,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
 
 ---
 
@@ -24542,11 +24542,11 @@ private void ResetReplace()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.headerNameInput">HeaderNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.headerValueInput">HeaderValueInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replaceInput">ReplaceInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replaceInput">ReplaceInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.headerName">HeaderName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.headerValue">HeaderValue</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replace">Replace</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replace">Replace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a></code> | *No description.* |
 
 ---
 
@@ -24597,10 +24597,10 @@ public string HeaderValueInput { get; }
 ##### `ReplaceInput`<sup>Optional</sup> <a name="ReplaceInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replaceInput"></a>
 
 ```csharp
-public object ReplaceInput { get; }
+public bool|IResolvable ReplaceInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -24627,20 +24627,20 @@ public string HeaderValue { get; }
 ##### `Replace`<sup>Required</sup> <a name="Replace" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replace"></a>
 
 ```csharp
-public object Replace { get; }
+public bool|IResolvable Replace { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>
 
 ---
 
@@ -24766,7 +24766,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]</code> | *No description.* |
 
 ---
 
@@ -24797,10 +24797,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
 
 ---
 
@@ -25056,11 +25056,11 @@ private void ResetReplace()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.headerNameInput">HeaderNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.headerValueInput">HeaderValueInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replaceInput">ReplaceInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replaceInput">ReplaceInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.headerName">HeaderName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.headerValue">HeaderValue</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replace">Replace</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replace">Replace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a></code> | *No description.* |
 
 ---
 
@@ -25111,10 +25111,10 @@ public string HeaderValueInput { get; }
 ##### `ReplaceInput`<sup>Optional</sup> <a name="ReplaceInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replaceInput"></a>
 
 ```csharp
-public object ReplaceInput { get; }
+public bool|IResolvable ReplaceInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -25141,20 +25141,20 @@ public string HeaderValue { get; }
 ##### `Replace`<sup>Required</sup> <a name="Replace" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replace"></a>
 
 ```csharp
-public object Replace { get; }
+public bool|IResolvable Replace { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>
 
 ---
 
@@ -25280,7 +25280,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServices">GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServices</a>[]</code> | *No description.* |
 
 ---
 
@@ -25311,10 +25311,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServices[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServices">GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServices</a>[]
 
 ---
 
@@ -25587,7 +25587,7 @@ private void ResetWeight()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference.property.weightInput">WeightInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference.property.backendService">BackendService</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference.property.weight">Weight</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServices">GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServices</a></code> | *No description.* |
 
 ---
 
@@ -25678,10 +25678,10 @@ public double Weight { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServices InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServices">GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServices</a>
 
 ---
 
@@ -25932,17 +25932,17 @@ private void ResetRedirectResponseCode()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.hostRedirectInput">HostRedirectInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.httpsRedirectInput">HttpsRedirectInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.httpsRedirectInput">HttpsRedirectInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.pathRedirectInput">PathRedirectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.prefixRedirectInput">PrefixRedirectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.redirectResponseCodeInput">RedirectResponseCodeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.stripQueryInput">StripQueryInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.stripQueryInput">StripQueryInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.hostRedirect">HostRedirect</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.httpsRedirect">HttpsRedirect</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.httpsRedirect">HttpsRedirect</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.pathRedirect">PathRedirect</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.prefixRedirect">PrefixRedirect</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.redirectResponseCode">RedirectResponseCode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.stripQuery">StripQuery</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.stripQuery">StripQuery</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirect">GoogleComputeUrlMapPathMatcherDefaultUrlRedirect</a></code> | *No description.* |
 
 ---
@@ -25984,10 +25984,10 @@ public string HostRedirectInput { get; }
 ##### `HttpsRedirectInput`<sup>Optional</sup> <a name="HttpsRedirectInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.httpsRedirectInput"></a>
 
 ```csharp
-public object HttpsRedirectInput { get; }
+public bool|IResolvable HttpsRedirectInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -26024,10 +26024,10 @@ public string RedirectResponseCodeInput { get; }
 ##### `StripQueryInput`<sup>Optional</sup> <a name="StripQueryInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.stripQueryInput"></a>
 
 ```csharp
-public object StripQueryInput { get; }
+public bool|IResolvable StripQueryInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -26044,10 +26044,10 @@ public string HostRedirect { get; }
 ##### `HttpsRedirect`<sup>Required</sup> <a name="HttpsRedirect" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.httpsRedirect"></a>
 
 ```csharp
-public object HttpsRedirect { get; }
+public bool|IResolvable HttpsRedirect { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -26084,10 +26084,10 @@ public string RedirectResponseCode { get; }
 ##### `StripQuery`<sup>Required</sup> <a name="StripQuery" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.stripQuery"></a>
 
 ```csharp
-public object StripQuery { get; }
+public bool|IResolvable StripQuery { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -26314,24 +26314,24 @@ Returns a reversible string representation.
 ##### `PutRequestHeadersToAdd` <a name="PutRequestHeadersToAdd" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionOutputReference.putRequestHeadersToAdd"></a>
 
 ```csharp
-private void PutRequestHeadersToAdd(object Value)
+private void PutRequestHeadersToAdd(IResolvable|GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionOutputReference.putRequestHeadersToAdd.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd</a>[]
 
 ---
 
 ##### `PutResponseHeadersToAdd` <a name="PutResponseHeadersToAdd" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionOutputReference.putResponseHeadersToAdd"></a>
 
 ```csharp
-private void PutResponseHeadersToAdd(object Value)
+private void PutResponseHeadersToAdd(IResolvable|GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionOutputReference.putResponseHeadersToAdd.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd</a>[]
 
 ---
 
@@ -26368,9 +26368,9 @@ private void ResetResponseHeadersToRemove()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionOutputReference.property.requestHeadersToAdd">RequestHeadersToAdd</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddList">GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionOutputReference.property.responseHeadersToAdd">ResponseHeadersToAdd</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAddList">GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAddList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionOutputReference.property.requestHeadersToAddInput">RequestHeadersToAddInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionOutputReference.property.requestHeadersToAddInput">RequestHeadersToAddInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionOutputReference.property.requestHeadersToRemoveInput">RequestHeadersToRemoveInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionOutputReference.property.responseHeadersToAddInput">ResponseHeadersToAddInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionOutputReference.property.responseHeadersToAddInput">ResponseHeadersToAddInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionOutputReference.property.responseHeadersToRemoveInput">ResponseHeadersToRemoveInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionOutputReference.property.requestHeadersToRemove">RequestHeadersToRemove</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionOutputReference.property.responseHeadersToRemove">ResponseHeadersToRemove</a></code> | <code>string[]</code> | *No description.* |
@@ -26425,10 +26425,10 @@ public GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAddList Respon
 ##### `RequestHeadersToAddInput`<sup>Optional</sup> <a name="RequestHeadersToAddInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionOutputReference.property.requestHeadersToAddInput"></a>
 
 ```csharp
-public object RequestHeadersToAddInput { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd[] RequestHeadersToAddInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd</a>[]
 
 ---
 
@@ -26445,10 +26445,10 @@ public string[] RequestHeadersToRemoveInput { get; }
 ##### `ResponseHeadersToAddInput`<sup>Optional</sup> <a name="ResponseHeadersToAddInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionOutputReference.property.responseHeadersToAddInput"></a>
 
 ```csharp
-public object ResponseHeadersToAddInput { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd[] ResponseHeadersToAddInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd</a>[]
 
 ---
 
@@ -26614,7 +26614,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd</a>[]</code> | *No description.* |
 
 ---
 
@@ -26645,10 +26645,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd</a>[]
 
 ---
 
@@ -26883,11 +26883,11 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddOutputReference.property.headerNameInput">HeaderNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddOutputReference.property.headerValueInput">HeaderValueInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddOutputReference.property.replaceInput">ReplaceInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddOutputReference.property.replaceInput">ReplaceInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddOutputReference.property.headerName">HeaderName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddOutputReference.property.headerValue">HeaderValue</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddOutputReference.property.replace">Replace</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddOutputReference.property.replace">Replace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd</a></code> | *No description.* |
 
 ---
 
@@ -26938,10 +26938,10 @@ public string HeaderValueInput { get; }
 ##### `ReplaceInput`<sup>Optional</sup> <a name="ReplaceInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddOutputReference.property.replaceInput"></a>
 
 ```csharp
-public object ReplaceInput { get; }
+public bool|IResolvable ReplaceInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -26968,20 +26968,20 @@ public string HeaderValue { get; }
 ##### `Replace`<sup>Required</sup> <a name="Replace" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddOutputReference.property.replace"></a>
 
 ```csharp
-public object Replace { get; }
+public bool|IResolvable Replace { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd</a>
 
 ---
 
@@ -27107,7 +27107,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAddList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAddList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAddList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAddList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd</a>[]</code> | *No description.* |
 
 ---
 
@@ -27138,10 +27138,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAddList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd</a>[]
 
 ---
 
@@ -27376,11 +27376,11 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAddOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAddOutputReference.property.headerNameInput">HeaderNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAddOutputReference.property.headerValueInput">HeaderValueInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAddOutputReference.property.replaceInput">ReplaceInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAddOutputReference.property.replaceInput">ReplaceInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAddOutputReference.property.headerName">HeaderName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAddOutputReference.property.headerValue">HeaderValue</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAddOutputReference.property.replace">Replace</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAddOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAddOutputReference.property.replace">Replace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAddOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd</a></code> | *No description.* |
 
 ---
 
@@ -27431,10 +27431,10 @@ public string HeaderValueInput { get; }
 ##### `ReplaceInput`<sup>Optional</sup> <a name="ReplaceInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAddOutputReference.property.replaceInput"></a>
 
 ```csharp
-public object ReplaceInput { get; }
+public bool|IResolvable ReplaceInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -27461,20 +27461,20 @@ public string HeaderValue { get; }
 ##### `Replace`<sup>Required</sup> <a name="Replace" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAddOutputReference.property.replace"></a>
 
 ```csharp
-public object Replace { get; }
+public bool|IResolvable Replace { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAddOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd</a>
 
 ---
 
@@ -27600,7 +27600,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcher">GoogleComputeUrlMapPathMatcher</a>[]</code> | *No description.* |
 
 ---
 
@@ -27631,10 +27631,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcher[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcher">GoogleComputeUrlMapPathMatcher</a>[]
 
 ---
 
@@ -27925,24 +27925,24 @@ private void PutHeaderAction(GoogleComputeUrlMapPathMatcherHeaderAction Value)
 ##### `PutPathRule` <a name="PutPathRule" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherOutputReference.putPathRule"></a>
 
 ```csharp
-private void PutPathRule(object Value)
+private void PutPathRule(IResolvable|GoogleComputeUrlMapPathMatcherPathRule[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherOutputReference.putPathRule.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRule">GoogleComputeUrlMapPathMatcherPathRule</a>[]
 
 ---
 
 ##### `PutRouteRules` <a name="PutRouteRules" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherOutputReference.putRouteRules"></a>
 
 ```csharp
-private void PutRouteRules(object Value)
+private void PutRouteRules(IResolvable|GoogleComputeUrlMapPathMatcherRouteRules[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherOutputReference.putRouteRules.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRules">GoogleComputeUrlMapPathMatcherRouteRules</a>[]
 
 ---
 
@@ -28014,12 +28014,12 @@ private void ResetRouteRules()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherOutputReference.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherOutputReference.property.headerActionInput">HeaderActionInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherHeaderAction">GoogleComputeUrlMapPathMatcherHeaderAction</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherOutputReference.property.pathRuleInput">PathRuleInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherOutputReference.property.routeRulesInput">RouteRulesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherOutputReference.property.pathRuleInput">PathRuleInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRule">GoogleComputeUrlMapPathMatcherPathRule</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherOutputReference.property.routeRulesInput">RouteRulesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRules">GoogleComputeUrlMapPathMatcherRouteRules</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherOutputReference.property.defaultService">DefaultService</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherOutputReference.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcher">GoogleComputeUrlMapPathMatcher</a></code> | *No description.* |
 
 ---
 
@@ -28180,20 +28180,20 @@ public string NameInput { get; }
 ##### `PathRuleInput`<sup>Optional</sup> <a name="PathRuleInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherOutputReference.property.pathRuleInput"></a>
 
 ```csharp
-public object PathRuleInput { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherPathRule[] PathRuleInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRule">GoogleComputeUrlMapPathMatcherPathRule</a>[]
 
 ---
 
 ##### `RouteRulesInput`<sup>Optional</sup> <a name="RouteRulesInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherOutputReference.property.routeRulesInput"></a>
 
 ```csharp
-public object RouteRulesInput { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRules[] RouteRulesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRules">GoogleComputeUrlMapPathMatcherRouteRules</a>[]
 
 ---
 
@@ -28230,10 +28230,10 @@ public string Name { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcher InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcher">GoogleComputeUrlMapPathMatcher</a>
 
 ---
 
@@ -28359,7 +28359,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRuleList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRuleList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRuleList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRuleList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRule">GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRule</a>[]</code> | *No description.* |
 
 ---
 
@@ -28390,10 +28390,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRuleList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRule[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRule">GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRule</a>[]
 
 ---
 
@@ -28653,7 +28653,7 @@ private void ResetPath()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRuleOutputReference.property.matchResponseCodes">MatchResponseCodes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRuleOutputReference.property.overrideResponseCode">OverrideResponseCode</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRuleOutputReference.property.path">Path</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRuleOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRuleOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRule">GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRule</a></code> | *No description.* |
 
 ---
 
@@ -28744,10 +28744,10 @@ public string Path { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRuleOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRule InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRule">GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRule</a>
 
 ---
 
@@ -28961,12 +28961,12 @@ Returns a reversible string representation.
 ##### `PutErrorResponseRule` <a name="PutErrorResponseRule" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyOutputReference.putErrorResponseRule"></a>
 
 ```csharp
-private void PutErrorResponseRule(object Value)
+private void PutErrorResponseRule(IResolvable|GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRule[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyOutputReference.putErrorResponseRule.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRule">GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRule</a>[]
 
 ---
 
@@ -28990,7 +28990,7 @@ private void ResetErrorService()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyOutputReference.property.errorResponseRule">ErrorResponseRule</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRuleList">GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRuleList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyOutputReference.property.errorResponseRuleInput">ErrorResponseRuleInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyOutputReference.property.errorResponseRuleInput">ErrorResponseRuleInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRule">GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRule</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyOutputReference.property.errorServiceInput">ErrorServiceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyOutputReference.property.errorService">ErrorService</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicy">GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicy</a></code> | *No description.* |
@@ -29034,10 +29034,10 @@ public GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorRespo
 ##### `ErrorResponseRuleInput`<sup>Optional</sup> <a name="ErrorResponseRuleInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyOutputReference.property.errorResponseRuleInput"></a>
 
 ```csharp
-public object ErrorResponseRuleInput { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRule[] ErrorResponseRuleInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRule">GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRule</a>[]
 
 ---
 
@@ -29193,7 +29193,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRule">GoogleComputeUrlMapPathMatcherPathRule</a>[]</code> | *No description.* |
 
 ---
 
@@ -29224,10 +29224,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherPathRule[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRule">GoogleComputeUrlMapPathMatcherPathRule</a>[]
 
 ---
 
@@ -29537,7 +29537,7 @@ private void ResetUrlRedirect()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleOutputReference.property.urlRedirectInput">UrlRedirectInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleUrlRedirect">GoogleComputeUrlMapPathMatcherPathRuleUrlRedirect</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleOutputReference.property.paths">Paths</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleOutputReference.property.service">Service</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRule">GoogleComputeUrlMapPathMatcherPathRule</a></code> | *No description.* |
 
 ---
 
@@ -29668,10 +29668,10 @@ public string Service { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherPathRule InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRule">GoogleComputeUrlMapPathMatcherPathRule</a>
 
 ---
 
@@ -29935,20 +29935,20 @@ private void ResetMaxAge()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.allowCredentialsInput">AllowCredentialsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.allowCredentialsInput">AllowCredentialsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.allowHeadersInput">AllowHeadersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.allowMethodsInput">AllowMethodsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.allowOriginRegexesInput">AllowOriginRegexesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.allowOriginsInput">AllowOriginsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.disabledInput">DisabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.disabledInput">DisabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.exposeHeadersInput">ExposeHeadersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.maxAgeInput">MaxAgeInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.allowCredentials">AllowCredentials</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.allowCredentials">AllowCredentials</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.allowHeaders">AllowHeaders</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.allowMethods">AllowMethods</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.allowOriginRegexes">AllowOriginRegexes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.allowOrigins">AllowOrigins</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.disabled">Disabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.disabled">Disabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.exposeHeaders">ExposeHeaders</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.maxAge">MaxAge</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicy">GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicy</a></code> | *No description.* |
@@ -29982,10 +29982,10 @@ public string Fqn { get; }
 ##### `AllowCredentialsInput`<sup>Optional</sup> <a name="AllowCredentialsInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.allowCredentialsInput"></a>
 
 ```csharp
-public object AllowCredentialsInput { get; }
+public bool|IResolvable AllowCredentialsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -30032,10 +30032,10 @@ public string[] AllowOriginsInput { get; }
 ##### `DisabledInput`<sup>Optional</sup> <a name="DisabledInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.disabledInput"></a>
 
 ```csharp
-public object DisabledInput { get; }
+public bool|IResolvable DisabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -30062,10 +30062,10 @@ public double MaxAgeInput { get; }
 ##### `AllowCredentials`<sup>Required</sup> <a name="AllowCredentials" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.allowCredentials"></a>
 
 ```csharp
-public object AllowCredentials { get; }
+public bool|IResolvable AllowCredentials { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -30112,10 +30112,10 @@ public string[] AllowOrigins { get; }
 ##### `Disabled`<sup>Required</sup> <a name="Disabled" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.disabled"></a>
 
 ```csharp
-public object Disabled { get; }
+public bool|IResolvable Disabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -31988,12 +31988,12 @@ private void PutUrlRewrite(GoogleComputeUrlMapPathMatcherPathRuleRouteActionUrlR
 ##### `PutWeightedBackendServices` <a name="PutWeightedBackendServices" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionOutputReference.putWeightedBackendServices"></a>
 
 ```csharp
-private void PutWeightedBackendServices(object Value)
+private void PutWeightedBackendServices(IResolvable|GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionOutputReference.putWeightedBackendServices.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices">GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices</a>[]
 
 ---
 
@@ -32067,7 +32067,7 @@ private void ResetWeightedBackendServices()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionOutputReference.property.retryPolicyInput">RetryPolicyInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionRetryPolicy">GoogleComputeUrlMapPathMatcherPathRuleRouteActionRetryPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionOutputReference.property.timeoutInput">TimeoutInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionTimeout">GoogleComputeUrlMapPathMatcherPathRuleRouteActionTimeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionOutputReference.property.urlRewriteInput">UrlRewriteInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionUrlRewrite">GoogleComputeUrlMapPathMatcherPathRuleRouteActionUrlRewrite</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionOutputReference.property.weightedBackendServicesInput">WeightedBackendServicesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionOutputReference.property.weightedBackendServicesInput">WeightedBackendServicesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices">GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteAction">GoogleComputeUrlMapPathMatcherPathRuleRouteAction</a></code> | *No description.* |
 
 ---
@@ -32249,10 +32249,10 @@ public GoogleComputeUrlMapPathMatcherPathRuleRouteActionUrlRewrite UrlRewriteInp
 ##### `WeightedBackendServicesInput`<sup>Optional</sup> <a name="WeightedBackendServicesInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionOutputReference.property.weightedBackendServicesInput"></a>
 
 ```csharp
-public object WeightedBackendServicesInput { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices[] WeightedBackendServicesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices">GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices</a>[]
 
 ---
 
@@ -34035,24 +34035,24 @@ Returns a reversible string representation.
 ##### `PutRequestHeadersToAdd` <a name="PutRequestHeadersToAdd" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.putRequestHeadersToAdd"></a>
 
 ```csharp
-private void PutRequestHeadersToAdd(object Value)
+private void PutRequestHeadersToAdd(IResolvable|GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.putRequestHeadersToAdd.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
 
 ---
 
 ##### `PutResponseHeadersToAdd` <a name="PutResponseHeadersToAdd" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.putResponseHeadersToAdd"></a>
 
 ```csharp
-private void PutResponseHeadersToAdd(object Value)
+private void PutResponseHeadersToAdd(IResolvable|GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.putResponseHeadersToAdd.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
 
 ---
 
@@ -34089,9 +34089,9 @@ private void ResetResponseHeadersToRemove()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToAdd">RequestHeadersToAdd</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList">GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToAdd">ResponseHeadersToAdd</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList">GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToAddInput">RequestHeadersToAddInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToAddInput">RequestHeadersToAddInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToRemoveInput">RequestHeadersToRemoveInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToAddInput">ResponseHeadersToAddInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToAddInput">ResponseHeadersToAddInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToRemoveInput">ResponseHeadersToRemoveInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToRemove">RequestHeadersToRemove</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToRemove">ResponseHeadersToRemove</a></code> | <code>string[]</code> | *No description.* |
@@ -34146,10 +34146,10 @@ public GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesH
 ##### `RequestHeadersToAddInput`<sup>Optional</sup> <a name="RequestHeadersToAddInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToAddInput"></a>
 
 ```csharp
-public object RequestHeadersToAddInput { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] RequestHeadersToAddInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
 
 ---
 
@@ -34166,10 +34166,10 @@ public string[] RequestHeadersToRemoveInput { get; }
 ##### `ResponseHeadersToAddInput`<sup>Optional</sup> <a name="ResponseHeadersToAddInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToAddInput"></a>
 
 ```csharp
-public object ResponseHeadersToAddInput { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] ResponseHeadersToAddInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
 
 ---
 
@@ -34335,7 +34335,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]</code> | *No description.* |
 
 ---
 
@@ -34366,10 +34366,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
 
 ---
 
@@ -34604,11 +34604,11 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.headerNameInput">HeaderNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.headerValueInput">HeaderValueInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replaceInput">ReplaceInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replaceInput">ReplaceInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.headerName">HeaderName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.headerValue">HeaderValue</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replace">Replace</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replace">Replace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a></code> | *No description.* |
 
 ---
 
@@ -34659,10 +34659,10 @@ public string HeaderValueInput { get; }
 ##### `ReplaceInput`<sup>Optional</sup> <a name="ReplaceInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replaceInput"></a>
 
 ```csharp
-public object ReplaceInput { get; }
+public bool|IResolvable ReplaceInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -34689,20 +34689,20 @@ public string HeaderValue { get; }
 ##### `Replace`<sup>Required</sup> <a name="Replace" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replace"></a>
 
 ```csharp
-public object Replace { get; }
+public bool|IResolvable Replace { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>
 
 ---
 
@@ -34828,7 +34828,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]</code> | *No description.* |
 
 ---
 
@@ -34859,10 +34859,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
 
 ---
 
@@ -35097,11 +35097,11 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.headerNameInput">HeaderNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.headerValueInput">HeaderValueInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replaceInput">ReplaceInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replaceInput">ReplaceInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.headerName">HeaderName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.headerValue">HeaderValue</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replace">Replace</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replace">Replace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a></code> | *No description.* |
 
 ---
 
@@ -35152,10 +35152,10 @@ public string HeaderValueInput { get; }
 ##### `ReplaceInput`<sup>Optional</sup> <a name="ReplaceInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replaceInput"></a>
 
 ```csharp
-public object ReplaceInput { get; }
+public bool|IResolvable ReplaceInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -35182,20 +35182,20 @@ public string HeaderValue { get; }
 ##### `Replace`<sup>Required</sup> <a name="Replace" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replace"></a>
 
 ```csharp
-public object Replace { get; }
+public bool|IResolvable Replace { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>
 
 ---
 
@@ -35321,7 +35321,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices">GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices</a>[]</code> | *No description.* |
 
 ---
 
@@ -35352,10 +35352,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices">GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices</a>[]
 
 ---
 
@@ -35614,7 +35614,7 @@ private void ResetHeaderAction()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesOutputReference.property.weightInput">WeightInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesOutputReference.property.backendService">BackendService</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesOutputReference.property.weight">Weight</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices">GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices</a></code> | *No description.* |
 
 ---
 
@@ -35705,10 +35705,10 @@ public double Weight { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices">GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices</a>
 
 ---
 
@@ -35959,17 +35959,17 @@ private void ResetRedirectResponseCode()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.hostRedirectInput">HostRedirectInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.httpsRedirectInput">HttpsRedirectInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.httpsRedirectInput">HttpsRedirectInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.pathRedirectInput">PathRedirectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.prefixRedirectInput">PrefixRedirectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.redirectResponseCodeInput">RedirectResponseCodeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.stripQueryInput">StripQueryInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.stripQueryInput">StripQueryInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.hostRedirect">HostRedirect</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.httpsRedirect">HttpsRedirect</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.httpsRedirect">HttpsRedirect</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.pathRedirect">PathRedirect</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.prefixRedirect">PrefixRedirect</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.redirectResponseCode">RedirectResponseCode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.stripQuery">StripQuery</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.stripQuery">StripQuery</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleUrlRedirect">GoogleComputeUrlMapPathMatcherPathRuleUrlRedirect</a></code> | *No description.* |
 
 ---
@@ -36011,10 +36011,10 @@ public string HostRedirectInput { get; }
 ##### `HttpsRedirectInput`<sup>Optional</sup> <a name="HttpsRedirectInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.httpsRedirectInput"></a>
 
 ```csharp
-public object HttpsRedirectInput { get; }
+public bool|IResolvable HttpsRedirectInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -36051,10 +36051,10 @@ public string RedirectResponseCodeInput { get; }
 ##### `StripQueryInput`<sup>Optional</sup> <a name="StripQueryInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.stripQueryInput"></a>
 
 ```csharp
-public object StripQueryInput { get; }
+public bool|IResolvable StripQueryInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -36071,10 +36071,10 @@ public string HostRedirect { get; }
 ##### `HttpsRedirect`<sup>Required</sup> <a name="HttpsRedirect" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.httpsRedirect"></a>
 
 ```csharp
-public object HttpsRedirect { get; }
+public bool|IResolvable HttpsRedirect { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -36111,10 +36111,10 @@ public string RedirectResponseCode { get; }
 ##### `StripQuery`<sup>Required</sup> <a name="StripQuery" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.stripQuery"></a>
 
 ```csharp
-public object StripQuery { get; }
+public bool|IResolvable StripQuery { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -36250,7 +36250,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRuleList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRuleList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRuleList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRuleList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRule">GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRule</a>[]</code> | *No description.* |
 
 ---
 
@@ -36281,10 +36281,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRuleList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRule[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRule">GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRule</a>[]
 
 ---
 
@@ -36544,7 +36544,7 @@ private void ResetPath()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRuleOutputReference.property.matchResponseCodes">MatchResponseCodes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRuleOutputReference.property.overrideResponseCode">OverrideResponseCode</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRuleOutputReference.property.path">Path</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRuleOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRuleOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRule">GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRule</a></code> | *No description.* |
 
 ---
 
@@ -36635,10 +36635,10 @@ public string Path { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRuleOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRule InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRule">GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRule</a>
 
 ---
 
@@ -36852,12 +36852,12 @@ Returns a reversible string representation.
 ##### `PutErrorResponseRule` <a name="PutErrorResponseRule" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyOutputReference.putErrorResponseRule"></a>
 
 ```csharp
-private void PutErrorResponseRule(object Value)
+private void PutErrorResponseRule(IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRule[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyOutputReference.putErrorResponseRule.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRule">GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRule</a>[]
 
 ---
 
@@ -36881,7 +36881,7 @@ private void ResetErrorService()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyOutputReference.property.errorResponseRule">ErrorResponseRule</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRuleList">GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRuleList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyOutputReference.property.errorResponseRuleInput">ErrorResponseRuleInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyOutputReference.property.errorResponseRuleInput">ErrorResponseRuleInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRule">GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRule</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyOutputReference.property.errorServiceInput">ErrorServiceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyOutputReference.property.errorService">ErrorService</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicy">GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicy</a></code> | *No description.* |
@@ -36925,10 +36925,10 @@ public GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorRes
 ##### `ErrorResponseRuleInput`<sup>Optional</sup> <a name="ErrorResponseRuleInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyOutputReference.property.errorResponseRuleInput"></a>
 
 ```csharp
-public object ErrorResponseRuleInput { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRule[] ErrorResponseRuleInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRule">GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRule</a>[]
 
 ---
 
@@ -37175,24 +37175,24 @@ Returns a reversible string representation.
 ##### `PutRequestHeadersToAdd` <a name="PutRequestHeadersToAdd" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference.putRequestHeadersToAdd"></a>
 
 ```csharp
-private void PutRequestHeadersToAdd(object Value)
+private void PutRequestHeadersToAdd(IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference.putRequestHeadersToAdd.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd</a>[]
 
 ---
 
 ##### `PutResponseHeadersToAdd` <a name="PutResponseHeadersToAdd" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference.putResponseHeadersToAdd"></a>
 
 ```csharp
-private void PutResponseHeadersToAdd(object Value)
+private void PutResponseHeadersToAdd(IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference.putResponseHeadersToAdd.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd</a>[]
 
 ---
 
@@ -37229,9 +37229,9 @@ private void ResetResponseHeadersToRemove()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference.property.requestHeadersToAdd">RequestHeadersToAdd</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList">GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference.property.responseHeadersToAdd">ResponseHeadersToAdd</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList">GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference.property.requestHeadersToAddInput">RequestHeadersToAddInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference.property.requestHeadersToAddInput">RequestHeadersToAddInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference.property.requestHeadersToRemoveInput">RequestHeadersToRemoveInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference.property.responseHeadersToAddInput">ResponseHeadersToAddInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference.property.responseHeadersToAddInput">ResponseHeadersToAddInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference.property.responseHeadersToRemoveInput">ResponseHeadersToRemoveInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference.property.requestHeadersToRemove">RequestHeadersToRemove</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference.property.responseHeadersToRemove">ResponseHeadersToRemove</a></code> | <code>string[]</code> | *No description.* |
@@ -37286,10 +37286,10 @@ public GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddL
 ##### `RequestHeadersToAddInput`<sup>Optional</sup> <a name="RequestHeadersToAddInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference.property.requestHeadersToAddInput"></a>
 
 ```csharp
-public object RequestHeadersToAddInput { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd[] RequestHeadersToAddInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd</a>[]
 
 ---
 
@@ -37306,10 +37306,10 @@ public string[] RequestHeadersToRemoveInput { get; }
 ##### `ResponseHeadersToAddInput`<sup>Optional</sup> <a name="ResponseHeadersToAddInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference.property.responseHeadersToAddInput"></a>
 
 ```csharp
-public object ResponseHeadersToAddInput { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd[] ResponseHeadersToAddInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd</a>[]
 
 ---
 
@@ -37475,7 +37475,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd</a>[]</code> | *No description.* |
 
 ---
 
@@ -37506,10 +37506,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd</a>[]
 
 ---
 
@@ -37744,11 +37744,11 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference.property.headerNameInput">HeaderNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference.property.headerValueInput">HeaderValueInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference.property.replaceInput">ReplaceInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference.property.replaceInput">ReplaceInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference.property.headerName">HeaderName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference.property.headerValue">HeaderValue</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference.property.replace">Replace</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference.property.replace">Replace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd</a></code> | *No description.* |
 
 ---
 
@@ -37799,10 +37799,10 @@ public string HeaderValueInput { get; }
 ##### `ReplaceInput`<sup>Optional</sup> <a name="ReplaceInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference.property.replaceInput"></a>
 
 ```csharp
-public object ReplaceInput { get; }
+public bool|IResolvable ReplaceInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -37829,20 +37829,20 @@ public string HeaderValue { get; }
 ##### `Replace`<sup>Required</sup> <a name="Replace" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference.property.replace"></a>
 
 ```csharp
-public object Replace { get; }
+public bool|IResolvable Replace { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd</a>
 
 ---
 
@@ -37968,7 +37968,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd</a>[]</code> | *No description.* |
 
 ---
 
@@ -37999,10 +37999,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd</a>[]
 
 ---
 
@@ -38237,11 +38237,11 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference.property.headerNameInput">HeaderNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference.property.headerValueInput">HeaderValueInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference.property.replaceInput">ReplaceInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference.property.replaceInput">ReplaceInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference.property.headerName">HeaderName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference.property.headerValue">HeaderValue</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference.property.replace">Replace</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference.property.replace">Replace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd</a></code> | *No description.* |
 
 ---
 
@@ -38292,10 +38292,10 @@ public string HeaderValueInput { get; }
 ##### `ReplaceInput`<sup>Optional</sup> <a name="ReplaceInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference.property.replaceInput"></a>
 
 ```csharp
-public object ReplaceInput { get; }
+public bool|IResolvable ReplaceInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -38322,20 +38322,20 @@ public string HeaderValue { get; }
 ##### `Replace`<sup>Required</sup> <a name="Replace" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference.property.replace"></a>
 
 ```csharp
-public object Replace { get; }
+public bool|IResolvable Replace { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd</a>
 
 ---
 
@@ -38461,7 +38461,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigs">GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigs</a>[]</code> | *No description.* |
 
 ---
 
@@ -38492,10 +38492,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigs[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigs">GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigs</a>[]
 
 ---
 
@@ -38755,7 +38755,7 @@ private void ResetFilterName()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigsOutputReference.property.config">Config</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigsOutputReference.property.configTypeUrl">ConfigTypeUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigsOutputReference.property.filterName">FilterName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigs">GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigs</a></code> | *No description.* |
 
 ---
 
@@ -38846,10 +38846,10 @@ public string FilterName { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigs InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigs">GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigs</a>
 
 ---
 
@@ -38975,7 +38975,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadataList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadataList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadataList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadataList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadata">GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadata</a>[]</code> | *No description.* |
 
 ---
 
@@ -39006,10 +39006,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadataList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadata[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadata">GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadata</a>[]
 
 ---
 
@@ -39269,7 +39269,7 @@ private void ResetFilterName()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadataOutputReference.property.config">Config</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadataOutputReference.property.configTypeUrl">ConfigTypeUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadataOutputReference.property.filterName">FilterName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadataOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadataOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadata">GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadata</a></code> | *No description.* |
 
 ---
 
@@ -39360,10 +39360,10 @@ public string FilterName { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadataOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadata InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadata">GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadata</a>
 
 ---
 
@@ -39489,7 +39489,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRules">GoogleComputeUrlMapPathMatcherRouteRules</a>[]</code> | *No description.* |
 
 ---
 
@@ -39520,10 +39520,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRules[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRules">GoogleComputeUrlMapPathMatcherRouteRules</a>[]
 
 ---
 
@@ -39649,7 +39649,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches</a>[]</code> | *No description.* |
 
 ---
 
@@ -39680,10 +39680,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches</a>[]
 
 ---
 
@@ -39981,20 +39981,20 @@ private void ResetSuffixMatch()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.rangeMatch">RangeMatch</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatchOutputReference">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatchOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.exactMatchInput">ExactMatchInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.headerNameInput">HeaderNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.invertMatchInput">InvertMatchInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.invertMatchInput">InvertMatchInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.prefixMatchInput">PrefixMatchInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.presentMatchInput">PresentMatchInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.presentMatchInput">PresentMatchInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.rangeMatchInput">RangeMatchInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatch">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.regexMatchInput">RegexMatchInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.suffixMatchInput">SuffixMatchInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.exactMatch">ExactMatch</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.headerName">HeaderName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.invertMatch">InvertMatch</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.invertMatch">InvertMatch</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.prefixMatch">PrefixMatch</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.presentMatch">PresentMatch</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.presentMatch">PresentMatch</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.regexMatch">RegexMatch</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.suffixMatch">SuffixMatch</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches</a></code> | *No description.* |
 
 ---
 
@@ -40055,10 +40055,10 @@ public string HeaderNameInput { get; }
 ##### `InvertMatchInput`<sup>Optional</sup> <a name="InvertMatchInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.invertMatchInput"></a>
 
 ```csharp
-public object InvertMatchInput { get; }
+public bool|IResolvable InvertMatchInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -40075,10 +40075,10 @@ public string PrefixMatchInput { get; }
 ##### `PresentMatchInput`<sup>Optional</sup> <a name="PresentMatchInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.presentMatchInput"></a>
 
 ```csharp
-public object PresentMatchInput { get; }
+public bool|IResolvable PresentMatchInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -40135,10 +40135,10 @@ public string HeaderName { get; }
 ##### `InvertMatch`<sup>Required</sup> <a name="InvertMatch" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.invertMatch"></a>
 
 ```csharp
-public object InvertMatch { get; }
+public bool|IResolvable InvertMatch { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -40155,10 +40155,10 @@ public string PrefixMatch { get; }
 ##### `PresentMatch`<sup>Required</sup> <a name="PresentMatch" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.presentMatch"></a>
 
 ```csharp
-public object PresentMatch { get; }
+public bool|IResolvable PresentMatch { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -40185,10 +40185,10 @@ public string SuffixMatch { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches</a>
 
 ---
 
@@ -40607,7 +40607,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRules">GoogleComputeUrlMapPathMatcherRouteRulesMatchRules</a>[]</code> | *No description.* |
 
 ---
 
@@ -40638,10 +40638,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesMatchRules[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRules">GoogleComputeUrlMapPathMatcherRouteRulesMatchRules</a>[]
 
 ---
 
@@ -40767,7 +40767,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels</a>[]</code> | *No description.* |
 
 ---
 
@@ -40798,10 +40798,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels</a>[]
 
 ---
 
@@ -41038,7 +41038,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels</a></code> | *No description.* |
 
 ---
 
@@ -41109,10 +41109,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels</a>
 
 ---
 
@@ -41238,7 +41238,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters</a>[]</code> | *No description.* |
 
 ---
 
@@ -41269,10 +41269,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters</a>[]
 
 ---
 
@@ -41502,12 +41502,12 @@ Returns a reversible string representation.
 ##### `PutFilterLabels` <a name="PutFilterLabels" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference.putFilterLabels"></a>
 
 ```csharp
-private void PutFilterLabels(object Value)
+private void PutFilterLabels(IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference.putFilterLabels.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels</a>[]
 
 ---
 
@@ -41519,10 +41519,10 @@ private void PutFilterLabels(object Value)
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference.property.filterLabels">FilterLabels</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference.property.filterLabelsInput">FilterLabelsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference.property.filterLabelsInput">FilterLabelsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference.property.filterMatchCriteriaInput">FilterMatchCriteriaInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference.property.filterMatchCriteria">FilterMatchCriteria</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters</a></code> | *No description.* |
 
 ---
 
@@ -41563,10 +41563,10 @@ public GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLa
 ##### `FilterLabelsInput`<sup>Optional</sup> <a name="FilterLabelsInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference.property.filterLabelsInput"></a>
 
 ```csharp
-public object FilterLabelsInput { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels[] FilterLabelsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels</a>[]
 
 ---
 
@@ -41593,10 +41593,10 @@ public string FilterMatchCriteria { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters</a>
 
 ---
 
@@ -41836,36 +41836,36 @@ Returns a reversible string representation.
 ##### `PutHeaderMatches` <a name="PutHeaderMatches" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference.putHeaderMatches"></a>
 
 ```csharp
-private void PutHeaderMatches(object Value)
+private void PutHeaderMatches(IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference.putHeaderMatches.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches</a>[]
 
 ---
 
 ##### `PutMetadataFilters` <a name="PutMetadataFilters" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference.putMetadataFilters"></a>
 
 ```csharp
-private void PutMetadataFilters(object Value)
+private void PutMetadataFilters(IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference.putMetadataFilters.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters</a>[]
 
 ---
 
 ##### `PutQueryParameterMatches` <a name="PutQueryParameterMatches" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference.putQueryParameterMatches"></a>
 
 ```csharp
-private void PutQueryParameterMatches(object Value)
+private void PutQueryParameterMatches(IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference.putQueryParameterMatches.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches</a>[]
 
 ---
 
@@ -41928,19 +41928,19 @@ private void ResetRegexMatch()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.metadataFilters">MetadataFilters</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.queryParameterMatches">QueryParameterMatches</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.fullPathMatchInput">FullPathMatchInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.headerMatchesInput">HeaderMatchesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.ignoreCaseInput">IgnoreCaseInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.metadataFiltersInput">MetadataFiltersInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.headerMatchesInput">HeaderMatchesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.ignoreCaseInput">IgnoreCaseInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.metadataFiltersInput">MetadataFiltersInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.pathTemplateMatchInput">PathTemplateMatchInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.prefixMatchInput">PrefixMatchInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.queryParameterMatchesInput">QueryParameterMatchesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.queryParameterMatchesInput">QueryParameterMatchesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.regexMatchInput">RegexMatchInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.fullPathMatch">FullPathMatch</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.ignoreCase">IgnoreCase</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.ignoreCase">IgnoreCase</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.pathTemplateMatch">PathTemplateMatch</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.prefixMatch">PrefixMatch</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.regexMatch">RegexMatch</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRules">GoogleComputeUrlMapPathMatcherRouteRulesMatchRules</a></code> | *No description.* |
 
 ---
 
@@ -42011,30 +42011,30 @@ public string FullPathMatchInput { get; }
 ##### `HeaderMatchesInput`<sup>Optional</sup> <a name="HeaderMatchesInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.headerMatchesInput"></a>
 
 ```csharp
-public object HeaderMatchesInput { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches[] HeaderMatchesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches</a>[]
 
 ---
 
 ##### `IgnoreCaseInput`<sup>Optional</sup> <a name="IgnoreCaseInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.ignoreCaseInput"></a>
 
 ```csharp
-public object IgnoreCaseInput { get; }
+public bool|IResolvable IgnoreCaseInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `MetadataFiltersInput`<sup>Optional</sup> <a name="MetadataFiltersInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.metadataFiltersInput"></a>
 
 ```csharp
-public object MetadataFiltersInput { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters[] MetadataFiltersInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters</a>[]
 
 ---
 
@@ -42061,10 +42061,10 @@ public string PrefixMatchInput { get; }
 ##### `QueryParameterMatchesInput`<sup>Optional</sup> <a name="QueryParameterMatchesInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.queryParameterMatchesInput"></a>
 
 ```csharp
-public object QueryParameterMatchesInput { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches[] QueryParameterMatchesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches</a>[]
 
 ---
 
@@ -42091,10 +42091,10 @@ public string FullPathMatch { get; }
 ##### `IgnoreCase`<sup>Required</sup> <a name="IgnoreCase" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.ignoreCase"></a>
 
 ```csharp
-public object IgnoreCase { get; }
+public bool|IResolvable IgnoreCase { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -42131,10 +42131,10 @@ public string RegexMatch { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesMatchRules InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRules">GoogleComputeUrlMapPathMatcherRouteRulesMatchRules</a>
 
 ---
 
@@ -42260,7 +42260,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches</a>[]</code> | *No description.* |
 
 ---
 
@@ -42291,10 +42291,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches</a>[]
 
 ---
 
@@ -42550,13 +42550,13 @@ private void ResetRegexMatch()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.property.exactMatchInput">ExactMatchInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.property.presentMatchInput">PresentMatchInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.property.presentMatchInput">PresentMatchInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.property.regexMatchInput">RegexMatchInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.property.exactMatch">ExactMatch</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.property.presentMatch">PresentMatch</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.property.presentMatch">PresentMatch</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.property.regexMatch">RegexMatch</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches</a></code> | *No description.* |
 
 ---
 
@@ -42607,10 +42607,10 @@ public string NameInput { get; }
 ##### `PresentMatchInput`<sup>Optional</sup> <a name="PresentMatchInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.property.presentMatchInput"></a>
 
 ```csharp
-public object PresentMatchInput { get; }
+public bool|IResolvable PresentMatchInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -42647,10 +42647,10 @@ public string Name { get; }
 ##### `PresentMatch`<sup>Required</sup> <a name="PresentMatch" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.property.presentMatch"></a>
 
 ```csharp
-public object PresentMatch { get; }
+public bool|IResolvable PresentMatch { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -42667,10 +42667,10 @@ public string RegexMatch { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches">GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches</a>
 
 ---
 
@@ -42938,36 +42938,36 @@ private void PutHeaderAction(GoogleComputeUrlMapPathMatcherRouteRulesHeaderActio
 ##### `PutHttpFilterConfigs` <a name="PutHttpFilterConfigs" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesOutputReference.putHttpFilterConfigs"></a>
 
 ```csharp
-private void PutHttpFilterConfigs(object Value)
+private void PutHttpFilterConfigs(IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigs[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesOutputReference.putHttpFilterConfigs.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigs">GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigs</a>[]
 
 ---
 
 ##### `PutHttpFilterMetadata` <a name="PutHttpFilterMetadata" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesOutputReference.putHttpFilterMetadata"></a>
 
 ```csharp
-private void PutHttpFilterMetadata(object Value)
+private void PutHttpFilterMetadata(IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadata[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesOutputReference.putHttpFilterMetadata.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadata">GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadata</a>[]
 
 ---
 
 ##### `PutMatchRules` <a name="PutMatchRules" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesOutputReference.putMatchRules"></a>
 
 ```csharp
-private void PutMatchRules(object Value)
+private void PutMatchRules(IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesMatchRules[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesOutputReference.putMatchRules.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRules">GoogleComputeUrlMapPathMatcherRouteRulesMatchRules</a>[]
 
 ---
 
@@ -43059,16 +43059,16 @@ private void ResetUrlRedirect()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesOutputReference.property.urlRedirect">UrlRedirect</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirectOutputReference">GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirectOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesOutputReference.property.customErrorResponsePolicyInput">CustomErrorResponsePolicyInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicy">GoogleComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesOutputReference.property.headerActionInput">HeaderActionInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderAction">GoogleComputeUrlMapPathMatcherRouteRulesHeaderAction</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesOutputReference.property.httpFilterConfigsInput">HttpFilterConfigsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesOutputReference.property.httpFilterMetadataInput">HttpFilterMetadataInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesOutputReference.property.matchRulesInput">MatchRulesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesOutputReference.property.httpFilterConfigsInput">HttpFilterConfigsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigs">GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigs</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesOutputReference.property.httpFilterMetadataInput">HttpFilterMetadataInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadata">GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadata</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesOutputReference.property.matchRulesInput">MatchRulesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRules">GoogleComputeUrlMapPathMatcherRouteRulesMatchRules</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesOutputReference.property.priorityInput">PriorityInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesOutputReference.property.routeActionInput">RouteActionInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteAction">GoogleComputeUrlMapPathMatcherRouteRulesRouteAction</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesOutputReference.property.serviceInput">ServiceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesOutputReference.property.urlRedirectInput">UrlRedirectInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirect">GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirect</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesOutputReference.property.priority">Priority</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesOutputReference.property.service">Service</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRules">GoogleComputeUrlMapPathMatcherRouteRules</a></code> | *No description.* |
 
 ---
 
@@ -43189,30 +43189,30 @@ public GoogleComputeUrlMapPathMatcherRouteRulesHeaderAction HeaderActionInput { 
 ##### `HttpFilterConfigsInput`<sup>Optional</sup> <a name="HttpFilterConfigsInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesOutputReference.property.httpFilterConfigsInput"></a>
 
 ```csharp
-public object HttpFilterConfigsInput { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigs[] HttpFilterConfigsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigs">GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigs</a>[]
 
 ---
 
 ##### `HttpFilterMetadataInput`<sup>Optional</sup> <a name="HttpFilterMetadataInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesOutputReference.property.httpFilterMetadataInput"></a>
 
 ```csharp
-public object HttpFilterMetadataInput { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadata[] HttpFilterMetadataInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadata">GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadata</a>[]
 
 ---
 
 ##### `MatchRulesInput`<sup>Optional</sup> <a name="MatchRulesInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesOutputReference.property.matchRulesInput"></a>
 
 ```csharp
-public object MatchRulesInput { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesMatchRules[] MatchRulesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRules">GoogleComputeUrlMapPathMatcherRouteRulesMatchRules</a>[]
 
 ---
 
@@ -43279,10 +43279,10 @@ public string Service { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRules InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRules">GoogleComputeUrlMapPathMatcherRouteRules</a>
 
 ---
 
@@ -43553,20 +43553,20 @@ private void ResetMaxAge()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.allowCredentialsInput">AllowCredentialsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.allowCredentialsInput">AllowCredentialsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.allowHeadersInput">AllowHeadersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.allowMethodsInput">AllowMethodsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.allowOriginRegexesInput">AllowOriginRegexesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.allowOriginsInput">AllowOriginsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.disabledInput">DisabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.disabledInput">DisabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.exposeHeadersInput">ExposeHeadersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.maxAgeInput">MaxAgeInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.allowCredentials">AllowCredentials</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.allowCredentials">AllowCredentials</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.allowHeaders">AllowHeaders</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.allowMethods">AllowMethods</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.allowOriginRegexes">AllowOriginRegexes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.allowOrigins">AllowOrigins</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.disabled">Disabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.disabled">Disabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.exposeHeaders">ExposeHeaders</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.maxAge">MaxAge</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicy">GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicy</a></code> | *No description.* |
@@ -43600,10 +43600,10 @@ public string Fqn { get; }
 ##### `AllowCredentialsInput`<sup>Optional</sup> <a name="AllowCredentialsInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.allowCredentialsInput"></a>
 
 ```csharp
-public object AllowCredentialsInput { get; }
+public bool|IResolvable AllowCredentialsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -43650,10 +43650,10 @@ public string[] AllowOriginsInput { get; }
 ##### `DisabledInput`<sup>Optional</sup> <a name="DisabledInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.disabledInput"></a>
 
 ```csharp
-public object DisabledInput { get; }
+public bool|IResolvable DisabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -43680,10 +43680,10 @@ public double MaxAgeInput { get; }
 ##### `AllowCredentials`<sup>Required</sup> <a name="AllowCredentials" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.allowCredentials"></a>
 
 ```csharp
-public object AllowCredentials { get; }
+public bool|IResolvable AllowCredentials { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -43730,10 +43730,10 @@ public string[] AllowOrigins { get; }
 ##### `Disabled`<sup>Required</sup> <a name="Disabled" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.disabled"></a>
 
 ```csharp
-public object Disabled { get; }
+public bool|IResolvable Disabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -45634,12 +45634,12 @@ private void PutUrlRewrite(GoogleComputeUrlMapPathMatcherRouteRulesRouteActionUr
 ##### `PutWeightedBackendServices` <a name="PutWeightedBackendServices" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference.putWeightedBackendServices"></a>
 
 ```csharp
-private void PutWeightedBackendServices(object Value)
+private void PutWeightedBackendServices(IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference.putWeightedBackendServices.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices">GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices</a>[]
 
 ---
 
@@ -45713,7 +45713,7 @@ private void ResetWeightedBackendServices()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference.property.retryPolicyInput">RetryPolicyInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionRetryPolicy">GoogleComputeUrlMapPathMatcherRouteRulesRouteActionRetryPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference.property.timeoutInput">TimeoutInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionTimeout">GoogleComputeUrlMapPathMatcherRouteRulesRouteActionTimeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference.property.urlRewriteInput">UrlRewriteInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionUrlRewrite">GoogleComputeUrlMapPathMatcherRouteRulesRouteActionUrlRewrite</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference.property.weightedBackendServicesInput">WeightedBackendServicesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference.property.weightedBackendServicesInput">WeightedBackendServicesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices">GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteAction">GoogleComputeUrlMapPathMatcherRouteRulesRouteAction</a></code> | *No description.* |
 
 ---
@@ -45895,10 +45895,10 @@ public GoogleComputeUrlMapPathMatcherRouteRulesRouteActionUrlRewrite UrlRewriteI
 ##### `WeightedBackendServicesInput`<sup>Optional</sup> <a name="WeightedBackendServicesInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference.property.weightedBackendServicesInput"></a>
 
 ```csharp
-public object WeightedBackendServicesInput { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices[] WeightedBackendServicesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices">GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices</a>[]
 
 ---
 
@@ -47703,24 +47703,24 @@ Returns a reversible string representation.
 ##### `PutRequestHeadersToAdd` <a name="PutRequestHeadersToAdd" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.putRequestHeadersToAdd"></a>
 
 ```csharp
-private void PutRequestHeadersToAdd(object Value)
+private void PutRequestHeadersToAdd(IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.putRequestHeadersToAdd.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
 
 ---
 
 ##### `PutResponseHeadersToAdd` <a name="PutResponseHeadersToAdd" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.putResponseHeadersToAdd"></a>
 
 ```csharp
-private void PutResponseHeadersToAdd(object Value)
+private void PutResponseHeadersToAdd(IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.putResponseHeadersToAdd.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
 
 ---
 
@@ -47757,9 +47757,9 @@ private void ResetResponseHeadersToRemove()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToAdd">RequestHeadersToAdd</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList">GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToAdd">ResponseHeadersToAdd</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList">GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToAddInput">RequestHeadersToAddInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToAddInput">RequestHeadersToAddInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToRemoveInput">RequestHeadersToRemoveInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToAddInput">ResponseHeadersToAddInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToAddInput">ResponseHeadersToAddInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToRemoveInput">ResponseHeadersToRemoveInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToRemove">RequestHeadersToRemove</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToRemove">ResponseHeadersToRemove</a></code> | <code>string[]</code> | *No description.* |
@@ -47814,10 +47814,10 @@ public GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendService
 ##### `RequestHeadersToAddInput`<sup>Optional</sup> <a name="RequestHeadersToAddInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToAddInput"></a>
 
 ```csharp
-public object RequestHeadersToAddInput { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] RequestHeadersToAddInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
 
 ---
 
@@ -47834,10 +47834,10 @@ public string[] RequestHeadersToRemoveInput { get; }
 ##### `ResponseHeadersToAddInput`<sup>Optional</sup> <a name="ResponseHeadersToAddInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToAddInput"></a>
 
 ```csharp
-public object ResponseHeadersToAddInput { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] ResponseHeadersToAddInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
 
 ---
 
@@ -48003,7 +48003,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]</code> | *No description.* |
 
 ---
 
@@ -48034,10 +48034,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
 
 ---
 
@@ -48272,11 +48272,11 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.headerNameInput">HeaderNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.headerValueInput">HeaderValueInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replaceInput">ReplaceInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replaceInput">ReplaceInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.headerName">HeaderName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.headerValue">HeaderValue</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replace">Replace</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replace">Replace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a></code> | *No description.* |
 
 ---
 
@@ -48327,10 +48327,10 @@ public string HeaderValueInput { get; }
 ##### `ReplaceInput`<sup>Optional</sup> <a name="ReplaceInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replaceInput"></a>
 
 ```csharp
-public object ReplaceInput { get; }
+public bool|IResolvable ReplaceInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -48357,20 +48357,20 @@ public string HeaderValue { get; }
 ##### `Replace`<sup>Required</sup> <a name="Replace" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replace"></a>
 
 ```csharp
-public object Replace { get; }
+public bool|IResolvable Replace { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>
 
 ---
 
@@ -48496,7 +48496,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]</code> | *No description.* |
 
 ---
 
@@ -48527,10 +48527,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
 
 ---
 
@@ -48765,11 +48765,11 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.headerNameInput">HeaderNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.headerValueInput">HeaderValueInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replaceInput">ReplaceInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replaceInput">ReplaceInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.headerName">HeaderName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.headerValue">HeaderValue</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replace">Replace</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replace">Replace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a></code> | *No description.* |
 
 ---
 
@@ -48820,10 +48820,10 @@ public string HeaderValueInput { get; }
 ##### `ReplaceInput`<sup>Optional</sup> <a name="ReplaceInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replaceInput"></a>
 
 ```csharp
-public object ReplaceInput { get; }
+public bool|IResolvable ReplaceInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -48850,20 +48850,20 @@ public string HeaderValue { get; }
 ##### `Replace`<sup>Required</sup> <a name="Replace" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replace"></a>
 
 ```csharp
-public object Replace { get; }
+public bool|IResolvable Replace { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>
 
 ---
 
@@ -48989,7 +48989,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices">GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices</a>[]</code> | *No description.* |
 
 ---
 
@@ -49020,10 +49020,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices">GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices</a>[]
 
 ---
 
@@ -49282,7 +49282,7 @@ private void ResetHeaderAction()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesOutputReference.property.weightInput">WeightInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesOutputReference.property.backendService">BackendService</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesOutputReference.property.weight">Weight</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices">GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices</a></code> | *No description.* |
 
 ---
 
@@ -49373,10 +49373,10 @@ public double Weight { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices">GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices</a>
 
 ---
 
@@ -49634,17 +49634,17 @@ private void ResetStripQuery()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.hostRedirectInput">HostRedirectInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.httpsRedirectInput">HttpsRedirectInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.httpsRedirectInput">HttpsRedirectInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.pathRedirectInput">PathRedirectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.prefixRedirectInput">PrefixRedirectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.redirectResponseCodeInput">RedirectResponseCodeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.stripQueryInput">StripQueryInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.stripQueryInput">StripQueryInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.hostRedirect">HostRedirect</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.httpsRedirect">HttpsRedirect</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.httpsRedirect">HttpsRedirect</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.pathRedirect">PathRedirect</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.prefixRedirect">PrefixRedirect</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.redirectResponseCode">RedirectResponseCode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.stripQuery">StripQuery</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.stripQuery">StripQuery</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirect">GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirect</a></code> | *No description.* |
 
 ---
@@ -49686,10 +49686,10 @@ public string HostRedirectInput { get; }
 ##### `HttpsRedirectInput`<sup>Optional</sup> <a name="HttpsRedirectInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.httpsRedirectInput"></a>
 
 ```csharp
-public object HttpsRedirectInput { get; }
+public bool|IResolvable HttpsRedirectInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -49726,10 +49726,10 @@ public string RedirectResponseCodeInput { get; }
 ##### `StripQueryInput`<sup>Optional</sup> <a name="StripQueryInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.stripQueryInput"></a>
 
 ```csharp
-public object StripQueryInput { get; }
+public bool|IResolvable StripQueryInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -49746,10 +49746,10 @@ public string HostRedirect { get; }
 ##### `HttpsRedirect`<sup>Required</sup> <a name="HttpsRedirect" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.httpsRedirect"></a>
 
 ```csharp
-public object HttpsRedirect { get; }
+public bool|IResolvable HttpsRedirect { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -49786,10 +49786,10 @@ public string RedirectResponseCode { get; }
 ##### `StripQuery`<sup>Required</sup> <a name="StripQuery" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.stripQuery"></a>
 
 ```csharp
-public object StripQuery { get; }
+public bool|IResolvable StripQuery { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -49925,7 +49925,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestHeadersList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestHeadersList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestHeadersList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestHeadersList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestHeaders">GoogleComputeUrlMapTestHeaders</a>[]</code> | *No description.* |
 
 ---
 
@@ -49956,10 +49956,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestHeadersList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapTestHeaders[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestHeaders">GoogleComputeUrlMapTestHeaders</a>[]
 
 ---
 
@@ -50196,7 +50196,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestHeadersOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestHeadersOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestHeadersOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestHeadersOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestHeadersOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestHeaders">GoogleComputeUrlMapTestHeaders</a></code> | *No description.* |
 
 ---
 
@@ -50267,10 +50267,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestHeadersOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapTestHeaders InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestHeaders">GoogleComputeUrlMapTestHeaders</a>
 
 ---
 
@@ -50396,7 +50396,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTest">GoogleComputeUrlMapTest</a>[]</code> | *No description.* |
 
 ---
 
@@ -50427,10 +50427,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapTest[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTest">GoogleComputeUrlMapTest</a>[]
 
 ---
 
@@ -50665,12 +50665,12 @@ Returns a reversible string representation.
 ##### `PutHeaders` <a name="PutHeaders" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestOutputReference.putHeaders"></a>
 
 ```csharp
-private void PutHeaders(object Value)
+private void PutHeaders(IResolvable|GoogleComputeUrlMapTestHeaders[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestOutputReference.putHeaders.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestHeaders">GoogleComputeUrlMapTestHeaders</a>[]
 
 ---
 
@@ -50715,7 +50715,7 @@ private void ResetService()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestOutputReference.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestOutputReference.property.expectedOutputUrlInput">ExpectedOutputUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestOutputReference.property.expectedRedirectResponseCodeInput">ExpectedRedirectResponseCodeInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestOutputReference.property.headersInput">HeadersInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestOutputReference.property.headersInput">HeadersInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestHeaders">GoogleComputeUrlMapTestHeaders</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestOutputReference.property.hostInput">HostInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestOutputReference.property.pathInput">PathInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestOutputReference.property.serviceInput">ServiceInput</a></code> | <code>string</code> | *No description.* |
@@ -50725,7 +50725,7 @@ private void ResetService()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestOutputReference.property.host">Host</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestOutputReference.property.path">Path</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestOutputReference.property.service">Service</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTest">GoogleComputeUrlMapTest</a></code> | *No description.* |
 
 ---
 
@@ -50796,10 +50796,10 @@ public double ExpectedRedirectResponseCodeInput { get; }
 ##### `HeadersInput`<sup>Optional</sup> <a name="HeadersInput" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestOutputReference.property.headersInput"></a>
 
 ```csharp
-public object HeadersInput { get; }
+public IResolvable|GoogleComputeUrlMapTestHeaders[] HeadersInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestHeaders">GoogleComputeUrlMapTestHeaders</a>[]
 
 ---
 
@@ -50896,10 +50896,10 @@ public string Service { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapTest InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTest">GoogleComputeUrlMapTest</a>
 
 ---
 
@@ -51141,7 +51141,7 @@ private void ResetUpdate()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTimeoutsOutputReference.property.create">Create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTimeoutsOutputReference.property.delete">Delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTimeoutsOutputReference.property.update">Update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTimeouts">GoogleComputeUrlMapTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -51232,10 +51232,10 @@ public string Update { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTimeoutsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GoogleComputeUrlMapTimeouts InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTimeouts">GoogleComputeUrlMapTimeouts</a>
 
 ---
 

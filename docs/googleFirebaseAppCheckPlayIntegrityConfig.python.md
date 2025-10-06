@@ -14,13 +14,13 @@ from cdktf_cdktf_provider_google_beta import google_firebase_app_check_play_inte
 googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   app_id: str,
   id: str = None,
   project: str = None,
@@ -33,13 +33,13 @@ googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityCon
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.Initializer.parameter.appId">app_id</a></code> | <code>str</code> | The ID of an [Android App](https://firebase.google.com/docs/reference/firebase-management/rest/v1beta1/projects.androidApps#AndroidApp.FIELDS.app_id). |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_firebase_app_check_play_integrity_config#id GoogleFirebaseAppCheckPlayIntegrityConfig#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_firebase_app_check_play_integrity_config#project GoogleFirebaseAppCheckPlayIntegrityConfig#project}. |
@@ -68,13 +68,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -418,7 +418,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.importFrom"></a>
@@ -481,7 +481,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -497,7 +497,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -716,19 +716,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfigTimeoutsOutputReference">GoogleFirebaseAppCheckPlayIntegrityConfigTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.property.appIdInput">app_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfigTimeouts">GoogleFirebaseAppCheckPlayIntegrityConfigTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfigTimeouts">GoogleFirebaseAppCheckPlayIntegrityConfigTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.property.tokenTtlInput">token_ttl_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.property.appId">app_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -812,20 +812,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -872,10 +872,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -932,10 +932,10 @@ project_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfig.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[IResolvable, GoogleFirebaseAppCheckPlayIntegrityConfigTimeouts]
+timeouts_input: IResolvable | GoogleFirebaseAppCheckPlayIntegrityConfigTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfigTimeouts">GoogleFirebaseAppCheckPlayIntegrityConfigTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfigTimeouts">GoogleFirebaseAppCheckPlayIntegrityConfigTimeouts</a>
 
 ---
 
@@ -1017,13 +1017,13 @@ tfResourceType: str
 from cdktf_cdktf_provider_google_beta import google_firebase_app_check_play_integrity_config
 
 googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfigConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   app_id: str,
   id: str = None,
   project: str = None,
@@ -1036,13 +1036,13 @@ googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfigConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfigConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfigConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfigConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfigConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfigConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfigConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfigConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfigConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfigConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfigConfig.property.appId">app_id</a></code> | <code>str</code> | The ID of an [Android App](https://firebase.google.com/docs/reference/firebase-management/rest/v1beta1/projects.androidApps#AndroidApp.FIELDS.app_id). |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfigConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_firebase_app_check_play_integrity_config#id GoogleFirebaseAppCheckPlayIntegrityConfig#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfigConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_firebase_app_check_play_integrity_config#project GoogleFirebaseAppCheckPlayIntegrityConfig#project}. |
@@ -1054,20 +1054,20 @@ googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityCon
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfigConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfigConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1114,10 +1114,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfigConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1518,7 +1518,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfigTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfigTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfigTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfigTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfigTimeouts">GoogleFirebaseAppCheckPlayIntegrityConfigTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfigTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfigTimeouts">GoogleFirebaseAppCheckPlayIntegrityConfigTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1609,10 +1609,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfigTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GoogleFirebaseAppCheckPlayIntegrityConfigTimeouts]
+internal_value: IResolvable | GoogleFirebaseAppCheckPlayIntegrityConfigTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfigTimeouts">GoogleFirebaseAppCheckPlayIntegrityConfigTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google-beta.googleFirebaseAppCheckPlayIntegrityConfig.GoogleFirebaseAppCheckPlayIntegrityConfigTimeouts">GoogleFirebaseAppCheckPlayIntegrityConfigTimeouts</a>
 
 ---
 

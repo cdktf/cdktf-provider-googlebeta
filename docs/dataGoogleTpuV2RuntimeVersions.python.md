@@ -14,13 +14,13 @@ from cdktf_cdktf_provider_google_beta import data_google_tpu_v2_runtime_versions
 dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   id: str = None,
   project: str = None,
   zone: str = None
@@ -31,13 +31,13 @@ dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_tpu_v2_runtime_versions#id DataGoogleTpuV2RuntimeVersions#id}. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_tpu_v2_runtime_versions#project DataGoogleTpuV2RuntimeVersions#project}. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions.Initializer.parameter.zone">zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_tpu_v2_runtime_versions#zone DataGoogleTpuV2RuntimeVersions#zone}. |
@@ -64,13 +64,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -100,7 +100,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -530,7 +530,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -620,10 +620,10 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -765,13 +765,13 @@ tfResourceType: str
 from cdktf_cdktf_provider_google_beta import data_google_tpu_v2_runtime_versions
 
 dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersionsConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   id: str = None,
   project: str = None,
   zone: str = None
@@ -782,13 +782,13 @@ dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersionsConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersionsConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersionsConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersionsConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersionsConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersionsConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersionsConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersionsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersionsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersionsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersionsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersionsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_tpu_v2_runtime_versions#id DataGoogleTpuV2RuntimeVersions#id}. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersionsConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_tpu_v2_runtime_versions#project DataGoogleTpuV2RuntimeVersions#project}. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersionsConfig.property.zone">zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_tpu_v2_runtime_versions#zone DataGoogleTpuV2RuntimeVersions#zone}. |
@@ -798,20 +798,20 @@ dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersionsConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersionsConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersionsConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -858,10 +858,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersionsConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
